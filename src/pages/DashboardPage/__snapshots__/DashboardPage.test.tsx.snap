@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`DashboardPage > component snapshot 1`] = `
+exports[`DashboardTemplate > component snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
@@ -9,12 +9,12 @@ Object {
         class="sc-gswNZR haybPh"
       >
         <p
-          class="sc-bcXHqe chqJby"
+          class="sc-bcXHqe fMIRBo"
         >
           Pelikan Business Template
         </p>
         <p
-          class="sc-bcXHqe chqJby"
+          class="sc-bcXHqe fMIRBo"
           data-testid="app-version"
         >
           v
@@ -28,12 +28,12 @@ Object {
       class="sc-gswNZR haybPh"
     >
       <p
-        class="sc-bcXHqe chqJby"
+        class="sc-bcXHqe fMIRBo"
       >
         Pelikan Business Template
       </p>
       <p
-        class="sc-bcXHqe chqJby"
+        class="sc-bcXHqe fMIRBo"
         data-testid="app-version"
       >
         v
