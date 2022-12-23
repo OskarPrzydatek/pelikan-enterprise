@@ -25,11 +25,11 @@ export const theme: DefaultTheme = {
     xxl: '3.5rem',
   },
   spaces: {
-    xs: '2%',
-    s: '5%',
-    m: '8%',
-    l: '10%',
-    xl: '15%',
-    xxl: '20%',
+    xs: '.5%',
+    s: '.7%',
+    m: '1%',
+    l: '2%',
+    xl: '2.5%',
+    xxl: '5%',
   },
 };
