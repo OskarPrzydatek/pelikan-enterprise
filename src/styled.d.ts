@@ -19,6 +19,7 @@ interface IFonts {
 }
 
 interface IFontSizes {
+  xxs: string;
   xs: string;
   s: string;
   m: string;

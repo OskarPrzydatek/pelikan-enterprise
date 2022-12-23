@@ -17,6 +17,7 @@ export const theme: DefaultTheme = {
     main: `'Nanum Gothic', sans-serif`,
   },
   fontSizes: {
+    xxs: '.6rem',
     xs: '.8rem',
     s: '1rem',
     m: '1.4rem',
