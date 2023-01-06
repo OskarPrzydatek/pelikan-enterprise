@@ -6,15 +6,15 @@ Object {
   "baseElement": <body>
     <div>
       <main
-        class="sc-dkrFOg ihhcPj"
+        class="sc-eDvSVe dmDcAX"
       >
         <p
-          class="sc-gswNZR bprCri"
+          class="sc-hLBbgP jHZlE"
         >
           Pelikan Business Template
         </p>
         <p
-          class="sc-gswNZR bprCri"
+          class="sc-hLBbgP jHZlE"
           data-testid="app-version"
         >
           v
@@ -25,15 +25,15 @@ Object {
   </body>,
   "container": <div>
     <main
-      class="sc-dkrFOg ihhcPj"
+      class="sc-eDvSVe dmDcAX"
     >
       <p
-        class="sc-gswNZR bprCri"
+        class="sc-hLBbgP jHZlE"
       >
         Pelikan Business Template
       </p>
       <p
-        class="sc-gswNZR bprCri"
+        class="sc-hLBbgP jHZlE"
         data-testid="app-version"
       >
         v

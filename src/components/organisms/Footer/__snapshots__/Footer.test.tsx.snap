@@ -1,18 +1,13 @@
 // Vitest Snapshot v1
 
-exports[`DashboardPage > component snapshot 1`] = `
+exports[`Footer > component snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <main
-        class="sc-eDvSVe dmDcAX"
+      <footer
+        class="sc-eDvSVe fUufvz"
       >
-        <p
-          class="sc-hLBbgP jHZlE"
-        >
-          Pelikan Business Template
-        </p>
         <p
           class="sc-hLBbgP jHZlE"
           data-testid="app-version"
@@ -20,18 +15,13 @@ Object {
           v
           0.0.1
         </p>
-      </main>
+      </footer>
     </div>
   </body>,
   "container": <div>
-    <main
-      class="sc-eDvSVe dmDcAX"
+    <footer
+      class="sc-eDvSVe fUufvz"
     >
-      <p
-        class="sc-hLBbgP jHZlE"
-      >
-        Pelikan Business Template
-      </p>
       <p
         class="sc-hLBbgP jHZlE"
         data-testid="app-version"
@@ -39,7 +29,7 @@ Object {
         v
         0.0.1
       </p>
-    </main>
+    </footer>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

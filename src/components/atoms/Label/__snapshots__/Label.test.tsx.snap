@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <label
-        class="sc-bcXHqe eJwDB"
+        class="sc-bcXHqe bIfLJZ"
         data-testid="label-atom"
         for="label-atom"
       >
@@ -16,7 +16,7 @@ Object {
   </body>,
   "container": <div>
     <label
-      class="sc-bcXHqe eJwDB"
+      class="sc-bcXHqe bIfLJZ"
       data-testid="label-atom"
       for="label-atom"
     >
