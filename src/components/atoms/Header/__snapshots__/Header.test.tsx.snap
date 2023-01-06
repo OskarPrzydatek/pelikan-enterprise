@@ -1,21 +1,79 @@
 // Vitest Snapshot v1
 
 exports[`Header > component snapshot 1`] = `
-Object {
+{
   "asFragment": [Function],
-  "baseElement": <body>
+  "baseElement": .c0 {
+  margin: 0;
+  font-family: 'Nanum Gothic',sans-serif;
+  color: #21313F;
+  font-size: 1.4rem;
+  margin: .5% 0;
+}
+
+@media (min-width:390px) {
+  .c0 {
+    font-size: 1.8rem;
+    margin: .5% 0;
+  }
+}
+
+@media (min-width:834px) {
+  .c0 {
+    font-size: 2rem;
+    margin: .7% 0;
+  }
+}
+
+@media (min-width:1728px) {
+  .c0 {
+    font-size: 1rem;
+    margin: .7% 0;
+  }
+}
+
+<body>
     <div>
       <h1
-        class="sc-bcXHqe kbystv"
+        class="c0"
         data-testid="header-atom"
       >
         String Header
       </h1>
     </div>
   </body>,
-  "container": <div>
+  "container": .c0 {
+  margin: 0;
+  font-family: 'Nanum Gothic',sans-serif;
+  color: #21313F;
+  font-size: 1.4rem;
+  margin: .5% 0;
+}
+
+@media (min-width:390px) {
+  .c0 {
+    font-size: 1.8rem;
+    margin: .5% 0;
+  }
+}
+
+@media (min-width:834px) {
+  .c0 {
+    font-size: 2rem;
+    margin: .7% 0;
+  }
+}
+
+@media (min-width:1728px) {
+  .c0 {
+    font-size: 1rem;
+    margin: .7% 0;
+  }
+}
+
+<div>
     <h1
-      class="sc-bcXHqe kbystv"
+      class="c0"
       data-testid="header-atom"
     >
       String Header

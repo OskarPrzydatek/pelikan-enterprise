@@ -1,12 +1,37 @@
 // Vitest Snapshot v1
 
 exports[`Label > component snapshot 1`] = `
-Object {
+{
   "asFragment": [Function],
-  "baseElement": <body>
+  "baseElement": .c0 {
+  font-weight: 600;
+  color: #21313F;
+  font-family: 'Nanum Gothic',sans-serif;
+  font-size: .6rem;
+}
+
+@media (min-width:390px) {
+  .c0 {
+    font-size: .6rem;
+  }
+}
+
+@media (min-width:834px) {
+  .c0 {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width:1728px) {
+  .c0 {
+    font-size: .8rem;
+  }
+}
+
+<body>
     <div>
       <label
-        class="sc-bcXHqe eJwDB"
+        class="c0"
         data-testid="label-atom"
         for="label-atom"
       >
@@ -14,9 +39,34 @@ Object {
       </label>
     </div>
   </body>,
-  "container": <div>
+  "container": .c0 {
+  font-weight: 600;
+  color: #21313F;
+  font-family: 'Nanum Gothic',sans-serif;
+  font-size: .6rem;
+}
+
+@media (min-width:390px) {
+  .c0 {
+    font-size: .6rem;
+  }
+}
+
+@media (min-width:834px) {
+  .c0 {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width:1728px) {
+  .c0 {
+    font-size: .8rem;
+  }
+}
+
+<div>
     <label
-      class="sc-bcXHqe eJwDB"
+      class="c0"
       data-testid="label-atom"
       for="label-atom"
     >

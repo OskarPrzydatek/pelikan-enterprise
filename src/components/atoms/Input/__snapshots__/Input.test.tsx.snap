@@ -1,77 +1,101 @@
 // Vitest Snapshot v1
 
-exports[`Text > component snapshot 1`] = `
+exports[`Input > component snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": .c0 {
-  margin: 0;
-  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  width: 100%;
+  line-height: 1.6;
+  padding: 0.5%;
   font-family: 'Nanum Gothic',sans-serif;
   color: #21313F;
-  font-size: 1rem;
+  border: 3px solid #013059;
+  font-size: .8rem;
+}
+
+.c0:focus {
+  outline: none;
+  border: 3px solid #98BFF2;
 }
 
 @media (min-width:390px) {
   .c0 {
-    font-size: 1.4rem;
+    font-size: .8rem;
   }
 }
 
 @media (min-width:834px) {
   .c0 {
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
 }
 
 @media (min-width:1728px) {
   .c0 {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 }
 
 <body>
     <div>
-      <p
+      <input
         class="c0"
-        data-testid="text-atom"
-      >
-        Text
-      </p>
+        data-testid="atom-input"
+        id="atom-input"
+        placeholder="Input atom component"
+        type="text"
+      />
     </div>
   </body>,
   "container": .c0 {
-  margin: 0;
-  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  width: 100%;
+  line-height: 1.6;
+  padding: 0.5%;
   font-family: 'Nanum Gothic',sans-serif;
   color: #21313F;
-  font-size: 1rem;
+  border: 3px solid #013059;
+  font-size: .8rem;
+}
+
+.c0:focus {
+  outline: none;
+  border: 3px solid #98BFF2;
 }
 
 @media (min-width:390px) {
   .c0 {
-    font-size: 1.4rem;
+    font-size: .8rem;
   }
 }
 
 @media (min-width:834px) {
   .c0 {
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
 }
 
 @media (min-width:1728px) {
   .c0 {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 }
 
 <div>
-    <p
+    <input
       class="c0"
-      data-testid="text-atom"
-    >
-      Text
-    </p>
+      data-testid="atom-input"
+      id="atom-input"
+      placeholder="Input atom component"
+      type="text"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

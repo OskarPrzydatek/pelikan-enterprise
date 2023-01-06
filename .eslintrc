@@ -57,6 +57,13 @@
         "@typescript-eslint/unbound-method": "off",
         "jest/unbound-method": "error"
       }
+    },
+    // let for storybook use console.logs
+    {
+      "files": ["**/components/**/**/*.stories.tsx"],
+      "rules": {
+        "no-console": "off"
+      }
     }
   ],
   "rules": {
