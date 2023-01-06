@@ -9,7 +9,7 @@ Object {
         class="sc-bcXHqe chqJby"
         data-testid="text-atom"
       >
-        Example Text
+        Text
       </p>
     </div>
   </body>,
@@ -18,7 +18,7 @@ Object {
       class="sc-bcXHqe chqJby"
       data-testid="text-atom"
     >
-      Example Text
+      Text
     </p>
   </div>,
   "debug": [Function],
