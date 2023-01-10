@@ -1,20 +1,66 @@
 // Vitest Snapshot v1
 
 exports[`DashboardPage > component snapshot 1`] = `
-Object {
+{
   "asFragment": [Function],
-  "baseElement": <body>
+  "baseElement": .c1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Gothic',sans-serif;
+  color: #21313F;
+  font-size: 1rem;
+}
+
+.c0 {
+  width: 98vw;
+  height: 98vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media (min-width:390px) {
+  .c1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width:834px) {
+  .c1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width:1728px) {
+  .c1 {
+    font-size: 2rem;
+  }
+}
+
+<body>
     <div>
       <main
-        class="sc-dkrFOg ihhcPj"
+        class="c0"
       >
         <p
-          class="sc-gswNZR bprCri"
+          class="c1"
         >
           Pelikan Business Template
         </p>
         <p
-          class="sc-gswNZR bprCri"
+          class="c1"
           data-testid="app-version"
         >
           v
@@ -23,17 +69,63 @@ Object {
       </main>
     </div>
   </body>,
-  "container": <div>
+  "container": .c1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Gothic',sans-serif;
+  color: #21313F;
+  font-size: 1rem;
+}
+
+.c0 {
+  width: 98vw;
+  height: 98vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media (min-width:390px) {
+  .c1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width:834px) {
+  .c1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width:1728px) {
+  .c1 {
+    font-size: 2rem;
+  }
+}
+
+<div>
     <main
-      class="sc-dkrFOg ihhcPj"
+      class="c0"
     >
       <p
-        class="sc-gswNZR bprCri"
+        class="c1"
       >
         Pelikan Business Template
       </p>
       <p
-        class="sc-gswNZR bprCri"
+        class="c1"
         data-testid="app-version"
       >
         v

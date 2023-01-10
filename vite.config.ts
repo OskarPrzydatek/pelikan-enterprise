@@ -13,8 +13,5 @@ export default defineConfig({
     coverage: {
       provider: 'istanbul',
     },
-    snapshotFormat: {
-      printBasicPrototype: true,
-    },
   },
 });
