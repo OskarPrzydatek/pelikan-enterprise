@@ -1,21 +1,73 @@
 // Vitest Snapshot v1
 
 exports[`Text > component snapshot 1`] = `
-Object {
+{
   "asFragment": [Function],
-  "baseElement": <body>
+  "baseElement": .c0 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Gothic',sans-serif;
+  color: #21313F;
+  font-size: 1rem;
+}
+
+@media (min-width:390px) {
+  .c0 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width:834px) {
+  .c0 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width:1728px) {
+  .c0 {
+    font-size: 2rem;
+  }
+}
+
+<body>
     <div>
       <p
-        class="sc-bcXHqe chqJby"
+        class="c0"
         data-testid="text-atom"
       >
         Text
       </p>
     </div>
   </body>,
-  "container": <div>
+  "container": .c0 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Gothic',sans-serif;
+  color: #21313F;
+  font-size: 1rem;
+}
+
+@media (min-width:390px) {
+  .c0 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width:834px) {
+  .c0 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width:1728px) {
+  .c0 {
+    font-size: 2rem;
+  }
+}
+
+<div>
     <p
-      class="sc-bcXHqe chqJby"
+      class="c0"
       data-testid="text-atom"
     >
       Text
