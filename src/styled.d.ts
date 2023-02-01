@@ -6,6 +6,7 @@ interface IColors {
   gray: string;
   black: string;
   white: string;
+  red: string;
 }
 
 interface IBreakpoints {
