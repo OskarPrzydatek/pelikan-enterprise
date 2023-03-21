@@ -1,10 +1,10 @@
-import { AppRouter } from './router';
+import { Router } from './router';
 import { StyledComponentsProvider } from './styles';
 
 const App: React.FC = () => {
   return (
     <StyledComponentsProvider>
-      <AppRouter />
+      <Router />
     </StyledComponentsProvider>
   );
 };
