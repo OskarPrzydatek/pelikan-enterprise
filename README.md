@@ -1,73 +1,75 @@
 # Pelican business FE
 
-Interface for Pelikan Holidays employees to create the offers.
+pelikan-busines is a SPA application for managing the travel resources and offers of Pelikan Holidays* travel agency.
 
-## Run Project
 
-After git clone
+## Design
 
-```
-npm i
-```
+https://www.figma.com/file/3Jsb5jtARfNQJ8Yf1p5mCO/Pelikan?node-id=100-3&t=gKM5WKL4djjVMsXB-0
 
-Run project
+
+## Tech Stack
+
+[![Generic badge](https://img.shields.io/badge/Typescript-4.6.4-blue.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/Vite-v3.2.3-purple.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/React-v18.2.0-blue.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/React_Router_Dom-6.4.3-red.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/React_Hook_Form-v7.39.4-purple.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/Styled_Components-5.3.6-pink.svg)](https://shields.io/)
+
+### Run Project
 
 ```
 npm run dev
 ```
 
-## Run Storybook - Components Documentation
+
+## Code Management
+
+[![Generic badge](https://img.shields.io/badge/Eslint-8.28.0-blue.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/Prettier-2.7.1-brown.svg)](https://shields.io/)
+
+### Run ESlint
+
+```
+npm run lint
+```
+
+### Run ESlint with fix
+```
+npm run lint:fix
+```
+
+### Run Prettier Formatter
+```
+npm run format
+```
+
+
+## Tests
+
+[![Generic badge](https://img.shields.io/badge/Vitest-0.26.2-green.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/Testing_Library_React-13.4.0-blue.svg)](https://shields.io/)
+
+### Run Tests
+```
+npm run test
+```
+
+### Run Tests With Coverage
+```
+npm run test:coverage
+```
+
+
+## Documentation
+
+[![Generic badge](https://img.shields.io/badge/Storybook-7.0.0_alpha.57-pink.svg)](https://shields.io/)
+
+### Run Storybook
 
 ```
 npm run storybook
 ```
 
-## Project CI
-
-```
-npm run test:coverage
-npm run format
-npm run lint:fix
-```
-
-## Design
-
-https://www.figma.com/file/B0Wki817pui2FH4puCCGux/Pelikan-Business?node-id=0%3A1&t=IoKXLO0zzLVdbopf-0
-
-## Tech Stack
-
-### Core
-
-- React `18.2.0`
-- Vite `3.2.3`
-- TypeScript `4.6.4`
-
-### Tests
-
-- Jest `29.3.1`
-- Vitest `0.26.2`
-- Testing Library React `13.4.0`
-- Cypress `11.1.0`
-
-### Code Management
-
-- Eslint `8.28.0`
-- Prettier `2.7.1`
-
-### App Management
-
-- React Router Dom `6.4.3`
-- React Hook Form `7.39.4`
-
-### State Management
-
-- React Redux `8.0.5`
-- Redux Toolkit `1.9.0`
-
-### Documentation
-
-- Storybook `7.0.0-alpha.57`
-
-### Style
-
-- Styled Components `5.3.6`
+&ast; - Pelikan Holidays is a fictional company created for an engineering thesis. 
