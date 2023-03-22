@@ -3,56 +3,13 @@
 exports[`Footer > component snapshot 1`] = `
 {
   "asFragment": [Function],
-  "baseElement": .c1 {
-  margin: 0;
-  padding: 0;
-  font-family: 'Nanum Gothic',sans-serif;
-  color: #21313F;
-  font-size: 1rem;
-}
-
-.c0 {
-  width: 100%;
-  padding: 1%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-@media (min-width:390px) {
-  .c1 {
-    font-size: 1.4rem;
-  }
-}
-
-@media (min-width:834px) {
-  .c1 {
-    font-size: 1.8rem;
-  }
-}
-
-@media (min-width:1728px) {
-  .c1 {
-    font-size: 2rem;
-  }
-}
-
-<body>
+  "baseElement": <body>
     <div>
       <footer
-        class="c0"
+        class="sc-eDvSVe cAgYmR"
       >
         <p
-          class="c1"
+          class="sc-hLBbgP jHZlE"
           data-testid="app-version"
         >
           v
@@ -61,55 +18,12 @@ exports[`Footer > component snapshot 1`] = `
       </footer>
     </div>
   </body>,
-  "container": .c1 {
-  margin: 0;
-  padding: 0;
-  font-family: 'Nanum Gothic',sans-serif;
-  color: #21313F;
-  font-size: 1rem;
-}
-
-.c0 {
-  width: 100%;
-  padding: 1%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-@media (min-width:390px) {
-  .c1 {
-    font-size: 1.4rem;
-  }
-}
-
-@media (min-width:834px) {
-  .c1 {
-    font-size: 1.8rem;
-  }
-}
-
-@media (min-width:1728px) {
-  .c1 {
-    font-size: 2rem;
-  }
-}
-
-<div>
+  "container": <div>
     <footer
-      class="c0"
+      class="sc-eDvSVe cAgYmR"
     >
       <p
-        class="c1"
+        class="sc-hLBbgP jHZlE"
         data-testid="app-version"
       >
         v

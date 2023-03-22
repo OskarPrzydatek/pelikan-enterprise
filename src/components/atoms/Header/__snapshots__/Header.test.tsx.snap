@@ -3,77 +3,19 @@
 exports[`Header > component snapshot 1`] = `
 {
   "asFragment": [Function],
-  "baseElement": .c0 {
-  margin: 0;
-  font-family: 'Nanum Gothic',sans-serif;
-  color: #21313F;
-  font-size: 1.4rem;
-  margin: .5% 0;
-}
-
-@media (min-width:390px) {
-  .c0 {
-    font-size: 1.8rem;
-    margin: .5% 0;
-  }
-}
-
-@media (min-width:834px) {
-  .c0 {
-    font-size: 2rem;
-    margin: .7% 0;
-  }
-}
-
-@media (min-width:1728px) {
-  .c0 {
-    font-size: 1rem;
-    margin: .7% 0;
-  }
-}
-
-<body>
+  "baseElement": <body>
     <div>
       <h1
-        class="c0"
+        class="sc-bcXHqe kbystv"
         data-testid="header-atom"
       >
         String Header
       </h1>
     </div>
   </body>,
-  "container": .c0 {
-  margin: 0;
-  font-family: 'Nanum Gothic',sans-serif;
-  color: #21313F;
-  font-size: 1.4rem;
-  margin: .5% 0;
-}
-
-@media (min-width:390px) {
-  .c0 {
-    font-size: 1.8rem;
-    margin: .5% 0;
-  }
-}
-
-@media (min-width:834px) {
-  .c0 {
-    font-size: 2rem;
-    margin: .7% 0;
-  }
-}
-
-@media (min-width:1728px) {
-  .c0 {
-    font-size: 1rem;
-    margin: .7% 0;
-  }
-}
-
-<div>
+  "container": <div>
     <h1
-      class="c0"
+      class="sc-bcXHqe kbystv"
       data-testid="header-atom"
     >
       String Header

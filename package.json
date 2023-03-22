@@ -71,7 +71,6 @@
     "eslint-plugin-testing-library": "^5.9.1",
     "jsdom": "^20.0.3",
     "prettier": "^2.7.1",
-    "react-test-renderer": "^18.2.0",
     "storybook": "^7.0.0-alpha.57",
     "typescript": "^4.6.4",
     "vite": "^3.2.3",

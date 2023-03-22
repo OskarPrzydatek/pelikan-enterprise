@@ -1,7 +1,7 @@
 // Vitest Snapshot v1
 
 exports[`FormInput > component snapshot 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
