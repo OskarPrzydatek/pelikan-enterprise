@@ -2,7 +2,6 @@ name: Run ESlint on Push and PR
 
 on:
   - pull_request
-  - push
 
 jobs:
   linting:
