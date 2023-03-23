@@ -1,15 +1,15 @@
 import { render } from '@testing-library/react';
-import { describe, expect, test } from 'vitest';
+import { describe, test } from 'vitest';
 
 import { StyledComponentsProvider } from '~/styles';
 
-import { DashboardPage } from './DashboardPage.component';
+import { CreateTemplate } from './CreateTemplate.component';
 
-describe('DashboardPage', () => {
+describe('CreateTemplate', () => {
   test('component snapshot', () => {
     const view = render(
       <StyledComponentsProvider>
-        <DashboardPage />
+        <CreateTemplate title="Dodaj Ofertę" />
       </StyledComponentsProvider>
     );
     expect(view).toMatchSnapshot();

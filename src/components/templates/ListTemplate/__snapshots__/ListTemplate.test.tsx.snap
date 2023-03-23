@@ -1,27 +1,35 @@
 // Vitest Snapshot v1
 
-exports[`Input > component snapshot 1`] = `
+exports[`ListTemplate > component snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <input
-        class="sc-bcXHqe iCfSCC"
-        data-testid="atom-input"
-        id="atom-input"
-        placeholder="Input atom component"
-        type="text"
-      />
+      <div>
+        <h2>
+          Lista Ofert
+        </h2>
+        <p
+          data-testid="page-number"
+        >
+          page: 
+          1
+        </p>
+      </div>
     </div>
   </body>,
   "container": <div>
-    <input
-      class="sc-bcXHqe iCfSCC"
-      data-testid="atom-input"
-      id="atom-input"
-      placeholder="Input atom component"
-      type="text"
-    />
+    <div>
+      <h2>
+        Lista Ofert
+      </h2>
+      <p
+        data-testid="page-number"
+      >
+        page: 
+        1
+      </p>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

@@ -3,35 +3,10 @@
 exports[`Label > component snapshot 1`] = `
 {
   "asFragment": [Function],
-  "baseElement": .c0 {
-  font-weight: 600;
-  color: #21313F;
-  font-family: 'Nanum Gothic',sans-serif;
-  font-size: .6rem;
-}
-
-@media (min-width:390px) {
-  .c0 {
-    font-size: .6rem;
-  }
-}
-
-@media (min-width:834px) {
-  .c0 {
-    font-size: .8rem;
-  }
-}
-
-@media (min-width:1728px) {
-  .c0 {
-    font-size: .8rem;
-  }
-}
-
-<body>
+  "baseElement": <body>
     <div>
       <label
-        class="c0"
+        class="sc-bcXHqe bIfLJZ"
         data-testid="label-atom"
         for="label-atom"
       >
@@ -39,34 +14,9 @@ exports[`Label > component snapshot 1`] = `
       </label>
     </div>
   </body>,
-  "container": .c0 {
-  font-weight: 600;
-  color: #21313F;
-  font-family: 'Nanum Gothic',sans-serif;
-  font-size: .6rem;
-}
-
-@media (min-width:390px) {
-  .c0 {
-    font-size: .6rem;
-  }
-}
-
-@media (min-width:834px) {
-  .c0 {
-    font-size: .8rem;
-  }
-}
-
-@media (min-width:1728px) {
-  .c0 {
-    font-size: .8rem;
-  }
-}
-
-<div>
+  "container": <div>
     <label
-      class="c0"
+      class="sc-bcXHqe bIfLJZ"
       data-testid="label-atom"
       for="label-atom"
     >
