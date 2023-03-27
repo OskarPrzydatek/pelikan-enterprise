@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { describe, test } from 'vitest';
+import { describe, test, expect } from 'vitest';
 
 import { StyledComponentsProvider } from '~/styles';
 
@@ -24,6 +24,6 @@ describe('Footer', () => {
       </StyledComponentsProvider>
     );
     const appVesionText = screen.getByTestId('app-version');
-    expect(appVesionText).toHaveTextContent(`v${mockVersion}`);
+    expect(appVesionText).toHaveTextContent(`Pelikan Business v${mockVersion}`);
   });
 });

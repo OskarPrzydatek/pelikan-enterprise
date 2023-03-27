@@ -35,7 +35,6 @@
     "plugin:react/jsx-runtime",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:import/recommended",
-    "plugin:jest-dom/recommended",
     "plugin:prettier/recommended"
   ],
   "plugins": ["react", "@typescript-eslint"],
@@ -52,10 +51,9 @@
         "**/__tests__/**/*.[jt]s?(x)",
         "**/?(*.)+(spec|test).[jt]s?(x)"
       ],
-      "plugins": ["jest"],
+      "plugins": [],
       "rules": {
-        "@typescript-eslint/unbound-method": "off",
-        "jest/unbound-method": "error"
+        "@typescript-eslint/unbound-method": "off"
       }
     },
     // let for storybook use console.logs
@@ -68,7 +66,10 @@
   ],
   "rules": {
     "no-console": "warn",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": "off",
     "react/display-name": "off",
+    "no-underscore-dangle": "off",
     "import/order": [
       "error",
       {

@@ -1,4 +1,4 @@
-import {
+import styled, {
   DefaultTheme,
   createGlobalStyle,
   ThemeProvider,
@@ -9,8 +9,10 @@ export const theme: DefaultTheme = {
     red: '#F23557',
     lightBlue: '#98BFF2',
     darkBlue: '#013059',
-    gray: '#2E4559',
-    black: '#21313F',
+    gray: '#5F5F5F',
+    black: '#2F2F2F',
+    opacityBlack: '#2F2F2FCC',
+    shadowBlack: '#00000040',
     white: '#FFFFFF',
   },
   breakpoints: {
@@ -19,24 +21,24 @@ export const theme: DefaultTheme = {
     desktop: '(min-width: 1728px)',
   },
   fonts: {
-    main: `'Nanum Gothic', sans-serif`,
+    main: `'Inter', sans-serif`,
   },
   fontSizes: {
-    xxs: '.6rem',
-    xs: '.8rem',
-    s: '1rem',
-    m: '1.4rem',
-    l: '1.8rem',
-    xl: '2rem',
-    xxl: '3.5rem',
+    xxs: '.2rem',
+    xs: '.5rem',
+    s: '.8rem',
+    m: '1.2rem',
+    l: '1.5rem',
+    xl: '1.8rem',
+    xxl: '2rem',
   },
   spaces: {
-    xs: '.5%',
-    s: '.7%',
-    m: '1%',
-    l: '2%',
-    xl: '2.5%',
-    xxl: '5%',
+    xs: '.3rem',
+    s: '.5rem',
+    m: '.8rem',
+    l: '1rem',
+    xl: '1.5rem',
+    xxl: '2rem',
   },
 };
 
@@ -54,6 +56,12 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
+  #root {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: .5fr 8fr .5fr;
+  }
+
 	a {
 		color: inherit;
 		text-decoration: none;
@@ -61,6 +69,7 @@ export const GlobalStyle = createGlobalStyle`
 
 	ul {
 		padding: 0;
+    margin: 0;
 		list-style-type: none;
 	}
 `;
@@ -75,3 +84,7 @@ export const StyledComponentsProvider: React.FC<IStyledComponentsProvider> = ({
     </ThemeProvider>
   );
 };
+
+export const Main = styled.main`
+  padding: ${({ theme }) => theme.spaces.l};
+`;
