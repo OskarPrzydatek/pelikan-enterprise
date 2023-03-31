@@ -6,7 +6,7 @@ exports[`Input > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <input
-        class="sc-bcXHqe iCfSCC"
+        class="sc-gswNZR cOzVZI"
         data-testid="atom-input"
         id="atom-input"
         placeholder="Input atom component"
@@ -16,7 +16,7 @@ exports[`Input > component snapshot 1`] = `
   </body>,
   "container": <div>
     <input
-      class="sc-bcXHqe iCfSCC"
+      class="sc-gswNZR cOzVZI"
       data-testid="atom-input"
       id="atom-input"
       placeholder="Input atom component"

@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { describe, expect } from 'vitest';
+import { describe, test, expect } from 'vitest';
 
 import { StyledComponentsProvider } from '~/styles';
 

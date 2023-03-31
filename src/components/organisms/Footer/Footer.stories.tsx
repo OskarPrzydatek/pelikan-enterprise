@@ -5,7 +5,7 @@ import { StyledComponentsProvider } from '~/styles';
 import { Footer } from './Footer.component';
 
 const meta: Meta<typeof Footer> = {
-  title: 'Organismis/Footer',
+  title: 'Organisms/Footer',
   component: Footer,
 };
 

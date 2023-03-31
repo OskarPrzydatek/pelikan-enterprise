@@ -9,7 +9,7 @@ interface IFooter {
 export const Footer: React.FC<IFooter> = ({ version }: IFooter) => {
   return (
     <S.Footer>
-      <Text dataTestID="app-version">v{version}</Text>
+      <Text dataTestID="app-version">Pelikan Business v{version}</Text>
     </S.Footer>
   );
 };
