@@ -1,15 +1,9 @@
-import {
-  DefaultTheme,
-  FlattenInterpolation,
-  ThemeProps,
-} from 'styled-components';
+import { IComponent } from '~/models';
 
 import * as S from './Text.styles';
 
-interface IText {
+interface IText extends IComponent {
   children: string | React.ReactNode;
-  css?: FlattenInterpolation<ThemeProps<DefaultTheme>>;
-  dataTestID?: string;
 }
 
 export const Text: React.FC<IText> = ({ children, css, dataTestID }: IText) => {

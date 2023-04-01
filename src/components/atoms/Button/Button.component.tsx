@@ -1,16 +1,10 @@
-import {
-  DefaultTheme,
-  FlattenInterpolation,
-  ThemeProps,
-} from 'styled-components';
+import { IComponent } from '~/models';
 
 import * as S from './Button.styles';
 
-interface IButton {
+interface IButton extends IComponent {
   children: React.ReactNode;
   variant?: 'primary' | 'secondary' | 'ghost';
-  css?: FlattenInterpolation<ThemeProps<DefaultTheme>>;
-  dataTestID?: string;
   onClick: () => void;
 }
 

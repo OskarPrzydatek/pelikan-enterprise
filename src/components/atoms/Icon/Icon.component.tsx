@@ -1,14 +1,14 @@
 import { ReactComponent as CloseIcon } from '~/assets/close_icon.svg';
 import { ReactComponent as HamburgerIcon } from '~/assets/hamburger_icon.svg';
+import { IComponent } from '~/models';
 
 import { IconEnum } from './Icon.enum';
 import * as S from './Icon.styles';
 
-interface IIcon {
+interface IIcon extends IComponent {
   icon: IconEnum;
   width?: number;
   height?: number;
-  dataTestID?: string;
   onClick?: () => void;
 }
 

@@ -1,16 +1,10 @@
-import {
-  DefaultTheme,
-  FlattenInterpolation,
-  ThemeProps,
-} from 'styled-components';
+import { IComponent } from '~/models';
 
 import * as S from './Label.styles';
 
-interface ILabel {
+interface ILabel extends IComponent {
   htmlFor: string;
-  children: string;
-  css?: FlattenInterpolation<ThemeProps<DefaultTheme>>;
-  dataTestID?: string;
+  children: React.ReactNode;
 }
 
 export const Label: React.FC<ILabel> = ({

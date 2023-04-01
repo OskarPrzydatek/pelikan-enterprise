@@ -1,12 +1,8 @@
-import styled, {
-  DefaultTheme,
-  FlattenInterpolation,
-  ThemeProps,
-} from 'styled-components';
+import styled from 'styled-components';
 
-export const Field = styled.input<{
-  css?: FlattenInterpolation<ThemeProps<DefaultTheme>>;
-}>`
+import { ICSS } from '~/styles';
+
+export const Field = styled.input<ICSS>`
   appearance: none;
   border: none;
   width: 100%;

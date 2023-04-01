@@ -1,12 +1,8 @@
-import styled, {
-  DefaultTheme,
-  FlattenInterpolation,
-  ThemeProps,
-} from 'styled-components';
+import styled from 'styled-components';
 
-export const Text = styled.p<{
-  css?: FlattenInterpolation<ThemeProps<DefaultTheme>>;
-}>`
+import { ICSS } from '~/styles';
+
+export const Text = styled.p<ICSS>`
   margin: 0;
   padding: 0;
   font-family: ${({ theme }) => theme.fonts.main};

@@ -1,8 +1,9 @@
+import { IComponent } from '~/models';
+
 import * as S from './Header.styles';
 
-interface IHeder {
-  children: string;
-  dataTestID?: string;
+interface IHeder extends IComponent {
+  children: React.ReactNode;
 }
 
 export const Header: React.FC<IHeder> = ({ children, dataTestID }: IHeder) => {

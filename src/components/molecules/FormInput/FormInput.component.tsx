@@ -8,10 +8,11 @@ import {
 } from 'react-hook-form';
 
 import { Field, Label, Text } from '~/components/atoms';
+import { IComponent } from '~/models';
 
 import * as S from './FormInput.styles';
 
-interface IFormInput {
+interface IFormInput extends IComponent {
   name: Path<FieldValues>;
   label: string;
   register?: UseFormRegister<FieldValues>;

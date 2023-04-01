@@ -1,14 +1,12 @@
-import styled, {
-  DefaultTheme,
-  FlattenInterpolation,
-  ThemeProps,
-  css,
-} from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const Button = styled.button<{
+import { ICSS } from '~/styles';
+
+interface IButton extends ICSS {
   variant: 'primary' | 'secondary' | 'ghost';
-  css?: FlattenInterpolation<ThemeProps<DefaultTheme>>;
-}>`
+}
+
+export const Button = styled.button<IButton>`
   appearance: none;
   border: none;
   font-family: ${({ theme }) => theme.fonts.main};

@@ -2,7 +2,13 @@ import styled, {
   DefaultTheme,
   createGlobalStyle,
   ThemeProvider,
+  FlattenInterpolation,
+  ThemeProps,
 } from 'styled-components';
+
+interface IStyledComponentsProvider {
+  children: React.ReactNode;
+}
 
 export const theme: DefaultTheme = {
   colors: {
@@ -42,9 +48,9 @@ export const theme: DefaultTheme = {
   },
 };
 
-interface IStyledComponentsProvider {
-  children: React.ReactNode;
-}
+export interface ICSS {
+  css?: FlattenInterpolation<ThemeProps<DefaultTheme>>;
+} 
 
 export const GlobalStyle = createGlobalStyle`
   * {

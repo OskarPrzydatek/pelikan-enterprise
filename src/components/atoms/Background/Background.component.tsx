@@ -1,10 +1,12 @@
 import ReactDOM from 'react-dom';
 
+import { IComponent } from '~/models';
+
 import * as S from './Background.styles';
 
-interface IBackground {
+interface IBackground extends IComponent {
   children: React.ReactNode;
-  dataTestID?: string;
+  // dataTestID?: string;
   onClickBackground?: () => void;
 }
 

@@ -1,16 +1,10 @@
-import {
-  DefaultTheme,
-  FlattenInterpolation,
-  ThemeProps,
-} from 'styled-components';
+import { IComponent } from '~/models';
 
 import * as S from './Field.styles';
 
-interface IField {
+interface IField extends IComponent {
   id: string;
   placeholder: string;
-  css?: FlattenInterpolation<ThemeProps<DefaultTheme>>;
-  dataTestID?: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   onFocus?: () => void;
   onBlur?: () => void;

@@ -1,9 +1,10 @@
 import ProfilePictureSrc from '~/assets/profile_picture.png';
 import { Text } from '~/components/atoms';
+import { IComponent } from '~/models';
 
 import * as S from './ProfilePicture.styles';
 
-interface IProfilePicture {
+interface IProfilePicture extends IComponent {
   label: string;
 }
 

@@ -1,12 +1,8 @@
-import styled, {
-  DefaultTheme,
-  FlattenInterpolation,
-  ThemeProps,
-} from 'styled-components';
+import styled from 'styled-components';
 
-export const Label = styled.label<{
-  css?: FlattenInterpolation<ThemeProps<DefaultTheme>>;
-}>`
+import { ICSS } from '~/styles';
+
+export const Label = styled.label<ICSS>`
   font-weight: 600;
   color: ${({ theme }) => theme.colors.darkBlue};
   font-family: ${({ theme }) => theme.fonts.main};
