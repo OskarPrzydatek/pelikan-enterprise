@@ -47,8 +47,7 @@ exports[`HeaderBar > component snapshot 1`] = `
           class="sc-ftTHYK fReoLJ"
         >
           <p
-            class="sc-iBYQkv diua-dV"
-            style="color: rgb(1, 48, 89); font-weight: 700;"
+            class="sc-iBYQkv bgRiYn"
           >
             Witaj User
           </p>
@@ -104,8 +103,7 @@ exports[`HeaderBar > component snapshot 1`] = `
         class="sc-ftTHYK fReoLJ"
       >
         <p
-          class="sc-iBYQkv diua-dV"
-          style="color: rgb(1, 48, 89); font-weight: 700;"
+          class="sc-iBYQkv bgRiYn"
         >
           Witaj User
         </p>

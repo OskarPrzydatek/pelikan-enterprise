@@ -1,6 +1,5 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { useTheme } from 'styled-components';
 
 import { Icon, IconEnum } from '~/components/atoms';
 import { Paths } from '~/router';
@@ -9,15 +8,11 @@ import { SideMenu } from './SideMenu.component';
 
 export const HamburgerMenu: React.FC = () => {
   const navigate = useNavigate();
-  const theme = useTheme();
   const { pathname } = useLocation();
 
   const [isSideMenuOpen, setIsSideMenuOpen] = React.useState<boolean>(false);
 
-  const currentPageButtonStyle = (path: Paths) => ({
-    color:
-      pathname === `/${path}` ? theme.colors.lightBlue : theme.colors.black,
-  });
+  const isCurrentPage = (path: Paths) => pathname === `/${path}`;
 
   const onClickOpenSideMenu = () => {
     setIsSideMenuOpen(true);
@@ -47,7 +42,7 @@ export const HamburgerMenu: React.FC = () => {
       />
       {isSideMenuOpen && (
         <SideMenu
-          currentPageButtonStyle={currentPageButtonStyle}
+          isCurrentPage={isCurrentPage}
           onClickCloseSideMenu={onClickCloseSideMenu}
           onClickLogout={onClickLogout}
           onNavigate={onNavigate}

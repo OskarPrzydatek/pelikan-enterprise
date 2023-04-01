@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const SideMenu = styled.div`
   height: 100%;
@@ -31,4 +31,12 @@ export const NavItem = styled.li`
     margin-left: ${({ theme }) => theme.spaces.xl};
     font-weight: 700;
   }
+`;
+
+export const currentPageButtonCSS = css`
+  color: ${({ theme }) => theme.colors.lightBlue};
+`;
+
+export const pageButtonCSS = css`
+  color: ${({ theme }) => theme.colors.darkBlue};
 `;

@@ -10,13 +10,13 @@ import { Paths } from '~/router';
 import * as S from './SideMenu.styles';
 
 interface ISideMenuNavigationItem extends ISideMenuNavigationSection {
-  currentPageButtonStyle: (path: Paths) => React.CSSProperties;
+  isCurrentPage: (path: Paths) => boolean;
   onNavigate: (path: Paths) => void;
 }
 
 interface ISideMenu {
   onClickCloseSideMenu: () => void;
-  currentPageButtonStyle: (path: Paths) => React.CSSProperties;
+  isCurrentPage: (path: Paths) => boolean;
   onNavigate: (path: Paths) => void;
   onClickLogout: () => void;
 }
@@ -24,30 +24,36 @@ interface ISideMenu {
 const SideMenuNavigationItem: React.FC<ISideMenuNavigationItem> = ({
   title,
   items,
-  currentPageButtonStyle,
+  isCurrentPage,
   onNavigate,
 }: ISideMenuNavigationItem) => {
   return (
     <S.NavItem>
       <Header>{title}</Header>
-      {items.map(({ path, label }) => (
-        <Button
-          key={path}
-          dataTestID={`side-menu-item-${path}`}
-          style={currentPageButtonStyle(path)}
-          variant="ghost"
-          onClick={() => onNavigate(path)}
-        >
-          {label}
-        </Button>
-      ))}
+      {items.map(({ path, label }) => {
+        const handleIsCurrentPageCSS = isCurrentPage(path)
+          ? S.currentPageButtonCSS
+          : S.pageButtonCSS;
+
+        return (
+          <Button
+            key={path}
+            css={handleIsCurrentPageCSS}
+            dataTestID={`side-menu-item-${path}`}
+            variant="ghost"
+            onClick={() => onNavigate(path)}
+          >
+            {label}
+          </Button>
+        );
+      })}
     </S.NavItem>
   );
 };
 
 export const SideMenu: React.FC<ISideMenu> = ({
   onClickCloseSideMenu,
-  currentPageButtonStyle,
+  isCurrentPage,
   onNavigate,
   onClickLogout,
 }: ISideMenu) => {
@@ -68,7 +74,7 @@ export const SideMenu: React.FC<ISideMenu> = ({
             {sideMenuNavigationItemsMetadata.map(({ title, items }) => (
               <SideMenuNavigationItem
                 key={title}
-                currentPageButtonStyle={currentPageButtonStyle}
+                isCurrentPage={isCurrentPage}
                 items={items}
                 title={title}
                 onNavigate={onNavigate}

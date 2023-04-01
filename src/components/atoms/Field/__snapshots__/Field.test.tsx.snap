@@ -6,7 +6,7 @@ exports[`Field > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <input
-        class="sc-gswNZR cOzVZI"
+        class="sc-gswNZR gdtPGy"
         data-testid="atom-field"
         id="atom-field"
         placeholder="Field atom component"
@@ -16,7 +16,7 @@ exports[`Field > component snapshot 1`] = `
   </body>,
   "container": <div>
     <input
-      class="sc-gswNZR cOzVZI"
+      class="sc-gswNZR gdtPGy"
       data-testid="atom-field"
       id="atom-field"
       placeholder="Field atom component"

@@ -1,8 +1,15 @@
+import {
+  DefaultTheme,
+  FlattenInterpolation,
+  ThemeProps,
+} from 'styled-components';
+
 import * as S from './Field.styles';
 
 interface IField {
   id: string;
   placeholder: string;
+  css?: FlattenInterpolation<ThemeProps<DefaultTheme>>;
   dataTestID?: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   onFocus?: () => void;
@@ -12,6 +19,7 @@ interface IField {
 export const Field: React.FC<IField> = ({
   id,
   placeholder,
+  css,
   dataTestID,
   onChange,
   onFocus,
@@ -19,6 +27,7 @@ export const Field: React.FC<IField> = ({
 }: IField) => {
   return (
     <S.Field
+      css={css}
       data-testid={dataTestID}
       id={id}
       placeholder={placeholder}

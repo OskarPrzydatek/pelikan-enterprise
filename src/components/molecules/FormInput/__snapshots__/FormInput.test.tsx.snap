@@ -6,24 +6,26 @@ exports[`FormInput > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-eDvSVe eIJGYo"
+        class="sc-ftTHYK JzsMf"
       >
         <input
-          class="sc-gswNZR sc-gKPRtg cOzVZI iCCYbc"
+          class="sc-hLBbgP kHPccw"
           id="email"
           placeholder="Email"
+          type="text"
         />
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-eDvSVe eIJGYo"
+      class="sc-ftTHYK JzsMf"
     >
       <input
-        class="sc-gswNZR sc-gKPRtg cOzVZI iCCYbc"
+        class="sc-hLBbgP kHPccw"
         id="email"
         placeholder="Email"
+        type="text"
       />
     </div>
   </div>,

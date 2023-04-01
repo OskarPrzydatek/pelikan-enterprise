@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const ProfilePicture = styled.div`
   display: flex;
@@ -13,4 +13,9 @@ export const Image = styled.img`
   @media ${({ theme }) => theme.breakpoints.phone} {
     width: 2.5rem;
   }
+`;
+
+export const labelCSS = css`
+  color: ${({ theme }) => theme.colors.darkBlue} !important;
+  font-weight: 700;
 `;

@@ -1,11 +1,19 @@
-import styled, { css } from 'styled-components';
+import styled, {
+  DefaultTheme,
+  FlattenInterpolation,
+  ThemeProps,
+  css,
+} from 'styled-components';
 
 export const Button = styled.button<{
   variant: 'primary' | 'secondary' | 'ghost';
+  css?: FlattenInterpolation<ThemeProps<DefaultTheme>>;
 }>`
   appearance: none;
   border: none;
   font-family: ${({ theme }) => theme.fonts.main};
+
+  ${({ css }) => css}
 
   ${({ variant }) => {
     switch (variant) {

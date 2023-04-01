@@ -1,6 +1,12 @@
-import styled from 'styled-components';
+import styled, {
+  DefaultTheme,
+  FlattenInterpolation,
+  ThemeProps,
+} from 'styled-components';
 
-export const Field = styled.input`
+export const Field = styled.input<{
+  css?: FlattenInterpolation<ThemeProps<DefaultTheme>>;
+}>`
   appearance: none;
   border: none;
   width: 100%;
@@ -10,6 +16,8 @@ export const Field = styled.input`
   color: ${({ theme }) => theme.colors.black};
   border: 3px solid ${({ theme }) => theme.colors.darkBlue};
   font-size: ${({ theme }) => theme.fontSizes.xs};
+
+  ${({ css }) => css}
 
   @media ${({ theme }) => theme.breakpoints.phone} {
     font-size: ${({ theme }) => theme.fontSizes.xs};

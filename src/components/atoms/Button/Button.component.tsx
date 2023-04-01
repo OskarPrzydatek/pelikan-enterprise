@@ -1,9 +1,15 @@
+import {
+  DefaultTheme,
+  FlattenInterpolation,
+  ThemeProps,
+} from 'styled-components';
+
 import * as S from './Button.styles';
 
 interface IButton {
   children: React.ReactNode;
   variant?: 'primary' | 'secondary' | 'ghost';
-  style?: React.CSSProperties | undefined;
+  css?: FlattenInterpolation<ThemeProps<DefaultTheme>>;
   dataTestID?: string;
   onClick: () => void;
 }
@@ -11,14 +17,14 @@ interface IButton {
 export const Button: React.FC<IButton> = ({
   children,
   variant = 'primary',
-  style,
+  css,
   dataTestID,
   onClick,
 }: IButton) => {
   return (
     <S.Button
+      css={css}
       data-testid={dataTestID}
-      style={style}
       variant={variant}
       onClick={onClick}
     >

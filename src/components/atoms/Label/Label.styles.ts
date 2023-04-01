@@ -1,20 +1,16 @@
-import styled from 'styled-components';
+import styled, {
+  DefaultTheme,
+  FlattenInterpolation,
+  ThemeProps,
+} from 'styled-components';
 
-export const Label = styled.label`
+export const Label = styled.label<{
+  css?: FlattenInterpolation<ThemeProps<DefaultTheme>>;
+}>`
   font-weight: 600;
-  color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }) => theme.colors.darkBlue};
   font-family: ${({ theme }) => theme.fonts.main};
-  font-size: ${({ theme }) => theme.fontSizes.xxs};
+  font-size: ${({ theme }) => theme.fontSizes.s};
 
-  @media ${({ theme }) => theme.breakpoints.phone} {
-    font-size: ${({ theme }) => theme.fontSizes.xxs};
-  }
-
-  @media ${({ theme }) => theme.breakpoints.tablet} {
-    font-size: ${({ theme }) => theme.fontSizes.xs};
-  }
-
-  @media ${({ theme }) => theme.breakpoints.desktop} {
-    font-size: ${({ theme }) => theme.fontSizes.xs};
-  }
+  ${({ css }) => css}
 `;

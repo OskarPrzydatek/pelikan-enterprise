@@ -7,6 +7,8 @@ import {
   UseFormRegister,
 } from 'react-hook-form';
 
+import { Field, Label, Text } from '~/components/atoms';
+
 import * as S from './FormInput.styles';
 
 interface IFormInput {
@@ -39,29 +41,25 @@ export const FormInput: React.FC<IFormInput> = ({
   return (
     <S.FormInputWrapper>
       {isFocused && (
-        <S.FormInputLabel
-          data-testid={labelTestID}
-          htmlFor={name}
-          isFocused={isFocused}
-        >
+        <Label css={S.labelCSS} data-testid={labelTestID} htmlFor={name}>
           {label}
-        </S.FormInputLabel>
+        </Label>
       )}
 
-      <S.FormInput
+      <Field
         id={name}
         placeholder={placeholder}
         {...register}
+        css={errorName ? S.textFieldCSS : undefined}
         data-testid={inputTestID}
-        validationBorder={!!errorName}
         onBlur={handleIsFocused}
         onFocus={handleIsFocused}
       />
 
       {errorName && (
-        <S.ErrorMessage data-testid={errorMessageTestID}>
+        <Text css={S.errorMessageCSS} data-testid={errorMessageTestID}>
           {errorName.message}
-        </S.ErrorMessage>
+        </Text>
       )}
     </S.FormInputWrapper>
   );
