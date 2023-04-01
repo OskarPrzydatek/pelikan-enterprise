@@ -42,23 +42,21 @@ export const FormInput: React.FC<IFormInput> = ({
   return (
     <S.FormInputWrapper>
       {isFocused && (
-        <Label css={S.labelCSS} data-testid={labelTestID} htmlFor={name}>
+        <Label css={S.labelCSS} dataTestID={labelTestID} htmlFor={name}>
           {label}
         </Label>
       )}
-
       <Field
         id={name}
         placeholder={placeholder}
         {...register}
         css={errorName ? S.textFieldCSS : undefined}
-        data-testid={inputTestID}
+        dataTestID={inputTestID}
         onBlur={handleIsFocused}
         onFocus={handleIsFocused}
       />
-
       {errorName && (
-        <Text css={S.errorMessageCSS} data-testid={errorMessageTestID}>
+        <Text css={S.errorMessageCSS} dataTestID={errorMessageTestID}>
           {errorName.message}
         </Text>
       )}

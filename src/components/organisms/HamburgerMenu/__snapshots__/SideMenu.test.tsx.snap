@@ -53,13 +53,13 @@ exports[`SideMenu > component snapshot 1`] = `
                 Oferty
               </h1>
               <button
-                class="sc-dkrFOg khjJRO"
+                class="sc-dkrFOg fPqjZz"
                 data-testid="side-menu-item-create-offer"
               >
                 Dodaj Ofertę
               </button>
               <button
-                class="sc-dkrFOg khjJRO"
+                class="sc-dkrFOg fPqjZz"
                 data-testid="side-menu-item-list-offer"
               >
                 Lista Ofert
@@ -74,13 +74,13 @@ exports[`SideMenu > component snapshot 1`] = `
                 Hotele
               </h1>
               <button
-                class="sc-dkrFOg khjJRO"
+                class="sc-dkrFOg fPqjZz"
                 data-testid="side-menu-item-create-hotel"
               >
                 Dodaj Hotel
               </button>
               <button
-                class="sc-dkrFOg khjJRO"
+                class="sc-dkrFOg fPqjZz"
                 data-testid="side-menu-item-list-hotel"
               >
                 Lista Hoteli
@@ -95,13 +95,13 @@ exports[`SideMenu > component snapshot 1`] = `
                 Transport
               </h1>
               <button
-                class="sc-dkrFOg khjJRO"
+                class="sc-dkrFOg fPqjZz"
                 data-testid="side-menu-item-create-transport"
               >
                 Dodaj Transport
               </button>
               <button
-                class="sc-dkrFOg khjJRO"
+                class="sc-dkrFOg fPqjZz"
                 data-testid="side-menu-item-list-transport"
               >
                 Lista Transportów
@@ -116,13 +116,13 @@ exports[`SideMenu > component snapshot 1`] = `
                 Atrakcje
               </h1>
               <button
-                class="sc-dkrFOg khjJRO"
+                class="sc-dkrFOg fPqjZz"
                 data-testid="side-menu-item-create-attraction"
               >
                 Dodaj Atrakcję
               </button>
               <button
-                class="sc-dkrFOg khjJRO"
+                class="sc-dkrFOg fPqjZz"
                 data-testid="side-menu-item-list-attraction"
               >
                 Lista Atrakcji
@@ -137,13 +137,13 @@ exports[`SideMenu > component snapshot 1`] = `
                 Hash Tagi
               </h1>
               <button
-                class="sc-dkrFOg khjJRO"
+                class="sc-dkrFOg fPqjZz"
                 data-testid="side-menu-item-create-hashtag"
               >
                 Dodaj Hash Tag
               </button>
               <button
-                class="sc-dkrFOg khjJRO"
+                class="sc-dkrFOg fPqjZz"
                 data-testid="side-menu-item-list-hashtag"
               >
                 Lista Hash Tagów
