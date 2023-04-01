@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 
 import { StyledComponentsProvider } from '~/styles';
 
-import { FormInput } from './FormInput.component';
+import { FormInput } from '../components/molecules/FormInput/FormInput.component';
 
 interface IFormInputHooked {
   isError?: boolean;

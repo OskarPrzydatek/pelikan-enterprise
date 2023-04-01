@@ -37,6 +37,7 @@ export default defineConfig({
         'src/router',
         'src/models',
         'src/metadata',
+        'src/helpers',
         'src/*.{js,tsx}',
       ],
     },

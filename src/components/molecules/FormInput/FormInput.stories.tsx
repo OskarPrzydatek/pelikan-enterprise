@@ -1,5 +1,6 @@
+import { FormInputHooked } from '~/helpers';
+
 import { FormInput } from './FormInput.component';
-import { FormInputHooked } from './FormInput.helper';
 
 import type { Meta, StoryObj } from '@storybook/react';
 

@@ -1,10 +1,10 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { describe, expect, test } from 'vitest';
 
+import { FormInputHooked } from '~/helpers';
 import { StyledComponentsProvider } from '~/styles';
 
 import { FormInput } from './FormInput.component';
-import { FormInputHooked } from './FormInput.helper';
 
 describe('FormInput', () => {
   test('component snapshot', () => {
