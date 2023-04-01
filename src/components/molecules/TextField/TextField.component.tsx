@@ -10,9 +10,11 @@ import {
 import { Field, Label, Text } from '~/components/atoms';
 import { IComponent } from '~/models';
 
-import * as S from './FormInput.styles';
+import * as S from './TextField.styles';
 
-interface IFormInput extends IComponent {
+type ErrorNameType = DeepMap<FieldValues, FieldError> | undefined;
+
+interface ITextField extends IComponent {
   name: Path<FieldValues>;
   label: string;
   register?: UseFormRegister<FieldValues>;
@@ -22,7 +24,7 @@ interface IFormInput extends IComponent {
   errorMessageTestID?: string;
 }
 
-export const FormInput: React.FC<IFormInput> = ({
+export const TextField: React.FC<ITextField> = ({
   name,
   label,
   register,
@@ -30,17 +32,16 @@ export const FormInput: React.FC<IFormInput> = ({
   labelTestID,
   inputTestID,
   errorMessageTestID,
-}: IFormInput) => {
+}: ITextField) => {
   const [isFocused, setIsFocused] = React.useState<boolean>(false);
 
   const placeholder = isFocused ? '' : label;
-  const errorName =
-    error && (error[name] as DeepMap<FieldValues, FieldError> | undefined);
+  const errorName = error && (error[name] as ErrorNameType);
 
   const handleIsFocused = () => setIsFocused((prev: boolean) => !prev);
 
   return (
-    <S.FormInputWrapper>
+    <S.TextFieldWrapper>
       {isFocused && (
         <Label css={S.labelCSS} dataTestID={labelTestID} htmlFor={name}>
           {label}
@@ -60,6 +61,6 @@ export const FormInput: React.FC<IFormInput> = ({
           {errorName.message}
         </Text>
       )}
-    </S.FormInputWrapper>
+    </S.TextFieldWrapper>
   );
 };

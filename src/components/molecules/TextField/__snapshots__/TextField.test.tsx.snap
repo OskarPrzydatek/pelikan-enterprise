@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`FormInput > component snapshot 1`] = `
+exports[`TextField > component snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>

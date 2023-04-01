@@ -5,7 +5,7 @@ const onFocusMoveAnimation = keyframes`
  100% { top: -12.5%; opacity: 1 }
 `;
 
-export const FormInputWrapper = styled.div`
+export const TextFieldWrapper = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;

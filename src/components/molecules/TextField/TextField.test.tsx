@@ -1,16 +1,16 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { describe, expect, test } from 'vitest';
 
-import { FormInputHooked } from '~/helpers';
+import { TextFieldHooked } from '~/helpers';
 import { StyledComponentsProvider } from '~/styles';
 
-import { FormInput } from './FormInput.component';
+import { TextField } from './TextField.component';
 
-describe('FormInput', () => {
+describe('TextField', () => {
   test('component snapshot', () => {
     const view = render(
       <StyledComponentsProvider>
-        <FormInput label="Email" name="email" />
+        <TextField label="Email" name="email" />
       </StyledComponentsProvider>
     );
     expect(view).toMatchSnapshot();
@@ -19,7 +19,7 @@ describe('FormInput', () => {
   test('ensure input focusing works correctly', () => {
     render(
       <StyledComponentsProvider>
-        <FormInput
+        <TextField
           inputTestID="molecule-form-input"
           label="Email"
           labelTestID="molecule-form-input-label"
@@ -36,7 +36,7 @@ describe('FormInput', () => {
   });
 
   test('ensure validation error message works correctly', () => {
-    render(<FormInputHooked isError />);
+    render(<TextFieldHooked isError />);
     expect(
       screen.getByTestId('molecule-form-input-error-message')
     ).toBeInTheDocument();

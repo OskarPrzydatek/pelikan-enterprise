@@ -3,15 +3,15 @@ import { useForm } from 'react-hook-form';
 
 import { StyledComponentsProvider } from '~/styles';
 
-import { FormInput } from '../components/molecules/FormInput/FormInput.component';
+import { TextField } from '../components/molecules/TextField/TextField.component';
 
-interface IFormInputHooked {
+interface ITextFieldHooked {
   isError?: boolean;
 }
 
-export const FormInputHooked: React.FC<IFormInputHooked> = ({
+export const TextFieldHooked: React.FC<ITextFieldHooked> = ({
   isError,
-}: IFormInputHooked) => {
+}: ITextFieldHooked) => {
   const {
     register,
     setError,
@@ -28,7 +28,7 @@ export const FormInputHooked: React.FC<IFormInputHooked> = ({
 
   return (
     <StyledComponentsProvider>
-      <FormInput
+      <TextField
         error={errors}
         errorMessageTestID="molecule-form-input-error-message"
         label="Email"
