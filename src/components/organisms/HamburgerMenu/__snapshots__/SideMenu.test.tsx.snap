@@ -16,12 +16,12 @@ exports[`SideMenu > component snapshot 1`] = `
           class="sc-pyfCe dMgNQh"
         >
           <h1
-            class="sc-hLBbgP bWaUfJ"
+            class="sc-eDvSVe cDuoXV"
           >
             Pelikan Business
           </h1>
           <button
-            class="sc-eDvSVe bcqqiU"
+            class="sc-jSUZER kEKcxS"
             data-testid="side-menu-close-icon"
           >
             <svg
@@ -48,7 +48,7 @@ exports[`SideMenu > component snapshot 1`] = `
               class="sc-ipEyDJ jHcbia"
             >
               <h1
-                class="sc-hLBbgP bWaUfJ"
+                class="sc-eDvSVe cDuoXV"
               >
                 Oferty
               </h1>
@@ -69,7 +69,7 @@ exports[`SideMenu > component snapshot 1`] = `
               class="sc-ipEyDJ jHcbia"
             >
               <h1
-                class="sc-hLBbgP bWaUfJ"
+                class="sc-eDvSVe cDuoXV"
               >
                 Hotele
               </h1>
@@ -90,7 +90,7 @@ exports[`SideMenu > component snapshot 1`] = `
               class="sc-ipEyDJ jHcbia"
             >
               <h1
-                class="sc-hLBbgP bWaUfJ"
+                class="sc-eDvSVe cDuoXV"
               >
                 Transport
               </h1>
@@ -111,7 +111,7 @@ exports[`SideMenu > component snapshot 1`] = `
               class="sc-ipEyDJ jHcbia"
             >
               <h1
-                class="sc-hLBbgP bWaUfJ"
+                class="sc-eDvSVe cDuoXV"
               >
                 Atrakcje
               </h1>
@@ -132,7 +132,7 @@ exports[`SideMenu > component snapshot 1`] = `
               class="sc-ipEyDJ jHcbia"
             >
               <h1
-                class="sc-hLBbgP bWaUfJ"
+                class="sc-eDvSVe cDuoXV"
               >
                 Hash Tagi
               </h1>

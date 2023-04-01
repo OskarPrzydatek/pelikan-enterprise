@@ -1,23 +1,23 @@
 import { StyledComponentsProvider } from '~/styles';
 
-import { Input } from './Input.component';
+import { Field } from './Field.component';
 
 import type { Meta, StoryObj } from '@storybook/react';
 
-const meta: Meta<typeof Input> = {
-  title: 'Atoms/Input',
-  component: Input,
+const meta: Meta<typeof Field> = {
+  title: 'Atoms/Field',
+  component: Field,
 };
 
 export default meta;
-type Story = StoryObj<typeof Input>;
+type Story = StoryObj<typeof Field>;
 
-export const TextInput: Story = {
+export const FieldStory: Story = {
   render: () => (
     <StyledComponentsProvider>
-      <Input
-        id="text-input"
-        placeholder="Text Input"
+      <Field
+        id="field-input"
+        placeholder="Example Text Field"
         onBlur={() => console.log('onBlur')}
         onFocus={() => console.log('onFocus')}
         onChange={(event: React.ChangeEvent<HTMLInputElement>) =>

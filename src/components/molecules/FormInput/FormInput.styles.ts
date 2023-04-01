@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 
 // TODO: Change this with PH-16 task
-import { Input } from '~/components/atoms/Input/Input.styles';
+import { Field } from '~/components/atoms/Field/Field.styles';
 import { Label } from '~/components/atoms/Label/Label.styles';
 import { Text } from '~/components/atoms/Text/Text.styles';
 
@@ -39,7 +39,7 @@ export const FormInputLabel = styled(Label)<IStyledFormInputLabel>`
   animation-fill-mode: forwards;
 `;
 
-export const FormInput = styled(Input)<IStyledFormInput>`
+export const FormInput = styled(Field)<IStyledFormInput>`
   border-color: ${({ theme, validationBorder }) =>
     validationBorder ? theme.colors.red : theme.colors.darkBlue};
 `;

@@ -1,15 +1,15 @@
 // Vitest Snapshot v1
 
-exports[`Input > component snapshot 1`] = `
+exports[`Field > component snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <input
         class="sc-gswNZR cOzVZI"
-        data-testid="atom-input"
-        id="atom-input"
-        placeholder="Input atom component"
+        data-testid="atom-field"
+        id="atom-field"
+        placeholder="Field atom component"
         type="text"
       />
     </div>
@@ -17,9 +17,9 @@ exports[`Input > component snapshot 1`] = `
   "container": <div>
     <input
       class="sc-gswNZR cOzVZI"
-      data-testid="atom-input"
-      id="atom-input"
-      placeholder="Input atom component"
+      data-testid="atom-field"
+      id="atom-field"
+      placeholder="Field atom component"
       type="text"
     />
   </div>,

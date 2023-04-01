@@ -1,6 +1,6 @@
-import * as S from './Input.styles';
+import * as S from './Field.styles';
 
-interface IInput {
+interface IField {
   id: string;
   placeholder: string;
   dataTestID?: string;
@@ -9,16 +9,16 @@ interface IInput {
   onBlur?: () => void;
 }
 
-export const Input: React.FC<IInput> = ({
+export const Field: React.FC<IField> = ({
   id,
   placeholder,
   dataTestID,
   onChange,
   onFocus,
   onBlur,
-}: IInput) => {
+}: IField) => {
   return (
-    <S.Input
+    <S.Field
       data-testid={dataTestID}
       id={id}
       placeholder={placeholder}

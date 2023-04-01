@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Input = styled.input`
+export const Field = styled.input`
   appearance: none;
   border: none;
   width: 100%;
@@ -21,6 +21,11 @@ export const Input = styled.input`
 
   @media ${({ theme }) => theme.breakpoints.desktop} {
     font-size: ${({ theme }) => theme.fontSizes.m};
+  }
+
+  &::placeholder {
+    font-family: ${({ theme }) => theme.fonts.main};
+    color: ${({ theme }) => theme.colors.gray};
   }
 
   &:focus {
