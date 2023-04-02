@@ -1,31 +1,29 @@
 // Vitest Snapshot v1
 
-exports[`TextField > component snapshot 1`] = `
+exports[`TextArea > component snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-jrcTuL iCWxcF"
+        class="sc-ftTHYK iZXMmr"
       >
-        <input
-          class="sc-hLBbgP Ztmzf"
-          id="email"
-          placeholder="Email"
-          type="text"
+        <textarea
+          class="sc-pyfCe liKPaO"
+          id="description"
+          placeholder="Description"
         />
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-jrcTuL iCWxcF"
+      class="sc-ftTHYK iZXMmr"
     >
-      <input
-        class="sc-hLBbgP Ztmzf"
-        id="email"
-        placeholder="Email"
-        type="text"
+      <textarea
+        class="sc-pyfCe liKPaO"
+        id="description"
+        placeholder="Description"
       />
     </div>
   </div>,

@@ -7,10 +7,10 @@ import {
   UseFormRegister,
 } from 'react-hook-form';
 
-import { Field, Label, Text } from '~/components/atoms';
+import { Label, Text } from '~/components/atoms';
 import { IComponent } from '~/models';
 
-import * as S from './TextField.styles';
+import * as S from './TextArea.styles';
 
 type ErrorNameType = DeepMap<FieldValues, FieldError> | undefined;
 
@@ -21,42 +21,40 @@ interface ITextField extends IComponent {
   register?: UseFormRegister<FieldValues>;
   error?: Partial<DeepMap<FieldValues, FieldError>>;
   labelTestID?: string;
-  inputTestID?: string;
+  textareaTestID?: string;
   errorMessageTestID?: string;
 }
 
-export const TextField: React.FC<ITextField> = ({
+export const TextArea: React.FC<ITextField> = ({
   name,
   label,
-  type,
   register,
   error,
   labelTestID,
-  inputTestID,
+  textareaTestID,
   errorMessageTestID,
 }: ITextField) => {
   const [isFocused, setIsFocused] = React.useState<boolean>(false);
 
   const placeholder = isFocused ? '' : label;
   const errorName = error && (error[name] as ErrorNameType);
-  const isTextFieldErrorCSS = errorName ? S.textFieldErrorCSS : undefined;
+  const isTextAreaErrorCSS = errorName ? S.textAreaErrorCSS : undefined;
 
   const handleIsFocused = () => setIsFocused((prev: boolean) => !prev);
 
   return (
-    <S.TextFieldWrapper>
+    <S.TextAreaWrapper>
       {isFocused && (
         <Label css={S.labelCSS} dataTestID={labelTestID} htmlFor={name}>
           {label}
         </Label>
       )}
-      <Field
+      <S.TextArea
         id={name}
         placeholder={placeholder}
-        type={type}
         {...register}
-        css={isTextFieldErrorCSS}
-        dataTestID={inputTestID}
+        css={isTextAreaErrorCSS}
+        data-testid={textareaTestID}
         onBlur={handleIsFocused}
         onFocus={handleIsFocused}
       />
@@ -65,6 +63,6 @@ export const TextField: React.FC<ITextField> = ({
           {errorName.message}
         </Text>
       )}
-    </S.TextFieldWrapper>
+    </S.TextAreaWrapper>
   );
 };

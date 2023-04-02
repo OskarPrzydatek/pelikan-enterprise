@@ -1,16 +1,16 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { describe, expect, test } from 'vitest';
 
-import { TextFieldHooked } from '~/helpers';
+import { TextAreaHooked } from '~/helpers';
 import { StyledComponentsProvider } from '~/styles';
 
-import { TextField } from './TextField.component';
+import { TextArea } from './TextArea.component';
 
-describe('TextField', () => {
+describe('TextArea', () => {
   test('component snapshot', () => {
     const view = render(
       <StyledComponentsProvider>
-        <TextField label="Email" name="email" />
+        <TextArea label="Description" name="description" />
       </StyledComponentsProvider>
     );
     expect(view).toMatchSnapshot();
@@ -19,26 +19,26 @@ describe('TextField', () => {
   test('ensure input focusing works correctly', () => {
     render(
       <StyledComponentsProvider>
-        <TextField
-          inputTestID="molecule-textfield"
+        <TextArea
           label="Email"
-          labelTestID="molecule-textfield-label"
+          labelTestID="molecule-textarea-label"
           name="email"
+          textareaTestID="molecule-textarea"
         />
       </StyledComponentsProvider>
     );
-    const input = screen.getByTestId('molecule-textfield');
+    const input = screen.getByTestId('molecule-textarea');
     expect(
-      screen.queryByTestId('molecule-textfield-label')
+      screen.queryByTestId('molecule-textarea-label')
     ).not.toBeInTheDocument();
     fireEvent.focus(input);
-    expect(screen.getByTestId('molecule-textfield-label')).toBeInTheDocument();
+    expect(screen.getByTestId('molecule-textarea-label')).toBeInTheDocument();
   });
 
   test('ensure validation error message works correctly', () => {
-    render(<TextFieldHooked isError />);
+    render(<TextAreaHooked isError />);
     expect(
-      screen.getByTestId('molecule-textfield-error-message')
+      screen.getByTestId('molecule-textarea-error-message')
     ).toBeInTheDocument();
   });
 });

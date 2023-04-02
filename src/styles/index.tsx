@@ -50,7 +50,7 @@ export const theme: DefaultTheme = {
 
 export interface ICSS {
   css?: FlattenInterpolation<ThemeProps<DefaultTheme>>;
-} 
+}
 
 export const GlobalStyle = createGlobalStyle`
   * {

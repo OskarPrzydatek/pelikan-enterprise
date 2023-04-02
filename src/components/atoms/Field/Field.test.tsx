@@ -64,4 +64,32 @@ describe('Field', () => {
     expect(field).toHaveStyle(`border: 3px solid ${theme.colors.darkBlue}`);
     expect(mockOnBlur).toHaveBeenCalled();
   });
+
+  test('ensure field types works correctly', () => {
+    render(
+      <StyledComponentsProvider>
+        <Field
+          dataTestID="atom-field"
+          id="atom-field"
+          placeholder="field Atom Component"
+          type="number"
+          onBlur={mockOnBlur}
+          onFocus={mockOnFocus}
+        />
+      </StyledComponentsProvider>
+    );
+    const field: HTMLInputElement = screen.getByTestId('atom-field');
+    fireEvent.change(field, { target: { value: '-' } });
+    expect(field.value).toBe('');
+    fireEvent.change(field, { target: { value: '+' } });
+    expect(field.value).toBe('');
+    fireEvent.change(field, { target: { value: 'e' } });
+    expect(field.value).toBe('');
+    fireEvent.change(field, { target: { value: 'E' } });
+    expect(field.value).toBe('');
+    fireEvent.change(field, { target: { value: '1' } });
+    expect(field.value).toBe('1');
+    fireEvent.change(field, { target: { value: 'a' } });
+    expect(field.value).toBe('');
+  });
 });

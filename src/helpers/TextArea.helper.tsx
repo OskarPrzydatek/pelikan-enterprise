@@ -3,24 +3,24 @@ import { useForm } from 'react-hook-form';
 
 import { StyledComponentsProvider } from '~/styles';
 
-import { TextField } from '../components/molecules/TextField/TextField.component';
+import { TextArea } from '../components/molecules/TextArea/TextArea.component';
 
-interface ITextFieldHooked {
+interface ITextAreaHooked {
   isError?: boolean;
 }
 
-export const TextFieldHooked: React.FC<ITextFieldHooked> = ({
+export const TextAreaHooked: React.FC<ITextAreaHooked> = ({
   isError,
-}: ITextFieldHooked) => {
+}: ITextAreaHooked) => {
   const {
     register,
     setError,
     formState: { errors },
-  } = useForm<{ email: string }>();
+  } = useForm<{ description: string }>();
 
   React.useEffect(() => {
     if (isError)
-      setError('email', {
+      setError('description', {
         type: 'required',
         message: 'This is required',
       });
@@ -28,12 +28,12 @@ export const TextFieldHooked: React.FC<ITextFieldHooked> = ({
 
   return (
     <StyledComponentsProvider>
-      <TextField
+      <TextArea
         error={errors}
-        errorMessageTestID="molecule-textfield-error-message"
-        label="Email"
-        name="email"
-        {...(register('email'), { required: true })}
+        errorMessageTestID="molecule-textarea-error-message"
+        label="Description"
+        name="description"
+        {...(register('description'), { required: true })}
       />
     </StyledComponentsProvider>
   );

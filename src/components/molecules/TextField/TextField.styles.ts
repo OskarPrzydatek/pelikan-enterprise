@@ -26,7 +26,7 @@ export const labelCSS = css`
   animation-fill-mode: forwards;
 `;
 
-export const textFieldCSS = css`
+export const textFieldErrorCSS = css`
   border-color: ${({ theme }) => theme.colors.red};
 `;
 
