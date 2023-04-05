@@ -16,11 +16,11 @@ export const sideMenuNavigationItemsMetadata: ISideMenuNavigationSection[] = [
     items: [
       {
         path: 'create-offer' as Paths,
-        label: 'Dodaj Ofertę',
+        label: 'Dodaj ofertę',
       },
       {
         path: 'list-offer' as Paths,
-        label: 'Lista Ofert',
+        label: 'Lista ofert',
       },
     ],
   },
@@ -29,11 +29,11 @@ export const sideMenuNavigationItemsMetadata: ISideMenuNavigationSection[] = [
     items: [
       {
         path: 'create-hotel' as Paths,
-        label: 'Dodaj Hotel',
+        label: 'Dodaj hotel',
       },
       {
         path: 'list-hotel' as Paths,
-        label: 'Lista Hoteli',
+        label: 'Lista hoteli',
       },
     ],
   },
@@ -42,11 +42,11 @@ export const sideMenuNavigationItemsMetadata: ISideMenuNavigationSection[] = [
     items: [
       {
         path: 'create-transport' as Paths,
-        label: 'Dodaj Transport',
+        label: 'Dodaj transport',
       },
       {
         path: 'list-transport' as Paths,
-        label: 'Lista Transportów',
+        label: 'Lista transportów',
       },
     ],
   },
@@ -55,11 +55,11 @@ export const sideMenuNavigationItemsMetadata: ISideMenuNavigationSection[] = [
     items: [
       {
         path: 'create-attraction' as Paths,
-        label: 'Dodaj Atrakcję',
+        label: 'Dodaj atrakcję',
       },
       {
         path: 'list-attraction' as Paths,
-        label: 'Lista Atrakcji',
+        label: 'Lista atrakcji',
       },
     ],
   },
@@ -68,11 +68,11 @@ export const sideMenuNavigationItemsMetadata: ISideMenuNavigationSection[] = [
     items: [
       {
         path: 'create-hashtag' as Paths,
-        label: 'Dodaj Hash Tag',
+        label: 'Dodaj hashtag',
       },
       {
         path: 'list-hashtag' as Paths,
-        label: 'Lista Hash Tagów',
+        label: 'Lista hashtagów',
       },
     ],
   },
