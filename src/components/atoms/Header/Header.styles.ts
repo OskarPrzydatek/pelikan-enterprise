@@ -19,7 +19,7 @@ export const Header = styled.h1`
   }
 
   @media ${({ theme }) => theme.breakpoints.desktop} {
-    font-size: ${({ theme }) => theme.fontSizes.xl};
+    font-size: ${({ theme }) => theme.fontSizes.l};
     margin: ${({ theme }) => theme.spaces.s} 0;
   }
 `;

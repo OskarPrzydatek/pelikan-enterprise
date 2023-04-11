@@ -1,6 +1,13 @@
 import React from 'react';
 
-import { Background, Button, Header, Icon, IconEnum } from '~/components/atoms';
+import {
+  Background,
+  Button,
+  Header,
+  Icon,
+  IconEnum,
+  Text,
+} from '~/components/atoms';
 import {
   ISideMenuNavigationSection,
   sideMenuNavigationItemsMetadata,
@@ -82,7 +89,9 @@ export const SideMenu: React.FC<ISideMenu> = ({
             ))}
           </S.List>
         </S.Nav>
-        <Button onClick={onClickLogout}>Wyloguj</Button>
+        <Button onClick={onClickLogout}>
+          <Text css={S.logoutButtonCSS}>Wyloguj</Text>
+        </Button>
       </S.SideMenu>
     </Background>
   );

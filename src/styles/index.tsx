@@ -24,7 +24,7 @@ export const theme: DefaultTheme = {
   breakpoints: {
     phone: '(min-width: 390px)',
     tablet: '(min-width: 834px)',
-    desktop: '(min-width: 1728px)',
+    desktop: '(min-width: 1200px)',
   },
   fonts: {
     main: `'Inter', sans-serif`,
