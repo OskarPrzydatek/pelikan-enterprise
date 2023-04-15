@@ -46,7 +46,15 @@ const FieldRenderer: React.FC<IFieldRenderer> = ({
   label,
 }: IFieldRenderer) => {
   if (type === RenderFieldEnum.TEXT_INPUT)
-    return <TextField label={label} name={name} />;
+    return (
+      <TextField
+        label={label}
+        name={name}
+        registerOptions={{
+          required: { value: true, message: 'Pole jest wymagane!' },
+        }}
+      />
+    );
 
   return null;
 };

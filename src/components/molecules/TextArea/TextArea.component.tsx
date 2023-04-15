@@ -1,5 +1,5 @@
 import React from 'react';
-import { FieldValues, Path, useFormContext } from 'react-hook-form';
+import { FieldValues, RegisterOptions, useFormContext } from 'react-hook-form';
 
 import { Label, Text } from '~/components/atoms';
 import { IComponent } from '~/models';
@@ -7,8 +7,9 @@ import { IComponent } from '~/models';
 import * as S from './TextArea.styles';
 
 interface ITextField extends IComponent {
-  name: Path<FieldValues>;
+  name: string;
   label: string;
+  registerOptions: RegisterOptions<FieldValues, string>;
   labelTestID?: string;
   textareaTestID?: string;
   errorMessageTestID?: string;
@@ -17,6 +18,7 @@ interface ITextField extends IComponent {
 export const TextArea: React.FC<ITextField> = ({
   name,
   label,
+  registerOptions,
   labelTestID,
   textareaTestID,
   errorMessageTestID,
@@ -43,7 +45,7 @@ export const TextArea: React.FC<ITextField> = ({
       <S.TextArea
         id={name}
         placeholder={placeholder}
-        {...register(name)}
+        {...register(name, registerOptions)}
         css={isTextAreaErrorCSS}
         data-testid={textareaTestID}
         onBlur={handleIsFocused}

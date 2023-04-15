@@ -1,5 +1,5 @@
 import React from 'react';
-import { useFormContext } from 'react-hook-form';
+import { FieldValues, RegisterOptions, useFormContext } from 'react-hook-form';
 
 import { Label, Text } from '~/components/atoms';
 import { IComponent } from '~/models';
@@ -9,6 +9,7 @@ import * as S from './TextField.styles';
 interface ITextField extends IComponent {
   name: string;
   label: string;
+  registerOptions: RegisterOptions<FieldValues, string>;
   labelTestID?: string;
   inputTestID?: string;
   errorMessageTestID?: string;
@@ -17,6 +18,7 @@ interface ITextField extends IComponent {
 export const TextField: React.FC<ITextField> = ({
   name,
   label,
+  registerOptions,
   labelTestID,
   inputTestID,
   errorMessageTestID,
@@ -44,9 +46,8 @@ export const TextField: React.FC<ITextField> = ({
         css={isTextFieldErrorCSS}
         data-testid={inputTestID}
         id={name}
-        // name={name}
         placeholder={placeholder}
-        {...register(name)}
+        {...register(name, registerOptions)}
         onBlur={handleIsFocused}
         onFocus={handleIsFocused}
       />
