@@ -6,26 +6,28 @@ exports[`TextField > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-jrcTuL iCWxcF"
+        class="sc-pyfCe djFyKb"
       >
         <input
-          class="sc-hLBbgP Ztmzf"
+          class="sc-jrcTuL kCPafe"
+          data-testid="molecule-textfield"
           id="email"
+          name="email"
           placeholder="Email"
-          type="text"
         />
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-jrcTuL iCWxcF"
+      class="sc-pyfCe djFyKb"
     >
       <input
-        class="sc-hLBbgP Ztmzf"
+        class="sc-jrcTuL kCPafe"
+        data-testid="molecule-textfield"
         id="email"
+        name="email"
         placeholder="Email"
-        type="text"
       />
     </div>
   </div>,

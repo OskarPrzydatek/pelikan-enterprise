@@ -1,2 +1,2 @@
-export { TextAreaHooked } from './TextArea.helper';
-export { TextFieldHooked } from './TextField.helper';
+export { TextAreaHelper } from './TextArea.helper';
+export { TextFieldHelper } from './TextField.helper';

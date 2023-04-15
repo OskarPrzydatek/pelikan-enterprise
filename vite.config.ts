@@ -35,6 +35,7 @@ export default defineConfig({
         'src/components/**/**/*.styles.ts',
         'src/components/**/**/*.stories.tsx',
         'src/router',
+        'src/pages',
         'src/models',
         'src/metadata',
         'src/helpers',

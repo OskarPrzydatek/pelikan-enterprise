@@ -1,25 +1,14 @@
 import React from 'react';
-import {
-  DeepMap,
-  FieldError,
-  FieldValues,
-  Path,
-  UseFormRegister,
-} from 'react-hook-form';
+import { useFormContext } from 'react-hook-form';
 
-import { Field, Label, Text } from '~/components/atoms';
+import { Label, Text } from '~/components/atoms';
 import { IComponent } from '~/models';
 
 import * as S from './TextField.styles';
 
-type ErrorNameType = DeepMap<FieldValues, FieldError> | undefined;
-
 interface ITextField extends IComponent {
-  name: Path<FieldValues>;
+  name: string;
   label: string;
-  type?: 'text' | 'number';
-  register?: UseFormRegister<FieldValues>;
-  error?: Partial<DeepMap<FieldValues, FieldError>>;
   labelTestID?: string;
   inputTestID?: string;
   errorMessageTestID?: string;
@@ -28,18 +17,19 @@ interface ITextField extends IComponent {
 export const TextField: React.FC<ITextField> = ({
   name,
   label,
-  type,
-  register,
-  error,
   labelTestID,
   inputTestID,
   errorMessageTestID,
 }: ITextField) => {
+  const {
+    register,
+    formState: { errors },
+  } = useFormContext();
   const [isFocused, setIsFocused] = React.useState<boolean>(false);
 
   const placeholder = isFocused ? '' : label;
-  const errorName = error && (error[name] as ErrorNameType);
-  const isTextFieldErrorCSS = errorName ? S.textFieldErrorCSS : undefined;
+  const errorMessage = errors[name]?.message as string;
+  const isTextFieldErrorCSS = errors[name] ? S.textFieldErrorCSS : undefined;
 
   const handleIsFocused = () => setIsFocused((prev: boolean) => !prev);
 
@@ -50,21 +40,21 @@ export const TextField: React.FC<ITextField> = ({
           {label}
         </Label>
       )}
-      <Field
-        id={name}
-        placeholder={placeholder}
-        type={type}
-        {...register}
+      <S.Field
         css={isTextFieldErrorCSS}
-        dataTestID={inputTestID}
+        data-testid={inputTestID}
+        id={name}
+        // name={name}
+        placeholder={placeholder}
+        {...register(name)}
         onBlur={handleIsFocused}
         onFocus={handleIsFocused}
       />
-      {errorName && (
+      {errors[name] ? (
         <Text css={S.errorMessageCSS} dataTestID={errorMessageTestID}>
-          {errorName.message}
+          {errorMessage}
         </Text>
-      )}
+      ) : null}
     </S.TextFieldWrapper>
   );
 };

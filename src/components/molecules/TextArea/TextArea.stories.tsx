@@ -1,4 +1,4 @@
-import { TextAreaHooked } from '~/helpers';
+import { TextAreaHelper } from '~/helpers';
 
 import { TextArea } from './TextArea.component';
 
@@ -13,9 +13,9 @@ export default meta;
 type Story = StoryObj<typeof TextArea>;
 
 export const TextAreaStory: Story = {
-  render: () => <TextAreaHooked />,
+  render: () => <TextAreaHelper />,
 };
 
 export const ValidatedTextAreaStory: Story = {
-  render: () => <TextAreaHooked isError />,
+  render: () => <TextAreaHelper isError />,
 };

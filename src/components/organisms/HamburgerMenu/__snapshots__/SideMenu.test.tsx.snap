@@ -9,19 +9,19 @@ exports[`SideMenu > component snapshot 1`] = `
       class="sc-gswNZR gGMjic"
     >
       <div
-        class="sc-ftTHYK cxjxyv"
+        class="sc-iBYQkv iAmOpP"
         data-testid="hamburger-manu-side-menu"
       >
         <div
-          class="sc-pyfCe dMgNQh"
+          class="sc-ftTHYK bAPmQI"
         >
           <h1
-            class="sc-eDvSVe cDuoXV"
+            class="sc-hLBbgP bqmuv"
           >
             Pelikan Business
           </h1>
           <button
-            class="sc-jSUZER kEKcxS"
+            class="sc-eDvSVe bcqqiU"
             data-testid="side-menu-close-icon"
           >
             <svg
@@ -39,16 +39,16 @@ exports[`SideMenu > component snapshot 1`] = `
           </button>
         </div>
         <nav
-          class="sc-jrcTuL"
+          class="sc-pyfCe"
         >
           <ul
-            class="sc-kDvujY cWThKJ"
+            class="sc-jrcTuL"
           >
             <li
-              class="sc-ipEyDJ jHcbia"
+              class="sc-kDvujY kQQIMM"
             >
               <h1
-                class="sc-eDvSVe cDuoXV"
+                class="sc-hLBbgP bqmuv"
               >
                 Oferty
               </h1>
@@ -56,20 +56,20 @@ exports[`SideMenu > component snapshot 1`] = `
                 class="sc-dkrFOg fPqjZz"
                 data-testid="side-menu-item-create-offer"
               >
-                Dodaj Ofertę
+                Dodaj ofertę
               </button>
               <button
                 class="sc-dkrFOg fPqjZz"
                 data-testid="side-menu-item-list-offer"
               >
-                Lista Ofert
+                Lista ofert
               </button>
             </li>
             <li
-              class="sc-ipEyDJ jHcbia"
+              class="sc-kDvujY kQQIMM"
             >
               <h1
-                class="sc-eDvSVe cDuoXV"
+                class="sc-hLBbgP bqmuv"
               >
                 Hotele
               </h1>
@@ -77,20 +77,20 @@ exports[`SideMenu > component snapshot 1`] = `
                 class="sc-dkrFOg fPqjZz"
                 data-testid="side-menu-item-create-hotel"
               >
-                Dodaj Hotel
+                Dodaj hotel
               </button>
               <button
                 class="sc-dkrFOg fPqjZz"
                 data-testid="side-menu-item-list-hotel"
               >
-                Lista Hoteli
+                Lista hoteli
               </button>
             </li>
             <li
-              class="sc-ipEyDJ jHcbia"
+              class="sc-kDvujY kQQIMM"
             >
               <h1
-                class="sc-eDvSVe cDuoXV"
+                class="sc-hLBbgP bqmuv"
               >
                 Transport
               </h1>
@@ -98,20 +98,20 @@ exports[`SideMenu > component snapshot 1`] = `
                 class="sc-dkrFOg fPqjZz"
                 data-testid="side-menu-item-create-transport"
               >
-                Dodaj Transport
+                Dodaj transport
               </button>
               <button
                 class="sc-dkrFOg fPqjZz"
                 data-testid="side-menu-item-list-transport"
               >
-                Lista Transportów
+                Lista transportów
               </button>
             </li>
             <li
-              class="sc-ipEyDJ jHcbia"
+              class="sc-kDvujY kQQIMM"
             >
               <h1
-                class="sc-eDvSVe cDuoXV"
+                class="sc-hLBbgP bqmuv"
               >
                 Atrakcje
               </h1>
@@ -119,20 +119,20 @@ exports[`SideMenu > component snapshot 1`] = `
                 class="sc-dkrFOg fPqjZz"
                 data-testid="side-menu-item-create-attraction"
               >
-                Dodaj Atrakcję
+                Dodaj atrakcję
               </button>
               <button
                 class="sc-dkrFOg fPqjZz"
                 data-testid="side-menu-item-list-attraction"
               >
-                Lista Atrakcji
+                Lista atrakcji
               </button>
             </li>
             <li
-              class="sc-ipEyDJ jHcbia"
+              class="sc-kDvujY kQQIMM"
             >
               <h1
-                class="sc-eDvSVe cDuoXV"
+                class="sc-hLBbgP bqmuv"
               >
                 Hash Tagi
               </h1>
@@ -140,13 +140,13 @@ exports[`SideMenu > component snapshot 1`] = `
                 class="sc-dkrFOg fPqjZz"
                 data-testid="side-menu-item-create-hashtag"
               >
-                Dodaj Hash Tag
+                Dodaj hashtag
               </button>
               <button
                 class="sc-dkrFOg fPqjZz"
                 data-testid="side-menu-item-list-hashtag"
               >
-                Lista Hash Tagów
+                Lista hashtagów
               </button>
             </li>
           </ul>
@@ -154,7 +154,11 @@ exports[`SideMenu > component snapshot 1`] = `
         <button
           class="sc-dkrFOg bQeTLE"
         >
-          Wyloguj
+          <p
+            class="sc-gKPRtg iLqKeI"
+          >
+            Wyloguj
+          </p>
         </button>
       </div>
     </div>

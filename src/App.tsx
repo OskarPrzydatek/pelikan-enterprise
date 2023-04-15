@@ -14,7 +14,7 @@ const App: React.FC = () => {
             {/* Offer Routes */}
             <Route
               index
-              element={<Create title="Dodaj Ofertę" />}
+              element={<Create /*  title="Dodaj Ofertę" */ />}
               path={Paths.CREATE_OFFER}
             />
             <Route
@@ -30,7 +30,7 @@ const App: React.FC = () => {
 
             {/* Attraction Routes */}
             <Route
-              element={<Create title="Dodaj Atrakcję" />}
+              element={<Create /* title="Dodaj Atrakcję" */ />}
               path={Paths.CREATE_ATTRACTION}
             />
             <Route
@@ -49,7 +49,7 @@ const App: React.FC = () => {
 
             {/* Hotel Routes */}
             <Route
-              element={<Create title="Dodaj Hotel" />}
+              element={<Create /* title="Dodaj Hotel" */ />}
               path={Paths.CREATE_HOTEL}
             />
             <Route
@@ -68,7 +68,7 @@ const App: React.FC = () => {
 
             {/* Hashtag Routes */}
             <Route
-              element={<Create title="Dodaj Hashtag" />}
+              element={<Create /* title="Dodaj Hashtag" */ />}
               path={Paths.CREATE_HASH_TAG}
             />
             <Route
@@ -87,7 +87,7 @@ const App: React.FC = () => {
 
             {/* Transport Routes */}
             <Route
-              element={<Create title="Dodaj Transport" />}
+              element={<Create /* title="Dodaj Transport" */ />}
               path={Paths.CREATE_TRANSPORT}
             />
             <Route

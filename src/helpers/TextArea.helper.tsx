@@ -1,40 +1,38 @@
 import React from 'react';
-import { useForm } from 'react-hook-form';
+import { FormProvider, useForm } from 'react-hook-form';
 
 import { StyledComponentsProvider } from '~/styles';
 
 import { TextArea } from '../components/molecules/TextArea/TextArea.component';
 
-interface ITextAreaHooked {
+interface ITextAreaHelper {
   isError?: boolean;
 }
 
-export const TextAreaHooked: React.FC<ITextAreaHooked> = ({
+export const TextAreaHelper: React.FC<ITextAreaHelper> = ({
   isError,
-}: ITextAreaHooked) => {
-  const {
-    register,
-    setError,
-    formState: { errors },
-  } = useForm<{ description: string }>();
+}: ITextAreaHelper) => {
+  const methods = useForm<{ description: string }>();
 
   React.useEffect(() => {
     if (isError)
-      setError('description', {
+      methods.setError('description', {
         type: 'required',
         message: 'This is required',
       });
-  }, [isError, setError]);
+  }, [isError, methods]);
 
   return (
     <StyledComponentsProvider>
-      <TextArea
-        error={errors}
-        errorMessageTestID="molecule-textarea-error-message"
-        label="Description"
-        name="description"
-        {...(register('description'), { required: true })}
-      />
+      <FormProvider {...methods}>
+        <TextArea
+          errorMessageTestID="molecule-textarea-error-message"
+          label="Description"
+          labelTestID="molecule-textarea-label"
+          name="description"
+          textareaTestID="molecule-textarea"
+        />
+      </FormProvider>
     </StyledComponentsProvider>
   );
 };

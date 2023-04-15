@@ -1,13 +1,11 @@
-interface ICreateTemplate {
-  title: string;
-}
+import { Form } from '~/components/organisms';
 
-export const CreateTemplate: React.FC<ICreateTemplate> = ({
-  title,
-}: ICreateTemplate) => {
+import * as S from './CreateTemplate.styles';
+
+export const CreateTemplate: React.FC = () => {
   return (
-    <div>
-      <h2>{title}</h2>
-    </div>
+    <S.CreateTemplate>
+      <Form />
+    </S.CreateTemplate>
   );
 };

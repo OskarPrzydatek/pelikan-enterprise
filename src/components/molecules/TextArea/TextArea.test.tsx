@@ -1,32 +1,16 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { describe, expect, test } from 'vitest';
 
-import { TextAreaHooked } from '~/helpers';
-import { StyledComponentsProvider } from '~/styles';
-
-import { TextArea } from './TextArea.component';
+import { TextAreaHelper } from '~/helpers';
 
 describe('TextArea', () => {
   test('component snapshot', () => {
-    const view = render(
-      <StyledComponentsProvider>
-        <TextArea label="Description" name="description" />
-      </StyledComponentsProvider>
-    );
+    const view = render(<TextAreaHelper />);
     expect(view).toMatchSnapshot();
   });
 
   test('ensure input focusing works correctly', () => {
-    render(
-      <StyledComponentsProvider>
-        <TextArea
-          label="Email"
-          labelTestID="molecule-textarea-label"
-          name="email"
-          textareaTestID="molecule-textarea"
-        />
-      </StyledComponentsProvider>
-    );
+    render(<TextAreaHelper />);
     const input = screen.getByTestId('molecule-textarea');
     expect(
       screen.queryByTestId('molecule-textarea-label')
@@ -36,7 +20,7 @@ describe('TextArea', () => {
   });
 
   test('ensure validation error message works correctly', () => {
-    render(<TextAreaHooked isError />);
+    render(<TextAreaHelper isError />);
     expect(
       screen.getByTestId('molecule-textarea-error-message')
     ).toBeInTheDocument();

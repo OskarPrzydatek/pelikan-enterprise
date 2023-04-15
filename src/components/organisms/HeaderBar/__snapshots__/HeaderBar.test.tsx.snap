@@ -9,7 +9,7 @@ exports[`HeaderBar > component snapshot 1`] = `
         class="sc-fnGiBr dYazOA"
       >
         <button
-          class="sc-jSUZER kEKcxS"
+          class="sc-eDvSVe bcqqiU"
           data-testid="side-menu-hamburger-icon"
         >
           <svg
@@ -44,16 +44,16 @@ exports[`HeaderBar > component snapshot 1`] = `
           </svg>
         </button>
         <div
-          class="sc-ftTHYK fReoLJ"
+          class="sc-iBYQkv idRThP"
         >
           <p
-            class="sc-iBYQkv bgRiYn"
+            class="sc-gKPRtg emWfgr"
           >
             Witaj User
           </p>
           <img
             alt="profile"
-            class="sc-pyfCe jiCDTo"
+            class="sc-ftTHYK jkCxOh"
             src="/src/assets/profile_picture.png"
           />
         </div>
@@ -65,7 +65,7 @@ exports[`HeaderBar > component snapshot 1`] = `
       class="sc-fnGiBr dYazOA"
     >
       <button
-        class="sc-jSUZER kEKcxS"
+        class="sc-eDvSVe bcqqiU"
         data-testid="side-menu-hamburger-icon"
       >
         <svg
@@ -100,16 +100,16 @@ exports[`HeaderBar > component snapshot 1`] = `
         </svg>
       </button>
       <div
-        class="sc-ftTHYK fReoLJ"
+        class="sc-iBYQkv idRThP"
       >
         <p
-          class="sc-iBYQkv bgRiYn"
+          class="sc-gKPRtg emWfgr"
         >
           Witaj User
         </p>
         <img
           alt="profile"
-          class="sc-pyfCe jiCDTo"
+          class="sc-ftTHYK jkCxOh"
           src="/src/assets/profile_picture.png"
         />
       </div>

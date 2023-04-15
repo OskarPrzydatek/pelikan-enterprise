@@ -1,8 +1,13 @@
+import { useLocation } from 'react-router-dom';
+
 import { CreateTemplate } from '~/components/templates';
-import { IPage } from '~/models';
 
-interface ICreate extends IPage {}
+export const Create: React.FC = () => {
+  const { pathname } = useLocation();
 
-export const Create: React.FC<ICreate> = ({ title }: ICreate) => {
-  return <CreateTemplate title={title} />;
+  // TODO: Remove when truly used
+  // eslint-disable-next-line no-console
+  console.log(pathname);
+
+  return <CreateTemplate />;
 };

@@ -1,40 +1,38 @@
 import React from 'react';
-import { useForm } from 'react-hook-form';
+import { FormProvider, useForm } from 'react-hook-form';
 
 import { StyledComponentsProvider } from '~/styles';
 
 import { TextField } from '../components/molecules/TextField/TextField.component';
 
-interface ITextFieldHooked {
+interface ITextFieldHelper {
   isError?: boolean;
 }
 
-export const TextFieldHooked: React.FC<ITextFieldHooked> = ({
+export const TextFieldHelper: React.FC<ITextFieldHelper> = ({
   isError,
-}: ITextFieldHooked) => {
-  const {
-    register,
-    setError,
-    formState: { errors },
-  } = useForm<{ email: string }>();
+}: ITextFieldHelper) => {
+  const methods = useForm<{ email: string }>();
 
   React.useEffect(() => {
     if (isError)
-      setError('email', {
+      methods.setError('email', {
         type: 'required',
         message: 'This is required',
       });
-  }, [isError, setError]);
+  }, [isError, methods]);
 
   return (
     <StyledComponentsProvider>
-      <TextField
-        error={errors}
-        errorMessageTestID="molecule-textfield-error-message"
-        label="Email"
-        name="email"
-        {...(register('email'), { required: true })}
-      />
+      <FormProvider {...methods}>
+        <TextField
+          errorMessageTestID="molecule-textfield-error-message"
+          inputTestID="molecule-textfield"
+          label="Email"
+          labelTestID="molecule-textfield-label"
+          name="email"
+        />
+      </FormProvider>
     </StyledComponentsProvider>
   );
 };

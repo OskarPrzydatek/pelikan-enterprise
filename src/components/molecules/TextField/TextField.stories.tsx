@@ -1,4 +1,4 @@
-import { TextFieldHooked } from '~/helpers';
+import { TextFieldHelper } from '~/helpers';
 
 import { TextField } from './TextField.component';
 
@@ -13,9 +13,9 @@ export default meta;
 type Story = StoryObj<typeof TextField>;
 
 export const TextFieldStory: Story = {
-  render: () => <TextFieldHooked />,
+  render: () => <TextFieldHelper />,
 };
 
 export const ValidatedTextFieldStory: Story = {
-  render: () => <TextFieldHooked isError />,
+  render: () => <TextFieldHelper isError />,
 };
