@@ -28,16 +28,22 @@ describe('Icon', () => {
     expect(screen.queryByTestId('super-icon')).not.toBeInTheDocument();
     rerender(
       <StyledComponentsProvider>
-        <Icon icon={IconEnum.HAMBURGER} />
+        <Icon icon={IconEnum.CHEVRON} />
       </StyledComponentsProvider>
     );
-    expect(screen.getByTestId('hamburger-icon')).toBeInTheDocument();
+    expect(screen.getByTestId('chevron-icon')).toBeInTheDocument();
     rerender(
       <StyledComponentsProvider>
         <Icon icon={IconEnum.CLOSE} />
       </StyledComponentsProvider>
     );
     expect(screen.getByTestId('close-icon')).toBeInTheDocument();
+    rerender(
+      <StyledComponentsProvider>
+        <Icon icon={IconEnum.HAMBURGER} />
+      </StyledComponentsProvider>
+    );
+    expect(screen.getByTestId('hamburger-icon')).toBeInTheDocument();
   });
 
   test('ensure icon can be clickable', () => {

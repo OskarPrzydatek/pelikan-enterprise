@@ -6,7 +6,7 @@ exports[`HeaderBar > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <header
-        class="sc-fnGiBr dYazOA"
+        class="sc-dIfARi griebz"
       >
         <button
           class="sc-eDvSVe bcqqiU"
@@ -62,7 +62,7 @@ exports[`HeaderBar > component snapshot 1`] = `
   </body>,
   "container": <div>
     <header
-      class="sc-fnGiBr dYazOA"
+      class="sc-dIfARi griebz"
     >
       <button
         class="sc-eDvSVe bcqqiU"

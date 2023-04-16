@@ -10,6 +10,7 @@ export const Button = styled.button<IButton>`
   appearance: none;
   border: none;
   font-family: ${({ theme }) => theme.fonts.main};
+  cursor: pointer;
 
   ${({ css }) => css}
 

@@ -1,4 +1,5 @@
 export enum IconEnum {
-  HAMBURGER = 'HAMBURGER',
+  CHEVRON = 'CHEVRON',
   CLOSE = 'CLOSE',
+  HAMBURGER = 'HAMBURGER',
 }

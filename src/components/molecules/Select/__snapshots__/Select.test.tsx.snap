@@ -1,25 +1,71 @@
 // Vitest Snapshot v1
 
-exports[`Header > component snapshot 1`] = `
+exports[`Select > component snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <h2
-        class="sc-gswNZR kAAEQR"
-        data-testid="header-atom"
+      <div
+        class="sc-iBYQkv AihVo"
       >
-        String Header
-      </h2>
+        <span
+          class="sc-ftTHYK kYvTCk"
+        >
+          <svg
+            data-testid="chevron-icon"
+            fill="none"
+            viewBox="0 0 27 16"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M25 14L13.5 3L2 14"
+              stroke="#013059"
+              stroke-width="3"
+            />
+          </svg>
+        </span>
+        <input
+          class="sc-pyfCe kYHwcK"
+          data-testid="molecule-select"
+          name="destination"
+          placeholder="Default label"
+          readonly=""
+          value=""
+        />
+      </div>
     </div>
   </body>,
   "container": <div>
-    <h2
-      class="sc-gswNZR kAAEQR"
-      data-testid="header-atom"
+    <div
+      class="sc-iBYQkv AihVo"
     >
-      String Header
-    </h2>
+      <span
+        class="sc-ftTHYK kYvTCk"
+      >
+        <svg
+          data-testid="chevron-icon"
+          fill="none"
+          viewBox="0 0 27 16"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M25 14L13.5 3L2 14"
+            stroke="#013059"
+            stroke-width="3"
+          />
+        </svg>
+      </span>
+      <input
+        class="sc-pyfCe kYHwcK"
+        data-testid="molecule-select"
+        name="destination"
+        placeholder="Default label"
+        readonly=""
+        value=""
+      />
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

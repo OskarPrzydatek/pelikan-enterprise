@@ -31,6 +31,7 @@ export const TextFieldHelper: React.FC<ITextFieldHelper> = ({
           label="Email"
           labelTestID="molecule-textfield-label"
           name="email"
+          registerOptions={{}}
         />
       </FormProvider>
     </StyledComponentsProvider>

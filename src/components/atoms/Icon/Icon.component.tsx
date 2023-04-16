@@ -1,3 +1,4 @@
+import { ReactComponent as ChevronIcon } from '~/assets/chevron_icon.svg';
 import { ReactComponent as CloseIcon } from '~/assets/close_icon.svg';
 import { ReactComponent as HamburgerIcon } from '~/assets/hamburger_icon.svg';
 import { IComponent } from '~/models';
@@ -21,10 +22,10 @@ export const Icon: React.FC<IIcon> = ({
 }: IIcon) => {
   const renderIconByType = () => {
     switch (icon) {
-      case IconEnum.HAMBURGER: {
+      case IconEnum.CHEVRON: {
         return (
-          <HamburgerIcon
-            data-testid="hamburger-icon"
+          <ChevronIcon
+            data-testid="chevron-icon"
             height={height}
             width={width}
           />
@@ -33,6 +34,15 @@ export const Icon: React.FC<IIcon> = ({
       case IconEnum.CLOSE: {
         return (
           <CloseIcon data-testid="close-icon" height={height} width={width} />
+        );
+      }
+      case IconEnum.HAMBURGER: {
+        return (
+          <HamburgerIcon
+            data-testid="hamburger-icon"
+            height={height}
+            width={width}
+          />
         );
       }
       default: {

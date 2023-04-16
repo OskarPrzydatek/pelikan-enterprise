@@ -30,6 +30,7 @@ export const TextAreaHelper: React.FC<ITextAreaHelper> = ({
           label="Description"
           labelTestID="molecule-textarea-label"
           name="description"
+          registerOptions={{}}
           textareaTestID="molecule-textarea"
         />
       </FormProvider>
