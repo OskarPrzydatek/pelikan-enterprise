@@ -1,11 +1,49 @@
+import {
+  FieldValues,
+  FormProvider,
+  SubmitHandler,
+  UseFormReturn,
+} from 'react-hook-form';
+
 import { Form } from '~/components/organisms';
+import { IFieldMetadata } from '~/models';
+import { FieldRenderer } from '~/utils';
 
 import * as S from './CreateTemplate.styles';
 
-export const CreateTemplate: React.FC = () => {
+interface ICreateTemplate {
+  methods: UseFormReturn<FieldValues, unknown>;
+  title: string;
+  fields: IFieldMetadata[];
+  submitLabel: string;
+  onSubmit: SubmitHandler<FieldValues>;
+}
+
+export const CreateTemplate: React.FC<ICreateTemplate> = ({
+  methods,
+  title,
+  fields,
+  submitLabel,
+  onSubmit,
+}: ICreateTemplate) => {
   return (
     <S.CreateTemplate>
-      <Form />
+      <FormProvider {...methods}>
+        <Form
+          submitLabel={submitLabel}
+          title={title}
+          onSubmit={methods.handleSubmit(onSubmit)}
+        >
+          {fields.map(({ type, name, label }) => (
+            <FieldRenderer
+              key={`${name}-${label}`}
+              label={label}
+              name={name}
+              type={type}
+            />
+          ))}
+        </Form>
+      </FormProvider>
     </S.CreateTemplate>
   );
 };

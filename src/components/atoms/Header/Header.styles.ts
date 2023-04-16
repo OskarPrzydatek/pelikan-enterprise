@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Header = styled.h1`
+export const Header = styled.h2`
   margin: 0;
   font-family: ${({ theme }) => theme.fonts.main};
   color: ${({ theme }) => theme.colors.darkBlue};

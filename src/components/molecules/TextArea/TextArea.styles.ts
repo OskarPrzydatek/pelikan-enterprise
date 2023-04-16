@@ -8,6 +8,7 @@ const onFocusMoveAnimation = keyframes`
 `;
 
 export const TextAreaWrapper = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
