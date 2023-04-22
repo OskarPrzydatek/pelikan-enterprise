@@ -5,9 +5,8 @@ import {
   UseFormReturn,
 } from 'react-hook-form';
 
-import { Form } from '~/components/organisms';
+import { FieldRenderer, Form } from '~/components/organisms';
 import { IFieldMetadata } from '~/models';
-import { FieldRenderer } from '~/utils';
 
 import * as S from './CreateTemplate.styles';
 

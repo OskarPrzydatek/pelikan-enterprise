@@ -4,7 +4,7 @@ import {
   ThemeProps,
 } from 'styled-components';
 
-import { RenderFieldEnum } from '~/utils';
+import { RenderFieldEnum } from '~/components/organisms';
 
 export interface IPage {
   title: string;

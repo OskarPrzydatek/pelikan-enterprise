@@ -1,26 +1,24 @@
-import { RenderFieldEnum } from '~/utils';
-
 export const createOfferFormMetadata = {
   path: '/create-offer',
   title: 'Dodaj ofertę',
   fields: [
     {
-      type: RenderFieldEnum.TEXT_FIELD,
+      type: 'TEXT_FIELD',
       name: 'offerName',
       label: 'Nazwa oferty',
     },
     {
-      type: RenderFieldEnum.NUMERIC_FIELD,
+      type: 'NUMERIC_FIELD',
       name: 'price',
       label: 'Cena',
     },
     {
-      type: RenderFieldEnum.NUMERIC_FIELD,
+      type: 'NUMERIC_FIELD',
       name: 'numberOfTickets',
       label: 'Liczba miejsc',
     },
     {
-      type: RenderFieldEnum.SELECT,
+      type: 'SELECT',
       name: 'transport',
       label: 'Transportu',
       selectOptions: [
@@ -30,7 +28,7 @@ export const createOfferFormMetadata = {
       ],
     },
     {
-      type: RenderFieldEnum.SELECT,
+      type: 'SELECT',
       name: 'destination',
       label: 'Miejsce docelowe',
       selectOptions: [
@@ -39,7 +37,7 @@ export const createOfferFormMetadata = {
       ],
     },
     {
-      type: RenderFieldEnum.SELECT,
+      type: 'SELECT',
       name: 'hotel',
       label: 'Hotel',
       selectOptions: [
@@ -49,17 +47,17 @@ export const createOfferFormMetadata = {
       ],
     },
     {
-      type: RenderFieldEnum.DATE,
+      type: 'DATE',
       name: 'from',
       label: 'Od',
     },
     {
-      type: RenderFieldEnum.DATE,
+      type: 'DATE',
       name: 'to',
       label: 'Do',
     },
     {
-      type: RenderFieldEnum.TEXT_AREA,
+      type: 'TEXT_AREA',
       name: 'description',
       label: 'Opis oferty',
     },
@@ -72,12 +70,12 @@ export const createTransportFormMetadata = {
   title: 'Dodaj transport',
   fields: [
     {
-      type: RenderFieldEnum.TEXT_FIELD,
+      type: 'TEXT_FIELD',
       name: 'transportCompanyName',
       label: 'Nazwa firmy transportowej',
     },
     {
-      type: RenderFieldEnum.SELECT,
+      type: 'SELECT',
       name: 'transportKind',
       label: 'Rodzaj transportu',
       selectOptions: [
@@ -87,7 +85,7 @@ export const createTransportFormMetadata = {
       ],
     },
     {
-      type: RenderFieldEnum.SELECT,
+      type: 'SELECT',
       name: 'from',
       label: 'Miejsce początkowe',
       selectOptions: [
@@ -96,7 +94,7 @@ export const createTransportFormMetadata = {
       ],
     },
     {
-      type: RenderFieldEnum.SELECT,
+      type: 'SELECT',
       name: 'to',
       label: 'Miejsce docelowe',
       selectOptions: [
@@ -105,7 +103,7 @@ export const createTransportFormMetadata = {
       ],
     },
     {
-      type: RenderFieldEnum.NUMERIC_FIELD,
+      type: 'NUMERIC_FIELD',
       name: 'price',
       label: 'Cena od osoby',
     },
@@ -118,27 +116,27 @@ export const createHotelFormMetadata = {
   title: 'Dodaj hotel',
   fields: [
     {
-      type: RenderFieldEnum.TEXT_FIELD,
+      type: 'TEXT_FIELD',
       name: 'hotelName',
       label: 'Nazwa hotelu',
     },
     {
-      type: RenderFieldEnum.TEXT_FIELD,
+      type: 'TEXT_FIELD',
       name: 'address',
       label: 'Adres',
     },
     {
-      type: RenderFieldEnum.NUMERIC_FIELD,
+      type: 'NUMERIC_FIELD',
       name: 'pricePerPerson',
       label: 'Cena od osoby',
     },
     {
-      type: RenderFieldEnum.STAR_FIELD,
+      type: 'STAR_FIELD',
       name: 'starRating',
       label: 'Ilość gwiazdek',
     },
     {
-      type: RenderFieldEnum.TEXT_AREA,
+      type: 'TEXT_AREA',
       name: 'description',
       label: 'Opis',
     },
@@ -151,17 +149,17 @@ export const createAttractionFormMetadata = {
   title: 'Dodaj atrakcję',
   fields: [
     {
-      type: RenderFieldEnum.TEXT_FIELD,
+      type: 'TEXT_FIELD',
       name: 'attractionName',
       label: 'Nazwa atrakcji',
     },
     {
-      type: RenderFieldEnum.NUMERIC_FIELD,
+      type: 'NUMERIC_FIELD',
       name: 'price',
       label: 'Cena',
     },
     {
-      type: RenderFieldEnum.TEXT_AREA,
+      type: 'TEXT_AREA',
       name: 'description',
       label: 'Opis',
     },
@@ -174,7 +172,7 @@ export const createHashtagFormMetadata = {
   title: 'Dodaj hashtag',
   fields: [
     {
-      type: RenderFieldEnum.TEXT_FIELD,
+      type: 'TEXT_FIELD',
       name: 'hashtagName',
       label: 'Nazwa hashtagu',
     },

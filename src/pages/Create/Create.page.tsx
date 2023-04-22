@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 import { CreateTemplate } from '~/components/templates';
 import { useFormMetadata } from '~/hooks';
+import { IFieldMetadata } from '~/models';
 
 export const Create: React.FC = () => {
   const methods = useForm();
@@ -18,7 +19,7 @@ export const Create: React.FC = () => {
 
   return (
     <CreateTemplate
-      fields={fields}
+      fields={fields as IFieldMetadata[]}
       methods={methods}
       submitLabel={submitLabel}
       title={title}
