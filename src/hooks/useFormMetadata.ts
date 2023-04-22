@@ -1,18 +1,21 @@
 import {
-  attractionFormMetadata,
-  hashtagFormMetadata,
-  hotelFormMetadata,
+  createAttractionFormMetadata,
+  createHotelFormMetadata,
+  createHashtagFormMetadata,
   nonexistentFormMeta,
+  createTransportFormMetadata,
 } from '~/metadata';
 
 export const useFormMetadata = (path: string) => {
   switch (path) {
     case '/create-hashtag':
-      return hashtagFormMetadata;
+      return createHashtagFormMetadata;
     case '/create-attraction':
-      return attractionFormMetadata;
+      return createAttractionFormMetadata;
     case '/create-hotel':
-      return hotelFormMetadata;
+      return createHotelFormMetadata;
+    case '/create-transport':
+      return createTransportFormMetadata;
     default:
       return nonexistentFormMeta;
   }

@@ -34,11 +34,12 @@ export const CreateTemplate: React.FC<ICreateTemplate> = ({
           title={title}
           onSubmit={methods.handleSubmit(onSubmit)}
         >
-          {fields.map(({ type, name, label }) => (
+          {fields.map(({ type, name, label, selectOptions }) => (
             <FieldRenderer
               key={`${name}-${label}`}
               label={label}
               name={name}
+              selectOptions={selectOptions}
               type={type}
             />
           ))}

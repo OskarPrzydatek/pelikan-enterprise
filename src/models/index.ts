@@ -19,6 +19,7 @@ export interface IFieldMetadata {
   type: RenderFieldEnum;
   name: string;
   label: string;
+  selectOptions?: { label: string; value: string }[];
 }
 
 export interface IFormMetadata {
@@ -26,4 +27,5 @@ export interface IFormMetadata {
   title: string;
   fields: IFieldMetadata[];
   submitLabel: string;
+  selectOptions?: { label: string; value: string }[];
 }

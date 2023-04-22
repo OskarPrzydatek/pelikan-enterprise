@@ -1,4 +1,4 @@
-import { TextArea, TextField } from '~/components/molecules';
+import { Select, TextArea, TextField } from '~/components/molecules';
 
 export enum RenderFieldEnum {
   TEXT_FIELD = 'TEXT_FIELD',
@@ -12,12 +12,14 @@ interface IFieldRenderer {
   type: RenderFieldEnum;
   name: string;
   label: string;
+  selectOptions?: { label: string; value: string }[];
 }
 
 export const FieldRenderer: React.FC<IFieldRenderer> = ({
   type,
   name,
   label,
+  selectOptions = [],
 }: IFieldRenderer) => {
   switch (type) {
     case RenderFieldEnum.TEXT_FIELD:
@@ -72,7 +74,17 @@ export const FieldRenderer: React.FC<IFieldRenderer> = ({
           }}
         />
       );
-      case RenderFieldEnum.SELECT: 
+    case RenderFieldEnum.SELECT:
+      return (
+        <Select
+          label={label}
+          name={name}
+          selectOptions={selectOptions}
+          registerOptions={{
+            required: { value: true, message: 'Pole jest wymagane!' },
+          }}
+        />
+      );
     default:
       return null;
   }

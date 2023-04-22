@@ -5,7 +5,7 @@ import { Button, Icon, IconEnum, Label, Text } from '~/components/atoms';
 
 import * as S from './Select.styles';
 
-interface ISelectOptions {
+export interface ISelectOption {
   label: string;
   value: string;
 }
@@ -13,7 +13,7 @@ interface ISelectOptions {
 interface ISelect {
   name: string;
   label: string;
-  selectOptions: ISelectOptions[];
+  selectOptions: ISelectOption[];
   registerOptions: RegisterOptions<FieldValues, string>;
   selectTestID?: string;
   labelTestID?: string;

@@ -27,6 +27,7 @@ const rotateDownAnimation = keyframes`
 
 export const SelectWrapper = styled.div`
   position: relative;
+  width: 100%;
 `;
 
 export const SelectChevron = styled.span<ICSS>`
@@ -89,6 +90,8 @@ export const OptionsList = styled.ul`
   width: 100%;
   border: 3px solid ${({ theme }) => theme.colors.darkBlue};
   padding: 1rem;
+  z-index: 2;
+  background-color: ${({ theme }) => theme.colors.white};
 `;
 
 export const labelCSS = css`
