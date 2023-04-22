@@ -1,6 +1,5 @@
-import { TextAreaHelper } from '~/helpers';
-
 import { TextArea } from './TextArea.component';
+import { TextAreaHelper } from './TextArea.helper';
 
 import type { Meta, StoryObj } from '@storybook/react';
 

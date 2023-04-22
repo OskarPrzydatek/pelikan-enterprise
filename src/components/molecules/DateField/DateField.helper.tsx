@@ -3,7 +3,7 @@ import { FormProvider, useForm } from 'react-hook-form';
 
 import { StyledComponentsProvider } from '~/styles';
 
-import { DateField } from '../components/molecules/DateField/DateField.component';
+import { DateField } from './DateField.component';
 
 interface IDateFieldHelper {
   isError?: boolean;

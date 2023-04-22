@@ -3,7 +3,7 @@ import { FormProvider, useForm } from 'react-hook-form';
 
 import { StyledComponentsProvider } from '~/styles';
 
-import { TextField } from '../components/molecules/TextField/TextField.component';
+import { TextField } from './TextField.component';
 
 interface ITextFieldHelper {
   isError?: boolean;

@@ -3,7 +3,7 @@ import { FormProvider, useForm } from 'react-hook-form';
 
 import { StyledComponentsProvider } from '~/styles';
 
-import { Select } from '../components/molecules/Select/Select.component';
+import { Select } from './Select.component';
 
 interface ISelectHelper {
   isError?: boolean;

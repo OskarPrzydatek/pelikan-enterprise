@@ -3,7 +3,7 @@ import { FormProvider, useForm } from 'react-hook-form';
 
 import { StyledComponentsProvider } from '~/styles';
 
-import { TextArea } from '../components/molecules/TextArea/TextArea.component';
+import { TextArea } from './TextArea.component';
 
 interface ITextAreaHelper {
   isError?: boolean;

@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { describe, expect, test } from 'vitest';
 
-import { TextAreaHelper } from '~/helpers';
+import { TextAreaHelper } from './TextArea.helper';
 
 describe('TextArea', () => {
   test('component snapshot', () => {
