@@ -1,5 +1,72 @@
 import { RenderFieldEnum } from '~/utils';
 
+export const createOfferFormMetadata = {
+  path: '/create-offer',
+  title: 'Dodaj ofertę',
+  fields: [
+    {
+      type: RenderFieldEnum.TEXT_FIELD,
+      name: 'offerName',
+      label: 'Nazwa oferty',
+    },
+    {
+      type: RenderFieldEnum.NUMERIC_FIELD,
+      name: 'price',
+      label: 'Cena',
+    },
+    {
+      type: RenderFieldEnum.NUMERIC_FIELD,
+      name: 'numberOfTickets',
+      label: 'Liczba miejsc',
+    },
+    {
+      type: RenderFieldEnum.SELECT,
+      name: 'transport',
+      label: 'Transportu',
+      selectOptions: [
+        { value: 'TRANSPORT_A', label: 'Transport A' },
+        { value: 'TRANSPORT_B', label: 'Transport B' },
+        { value: 'TRANSPORT_C', label: 'Transport C' },
+      ],
+    },
+    {
+      type: RenderFieldEnum.SELECT,
+      name: 'destination',
+      label: 'Miejsce docelowe',
+      selectOptions: [
+        { value: 'PLACE_A', label: 'Miejsce A' },
+        { value: 'PLACE_B', label: 'Miejsce B' },
+      ],
+    },
+    {
+      type: RenderFieldEnum.SELECT,
+      name: 'hotel',
+      label: 'Hotel',
+      selectOptions: [
+        { value: 'HOTEL_A', label: 'Hotel A' },
+        { value: 'HOTEL_B', label: 'Hotel B' },
+        { value: 'HOTEL_C', label: 'Hotel C' },
+      ],
+    },
+    {
+      type: RenderFieldEnum.DATE,
+      name: 'from',
+      label: 'Od',
+    },
+    {
+      type: RenderFieldEnum.DATE,
+      name: 'to',
+      label: 'Do',
+    },
+    {
+      type: RenderFieldEnum.TEXT_AREA,
+      name: 'description',
+      label: 'Opis oferty',
+    },
+  ],
+  submitLabel: 'Dodaj ofertę',
+};
+
 export const createTransportFormMetadata = {
   path: '/create-transport',
   title: 'Dodaj transport',

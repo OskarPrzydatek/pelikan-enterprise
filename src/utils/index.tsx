@@ -1,4 +1,4 @@
-import { Select, TextArea, TextField } from '~/components/molecules';
+import { DateField, Select, TextArea, TextField } from '~/components/molecules';
 
 export enum RenderFieldEnum {
   TEXT_FIELD = 'TEXT_FIELD',
@@ -6,6 +6,7 @@ export enum RenderFieldEnum {
   STAR_FIELD = 'STAR_FIELD',
   TEXT_AREA = 'TEXT_AREA',
   SELECT = 'SELECT',
+  DATE = 'DATE',
 }
 
 interface IFieldRenderer {
@@ -80,6 +81,16 @@ export const FieldRenderer: React.FC<IFieldRenderer> = ({
           label={label}
           name={name}
           selectOptions={selectOptions}
+          registerOptions={{
+            required: { value: true, message: 'Pole jest wymagane!' },
+          }}
+        />
+      );
+    case RenderFieldEnum.DATE:
+      return (
+        <DateField
+          label={label}
+          name={name}
           registerOptions={{
             required: { value: true, message: 'Pole jest wymagane!' },
           }}

@@ -4,10 +4,13 @@ import {
   createHashtagFormMetadata,
   nonexistentFormMeta,
   createTransportFormMetadata,
+  createOfferFormMetadata,
 } from '~/metadata';
 
 export const useFormMetadata = (path: string) => {
   switch (path) {
+    case '/create-offer':
+      return createOfferFormMetadata;
     case '/create-hashtag':
       return createHashtagFormMetadata;
     case '/create-attraction':
