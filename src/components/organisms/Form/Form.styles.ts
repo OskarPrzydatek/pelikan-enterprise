@@ -6,7 +6,7 @@ export const Form = styled.form`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: ${({ theme }) => theme.spaces.s};
+  gap: ${({ theme }) => theme.spaces.m};
 `;
 
 export const SubmitButton = styled.input`

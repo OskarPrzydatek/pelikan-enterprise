@@ -9,11 +9,11 @@ exports[`SideMenu > component snapshot 1`] = `
       class="sc-gswNZR gGMjic"
     >
       <div
-        class="sc-fEXmlR kLmnDp"
+        class="sc-iBYQkv iAmOpP"
         data-testid="hamburger-manu-side-menu"
       >
         <div
-          class="sc-bjfHbI eLygKl"
+          class="sc-ftTHYK bAPmQI"
         >
           <h2
             class="sc-hLBbgP bqmuv"
@@ -39,13 +39,13 @@ exports[`SideMenu > component snapshot 1`] = `
           </button>
         </div>
         <nav
-          class="sc-idXgbr"
+          class="sc-pyfCe"
         >
           <ul
-            class="sc-dIfARi"
+            class="sc-jrcTuL"
           >
             <li
-              class="sc-hHTYSt fGYhVV"
+              class="sc-kDvujY kQQIMM"
             >
               <h2
                 class="sc-hLBbgP bqmuv"
@@ -66,7 +66,7 @@ exports[`SideMenu > component snapshot 1`] = `
               </button>
             </li>
             <li
-              class="sc-hHTYSt fGYhVV"
+              class="sc-kDvujY kQQIMM"
             >
               <h2
                 class="sc-hLBbgP bqmuv"
@@ -87,7 +87,7 @@ exports[`SideMenu > component snapshot 1`] = `
               </button>
             </li>
             <li
-              class="sc-hHTYSt fGYhVV"
+              class="sc-kDvujY kQQIMM"
             >
               <h2
                 class="sc-hLBbgP bqmuv"
@@ -108,7 +108,7 @@ exports[`SideMenu > component snapshot 1`] = `
               </button>
             </li>
             <li
-              class="sc-hHTYSt fGYhVV"
+              class="sc-kDvujY kQQIMM"
             >
               <h2
                 class="sc-hLBbgP bqmuv"
@@ -129,7 +129,7 @@ exports[`SideMenu > component snapshot 1`] = `
               </button>
             </li>
             <li
-              class="sc-hHTYSt fGYhVV"
+              class="sc-kDvujY kQQIMM"
             >
               <h2
                 class="sc-hLBbgP bqmuv"

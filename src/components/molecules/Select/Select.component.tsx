@@ -103,7 +103,7 @@ export const Select: React.FC<ISelect> = ({
             return (
               <li key={`${label}-${value}`}>
                 <Button
-                  dataTestID={`${optionItemTestID!}-${label}`}
+                  dataTestID={`${optionItemTestID ?? ''}-${label}`}
                   variant="ghost"
                   onClick={handleOnClickSelected}
                 >

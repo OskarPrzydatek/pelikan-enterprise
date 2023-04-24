@@ -12,10 +12,6 @@ export const TextFieldWrapper = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-
-  & > input {
-    margin-bottom: ${({ theme }) => theme.spaces.xs};
-  }
 `;
 
 export const Field = styled.input<ICSS>`

@@ -6,10 +6,10 @@ exports[`Select > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-pyfCe kbDvBy"
+        class="sc-iBYQkv didTRh"
       >
         <span
-          class="sc-jrcTuL jAHpjC"
+          class="sc-ftTHYK kYvTCk"
         >
           <svg
             data-testid="chevron-icon"
@@ -26,7 +26,7 @@ exports[`Select > component snapshot 1`] = `
           </svg>
         </span>
         <input
-          class="sc-kDvujY iOfqvw"
+          class="sc-pyfCe kYHwcK"
           data-testid="molecule-select"
           name="destination"
           placeholder="Default label"
@@ -38,10 +38,10 @@ exports[`Select > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-pyfCe kbDvBy"
+      class="sc-iBYQkv didTRh"
     >
       <span
-        class="sc-jrcTuL jAHpjC"
+        class="sc-ftTHYK kYvTCk"
       >
         <svg
           data-testid="chevron-icon"
@@ -58,7 +58,7 @@ exports[`Select > component snapshot 1`] = `
         </svg>
       </span>
       <input
-        class="sc-kDvujY iOfqvw"
+        class="sc-pyfCe kYHwcK"
         data-testid="molecule-select"
         name="destination"
         placeholder="Default label"

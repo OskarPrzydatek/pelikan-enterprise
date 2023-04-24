@@ -1,1 +1,1 @@
-export { useFormMetadata } from './useFormMetadata';
+export { useFormMetadata } from './useFormMetadata/useFormMetadata';

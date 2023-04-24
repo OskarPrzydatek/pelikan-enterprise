@@ -1,6 +1,13 @@
 import { DateField, Select, TextArea, TextField } from '~/components/molecules';
+import { IComponent } from '~/models';
 
-export enum RenderFieldEnum {
+import {
+  numericValidator,
+  requiredValidator,
+  starsValidator,
+} from './validators';
+
+export enum FieldRenderTypeEnum {
   TEXT_FIELD = 'TEXT_FIELD',
   NUMERIC_FIELD = 'NUMERIC_FIELD',
   STAR_FIELD = 'STAR_FIELD',
@@ -9,8 +16,8 @@ export enum RenderFieldEnum {
   DATE = 'DATE',
 }
 
-interface IFieldRenderer {
-  type: RenderFieldEnum;
+interface IFieldRenderer extends IComponent {
+  type: FieldRenderTypeEnum;
   name: string;
   label: string;
   selectOptions?: { label: string; value: string }[];
@@ -21,78 +28,73 @@ export const FieldRenderer: React.FC<IFieldRenderer> = ({
   name,
   label,
   selectOptions = [],
+  dataTestID,
 }: IFieldRenderer) => {
   switch (type) {
-    case RenderFieldEnum.TEXT_FIELD:
+    case FieldRenderTypeEnum.TEXT_FIELD:
       return (
         <TextField
+          inputTestID={dataTestID}
           label={label}
           name={name}
           registerOptions={{
-            required: { value: true, message: 'Pole jest wymagane!' },
+            ...requiredValidator,
           }}
         />
       );
-    case RenderFieldEnum.NUMERIC_FIELD:
+    case FieldRenderTypeEnum.NUMERIC_FIELD:
       return (
         <TextField
+          inputTestID={dataTestID}
           label={label}
           name={name}
           registerOptions={{
-            required: { value: true, message: 'Pole jest wymagane!' },
-            validate: {
-              isNumber: (value: unknown) =>
-                (!Number.isNaN(value as number) && Number(value) > 0) ||
-                'Pole musi zawierać wartość numeryczną większą od zera!',
-            },
+            ...numericValidator,
           }}
         />
       );
-    case RenderFieldEnum.STAR_FIELD:
+    case FieldRenderTypeEnum.STAR_FIELD:
       return (
         <TextField
+          inputTestID={dataTestID}
           label={label}
           name={name}
           registerOptions={{
-            required: { value: true, message: 'Pole jest wymagane!' },
-            validate: {
-              isNumber: (value: unknown) =>
-                (!Number.isNaN(value as number) &&
-                  Number(value) > 0 &&
-                  Number(value) < 6) ||
-                'Pole musi zawierać wartość numeryczną oraz być w przedziale 1-5!',
-            },
+            ...starsValidator,
           }}
         />
       );
-    case RenderFieldEnum.TEXT_AREA:
+    case FieldRenderTypeEnum.TEXT_AREA:
       return (
         <TextArea
           label={label}
           name={name}
+          textareaTestID={dataTestID}
           registerOptions={{
-            required: { value: true, message: 'Pole jest wymagane!' },
+            ...requiredValidator,
           }}
         />
       );
-    case RenderFieldEnum.SELECT:
+    case FieldRenderTypeEnum.SELECT:
       return (
         <Select
           label={label}
           name={name}
           selectOptions={selectOptions}
+          selectTestID={dataTestID}
           registerOptions={{
-            required: { value: true, message: 'Pole jest wymagane!' },
+            ...requiredValidator,
           }}
         />
       );
-    case RenderFieldEnum.DATE:
+    case FieldRenderTypeEnum.DATE:
       return (
         <DateField
+          inputTestID={dataTestID}
           label={label}
           name={name}
           registerOptions={{
-            required: { value: true, message: 'Pole jest wymagane!' },
+            ...requiredValidator,
           }}
         />
       );

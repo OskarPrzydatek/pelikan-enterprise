@@ -1,3 +1,4 @@
+import { FieldValues, RegisterOptions } from 'react-hook-form';
 import {
   DefaultTheme,
   FlattenInterpolation,
@@ -19,6 +20,7 @@ export interface IFieldMetadata {
   type: RenderFieldEnum;
   name: string;
   label: string;
+  registerOptions: RegisterOptions<FieldValues, string>;
   selectOptions?: { label: string; value: string }[];
 }
 
