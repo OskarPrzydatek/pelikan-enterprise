@@ -1,7 +1,7 @@
-import { Paths } from '~/router';
+import { Slugs } from '~/constants';
 
 interface ISideMenuNavigationItem {
-  path: Paths;
+  path: Slugs;
   label: string;
 }
 
@@ -15,11 +15,11 @@ export const sideMenuNavigationItemsMetadata: ISideMenuNavigationSection[] = [
     title: 'Oferty',
     items: [
       {
-        path: 'create-offer' as Paths,
+        path: 'create-offer' as Slugs,
         label: 'Dodaj ofertę',
       },
       {
-        path: 'list-offer' as Paths,
+        path: 'list-offer' as Slugs,
         label: 'Lista ofert',
       },
     ],
@@ -28,11 +28,11 @@ export const sideMenuNavigationItemsMetadata: ISideMenuNavigationSection[] = [
     title: 'Hotele',
     items: [
       {
-        path: 'create-hotel' as Paths,
+        path: 'create-hotel' as Slugs,
         label: 'Dodaj hotel',
       },
       {
-        path: 'list-hotel' as Paths,
+        path: 'list-hotel' as Slugs,
         label: 'Lista hoteli',
       },
     ],
@@ -41,11 +41,11 @@ export const sideMenuNavigationItemsMetadata: ISideMenuNavigationSection[] = [
     title: 'Transport',
     items: [
       {
-        path: 'create-transport' as Paths,
+        path: 'create-transport' as Slugs,
         label: 'Dodaj transport',
       },
       {
-        path: 'list-transport' as Paths,
+        path: 'list-transport' as Slugs,
         label: 'Lista transportów',
       },
     ],
@@ -54,11 +54,11 @@ export const sideMenuNavigationItemsMetadata: ISideMenuNavigationSection[] = [
     title: 'Atrakcje',
     items: [
       {
-        path: 'create-attraction' as Paths,
+        path: 'create-attraction' as Slugs,
         label: 'Dodaj atrakcję',
       },
       {
-        path: 'list-attraction' as Paths,
+        path: 'list-attraction' as Slugs,
         label: 'Lista atrakcji',
       },
     ],
@@ -67,11 +67,11 @@ export const sideMenuNavigationItemsMetadata: ISideMenuNavigationSection[] = [
     title: 'Hash Tagi',
     items: [
       {
-        path: 'create-hashtag' as Paths,
+        path: 'create-hashtag' as Slugs,
         label: 'Dodaj hashtag',
       },
       {
-        path: 'list-hashtag' as Paths,
+        path: 'list-hashtag' as Slugs,
         label: 'Lista hashtagów',
       },
     ],

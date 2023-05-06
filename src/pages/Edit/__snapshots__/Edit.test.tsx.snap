@@ -5,24 +5,32 @@ exports[`Edit > page snapshot 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
+      <div
+        class="sc-gswNZR llGrRm"
+      >
+        <div>
+          <h2>
+            Edit
+          </h2>
+          <p>
+            id: 
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-gswNZR llGrRm"
+    >
       <div>
         <h2>
-          Edit Mock
+          Edit
         </h2>
         <p>
           id: 
         </p>
       </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div>
-      <h2>
-        Edit Mock
-      </h2>
-      <p>
-        id: 
-      </p>
     </div>
   </div>,
   "debug": [Function],

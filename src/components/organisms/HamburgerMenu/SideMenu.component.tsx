@@ -8,23 +8,23 @@ import {
   IconEnum,
   Text,
 } from '~/components/atoms';
+import { Slugs } from '~/constants';
 import {
   ISideMenuNavigationSection,
   sideMenuNavigationItemsMetadata,
 } from '~/metadata';
-import { Paths } from '~/router';
 
 import * as S from './SideMenu.styles';
 
 interface ISideMenuNavigationItem extends ISideMenuNavigationSection {
-  isCurrentPage: (path: Paths) => boolean;
-  onNavigate: (path: Paths) => void;
+  isCurrentPage: (path: Slugs) => boolean;
+  onNavigate: (path: Slugs) => void;
 }
 
 interface ISideMenu {
   onClickCloseSideMenu: () => void;
-  isCurrentPage: (path: Paths) => boolean;
-  onNavigate: (path: Paths) => void;
+  isCurrentPage: (path: Slugs) => boolean;
+  onNavigate: (path: Slugs) => void;
   onClickLogout: () => void;
 }
 

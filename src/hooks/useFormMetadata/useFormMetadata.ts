@@ -6,20 +6,21 @@ import {
   createTransportFormMetadata,
   createOfferFormMetadata,
 } from '~/metadata';
+import { IFormMetadata } from '~/models';
 
 export const useFormMetadata = (path: string) => {
   switch (path) {
     case '/create-offer':
-      return createOfferFormMetadata;
+      return createOfferFormMetadata as IFormMetadata;
     case '/create-hashtag':
-      return createHashtagFormMetadata;
+      return createHashtagFormMetadata as IFormMetadata;
     case '/create-attraction':
-      return createAttractionFormMetadata;
+      return createAttractionFormMetadata as IFormMetadata;
     case '/create-hotel':
-      return createHotelFormMetadata;
+      return createHotelFormMetadata as IFormMetadata;
     case '/create-transport':
-      return createTransportFormMetadata;
+      return createTransportFormMetadata as IFormMetadata;
     default:
-      return nonexistentFormMeta;
+      return nonexistentFormMeta as IFormMetadata;
   }
 };

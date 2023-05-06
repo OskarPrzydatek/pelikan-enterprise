@@ -94,3 +94,11 @@ export const StyledComponentsProvider: React.FC<IStyledComponentsProvider> = ({
 export const Main = styled.main`
   padding: ${({ theme }) => theme.spaces.l};
 `;
+
+export const PageLayout = styled.div`
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;

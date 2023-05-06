@@ -1,9 +1,14 @@
-import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
+import {
+  FieldValues,
+  FormProvider,
+  SubmitHandler,
+  useForm,
+} from 'react-hook-form';
 import { useLocation } from 'react-router-dom';
 
-import { CreateTemplate } from '~/components/templates';
+import { FieldRenderer, Form } from '~/components/organisms';
 import { useFormMetadata } from '~/hooks';
-import { IFieldMetadata } from '~/models';
+import { PageLayout } from '~/styles';
 
 export const Create: React.FC = () => {
   const methods = useForm();
@@ -18,12 +23,24 @@ export const Create: React.FC = () => {
   console.log(pathname);
 
   return (
-    <CreateTemplate
-      fields={fields as IFieldMetadata[]}
-      methods={methods}
-      submitLabel={submitLabel}
-      title={title}
-      onSubmit={onSubmit}
-    />
+    <PageLayout>
+      <FormProvider {...methods}>
+        <Form
+          submitLabel={submitLabel}
+          title={title}
+          onSubmit={methods.handleSubmit(onSubmit)}
+        >
+          {fields.map(({ type, name, label, selectOptions }) => (
+            <FieldRenderer
+              key={`${name}-${label}`}
+              label={label}
+              name={name}
+              selectOptions={selectOptions}
+              type={type}
+            />
+          ))}
+        </Form>
+      </FormProvider>
+    </PageLayout>
   );
 };

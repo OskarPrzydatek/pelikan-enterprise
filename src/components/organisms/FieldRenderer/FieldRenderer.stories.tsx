@@ -1,4 +1,4 @@
-import { FieldTypeEnum } from '~/constants';
+import { FieldType } from '~/constants';
 
 import { FieldRenderer } from './FieldRenderer.component';
 import { FieldRendererHelper } from './FieldRenderer.helper';
@@ -15,25 +15,25 @@ type Story = StoryObj<typeof FieldRenderer>;
 
 export const FieldRendererTextField: Story = {
   render: () => (
-    <FieldRendererHelper name="text" type={FieldTypeEnum.TEXT_FIELD} />
+    <FieldRendererHelper name="text" type={FieldType.TEXT_FIELD} />
   ),
 };
 
 export const FieldRendererNumericField: Story = {
   render: () => (
-    <FieldRendererHelper name="text" type={FieldTypeEnum.NUMERIC_FIELD} />
+    <FieldRendererHelper name="text" type={FieldType.NUMERIC_FIELD} />
   ),
 };
 
 export const FieldRendererTextArea: Story = {
   render: () => (
-    <FieldRendererHelper name="text" type={FieldTypeEnum.TEXT_AREA} />
+    <FieldRendererHelper name="text" type={FieldType.TEXT_AREA} />
   ),
 };
 
 export const FieldRendererStarField: Story = {
   render: () => (
-    <FieldRendererHelper name="text" type={FieldTypeEnum.STAR_FIELD} />
+    <FieldRendererHelper name="text" type={FieldType.STAR_FIELD} />
   ),
 };
 
@@ -41,7 +41,7 @@ export const FieldRendererSelect: Story = {
   render: () => (
     <FieldRendererHelper
       name="text"
-      type={FieldTypeEnum.SELECT}
+      type={FieldType.SELECT}
       selectOptions={[
         { value: 'TRANSPORT_A', label: 'Transport A' },
         { value: 'TRANSPORT_B', label: 'Transport B' },
@@ -52,5 +52,5 @@ export const FieldRendererSelect: Story = {
 };
 
 export const FieldRendererDate: Story = {
-  render: () => <FieldRendererHelper name="text" type={FieldTypeEnum.DATE} />,
+  render: () => <FieldRendererHelper name="text" type={FieldType.DATE} />,
 };

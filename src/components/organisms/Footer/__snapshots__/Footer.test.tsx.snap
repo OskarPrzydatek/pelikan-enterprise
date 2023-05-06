@@ -6,10 +6,10 @@ exports[`Footer > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <footer
-        class="sc-iBYQkv bXUTfu"
+        class="sc-ftTHYK escSkc"
       >
         <p
-          class="sc-gKPRtg kWOIUv"
+          class="sc-iBYQkv jJWumE"
           data-testid="app-version"
         >
           Pelikan Business v
@@ -20,10 +20,10 @@ exports[`Footer > component snapshot 1`] = `
   </body>,
   "container": <div>
     <footer
-      class="sc-iBYQkv bXUTfu"
+      class="sc-ftTHYK escSkc"
     >
       <p
-        class="sc-gKPRtg kWOIUv"
+        class="sc-iBYQkv jJWumE"
         data-testid="app-version"
       >
         Pelikan Business v

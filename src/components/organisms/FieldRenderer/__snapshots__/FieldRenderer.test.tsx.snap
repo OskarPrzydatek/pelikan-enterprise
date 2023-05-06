@@ -6,10 +6,10 @@ exports[`FieldRenderer > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-kDvujY iyRaPN"
+        class="sc-ipEyDJ gLOvqF"
       >
         <textarea
-          class="sc-ipEyDJ eoYWCL"
+          class="sc-csuSiG hfgAEU"
           id="textField"
           name="textField"
           placeholder="Field renderer"
@@ -19,10 +19,10 @@ exports[`FieldRenderer > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-kDvujY iyRaPN"
+      class="sc-ipEyDJ gLOvqF"
     >
       <textarea
-        class="sc-ipEyDJ eoYWCL"
+        class="sc-csuSiG hfgAEU"
         id="textField"
         name="textField"
         placeholder="Field renderer"

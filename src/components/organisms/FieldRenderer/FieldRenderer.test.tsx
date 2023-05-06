@@ -1,14 +1,14 @@
 import { render, screen } from '@testing-library/react';
 import { describe, test, expect } from 'vitest';
 
-import { FieldTypeEnum } from '~/constants';
+import { FieldType } from '~/constants';
 
 import { FieldRendererHelper } from './FieldRenderer.helper';
 
 describe('FieldRenderer', () => {
   test('component snapshot', () => {
     const view = render(
-      <FieldRendererHelper name="textField" type={FieldTypeEnum.TEXT_AREA} />
+      <FieldRendererHelper name="textField" type={FieldType.TEXT_AREA} />
     );
     expect(view).toMatchSnapshot();
   });
@@ -20,7 +20,7 @@ describe('FieldRenderer', () => {
         <FieldRendererHelper
           dataTestID="orgaism-field-renderer-text-field"
           name="textField"
-          type={FieldTypeEnum.TEXT_FIELD}
+          type={FieldType.TEXT_FIELD}
         />
       );
       expect(
@@ -32,7 +32,7 @@ describe('FieldRenderer', () => {
         <FieldRendererHelper
           dataTestID="orgaism-field-renderer-numeric-field"
           name="numericField"
-          type={FieldTypeEnum.NUMERIC_FIELD}
+          type={FieldType.NUMERIC_FIELD}
         />
       );
       expect(
@@ -44,7 +44,7 @@ describe('FieldRenderer', () => {
         <FieldRendererHelper
           dataTestID="orgaism-field-renderer-star-field"
           name="starField"
-          type={FieldTypeEnum.STAR_FIELD}
+          type={FieldType.STAR_FIELD}
         />
       );
       expect(
@@ -56,7 +56,7 @@ describe('FieldRenderer', () => {
         <FieldRendererHelper
           dataTestID="orgaism-field-renderer-text-area"
           name="textArea"
-          type={FieldTypeEnum.TEXT_AREA}
+          type={FieldType.TEXT_AREA}
         />
       );
       expect(
@@ -68,7 +68,7 @@ describe('FieldRenderer', () => {
         <FieldRendererHelper
           dataTestID="orgaism-field-renderer-select"
           name="select"
-          type={FieldTypeEnum.SELECT}
+          type={FieldType.SELECT}
           selectOptions={[
             { label: 'Option 1', value: 'OPTION_1' },
             { label: 'Option 2', value: 'OPTION_2' },
@@ -84,7 +84,7 @@ describe('FieldRenderer', () => {
         <FieldRendererHelper
           dataTestID="orgaism-field-renderer-date"
           name="date"
-          type={FieldTypeEnum.DATE}
+          type={FieldType.DATE}
         />
       );
       expect(
@@ -95,7 +95,7 @@ describe('FieldRenderer', () => {
           <FieldRendererHelper
             dataTestID="orgaism-field-renderer-unknown-field"
             name="unknown"
-            type={'UNKNOWN' as FieldTypeEnum}
+            type={'UNKNOWN' as FieldType}
           />
         );
         expect(
@@ -108,7 +108,7 @@ describe('FieldRenderer', () => {
         <FieldRendererHelper
           dataTestID="orgaism-field-renderer-unknown-field"
           name="unknown"
-          type={'UNKNOWN' as FieldTypeEnum}
+          type={'UNKNOWN' as FieldType}
         />
       );
       expect(

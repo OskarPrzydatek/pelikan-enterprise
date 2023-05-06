@@ -1,11 +1,10 @@
-import { FieldValues, RegisterOptions } from 'react-hook-form';
 import {
   DefaultTheme,
   FlattenInterpolation,
   ThemeProps,
 } from 'styled-components';
 
-import { FieldTypeEnum } from '~/constants';
+import { FieldType } from '~/constants';
 
 export interface IPage {
   title: string;
@@ -16,12 +15,16 @@ export interface IComponent {
   dataTestID?: string;
 }
 
+export interface SelectOption {
+  label: string;
+  value: string;
+}
+
 export interface IFieldMetadata {
-  type: FieldTypeEnum;
+  type: FieldType;
   name: string;
   label: string;
-  registerOptions: RegisterOptions<FieldValues, string>;
-  selectOptions?: { label: string; value: string }[];
+  selectOptions?: SelectOption[];
 }
 
 export interface IFormMetadata {
@@ -29,5 +32,4 @@ export interface IFormMetadata {
   title: string;
   fields: IFieldMetadata[];
   submitLabel: string;
-  selectOptions?: { label: string; value: string }[];
 }

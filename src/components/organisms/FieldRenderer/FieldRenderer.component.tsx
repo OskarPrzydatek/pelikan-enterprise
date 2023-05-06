@@ -1,5 +1,5 @@
 import { DateField, Select, TextArea, TextField } from '~/components/molecules';
-import { FieldTypeEnum } from '~/constants';
+import { FieldType } from '~/constants';
 import { IComponent } from '~/models';
 import {
   numericValidator,
@@ -8,7 +8,7 @@ import {
 } from '~/validators';
 
 interface IFieldRenderer extends IComponent {
-  type: FieldTypeEnum;
+  type: FieldType;
   name: string;
   label: string;
   selectOptions?: { label: string; value: string }[];
@@ -22,7 +22,7 @@ export const FieldRenderer: React.FC<IFieldRenderer> = ({
   dataTestID,
 }: IFieldRenderer) => {
   switch (type) {
-    case FieldTypeEnum.TEXT_FIELD:
+    case FieldType.TEXT_FIELD:
       return (
         <TextField
           errorMessageTestID="field-renderer-text-field-error"
@@ -34,7 +34,7 @@ export const FieldRenderer: React.FC<IFieldRenderer> = ({
           }}
         />
       );
-    case FieldTypeEnum.NUMERIC_FIELD:
+    case FieldType.NUMERIC_FIELD:
       return (
         <TextField
           inputTestID={dataTestID}
@@ -45,7 +45,7 @@ export const FieldRenderer: React.FC<IFieldRenderer> = ({
           }}
         />
       );
-    case FieldTypeEnum.STAR_FIELD:
+    case FieldType.STAR_FIELD:
       return (
         <TextField
           inputTestID={dataTestID}
@@ -56,7 +56,7 @@ export const FieldRenderer: React.FC<IFieldRenderer> = ({
           }}
         />
       );
-    case FieldTypeEnum.TEXT_AREA:
+    case FieldType.TEXT_AREA:
       return (
         <TextArea
           label={label}
@@ -67,7 +67,7 @@ export const FieldRenderer: React.FC<IFieldRenderer> = ({
           }}
         />
       );
-    case FieldTypeEnum.SELECT:
+    case FieldType.SELECT:
       return (
         <Select
           label={label}
@@ -79,7 +79,7 @@ export const FieldRenderer: React.FC<IFieldRenderer> = ({
           }}
         />
       );
-    case FieldTypeEnum.DATE:
+    case FieldType.DATE:
       return (
         <DateField
           inputTestID={dataTestID}

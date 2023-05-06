@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 import { Icon, IconEnum } from '~/components/atoms';
-import { Paths } from '~/router';
+import { Slugs } from '~/constants';
 
 import { SideMenu } from './SideMenu.component';
 
@@ -12,7 +12,7 @@ export const HamburgerMenu: React.FC = () => {
 
   const [isSideMenuOpen, setIsSideMenuOpen] = React.useState<boolean>(false);
 
-  const isCurrentPage = (path: Paths) => pathname === `/${path}`;
+  const isCurrentPage = (path: Slugs) => pathname === `/${path}`;
 
   const onClickOpenSideMenu = () => {
     setIsSideMenuOpen(true);
@@ -22,7 +22,7 @@ export const HamburgerMenu: React.FC = () => {
     setIsSideMenuOpen(false);
   };
 
-  const onNavigate = (path: Paths) => {
+  const onNavigate = (path: Slugs) => {
     onClickCloseSideMenu();
     navigate(path);
   };
