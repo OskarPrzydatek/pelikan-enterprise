@@ -1,0 +1,8 @@
+export enum FieldTypeEnum {
+  TEXT_FIELD = 'TEXT_FIELD',
+  NUMERIC_FIELD = 'NUMERIC_FIELD',
+  STAR_FIELD = 'STAR_FIELD',
+  TEXT_AREA = 'TEXT_AREA',
+  SELECT = 'SELECT',
+  DATE = 'DATE',
+}

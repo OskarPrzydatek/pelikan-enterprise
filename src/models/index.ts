@@ -5,7 +5,7 @@ import {
   ThemeProps,
 } from 'styled-components';
 
-import { RenderFieldEnum } from '~/components/organisms';
+import { FieldTypeEnum } from '~/constants';
 
 export interface IPage {
   title: string;
@@ -17,7 +17,7 @@ export interface IComponent {
 }
 
 export interface IFieldMetadata {
-  type: RenderFieldEnum;
+  type: FieldTypeEnum;
   name: string;
   label: string;
   registerOptions: RegisterOptions<FieldValues, string>;

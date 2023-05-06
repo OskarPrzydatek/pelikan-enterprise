@@ -1,8 +1,9 @@
 import { Header } from '~/components/atoms';
+import { IComponent } from '~/models';
 
 import * as S from './Form.styles';
 
-interface IForm {
+interface IForm extends IComponent {
   title: string;
   submitLabel: string;
   children: React.ReactNode;

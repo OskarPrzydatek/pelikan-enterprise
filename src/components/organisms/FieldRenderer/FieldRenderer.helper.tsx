@@ -1,12 +1,13 @@
 import React from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 
+import { FieldTypeEnum } from '~/constants';
 import { StyledComponentsProvider } from '~/styles';
 
-import { FieldRenderer, FieldRenderTypeEnum } from './FieldRenderer.component';
+import { FieldRenderer } from './FieldRenderer.component';
 
 interface IFieldRendererHelper {
-  type: FieldRenderTypeEnum;
+  type: FieldTypeEnum;
   name: string;
   selectOptions?: { label: string; value: string }[];
   dataTestID?: string;

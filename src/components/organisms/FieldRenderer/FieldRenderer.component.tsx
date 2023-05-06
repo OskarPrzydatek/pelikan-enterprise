@@ -1,4 +1,5 @@
 import { DateField, Select, TextArea, TextField } from '~/components/molecules';
+import { FieldTypeEnum } from '~/constants';
 import { IComponent } from '~/models';
 
 import {
@@ -7,17 +8,17 @@ import {
   starsValidator,
 } from './validators';
 
-export enum FieldRenderTypeEnum {
+/* export enum FieldTypeEnum {
   TEXT_FIELD = 'TEXT_FIELD',
   NUMERIC_FIELD = 'NUMERIC_FIELD',
   STAR_FIELD = 'STAR_FIELD',
   TEXT_AREA = 'TEXT_AREA',
   SELECT = 'SELECT',
   DATE = 'DATE',
-}
+} */
 
 interface IFieldRenderer extends IComponent {
-  type: FieldRenderTypeEnum;
+  type: FieldTypeEnum;
   name: string;
   label: string;
   selectOptions?: { label: string; value: string }[];
@@ -31,7 +32,7 @@ export const FieldRenderer: React.FC<IFieldRenderer> = ({
   dataTestID,
 }: IFieldRenderer) => {
   switch (type) {
-    case FieldRenderTypeEnum.TEXT_FIELD:
+    case FieldTypeEnum.TEXT_FIELD:
       return (
         <TextField
           inputTestID={dataTestID}
@@ -42,7 +43,7 @@ export const FieldRenderer: React.FC<IFieldRenderer> = ({
           }}
         />
       );
-    case FieldRenderTypeEnum.NUMERIC_FIELD:
+    case FieldTypeEnum.NUMERIC_FIELD:
       return (
         <TextField
           inputTestID={dataTestID}
@@ -53,7 +54,7 @@ export const FieldRenderer: React.FC<IFieldRenderer> = ({
           }}
         />
       );
-    case FieldRenderTypeEnum.STAR_FIELD:
+    case FieldTypeEnum.STAR_FIELD:
       return (
         <TextField
           inputTestID={dataTestID}
@@ -64,7 +65,7 @@ export const FieldRenderer: React.FC<IFieldRenderer> = ({
           }}
         />
       );
-    case FieldRenderTypeEnum.TEXT_AREA:
+    case FieldTypeEnum.TEXT_AREA:
       return (
         <TextArea
           label={label}
@@ -75,7 +76,7 @@ export const FieldRenderer: React.FC<IFieldRenderer> = ({
           }}
         />
       );
-    case FieldRenderTypeEnum.SELECT:
+    case FieldTypeEnum.SELECT:
       return (
         <Select
           label={label}
@@ -87,7 +88,7 @@ export const FieldRenderer: React.FC<IFieldRenderer> = ({
           }}
         />
       );
-    case FieldRenderTypeEnum.DATE:
+    case FieldTypeEnum.DATE:
       return (
         <DateField
           inputTestID={dataTestID}
