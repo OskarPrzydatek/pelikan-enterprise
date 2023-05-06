@@ -14,8 +14,6 @@ describe('FieldRenderer', () => {
   });
   test('ensure select options is empty array in default', () => {});
 
-  // describe('FieldRenderer - fields validation', () => {});
-
   describe('FieldRenderer - correct type rendering', () => {
     test('ensure TEXT field renders correctly', () => {
       render(

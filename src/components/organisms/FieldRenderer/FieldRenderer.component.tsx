@@ -1,21 +1,11 @@
 import { DateField, Select, TextArea, TextField } from '~/components/molecules';
 import { FieldTypeEnum } from '~/constants';
 import { IComponent } from '~/models';
-
 import {
   numericValidator,
   requiredValidator,
   starsValidator,
-} from './validators';
-
-/* export enum FieldTypeEnum {
-  TEXT_FIELD = 'TEXT_FIELD',
-  NUMERIC_FIELD = 'NUMERIC_FIELD',
-  STAR_FIELD = 'STAR_FIELD',
-  TEXT_AREA = 'TEXT_AREA',
-  SELECT = 'SELECT',
-  DATE = 'DATE',
-} */
+} from '~/validators';
 
 interface IFieldRenderer extends IComponent {
   type: FieldTypeEnum;
@@ -35,6 +25,7 @@ export const FieldRenderer: React.FC<IFieldRenderer> = ({
     case FieldTypeEnum.TEXT_FIELD:
       return (
         <TextField
+          errorMessageTestID="field-renderer-text-field-error"
           inputTestID={dataTestID}
           label={label}
           name={name}
