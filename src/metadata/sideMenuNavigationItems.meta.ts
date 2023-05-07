@@ -1,26 +1,17 @@
-import { Paths } from '~/router';
+import { Slugs } from '~/constants';
+import { ISideMenuNavigationList } from '~/models';
 
-interface ISideMenuNavigationItem {
-  path: Paths;
-  label: string;
-}
-
-export interface ISideMenuNavigationSection {
-  title: string;
-  items: ISideMenuNavigationItem[];
-}
-
-export const sideMenuNavigationItemsMetadata: ISideMenuNavigationSection[] = [
+export const sideMenuNavigationItemsMetadata: ISideMenuNavigationList[] = [
   {
     title: 'Oferty',
     items: [
       {
-        path: 'create-offer' as Paths,
-        label: 'Dodaj Ofertę',
+        path: 'create-offer' as Slugs,
+        label: 'Dodaj ofertę',
       },
       {
-        path: 'list-offer' as Paths,
-        label: 'Lista Ofert',
+        path: 'list-offer' as Slugs,
+        label: 'Lista ofert',
       },
     ],
   },
@@ -28,12 +19,12 @@ export const sideMenuNavigationItemsMetadata: ISideMenuNavigationSection[] = [
     title: 'Hotele',
     items: [
       {
-        path: 'create-hotel' as Paths,
-        label: 'Dodaj Hotel',
+        path: 'create-hotel' as Slugs,
+        label: 'Dodaj hotel',
       },
       {
-        path: 'list-hotel' as Paths,
-        label: 'Lista Hoteli',
+        path: 'list-hotel' as Slugs,
+        label: 'Lista hoteli',
       },
     ],
   },
@@ -41,12 +32,12 @@ export const sideMenuNavigationItemsMetadata: ISideMenuNavigationSection[] = [
     title: 'Transport',
     items: [
       {
-        path: 'create-transport' as Paths,
-        label: 'Dodaj Transport',
+        path: 'create-transport' as Slugs,
+        label: 'Dodaj transport',
       },
       {
-        path: 'list-transport' as Paths,
-        label: 'Lista Transportów',
+        path: 'list-transport' as Slugs,
+        label: 'Lista transportów',
       },
     ],
   },
@@ -54,12 +45,12 @@ export const sideMenuNavigationItemsMetadata: ISideMenuNavigationSection[] = [
     title: 'Atrakcje',
     items: [
       {
-        path: 'create-attraction' as Paths,
-        label: 'Dodaj Atrakcję',
+        path: 'create-attraction' as Slugs,
+        label: 'Dodaj atrakcję',
       },
       {
-        path: 'list-attraction' as Paths,
-        label: 'Lista Atrakcji',
+        path: 'list-attraction' as Slugs,
+        label: 'Lista atrakcji',
       },
     ],
   },
@@ -67,12 +58,12 @@ export const sideMenuNavigationItemsMetadata: ISideMenuNavigationSection[] = [
     title: 'Hash Tagi',
     items: [
       {
-        path: 'create-hashtag' as Paths,
-        label: 'Dodaj Hash Tag',
+        path: 'create-hashtag' as Slugs,
+        label: 'Dodaj hashtag',
       },
       {
-        path: 'list-hashtag' as Paths,
-        label: 'Lista Hash Tagów',
+        path: 'list-hashtag' as Slugs,
+        label: 'Lista hashtagów',
       },
     ],
   },

@@ -6,22 +6,22 @@ exports[`SideMenu > component snapshot 1`] = `
   "baseElement": <body>
     <div />
     <div
-      class="sc-gswNZR gGMjic"
+      class="sc-dkrFOg kVejza"
     >
       <div
-        class="sc-ftTHYK cxjxyv"
+        class="sc-ftTHYK gMNxTd"
         data-testid="hamburger-manu-side-menu"
       >
         <div
           class="sc-pyfCe dMgNQh"
         >
-          <h1
-            class="sc-hLBbgP bWaUfJ"
+          <h2
+            class="sc-eDvSVe eUwfrD"
           >
             Pelikan Business
-          </h1>
+          </h2>
           <button
-            class="sc-eDvSVe bcqqiU"
+            class="sc-jSUZER kEKcxS"
             data-testid="side-menu-close-icon"
           >
             <svg
@@ -42,119 +42,124 @@ exports[`SideMenu > component snapshot 1`] = `
           class="sc-jrcTuL"
         >
           <ul
-            class="sc-kDvujY cWThKJ"
+            class="sc-kDvujY"
           >
             <li
-              class="sc-ipEyDJ jHcbia"
+              class="sc-ipEyDJ fEIdYs"
             >
-              <h1
-                class="sc-hLBbgP bWaUfJ"
+              <h2
+                class="sc-eDvSVe eUwfrD"
               >
                 Oferty
-              </h1>
+              </h2>
               <button
-                class="sc-dkrFOg hbaBB"
+                class="sc-hLBbgP cDyyyF"
                 data-testid="side-menu-item-create-offer"
               >
-                Dodaj Ofertę
+                Dodaj ofertę
               </button>
               <button
-                class="sc-dkrFOg hbaBB"
+                class="sc-hLBbgP cDyyyF"
                 data-testid="side-menu-item-list-offer"
               >
-                Lista Ofert
+                Lista ofert
               </button>
             </li>
             <li
-              class="sc-ipEyDJ jHcbia"
+              class="sc-ipEyDJ fEIdYs"
             >
-              <h1
-                class="sc-hLBbgP bWaUfJ"
+              <h2
+                class="sc-eDvSVe eUwfrD"
               >
                 Hotele
-              </h1>
+              </h2>
               <button
-                class="sc-dkrFOg hbaBB"
+                class="sc-hLBbgP cDyyyF"
                 data-testid="side-menu-item-create-hotel"
               >
-                Dodaj Hotel
+                Dodaj hotel
               </button>
               <button
-                class="sc-dkrFOg hbaBB"
+                class="sc-hLBbgP cDyyyF"
                 data-testid="side-menu-item-list-hotel"
               >
-                Lista Hoteli
+                Lista hoteli
               </button>
             </li>
             <li
-              class="sc-ipEyDJ jHcbia"
+              class="sc-ipEyDJ fEIdYs"
             >
-              <h1
-                class="sc-hLBbgP bWaUfJ"
+              <h2
+                class="sc-eDvSVe eUwfrD"
               >
                 Transport
-              </h1>
+              </h2>
               <button
-                class="sc-dkrFOg hbaBB"
+                class="sc-hLBbgP cDyyyF"
                 data-testid="side-menu-item-create-transport"
               >
-                Dodaj Transport
+                Dodaj transport
               </button>
               <button
-                class="sc-dkrFOg hbaBB"
+                class="sc-hLBbgP cDyyyF"
                 data-testid="side-menu-item-list-transport"
               >
-                Lista Transportów
+                Lista transportów
               </button>
             </li>
             <li
-              class="sc-ipEyDJ jHcbia"
+              class="sc-ipEyDJ fEIdYs"
             >
-              <h1
-                class="sc-hLBbgP bWaUfJ"
+              <h2
+                class="sc-eDvSVe eUwfrD"
               >
                 Atrakcje
-              </h1>
+              </h2>
               <button
-                class="sc-dkrFOg hbaBB"
+                class="sc-hLBbgP cDyyyF"
                 data-testid="side-menu-item-create-attraction"
               >
-                Dodaj Atrakcję
+                Dodaj atrakcję
               </button>
               <button
-                class="sc-dkrFOg hbaBB"
+                class="sc-hLBbgP cDyyyF"
                 data-testid="side-menu-item-list-attraction"
               >
-                Lista Atrakcji
+                Lista atrakcji
               </button>
             </li>
             <li
-              class="sc-ipEyDJ jHcbia"
+              class="sc-ipEyDJ fEIdYs"
             >
-              <h1
-                class="sc-hLBbgP bWaUfJ"
+              <h2
+                class="sc-eDvSVe eUwfrD"
               >
                 Hash Tagi
-              </h1>
+              </h2>
               <button
-                class="sc-dkrFOg hbaBB"
+                class="sc-hLBbgP cDyyyF"
                 data-testid="side-menu-item-create-hashtag"
               >
-                Dodaj Hash Tag
+                Dodaj hashtag
               </button>
               <button
-                class="sc-dkrFOg hbaBB"
+                class="sc-hLBbgP cDyyyF"
                 data-testid="side-menu-item-list-hashtag"
               >
-                Lista Hash Tagów
+                Lista hashtagów
               </button>
             </li>
           </ul>
         </nav>
         <button
-          class="sc-dkrFOg GlDzn"
+          class="sc-hLBbgP jzszre"
+          data-testid="side-menu-logout-button"
         >
-          Wyloguj
+          <p
+            class="sc-iBYQkv gPgnab"
+          >
+            Wyloguj
+          </p>
         </button>
       </div>
     </div>

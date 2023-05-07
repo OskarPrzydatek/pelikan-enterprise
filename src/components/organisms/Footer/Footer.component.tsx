@@ -1,8 +1,9 @@
 import { Text } from '~/components/atoms';
+import { IComponent } from '~/models';
 
 import * as S from './Footer.styles';
 
-interface IFooter {
+interface IFooter extends IComponent {
   version: string;
 }
 

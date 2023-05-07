@@ -6,10 +6,10 @@ exports[`HeaderBar > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <header
-        class="sc-bqWxrE gOWFEp"
+        class="sc-kgTSHT vOhNV"
       >
         <button
-          class="sc-eDvSVe bcqqiU"
+          class="sc-jSUZER kEKcxS"
           data-testid="side-menu-hamburger-icon"
         >
           <svg
@@ -44,17 +44,16 @@ exports[`HeaderBar > component snapshot 1`] = `
           </svg>
         </button>
         <div
-          class="sc-ftTHYK fReoLJ"
+          class="sc-jrcTuL fEASvP"
         >
           <p
-            class="sc-iBYQkv diua-dV"
-            style="color: rgb(1, 48, 89); font-weight: 700;"
+            class="sc-iBYQkv cQogFU"
           >
             Witaj User
           </p>
           <img
             alt="profile"
-            class="sc-pyfCe jiCDTo"
+            class="sc-kDvujY eqlEBy"
             src="/src/assets/profile_picture.png"
           />
         </div>
@@ -63,10 +62,10 @@ exports[`HeaderBar > component snapshot 1`] = `
   </body>,
   "container": <div>
     <header
-      class="sc-bqWxrE gOWFEp"
+      class="sc-kgTSHT vOhNV"
     >
       <button
-        class="sc-eDvSVe bcqqiU"
+        class="sc-jSUZER kEKcxS"
         data-testid="side-menu-hamburger-icon"
       >
         <svg
@@ -101,17 +100,16 @@ exports[`HeaderBar > component snapshot 1`] = `
         </svg>
       </button>
       <div
-        class="sc-ftTHYK fReoLJ"
+        class="sc-jrcTuL fEASvP"
       >
         <p
-          class="sc-iBYQkv diua-dV"
-          style="color: rgb(1, 48, 89); font-weight: 700;"
+          class="sc-iBYQkv cQogFU"
         >
           Witaj User
         </p>
         <img
           alt="profile"
-          class="sc-pyfCe jiCDTo"
+          class="sc-kDvujY eqlEBy"
           src="/src/assets/profile_picture.png"
         />
       </div>

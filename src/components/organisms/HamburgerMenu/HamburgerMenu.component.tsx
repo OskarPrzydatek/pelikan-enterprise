@@ -1,23 +1,21 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { useTheme } from 'styled-components';
 
-import { Icon, IconEnum } from '~/components/atoms';
-import { Paths } from '~/router';
+import { Icon } from '~/components/atoms';
+import { Icons, Slugs } from '~/constants';
+import { IComponent } from '~/models';
 
 import { SideMenu } from './SideMenu.component';
 
-export const HamburgerMenu: React.FC = () => {
+interface IHamburgerMenu extends IComponent {}
+
+export const HamburgerMenu: React.FC<IHamburgerMenu> = () => {
   const navigate = useNavigate();
-  const theme = useTheme();
   const { pathname } = useLocation();
 
   const [isSideMenuOpen, setIsSideMenuOpen] = React.useState<boolean>(false);
 
-  const currentPageButtonStyle = (path: Paths) => ({
-    color:
-      pathname === `/${path}` ? theme.colors.lightBlue : theme.colors.black,
-  });
+  const isCurrentPage = (path: Slugs) => pathname === `/${path}`;
 
   const onClickOpenSideMenu = () => {
     setIsSideMenuOpen(true);
@@ -27,13 +25,12 @@ export const HamburgerMenu: React.FC = () => {
     setIsSideMenuOpen(false);
   };
 
-  const onNavigate = (path: Paths) => {
+  const onNavigate = (path: Slugs) => {
     onClickCloseSideMenu();
     navigate(path);
   };
 
   // TODO: Implement when auth be ready on BE
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const onClickLogout = () => {};
 
   return (
@@ -41,13 +38,13 @@ export const HamburgerMenu: React.FC = () => {
       <Icon
         dataTestID="side-menu-hamburger-icon"
         height={15}
-        icon={IconEnum.HAMBURGER}
+        icon={Icons.HAMBURGER}
         width={30}
         onClick={onClickOpenSideMenu}
       />
       {isSideMenuOpen && (
         <SideMenu
-          currentPageButtonStyle={currentPageButtonStyle}
+          isCurrentPage={isCurrentPage}
           onClickCloseSideMenu={onClickCloseSideMenu}
           onClickLogout={onClickLogout}
           onNavigate={onNavigate}

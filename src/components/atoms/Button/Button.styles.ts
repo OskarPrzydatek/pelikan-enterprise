@@ -1,11 +1,18 @@
 import styled, { css } from 'styled-components';
 
-export const Button = styled.button<{
+import { ICSS } from '~/models';
+
+interface IButton extends ICSS {
   variant: 'primary' | 'secondary' | 'ghost';
-}>`
+}
+
+export const Button = styled.button<IButton>`
   appearance: none;
   border: none;
   font-family: ${({ theme }) => theme.fonts.main};
+  cursor: pointer;
+
+  ${({ css }) => css}
 
   ${({ variant }) => {
     switch (variant) {

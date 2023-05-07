@@ -1,12 +1,16 @@
 import { useParams } from 'react-router-dom';
 
-import { EditTemplate } from '~/components/templates';
-import { IPage } from '~/models';
+import { PageLayout } from '~/styles';
 
-interface IEdit extends IPage {}
-
-export const Edit: React.FC<IEdit> = ({ title }: IEdit) => {
+export const Edit: React.FC = () => {
   const { id } = useParams();
 
-  return <EditTemplate id={id} title={title} />;
+  return (
+    <PageLayout>
+      <div>
+        <h2>Edit page template</h2>
+        <p>id: {id}</p>
+      </div>
+    </PageLayout>
+  );
 };

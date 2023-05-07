@@ -9,7 +9,7 @@ exports[`Footer > component snapshot 1`] = `
         class="sc-ftTHYK escSkc"
       >
         <p
-          class="sc-iBYQkv diua-dV"
+          class="sc-iBYQkv jJWumE"
           data-testid="app-version"
         >
           Pelikan Business v
@@ -23,7 +23,7 @@ exports[`Footer > component snapshot 1`] = `
       class="sc-ftTHYK escSkc"
     >
       <p
-        class="sc-iBYQkv diua-dV"
+        class="sc-iBYQkv jJWumE"
         data-testid="app-version"
       >
         Pelikan Business v

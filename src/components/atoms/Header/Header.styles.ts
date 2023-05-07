@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Header = styled.h1`
+export const Header = styled.h2`
   margin: 0;
   font-family: ${({ theme }) => theme.fonts.main};
   color: ${({ theme }) => theme.colors.darkBlue};
@@ -19,7 +19,7 @@ export const Header = styled.h1`
   }
 
   @media ${({ theme }) => theme.breakpoints.desktop} {
-    font-size: ${({ theme }) => theme.fontSizes.xl};
+    font-size: ${({ theme }) => theme.fontSizes.l};
     margin: ${({ theme }) => theme.spaces.s} 0;
   }
 `;

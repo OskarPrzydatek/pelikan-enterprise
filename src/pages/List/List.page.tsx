@@ -1,12 +1,16 @@
 import { useParams } from 'react-router-dom';
 
-import { ListTemplate } from '~/components/templates';
-import { IPage } from '~/models';
+import { PageLayout } from '~/styles';
 
-interface IList extends IPage {}
-
-export const List: React.FC<IList> = ({ title }: IList) => {
+export const List: React.FC = () => {
   const { page } = useParams();
 
-  return <ListTemplate page={page} title={title} />;
+  const pageLabel = page ?? 1;
+
+  return (
+    <PageLayout>
+      <h2>List page template</h2>
+      <p data-testid="page-number">page: {pageLabel}</p>
+    </PageLayout>
+  );
 };

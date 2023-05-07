@@ -1,18 +1,14 @@
+import { IComponent } from '~/models';
+
 import * as S from './Text.styles';
 
-interface IText {
+interface IText extends IComponent {
   children: string | React.ReactNode;
-  style?: React.CSSProperties | undefined;
-  dataTestID?: string;
 }
 
-export const Text: React.FC<IText> = ({
-  children,
-  style,
-  dataTestID,
-}: IText) => {
+export const Text: React.FC<IText> = ({ children, css, dataTestID }: IText) => {
   return (
-    <S.Text data-testid={dataTestID} style={style}>
+    <S.Text css={css} data-testid={dataTestID}>
       {children}
     </S.Text>
   );

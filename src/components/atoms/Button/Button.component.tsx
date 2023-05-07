@@ -1,24 +1,24 @@
+import { IComponent } from '~/models';
+
 import * as S from './Button.styles';
 
-interface IButton {
+interface IButton extends IComponent {
   children: React.ReactNode;
   variant?: 'primary' | 'secondary' | 'ghost';
-  style?: React.CSSProperties | undefined;
-  dataTestID?: string;
   onClick: () => void;
 }
 
 export const Button: React.FC<IButton> = ({
   children,
   variant = 'primary',
-  style,
+  css,
   dataTestID,
   onClick,
 }: IButton) => {
   return (
     <S.Button
+      css={css}
       data-testid={dataTestID}
-      style={style}
       variant={variant}
       onClick={onClick}
     >

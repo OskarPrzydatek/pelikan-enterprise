@@ -6,7 +6,7 @@ exports[`Text > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <p
-        class="sc-gswNZR clKKdu"
+        class="sc-dkrFOg gfKrTV"
         data-testid="text-atom"
       >
         Text
@@ -15,7 +15,7 @@ exports[`Text > component snapshot 1`] = `
   </body>,
   "container": <div>
     <p
-      class="sc-gswNZR clKKdu"
+      class="sc-dkrFOg gfKrTV"
       data-testid="text-atom"
     >
       Text
