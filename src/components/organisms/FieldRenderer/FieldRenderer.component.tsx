@@ -18,7 +18,7 @@ export const FieldRenderer: React.FC<IFieldRenderer> = ({
   type,
   name,
   label,
-  selectOptions = [],
+  selectOptions,
   dataTestID,
 }: IFieldRenderer) => {
   switch (type) {
@@ -72,7 +72,7 @@ export const FieldRenderer: React.FC<IFieldRenderer> = ({
         <Select
           label={label}
           name={name}
-          selectOptions={selectOptions}
+          selectOptions={selectOptions!}
           selectTestID={dataTestID}
           registerOptions={{
             ...requiredValidator,

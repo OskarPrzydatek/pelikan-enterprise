@@ -31,7 +31,6 @@ export const HamburgerMenu: React.FC<IHamburgerMenu> = () => {
   };
 
   // TODO: Implement when auth be ready on BE
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const onClickLogout = () => {};
 
   return (

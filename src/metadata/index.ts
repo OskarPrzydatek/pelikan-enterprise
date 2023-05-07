@@ -1,2 +1,2 @@
-export { sideMenuNavigationItemsMetadata } from './structure/sideMenuNavigationItems.meta';
+export { sideMenuNavigationItemsMetadata } from './sideMenuNavigationItems.meta';
 export * from './forms/createForms.meta';

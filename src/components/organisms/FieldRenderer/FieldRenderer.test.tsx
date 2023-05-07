@@ -12,7 +12,6 @@ describe('FieldRenderer', () => {
     );
     expect(view).toMatchSnapshot();
   });
-  test('ensure select options is empty array in default', () => {});
 
   describe('FieldRenderer - correct type rendering', () => {
     test('ensure TEXT field renders correctly', () => {

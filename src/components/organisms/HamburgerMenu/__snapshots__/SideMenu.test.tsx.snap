@@ -153,6 +153,7 @@ exports[`SideMenu > component snapshot 1`] = `
         </nav>
         <button
           class="sc-hLBbgP jzszre"
+          data-testid="side-menu-logout-button"
         >
           <p
             class="sc-iBYQkv gPgnab"

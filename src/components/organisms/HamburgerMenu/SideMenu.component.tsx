@@ -77,7 +77,7 @@ export const SideMenu: React.FC<ISideMenu> = ({
             ))}
           </S.List>
         </S.Nav>
-        <Button onClick={onClickLogout}>
+        <Button dataTestID="side-menu-logout-button" onClick={onClickLogout}>
           <Text css={S.logoutButtonCSS}>Wyloguj</Text>
         </Button>
       </S.SideMenu>

@@ -39,4 +39,19 @@ describe('SideMenu', () => {
     fireEvent.click(screen.getByTestId('side-menu-item-create-offer'));
     expect(mockOnNavigate).toHaveBeenCalledWith('create-offer');
   });
+
+  test('ensure logout works correctly', () => {
+    render(
+      <StyledComponentsProvider>
+        <SideMenu
+          isCurrentPage={mockIsCurrentPage}
+          onClickCloseSideMenu={mockOnClickCloseSideMenu}
+          onClickLogout={mockOnClickLogout}
+          onNavigate={mockOnNavigate}
+        />
+      </StyledComponentsProvider>
+    );
+    fireEvent.click(screen.getByTestId('side-menu-logout-button'));
+    expect(mockOnClickLogout).toHaveBeenCalled();
+  });
 });
