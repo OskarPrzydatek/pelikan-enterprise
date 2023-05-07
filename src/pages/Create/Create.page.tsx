@@ -18,10 +18,6 @@ export const Create: React.FC = () => {
   // eslint-disable-next-line no-console
   const onSubmit: SubmitHandler<FieldValues> = (data) => console.log(data);
 
-  // TODO: Remove when truly used
-  // eslint-disable-next-line no-console
-  console.log(pathname);
-
   return (
     <PageLayout>
       <FormProvider {...methods}>

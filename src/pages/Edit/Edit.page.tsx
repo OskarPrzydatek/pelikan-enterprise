@@ -8,7 +8,7 @@ export const Edit: React.FC = () => {
   return (
     <PageLayout>
       <div>
-        <h2>Edit</h2>
+        <h2>Edit page template</h2>
         <p>id: {id}</p>
       </div>
     </PageLayout>

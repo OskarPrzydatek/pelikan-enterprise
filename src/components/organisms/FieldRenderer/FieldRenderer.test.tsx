@@ -1,14 +1,14 @@
 import { render, screen } from '@testing-library/react';
 import { describe, test, expect } from 'vitest';
 
-import { FieldType } from '~/constants';
+import { Fields } from '~/constants';
 
 import { FieldRendererHelper } from './FieldRenderer.helper';
 
 describe('FieldRenderer', () => {
   test('component snapshot', () => {
     const view = render(
-      <FieldRendererHelper name="textField" type={FieldType.TEXT_AREA} />
+      <FieldRendererHelper name="textField" type={Fields.TEXT_AREA} />
     );
     expect(view).toMatchSnapshot();
   });
@@ -20,7 +20,7 @@ describe('FieldRenderer', () => {
         <FieldRendererHelper
           dataTestID="orgaism-field-renderer-text-field"
           name="textField"
-          type={FieldType.TEXT_FIELD}
+          type={Fields.TEXT_FIELD}
         />
       );
       expect(
@@ -32,7 +32,7 @@ describe('FieldRenderer', () => {
         <FieldRendererHelper
           dataTestID="orgaism-field-renderer-numeric-field"
           name="numericField"
-          type={FieldType.NUMERIC_FIELD}
+          type={Fields.NUMERIC_FIELD}
         />
       );
       expect(
@@ -44,7 +44,7 @@ describe('FieldRenderer', () => {
         <FieldRendererHelper
           dataTestID="orgaism-field-renderer-star-field"
           name="starField"
-          type={FieldType.STAR_FIELD}
+          type={Fields.STAR_FIELD}
         />
       );
       expect(
@@ -56,7 +56,7 @@ describe('FieldRenderer', () => {
         <FieldRendererHelper
           dataTestID="orgaism-field-renderer-text-area"
           name="textArea"
-          type={FieldType.TEXT_AREA}
+          type={Fields.TEXT_AREA}
         />
       );
       expect(
@@ -68,7 +68,7 @@ describe('FieldRenderer', () => {
         <FieldRendererHelper
           dataTestID="orgaism-field-renderer-select"
           name="select"
-          type={FieldType.SELECT}
+          type={Fields.SELECT}
           selectOptions={[
             { label: 'Option 1', value: 'OPTION_1' },
             { label: 'Option 2', value: 'OPTION_2' },
@@ -84,7 +84,7 @@ describe('FieldRenderer', () => {
         <FieldRendererHelper
           dataTestID="orgaism-field-renderer-date"
           name="date"
-          type={FieldType.DATE}
+          type={Fields.DATE}
         />
       );
       expect(
@@ -95,7 +95,7 @@ describe('FieldRenderer', () => {
           <FieldRendererHelper
             dataTestID="orgaism-field-renderer-unknown-field"
             name="unknown"
-            type={'UNKNOWN' as FieldType}
+            type={'UNKNOWN' as Fields}
           />
         );
         expect(
@@ -108,7 +108,7 @@ describe('FieldRenderer', () => {
         <FieldRendererHelper
           dataTestID="orgaism-field-renderer-unknown-field"
           name="unknown"
-          type={'UNKNOWN' as FieldType}
+          type={'UNKNOWN' as Fields}
         />
       );
       expect(

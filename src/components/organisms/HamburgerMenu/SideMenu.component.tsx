@@ -1,27 +1,18 @@
 import React from 'react';
 
-import {
-  Background,
-  Button,
-  Header,
-  Icon,
-  IconEnum,
-  Text,
-} from '~/components/atoms';
-import { Slugs } from '~/constants';
-import {
-  ISideMenuNavigationSection,
-  sideMenuNavigationItemsMetadata,
-} from '~/metadata';
+import { Background, Button, Header, Icon, Text } from '~/components/atoms';
+import { Icons, Slugs } from '~/constants';
+import { sideMenuNavigationItemsMetadata } from '~/metadata';
+import { IComponent, ISideMenuNavigationList } from '~/models';
 
 import * as S from './SideMenu.styles';
 
-interface ISideMenuNavigationItem extends ISideMenuNavigationSection {
+interface ISideMenuNavigationItem extends ISideMenuNavigationList {
   isCurrentPage: (path: Slugs) => boolean;
   onNavigate: (path: Slugs) => void;
 }
 
-interface ISideMenu {
+interface ISideMenu extends IComponent {
   onClickCloseSideMenu: () => void;
   isCurrentPage: (path: Slugs) => boolean;
   onNavigate: (path: Slugs) => void;
@@ -34,26 +25,23 @@ const SideMenuNavigationItem: React.FC<ISideMenuNavigationItem> = ({
   isCurrentPage,
   onNavigate,
 }: ISideMenuNavigationItem) => {
+  const handleIsCurrentPageStyle = (path: Slugs) =>
+    isCurrentPage(path) ? S.currentPageButtonCSS : S.pageButtonCSS;
+
   return (
     <S.NavItem>
       <Header>{title}</Header>
-      {items.map(({ path, label }) => {
-        const handleIsCurrentPageCSS = isCurrentPage(path)
-          ? S.currentPageButtonCSS
-          : S.pageButtonCSS;
-
-        return (
-          <Button
-            key={path}
-            css={handleIsCurrentPageCSS}
-            dataTestID={`side-menu-item-${path}`}
-            variant="ghost"
-            onClick={() => onNavigate(path)}
-          >
-            {label}
-          </Button>
-        );
-      })}
+      {items.map(({ path, label }) => (
+        <Button
+          key={path}
+          css={handleIsCurrentPageStyle(path)}
+          dataTestID={`side-menu-item-${path}`}
+          variant="ghost"
+          onClick={() => onNavigate(path)}
+        >
+          {label}
+        </Button>
+      ))}
     </S.NavItem>
   );
 };
@@ -71,7 +59,7 @@ export const SideMenu: React.FC<ISideMenu> = ({
           <Header>Pelikan Business</Header>
           <Icon
             dataTestID="side-menu-close-icon"
-            icon={IconEnum.CLOSE}
+            icon={Icons.CLOSE}
             width={15}
             onClick={onClickCloseSideMenu}
           />

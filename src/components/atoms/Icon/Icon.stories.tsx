@@ -1,9 +1,9 @@
 import { Meta, StoryObj } from '@storybook/react';
 
+import { Icons } from '~/constants';
 import { StyledComponentsProvider } from '~/styles';
 
 import { Icon } from './Icon.component';
-import { IconEnum } from './Icon.enum';
 
 const meta: Meta<typeof Icon> = {
   title: 'Atoms/Icon',
@@ -16,7 +16,7 @@ type Story = StoryObj<typeof Icon>;
 export const ChevronIcon: Story = {
   render: () => (
     <StyledComponentsProvider>
-      <Icon icon={IconEnum.CHEVRON} />
+      <Icon icon={Icons.CHEVRON} />
     </StyledComponentsProvider>
   ),
 };
@@ -24,7 +24,7 @@ export const ChevronIcon: Story = {
 export const CloseIcon: Story = {
   render: () => (
     <StyledComponentsProvider>
-      <Icon icon={IconEnum.CLOSE} />
+      <Icon icon={Icons.CLOSE} />
     </StyledComponentsProvider>
   ),
 };
@@ -32,7 +32,7 @@ export const CloseIcon: Story = {
 export const HamburgerIcon: Story = {
   render: () => (
     <StyledComponentsProvider>
-      <Icon icon={IconEnum.HAMBURGER} />
+      <Icon icon={Icons.HAMBURGER} />
     </StyledComponentsProvider>
   ),
 };

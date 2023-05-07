@@ -2,10 +2,11 @@ import React from 'react';
 import { FieldValues, RegisterOptions, useFormContext } from 'react-hook-form';
 
 import { Label, Text } from '~/components/atoms';
+import { IComponent } from '~/models';
 
 import * as S from './DateField.styles';
 
-interface IDateField {
+interface IDateField extends IComponent {
   name: string;
   label: string;
   registerOptions: RegisterOptions<FieldValues, string>;

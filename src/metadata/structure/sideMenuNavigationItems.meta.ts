@@ -1,16 +1,7 @@
 import { Slugs } from '~/constants';
+import { ISideMenuNavigationList } from '~/models';
 
-interface ISideMenuNavigationItem {
-  path: Slugs;
-  label: string;
-}
-
-export interface ISideMenuNavigationSection {
-  title: string;
-  items: ISideMenuNavigationItem[];
-}
-
-export const sideMenuNavigationItemsMetadata: ISideMenuNavigationSection[] = [
+export const sideMenuNavigationItemsMetadata: ISideMenuNavigationList[] = [
   {
     title: 'Oferty',
     items: [

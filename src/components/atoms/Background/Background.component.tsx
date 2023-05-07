@@ -6,7 +6,6 @@ import * as S from './Background.styles';
 
 interface IBackground extends IComponent {
   children: React.ReactNode;
-  // dataTestID?: string;
   onClickBackground?: () => void;
 }
 

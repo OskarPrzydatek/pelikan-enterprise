@@ -1,7 +1,9 @@
 import React from 'react';
 import { FieldValues, RegisterOptions, useFormContext } from 'react-hook-form';
 
-import { Button, Icon, IconEnum, Label, Text } from '~/components/atoms';
+import { Button, Icon, Label, Text } from '~/components/atoms';
+import { Icons } from '~/constants';
+import { IComponent } from '~/models';
 
 import * as S from './Select.styles';
 
@@ -10,7 +12,7 @@ export interface ISelectOption {
   value: string;
 }
 
-interface ISelect {
+interface ISelect extends IComponent {
   name: string;
   label: string;
   selectOptions: ISelectOption[];
@@ -76,7 +78,7 @@ export const Select: React.FC<ISelect> = ({
         </Label>
       ) : null}
       <S.SelectChevron css={isChevronCSS}>
-        <Icon icon={IconEnum.CHEVRON} />
+        <Icon icon={Icons.CHEVRON} />
       </S.SelectChevron>
       <S.Select
         readOnly

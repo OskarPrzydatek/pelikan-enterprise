@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { ICSS } from '~/styles';
+import { ICSS } from '~/models';
 
 interface IButton extends ICSS {
   variant: 'primary' | 'secondary' | 'ghost';

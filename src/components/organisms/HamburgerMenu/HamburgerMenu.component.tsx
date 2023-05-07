@@ -1,12 +1,15 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-import { Icon, IconEnum } from '~/components/atoms';
-import { Slugs } from '~/constants';
+import { Icon } from '~/components/atoms';
+import { Icons, Slugs } from '~/constants';
+import { IComponent } from '~/models';
 
 import { SideMenu } from './SideMenu.component';
 
-export const HamburgerMenu: React.FC = () => {
+interface IHamburgerMenu extends IComponent {}
+
+export const HamburgerMenu: React.FC<IHamburgerMenu> = () => {
   const navigate = useNavigate();
   const { pathname } = useLocation();
 
@@ -36,7 +39,7 @@ export const HamburgerMenu: React.FC = () => {
       <Icon
         dataTestID="side-menu-hamburger-icon"
         height={15}
-        icon={IconEnum.HAMBURGER}
+        icon={Icons.HAMBURGER}
         width={30}
         onClick={onClickOpenSideMenu}
       />

@@ -11,7 +11,7 @@ exports[`TextField > component snapshot 1`] = `
         <input
           class="sc-pyfCe jPpuoy"
           data-testid="molecule-datefield"
-          min="2023-05-06"
+          min="2023-05-07"
           name="startDate"
           type="date"
         />
@@ -25,7 +25,7 @@ exports[`TextField > component snapshot 1`] = `
       <input
         class="sc-pyfCe jPpuoy"
         data-testid="molecule-datefield"
-        min="2023-05-06"
+        min="2023-05-07"
         name="startDate"
         type="date"
       />

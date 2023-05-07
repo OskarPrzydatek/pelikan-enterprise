@@ -1,3 +1,2 @@
-export { sideMenuNavigationItemsMetadata } from './sideMenuNavigationItems.meta';
-export type { ISideMenuNavigationSection } from './sideMenuNavigationItems.meta';
-export * from './createForms.meta';
+export { sideMenuNavigationItemsMetadata } from './structure/sideMenuNavigationItems.meta';
+export * from './forms/createForms.meta';

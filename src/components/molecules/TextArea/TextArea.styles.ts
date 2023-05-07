@@ -1,6 +1,6 @@
 import styled, { css, keyframes } from 'styled-components';
 
-import { ICSS } from '~/styles';
+import { ICSS } from '~/models';
 
 const onFocusMoveAnimation = keyframes`
  0% { top: 50%; opacity: 0 }

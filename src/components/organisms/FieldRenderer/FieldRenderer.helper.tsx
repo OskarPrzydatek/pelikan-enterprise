@@ -1,13 +1,13 @@
 import React from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 
-import { FieldType } from '~/constants';
+import { Fields } from '~/constants';
 import { StyledComponentsProvider } from '~/styles';
 
 import { FieldRenderer } from './FieldRenderer.component';
 
 interface IFieldRendererHelper {
-  type: FieldType;
+  type: Fields;
   name: string;
   selectOptions?: { label: string; value: string }[];
   dataTestID?: string;

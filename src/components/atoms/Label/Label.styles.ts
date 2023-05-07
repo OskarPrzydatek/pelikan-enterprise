@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { ICSS } from '~/styles';
+import { ICSS } from '~/models';
 
 export const Label = styled.label<ICSS>`
   font-weight: 600;

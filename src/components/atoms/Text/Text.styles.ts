@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { ICSS } from '~/styles';
+import { ICSS } from '~/models';
 
 export const Text = styled.p<ICSS>`
   margin: 0;

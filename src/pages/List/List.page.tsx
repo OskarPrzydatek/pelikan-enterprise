@@ -9,7 +9,7 @@ export const List: React.FC = () => {
 
   return (
     <PageLayout>
-      <h2>list</h2>
+      <h2>List page template</h2>
       <p data-testid="page-number">page: {pageLabel}</p>
     </PageLayout>
   );
