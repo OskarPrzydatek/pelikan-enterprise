@@ -31,12 +31,27 @@ export const SelectWrapper = styled.div`
 `;
 
 export const SelectChevron = styled.span<ICSS>`
-  position: absolute;
-  top: 33.3%;
-  left: 92.5%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+
+  @media ${({ theme }) => theme.breakpoints.phone} {
+    top: 0.6rem;
+    right: 0.6rem;
+    width: 0.8rem;
+  }
+
+  @media ${({ theme }) => theme.breakpoints.tablet} {
+    top: 1.1rem;
+    right: 0.8rem;
+    width: 1.2rem;
+  }
+
+  @media ${({ theme }) => theme.breakpoints.desktop} {
+    top: 1rem;
+    right: 0.5rem;
+  }
 
   ${({ css }) => css}
 `;
@@ -51,6 +66,7 @@ export const Select = styled.input<ICSS>`
   color: ${({ theme }) => theme.colors.black};
   border: 3px solid ${({ theme }) => theme.colors.darkBlue};
   font-size: ${({ theme }) => theme.fontSizes.m};
+  cursor: pointer;
 
   ${({ css }) => css}
 
