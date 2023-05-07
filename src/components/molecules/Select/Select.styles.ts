@@ -12,13 +12,13 @@ const rotateUpAnimation = keyframes`
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
   }
 `;
 
 const rotateDownAnimation = keyframes`
  from {
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
   }
   to {
     transform: rotate(0deg);
@@ -32,8 +32,11 @@ export const SelectWrapper = styled.div`
 
 export const SelectChevron = styled.span<ICSS>`
   position: absolute;
-  top: ${({ theme }) => theme.spaces.m};
-  right: ${({ theme }) => theme.spaces.s};
+  top: 33.3%;
+  left: 92.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   ${({ css }) => css}
 `;
