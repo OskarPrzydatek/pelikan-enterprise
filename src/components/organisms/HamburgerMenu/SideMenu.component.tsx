@@ -56,7 +56,7 @@ export const SideMenu: React.FC<ISideMenu> = ({
     <Background onClickBackground={onClickCloseSideMenu}>
       <S.SideMenu data-testid="hamburger-manu-side-menu">
         <S.Header>
-          <Header>Pelikan Business</Header>
+          <Header>Pelikan Enterprise</Header>
           <Icon
             dataTestID="side-menu-close-icon"
             icon={Icons.CLOSE}
