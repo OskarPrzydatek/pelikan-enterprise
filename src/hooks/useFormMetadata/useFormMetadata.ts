@@ -2,7 +2,7 @@ import {
   createAttractionFormMetadata,
   createHotelFormMetadata,
   createHashtagFormMetadata,
-  nonexistentFormMeta,
+  nonexistFormMeta,
   createTransportFormMetadata,
   createOfferFormMetadata,
 } from '~/metadata';
@@ -21,6 +21,6 @@ export const useFormMetadata = (path: string) => {
     case '/create-transport':
       return createTransportFormMetadata as IFormMetadata;
     default:
-      return nonexistentFormMeta as IFormMetadata;
+      return nonexistFormMeta as IFormMetadata;
   }
 };

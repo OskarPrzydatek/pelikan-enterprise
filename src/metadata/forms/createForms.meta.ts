@@ -1,6 +1,7 @@
 export const createOfferFormMetadata = {
   path: '/create-offer',
   title: 'Dodaj ofertę',
+  submitLabel: 'Dodaj ofertę',
   fields: [
     {
       type: 'TEXT_FIELD',
@@ -62,12 +63,12 @@ export const createOfferFormMetadata = {
       label: 'Opis oferty',
     },
   ],
-  submitLabel: 'Dodaj ofertę',
 };
 
 export const createTransportFormMetadata = {
   path: '/create-transport',
   title: 'Dodaj transport',
+  submitLabel: 'Dodaj transport',
   fields: [
     {
       type: 'TEXT_FIELD',
@@ -108,12 +109,12 @@ export const createTransportFormMetadata = {
       label: 'Cena od osoby',
     },
   ],
-  submitLabel: 'Dodaj transport',
 };
 
 export const createHotelFormMetadata = {
   path: '/create-hotel',
   title: 'Dodaj hotel',
+  submitLabel: 'Dodaj hotel',
   fields: [
     {
       type: 'TEXT_FIELD',
@@ -141,12 +142,12 @@ export const createHotelFormMetadata = {
       label: 'Opis',
     },
   ],
-  submitLabel: 'Dodaj hotel',
 };
 
 export const createAttractionFormMetadata = {
   path: '/create-attraction',
   title: 'Dodaj atrakcję',
+  submitLabel: 'Dodaj atrakcję',
   fields: [
     {
       type: 'TEXT_FIELD',
@@ -164,12 +165,12 @@ export const createAttractionFormMetadata = {
       label: 'Opis',
     },
   ],
-  submitLabel: 'Dodaj atrakcję',
 };
 
 export const createHashtagFormMetadata = {
   path: '/create-hashtag',
   title: 'Dodaj hashtag',
+  submitLabel: 'Dodaj hashtag',
   fields: [
     {
       type: 'TEXT_FIELD',
@@ -177,12 +178,11 @@ export const createHashtagFormMetadata = {
       label: 'Nazwa hashtagu',
     },
   ],
-  submitLabel: 'Dodaj hashtag',
 };
 
-export const nonexistentFormMeta = {
+export const nonexistFormMeta = {
   path: '',
   title: 'Taki formularz nie istnieje',
-  fields: [],
   submitLabel: '',
+  fields: [],
 };

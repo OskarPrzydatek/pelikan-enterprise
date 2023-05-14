@@ -1,9 +1,4 @@
-import {
-  FieldValues,
-  FormProvider,
-  SubmitHandler,
-  useForm,
-} from 'react-hook-form';
+import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
 import { useLocation } from 'react-router-dom';
 
 import { FieldRenderer, Form } from '~/components/organisms';
@@ -20,23 +15,22 @@ export const Create: React.FC = () => {
 
   return (
     <PageLayout>
-      <FormProvider {...methods}>
-        <Form
-          submitLabel={submitLabel}
-          title={title}
-          onSubmit={methods.handleSubmit(onSubmit)}
-        >
-          {fields.map(({ type, name, label, selectOptions }) => (
-            <FieldRenderer
-              key={`${name}-${label}`}
-              label={label}
-              name={name}
-              selectOptions={selectOptions}
-              type={type}
-            />
-          ))}
-        </Form>
-      </FormProvider>
+      <Form
+        methods={methods}
+        submitLabel={submitLabel}
+        title={title}
+        onSubmit={methods.handleSubmit(onSubmit)}
+      >
+        {fields.map(({ type, name, label, selectOptions }) => (
+          <FieldRenderer
+            key={`${name}-${label}`}
+            label={label}
+            name={name}
+            selectOptions={selectOptions}
+            type={type}
+          />
+        ))}
+      </Form>
     </PageLayout>
   );
 };
