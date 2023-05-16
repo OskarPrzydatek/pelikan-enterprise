@@ -1,5 +1,6 @@
 import { UseFormReturn } from 'react-hook-form';
 
+import { Row } from '~/components/atoms';
 import { DateField, Select, TextArea, TextField } from '~/components/molecules';
 import { Form } from '~/components/organisms';
 import { IOffer, ISelectOption } from '~/models';
@@ -36,24 +37,26 @@ export const CreateOfferTemplate: React.FC<ICreateOfferTemplate> = ({
             ...requiredValidator,
           }}
         />
-        <TextField
-          errorMessageTestID="create-offer-price-error"
-          inputTestID="create-offer-price"
-          label="Cena"
-          name="price"
-          registerOptions={{
-            ...numericValidator,
-          }}
-        />
-        <TextField
-          errorMessageTestID="create-offer-number-of-tickets-error"
-          inputTestID="create-offer-number-of-tickets"
-          label="Liczba miejsc"
-          name="numberOfTickets"
-          registerOptions={{
-            ...numericValidator,
-          }}
-        />
+        <Row>
+          <TextField
+            errorMessageTestID="create-offer-price-error"
+            inputTestID="create-offer-price"
+            label="Cena"
+            name="price"
+            registerOptions={{
+              ...numericValidator,
+            }}
+          />
+          <TextField
+            errorMessageTestID="create-offer-number-of-tickets-error"
+            inputTestID="create-offer-number-of-tickets"
+            label="Liczba miejsc"
+            name="numberOfTickets"
+            registerOptions={{
+              ...numericValidator,
+            }}
+          />
+        </Row>
         <Select
           errorMessageTestID="create-offer-destination-error"
           label="Miejsce docelowe"

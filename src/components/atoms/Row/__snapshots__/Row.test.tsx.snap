@@ -1,25 +1,33 @@
 // Vitest Snapshot v1
 
-exports[`Header > component snapshot 1`] = `
+exports[`Row > component snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <h2
-        class="sc-dkrFOg jPWIGE"
-        data-testid="header-atom"
+      <div
+        class="sc-dkrFOg bSKAHG"
       >
-        String Header
-      </h2>
+        <input
+          type="text"
+        />
+        <input
+          type="text"
+        />
+      </div>
     </div>
   </body>,
   "container": <div>
-    <h2
-      class="sc-dkrFOg jPWIGE"
-      data-testid="header-atom"
+    <div
+      class="sc-dkrFOg bSKAHG"
     >
-      String Header
-    </h2>
+      <input
+        type="text"
+      />
+      <input
+        type="text"
+      />
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

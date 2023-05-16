@@ -16,7 +16,7 @@ exports[`SideMenu > component snapshot 1`] = `
           class="sc-pyfCe dMgNQh"
         >
           <h2
-            class="sc-eDvSVe eUwfrD"
+            class="sc-eDvSVe fdTwcs"
           >
             Pelikan Enterprise
           </h2>
@@ -48,18 +48,18 @@ exports[`SideMenu > component snapshot 1`] = `
               class="sc-ipEyDJ fEIdYs"
             >
               <h2
-                class="sc-eDvSVe eUwfrD"
+                class="sc-eDvSVe fdTwcs"
               >
                 Oferty
               </h2>
               <button
-                class="sc-hLBbgP cDyyyF"
+                class="sc-hLBbgP dFoEVu"
                 data-testid="side-menu-item-create-offer"
               >
                 Dodaj ofertę
               </button>
               <button
-                class="sc-hLBbgP cDyyyF"
+                class="sc-hLBbgP dFoEVu"
                 data-testid="side-menu-item-list-offer"
               >
                 Lista ofert
@@ -69,18 +69,18 @@ exports[`SideMenu > component snapshot 1`] = `
               class="sc-ipEyDJ fEIdYs"
             >
               <h2
-                class="sc-eDvSVe eUwfrD"
+                class="sc-eDvSVe fdTwcs"
               >
                 Hotele
               </h2>
               <button
-                class="sc-hLBbgP cDyyyF"
+                class="sc-hLBbgP dFoEVu"
                 data-testid="side-menu-item-create-hotel"
               >
                 Dodaj hotel
               </button>
               <button
-                class="sc-hLBbgP cDyyyF"
+                class="sc-hLBbgP dFoEVu"
                 data-testid="side-menu-item-list-hotel"
               >
                 Lista hoteli
@@ -90,18 +90,18 @@ exports[`SideMenu > component snapshot 1`] = `
               class="sc-ipEyDJ fEIdYs"
             >
               <h2
-                class="sc-eDvSVe eUwfrD"
+                class="sc-eDvSVe fdTwcs"
               >
                 Transport
               </h2>
               <button
-                class="sc-hLBbgP cDyyyF"
+                class="sc-hLBbgP dFoEVu"
                 data-testid="side-menu-item-create-transport"
               >
                 Dodaj transport
               </button>
               <button
-                class="sc-hLBbgP cDyyyF"
+                class="sc-hLBbgP dFoEVu"
                 data-testid="side-menu-item-list-transport"
               >
                 Lista transportów
@@ -111,18 +111,18 @@ exports[`SideMenu > component snapshot 1`] = `
               class="sc-ipEyDJ fEIdYs"
             >
               <h2
-                class="sc-eDvSVe eUwfrD"
+                class="sc-eDvSVe fdTwcs"
               >
                 Atrakcje
               </h2>
               <button
-                class="sc-hLBbgP cDyyyF"
+                class="sc-hLBbgP dFoEVu"
                 data-testid="side-menu-item-create-attraction"
               >
                 Dodaj atrakcję
               </button>
               <button
-                class="sc-hLBbgP cDyyyF"
+                class="sc-hLBbgP dFoEVu"
                 data-testid="side-menu-item-list-attraction"
               >
                 Lista atrakcji
@@ -132,18 +132,18 @@ exports[`SideMenu > component snapshot 1`] = `
               class="sc-ipEyDJ fEIdYs"
             >
               <h2
-                class="sc-eDvSVe eUwfrD"
+                class="sc-eDvSVe fdTwcs"
               >
                 Hash Tagi
               </h2>
               <button
-                class="sc-hLBbgP cDyyyF"
+                class="sc-hLBbgP dFoEVu"
                 data-testid="side-menu-item-create-hashtag"
               >
                 Dodaj hashtag
               </button>
               <button
-                class="sc-hLBbgP cDyyyF"
+                class="sc-hLBbgP dFoEVu"
                 data-testid="side-menu-item-list-hashtag"
               >
                 Lista hashtagów
@@ -152,7 +152,7 @@ exports[`SideMenu > component snapshot 1`] = `
           </ul>
         </nav>
         <button
-          class="sc-hLBbgP jzszre"
+          class="sc-hLBbgP fPTBtl"
           data-testid="side-menu-logout-button"
         >
           <p

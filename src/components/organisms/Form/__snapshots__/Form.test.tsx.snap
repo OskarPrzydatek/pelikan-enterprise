@@ -9,7 +9,7 @@ exports[`Form > component snapshot 1`] = `
         class="sc-ftTHYK ieoBBn"
       >
         <h2
-          class="sc-eDvSVe eUwfrD"
+          class="sc-eDvSVe fdTwcs"
         >
           Form title
         </h2>
@@ -27,7 +27,7 @@ exports[`Form > component snapshot 1`] = `
       class="sc-ftTHYK ieoBBn"
     >
       <h2
-        class="sc-eDvSVe eUwfrD"
+        class="sc-eDvSVe fdTwcs"
       >
         Form title
       </h2>
