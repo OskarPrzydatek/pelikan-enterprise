@@ -1,4 +1,4 @@
-import {
+  import {
   DefaultTheme,
   FlattenInterpolation,
   ThemeProps,

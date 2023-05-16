@@ -10,7 +10,7 @@ exports[`SideMenu > component snapshot 1`] = `
     >
       <div
         class="sc-ftTHYK gMNxTd"
-        data-testid="hamburger-manu-side-menu"
+        data-testid="hamburger-menu-side-menu"
       >
         <div
           class="sc-pyfCe dMgNQh"
@@ -18,7 +18,7 @@ exports[`SideMenu > component snapshot 1`] = `
           <h2
             class="sc-eDvSVe eUwfrD"
           >
-            Pelikan Business
+            Pelikan Enterprise
           </h2>
           <button
             class="sc-jSUZER kEKcxS"

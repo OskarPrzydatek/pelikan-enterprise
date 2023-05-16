@@ -15,7 +15,7 @@ export const HamburgerMenu: React.FC<IHamburgerMenu> = () => {
 
   const [isSideMenuOpen, setIsSideMenuOpen] = React.useState<boolean>(false);
 
-  const isCurrentPage = (path: Slugs) => pathname === `/${path}`;
+  const handleIsCurrentPage = (path: Slugs) => pathname === `/${path}`;
 
   const onClickOpenSideMenu = () => {
     setIsSideMenuOpen(true);
@@ -44,7 +44,7 @@ export const HamburgerMenu: React.FC<IHamburgerMenu> = () => {
       />
       {isSideMenuOpen && (
         <SideMenu
-          isCurrentPage={isCurrentPage}
+          handleIsCurrentPage={handleIsCurrentPage}
           onClickCloseSideMenu={onClickCloseSideMenu}
           onClickLogout={onClickLogout}
           onNavigate={onNavigate}

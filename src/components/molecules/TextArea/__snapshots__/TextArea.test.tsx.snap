@@ -9,7 +9,7 @@ exports[`TextArea > component snapshot 1`] = `
         class="sc-ftTHYK gEzAqy"
       >
         <textarea
-          class="sc-pyfCe dLpzQF"
+          class="sc-pyfCe jSMdir"
           data-testid="molecule-textarea"
           id="description"
           name="description"
@@ -23,7 +23,7 @@ exports[`TextArea > component snapshot 1`] = `
       class="sc-ftTHYK gEzAqy"
     >
       <textarea
-        class="sc-pyfCe dLpzQF"
+        class="sc-pyfCe jSMdir"
         data-testid="molecule-textarea"
         id="description"
         name="description"

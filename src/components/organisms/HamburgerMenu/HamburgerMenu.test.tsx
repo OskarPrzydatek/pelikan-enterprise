@@ -27,10 +27,10 @@ describe('Button', () => {
       </BrowserRouter>
     );
     fireEvent.click(screen.getByTestId('side-menu-hamburger-icon'));
-    expect(screen.getByTestId('hamburger-manu-side-menu')).toBeInTheDocument();
+    expect(screen.getByTestId('hamburger-menu-side-menu')).toBeInTheDocument();
     fireEvent.click(screen.getByTestId('side-menu-close-icon'));
     expect(
-      screen.queryByTestId('hamburger-manu-side-menu')
+      screen.queryByTestId('hamburger-menu-side-menu')
     ).not.toBeInTheDocument();
   });
 
@@ -45,7 +45,7 @@ describe('Button', () => {
     fireEvent.click(screen.getByTestId('side-menu-hamburger-icon'));
     fireEvent.click(screen.getByTestId('side-menu-item-create-offer'));
     expect(
-      screen.queryByTestId('hamburger-manu-side-menu')
+      screen.queryByTestId('hamburger-menu-side-menu')
     ).not.toBeInTheDocument();
     fireEvent.click(screen.getByTestId('side-menu-hamburger-icon'));
     expect(screen.getByTestId('side-menu-item-create-offer')).toHaveStyle(

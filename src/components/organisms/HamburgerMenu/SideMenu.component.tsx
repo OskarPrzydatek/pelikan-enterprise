@@ -8,25 +8,18 @@ import { IComponent, ISideMenuNavigationList } from '~/models';
 import * as S from './SideMenu.styles';
 
 interface ISideMenuNavigationItem extends ISideMenuNavigationList {
-  isCurrentPage: (path: Slugs) => boolean;
+  handleIsCurrentPage: (path: Slugs) => boolean;
   onNavigate: (path: Slugs) => void;
-}
-
-interface ISideMenu extends IComponent {
-  onClickCloseSideMenu: () => void;
-  isCurrentPage: (path: Slugs) => boolean;
-  onNavigate: (path: Slugs) => void;
-  onClickLogout: () => void;
 }
 
 const SideMenuNavigationItem: React.FC<ISideMenuNavigationItem> = ({
   title,
   items,
-  isCurrentPage,
+  handleIsCurrentPage,
   onNavigate,
 }: ISideMenuNavigationItem) => {
   const handleIsCurrentPageStyle = (path: Slugs) =>
-    isCurrentPage(path) ? S.currentPageButtonCSS : S.pageButtonCSS;
+    handleIsCurrentPage(path) ? S.currentPageButtonCSS : S.pageButtonCSS;
 
   return (
     <S.NavItem>
@@ -46,15 +39,22 @@ const SideMenuNavigationItem: React.FC<ISideMenuNavigationItem> = ({
   );
 };
 
+interface ISideMenu extends IComponent {
+  onClickCloseSideMenu: () => void;
+  handleIsCurrentPage: (path: Slugs) => boolean;
+  onNavigate: (path: Slugs) => void;
+  onClickLogout: () => void;
+}
+
 export const SideMenu: React.FC<ISideMenu> = ({
   onClickCloseSideMenu,
-  isCurrentPage,
+  handleIsCurrentPage,
   onNavigate,
   onClickLogout,
 }: ISideMenu) => {
   return (
     <Background onClickBackground={onClickCloseSideMenu}>
-      <S.SideMenu data-testid="hamburger-manu-side-menu">
+      <S.SideMenu data-testid="hamburger-menu-side-menu">
         <S.Header>
           <Header>Pelikan Enterprise</Header>
           <Icon
@@ -69,7 +69,7 @@ export const SideMenu: React.FC<ISideMenu> = ({
             {sideMenuNavigationItemsMetadata.map(({ title, items }) => (
               <SideMenuNavigationItem
                 key={title}
-                isCurrentPage={isCurrentPage}
+                handleIsCurrentPage={handleIsCurrentPage}
                 items={items}
                 title={title}
                 onNavigate={onNavigate}

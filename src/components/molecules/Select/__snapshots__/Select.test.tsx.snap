@@ -9,7 +9,7 @@ exports[`Select > component snapshot 1`] = `
         class="sc-ftTHYK kMWqLT"
       >
         <span
-          class="sc-pyfCe jXRJyV"
+          class="sc-pyfCe eoGWpg"
         >
           <svg
             data-testid="chevron-icon"
@@ -19,14 +19,14 @@ exports[`Select > component snapshot 1`] = `
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M25 14L13.5 3L2 14"
+              d="M2 2L13.5 13L25 2"
               stroke="#013059"
               stroke-width="3"
             />
           </svg>
         </span>
         <input
-          class="sc-jrcTuL hGVcTV"
+          class="sc-jrcTuL eSFNFn"
           data-testid="molecule-select"
           name="destination"
           placeholder="Default label"
@@ -41,7 +41,7 @@ exports[`Select > component snapshot 1`] = `
       class="sc-ftTHYK kMWqLT"
     >
       <span
-        class="sc-pyfCe jXRJyV"
+        class="sc-pyfCe eoGWpg"
       >
         <svg
           data-testid="chevron-icon"
@@ -51,14 +51,14 @@ exports[`Select > component snapshot 1`] = `
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M25 14L13.5 3L2 14"
+            d="M2 2L13.5 13L25 2"
             stroke="#013059"
             stroke-width="3"
           />
         </svg>
       </span>
       <input
-        class="sc-jrcTuL hGVcTV"
+        class="sc-jrcTuL eSFNFn"
         data-testid="molecule-select"
         name="destination"
         placeholder="Default label"

@@ -5,7 +5,7 @@ import { StyledComponentsProvider } from '~/providers';
 
 import { SideMenu } from './SideMenu.component';
 
-const mockIsCurrentPage = vi.fn();
+const mockHandleIsCurrentPage = vi.fn();
 const mockOnClickCloseSideMenu = vi.fn();
 const mockOnClickLogout = vi.fn();
 const mockOnNavigate = vi.fn();
@@ -15,7 +15,7 @@ describe('SideMenu', () => {
     const view = render(
       <StyledComponentsProvider>
         <SideMenu
-          isCurrentPage={mockIsCurrentPage}
+          handleIsCurrentPage={mockHandleIsCurrentPage}
           onClickCloseSideMenu={mockOnClickCloseSideMenu}
           onClickLogout={mockOnClickLogout}
           onNavigate={mockOnNavigate}
@@ -29,7 +29,7 @@ describe('SideMenu', () => {
     render(
       <StyledComponentsProvider>
         <SideMenu
-          isCurrentPage={mockIsCurrentPage}
+          handleIsCurrentPage={mockHandleIsCurrentPage}
           onClickCloseSideMenu={mockOnClickCloseSideMenu}
           onClickLogout={mockOnClickLogout}
           onNavigate={mockOnNavigate}
@@ -44,7 +44,7 @@ describe('SideMenu', () => {
     render(
       <StyledComponentsProvider>
         <SideMenu
-          isCurrentPage={mockIsCurrentPage}
+          handleIsCurrentPage={mockHandleIsCurrentPage}
           onClickCloseSideMenu={mockOnClickCloseSideMenu}
           onClickLogout={mockOnClickLogout}
           onNavigate={mockOnNavigate}

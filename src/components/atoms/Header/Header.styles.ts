@@ -5,7 +5,7 @@ export const Header = styled.h2`
   font-family: ${({ theme }) => theme.fonts.main};
   color: ${({ theme }) => theme.colors.darkBlue};
 
-  font-size: ${({ theme }) => theme.fontSizes.s};
+  font-size: ${({ theme }) => theme.fontSizes.m};
   margin: ${({ theme }) => theme.spaces.xs} 0;
 
   @media ${({ theme }) => theme.breakpoints.phone} {
