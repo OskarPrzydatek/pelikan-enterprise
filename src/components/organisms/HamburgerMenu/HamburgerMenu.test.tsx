@@ -2,7 +2,7 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import { describe, test, expect } from 'vitest';
 
-import { StyledComponentsProvider } from '~/styles';
+import { StyledComponentsProvider } from '~/providers';
 
 import { HamburgerMenu } from './HamburgerMenu.component';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 
 import { Fields } from '~/constants';
-import { StyledComponentsProvider } from '~/styles';
+import { StyledComponentsProvider } from '~/providers';
 
 import { FieldRenderer } from './FieldRenderer.component';
 

@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import { describe, test, expect, vi } from 'vitest';
 
-import { StyledComponentsProvider } from '~/styles';
+import { StyledComponentsProvider } from '~/providers';
 
 import { Form } from './Form.component';
 
@@ -12,6 +12,7 @@ describe('Form', () => {
     const view = render(
       <StyledComponentsProvider>
         <Form
+          methods={undefined}
           submitLabel="Submit label"
           title="Form title"
           onSubmit={mockOnSubmit}

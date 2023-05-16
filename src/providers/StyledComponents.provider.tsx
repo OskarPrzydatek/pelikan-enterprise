@@ -1,7 +1,7 @@
 import { ThemeProvider } from 'styled-components';
 
-import { GlobalStyleLayout } from './layouts';
-import { theme } from './theme';
+import { GlobalStyleLayout } from '../styles/layouts';
+import { theme } from '../styles/theme';
 
 interface IStyledComponentsProvider {
   children: React.ReactNode;

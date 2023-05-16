@@ -1,4 +1,4 @@
-import { StyledComponentsProvider } from '~/styles';
+import { StyledComponentsProvider } from '~/providers';
 
 import { Text } from './Text.component';
 

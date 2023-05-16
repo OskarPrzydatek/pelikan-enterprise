@@ -1,7 +1,7 @@
 import React from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 
-import { StyledComponentsProvider } from '~/styles';
+import { StyledComponentsProvider } from '~/providers';
 
 import { DateField } from './DateField.component';
 
