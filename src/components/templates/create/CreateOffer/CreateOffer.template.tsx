@@ -57,44 +57,48 @@ export const CreateOfferTemplate: React.FC<ICreateOfferTemplate> = ({
             }}
           />
         </Row>
-        <Select
-          errorMessageTestID="create-offer-destination-error"
-          label="Miejsce docelowe"
-          name="destination"
-          selectOptions={destinationOptions}
-          selectTestID="create-offer-destination"
-          registerOptions={{
-            ...requiredValidator,
-          }}
-        />
-        <Select
-          errorMessageTestID="create-offer-hotel-error"
-          label="Hotel"
-          name="hotel"
-          selectOptions={hotelOptions}
-          selectTestID="create-offer-hotel"
-          registerOptions={{
-            ...requiredValidator,
-          }}
-        />
-        <DateField
-          errorMessageTestID="create-offer-form-error"
-          inputTestID="create-offer-form"
-          label="Od"
-          name="from"
-          registerOptions={{
-            ...requiredValidator,
-          }}
-        />
-        <DateField
-          errorMessageTestID="create-offer-to-error"
-          inputTestID="create-offer-to"
-          label="Do"
-          name="to"
-          registerOptions={{
-            ...requiredValidator,
-          }}
-        />
+        <Row>
+          <Select
+            errorMessageTestID="create-offer-destination-error"
+            label="Miejsce docelowe"
+            name="destination"
+            selectOptions={destinationOptions}
+            selectTestID="create-offer-destination"
+            registerOptions={{
+              ...requiredValidator,
+            }}
+          />
+          <Select
+            errorMessageTestID="create-offer-hotel-error"
+            label="Hotel"
+            name="hotel"
+            selectOptions={hotelOptions}
+            selectTestID="create-offer-hotel"
+            registerOptions={{
+              ...requiredValidator,
+            }}
+          />
+        </Row>
+        <Row>
+          <DateField
+            errorMessageTestID="create-offer-form-error"
+            inputTestID="create-offer-form"
+            label="Od"
+            name="from"
+            registerOptions={{
+              ...requiredValidator,
+            }}
+          />
+          <DateField
+            errorMessageTestID="create-offer-to-error"
+            inputTestID="create-offer-to"
+            label="Do"
+            name="to"
+            registerOptions={{
+              ...requiredValidator,
+            }}
+          />
+        </Row>
         <TextArea
           errorMessageTestID="create-offer-desription-error"
           label="Opis"

@@ -1,5 +1,6 @@
 import { UseFormReturn } from 'react-hook-form';
 
+import { Row } from '~/components/atoms';
 import { Select, TextField } from '~/components/molecules';
 import { Form } from '~/components/organisms';
 import { ISelectOption, ITransport } from '~/models';
@@ -48,26 +49,28 @@ export const CreateTransportTemplate: React.FC<ICreateTransportTemplate> = ({
             ...requiredValidator,
           }}
         />
-        <Select
-          errorMessageTestID="create-transpotr-from-error"
-          label="from"
-          name="Miejsce początkowe"
-          selectOptions={fromOptions}
-          selectTestID="create-transpotr-from"
-          registerOptions={{
-            ...requiredValidator,
-          }}
-        />
-        <Select
-          errorMessageTestID="create-transpotr-to-error"
-          label="to"
-          name="Miejsce docelowe"
-          selectOptions={toOptions}
-          selectTestID="create-transpotr-to"
-          registerOptions={{
-            ...requiredValidator,
-          }}
-        />
+        <Row>
+          <Select
+            errorMessageTestID="create-transpotr-from-error"
+            label="Miejsce początkowe"
+            name="from"
+            selectOptions={fromOptions}
+            selectTestID="create-transpotr-from"
+            registerOptions={{
+              ...requiredValidator,
+            }}
+          />
+          <Select
+            errorMessageTestID="create-transpotr-to-error"
+            label="Miejsce docelowe"
+            name="to"
+            selectOptions={toOptions}
+            selectTestID="create-transpotr-to"
+            registerOptions={{
+              ...requiredValidator,
+            }}
+          />
+        </Row>
         <TextField
           errorMessageTestID="create-transport-price-error"
           inputTestID="create-transport-price"

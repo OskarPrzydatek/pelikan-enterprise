@@ -5,9 +5,10 @@ export const Row = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1rem;
+  gap: ${({ theme }) => theme.spaces.l};
 
   @media ${({ theme }) => theme.breakpoints.phone} {
     flex-direction: row;
+    gap: ${({ theme }) => theme.spaces.xl};
   }
 `;
