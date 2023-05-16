@@ -31,25 +31,26 @@ export const SelectWrapper = styled.div`
 `;
 
 export const SelectChevron = styled.span<ICSS>`
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
+  top: 0;
+  right: 0.3rem;
+  width: 0.8rem;
 
   @media ${({ theme }) => theme.breakpoints.phone} {
-    top: 0.6rem;
     right: 0.6rem;
     width: 0.8rem;
   }
 
   @media ${({ theme }) => theme.breakpoints.tablet} {
-    top: 1.1rem;
     right: 0.8rem;
     width: 1.2rem;
   }
 
   @media ${({ theme }) => theme.breakpoints.desktop} {
-    top: 1rem;
     right: 0.5rem;
   }
 

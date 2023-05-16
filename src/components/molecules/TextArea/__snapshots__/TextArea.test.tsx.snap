@@ -6,10 +6,10 @@ exports[`TextArea > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-ftTHYK gEzAqy"
+        class="sc-pyfCe eQPWOT"
       >
         <textarea
-          class="sc-pyfCe jSMdir"
+          class="sc-jrcTuL jCHQM"
           data-testid="molecule-textarea"
           id="description"
           name="description"
@@ -20,10 +20,10 @@ exports[`TextArea > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-ftTHYK gEzAqy"
+      class="sc-pyfCe eQPWOT"
     >
       <textarea
-        class="sc-pyfCe jSMdir"
+        class="sc-jrcTuL jCHQM"
         data-testid="molecule-textarea"
         id="description"
         name="description"
