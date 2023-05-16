@@ -3,14 +3,9 @@ import { FieldValues, RegisterOptions, useFormContext } from 'react-hook-form';
 
 import { Button, Icon, Label, Text } from '~/components/atoms';
 import { Icons } from '~/constants';
-import { IComponent } from '~/models';
+import { IComponent, ISelectOption } from '~/models';
 
 import * as S from './Select.styles';
-
-export interface ISelectOption {
-  label: string;
-  value: string;
-}
 
 interface ISelect extends IComponent {
   name: string;

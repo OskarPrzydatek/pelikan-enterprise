@@ -1,18 +1,10 @@
 import { UseFormReturn } from 'react-hook-form';
 
 import { Select, TextField } from '~/components/molecules';
-import { ISelectOption } from '~/components/molecules/Select/Select.component';
 import { Form } from '~/components/organisms';
+import { ISelectOption, ITransport } from '~/models';
 import { PageLayout } from '~/styles';
 import { numericValidator, requiredValidator } from '~/validators';
-
-interface ITransport {
-  transportCompanyName: string;
-  transportKind: string;
-  from: string;
-  to: string;
-  price: number;
-}
 
 interface ICreateTransportTemplate {
   createTransportFormMethods: UseFormReturn<ITransport>;

@@ -2,14 +2,9 @@ import { UseFormReturn } from 'react-hook-form';
 
 import { TextArea, TextField } from '~/components/molecules';
 import { Form } from '~/components/organisms';
+import { IAttraction } from '~/models';
 import { PageLayout } from '~/styles';
 import { numericValidator, requiredValidator } from '~/validators';
-
-interface IAttraction {
-  attractionName: string;
-  price: number;
-  description: string;
-}
 
 interface ICreateAttractionTemplate {
   createAttractionFormMethods: UseFormReturn<IAttraction>;

@@ -2,16 +2,9 @@ import { UseFormReturn } from 'react-hook-form';
 
 import { TextArea, TextField } from '~/components/molecules';
 import { Form } from '~/components/organisms';
+import { IHotel } from '~/models';
 import { PageLayout } from '~/styles';
 import { requiredValidator, starsValidator } from '~/validators';
-
-interface IHotel {
-  hotelName: string;
-  address: string;
-  pricePerPerson: number;
-  starRating: number;
-  description: string;
-}
 
 interface ICreateHotelTemplate {
   createHotelFormMethods: UseFormReturn<IHotel>;

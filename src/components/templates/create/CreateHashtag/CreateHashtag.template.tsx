@@ -2,12 +2,9 @@ import { UseFormReturn } from 'react-hook-form';
 
 import { TextField } from '~/components/molecules';
 import { Form } from '~/components/organisms';
+import { IHashtag } from '~/models';
 import { PageLayout } from '~/styles';
 import { requiredValidator } from '~/validators';
-
-interface IHashtag {
-  hashtagName: string;
-}
 
 interface ICreateHashtagTemplate {
   creatHashtagFormMethods: UseFormReturn<IHashtag>;

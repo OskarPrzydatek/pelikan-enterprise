@@ -2,26 +2,14 @@ import { UseFormReturn } from 'react-hook-form';
 
 import { DateField, Select, TextArea, TextField } from '~/components/molecules';
 import { Form } from '~/components/organisms';
-import { SelectOption } from '~/models';
+import { IOffer, ISelectOption } from '~/models';
 import { PageLayout } from '~/styles';
 import { numericValidator, requiredValidator } from '~/validators';
 
-interface IOffer {
-  offerName: string;
-  price: number;
-  numberOfTickets: number;
-  transport: string;
-  destination: string;
-  hotel: string;
-  from: Date;
-  to: Date;
-  description: string;
-}
-
 interface ICreateOfferTemplate {
   createOfferFormMethods: UseFormReturn<IOffer>;
-  destinationOptions: SelectOption[];
-  hotelOptions: SelectOption[];
+  destinationOptions: ISelectOption[];
+  hotelOptions: ISelectOption[];
   onSubmitCreateOffer: () => void;
 }
 
