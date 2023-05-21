@@ -1,9 +1,8 @@
 import React from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 
+import { Select } from '~/components/molecules';
 import { StyledComponentsProvider } from '~/providers';
-
-import { Select } from './Select.component';
 
 interface ISelectHelper {
   isError?: boolean;

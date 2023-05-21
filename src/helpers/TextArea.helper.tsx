@@ -1,22 +1,21 @@
 import React from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 
+import { TextArea } from '~/components/molecules';
 import { StyledComponentsProvider } from '~/providers';
 
-import { TextField } from './TextField.component';
-
-interface ITextFieldHelper {
+interface ITextAreaHelper {
   isError?: boolean;
 }
 
-export const TextFieldHelper: React.FC<ITextFieldHelper> = ({
+export const TextAreaHelper: React.FC<ITextAreaHelper> = ({
   isError,
-}: ITextFieldHelper) => {
-  const methods = useForm<{ email: string }>();
+}: ITextAreaHelper) => {
+  const methods = useForm<{ description: string }>();
 
   React.useEffect(() => {
     if (isError)
-      methods.setError('email', {
+      methods.setError('description', {
         type: 'required',
         message: 'This is required',
       });
@@ -25,13 +24,13 @@ export const TextFieldHelper: React.FC<ITextFieldHelper> = ({
   return (
     <StyledComponentsProvider>
       <FormProvider {...methods}>
-        <TextField
-          errorMessageTestID="molecule-textfield-error-message"
-          inputTestID="molecule-textfield"
-          label="Email"
-          labelTestID="molecule-textfield-label"
-          name="email"
+        <TextArea
+          errorMessageTestID="molecule-textarea-error-message"
+          label="Description"
+          labelTestID="molecule-textarea-label"
+          name="description"
           registerOptions={{}}
+          textareaTestID="molecule-textarea"
         />
       </FormProvider>
     </StyledComponentsProvider>

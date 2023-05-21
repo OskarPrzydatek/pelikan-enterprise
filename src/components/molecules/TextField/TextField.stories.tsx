@@ -1,5 +1,6 @@
+import { TextFieldHelper } from '~/helpers';
+
 import { TextField } from './TextField.component';
-import { TextFieldHelper } from './TextField.helper';
 
 import type { Meta, StoryObj } from '@storybook/react';
 

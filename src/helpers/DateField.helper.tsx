@@ -1,9 +1,8 @@
 import React from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 
+import { DateField } from '~/components/molecules';
 import { StyledComponentsProvider } from '~/providers';
-
-import { DateField } from './DateField.component';
 
 interface IDateFieldHelper {
   isError?: boolean;

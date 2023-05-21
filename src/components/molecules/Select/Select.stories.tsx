@@ -1,5 +1,6 @@
+import { SelectHelper } from '~/helpers';
+
 import { Select } from './Select.component';
-import { SelectHelper } from './Select.helper';
 
 import type { Meta, StoryObj } from '@storybook/react';
 

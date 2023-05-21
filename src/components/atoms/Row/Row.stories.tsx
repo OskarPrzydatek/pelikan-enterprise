@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 
+import { TextFieldHelper } from '~/helpers';
 import { StyledComponentsProvider } from '~/providers';
 
 import { Row } from './Row.component';
@@ -16,8 +17,8 @@ export const RowStory: Story = {
   render: () => (
     <StyledComponentsProvider>
       <Row>
-        <input type="text" />
-        <input type="text" />
+        <TextFieldHelper />
+        <TextFieldHelper />
       </Row>
     </StyledComponentsProvider>
   ),
