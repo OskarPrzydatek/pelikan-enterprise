@@ -32,7 +32,7 @@ export const CreateOfferTemplate: React.FC<ICreateOfferTemplate> = ({
           errorMessageTestID="create-offer-name-error"
           inputTestID="create-offer-name"
           label="Nazwa oferty"
-          name="offergName"
+          name="offerName"
           registerOptions={{
             ...requiredValidator,
           }}
