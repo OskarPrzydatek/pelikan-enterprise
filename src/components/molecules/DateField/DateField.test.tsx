@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { describe, expect, test } from 'vitest';
 
-import { DateFieldHelper } from './DateField.helper';
+import { DateFieldHelper } from '~/helpers';
 
 describe('TextField', () => {
   test('component snapshot', () => {

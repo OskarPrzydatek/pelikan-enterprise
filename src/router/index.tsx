@@ -2,7 +2,15 @@ import { Navigate, createBrowserRouter } from 'react-router-dom';
 
 import { Body } from '~/Body';
 import { Slugs } from '~/constants';
-import { Create, Edit, List } from '~/pages';
+import {
+  CreateAttractionPage,
+  CreateHashtagPage,
+  CreateHotelPage,
+  CreateOfferPage,
+  CreateTransportPage,
+  Edit,
+  List,
+} from '~/pages';
 
 export const router = createBrowserRouter([
   {
@@ -10,7 +18,7 @@ export const router = createBrowserRouter([
     children: [
       // Offer
       {
-        element: <Create />,
+        element: <CreateOfferPage />,
         path: Slugs.CREATE_OFFER,
       },
       {
@@ -30,7 +38,7 @@ export const router = createBrowserRouter([
 
       // Hotels
       {
-        element: <Create />,
+        element: <CreateHotelPage />,
         path: Slugs.CREATE_HOTEL,
       },
       {
@@ -50,7 +58,7 @@ export const router = createBrowserRouter([
 
       // Transport
       {
-        element: <Create />,
+        element: <CreateTransportPage />,
         path: Slugs.CREATE_TRANSPORT,
       },
       {
@@ -70,7 +78,7 @@ export const router = createBrowserRouter([
 
       // Attractions
       {
-        element: <Create />,
+        element: <CreateAttractionPage />,
         path: Slugs.CREATE_ATTRACTION,
       },
       {
@@ -90,7 +98,7 @@ export const router = createBrowserRouter([
 
       // Hashtags
       {
-        element: <Create />,
+        element: <CreateHashtagPage />,
         path: Slugs.CREATE_HASHTAG,
       },
       {

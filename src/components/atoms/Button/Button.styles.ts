@@ -14,6 +14,18 @@ export const Button = styled.button<IButton>`
 
   ${({ css }) => css}
 
+  @media ${({ theme }) => theme.breakpoints.phone} {
+    font-size: ${({ theme }) => theme.fontSizes.s};
+  }
+
+  @media ${({ theme }) => theme.breakpoints.tablet} {
+    font-size: ${({ theme }) => theme.fontSizes.m};
+  }
+
+  @media ${({ theme }) => theme.breakpoints.desktop} {
+    font-size: ${({ theme }) => theme.fontSizes.m};
+  }
+
   ${({ variant }) => {
     switch (variant) {
       case 'primary':
