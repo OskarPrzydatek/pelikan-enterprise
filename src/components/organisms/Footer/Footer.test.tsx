@@ -3,7 +3,7 @@ import { describe, test, expect } from 'vitest';
 
 import { StyledComponentsProvider } from '~/providers';
 
-import { Footer } from './Footer.component';
+import { Footer } from './Footer';
 
 const mockVersion = '0.0.1';
 

@@ -2,10 +2,10 @@ import { Meta, StoryObj } from '@storybook/react';
 
 import { CreateAttractionTemplateHelper } from '~/helpers';
 
-import { CreateAttractionTemplate } from './CreateAttraction.template';
+import { CreateAttractionTemplate } from './CreateAttractionTemplate';
 
 const meta: Meta<typeof CreateAttractionTemplate> = {
-  title: 'Templates/CreateAttraction',
+  title: 'Templates/CreateAttractionTemplate',
   component: CreateAttractionTemplate,
 };
 

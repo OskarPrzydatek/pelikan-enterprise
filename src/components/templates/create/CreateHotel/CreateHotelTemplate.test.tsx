@@ -5,7 +5,7 @@ import { CreateHotelTemplateHelper } from '~/helpers';
 
 const mockOnSubmitCreateHotel = vi.fn();
 
-describe('CreateHotel Template', () => {
+describe('CreateHotelTemplate', () => {
   test('component snapshot', () => {
     const view = render(
       <CreateHotelTemplateHelper

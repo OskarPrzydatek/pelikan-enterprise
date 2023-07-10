@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import { Icons } from '~/constants';
 import { StyledComponentsProvider } from '~/providers';
 
-import { Icon } from './Icon.component';
+import { Icon } from './Icon';
 
 const meta: Meta<typeof Icon> = {
   title: 'Atoms/Icon',

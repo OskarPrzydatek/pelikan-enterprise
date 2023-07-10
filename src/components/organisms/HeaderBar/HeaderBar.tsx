@@ -1,6 +1,6 @@
 import { ProfilePicture } from '~/components/molecules';
 
-import { HamburgerMenu } from '../HamburgerMenu/HamburgerMenu.component';
+import { HamburgerMenu } from '../HamburgerMenu/HamburgerMenu';
 
 import * as S from './HeaderBar.styles';
 

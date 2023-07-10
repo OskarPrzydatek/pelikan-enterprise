@@ -5,7 +5,7 @@ import { CreateOfferTemplateHelper } from '~/helpers';
 
 const mockOnSubmitCreateOffer = vi.fn();
 
-describe('CreateOffer Template', () => {
+describe('CreateOfferTemplate', () => {
   test('component snapshot', () => {
     const view = render(
       <CreateOfferTemplateHelper

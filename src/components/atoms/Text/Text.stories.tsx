@@ -1,6 +1,6 @@
 import { StyledComponentsProvider } from '~/providers';
 
-import { Text } from './Text.component';
+import { Text } from './Text';
 
 import type { Meta, StoryObj } from '@storybook/react';
 

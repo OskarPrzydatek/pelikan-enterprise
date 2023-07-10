@@ -3,7 +3,7 @@ import { describe, test, expect } from 'vitest';
 
 import { StyledComponentsProvider } from '~/providers';
 
-import { Row } from './Row.component';
+import { Row } from './Row';
 
 describe('Row', () => {
   test('component snapshot', () => {

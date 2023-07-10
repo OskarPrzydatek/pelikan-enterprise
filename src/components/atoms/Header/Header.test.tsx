@@ -3,7 +3,7 @@ import { describe, test, expect } from 'vitest';
 
 import { StyledComponentsProvider } from '~/providers';
 
-import { Header } from './Header.component';
+import { Header } from './Header';
 
 describe('Header', () => {
   test('component snapshot', () => {

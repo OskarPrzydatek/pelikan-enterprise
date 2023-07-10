@@ -1,8 +1,8 @@
-export { CreateAttractionPage } from './create/CreateAttraction/CreateAttraction.page';
-export { CreateHashtagPage } from './create/CreateHashtag/CreateHashtag.page';
-export { CreateHotelPage } from './create/CreateHotel/CreateHotel.page';
-export { CreateOfferPage } from './create/CreateOffer/CreateOffer.page';
-export { CreateTransportPage } from './create/CreateTransport/CreateTransport.page';
+export { CreateAttractionPage } from './create/CreateAttraction/CreateAttractionPage';
+export { CreateHashtagPage } from './create/CreateHashtag/CreateHashtagPage';
+export { CreateHotelPage } from './create/CreateHotel/CreateHotelPage';
+export { CreateOfferPage } from './create/CreateOffer/CreateOfferPage';
+export { CreateTransportPage } from './create/CreateTransport/CreateTransportPage';
 
-export { List } from './List/List.page';
-export { Edit } from './Edit/Edit.page';
+export { List } from './List/ListPage';
+export { Edit } from './Edit/EditPage';

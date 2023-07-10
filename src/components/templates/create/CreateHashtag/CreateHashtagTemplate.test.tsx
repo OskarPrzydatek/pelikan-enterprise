@@ -5,7 +5,7 @@ import { CreateHashtagTemplateHelper } from '~/helpers';
 
 const mockOnSubmitCreateHashtag = vi.fn();
 
-describe('CreateHashtag Template', () => {
+describe('CreateHashtagTemplate', () => {
   test('component snapshot', () => {
     const view = render(
       <CreateHashtagTemplateHelper

@@ -3,7 +3,7 @@ import { describe, expect, test } from 'vitest';
 
 import { StyledComponentsProvider } from '~/providers';
 
-import { ProfilePicture } from './ProfilePicture.component';
+import { ProfilePicture } from './ProfilePicture';
 
 describe('ProfilePicture', () => {
   test('component snapshot', () => {

@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 
 import { StyledComponentsProvider } from '~/providers';
 
-import { Header } from './Header.component';
+import { Header } from './Header';
 
 const meta: Meta<typeof Header> = {
   title: 'Atoms/Header',

@@ -2,10 +2,10 @@ import { Meta, StoryObj } from '@storybook/react';
 
 import { CreateHotelTemplateHelper } from '~/helpers';
 
-import { CreateHotelTemplate } from './CreateHotel.template';
+import { CreateHotelTemplate } from './CreateHotelTemplate';
 
 const meta: Meta<typeof CreateHotelTemplate> = {
-  title: 'Templates/CreateHotel',
+  title: 'Templates/CreateHotelTemplate',
   component: CreateHotelTemplate,
 };
 

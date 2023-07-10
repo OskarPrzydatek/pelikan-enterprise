@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 
 import { StyledComponentsProvider } from '~/providers';
 
-import { Button } from './Button.component';
+import { Button } from './Button';
 
 const meta: Meta<typeof Button> = {
   title: 'Atoms/Button',

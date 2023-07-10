@@ -2,10 +2,10 @@ import { Meta, StoryObj } from '@storybook/react';
 
 import { CreateHashtagTemplateHelper } from '~/helpers';
 
-import { CreateHashtagTemplate } from './CreateHashtag.template';
+import { CreateHashtagTemplate } from './CreateHashtagTemplate';
 
 const meta: Meta<typeof CreateHashtagTemplate> = {
-  title: 'Templates/CreateHashtag',
+  title: 'Templates/CreateHashtagTemplate',
   component: CreateHashtagTemplate,
 };
 

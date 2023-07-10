@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import { StyledComponentsProvider } from '~/providers';
 
-import { HamburgerMenu } from './HamburgerMenu.component';
+import { HamburgerMenu } from './HamburgerMenu';
 
 const meta: Meta<typeof HamburgerMenu> = {
   title: 'Organisms/HamburgerMenu',

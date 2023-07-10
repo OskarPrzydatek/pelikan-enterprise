@@ -1,34 +1,70 @@
 // Vitest Snapshot v1
 
-exports[`TextField > component snapshot 1`] = `
+exports[`CreateHashtagTemplate > component snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-iBYQkv bzqjBA"
+        class="sc-cwSeag jmwCBD"
       >
-        <input
-          class="sc-ftTHYK hNlhTX"
-          data-testid="molecule-datefield"
-          min="2023-07-10"
-          name="startDate"
-          type="date"
-        />
+        <form
+          class="sc-bjfHbI hvxeVC"
+        >
+          <h2
+            class="sc-dkrFOg jPWIGE"
+          >
+            Dodaj hashtag
+          </h2>
+          <div
+            class="sc-csuSiG fWMyeb"
+          >
+            <input
+              class="sc-eDWCr cfzujf"
+              data-testid="create-hashtag-name"
+              id="hashtagName"
+              name="hashtagName"
+              placeholder="Nazwa hashtagu"
+            />
+          </div>
+          <input
+            class="sc-idXgbr iQQowE"
+            type="submit"
+            value="Dodaj"
+          />
+        </form>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-iBYQkv bzqjBA"
+      class="sc-cwSeag jmwCBD"
     >
-      <input
-        class="sc-ftTHYK hNlhTX"
-        data-testid="molecule-datefield"
-        min="2023-07-10"
-        name="startDate"
-        type="date"
-      />
+      <form
+        class="sc-bjfHbI hvxeVC"
+      >
+        <h2
+          class="sc-dkrFOg jPWIGE"
+        >
+          Dodaj hashtag
+        </h2>
+        <div
+          class="sc-csuSiG fWMyeb"
+        >
+          <input
+            class="sc-eDWCr cfzujf"
+            data-testid="create-hashtag-name"
+            id="hashtagName"
+            name="hashtagName"
+            placeholder="Nazwa hashtagu"
+          />
+        </div>
+        <input
+          class="sc-idXgbr iQQowE"
+          type="submit"
+          value="Dodaj"
+        />
+      </form>
     </div>
   </div>,
   "debug": [Function],

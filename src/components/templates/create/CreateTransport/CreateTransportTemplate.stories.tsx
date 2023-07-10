@@ -2,10 +2,10 @@ import { Meta, StoryObj } from '@storybook/react';
 
 import { CreateTransportTemplateHelper } from '~/helpers';
 
-import { CreateTransportTemplate } from './CreateTransport.template';
+import { CreateTransportTemplate } from './CreateTransportTemplate';
 
 const meta: Meta<typeof CreateTransportTemplate> = {
-  title: 'Templates/CreateTransport',
+  title: 'Templates/CreateTransportTemplate',
   component: CreateTransportTemplate,
 };
 

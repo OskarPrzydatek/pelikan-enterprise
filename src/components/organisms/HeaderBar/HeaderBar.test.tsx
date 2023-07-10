@@ -4,7 +4,7 @@ import { describe, expect, test } from 'vitest';
 
 import { StyledComponentsProvider } from '~/providers';
 
-import { HeaderBar } from './HeaderBar.component';
+import { HeaderBar } from './HeaderBar';
 
 describe('HeaderBar', () => {
   test('component snapshot', () => {

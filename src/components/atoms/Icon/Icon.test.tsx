@@ -4,7 +4,7 @@ import { describe, test, expect, vi } from 'vitest';
 import { Icons } from '~/constants';
 import { StyledComponentsProvider } from '~/providers';
 
-import { Icon } from './Icon.component';
+import { Icon } from './Icon';
 
 const mockOnClick = vi.fn();
 

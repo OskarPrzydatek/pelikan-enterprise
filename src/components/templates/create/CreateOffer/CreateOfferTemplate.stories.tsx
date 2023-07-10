@@ -2,10 +2,10 @@ import { Meta, StoryObj } from '@storybook/react';
 
 import { CreateOfferTemplateHelper } from '~/helpers';
 
-import { CreateOfferTemplate } from './CreateOffer.template';
+import { CreateOfferTemplate } from './CreateOfferTemplate';
 
 const meta: Meta<typeof CreateOfferTemplate> = {
-  title: 'Templates/CreateOffer',
+  title: 'Templates/CreateOfferTemplate',
   component: CreateOfferTemplate,
 };
 

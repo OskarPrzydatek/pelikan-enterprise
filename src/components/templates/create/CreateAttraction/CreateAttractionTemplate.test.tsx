@@ -5,7 +5,7 @@ import { CreateAttractionTemplateHelper } from '~/helpers';
 
 const mockOnSubmitCreateAttraction = vi.fn();
 
-describe('CreateAttraction Template', () => {
+describe('CreateAttractionTemplate', () => {
   test('component snapshot', () => {
     const view = render(
       <CreateAttractionTemplateHelper

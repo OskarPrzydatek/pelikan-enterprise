@@ -4,7 +4,7 @@ import { describe, test, expect } from 'vitest';
 
 import { StyledComponentsProvider } from '~/providers';
 
-import { HamburgerMenu } from './HamburgerMenu.component';
+import { HamburgerMenu } from './HamburgerMenu';
 
 describe('Button', () => {
   test('component snapshot', () => {

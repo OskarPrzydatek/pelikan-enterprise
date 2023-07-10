@@ -3,7 +3,7 @@ import { describe, test, expect, vi } from 'vitest';
 
 import { StyledComponentsProvider } from '~/providers';
 
-import { SideMenu } from './SideMenu.component';
+import { SideMenu } from './SideMenu';
 
 const mockHandleIsCurrentPage = vi.fn();
 const mockOnClickCloseSideMenu = vi.fn();

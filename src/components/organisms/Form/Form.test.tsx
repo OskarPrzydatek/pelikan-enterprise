@@ -3,7 +3,7 @@ import { describe, test, expect, vi } from 'vitest';
 
 import { StyledComponentsProvider } from '~/providers';
 
-import { Form } from './Form.component';
+import { Form } from './Form';
 
 const mockOnSubmit = vi.fn();
 

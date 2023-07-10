@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 
 import { StyledComponentsProvider } from '~/providers';
 
-import { Background } from './Background.component';
+import { Background } from './Background';
 
 const meta: Meta<typeof Background> = {
   title: 'Atoms/Background',
