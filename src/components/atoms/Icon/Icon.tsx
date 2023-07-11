@@ -1,6 +1,6 @@
-import { ReactComponent as ChevronIcon } from '~/assets/chevron_icon.svg';
-import { ReactComponent as CloseIcon } from '~/assets/close_icon.svg';
-import { ReactComponent as HamburgerIcon } from '~/assets/hamburger_icon.svg';
+import { ReactComponent as ChevronIcon } from '~/assets/svg/chevron_icon.svg';
+import { ReactComponent as CloseIcon } from '~/assets/svg/close_icon.svg';
+import { ReactComponent as HamburgerIcon } from '~/assets/svg/hamburger_icon.svg';
 import { Icons } from '~/constants';
 import { IComponent } from '~/models';
 
@@ -59,5 +59,5 @@ export const Icon: React.FC<IIcon> = ({
     );
   }
 
-  return <>{renderIconByType()}</>;
+  return renderIconByType();
 };
