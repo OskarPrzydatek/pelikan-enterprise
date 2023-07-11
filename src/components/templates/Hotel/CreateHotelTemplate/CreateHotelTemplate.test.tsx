@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import { describe, test, vi } from 'vitest';
 
-import { CreateHotelTemplateHelper } from '~/helpers';
+import { CreateHotelTemplateHelper } from './CreateHotelTemplateHelper';
 
 const mockOnSubmitCreateHotel = vi.fn();
 

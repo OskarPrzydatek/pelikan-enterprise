@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { describe, expect, test, vi } from 'vitest';
 
-import { SelectHelper } from '~/helpers';
+import { SelectHelper } from './SelectHelper';
 
 describe('Select', () => {
   test('component snapshot', () => {

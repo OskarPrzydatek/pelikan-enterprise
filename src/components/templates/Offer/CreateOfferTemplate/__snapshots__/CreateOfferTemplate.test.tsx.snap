@@ -124,7 +124,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
               <input
                 class="sc-ftTHYK hNlhTX"
                 data-testid="create-offer-form"
-                min="2023-07-10"
+                min="2023-07-11"
                 name="from"
                 type="date"
               />
@@ -135,7 +135,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
               <input
                 class="sc-ftTHYK hNlhTX"
                 data-testid="create-offer-to"
-                min="2023-07-10"
+                min="2023-07-11"
                 name="to"
                 type="date"
               />
@@ -281,7 +281,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
             <input
               class="sc-ftTHYK hNlhTX"
               data-testid="create-offer-form"
-              min="2023-07-10"
+              min="2023-07-11"
               name="from"
               type="date"
             />
@@ -292,7 +292,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
             <input
               class="sc-ftTHYK hNlhTX"
               data-testid="create-offer-to"
-              min="2023-07-10"
+              min="2023-07-11"
               name="to"
               type="date"
             />

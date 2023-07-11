@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import { describe, test, vi } from 'vitest';
 
-import { CreateOfferTemplateHelper } from '~/helpers';
+import { CreateOfferTemplateHelper } from './CreateOfferTemplateHelper';
 
 const mockOnSubmitCreateOffer = vi.fn();
 

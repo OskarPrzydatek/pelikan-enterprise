@@ -11,7 +11,7 @@ exports[`TextField > component snapshot 1`] = `
         <input
           class="sc-ftTHYK hNlhTX"
           data-testid="molecule-datefield"
-          min="2023-07-10"
+          min="2023-07-11"
           name="startDate"
           type="date"
         />
@@ -25,7 +25,7 @@ exports[`TextField > component snapshot 1`] = `
       <input
         class="sc-ftTHYK hNlhTX"
         data-testid="molecule-datefield"
-        min="2023-07-10"
+        min="2023-07-11"
         name="startDate"
         type="date"
       />

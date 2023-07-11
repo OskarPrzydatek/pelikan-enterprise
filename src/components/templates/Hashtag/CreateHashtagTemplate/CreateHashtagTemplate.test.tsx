@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import { describe, test, vi } from 'vitest';
 
-import { CreateHashtagTemplateHelper } from '~/helpers';
+import { CreateHashtagTemplateHelper } from './CreateHashtagTemplateHelper';
 
 const mockOnSubmitCreateHashtag = vi.fn();
 

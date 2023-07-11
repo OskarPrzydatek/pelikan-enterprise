@@ -1,6 +1,5 @@
-import { DateFieldHelper } from '~/helpers';
-
 import { DateField } from './DateField';
+import { DateFieldHelper } from './DateFieldHelper';
 
 import type { Meta, StoryObj } from '@storybook/react';
 

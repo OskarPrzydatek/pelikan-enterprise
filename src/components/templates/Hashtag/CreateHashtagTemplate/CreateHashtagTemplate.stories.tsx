@@ -1,8 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 
-import { CreateHashtagTemplateHelper } from '~/helpers';
-
 import { CreateHashtagTemplate } from './CreateHashtagTemplate';
+import { CreateHashtagTemplateHelper } from './CreateHashtagTemplateHelper';
 
 const meta: Meta<typeof CreateHashtagTemplate> = {
   title: 'Templates/CreateHashtagTemplate',

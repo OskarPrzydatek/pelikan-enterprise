@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import { describe, test, vi } from 'vitest';
 
-import { CreateAttractionTemplateHelper } from '~/helpers';
+import { CreateAttractionTemplateHelper } from './CreateAttractionTemplateHelper';
 
 const mockOnSubmitCreateAttraction = vi.fn();
 
