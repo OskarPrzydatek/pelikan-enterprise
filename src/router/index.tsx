@@ -8,8 +8,16 @@ import {
   CreateHotelPage,
   CreateOfferPage,
   CreateTransportPage,
-  Edit,
-  List,
+  EditAttractionPage,
+  EditHashtagPage,
+  EditHotelPage,
+  EditOfferPage,
+  EditTransportPage,
+  ListAttractionPage,
+  ListHashtagPage,
+  ListHotelPage,
+  ListOfferPage,
+  ListTransportPage,
 } from '~/pages';
 
 export const router = createBrowserRouter([
@@ -22,15 +30,15 @@ export const router = createBrowserRouter([
         path: Slugs.CREATE_OFFER,
       },
       {
-        element: <Edit />,
+        element: <EditOfferPage />,
         path: Slugs.EDIT_OFFER,
       },
       {
-        element: <List />,
+        element: <ListOfferPage />,
         path: Slugs.LIST_OFFER,
         children: [
           {
-            element: <List />,
+            element: <ListOfferPage />,
             path: Slugs.PAGE,
           },
         ],
@@ -42,15 +50,15 @@ export const router = createBrowserRouter([
         path: Slugs.CREATE_HOTEL,
       },
       {
-        element: <Edit />,
+        element: <EditHotelPage />,
         path: Slugs.EDIT_HOTEL,
       },
       {
-        element: <List />,
+        element: <ListHotelPage />,
         path: Slugs.LIST_HOTEL,
         children: [
           {
-            element: <List />,
+            element: <ListHotelPage />,
             path: Slugs.PAGE,
           },
         ],
@@ -62,15 +70,15 @@ export const router = createBrowserRouter([
         path: Slugs.CREATE_TRANSPORT,
       },
       {
-        element: <Edit />,
+        element: <EditTransportPage />,
         path: Slugs.EDIT_TRANSPORT,
       },
       {
-        element: <List />,
+        element: <ListTransportPage />,
         path: Slugs.LIST_TRANSPORT,
         children: [
           {
-            element: <List />,
+            element: <ListTransportPage />,
             path: Slugs.PAGE,
           },
         ],
@@ -82,15 +90,15 @@ export const router = createBrowserRouter([
         path: Slugs.CREATE_ATTRACTION,
       },
       {
-        element: <Edit />,
+        element: <EditAttractionPage />,
         path: Slugs.EDIT_ATTRACTION,
       },
       {
-        element: <List />,
+        element: <ListAttractionPage />,
         path: Slugs.LIST_ATTRACTION,
         children: [
           {
-            element: <List />,
+            element: <ListAttractionPage />,
             path: Slugs.PAGE,
           },
         ],
@@ -102,21 +110,23 @@ export const router = createBrowserRouter([
         path: Slugs.CREATE_HASHTAG,
       },
       {
-        element: <Edit />,
+        element: <EditHashtagPage />,
         path: Slugs.EDIT_HASHTAG,
       },
       {
-        element: <List />,
+        element: <ListHashtagPage />,
         path: Slugs.LIST_HASHTAG,
         children: [
           {
-            element: <List />,
+            element: <ListHashtagPage />,
             path: Slugs.PAGE,
           },
         ],
       },
     ],
   },
+
+  // Not Found
   {
     element: <Navigate replace to={Slugs.CREATE_OFFER} />,
     path: Slugs.NOT_FOUND,

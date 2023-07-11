@@ -2,15 +2,13 @@ import { useParams } from 'react-router-dom';
 
 import { PageLayout } from '~/styles';
 
-export const Edit: React.FC = () => {
+export const EditTransportPage: React.FC = () => {
   const { id } = useParams();
 
   return (
     <PageLayout>
-      <div>
-        <h2>Edit page template</h2>
-        <p>id: {id}</p>
-      </div>
+      <h2>Edit Transport Page</h2>
+      <p>id: {id}</p>
     </PageLayout>
   );
 };
