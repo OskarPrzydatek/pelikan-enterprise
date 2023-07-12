@@ -9,17 +9,9 @@ export const Text = styled.p<ICSS>`
   color: ${({ theme }) => theme.colors.black};
   font-size: ${({ theme }) => theme.fontSizes.s};
 
-  ${({ css }) => css}
-
-  @media ${({ theme }) => theme.breakpoints.phone} {
-    font-size: ${({ theme }) => theme.fontSizes.s};
-  }
-
   @media ${({ theme }) => theme.breakpoints.tablet} {
     font-size: ${({ theme }) => theme.fontSizes.m};
   }
 
-  @media ${({ theme }) => theme.breakpoints.desktop} {
-    font-size: ${({ theme }) => theme.fontSizes.m};
-  }
+  ${({ css }) => css}
 `;

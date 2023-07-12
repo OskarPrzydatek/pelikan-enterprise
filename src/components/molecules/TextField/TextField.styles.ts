@@ -19,23 +19,13 @@ export const Field = styled.input<ICSS>`
   border: none;
   width: 100%;
   line-height: 1.6;
-  padding: 0.5%;
+  padding: ${({ theme }) => theme.spaces.xxs} ${({ theme }) => theme.spaces.xs};
   font-family: ${({ theme }) => theme.fonts.main};
   color: ${({ theme }) => theme.colors.black};
   border: 3px solid ${({ theme }) => theme.colors.darkBlue};
   font-size: ${({ theme }) => theme.fontSizes.s};
 
-  ${({ css }) => css}
-
-  @media ${({ theme }) => theme.breakpoints.phone} {
-    font-size: ${({ theme }) => theme.fontSizes.s};
-  }
-
   @media ${({ theme }) => theme.breakpoints.tablet} {
-    font-size: ${({ theme }) => theme.fontSizes.m};
-  }
-
-  @media ${({ theme }) => theme.breakpoints.desktop} {
     font-size: ${({ theme }) => theme.fontSizes.m};
   }
 
@@ -58,6 +48,8 @@ export const Field = styled.input<ICSS>`
     -webkit-appearance: none;
     margin: 0;
   }
+
+  ${({ css }) => css}
 `;
 
 export const labelCSS = css`

@@ -52,9 +52,9 @@ exports[`HeaderBar > component snapshot 1`] = `
             Witaj User
           </p>
           <img
-            alt="profile"
+            alt="default profile picture"
             class="sc-ipEyDJ bpftLS"
-            src="/src/assets/profile_picture.png"
+            src="/src/assets/png/profile_picture.png"
           />
         </div>
       </header>
@@ -108,9 +108,9 @@ exports[`HeaderBar > component snapshot 1`] = `
           Witaj User
         </p>
         <img
-          alt="profile"
+          alt="default profile picture"
           class="sc-ipEyDJ bpftLS"
-          src="/src/assets/profile_picture.png"
+          src="/src/assets/png/profile_picture.png"
         />
       </div>
     </header>

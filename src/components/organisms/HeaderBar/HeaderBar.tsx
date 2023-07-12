@@ -8,7 +8,7 @@ export const HeaderBar: React.FC = () => {
   return (
     <S.HeaderBar>
       <HamburgerMenu />
-      <ProfilePicture label="Witaj User" />
+      <ProfilePicture label="Witaj Użytkowniku" />
     </S.HeaderBar>
   );
 };

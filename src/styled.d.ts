@@ -32,6 +32,7 @@ interface IFontSizes {
 }
 
 interface ISpaces {
+  xxs: string;
   xs: string;
   s: string;
   m: string;

@@ -72,19 +72,21 @@ export const Select: React.FC<ISelect> = ({
           {label}
         </Label>
       ) : null}
-      <S.SelectChevron css={isChevronCSS}>
-        <Icon icon={Icons.CHEVRON} />
-      </S.SelectChevron>
-      <S.Select
-        readOnly
-        css={isSelectErrorCSS}
-        data-testid={selectTestID}
-        placeholder={placeholder}
-        value={selectedLabel}
-        {...register(name, registerOptions)}
-        onBlur={handleOnBlur}
-        onFocus={handleOnFocus}
-      />
+      <S.SelectWrapper>
+        <S.SelectChevronWrapper css={isChevronCSS}>
+          <Icon icon={Icons.CHEVRON} />
+        </S.SelectChevronWrapper>
+        <S.Select
+          readOnly
+          css={isSelectErrorCSS}
+          data-testid={selectTestID}
+          placeholder={placeholder}
+          value={selectedLabel}
+          {...register(name, registerOptions)}
+          onBlur={handleOnBlur}
+          onFocus={handleOnFocus}
+        />
+      </S.SelectWrapper>
       {showOptions ? (
         <S.OptionsList
           data-testid={optionsListTestID}
@@ -104,7 +106,7 @@ export const Select: React.FC<ISelect> = ({
                   variant="ghost"
                   onClick={handleOnClickSelected}
                 >
-                  <Text>{label}</Text>
+                  {label}
                 </Button>
               </li>
             );

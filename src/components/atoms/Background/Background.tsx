@@ -17,7 +17,10 @@ export const Background: React.FC<IBackground> = ({
   const handleOnClickBackground = (event: React.MouseEvent) => {
     event.preventDefault();
 
-    if (event.target === event.currentTarget && onClickBackground) {
+    const isOnClickBackground =
+      event.target === event.currentTarget && onClickBackground;
+
+    if (isOnClickBackground) {
       onClickBackground();
     }
   };

@@ -14,9 +14,9 @@ exports[`ProfilePicture > component snapshot 1`] = `
           Witaj User
         </p>
         <img
-          alt="profile"
+          alt="default profile picture"
           class="sc-jrcTuL CwhRr"
-          src="/src/assets/profile_picture.png"
+          src="/src/assets/png/profile_picture.png"
         />
       </div>
     </div>
@@ -31,9 +31,9 @@ exports[`ProfilePicture > component snapshot 1`] = `
         Witaj User
       </p>
       <img
-        alt="profile"
+        alt="default profile picture"
         class="sc-jrcTuL CwhRr"
-        src="/src/assets/profile_picture.png"
+        src="/src/assets/png/profile_picture.png"
       />
     </div>
   </div>,

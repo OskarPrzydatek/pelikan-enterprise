@@ -30,7 +30,9 @@ export const SelectWrapper = styled.div`
   width: 100%;
 `;
 
-export const SelectChevron = styled.span<ICSS>`
+export const SelectInputWrapper = styled.div``;
+
+export const SelectChevronWrapper = styled.span<ICSS>`
   height: 100%;
   display: flex;
   justify-content: center;
@@ -62,24 +64,14 @@ export const Select = styled.input<ICSS>`
   border: none;
   width: 100%;
   line-height: 1.6;
-  padding: 0.5%;
+  cursor: pointer;
+  padding: ${({ theme }) => theme.spaces.xxs} ${({ theme }) => theme.spaces.xs};
   font-family: ${({ theme }) => theme.fonts.main};
   color: ${({ theme }) => theme.colors.black};
   border: 3px solid ${({ theme }) => theme.colors.darkBlue};
-  font-size: ${({ theme }) => theme.fontSizes.m};
-  cursor: pointer;
-
-  ${({ css }) => css}
-
-  @media ${({ theme }) => theme.breakpoints.phone} {
-    font-size: ${({ theme }) => theme.fontSizes.s};
-  }
+  font-size: ${({ theme }) => theme.fontSizes.s};
 
   @media ${({ theme }) => theme.breakpoints.tablet} {
-    font-size: ${({ theme }) => theme.fontSizes.m};
-  }
-
-  @media ${({ theme }) => theme.breakpoints.desktop} {
     font-size: ${({ theme }) => theme.fontSizes.m};
   }
 
@@ -102,6 +94,8 @@ export const Select = styled.input<ICSS>`
     -webkit-appearance: none;
     margin: 0;
   }
+
+  ${({ css }) => css}
 `;
 
 export const OptionsList = styled.ul`
@@ -115,27 +109,27 @@ export const OptionsList = styled.ul`
 `;
 
 export const labelCSS = css`
+  z-index: 10;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
   position: absolute;
   padding: 0 ${({ theme }) => theme.spaces.xs};
   margin-left: ${({ theme }) => theme.spaces.xs};
   background-color: ${({ theme }) => theme.colors.white};
   color: ${({ theme }) => theme.colors.lightBlue};
   animation-name: ${onFocusMoveAnimation};
-  animation-duration: 0.2s;
-  animation-fill-mode: forwards;
-  z-index: 10;
 `;
 
 export const chevronUpCSS = css`
-  animation-name: ${rotateUpAnimation};
   animation-duration: 0.2s;
   animation-fill-mode: forwards;
+  animation-name: ${rotateUpAnimation};
 `;
 
 export const chevronDownCSS = css`
-  animation-name: ${rotateDownAnimation};
   animation-duration: 0.2s;
   animation-fill-mode: forwards;
+  animation-name: ${rotateDownAnimation};
 `;
 
 export const selectErrorCSS = css`

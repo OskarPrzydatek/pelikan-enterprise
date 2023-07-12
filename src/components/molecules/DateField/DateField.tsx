@@ -31,9 +31,9 @@ export const DateField: React.FC<IDateField> = ({
 
   const minDate = new Date().toISOString().split('T')[0];
   const errorMessage = errors[name]?.message as string;
+  const isDateFieldErrorCSS = errors[name] ? S.dateFieldErrorCSS : undefined;
 
   const handleIsFocused = () => setIsFocused(true);
-
   const handleIsBlured = () => setIsFocused(false);
 
   return (
@@ -44,6 +44,7 @@ export const DateField: React.FC<IDateField> = ({
         </Label>
       )}
       <S.Field
+        css={isDateFieldErrorCSS}
         data-testid={inputTestID}
         min={minDate}
         type="date"

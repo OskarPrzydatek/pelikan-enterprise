@@ -12,8 +12,8 @@ export const theme: DefaultTheme = {
     white: '#FFFFFF',
   },
   breakpoints: {
-    phone: '(min-width: 390px)',
-    tablet: '(min-width: 834px)',
+    phone: '(min-width: 420px)',
+    tablet: '(min-width: 920px)',
     desktop: '(min-width: 1200px)',
   },
   fonts: {
@@ -29,11 +29,12 @@ export const theme: DefaultTheme = {
     xxl: '2rem',
   },
   spaces: {
-    xs: '.3rem',
-    s: '.5rem',
-    m: '.8rem',
-    l: '1rem',
-    xl: '1.5rem',
+    xxs: '.2rem',
+    xs: '.5rem',
+    s: '.8rem',
+    m: '1.2rem',
+    l: '1.5rem',
+    xl: '1.8rem',
     xxl: '2rem',
   },
 };

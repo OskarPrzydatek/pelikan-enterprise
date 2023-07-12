@@ -15,13 +15,14 @@ type Story = StoryObj<typeof Background>;
 export const BackgroundWithLeftSideChildren: Story = {
   render: () => (
     <StyledComponentsProvider>
-      <Background>
+      <Background onClickBackground={() => console.log('background clicked!')}>
         <div
           id="exaple-side-menu"
           style={{
             width: '30%',
             height: '100%',
             background: '#FFF',
+            padding: '2%',
           }}
         >
           <p>Example Text</p>

@@ -1,29 +1,30 @@
 import styled, { css } from 'styled-components';
 
 export const SideMenu = styled.div`
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-color: ${({ theme }) => theme.colors.white};
   display: grid;
-  grid-template-rows: 1fr 20fr 1fr;
-  padding: ${({ theme }) => theme.spaces.m};
+  grid-template-rows: repeat(3, 1fr);
+  padding: ${({ theme }) => theme.spaces.s};
 
   @media ${({ theme }) => theme.breakpoints.phone} {
-    width: 55%;
+    width: 65%;
   }
 
   @media ${({ theme }) => theme.breakpoints.tablet} {
-    width: 30%;
+    width: 40%;
   }
 
   @media ${({ theme }) => theme.breakpoints.desktop} {
-    width: 20%;
+    width: 30%;
   }
 `;
 
-export const Header = styled.div`
+export const HeaderBar = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 
 export const Nav = styled.nav``;

@@ -20,6 +20,16 @@ export const ButtonPrimmary: Story = {
   ),
 };
 
+export const ButtonSecondary: Story = {
+  render: () => (
+    <StyledComponentsProvider>
+      <Button variant="secondary" onClick={() => console.log('clicked')}>
+        Secondary
+      </Button>
+    </StyledComponentsProvider>
+  ),
+};
+
 export const ButtonGhost: Story = {
   render: () => (
     <StyledComponentsProvider>

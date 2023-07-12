@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Background, Button, Header, Icon, Text } from '~/components/atoms';
+import { Background, Button, Header, Icon } from '~/components/atoms';
 import { Icons, Slugs } from '~/constants';
 import { sideMenuNavigationItemsMetadata } from '~/metadata';
 import { IComponent, ISideMenuNavigationList } from '~/models';
@@ -55,7 +55,7 @@ export const SideMenu: React.FC<ISideMenu> = ({
   return (
     <Background onClickBackground={onClickCloseSideMenu}>
       <S.SideMenu data-testid="hamburger-menu-side-menu">
-        <S.Header>
+        <S.HeaderBar>
           <Header>Pelikan Enterprise</Header>
           <Icon
             dataTestID="side-menu-close-icon"
@@ -63,7 +63,7 @@ export const SideMenu: React.FC<ISideMenu> = ({
             width={15}
             onClick={onClickCloseSideMenu}
           />
-        </S.Header>
+        </S.HeaderBar>
         <S.Nav>
           <S.List>
             {sideMenuNavigationItemsMetadata.map(({ title, items }) => (
@@ -77,8 +77,12 @@ export const SideMenu: React.FC<ISideMenu> = ({
             ))}
           </S.List>
         </S.Nav>
-        <Button dataTestID="side-menu-logout-button" onClick={onClickLogout}>
-          <Text css={S.logoutButtonCSS}>Wyloguj</Text>
+        <Button
+          css={S.logoutButtonCSS}
+          dataTestID="side-menu-logout-button"
+          onClick={onClickLogout}
+        >
+          Wyloguj
         </Button>
       </S.SideMenu>
     </Background>
