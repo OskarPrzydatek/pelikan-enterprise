@@ -6,7 +6,7 @@ exports[`Button > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <button
-        class="sc-jSUZER ekAbDQ"
+        class="sc-jSUZER hXdBAm"
         data-testid="side-menu-hamburger-icon"
       >
         <svg
@@ -44,7 +44,7 @@ exports[`Button > component snapshot 1`] = `
   </body>,
   "container": <div>
     <button
-      class="sc-jSUZER ekAbDQ"
+      class="sc-jSUZER hXdBAm"
       data-testid="side-menu-hamburger-icon"
     >
       <svg

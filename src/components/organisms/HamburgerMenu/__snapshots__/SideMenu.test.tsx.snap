@@ -21,7 +21,7 @@ exports[`SideMenu > component snapshot 1`] = `
             Pelikan Enterprise
           </h2>
           <button
-            class="sc-jSUZER ekAbDQ"
+            class="sc-jSUZER hXdBAm"
             data-testid="side-menu-close-icon"
           >
             <svg

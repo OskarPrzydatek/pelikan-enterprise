@@ -6,10 +6,10 @@ exports[`CreateTransport Template > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-lllmON bHNFZX"
+        class="sc-hhOBVt hIPxwk"
       >
         <form
-          class="sc-idXgbr dOabUB"
+          class="sc-cwSeag qbDdz"
         >
           <h2
             class="sc-dkrFOg jpoXtY"
@@ -17,24 +17,28 @@ exports[`CreateTransport Template > component snapshot 1`] = `
             Dodaj transport
           </h2>
           <div
-            class="sc-csuSiG fWMyeb"
-          >
-            <input
-              class="sc-eDWCr jismjM"
-              data-testid="create-transport-company-name"
-              id="transportCompanyName"
-              name="transportCompanyName"
-              placeholder="Nazwa firmy transportowej"
-            />
-          </div>
-          <div
-            class="sc-bqWxrE capgDc"
+            class="sc-hBxehG dvBsjd"
           >
             <div
-              class="sc-bqWxrE capgDc"
+              class="sc-fnGiBr rTdrx"
+            >
+              <input
+                class="sc-fEXmlR hyVGRi"
+                data-testid="create-transport-company-name"
+                id="transportCompanyName"
+                name="transportCompanyName"
+                placeholder="Nazwa firmy transportowej"
+              />
+            </div>
+          </div>
+          <div
+            class="sc-idXgbr doOTQv"
+          >
+            <div
+              class="sc-dIfARi fkTxxa"
             >
               <span
-                class="sc-hBxehG fgMdbx"
+                class="sc-dmctIk czpMvD"
               >
                 <svg
                   data-testid="chevron-icon"
@@ -51,11 +55,12 @@ exports[`CreateTransport Template > component snapshot 1`] = `
                 </svg>
               </span>
               <select
-                class="sc-fnGiBr kiScBv"
+                class="sc-kgTSHT eafwKI"
                 data-testid="create-transport-transport-kind"
                 name="transportKind"
               >
                 <option
+                  class="sc-fLcnxK"
                   disabled=""
                   selected=""
                   value=""
@@ -63,16 +68,19 @@ exports[`CreateTransport Template > component snapshot 1`] = `
                   Rodzaj transportu
                 </option>
                 <option
+                  class="sc-fLcnxK"
                   value="TRANSPORT_A"
                 >
                   Transport A
                 </option>
                 <option
+                  class="sc-fLcnxK"
                   value="TRANSPORT_B"
                 >
                   Transport B
                 </option>
                 <option
+                  class="sc-fLcnxK"
                   value="TRANSPORT_C"
                 >
                   Transport C
@@ -84,13 +92,13 @@ exports[`CreateTransport Template > component snapshot 1`] = `
             class="sc-jSUZER gocfuz"
           >
             <div
-              class="sc-bqWxrE capgDc"
+              class="sc-idXgbr doOTQv"
             >
               <div
-                class="sc-bqWxrE capgDc"
+                class="sc-dIfARi fkTxxa"
               >
                 <span
-                  class="sc-hBxehG fgMdbx"
+                  class="sc-dmctIk czpMvD"
                 >
                   <svg
                     data-testid="chevron-icon"
@@ -107,11 +115,12 @@ exports[`CreateTransport Template > component snapshot 1`] = `
                   </svg>
                 </span>
                 <select
-                  class="sc-fnGiBr kiScBv"
+                  class="sc-kgTSHT eafwKI"
                   data-testid="create-transpotr-from"
                   name="from"
                 >
                   <option
+                    class="sc-fLcnxK"
                     disabled=""
                     selected=""
                     value=""
@@ -119,11 +128,13 @@ exports[`CreateTransport Template > component snapshot 1`] = `
                     Miejsce początkowe
                   </option>
                   <option
+                    class="sc-fLcnxK"
                     value="PLACE_A"
                   >
                     Miejsce A
                   </option>
                   <option
+                    class="sc-fLcnxK"
                     value="PLACE_B"
                   >
                     Miejsce B
@@ -132,13 +143,13 @@ exports[`CreateTransport Template > component snapshot 1`] = `
               </div>
             </div>
             <div
-              class="sc-bqWxrE capgDc"
+              class="sc-idXgbr doOTQv"
             >
               <div
-                class="sc-bqWxrE capgDc"
+                class="sc-dIfARi fkTxxa"
               >
                 <span
-                  class="sc-hBxehG fgMdbx"
+                  class="sc-dmctIk czpMvD"
                 >
                   <svg
                     data-testid="chevron-icon"
@@ -155,11 +166,12 @@ exports[`CreateTransport Template > component snapshot 1`] = `
                   </svg>
                 </span>
                 <select
-                  class="sc-fnGiBr kiScBv"
+                  class="sc-kgTSHT eafwKI"
                   data-testid="create-transpotr-to"
                   name="to"
                 >
                   <option
+                    class="sc-fLcnxK"
                     disabled=""
                     selected=""
                     value=""
@@ -167,11 +179,13 @@ exports[`CreateTransport Template > component snapshot 1`] = `
                     Miejsce docelowe
                   </option>
                   <option
+                    class="sc-fLcnxK"
                     value="PLACE_A"
                   >
                     Miejsce A
                   </option>
                   <option
+                    class="sc-fLcnxK"
                     value="PLACE_B"
                   >
                     Miejsce B
@@ -181,18 +195,22 @@ exports[`CreateTransport Template > component snapshot 1`] = `
             </div>
           </div>
           <div
-            class="sc-csuSiG fWMyeb"
+            class="sc-hBxehG dvBsjd"
           >
-            <input
-              class="sc-eDWCr jismjM"
-              data-testid="create-transport-price"
-              id="price"
-              name="price"
-              placeholder="Cena"
-            />
+            <div
+              class="sc-fnGiBr rTdrx"
+            >
+              <input
+                class="sc-fEXmlR hyVGRi"
+                data-testid="create-transport-price"
+                id="price"
+                name="price"
+                placeholder="Cena"
+              />
+            </div>
           </div>
           <input
-            class="sc-dIfARi evRKtu"
+            class="sc-lllmON ieVIbh"
             type="submit"
             value="Dodaj"
           />
@@ -202,10 +220,10 @@ exports[`CreateTransport Template > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-lllmON bHNFZX"
+      class="sc-hhOBVt hIPxwk"
     >
       <form
-        class="sc-idXgbr dOabUB"
+        class="sc-cwSeag qbDdz"
       >
         <h2
           class="sc-dkrFOg jpoXtY"
@@ -213,24 +231,28 @@ exports[`CreateTransport Template > component snapshot 1`] = `
           Dodaj transport
         </h2>
         <div
-          class="sc-csuSiG fWMyeb"
-        >
-          <input
-            class="sc-eDWCr jismjM"
-            data-testid="create-transport-company-name"
-            id="transportCompanyName"
-            name="transportCompanyName"
-            placeholder="Nazwa firmy transportowej"
-          />
-        </div>
-        <div
-          class="sc-bqWxrE capgDc"
+          class="sc-hBxehG dvBsjd"
         >
           <div
-            class="sc-bqWxrE capgDc"
+            class="sc-fnGiBr rTdrx"
+          >
+            <input
+              class="sc-fEXmlR hyVGRi"
+              data-testid="create-transport-company-name"
+              id="transportCompanyName"
+              name="transportCompanyName"
+              placeholder="Nazwa firmy transportowej"
+            />
+          </div>
+        </div>
+        <div
+          class="sc-idXgbr doOTQv"
+        >
+          <div
+            class="sc-dIfARi fkTxxa"
           >
             <span
-              class="sc-hBxehG fgMdbx"
+              class="sc-dmctIk czpMvD"
             >
               <svg
                 data-testid="chevron-icon"
@@ -247,11 +269,12 @@ exports[`CreateTransport Template > component snapshot 1`] = `
               </svg>
             </span>
             <select
-              class="sc-fnGiBr kiScBv"
+              class="sc-kgTSHT eafwKI"
               data-testid="create-transport-transport-kind"
               name="transportKind"
             >
               <option
+                class="sc-fLcnxK"
                 disabled=""
                 selected=""
                 value=""
@@ -259,16 +282,19 @@ exports[`CreateTransport Template > component snapshot 1`] = `
                 Rodzaj transportu
               </option>
               <option
+                class="sc-fLcnxK"
                 value="TRANSPORT_A"
               >
                 Transport A
               </option>
               <option
+                class="sc-fLcnxK"
                 value="TRANSPORT_B"
               >
                 Transport B
               </option>
               <option
+                class="sc-fLcnxK"
                 value="TRANSPORT_C"
               >
                 Transport C
@@ -280,13 +306,13 @@ exports[`CreateTransport Template > component snapshot 1`] = `
           class="sc-jSUZER gocfuz"
         >
           <div
-            class="sc-bqWxrE capgDc"
+            class="sc-idXgbr doOTQv"
           >
             <div
-              class="sc-bqWxrE capgDc"
+              class="sc-dIfARi fkTxxa"
             >
               <span
-                class="sc-hBxehG fgMdbx"
+                class="sc-dmctIk czpMvD"
               >
                 <svg
                   data-testid="chevron-icon"
@@ -303,11 +329,12 @@ exports[`CreateTransport Template > component snapshot 1`] = `
                 </svg>
               </span>
               <select
-                class="sc-fnGiBr kiScBv"
+                class="sc-kgTSHT eafwKI"
                 data-testid="create-transpotr-from"
                 name="from"
               >
                 <option
+                  class="sc-fLcnxK"
                   disabled=""
                   selected=""
                   value=""
@@ -315,11 +342,13 @@ exports[`CreateTransport Template > component snapshot 1`] = `
                   Miejsce początkowe
                 </option>
                 <option
+                  class="sc-fLcnxK"
                   value="PLACE_A"
                 >
                   Miejsce A
                 </option>
                 <option
+                  class="sc-fLcnxK"
                   value="PLACE_B"
                 >
                   Miejsce B
@@ -328,13 +357,13 @@ exports[`CreateTransport Template > component snapshot 1`] = `
             </div>
           </div>
           <div
-            class="sc-bqWxrE capgDc"
+            class="sc-idXgbr doOTQv"
           >
             <div
-              class="sc-bqWxrE capgDc"
+              class="sc-dIfARi fkTxxa"
             >
               <span
-                class="sc-hBxehG fgMdbx"
+                class="sc-dmctIk czpMvD"
               >
                 <svg
                   data-testid="chevron-icon"
@@ -351,11 +380,12 @@ exports[`CreateTransport Template > component snapshot 1`] = `
                 </svg>
               </span>
               <select
-                class="sc-fnGiBr kiScBv"
+                class="sc-kgTSHT eafwKI"
                 data-testid="create-transpotr-to"
                 name="to"
               >
                 <option
+                  class="sc-fLcnxK"
                   disabled=""
                   selected=""
                   value=""
@@ -363,11 +393,13 @@ exports[`CreateTransport Template > component snapshot 1`] = `
                   Miejsce docelowe
                 </option>
                 <option
+                  class="sc-fLcnxK"
                   value="PLACE_A"
                 >
                   Miejsce A
                 </option>
                 <option
+                  class="sc-fLcnxK"
                   value="PLACE_B"
                 >
                   Miejsce B
@@ -377,18 +409,22 @@ exports[`CreateTransport Template > component snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sc-csuSiG fWMyeb"
+          class="sc-hBxehG dvBsjd"
         >
-          <input
-            class="sc-eDWCr jismjM"
-            data-testid="create-transport-price"
-            id="price"
-            name="price"
-            placeholder="Cena"
-          />
+          <div
+            class="sc-fnGiBr rTdrx"
+          >
+            <input
+              class="sc-fEXmlR hyVGRi"
+              data-testid="create-transport-price"
+              id="price"
+              name="price"
+              placeholder="Cena"
+            />
+          </div>
         </div>
         <input
-          class="sc-dIfARi evRKtu"
+          class="sc-lllmON ieVIbh"
           type="submit"
           value="Dodaj"
         />

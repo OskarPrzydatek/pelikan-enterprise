@@ -6,10 +6,10 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-lllmON bHNFZX"
+        class="sc-hhOBVt hIPxwk"
       >
         <form
-          class="sc-idXgbr dOabUB"
+          class="sc-cwSeag qbDdz"
         >
           <h2
             class="sc-dkrFOg jpoXtY"
@@ -20,67 +20,87 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
             class="sc-jSUZER gocfuz"
           >
             <div
-              class="sc-csuSiG fWMyeb"
+              class="sc-hBxehG dvBsjd"
             >
-              <input
-                class="sc-eDWCr jismjM"
-                data-testid="create-hotel-name"
-                id="hotelName"
-                name="hotelName"
-                placeholder="Nazwa hotelu"
-              />
+              <div
+                class="sc-fnGiBr rTdrx"
+              >
+                <input
+                  class="sc-fEXmlR hyVGRi"
+                  data-testid="create-hotel-name"
+                  id="hotelName"
+                  name="hotelName"
+                  placeholder="Nazwa hotelu"
+                />
+              </div>
             </div>
             <div
-              class="sc-csuSiG fWMyeb"
+              class="sc-hBxehG dvBsjd"
             >
-              <input
-                class="sc-eDWCr jismjM"
-                data-testid="create-hotel-address"
-                id="address"
-                name="address"
-                placeholder="Adres"
-              />
+              <div
+                class="sc-fnGiBr rTdrx"
+              >
+                <input
+                  class="sc-fEXmlR hyVGRi"
+                  data-testid="create-hotel-address"
+                  id="address"
+                  name="address"
+                  placeholder="Adres"
+                />
+              </div>
             </div>
           </div>
           <div
             class="sc-jSUZER gocfuz"
           >
             <div
-              class="sc-csuSiG fWMyeb"
+              class="sc-hBxehG dvBsjd"
             >
-              <input
-                class="sc-eDWCr jismjM"
-                data-testid="create-hotel-price-per-person"
-                id="pricePerPerson"
-                name="pricePerPerson"
-                placeholder="Cena od osoby"
-              />
+              <div
+                class="sc-fnGiBr rTdrx"
+              >
+                <input
+                  class="sc-fEXmlR hyVGRi"
+                  data-testid="create-hotel-price-per-person"
+                  id="pricePerPerson"
+                  name="pricePerPerson"
+                  placeholder="Cena od osoby"
+                />
+              </div>
             </div>
             <div
-              class="sc-csuSiG fWMyeb"
+              class="sc-hBxehG dvBsjd"
             >
-              <input
-                class="sc-eDWCr jismjM"
-                data-testid="create-hotel-stars-rating"
-                id="starRating"
-                name="starRating"
-                placeholder="Ilość gwiazdek"
-              />
+              <div
+                class="sc-fnGiBr rTdrx"
+              >
+                <input
+                  class="sc-fEXmlR hyVGRi"
+                  data-testid="create-hotel-stars-rating"
+                  id="starRating"
+                  name="starRating"
+                  placeholder="Ilość gwiazdek"
+                />
+              </div>
             </div>
           </div>
           <div
-            class="sc-kDvujY gzAMML"
+            class="sc-csuSiG hHGxKx"
           >
-            <textarea
-              class="sc-ipEyDJ jsPglX"
-              data-testid="create-hotel-description"
-              id="description"
-              name="description"
-              placeholder="Opis"
-            />
+            <div
+              class="sc-eDWCr cBAmxE"
+            >
+              <textarea
+                class="sc-ksBlkl dmriCq"
+                data-testid="create-hotel-description"
+                id="description"
+                name="description"
+                placeholder="Opis"
+              />
+            </div>
           </div>
           <input
-            class="sc-dIfARi evRKtu"
+            class="sc-lllmON ieVIbh"
             type="submit"
             value="Dodaj"
           />
@@ -90,10 +110,10 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-lllmON bHNFZX"
+      class="sc-hhOBVt hIPxwk"
     >
       <form
-        class="sc-idXgbr dOabUB"
+        class="sc-cwSeag qbDdz"
       >
         <h2
           class="sc-dkrFOg jpoXtY"
@@ -104,67 +124,87 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
           class="sc-jSUZER gocfuz"
         >
           <div
-            class="sc-csuSiG fWMyeb"
+            class="sc-hBxehG dvBsjd"
           >
-            <input
-              class="sc-eDWCr jismjM"
-              data-testid="create-hotel-name"
-              id="hotelName"
-              name="hotelName"
-              placeholder="Nazwa hotelu"
-            />
+            <div
+              class="sc-fnGiBr rTdrx"
+            >
+              <input
+                class="sc-fEXmlR hyVGRi"
+                data-testid="create-hotel-name"
+                id="hotelName"
+                name="hotelName"
+                placeholder="Nazwa hotelu"
+              />
+            </div>
           </div>
           <div
-            class="sc-csuSiG fWMyeb"
+            class="sc-hBxehG dvBsjd"
           >
-            <input
-              class="sc-eDWCr jismjM"
-              data-testid="create-hotel-address"
-              id="address"
-              name="address"
-              placeholder="Adres"
-            />
+            <div
+              class="sc-fnGiBr rTdrx"
+            >
+              <input
+                class="sc-fEXmlR hyVGRi"
+                data-testid="create-hotel-address"
+                id="address"
+                name="address"
+                placeholder="Adres"
+              />
+            </div>
           </div>
         </div>
         <div
           class="sc-jSUZER gocfuz"
         >
           <div
-            class="sc-csuSiG fWMyeb"
+            class="sc-hBxehG dvBsjd"
           >
-            <input
-              class="sc-eDWCr jismjM"
-              data-testid="create-hotel-price-per-person"
-              id="pricePerPerson"
-              name="pricePerPerson"
-              placeholder="Cena od osoby"
-            />
+            <div
+              class="sc-fnGiBr rTdrx"
+            >
+              <input
+                class="sc-fEXmlR hyVGRi"
+                data-testid="create-hotel-price-per-person"
+                id="pricePerPerson"
+                name="pricePerPerson"
+                placeholder="Cena od osoby"
+              />
+            </div>
           </div>
           <div
-            class="sc-csuSiG fWMyeb"
+            class="sc-hBxehG dvBsjd"
           >
-            <input
-              class="sc-eDWCr jismjM"
-              data-testid="create-hotel-stars-rating"
-              id="starRating"
-              name="starRating"
-              placeholder="Ilość gwiazdek"
-            />
+            <div
+              class="sc-fnGiBr rTdrx"
+            >
+              <input
+                class="sc-fEXmlR hyVGRi"
+                data-testid="create-hotel-stars-rating"
+                id="starRating"
+                name="starRating"
+                placeholder="Ilość gwiazdek"
+              />
+            </div>
           </div>
         </div>
         <div
-          class="sc-kDvujY gzAMML"
+          class="sc-csuSiG hHGxKx"
         >
-          <textarea
-            class="sc-ipEyDJ jsPglX"
-            data-testid="create-hotel-description"
-            id="description"
-            name="description"
-            placeholder="Opis"
-          />
+          <div
+            class="sc-eDWCr cBAmxE"
+          >
+            <textarea
+              class="sc-ksBlkl dmriCq"
+              data-testid="create-hotel-description"
+              id="description"
+              name="description"
+              placeholder="Opis"
+            />
+          </div>
         </div>
         <input
-          class="sc-dIfARi evRKtu"
+          class="sc-lllmON ieVIbh"
           type="submit"
           value="Dodaj"
         />

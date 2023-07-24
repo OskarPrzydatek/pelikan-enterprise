@@ -6,10 +6,10 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-lllmON bHNFZX"
+        class="sc-hhOBVt hIPxwk"
       >
         <form
-          class="sc-idXgbr dOabUB"
+          class="sc-cwSeag qbDdz"
         >
           <h2
             class="sc-dkrFOg jpoXtY"
@@ -17,40 +17,52 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
             Dodaj atrakcję
           </h2>
           <div
-            class="sc-csuSiG fWMyeb"
+            class="sc-hBxehG dvBsjd"
           >
-            <input
-              class="sc-eDWCr jismjM"
-              data-testid="create-attraction-name"
-              id="attractionName"
-              name="attractionName"
-              placeholder="Nazwa atrakcji"
-            />
+            <div
+              class="sc-fnGiBr rTdrx"
+            >
+              <input
+                class="sc-fEXmlR hyVGRi"
+                data-testid="create-attraction-name"
+                id="attractionName"
+                name="attractionName"
+                placeholder="Nazwa atrakcji"
+              />
+            </div>
           </div>
           <div
-            class="sc-csuSiG fWMyeb"
+            class="sc-hBxehG dvBsjd"
           >
-            <input
-              class="sc-eDWCr jismjM"
-              data-testid="create-attraction-price"
-              id="price"
-              name="price"
-              placeholder="Cena"
-            />
+            <div
+              class="sc-fnGiBr rTdrx"
+            >
+              <input
+                class="sc-fEXmlR hyVGRi"
+                data-testid="create-attraction-price"
+                id="price"
+                name="price"
+                placeholder="Cena"
+              />
+            </div>
           </div>
           <div
-            class="sc-kDvujY gzAMML"
+            class="sc-csuSiG hHGxKx"
           >
-            <textarea
-              class="sc-ipEyDJ jsPglX"
-              data-testid="attraction-description"
-              id="create-description"
-              name="create-description"
-              placeholder="Opis"
-            />
+            <div
+              class="sc-eDWCr cBAmxE"
+            >
+              <textarea
+                class="sc-ksBlkl dmriCq"
+                data-testid="attraction-description"
+                id="create-description"
+                name="create-description"
+                placeholder="Opis"
+              />
+            </div>
           </div>
           <input
-            class="sc-dIfARi evRKtu"
+            class="sc-lllmON ieVIbh"
             type="submit"
             value="Dodaj"
           />
@@ -60,10 +72,10 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-lllmON bHNFZX"
+      class="sc-hhOBVt hIPxwk"
     >
       <form
-        class="sc-idXgbr dOabUB"
+        class="sc-cwSeag qbDdz"
       >
         <h2
           class="sc-dkrFOg jpoXtY"
@@ -71,40 +83,52 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
           Dodaj atrakcję
         </h2>
         <div
-          class="sc-csuSiG fWMyeb"
+          class="sc-hBxehG dvBsjd"
         >
-          <input
-            class="sc-eDWCr jismjM"
-            data-testid="create-attraction-name"
-            id="attractionName"
-            name="attractionName"
-            placeholder="Nazwa atrakcji"
-          />
+          <div
+            class="sc-fnGiBr rTdrx"
+          >
+            <input
+              class="sc-fEXmlR hyVGRi"
+              data-testid="create-attraction-name"
+              id="attractionName"
+              name="attractionName"
+              placeholder="Nazwa atrakcji"
+            />
+          </div>
         </div>
         <div
-          class="sc-csuSiG fWMyeb"
+          class="sc-hBxehG dvBsjd"
         >
-          <input
-            class="sc-eDWCr jismjM"
-            data-testid="create-attraction-price"
-            id="price"
-            name="price"
-            placeholder="Cena"
-          />
+          <div
+            class="sc-fnGiBr rTdrx"
+          >
+            <input
+              class="sc-fEXmlR hyVGRi"
+              data-testid="create-attraction-price"
+              id="price"
+              name="price"
+              placeholder="Cena"
+            />
+          </div>
         </div>
         <div
-          class="sc-kDvujY gzAMML"
+          class="sc-csuSiG hHGxKx"
         >
-          <textarea
-            class="sc-ipEyDJ jsPglX"
-            data-testid="attraction-description"
-            id="create-description"
-            name="create-description"
-            placeholder="Opis"
-          />
+          <div
+            class="sc-eDWCr cBAmxE"
+          >
+            <textarea
+              class="sc-ksBlkl dmriCq"
+              data-testid="attraction-description"
+              id="create-description"
+              name="create-description"
+              placeholder="Opis"
+            />
+          </div>
         </div>
         <input
-          class="sc-dIfARi evRKtu"
+          class="sc-lllmON ieVIbh"
           type="submit"
           value="Dodaj"
         />

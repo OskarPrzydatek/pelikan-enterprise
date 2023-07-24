@@ -6,10 +6,10 @@ exports[`CreateHashtagTemplate > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-lllmON bHNFZX"
+        class="sc-hhOBVt hIPxwk"
       >
         <form
-          class="sc-idXgbr dOabUB"
+          class="sc-cwSeag qbDdz"
         >
           <h2
             class="sc-dkrFOg jpoXtY"
@@ -17,18 +17,22 @@ exports[`CreateHashtagTemplate > component snapshot 1`] = `
             Dodaj hashtag
           </h2>
           <div
-            class="sc-csuSiG fWMyeb"
+            class="sc-hBxehG dvBsjd"
           >
-            <input
-              class="sc-eDWCr jismjM"
-              data-testid="create-hashtag-name"
-              id="hashtagName"
-              name="hashtagName"
-              placeholder="Nazwa hashtagu"
-            />
+            <div
+              class="sc-fnGiBr rTdrx"
+            >
+              <input
+                class="sc-fEXmlR hyVGRi"
+                data-testid="create-hashtag-name"
+                id="hashtagName"
+                name="hashtagName"
+                placeholder="Nazwa hashtagu"
+              />
+            </div>
           </div>
           <input
-            class="sc-dIfARi evRKtu"
+            class="sc-lllmON ieVIbh"
             type="submit"
             value="Dodaj"
           />
@@ -38,10 +42,10 @@ exports[`CreateHashtagTemplate > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-lllmON bHNFZX"
+      class="sc-hhOBVt hIPxwk"
     >
       <form
-        class="sc-idXgbr dOabUB"
+        class="sc-cwSeag qbDdz"
       >
         <h2
           class="sc-dkrFOg jpoXtY"
@@ -49,18 +53,22 @@ exports[`CreateHashtagTemplate > component snapshot 1`] = `
           Dodaj hashtag
         </h2>
         <div
-          class="sc-csuSiG fWMyeb"
+          class="sc-hBxehG dvBsjd"
         >
-          <input
-            class="sc-eDWCr jismjM"
-            data-testid="create-hashtag-name"
-            id="hashtagName"
-            name="hashtagName"
-            placeholder="Nazwa hashtagu"
-          />
+          <div
+            class="sc-fnGiBr rTdrx"
+          >
+            <input
+              class="sc-fEXmlR hyVGRi"
+              data-testid="create-hashtag-name"
+              id="hashtagName"
+              name="hashtagName"
+              placeholder="Nazwa hashtagu"
+            />
+          </div>
         </div>
         <input
-          class="sc-dIfARi evRKtu"
+          class="sc-lllmON ieVIbh"
           type="submit"
           value="Dodaj"
         />

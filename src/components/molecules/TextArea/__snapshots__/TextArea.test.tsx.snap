@@ -6,29 +6,37 @@ exports[`TextArea > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-kDvujY gzAMML"
+        class="sc-csuSiG hHGxKx"
+      >
+        <div
+          class="sc-eDWCr cBAmxE"
+        >
+          <textarea
+            class="sc-ksBlkl dmriCq"
+            data-testid="molecule-textarea"
+            id="description"
+            name="description"
+            placeholder="Description"
+          />
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-csuSiG hHGxKx"
+    >
+      <div
+        class="sc-eDWCr cBAmxE"
       >
         <textarea
-          class="sc-ipEyDJ jsPglX"
+          class="sc-ksBlkl dmriCq"
           data-testid="molecule-textarea"
           id="description"
           name="description"
           placeholder="Description"
         />
       </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="sc-kDvujY gzAMML"
-    >
-      <textarea
-        class="sc-ipEyDJ jsPglX"
-        data-testid="molecule-textarea"
-        id="description"
-        name="description"
-        placeholder="Description"
-      />
     </div>
   </div>,
   "debug": [Function],

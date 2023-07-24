@@ -11,13 +11,19 @@ describe('Select', () => {
 
   test('ensure select focus and blur works correctly', () => {
     render(<SelectHelper />);
-    const select = screen.getByTestId('molecule-select');
+    const select: HTMLSelectElement = screen.getByTestId('molecule-select');
     expect(
       screen.queryByTestId('molecule-select-label')
     ).not.toBeInTheDocument();
     fireEvent.focus(select);
     expect(screen.getByTestId('molecule-select-label')).toBeInTheDocument();
     fireEvent.blur(select);
+    expect(
+      screen.queryByTestId('molecule-select-label')
+    ).not.toBeInTheDocument();
+    fireEvent.change(select, { target: { value: 'value1' } });
+    expect(screen.getByTestId('molecule-select-label')).toBeInTheDocument();
+    fireEvent.change(select, { target: { value: '' } });
     expect(
       screen.queryByTestId('molecule-select-label')
     ).not.toBeInTheDocument();

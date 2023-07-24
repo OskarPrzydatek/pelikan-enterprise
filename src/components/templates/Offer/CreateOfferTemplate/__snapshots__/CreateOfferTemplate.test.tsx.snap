@@ -6,10 +6,10 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-lllmON bHNFZX"
+        class="sc-hhOBVt hIPxwk"
       >
         <form
-          class="sc-idXgbr dOabUB"
+          class="sc-cwSeag qbDdz"
         >
           <h2
             class="sc-dkrFOg jpoXtY"
@@ -17,39 +17,17 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
             Dodaj ofertę
           </h2>
           <div
-            class="sc-csuSiG fWMyeb"
-          >
-            <input
-              class="sc-eDWCr jismjM"
-              data-testid="create-offer-name"
-              id="offerName"
-              name="offerName"
-              placeholder="Nazwa oferty"
-            />
-          </div>
-          <div
-            class="sc-jSUZER gocfuz"
+            class="sc-hBxehG dvBsjd"
           >
             <div
-              class="sc-csuSiG fWMyeb"
+              class="sc-fnGiBr rTdrx"
             >
               <input
-                class="sc-eDWCr jismjM"
-                data-testid="create-offer-price"
-                id="price"
-                name="price"
-                placeholder="Cena"
-              />
-            </div>
-            <div
-              class="sc-csuSiG fWMyeb"
-            >
-              <input
-                class="sc-eDWCr jismjM"
-                data-testid="create-offer-number-of-tickets"
-                id="numberOfTickets"
-                name="numberOfTickets"
-                placeholder="Liczba miejsc"
+                class="sc-fEXmlR hyVGRi"
+                data-testid="create-offer-name"
+                id="offerName"
+                name="offerName"
+                placeholder="Nazwa oferty"
               />
             </div>
           </div>
@@ -57,13 +35,47 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
             class="sc-jSUZER gocfuz"
           >
             <div
-              class="sc-bqWxrE capgDc"
+              class="sc-hBxehG dvBsjd"
             >
               <div
-                class="sc-bqWxrE capgDc"
+                class="sc-fnGiBr rTdrx"
+              >
+                <input
+                  class="sc-fEXmlR hyVGRi"
+                  data-testid="create-offer-price"
+                  id="price"
+                  name="price"
+                  placeholder="Cena"
+                />
+              </div>
+            </div>
+            <div
+              class="sc-hBxehG dvBsjd"
+            >
+              <div
+                class="sc-fnGiBr rTdrx"
+              >
+                <input
+                  class="sc-fEXmlR hyVGRi"
+                  data-testid="create-offer-number-of-tickets"
+                  id="numberOfTickets"
+                  name="numberOfTickets"
+                  placeholder="Liczba miejsc"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-jSUZER gocfuz"
+          >
+            <div
+              class="sc-idXgbr doOTQv"
+            >
+              <div
+                class="sc-dIfARi fkTxxa"
               >
                 <span
-                  class="sc-hBxehG fgMdbx"
+                  class="sc-dmctIk czpMvD"
                 >
                   <svg
                     data-testid="chevron-icon"
@@ -80,11 +92,12 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                   </svg>
                 </span>
                 <select
-                  class="sc-fnGiBr kiScBv"
+                  class="sc-kgTSHT eafwKI"
                   data-testid="create-offer-destination"
                   name="destination"
                 >
                   <option
+                    class="sc-fLcnxK"
                     disabled=""
                     selected=""
                     value=""
@@ -92,11 +105,13 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                     Miejsce docelowe
                   </option>
                   <option
+                    class="sc-fLcnxK"
                     value="PLACE_A"
                   >
                     Miejsce A
                   </option>
                   <option
+                    class="sc-fLcnxK"
                     value="PLACE_B"
                   >
                     Miejsce B
@@ -105,13 +120,13 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
               </div>
             </div>
             <div
-              class="sc-bqWxrE capgDc"
+              class="sc-idXgbr doOTQv"
             >
               <div
-                class="sc-bqWxrE capgDc"
+                class="sc-dIfARi fkTxxa"
               >
                 <span
-                  class="sc-hBxehG fgMdbx"
+                  class="sc-dmctIk czpMvD"
                 >
                   <svg
                     data-testid="chevron-icon"
@@ -128,11 +143,12 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                   </svg>
                 </span>
                 <select
-                  class="sc-fnGiBr kiScBv"
+                  class="sc-kgTSHT eafwKI"
                   data-testid="create-offer-hotel"
                   name="hotel"
                 >
                   <option
+                    class="sc-fLcnxK"
                     disabled=""
                     selected=""
                     value=""
@@ -140,16 +156,19 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                     Hotel
                   </option>
                   <option
+                    class="sc-fLcnxK"
                     value="HOTEL_A"
                   >
                     Hotel A
                   </option>
                   <option
+                    class="sc-fLcnxK"
                     value="HOTEL_B"
                   >
                     Hotel B
                   </option>
                   <option
+                    class="sc-fLcnxK"
                     value="HOTEL_C"
                   >
                     Hotel C
@@ -162,41 +181,53 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
             class="sc-jSUZER gocfuz"
           >
             <div
-              class="sc-iBYQkv TsfsO"
+              class="sc-iBYQkv lgTDFv"
             >
-              <input
-                class="sc-ftTHYK gTOIAU"
-                data-testid="create-offer-form"
-                min="2023-07-12"
-                name="from"
-                type="date"
-              />
+              <div
+                class="sc-ftTHYK bEBVlw"
+              >
+                <input
+                  class="sc-pyfCe brigoQ"
+                  data-testid="create-offer-form"
+                  min="2023-07-24"
+                  name="from"
+                  type="date"
+                />
+              </div>
             </div>
             <div
-              class="sc-iBYQkv TsfsO"
+              class="sc-iBYQkv lgTDFv"
             >
-              <input
-                class="sc-ftTHYK gTOIAU"
-                data-testid="create-offer-to"
-                min="2023-07-12"
-                name="to"
-                type="date"
-              />
+              <div
+                class="sc-ftTHYK bEBVlw"
+              >
+                <input
+                  class="sc-pyfCe brigoQ"
+                  data-testid="create-offer-to"
+                  min="2023-07-24"
+                  name="to"
+                  type="date"
+                />
+              </div>
             </div>
           </div>
           <div
-            class="sc-kDvujY gzAMML"
+            class="sc-csuSiG hHGxKx"
           >
-            <textarea
-              class="sc-ipEyDJ jsPglX"
-              data-testid="create-offer-desription"
-              id="description"
-              name="description"
-              placeholder="Opis"
-            />
+            <div
+              class="sc-eDWCr cBAmxE"
+            >
+              <textarea
+                class="sc-ksBlkl dmriCq"
+                data-testid="create-offer-desription"
+                id="description"
+                name="description"
+                placeholder="Opis"
+              />
+            </div>
           </div>
           <input
-            class="sc-dIfARi evRKtu"
+            class="sc-lllmON ieVIbh"
             type="submit"
             value="Dodaj"
           />
@@ -206,10 +237,10 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-lllmON bHNFZX"
+      class="sc-hhOBVt hIPxwk"
     >
       <form
-        class="sc-idXgbr dOabUB"
+        class="sc-cwSeag qbDdz"
       >
         <h2
           class="sc-dkrFOg jpoXtY"
@@ -217,39 +248,17 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
           Dodaj ofertę
         </h2>
         <div
-          class="sc-csuSiG fWMyeb"
-        >
-          <input
-            class="sc-eDWCr jismjM"
-            data-testid="create-offer-name"
-            id="offerName"
-            name="offerName"
-            placeholder="Nazwa oferty"
-          />
-        </div>
-        <div
-          class="sc-jSUZER gocfuz"
+          class="sc-hBxehG dvBsjd"
         >
           <div
-            class="sc-csuSiG fWMyeb"
+            class="sc-fnGiBr rTdrx"
           >
             <input
-              class="sc-eDWCr jismjM"
-              data-testid="create-offer-price"
-              id="price"
-              name="price"
-              placeholder="Cena"
-            />
-          </div>
-          <div
-            class="sc-csuSiG fWMyeb"
-          >
-            <input
-              class="sc-eDWCr jismjM"
-              data-testid="create-offer-number-of-tickets"
-              id="numberOfTickets"
-              name="numberOfTickets"
-              placeholder="Liczba miejsc"
+              class="sc-fEXmlR hyVGRi"
+              data-testid="create-offer-name"
+              id="offerName"
+              name="offerName"
+              placeholder="Nazwa oferty"
             />
           </div>
         </div>
@@ -257,13 +266,47 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
           class="sc-jSUZER gocfuz"
         >
           <div
-            class="sc-bqWxrE capgDc"
+            class="sc-hBxehG dvBsjd"
           >
             <div
-              class="sc-bqWxrE capgDc"
+              class="sc-fnGiBr rTdrx"
+            >
+              <input
+                class="sc-fEXmlR hyVGRi"
+                data-testid="create-offer-price"
+                id="price"
+                name="price"
+                placeholder="Cena"
+              />
+            </div>
+          </div>
+          <div
+            class="sc-hBxehG dvBsjd"
+          >
+            <div
+              class="sc-fnGiBr rTdrx"
+            >
+              <input
+                class="sc-fEXmlR hyVGRi"
+                data-testid="create-offer-number-of-tickets"
+                id="numberOfTickets"
+                name="numberOfTickets"
+                placeholder="Liczba miejsc"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-jSUZER gocfuz"
+        >
+          <div
+            class="sc-idXgbr doOTQv"
+          >
+            <div
+              class="sc-dIfARi fkTxxa"
             >
               <span
-                class="sc-hBxehG fgMdbx"
+                class="sc-dmctIk czpMvD"
               >
                 <svg
                   data-testid="chevron-icon"
@@ -280,11 +323,12 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                 </svg>
               </span>
               <select
-                class="sc-fnGiBr kiScBv"
+                class="sc-kgTSHT eafwKI"
                 data-testid="create-offer-destination"
                 name="destination"
               >
                 <option
+                  class="sc-fLcnxK"
                   disabled=""
                   selected=""
                   value=""
@@ -292,11 +336,13 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                   Miejsce docelowe
                 </option>
                 <option
+                  class="sc-fLcnxK"
                   value="PLACE_A"
                 >
                   Miejsce A
                 </option>
                 <option
+                  class="sc-fLcnxK"
                   value="PLACE_B"
                 >
                   Miejsce B
@@ -305,13 +351,13 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
             </div>
           </div>
           <div
-            class="sc-bqWxrE capgDc"
+            class="sc-idXgbr doOTQv"
           >
             <div
-              class="sc-bqWxrE capgDc"
+              class="sc-dIfARi fkTxxa"
             >
               <span
-                class="sc-hBxehG fgMdbx"
+                class="sc-dmctIk czpMvD"
               >
                 <svg
                   data-testid="chevron-icon"
@@ -328,11 +374,12 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                 </svg>
               </span>
               <select
-                class="sc-fnGiBr kiScBv"
+                class="sc-kgTSHT eafwKI"
                 data-testid="create-offer-hotel"
                 name="hotel"
               >
                 <option
+                  class="sc-fLcnxK"
                   disabled=""
                   selected=""
                   value=""
@@ -340,16 +387,19 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                   Hotel
                 </option>
                 <option
+                  class="sc-fLcnxK"
                   value="HOTEL_A"
                 >
                   Hotel A
                 </option>
                 <option
+                  class="sc-fLcnxK"
                   value="HOTEL_B"
                 >
                   Hotel B
                 </option>
                 <option
+                  class="sc-fLcnxK"
                   value="HOTEL_C"
                 >
                   Hotel C
@@ -362,41 +412,53 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
           class="sc-jSUZER gocfuz"
         >
           <div
-            class="sc-iBYQkv TsfsO"
+            class="sc-iBYQkv lgTDFv"
           >
-            <input
-              class="sc-ftTHYK gTOIAU"
-              data-testid="create-offer-form"
-              min="2023-07-12"
-              name="from"
-              type="date"
-            />
+            <div
+              class="sc-ftTHYK bEBVlw"
+            >
+              <input
+                class="sc-pyfCe brigoQ"
+                data-testid="create-offer-form"
+                min="2023-07-24"
+                name="from"
+                type="date"
+              />
+            </div>
           </div>
           <div
-            class="sc-iBYQkv TsfsO"
+            class="sc-iBYQkv lgTDFv"
           >
-            <input
-              class="sc-ftTHYK gTOIAU"
-              data-testid="create-offer-to"
-              min="2023-07-12"
-              name="to"
-              type="date"
-            />
+            <div
+              class="sc-ftTHYK bEBVlw"
+            >
+              <input
+                class="sc-pyfCe brigoQ"
+                data-testid="create-offer-to"
+                min="2023-07-24"
+                name="to"
+                type="date"
+              />
+            </div>
           </div>
         </div>
         <div
-          class="sc-kDvujY gzAMML"
+          class="sc-csuSiG hHGxKx"
         >
-          <textarea
-            class="sc-ipEyDJ jsPglX"
-            data-testid="create-offer-desription"
-            id="description"
-            name="description"
-            placeholder="Opis"
-          />
+          <div
+            class="sc-eDWCr cBAmxE"
+          >
+            <textarea
+              class="sc-ksBlkl dmriCq"
+              data-testid="create-offer-desription"
+              id="description"
+              name="description"
+              placeholder="Opis"
+            />
+          </div>
         </div>
         <input
-          class="sc-dIfARi evRKtu"
+          class="sc-lllmON ieVIbh"
           type="submit"
           value="Dodaj"
         />

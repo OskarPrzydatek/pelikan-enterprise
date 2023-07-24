@@ -43,6 +43,9 @@ export const DateField: React.FC<IDateField> = ({
   const handleIsBlured = () => setIsFocused(false);
   const handleIsClicked = () => dateInputRef.current?.showPicker();
   const handleIsFocused = () => setIsFocused(true);
+  const handleIsKeyDownPrevented = (
+    event: React.KeyboardEvent<HTMLInputElement>
+  ) => event.preventDefault();
 
   const handleIsFilled = (event: React.ChangeEvent<HTMLInputElement>) => {
     const isInputValue = event.target.value !== '';
@@ -89,7 +92,7 @@ export const DateField: React.FC<IDateField> = ({
           {...restOfRegister}
           onClick={handleIsClicked}
           onFocus={handleIsFocused}
-          onKeyDown={(e) => e.preventDefault()}
+          onKeyDown={handleIsKeyDownPrevented}
         />
       </S.DateFieldWrapper>
       {errors[name] ? (

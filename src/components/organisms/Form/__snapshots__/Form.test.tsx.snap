@@ -15,7 +15,7 @@ exports[`Form > component snapshot 1`] = `
         </h2>
         <input />
         <input
-          class="sc-jrcTuL itRYPJ"
+          class="sc-jrcTuL iZHkcL"
           type="submit"
           value="Submit label"
         />
@@ -33,7 +33,7 @@ exports[`Form > component snapshot 1`] = `
       </h2>
       <input />
       <input
-        class="sc-jrcTuL itRYPJ"
+        class="sc-jrcTuL iZHkcL"
         type="submit"
         value="Submit label"
       />
