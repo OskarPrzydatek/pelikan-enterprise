@@ -31,7 +31,6 @@ export const DateField: React.FC<IDateField> = ({
   const [isFilled, setIsFilled] = React.useState<boolean>(false);
 
   const dateInputRef = React.useRef<HTMLInputElement | null>(null);
-  const { ref, ...restOfRegister } = register(name, registerOptions);
 
   const isLabelRendered = isFocused || isFilled;
 
@@ -55,6 +54,12 @@ export const DateField: React.FC<IDateField> = ({
 
     setIsFilled(false);
   };
+
+  const { ref, ...restOfRegister } = register(name, {
+    ...registerOptions,
+    onBlur: handleIsBlured,
+    onChange: handleIsFilled,
+  });
 
   const handleRefFormRegister = (event: HTMLInputElement | null) => {
     ref(event);
@@ -82,8 +87,6 @@ export const DateField: React.FC<IDateField> = ({
           min={minDate}
           type="date"
           {...restOfRegister}
-          onBlur={handleIsBlured}
-          onChange={handleIsFilled}
           onClick={handleIsClicked}
           onFocus={handleIsFocused}
           onKeyDown={(e) => e.preventDefault()}

@@ -32,10 +32,11 @@ export const TextArea: React.FC<ITextField> = ({
 
   const isLabelRendered = isFocused || isFilled;
 
-  const isFocusedLabelColorCSS = isFocused ? S.focusedLabelCSS : undefined;
   const placeholder = isFocused ? '' : label;
-  const textAreaErrorCSS = errors[name] ? S.textAreaErrorCSS : undefined;
   const errorMessage = errors[name]?.message as string;
+
+  const focusedLabelColorCSS = isFocused ? S.focusedLabelCSS : undefined;
+  const textAreaErrorCSS = errors[name] ? S.textAreaErrorCSS : undefined;
 
   const handleIsFocused = () => setIsFocused((prev: boolean) => !prev);
 
@@ -56,7 +57,7 @@ export const TextArea: React.FC<ITextField> = ({
         {isLabelRendered ? (
           <S.LabelWrapper>
             <Label
-              css={isFocusedLabelColorCSS}
+              css={focusedLabelColorCSS}
               dataTestID={labelTestID}
               htmlFor={name}
             >
@@ -65,13 +66,15 @@ export const TextArea: React.FC<ITextField> = ({
           </S.LabelWrapper>
         ) : null}
         <S.TextArea
-          id={name}
-          placeholder={placeholder}
-          {...register(name, registerOptions)}
           css={textAreaErrorCSS}
           data-testid={textareaTestID}
-          onBlur={handleIsFocused}
-          onChange={handleIsFilled}
+          id={name}
+          placeholder={placeholder}
+          {...register(name, {
+            ...registerOptions,
+            onBlur: handleIsFocused,
+            onChange: handleIsFilled,
+          })}
           onFocus={handleIsFocused}
         />
       </S.TextAreaWrapper>

@@ -32,10 +32,11 @@ export const TextField: React.FC<ITextField> = ({
 
   const isLabelRendered = isFocused || isFilled;
 
-  const focusedLabelColorCSS = isFocused ? S.focusedLabelCSS : undefined;
   const placeholder = isLabelRendered ? '' : label;
-  const textFieldErrorCSS = errors[name] ? S.textFieldErrorCSS : undefined;
   const errorMessage = errors[name]?.message as string;
+
+  const focusedLabelColorCSS = isFocused ? S.focusedLabelCSS : undefined;
+  const textFieldErrorCSS = errors[name] ? S.textFieldErrorCSS : undefined;
 
   const handleIsFocused = () => setIsFocused((prev: boolean) => !prev);
 
@@ -69,9 +70,11 @@ export const TextField: React.FC<ITextField> = ({
           data-testid={inputTestID}
           id={name}
           placeholder={placeholder}
-          {...register(name, registerOptions)}
-          onBlur={handleIsFocused}
-          onChange={handleIsFilled}
+          {...register(name, {
+            ...registerOptions,
+            onBlur: handleIsFocused,
+            onChange: handleIsFilled,
+          })}
           onFocus={handleIsFocused}
         />
       </S.TextFieldWrapper>

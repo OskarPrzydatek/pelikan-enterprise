@@ -87,9 +87,11 @@ export const Select: React.FC<ISelect> = ({
           css={isSelectErrorCSS}
           data-testid={selectTestID}
           defaultValue=""
-          {...register(name, registerOptions)}
-          onBlur={handleIsBlured}
-          onChange={handleIsFilled}
+          {...register(name, {
+            ...registerOptions,
+            onBlur: handleIsBlured,
+            onChange: handleIsFilled,
+          })}
           onFocus={handleIsFocused}
         >
           <>
