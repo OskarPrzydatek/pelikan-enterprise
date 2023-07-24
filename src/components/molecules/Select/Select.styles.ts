@@ -4,7 +4,7 @@ import { ICSS } from '~/models';
 
 const onFocusMoveAnimation = keyframes`
  0% { top: 50%; opacity: 0 }
- 100% { top: -12.5%; opacity: 1 }
+ 100% { top: -20%; opacity: 1 }
 `;
 
 const rotateUpAnimation = keyframes`
@@ -71,9 +71,9 @@ export const Select = styled.select<ICSS>`
   border: none;
   background-color: transparent;
   width: 100%;
-  line-height: 1.6;
+  line-height: 1.8;
   cursor: pointer;
-  padding: ${({ theme }) => theme.spaces.xxs} ${({ theme }) => theme.spaces.xs};
+  padding: ${({ theme }) => theme.spaces.xs};
   font-family: ${({ theme }) => theme.fonts.main};
   color: ${({ theme }) => theme.colors.black};
   border: 3px solid ${({ theme }) => theme.colors.darkBlue};
@@ -81,6 +81,7 @@ export const Select = styled.select<ICSS>`
 
   @media ${({ theme }) => theme.breakpoints.tablet} {
     font-size: ${({ theme }) => theme.fontSizes.m};
+    line-height: 1.6;
   }
 
   &::placeholder {
@@ -107,6 +108,21 @@ export const Select = styled.select<ICSS>`
 `;
 
 export const Option = styled.option``;
+
+export const LabelWrapper = styled.div`
+  position: absolute;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-name: ${onFocusMoveAnimation};
+  padding: 0 ${({ theme }) => theme.spaces.xxs};
+  margin-left: ${({ theme }) => theme.spaces.xs};
+  background-color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.lightBlue};
+`;
+
+export const focusedLabelCSS = css`
+  color: ${({ theme }) => theme.colors.lightBlue} !important;
+`;
 
 export const labelCSS = css`
   z-index: 10;

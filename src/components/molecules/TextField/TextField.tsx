@@ -30,14 +30,19 @@ export const TextField: React.FC<ITextField> = ({
   const [isFocused, setIsFocused] = React.useState<boolean>(false);
   const [isFilled, setIsFilled] = React.useState<boolean>(false);
 
-  const placeholder = isFocused || isFilled ? '' : label;
+  const isLabelRendered = isFocused || isFilled;
+
+  const focusedLabelColorCSS = isFocused ? S.focusedLabelCSS : undefined;
+  const placeholder = isLabelRendered ? '' : label;
+  const textFieldErrorCSS = errors[name] ? S.textFieldErrorCSS : undefined;
   const errorMessage = errors[name]?.message as string;
-  const isTextFieldErrorCSS = errors[name] ? S.textFieldErrorCSS : undefined;
 
   const handleIsFocused = () => setIsFocused((prev: boolean) => !prev);
 
   const handleIsFilled = (event: React.ChangeEvent<HTMLInputElement>) => {
-    if (event.target.value && event.target.value !== '') {
+    const isInputValue = event.target.value !== '';
+
+    if (isInputValue) {
       setIsFilled(true);
       return;
     }
@@ -46,27 +51,35 @@ export const TextField: React.FC<ITextField> = ({
   };
 
   return (
-    <S.TextFieldWrapper>
-      {(isFocused || isFilled) && (
-        <Label css={S.labelCSS} dataTestID={labelTestID} htmlFor={name}>
-          {label}
-        </Label>
-      )}
-      <S.Field
-        css={isTextFieldErrorCSS}
-        data-testid={inputTestID}
-        id={name}
-        placeholder={placeholder}
-        {...register(name, registerOptions)}
-        onBlur={handleIsFocused}
-        onChange={handleIsFilled}
-        onFocus={handleIsFocused}
-      />
+    <S.FlexColumn>
+      <S.TextFieldWrapper>
+        {isLabelRendered ? (
+          <S.LabelWrapper>
+            <Label
+              css={focusedLabelColorCSS}
+              dataTestID={labelTestID}
+              htmlFor={name}
+            >
+              {label}
+            </Label>
+          </S.LabelWrapper>
+        ) : null}
+        <S.Field
+          css={textFieldErrorCSS}
+          data-testid={inputTestID}
+          id={name}
+          placeholder={placeholder}
+          {...register(name, registerOptions)}
+          onBlur={handleIsFocused}
+          onChange={handleIsFilled}
+          onFocus={handleIsFocused}
+        />
+      </S.TextFieldWrapper>
       {errors[name] ? (
         <Text css={S.errorMessageCSS} dataTestID={errorMessageTestID}>
           {errorMessage}
         </Text>
       ) : null}
-    </S.TextFieldWrapper>
+    </S.FlexColumn>
   );
 };

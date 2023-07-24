@@ -28,35 +28,72 @@ export const DateField: React.FC<IDateField> = ({
     formState: { errors },
   } = useFormContext();
   const [isFocused, setIsFocused] = React.useState<boolean>(false);
+  const [isFilled, setIsFilled] = React.useState<boolean>(false);
+
+  const dateInputRef = React.useRef<HTMLInputElement | null>(null);
+  const { ref, ...restOfRegister } = register(name, registerOptions);
+
+  const isLabelRendered = isFocused || isFilled;
 
   const minDate = new Date().toISOString().split('T')[0];
   const errorMessage = errors[name]?.message as string;
-  const isDateFieldErrorCSS = errors[name] ? S.dateFieldErrorCSS : undefined;
 
-  const handleIsFocused = () => setIsFocused(true);
+  const focusedLabelColorCSS = isFocused ? S.focusedLabelCSS : undefined;
+  const dateFieldErrorCSS = errors[name] ? S.dateFieldErrorCSS : undefined;
+
   const handleIsBlured = () => setIsFocused(false);
+  const handleIsClicked = () => dateInputRef.current?.showPicker();
+  const handleIsFocused = () => setIsFocused(true);
+
+  const handleIsFilled = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const isInputValue = event.target.value !== '';
+
+    if (isInputValue) {
+      setIsFilled(true);
+      return;
+    }
+
+    setIsFilled(false);
+  };
+
+  const handleRefFormRegister = (event: HTMLInputElement | null) => {
+    ref(event);
+    dateInputRef.current = event;
+  };
 
   return (
-    <S.DateFieldWrapper>
-      {isFocused && (
-        <Label css={S.labelCSS} dataTestID={labelTestID} htmlFor={name}>
-          {label}
-        </Label>
-      )}
-      <S.Field
-        css={isDateFieldErrorCSS}
-        data-testid={inputTestID}
-        min={minDate}
-        type="date"
-        {...register(name, registerOptions)}
-        onBlur={handleIsBlured}
-        onFocus={handleIsFocused}
-      />
+    <S.FlexColumn>
+      <S.DateFieldWrapper>
+        {isLabelRendered ? (
+          <S.LabelWrapper>
+            <Label
+              css={focusedLabelColorCSS}
+              dataTestID={labelTestID}
+              htmlFor={name}
+            >
+              {label}
+            </Label>
+          </S.LabelWrapper>
+        ) : null}
+        <S.Field
+          ref={handleRefFormRegister}
+          css={dateFieldErrorCSS}
+          data-testid={inputTestID}
+          min={minDate}
+          type="date"
+          {...restOfRegister}
+          onBlur={handleIsBlured}
+          onChange={handleIsFilled}
+          onClick={handleIsClicked}
+          onFocus={handleIsFocused}
+          onKeyDown={(e) => e.preventDefault()}
+        />
+      </S.DateFieldWrapper>
       {errors[name] ? (
         <Text css={S.errorMessageCSS} dataTestID={errorMessageTestID}>
           {errorMessage}
         </Text>
       ) : null}
-    </S.DateFieldWrapper>
+    </S.FlexColumn>
   );
 };

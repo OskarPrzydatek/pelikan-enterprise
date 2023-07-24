@@ -7,6 +7,12 @@ const onFocusMoveAnimation = keyframes`
  100% { top: -20%; opacity: 1 }
 `;
 
+export const FlexColumn = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+`;
+
 export const DateFieldWrapper = styled.div`
   width: 100%;
   display: flex;
@@ -23,7 +29,7 @@ export const Field = styled.input<ICSS>`
   border: none;
   width: 100%;
   line-height: 1.6;
-  padding: ${({ theme }) => theme.spaces.xxs} ${({ theme }) => theme.spaces.xs};
+  padding: ${({ theme }) => theme.spaces.xs};
   font-family: ${({ theme }) => theme.fonts.main};
   color: ${({ theme }) => theme.colors.black};
   border: 3px solid ${({ theme }) => theme.colors.darkBlue};
@@ -58,6 +64,21 @@ export const Field = styled.input<ICSS>`
   }
 
   ${({ css }) => css}
+`;
+
+export const LabelWrapper = styled.div`
+  position: absolute;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-name: ${onFocusMoveAnimation};
+  padding: 0 ${({ theme }) => theme.spaces.xxs};
+  margin-left: ${({ theme }) => theme.spaces.xs};
+  background-color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.lightBlue};
+`;
+
+export const focusedLabelCSS = css`
+  color: ${({ theme }) => theme.colors.lightBlue} !important;
 `;
 
 export const labelCSS = css`

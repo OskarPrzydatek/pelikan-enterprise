@@ -34,32 +34,52 @@ export const Select: React.FC<ISelect> = ({
     undefined
   );
   const [isFocused, setIsFocused] = React.useState<boolean>(false);
+  const [isFilled, setIsFilled] = React.useState<boolean>(false);
 
-  const errorMessage = errors[name]?.message as string;
+  const isLabelRendered = isFocused || isFilled;
 
+  const isFocusedLabelColorCSS = isFocused ? S.focusedLabelCSS : undefined;
   const isFocusedChevronCSS = showOptions ? S.chevronUpCSS : S.chevronDownCSS;
   const isChevronCSS =
     showOptions !== undefined ? isFocusedChevronCSS : undefined;
   const isSelectErrorCSS = errors[name] ? S.selectErrorCSS : undefined;
+  const errorMessage = errors[name]?.message as string;
 
-  const handleOnFocus = () => {
+  const handleIsFocused = () => {
     setShowOptions(true);
     setIsFocused(true);
   };
 
-  const handleOnBlur = () => {
+  const handleIsBlured = () => {
     setShowOptions(false);
     setIsFocused(false);
   };
 
+  const handleIsFilled = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const isInputValue = event.target.value !== '';
+
+    if (isInputValue) {
+      setIsFilled(true);
+      return;
+    }
+
+    setIsFilled(false);
+  };
+
   return (
     <S.FlexColumn>
-      {isFocused ? (
-        <Label css={S.labelCSS} dataTestID={labelTestID} htmlFor={name}>
-          {label}
-        </Label>
-      ) : null}
       <S.SelectWrapper>
+        {isLabelRendered ? (
+          <S.LabelWrapper>
+            <Label
+              css={isFocusedLabelColorCSS}
+              dataTestID={labelTestID}
+              htmlFor={name}
+            >
+              {label}
+            </Label>
+          </S.LabelWrapper>
+        ) : null}
         <S.SelectChevronWrapper css={isChevronCSS}>
           <Icon icon={Icons.CHEVRON} />
         </S.SelectChevronWrapper>
@@ -68,8 +88,9 @@ export const Select: React.FC<ISelect> = ({
           data-testid={selectTestID}
           defaultValue=""
           {...register(name, registerOptions)}
-          onBlur={handleOnBlur}
-          onFocus={handleOnFocus}
+          onBlur={handleIsBlured}
+          onChange={handleIsFilled}
+          onFocus={handleIsFocused}
         >
           <>
             <S.Option disabled value="">
