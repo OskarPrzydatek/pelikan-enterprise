@@ -28,16 +28,26 @@ export const TextField: React.FC<ITextField> = ({
     formState: { errors },
   } = useFormContext();
   const [isFocused, setIsFocused] = React.useState<boolean>(false);
+  const [isFilled, setIsFilled] = React.useState<boolean>(false);
 
-  const placeholder = isFocused ? '' : label;
+  const placeholder = isFocused || isFilled ? '' : label;
   const errorMessage = errors[name]?.message as string;
   const isTextFieldErrorCSS = errors[name] ? S.textFieldErrorCSS : undefined;
 
   const handleIsFocused = () => setIsFocused((prev: boolean) => !prev);
 
+  const handleIsFilled = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (event.target.value && event.target.value !== '') {
+      setIsFilled(true);
+      return;
+    }
+
+    setIsFilled(false);
+  };
+
   return (
     <S.TextFieldWrapper>
-      {isFocused && (
+      {(isFocused || isFilled) && (
         <Label css={S.labelCSS} dataTestID={labelTestID} htmlFor={name}>
           {label}
         </Label>
@@ -49,6 +59,7 @@ export const TextField: React.FC<ITextField> = ({
         placeholder={placeholder}
         {...register(name, registerOptions)}
         onBlur={handleIsFocused}
+        onChange={handleIsFilled}
         onFocus={handleIsFocused}
       />
       {errors[name] ? (
