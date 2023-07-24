@@ -17,6 +17,7 @@ export const SubmitButton = styled.input`
   appearance: none;
   border: none;
   width: 100%;
+  cursor: pointer;
   font-family: ${({ theme }) => theme.fonts.main};
   color: ${({ theme }) => theme.colors.white};
   background-color: ${({ theme }) => theme.colors.darkBlue};

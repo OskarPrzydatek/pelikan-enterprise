@@ -8,4 +8,5 @@ export const ClickableIcon = styled.button<ICSS>`
   appearance: none;
   background-color: transparent;
   display: flex;
+  cursor: pointer;
 `;
