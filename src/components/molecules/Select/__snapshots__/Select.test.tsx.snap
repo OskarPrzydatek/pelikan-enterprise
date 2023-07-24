@@ -8,8 +8,72 @@ exports[`Select > component snapshot 1`] = `
       <div
         class="sc-bqWxrE capgDc"
       >
+        <div
+          class="sc-bqWxrE capgDc"
+        >
+          <span
+            class="sc-hBxehG fgMdbx"
+          >
+            <svg
+              data-testid="chevron-icon"
+              fill="none"
+              viewBox="0 0 27 16"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 2L13.5 13L25 2"
+                stroke="#013059"
+                stroke-width="3"
+              />
+            </svg>
+          </span>
+          <select
+            class="sc-fnGiBr kiScBv"
+            data-testid="molecule-select"
+            name="destination"
+          >
+            <option
+              disabled=""
+              selected=""
+              value=""
+            >
+              Default label
+            </option>
+            <option
+              value="value1"
+            >
+              label1
+            </option>
+            <option
+              value="value2"
+            >
+              label2
+            </option>
+            <option
+              value="value3"
+            >
+              label3
+            </option>
+            <option
+              value="value4"
+            >
+              label4
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-bqWxrE capgDc"
+    >
+      <div
+        class="sc-bqWxrE capgDc"
+      >
         <span
-          class="sc-ksBlkl iQymGA"
+          class="sc-hBxehG fgMdbx"
         >
           <svg
             data-testid="chevron-icon"
@@ -25,46 +89,40 @@ exports[`Select > component snapshot 1`] = `
             />
           </svg>
         </span>
-        <input
-          class="sc-hBxehG kmznvZ"
+        <select
+          class="sc-fnGiBr kiScBv"
           data-testid="molecule-select"
           name="destination"
-          placeholder="Default label"
-          readonly=""
-          value=""
-        />
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="sc-bqWxrE capgDc"
-    >
-      <span
-        class="sc-ksBlkl iQymGA"
-      >
-        <svg
-          data-testid="chevron-icon"
-          fill="none"
-          viewBox="0 0 27 16"
-          width="20"
-          xmlns="http://www.w3.org/2000/svg"
         >
-          <path
-            d="M2 2L13.5 13L25 2"
-            stroke="#013059"
-            stroke-width="3"
-          />
-        </svg>
-      </span>
-      <input
-        class="sc-hBxehG kmznvZ"
-        data-testid="molecule-select"
-        name="destination"
-        placeholder="Default label"
-        readonly=""
-        value=""
-      />
+          <option
+            disabled=""
+            selected=""
+            value=""
+          >
+            Default label
+          </option>
+          <option
+            value="value1"
+          >
+            label1
+          </option>
+          <option
+            value="value2"
+          >
+            label2
+          </option>
+          <option
+            value="value3"
+          >
+            label3
+          </option>
+          <option
+            value="value4"
+          >
+            label4
+          </option>
+        </select>
+      </div>
     </div>
   </div>,
   "debug": [Function],

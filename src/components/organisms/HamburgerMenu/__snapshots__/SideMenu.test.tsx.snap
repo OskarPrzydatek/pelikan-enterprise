@@ -6,22 +6,22 @@ exports[`SideMenu > component snapshot 1`] = `
   "baseElement": <body>
     <div />
     <div
-      class="sc-dkrFOg kVejza"
+      class="sc-dkrFOg hVytYR"
     >
       <div
-        class="sc-pyfCe bMvyHU"
+        class="sc-pyfCe hSLFSU"
         data-testid="hamburger-menu-side-menu"
       >
         <div
-          class="sc-jrcTuL irwjLS"
+          class="sc-jrcTuL fjayrs"
         >
           <h2
-            class="sc-eDvSVe fdTwcs"
+            class="sc-eDvSVe hphoks"
           >
             Pelikan Enterprise
           </h2>
           <button
-            class="sc-jSUZER kEKcxS"
+            class="sc-jSUZER ekAbDQ"
             data-testid="side-menu-close-icon"
           >
             <svg
@@ -45,105 +45,105 @@ exports[`SideMenu > component snapshot 1`] = `
             class="sc-ipEyDJ"
           >
             <li
-              class="sc-csuSiG gnvjKz"
+              class="sc-csuSiG kbcDgQ"
             >
               <h2
-                class="sc-eDvSVe fdTwcs"
+                class="sc-eDvSVe hphoks"
               >
                 Oferty
               </h2>
               <button
-                class="sc-hLBbgP dFoEVu"
+                class="sc-hLBbgP gKuBBc"
                 data-testid="side-menu-item-create-offer"
               >
                 Dodaj ofertę
               </button>
               <button
-                class="sc-hLBbgP dFoEVu"
+                class="sc-hLBbgP gKuBBc"
                 data-testid="side-menu-item-list-offer"
               >
                 Lista ofert
               </button>
             </li>
             <li
-              class="sc-csuSiG gnvjKz"
+              class="sc-csuSiG kbcDgQ"
             >
               <h2
-                class="sc-eDvSVe fdTwcs"
+                class="sc-eDvSVe hphoks"
               >
                 Hotele
               </h2>
               <button
-                class="sc-hLBbgP dFoEVu"
+                class="sc-hLBbgP gKuBBc"
                 data-testid="side-menu-item-create-hotel"
               >
                 Dodaj hotel
               </button>
               <button
-                class="sc-hLBbgP dFoEVu"
+                class="sc-hLBbgP gKuBBc"
                 data-testid="side-menu-item-list-hotel"
               >
                 Lista hoteli
               </button>
             </li>
             <li
-              class="sc-csuSiG gnvjKz"
+              class="sc-csuSiG kbcDgQ"
             >
               <h2
-                class="sc-eDvSVe fdTwcs"
+                class="sc-eDvSVe hphoks"
               >
                 Transport
               </h2>
               <button
-                class="sc-hLBbgP dFoEVu"
+                class="sc-hLBbgP gKuBBc"
                 data-testid="side-menu-item-create-transport"
               >
                 Dodaj transport
               </button>
               <button
-                class="sc-hLBbgP dFoEVu"
+                class="sc-hLBbgP gKuBBc"
                 data-testid="side-menu-item-list-transport"
               >
                 Lista transportów
               </button>
             </li>
             <li
-              class="sc-csuSiG gnvjKz"
+              class="sc-csuSiG kbcDgQ"
             >
               <h2
-                class="sc-eDvSVe fdTwcs"
+                class="sc-eDvSVe hphoks"
               >
                 Atrakcje
               </h2>
               <button
-                class="sc-hLBbgP dFoEVu"
+                class="sc-hLBbgP gKuBBc"
                 data-testid="side-menu-item-create-attraction"
               >
                 Dodaj atrakcję
               </button>
               <button
-                class="sc-hLBbgP dFoEVu"
+                class="sc-hLBbgP gKuBBc"
                 data-testid="side-menu-item-list-attraction"
               >
                 Lista atrakcji
               </button>
             </li>
             <li
-              class="sc-csuSiG gnvjKz"
+              class="sc-csuSiG kbcDgQ"
             >
               <h2
-                class="sc-eDvSVe fdTwcs"
+                class="sc-eDvSVe hphoks"
               >
                 Hash Tagi
               </h2>
               <button
-                class="sc-hLBbgP dFoEVu"
+                class="sc-hLBbgP gKuBBc"
                 data-testid="side-menu-item-create-hashtag"
               >
                 Dodaj hashtag
               </button>
               <button
-                class="sc-hLBbgP dFoEVu"
+                class="sc-hLBbgP gKuBBc"
                 data-testid="side-menu-item-list-hashtag"
               >
                 Lista hashtagów
@@ -152,14 +152,10 @@ exports[`SideMenu > component snapshot 1`] = `
           </ul>
         </nav>
         <button
-          class="sc-hLBbgP fPTBtl"
+          class="sc-hLBbgP emmwsR"
           data-testid="side-menu-logout-button"
         >
-          <p
-            class="sc-ftTHYK kKOVgl"
-          >
-            Wyloguj
-          </p>
+          Wyloguj
         </button>
       </div>
     </div>

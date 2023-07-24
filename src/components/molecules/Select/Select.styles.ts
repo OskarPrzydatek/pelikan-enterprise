@@ -25,6 +25,12 @@ const rotateDownAnimation = keyframes`
   }
 `;
 
+export const FlexColumn = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+`;
+
 export const SelectWrapper = styled.div`
   position: relative;
   width: 100%;
@@ -33,6 +39,7 @@ export const SelectWrapper = styled.div`
 export const SelectInputWrapper = styled.div``;
 
 export const SelectChevronWrapper = styled.span<ICSS>`
+  z-index: -1;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -59,9 +66,10 @@ export const SelectChevronWrapper = styled.span<ICSS>`
   ${({ css }) => css}
 `;
 
-export const Select = styled.input<ICSS>`
+export const Select = styled.select<ICSS>`
   appearance: none;
   border: none;
+  background-color: transparent;
   width: 100%;
   line-height: 1.6;
   cursor: pointer;
@@ -98,15 +106,7 @@ export const Select = styled.input<ICSS>`
   ${({ css }) => css}
 `;
 
-export const OptionsList = styled.ul`
-  position: absolute;
-  top: 120%;
-  width: 100%;
-  border: 3px solid ${({ theme }) => theme.colors.darkBlue};
-  padding: 1rem;
-  z-index: 2;
-  background-color: ${({ theme }) => theme.colors.white};
-`;
+export const Option = styled.option``;
 
 export const labelCSS = css`
   z-index: 10;

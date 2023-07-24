@@ -6,7 +6,7 @@ exports[`Header > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <h2
-        class="sc-dkrFOg jPWIGE"
+        class="sc-dkrFOg jpoXtY"
         data-testid="header-atom"
       >
         String Header
@@ -15,7 +15,7 @@ exports[`Header > component snapshot 1`] = `
   </body>,
   "container": <div>
     <h2
-      class="sc-dkrFOg jPWIGE"
+      class="sc-dkrFOg jpoXtY"
       data-testid="header-atom"
     >
       String Header

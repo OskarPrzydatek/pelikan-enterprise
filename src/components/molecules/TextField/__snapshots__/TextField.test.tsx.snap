@@ -9,7 +9,7 @@ exports[`TextField > component snapshot 1`] = `
         class="sc-csuSiG fWMyeb"
       >
         <input
-          class="sc-eDWCr cfzujf"
+          class="sc-eDWCr jismjM"
           data-testid="molecule-textfield"
           id="email"
           name="email"
@@ -23,7 +23,7 @@ exports[`TextField > component snapshot 1`] = `
       class="sc-csuSiG fWMyeb"
     >
       <input
-        class="sc-eDWCr cfzujf"
+        class="sc-eDWCr jismjM"
         data-testid="molecule-textfield"
         id="email"
         name="email"
