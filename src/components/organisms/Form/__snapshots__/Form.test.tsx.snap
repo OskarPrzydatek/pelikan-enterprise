@@ -9,7 +9,7 @@ exports[`Form > component snapshot 1`] = `
         class="sc-pyfCe rsgVC"
       >
         <h2
-          class="sc-eDvSVe hphoks"
+          class="sc-eDvSVe dcXtK"
         >
           Form title
         </h2>
@@ -27,7 +27,7 @@ exports[`Form > component snapshot 1`] = `
       class="sc-pyfCe rsgVC"
     >
       <h2
-        class="sc-eDvSVe hphoks"
+        class="sc-eDvSVe dcXtK"
       >
         Form title
       </h2>

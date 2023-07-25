@@ -3,6 +3,7 @@ import { Navigate, createBrowserRouter } from 'react-router-dom';
 import { Body } from '~/Body';
 import { Slugs } from '~/constants';
 import {
+  AttractionOverviewPage,
   CreateAttractionPage,
   CreateHashtagPage,
   CreateHotelPage,
@@ -13,11 +14,10 @@ import {
   EditHotelPage,
   EditOfferPage,
   EditTransportPage,
-  ListAttractionPage,
-  ListHashtagPage,
-  ListHotelPage,
-  ListOfferPage,
-  ListTransportPage,
+  HashtagOverviewPage,
+  HotelOverviewPage,
+  OfferOverviewPage,
+  TransportOverviewPage,
 } from '~/pages';
 
 export const router = createBrowserRouter([
@@ -26,109 +26,109 @@ export const router = createBrowserRouter([
     children: [
       // Offer
       {
+        element: <OfferOverviewPage />,
+        path: Slugs.OFFER_OVERVIEW,
+        children: [
+          {
+            element: <OfferOverviewPage />,
+            path: Slugs.PAGE,
+          },
+        ],
+      },
+      {
         element: <CreateOfferPage />,
         path: Slugs.CREATE_OFFER,
       },
       {
         element: <EditOfferPage />,
-        path: Slugs.EDIT_OFFER,
+        path: `${Slugs.EDIT_OFFER}/${Slugs.ID}`,
       },
+
+      // Hotels
       {
-        element: <ListOfferPage />,
-        path: Slugs.LIST_OFFER,
+        element: <HotelOverviewPage />,
+        path: Slugs.HOTEL_OVERVIEW,
         children: [
           {
-            element: <ListOfferPage />,
+            element: <HotelOverviewPage />,
             path: Slugs.PAGE,
           },
         ],
       },
-
-      // Hotels
       {
         element: <CreateHotelPage />,
         path: Slugs.CREATE_HOTEL,
       },
       {
         element: <EditHotelPage />,
-        path: Slugs.EDIT_HOTEL,
+        path: `${Slugs.EDIT_HOTEL}/${Slugs.ID}`,
       },
+
+      // Transport
       {
-        element: <ListHotelPage />,
-        path: Slugs.LIST_HOTEL,
+        element: <TransportOverviewPage />,
+        path: Slugs.TRANSPORT_OVERVIEW,
         children: [
           {
-            element: <ListHotelPage />,
+            element: <TransportOverviewPage />,
             path: Slugs.PAGE,
           },
         ],
       },
-
-      // Transport
       {
         element: <CreateTransportPage />,
         path: Slugs.CREATE_TRANSPORT,
       },
       {
         element: <EditTransportPage />,
-        path: Slugs.EDIT_TRANSPORT,
+        path: `${Slugs.EDIT_TRANSPORT}/${Slugs.ID}`,
       },
+
+      // Attractions
       {
-        element: <ListTransportPage />,
-        path: Slugs.LIST_TRANSPORT,
+        element: <AttractionOverviewPage />,
+        path: Slugs.ATTRACTION_OVERVIEW,
         children: [
           {
-            element: <ListTransportPage />,
+            element: <AttractionOverviewPage />,
             path: Slugs.PAGE,
           },
         ],
       },
-
-      // Attractions
       {
         element: <CreateAttractionPage />,
         path: Slugs.CREATE_ATTRACTION,
       },
       {
         element: <EditAttractionPage />,
-        path: Slugs.EDIT_ATTRACTION,
+        path: `${Slugs.EDIT_ATTRACTION}/${Slugs.ID}`,
       },
+
+      // Hashtags
       {
-        element: <ListAttractionPage />,
-        path: Slugs.LIST_ATTRACTION,
+        element: <HashtagOverviewPage />,
+        path: Slugs.HASHTAG_OVERVIEW,
         children: [
           {
-            element: <ListAttractionPage />,
+            element: <HashtagOverviewPage />,
             path: Slugs.PAGE,
           },
         ],
       },
-
-      // Hashtags
       {
         element: <CreateHashtagPage />,
         path: Slugs.CREATE_HASHTAG,
       },
       {
         element: <EditHashtagPage />,
-        path: Slugs.EDIT_HASHTAG,
-      },
-      {
-        element: <ListHashtagPage />,
-        path: Slugs.LIST_HASHTAG,
-        children: [
-          {
-            element: <ListHashtagPage />,
-            path: Slugs.PAGE,
-          },
-        ],
+        path: `${Slugs.EDIT_HASHTAG}/${Slugs.ID}`,
       },
     ],
   },
 
   // Not Found
   {
-    element: <Navigate replace to={Slugs.CREATE_OFFER} />,
+    element: <Navigate replace to={Slugs.OFFER_OVERVIEW} />,
     path: Slugs.NOT_FOUND,
   },
 ]);

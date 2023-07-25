@@ -5,7 +5,7 @@ import { Icon } from '~/components/atoms';
 import { Icons, Slugs } from '~/constants';
 import { IComponent } from '~/models';
 
-import { SideMenu } from './SideMenu';
+import { SideMenu } from '../SideMenu/SideMenu';
 
 interface IHamburgerMenu extends IComponent {}
 

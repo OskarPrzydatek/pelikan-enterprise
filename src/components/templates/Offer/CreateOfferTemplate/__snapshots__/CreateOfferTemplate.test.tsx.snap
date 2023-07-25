@@ -12,7 +12,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
           class="sc-cwSeag qbDdz"
         >
           <h2
-            class="sc-dkrFOg jpoXtY"
+            class="sc-dkrFOg kaKqDq"
           >
             Dodaj ofertę
           </h2>
@@ -189,7 +189,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                 <input
                   class="sc-pyfCe brigoQ"
                   data-testid="create-offer-form"
-                  min="2023-07-24"
+                  min="2023-07-25"
                   name="from"
                   type="date"
                 />
@@ -204,7 +204,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                 <input
                   class="sc-pyfCe brigoQ"
                   data-testid="create-offer-to"
-                  min="2023-07-24"
+                  min="2023-07-25"
                   name="to"
                   type="date"
                 />
@@ -243,7 +243,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
         class="sc-cwSeag qbDdz"
       >
         <h2
-          class="sc-dkrFOg jpoXtY"
+          class="sc-dkrFOg kaKqDq"
         >
           Dodaj ofertę
         </h2>
@@ -420,7 +420,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
               <input
                 class="sc-pyfCe brigoQ"
                 data-testid="create-offer-form"
-                min="2023-07-24"
+                min="2023-07-25"
                 name="from"
                 type="date"
               />
@@ -435,7 +435,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
               <input
                 class="sc-pyfCe brigoQ"
                 data-testid="create-offer-to"
-                min="2023-07-24"
+                min="2023-07-25"
                 name="to"
                 type="date"
               />

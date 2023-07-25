@@ -9,17 +9,17 @@ exports[`SideMenu > component snapshot 1`] = `
       class="sc-dkrFOg hVytYR"
     >
       <div
-        class="sc-pyfCe hSLFSU"
+        class="sc-pyfCe enVoiO"
         data-testid="hamburger-menu-side-menu"
       >
         <div
           class="sc-jrcTuL fjayrs"
         >
-          <h2
-            class="sc-eDvSVe hphoks"
+          <p
+            class="sc-ftTHYK dKCeiw"
           >
             Pelikan Enterprise
-          </h2>
+          </p>
           <button
             class="sc-jSUZER hXdBAm"
             data-testid="side-menu-close-icon"
@@ -45,108 +45,73 @@ exports[`SideMenu > component snapshot 1`] = `
             class="sc-ipEyDJ"
           >
             <li
-              class="sc-csuSiG kbcDgQ"
+              class="sc-csuSiG cFgvVv"
             >
-              <h2
-                class="sc-eDvSVe hphoks"
-              >
-                Oferty
-              </h2>
               <button
-                class="sc-hLBbgP gKuBBc"
-                data-testid="side-menu-item-create-offer"
+                class="sc-hLBbgP drIwCV"
+                data-testid="side-menu-item-offer-overview"
               >
-                Dodaj ofertę
-              </button>
-              <button
-                class="sc-hLBbgP gKuBBc"
-                data-testid="side-menu-item-list-offer"
-              >
-                Lista ofert
+                <h2
+                  class="sc-eDvSVe jPXdpL"
+                >
+                  Oferty
+                </h2>
               </button>
             </li>
             <li
-              class="sc-csuSiG kbcDgQ"
+              class="sc-csuSiG cFgvVv"
             >
-              <h2
-                class="sc-eDvSVe hphoks"
-              >
-                Hotele
-              </h2>
               <button
-                class="sc-hLBbgP gKuBBc"
-                data-testid="side-menu-item-create-hotel"
+                class="sc-hLBbgP drIwCV"
+                data-testid="side-menu-item-hotel-overview"
               >
-                Dodaj hotel
-              </button>
-              <button
-                class="sc-hLBbgP gKuBBc"
-                data-testid="side-menu-item-list-hotel"
-              >
-                Lista hoteli
+                <h2
+                  class="sc-eDvSVe jPXdpL"
+                >
+                  Hotele
+                </h2>
               </button>
             </li>
             <li
-              class="sc-csuSiG kbcDgQ"
+              class="sc-csuSiG cFgvVv"
             >
-              <h2
-                class="sc-eDvSVe hphoks"
-              >
-                Transport
-              </h2>
               <button
-                class="sc-hLBbgP gKuBBc"
-                data-testid="side-menu-item-create-transport"
+                class="sc-hLBbgP drIwCV"
+                data-testid="side-menu-item-transport-overview"
               >
-                Dodaj transport
-              </button>
-              <button
-                class="sc-hLBbgP gKuBBc"
-                data-testid="side-menu-item-list-transport"
-              >
-                Lista transportów
+                <h2
+                  class="sc-eDvSVe jPXdpL"
+                >
+                  Transport
+                </h2>
               </button>
             </li>
             <li
-              class="sc-csuSiG kbcDgQ"
+              class="sc-csuSiG cFgvVv"
             >
-              <h2
-                class="sc-eDvSVe hphoks"
-              >
-                Atrakcje
-              </h2>
               <button
-                class="sc-hLBbgP gKuBBc"
-                data-testid="side-menu-item-create-attraction"
+                class="sc-hLBbgP drIwCV"
+                data-testid="side-menu-item-attraction-overview"
               >
-                Dodaj atrakcję
-              </button>
-              <button
-                class="sc-hLBbgP gKuBBc"
-                data-testid="side-menu-item-list-attraction"
-              >
-                Lista atrakcji
+                <h2
+                  class="sc-eDvSVe jPXdpL"
+                >
+                  Atrakcje
+                </h2>
               </button>
             </li>
             <li
-              class="sc-csuSiG kbcDgQ"
+              class="sc-csuSiG cFgvVv"
             >
-              <h2
-                class="sc-eDvSVe hphoks"
-              >
-                Hash Tagi
-              </h2>
               <button
-                class="sc-hLBbgP gKuBBc"
-                data-testid="side-menu-item-create-hashtag"
+                class="sc-hLBbgP drIwCV"
+                data-testid="side-menu-item-hashtag-overview"
               >
-                Dodaj hashtag
-              </button>
-              <button
-                class="sc-hLBbgP gKuBBc"
-                data-testid="side-menu-item-list-hashtag"
-              >
-                Lista hashtagów
+                <h2
+                  class="sc-eDvSVe jPXdpL"
+                >
+                  Hashtagi
+                </h2>
               </button>
             </li>
           </ul>

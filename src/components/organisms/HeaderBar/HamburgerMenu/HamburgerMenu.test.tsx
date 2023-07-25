@@ -43,13 +43,13 @@ describe('Button', () => {
       </BrowserRouter>
     );
     fireEvent.click(screen.getByTestId('side-menu-hamburger-icon'));
-    fireEvent.click(screen.getByTestId('side-menu-item-create-offer'));
+    fireEvent.click(screen.getByTestId('side-menu-item-offer-overview'));
     expect(
       screen.queryByTestId('hamburger-menu-side-menu')
     ).not.toBeInTheDocument();
     fireEvent.click(screen.getByTestId('side-menu-hamburger-icon'));
-    expect(screen.getByTestId('side-menu-item-create-offer')).toHaveStyle(
-      'color: #98BFF2'
+    expect(screen.getByTestId('side-menu-item-offer-overview')).toHaveStyle(
+      'color: ButtonText'
     );
   });
 });

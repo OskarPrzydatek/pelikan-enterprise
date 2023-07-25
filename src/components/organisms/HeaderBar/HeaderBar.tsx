@@ -1,7 +1,6 @@
 import { ProfilePicture } from '~/components/molecules';
 
-import { HamburgerMenu } from '../HamburgerMenu/HamburgerMenu';
-
+import { HamburgerMenu } from './HamburgerMenu/HamburgerMenu';
 import * as S from './HeaderBar.styles';
 
 export const HeaderBar: React.FC = () => {

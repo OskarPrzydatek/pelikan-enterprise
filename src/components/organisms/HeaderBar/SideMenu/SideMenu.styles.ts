@@ -5,19 +5,19 @@ export const SideMenu = styled.div`
   width: 100%;
   background-color: ${({ theme }) => theme.colors.white};
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr 10fr 0.5fr;
   padding: ${({ theme }) => theme.spaces.s};
 
   @media ${({ theme }) => theme.breakpoints.phone} {
-    width: 65%;
+    width: 55%;
   }
 
   @media ${({ theme }) => theme.breakpoints.tablet} {
-    width: 40%;
+    width: 30%;
   }
 
   @media ${({ theme }) => theme.breakpoints.desktop} {
-    width: 30%;
+    width: 20%;
   }
 `;
 
@@ -36,11 +36,15 @@ export const NavItem = styled.li`
   flex-direction: column;
 
   button {
-    margin: ${({ theme }) => theme.spaces.xs} 0;
     margin-left: ${({ theme }) => theme.spaces.xl};
     font-weight: 700;
     cursor: pointer;
   }
+`;
+
+export const appNameLabelCSS = css`
+  color: ${({ theme }) => theme.colors.darkBlue};
+  font-weight: 900;
 `;
 
 export const currentPageButtonCSS = css`

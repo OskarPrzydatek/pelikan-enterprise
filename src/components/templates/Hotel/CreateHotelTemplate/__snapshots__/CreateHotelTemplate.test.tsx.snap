@@ -12,7 +12,7 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
           class="sc-cwSeag qbDdz"
         >
           <h2
-            class="sc-dkrFOg jpoXtY"
+            class="sc-dkrFOg kaKqDq"
           >
             Dodaj hotel
           </h2>
@@ -116,7 +116,7 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
         class="sc-cwSeag qbDdz"
       >
         <h2
-          class="sc-dkrFOg jpoXtY"
+          class="sc-dkrFOg kaKqDq"
         >
           Dodaj hotel
         </h2>

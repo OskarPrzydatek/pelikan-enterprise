@@ -36,8 +36,8 @@ describe('SideMenu', () => {
         />
       </StyledComponentsProvider>
     );
-    fireEvent.click(screen.getByTestId('side-menu-item-create-offer'));
-    expect(mockOnNavigate).toHaveBeenCalledWith('create-offer');
+    fireEvent.click(screen.getByTestId('side-menu-item-offer-overview'));
+    expect(mockOnNavigate).toHaveBeenCalledWith('offer-overview');
   });
 
   test('ensure logout works correctly', () => {

@@ -12,7 +12,7 @@ exports[`CreateHashtagTemplate > component snapshot 1`] = `
           class="sc-cwSeag qbDdz"
         >
           <h2
-            class="sc-dkrFOg jpoXtY"
+            class="sc-dkrFOg kaKqDq"
           >
             Dodaj hashtag
           </h2>
@@ -48,7 +48,7 @@ exports[`CreateHashtagTemplate > component snapshot 1`] = `
         class="sc-cwSeag qbDdz"
       >
         <h2
-          class="sc-dkrFOg jpoXtY"
+          class="sc-dkrFOg kaKqDq"
         >
           Dodaj hashtag
         </h2>
