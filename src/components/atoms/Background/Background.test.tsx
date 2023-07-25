@@ -3,7 +3,7 @@ import { describe, test, expect, vi } from 'vitest';
 
 import { StyledComponentsProvider } from '~/providers';
 
-import { Background } from './Background.component';
+import { Background } from './Background';
 
 const mockOnClickBackground = vi.fn();
 

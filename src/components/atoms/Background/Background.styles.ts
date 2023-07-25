@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const Background = styled.div`
+import { ICSS } from '~/models';
+
+export const Background = styled.div<ICSS>`
   position: fixed;
   top: 0;
   left: 0;
@@ -9,4 +11,6 @@ export const Background = styled.div`
   background-color: ${({ theme }) => theme.colors.opacityBlack};
   z-index: 2;
   display: flex;
+
+  ${({ css }) => css}
 `;

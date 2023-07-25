@@ -7,41 +7,31 @@ interface IButton extends ICSS {
 }
 
 export const Button = styled.button<IButton>`
+  width: '100%';
   appearance: none;
   border: none;
-  font-family: ${({ theme }) => theme.fonts.main};
   cursor: pointer;
-
-  ${({ css }) => css}
-
-  @media ${({ theme }) => theme.breakpoints.phone} {
-    font-size: ${({ theme }) => theme.fontSizes.s};
-  }
-
-  @media ${({ theme }) => theme.breakpoints.tablet} {
-    font-size: ${({ theme }) => theme.fontSizes.m};
-  }
-
-  @media ${({ theme }) => theme.breakpoints.desktop} {
-    font-size: ${({ theme }) => theme.fontSizes.m};
-  }
+  font-family: ${({ theme }) => theme.fonts.main};
+  font-size: ${({ theme }) => theme.fontSizes.m};
 
   ${({ variant }) => {
     switch (variant) {
       case 'primary':
         return css`
-          width: '100%';
-          padding: ${({ theme }) => theme.spaces.xs};
+          padding: ${({ theme }) => theme.spaces.s};
           background-color: ${({ theme }) => theme.colors.darkBlue};
           color: ${({ theme }) => theme.colors.white};
-          font-size: ${({ theme }) => theme.fontSizes.m};
         `;
       case 'secondary':
-        return css``;
+        return css`
+          padding: ${({ theme }) => theme.spaces.s};
+          background-color: ${({ theme }) => theme.colors.lightBlue};
+          color: ${({ theme }) => theme.colors.black};
+        `;
       case 'ghost':
         return css`
-          background: transparent;
           padding: 0;
+          background: transparent;
           display: flex;
           font-size: ${({ theme }) => theme.fontSizes.m};
         `;
@@ -49,4 +39,6 @@ export const Button = styled.button<IButton>`
         return null;
     }
   }}
+
+  ${({ css }) => css}
 `;

@@ -1,7 +1,7 @@
-export { Background } from './Background/Background.component';
-export { Button } from './Button/Button.component';
-export { Header } from './Header/Header.component';
-export { Icon } from './Icon/Icon.component';
-export { Label } from './Label/Label.component';
-export { Row } from './Row/Row.component';
-export { Text } from './Text/Text.component';
+export { Background } from './Background/Background';
+export { Button } from './Button/Button';
+export { Header } from './Header/Header';
+export { Icon } from './Icon/Icon';
+export { Label } from './Label/Label';
+export { Row } from './Row/Row';
+export { Text } from './Text/Text';

@@ -1,0 +1,486 @@
+// Vitest Snapshot v1
+
+exports[`CreateTransport Template > component snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-hhOBVt hIPxwk"
+      >
+        <form
+          class="sc-cwSeag qbDdz"
+        >
+          <h2
+            class="sc-dkrFOg kaKqDq"
+          >
+            Dodaj transport
+          </h2>
+          <div
+            class="sc-hBxehG dvBsjd"
+          >
+            <div
+              class="sc-fnGiBr rTdrx"
+            >
+              <input
+                class="sc-fEXmlR hyVGRi"
+                data-testid="create-transport-company-name"
+                id="transportCompanyName"
+                name="transportCompanyName"
+                placeholder="Nazwa firmy transportowej"
+              />
+            </div>
+          </div>
+          <div
+            class="sc-idXgbr doOTQv"
+          >
+            <div
+              class="sc-dIfARi fkTxxa"
+            >
+              <span
+                class="sc-dmctIk czpMvD"
+              >
+                <svg
+                  data-testid="chevron-icon"
+                  fill="none"
+                  viewBox="0 0 27 16"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 2L13.5 13L25 2"
+                    stroke="#013059"
+                    stroke-width="3"
+                  />
+                </svg>
+              </span>
+              <select
+                class="sc-kgTSHT eafwKI"
+                data-testid="create-transport-transport-kind"
+                name="transportKind"
+              >
+                <option
+                  class="sc-fLcnxK"
+                  disabled=""
+                  selected=""
+                  value=""
+                >
+                  Rodzaj transportu
+                </option>
+                <option
+                  class="sc-fLcnxK"
+                  value="TRANSPORT_A"
+                >
+                  Transport A
+                </option>
+                <option
+                  class="sc-fLcnxK"
+                  value="TRANSPORT_B"
+                >
+                  Transport B
+                </option>
+                <option
+                  class="sc-fLcnxK"
+                  value="TRANSPORT_C"
+                >
+                  Transport C
+                </option>
+              </select>
+            </div>
+          </div>
+          <div
+            class="sc-jSUZER gocfuz"
+          >
+            <div
+              class="sc-idXgbr doOTQv"
+            >
+              <div
+                class="sc-dIfARi fkTxxa"
+              >
+                <span
+                  class="sc-dmctIk czpMvD"
+                >
+                  <svg
+                    data-testid="chevron-icon"
+                    fill="none"
+                    viewBox="0 0 27 16"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 2L13.5 13L25 2"
+                      stroke="#013059"
+                      stroke-width="3"
+                    />
+                  </svg>
+                </span>
+                <select
+                  class="sc-kgTSHT eafwKI"
+                  data-testid="create-transpotr-from"
+                  name="from"
+                >
+                  <option
+                    class="sc-fLcnxK"
+                    disabled=""
+                    selected=""
+                    value=""
+                  >
+                    Miejsce początkowe
+                  </option>
+                  <option
+                    class="sc-fLcnxK"
+                    value="PLACE_A"
+                  >
+                    Miejsce A
+                  </option>
+                  <option
+                    class="sc-fLcnxK"
+                    value="PLACE_B"
+                  >
+                    Miejsce B
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div
+              class="sc-idXgbr doOTQv"
+            >
+              <div
+                class="sc-dIfARi fkTxxa"
+              >
+                <span
+                  class="sc-dmctIk czpMvD"
+                >
+                  <svg
+                    data-testid="chevron-icon"
+                    fill="none"
+                    viewBox="0 0 27 16"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 2L13.5 13L25 2"
+                      stroke="#013059"
+                      stroke-width="3"
+                    />
+                  </svg>
+                </span>
+                <select
+                  class="sc-kgTSHT eafwKI"
+                  data-testid="create-transpotr-to"
+                  name="to"
+                >
+                  <option
+                    class="sc-fLcnxK"
+                    disabled=""
+                    selected=""
+                    value=""
+                  >
+                    Miejsce docelowe
+                  </option>
+                  <option
+                    class="sc-fLcnxK"
+                    value="PLACE_A"
+                  >
+                    Miejsce A
+                  </option>
+                  <option
+                    class="sc-fLcnxK"
+                    value="PLACE_B"
+                  >
+                    Miejsce B
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-hBxehG dvBsjd"
+          >
+            <div
+              class="sc-fnGiBr rTdrx"
+            >
+              <input
+                class="sc-fEXmlR hyVGRi"
+                data-testid="create-transport-price"
+                id="price"
+                name="price"
+                placeholder="Cena"
+              />
+            </div>
+          </div>
+          <input
+            class="sc-lllmON ieVIbh"
+            type="submit"
+            value="Dodaj"
+          />
+        </form>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-hhOBVt hIPxwk"
+    >
+      <form
+        class="sc-cwSeag qbDdz"
+      >
+        <h2
+          class="sc-dkrFOg kaKqDq"
+        >
+          Dodaj transport
+        </h2>
+        <div
+          class="sc-hBxehG dvBsjd"
+        >
+          <div
+            class="sc-fnGiBr rTdrx"
+          >
+            <input
+              class="sc-fEXmlR hyVGRi"
+              data-testid="create-transport-company-name"
+              id="transportCompanyName"
+              name="transportCompanyName"
+              placeholder="Nazwa firmy transportowej"
+            />
+          </div>
+        </div>
+        <div
+          class="sc-idXgbr doOTQv"
+        >
+          <div
+            class="sc-dIfARi fkTxxa"
+          >
+            <span
+              class="sc-dmctIk czpMvD"
+            >
+              <svg
+                data-testid="chevron-icon"
+                fill="none"
+                viewBox="0 0 27 16"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 2L13.5 13L25 2"
+                  stroke="#013059"
+                  stroke-width="3"
+                />
+              </svg>
+            </span>
+            <select
+              class="sc-kgTSHT eafwKI"
+              data-testid="create-transport-transport-kind"
+              name="transportKind"
+            >
+              <option
+                class="sc-fLcnxK"
+                disabled=""
+                selected=""
+                value=""
+              >
+                Rodzaj transportu
+              </option>
+              <option
+                class="sc-fLcnxK"
+                value="TRANSPORT_A"
+              >
+                Transport A
+              </option>
+              <option
+                class="sc-fLcnxK"
+                value="TRANSPORT_B"
+              >
+                Transport B
+              </option>
+              <option
+                class="sc-fLcnxK"
+                value="TRANSPORT_C"
+              >
+                Transport C
+              </option>
+            </select>
+          </div>
+        </div>
+        <div
+          class="sc-jSUZER gocfuz"
+        >
+          <div
+            class="sc-idXgbr doOTQv"
+          >
+            <div
+              class="sc-dIfARi fkTxxa"
+            >
+              <span
+                class="sc-dmctIk czpMvD"
+              >
+                <svg
+                  data-testid="chevron-icon"
+                  fill="none"
+                  viewBox="0 0 27 16"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 2L13.5 13L25 2"
+                    stroke="#013059"
+                    stroke-width="3"
+                  />
+                </svg>
+              </span>
+              <select
+                class="sc-kgTSHT eafwKI"
+                data-testid="create-transpotr-from"
+                name="from"
+              >
+                <option
+                  class="sc-fLcnxK"
+                  disabled=""
+                  selected=""
+                  value=""
+                >
+                  Miejsce początkowe
+                </option>
+                <option
+                  class="sc-fLcnxK"
+                  value="PLACE_A"
+                >
+                  Miejsce A
+                </option>
+                <option
+                  class="sc-fLcnxK"
+                  value="PLACE_B"
+                >
+                  Miejsce B
+                </option>
+              </select>
+            </div>
+          </div>
+          <div
+            class="sc-idXgbr doOTQv"
+          >
+            <div
+              class="sc-dIfARi fkTxxa"
+            >
+              <span
+                class="sc-dmctIk czpMvD"
+              >
+                <svg
+                  data-testid="chevron-icon"
+                  fill="none"
+                  viewBox="0 0 27 16"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 2L13.5 13L25 2"
+                    stroke="#013059"
+                    stroke-width="3"
+                  />
+                </svg>
+              </span>
+              <select
+                class="sc-kgTSHT eafwKI"
+                data-testid="create-transpotr-to"
+                name="to"
+              >
+                <option
+                  class="sc-fLcnxK"
+                  disabled=""
+                  selected=""
+                  value=""
+                >
+                  Miejsce docelowe
+                </option>
+                <option
+                  class="sc-fLcnxK"
+                  value="PLACE_A"
+                >
+                  Miejsce A
+                </option>
+                <option
+                  class="sc-fLcnxK"
+                  value="PLACE_B"
+                >
+                  Miejsce B
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-hBxehG dvBsjd"
+        >
+          <div
+            class="sc-fnGiBr rTdrx"
+          >
+            <input
+              class="sc-fEXmlR hyVGRi"
+              data-testid="create-transport-price"
+              id="price"
+              name="price"
+              placeholder="Cena"
+            />
+          </div>
+        </div>
+        <input
+          class="sc-lllmON ieVIbh"
+          type="submit"
+          value="Dodaj"
+        />
+      </form>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

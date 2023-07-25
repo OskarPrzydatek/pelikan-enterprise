@@ -6,16 +6,16 @@ exports[`Form > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <form
-        class="sc-pyfCe kWVZri"
+        class="sc-pyfCe rsgVC"
       >
         <h2
-          class="sc-eDvSVe fdTwcs"
+          class="sc-eDvSVe dcXtK"
         >
           Form title
         </h2>
         <input />
         <input
-          class="sc-jrcTuL llyYsA"
+          class="sc-jrcTuL iZHkcL"
           type="submit"
           value="Submit label"
         />
@@ -24,16 +24,16 @@ exports[`Form > component snapshot 1`] = `
   </body>,
   "container": <div>
     <form
-      class="sc-pyfCe kWVZri"
+      class="sc-pyfCe rsgVC"
     >
       <h2
-        class="sc-eDvSVe fdTwcs"
+        class="sc-eDvSVe dcXtK"
       >
         Form title
       </h2>
       <input />
       <input
-        class="sc-jrcTuL llyYsA"
+        class="sc-jrcTuL iZHkcL"
         type="submit"
         value="Submit label"
       />

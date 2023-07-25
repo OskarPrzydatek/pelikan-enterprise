@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { describe, expect, test } from 'vitest';
 
-import { TextAreaHelper } from '~/helpers';
+import { TextAreaHelper } from './TextAreaHelper';
 
 describe('TextArea', () => {
   test('component snapshot', () => {
@@ -11,11 +11,14 @@ describe('TextArea', () => {
 
   test('ensure input focusing works correctly', () => {
     render(<TextAreaHelper />);
-    const input = screen.getByTestId('molecule-textarea');
+    const textarea: HTMLTextAreaElement =
+      screen.getByTestId('molecule-textarea');
     expect(
       screen.queryByTestId('molecule-textarea-label')
     ).not.toBeInTheDocument();
-    fireEvent.focus(input);
+    fireEvent.focus(textarea);
+    expect(screen.getByTestId('molecule-textarea-label')).toBeInTheDocument();
+    fireEvent.change(textarea, { target: { value: 'q' } });
     expect(screen.getByTestId('molecule-textarea-label')).toBeInTheDocument();
   });
 

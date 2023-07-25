@@ -6,7 +6,7 @@ exports[`Row > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-dkrFOg gRFqzO"
+        class="sc-dkrFOg bSjSMZ"
       >
         <input
           type="text"
@@ -19,7 +19,7 @@ exports[`Row > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-dkrFOg gRFqzO"
+      class="sc-dkrFOg bSjSMZ"
     >
       <input
         type="text"

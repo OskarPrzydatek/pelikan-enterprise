@@ -1,8 +1,19 @@
-export { CreateAttractionPage } from './create/CreateAttraction/CreateAttraction.page';
-export { CreateHashtagPage } from './create/CreateHashtag/CreateHashtag.page';
-export { CreateHotelPage } from './create/CreateHotel/CreateHotel.page';
-export { CreateOfferPage } from './create/CreateOffer/CreateOffer.page';
-export { CreateTransportPage } from './create/CreateTransport/CreateTransport.page';
+export { AttractionOverviewPage } from './attraction/AttractionOverviewPage/AttractionOverviewPage';
+export { CreateAttractionPage } from './attraction/CreateAttractionPage/CreateAttractionPage';
+export { EditAttractionPage } from './attraction/EditAttractionPage/EditAttractionPage';
 
-export { List } from './List/List.page';
-export { Edit } from './Edit/Edit.page';
+export { HashtagOverviewPage } from './hashtag/HashtagOverviewPage/HashtagOverviewPage';
+export { CreateHashtagPage } from './hashtag/CreateHashtagPage/CreateHashtagPage';
+export { EditHashtagPage } from './hashtag/EditHashtagPage/EditHashtagPage';
+
+export { HotelOverviewPage } from './hotel/HotelOverviewPage/HotelOverviewPage';
+export { CreateHotelPage } from './hotel/CreateHotelPage/CreateHotelPage';
+export { EditHotelPage } from './hotel/EditHotelPage/EditHotelPage';
+
+export { OfferOverviewPage } from './offer/OfferOverviewPage/OfferOverviewPage';
+export { CreateOfferPage } from './offer/CreateOfferPage/CreateOfferPage';
+export { EditOfferPage } from './offer/EditOfferPage/EditOfferPage';
+
+export { TransportOverviewPage } from './transport/TransportOverviewPage/TransportOverviewPage';
+export { CreateTransportPage } from './transport/CreateTransportPage/CreateTransportPage';
+export { EditTransportPage } from './transport/EditTransportPage/EditTransportPage';

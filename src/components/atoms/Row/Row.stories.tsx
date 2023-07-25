@@ -1,9 +1,9 @@
 import { Meta, StoryObj } from '@storybook/react';
 
-import { TextFieldHelper } from '~/helpers';
+import { TextFieldHelper } from '~/components/molecules/TextField/TextFieldHelper';
 import { StyledComponentsProvider } from '~/providers';
 
-import { Row } from './Row.component';
+import { Row } from './Row';
 
 const meta: Meta<typeof Row> = {
   title: 'Atoms/Row',

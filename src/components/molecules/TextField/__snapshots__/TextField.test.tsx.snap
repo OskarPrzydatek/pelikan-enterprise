@@ -6,29 +6,37 @@ exports[`TextField > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-csuSiG fWMyeb"
+        class="sc-hBxehG dvBsjd"
+      >
+        <div
+          class="sc-fnGiBr rTdrx"
+        >
+          <input
+            class="sc-fEXmlR hyVGRi"
+            data-testid="molecule-textfield"
+            id="email"
+            name="email"
+            placeholder="Email"
+          />
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-hBxehG dvBsjd"
+    >
+      <div
+        class="sc-fnGiBr rTdrx"
       >
         <input
-          class="sc-eDWCr cfzujf"
+          class="sc-fEXmlR hyVGRi"
           data-testid="molecule-textfield"
           id="email"
           name="email"
           placeholder="Email"
         />
       </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="sc-csuSiG fWMyeb"
-    >
-      <input
-        class="sc-eDWCr cfzujf"
-        data-testid="molecule-textfield"
-        id="email"
-        name="email"
-        placeholder="Email"
-      />
     </div>
   </div>,
   "debug": [Function],

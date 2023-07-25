@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 
-export const ClickableIcon = styled.button`
+import { ICSS } from '~/models';
+
+export const ClickableIcon = styled.button<ICSS>`
   padding: 0;
   border: none;
   appearance: none;
   background-color: transparent;
+  display: flex;
+  cursor: pointer;
 `;

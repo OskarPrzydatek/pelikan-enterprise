@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import { StyledComponentsProvider } from '~/providers';
 
-import { HeaderBar } from './HeaderBar.component';
+import { HeaderBar } from './HeaderBar';
 
 const meta: Meta<typeof HeaderBar> = {
   title: 'Organisms/HeaderBar',

@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 
 import { StyledComponentsProvider } from '~/providers';
 
-import { ProfilePicture } from './ProfilePicture.component';
+import { ProfilePicture } from './ProfilePicture';
 
 const meta: Meta<typeof ProfilePicture> = {
   title: 'Molecules/ProfilePicture',

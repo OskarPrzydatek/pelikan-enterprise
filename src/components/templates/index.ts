@@ -1,5 +1,5 @@
-export { CreateAttractionTemplate } from './create/CreateAttraction/CreateAttraction.template';
-export { CreateHashtagTemplate } from './create/CreateHashtag/CreateHashtag.template';
-export { CreateHotelTemplate } from './create/CreateHotel/CreateHotel.template';
-export { CreateOfferTemplate } from './create/CreateOffer/CreateOffer.template';
-export { CreateTransportTemplate } from './create/CreateTransport/CreateTransport.template';
+export { CreateAttractionTemplate } from './attraction/CreateAttractionTemplate/CreateAttractionTemplate';
+export { CreateHashtagTemplate } from './hashtag/CreateHashtagTemplate/CreateHashtagTemplate';
+export { CreateHotelTemplate } from './hotel/CreateHotelTemplate/CreateHotelTemplate';
+export { CreateOfferTemplate } from './offer/CreateOfferTemplate/CreateOfferTemplate';
+export { CreateTransportTemplate } from './transport/CreateTransportTemplate/CreateTransportTemplate';

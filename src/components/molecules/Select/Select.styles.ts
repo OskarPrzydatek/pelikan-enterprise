@@ -4,7 +4,7 @@ import { ICSS } from '~/models';
 
 const onFocusMoveAnimation = keyframes`
  0% { top: 50%; opacity: 0 }
- 100% { top: -12.5%; opacity: 1 }
+ 100% { top: -20%; opacity: 1 }
 `;
 
 const rotateUpAnimation = keyframes`
@@ -25,12 +25,21 @@ const rotateDownAnimation = keyframes`
   }
 `;
 
+export const FlexColumn = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+`;
+
 export const SelectWrapper = styled.div`
   position: relative;
   width: 100%;
 `;
 
-export const SelectChevron = styled.span<ICSS>`
+export const SelectInputWrapper = styled.div``;
+
+export const SelectChevronWrapper = styled.span<ICSS>`
+  z-index: -1;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -57,30 +66,22 @@ export const SelectChevron = styled.span<ICSS>`
   ${({ css }) => css}
 `;
 
-export const Select = styled.input<ICSS>`
+export const Select = styled.select<ICSS>`
   appearance: none;
   border: none;
+  background-color: transparent;
   width: 100%;
-  line-height: 1.6;
-  padding: 0.5%;
+  line-height: 1.8;
+  cursor: pointer;
+  padding: ${({ theme }) => theme.spaces.xs};
   font-family: ${({ theme }) => theme.fonts.main};
   color: ${({ theme }) => theme.colors.black};
   border: 3px solid ${({ theme }) => theme.colors.darkBlue};
-  font-size: ${({ theme }) => theme.fontSizes.m};
-  cursor: pointer;
-
-  ${({ css }) => css}
-
-  @media ${({ theme }) => theme.breakpoints.phone} {
-    font-size: ${({ theme }) => theme.fontSizes.s};
-  }
+  font-size: ${({ theme }) => theme.fontSizes.s};
 
   @media ${({ theme }) => theme.breakpoints.tablet} {
     font-size: ${({ theme }) => theme.fontSizes.m};
-  }
-
-  @media ${({ theme }) => theme.breakpoints.desktop} {
-    font-size: ${({ theme }) => theme.fontSizes.m};
+    line-height: 1.6;
   }
 
   &::placeholder {
@@ -102,40 +103,49 @@ export const Select = styled.input<ICSS>`
     -webkit-appearance: none;
     margin: 0;
   }
+
+  ${({ css }) => css}
 `;
 
-export const OptionsList = styled.ul`
+export const Option = styled.option``;
+
+export const LabelWrapper = styled.div`
   position: absolute;
-  top: 120%;
-  width: 100%;
-  border: 3px solid ${({ theme }) => theme.colors.darkBlue};
-  padding: 1rem;
-  z-index: 2;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-name: ${onFocusMoveAnimation};
+  padding: 0 ${({ theme }) => theme.spaces.xxs};
+  margin-left: ${({ theme }) => theme.spaces.xs};
   background-color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.lightBlue};
+`;
+
+export const focusedLabelCSS = css`
+  color: ${({ theme }) => theme.colors.lightBlue} !important;
 `;
 
 export const labelCSS = css`
+  z-index: 10;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
   position: absolute;
   padding: 0 ${({ theme }) => theme.spaces.xs};
   margin-left: ${({ theme }) => theme.spaces.xs};
   background-color: ${({ theme }) => theme.colors.white};
   color: ${({ theme }) => theme.colors.lightBlue};
   animation-name: ${onFocusMoveAnimation};
-  animation-duration: 0.2s;
-  animation-fill-mode: forwards;
-  z-index: 10;
 `;
 
 export const chevronUpCSS = css`
-  animation-name: ${rotateUpAnimation};
   animation-duration: 0.2s;
   animation-fill-mode: forwards;
+  animation-name: ${rotateUpAnimation};
 `;
 
 export const chevronDownCSS = css`
-  animation-name: ${rotateDownAnimation};
   animation-duration: 0.2s;
   animation-fill-mode: forwards;
+  animation-name: ${rotateDownAnimation};
 `;
 
 export const selectErrorCSS = css`

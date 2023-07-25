@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 
 import { StyledComponentsProvider } from '~/providers';
 
-import { Footer } from './Footer.component';
+import { Footer } from './Footer';
 
 const meta: Meta<typeof Footer> = {
   title: 'Organisms/Footer',

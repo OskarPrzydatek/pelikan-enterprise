@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 
 import { StyledComponentsProvider } from '~/providers';
 
-import { Button } from './Button.component';
+import { Button } from './Button';
 
 const meta: Meta<typeof Button> = {
   title: 'Atoms/Button',
@@ -16,6 +16,16 @@ export const ButtonPrimmary: Story = {
   render: () => (
     <StyledComponentsProvider>
       <Button onClick={() => console.log('clicked')}>Primary</Button>
+    </StyledComponentsProvider>
+  ),
+};
+
+export const ButtonSecondary: Story = {
+  render: () => (
+    <StyledComponentsProvider>
+      <Button variant="secondary" onClick={() => console.log('clicked')}>
+        Secondary
+      </Button>
     </StyledComponentsProvider>
   ),
 };
