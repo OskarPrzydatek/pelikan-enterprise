@@ -33,7 +33,7 @@ export const CreateHotelTemplate: React.FC<ICreateHotelTemplate> = ({
             errorMessageTestID="create-hotel-name-error"
             inputTestID="create-hotel-name"
             label="Nazwa hotelu"
-            name="hotelName"
+            name="name"
             registerOptions={{
               ...requiredValidator,
             }}
@@ -48,26 +48,15 @@ export const CreateHotelTemplate: React.FC<ICreateHotelTemplate> = ({
             }}
           />
         </Row>
-        <Row>
-          <TextField
-            errorMessageTestID="create-hotel-price-per-person-error"
-            inputTestID="create-hotel-price-per-person"
-            label="Cena od osoby"
-            name="pricePerPerson"
-            registerOptions={{
-              ...numericValidator,
-            }}
-          />
-          <TextField
-            errorMessageTestID="create-hotel-stars-rating-error"
-            inputTestID="create-hotel-stars-rating"
-            label="Ilość gwiazdek"
-            name="starRating"
-            registerOptions={{
-              ...starsValidator,
-            }}
-          />
-        </Row>
+        <TextField
+          errorMessageTestID="create-hotel-stars-rating-error"
+          inputTestID="create-hotel-stars-rating"
+          label="Ilość gwiazdek"
+          name="starRating"
+          registerOptions={{
+            ...starsValidator,
+          }}
+        />
         <TextArea
           errorMessageTestID="create-hotel-description-error"
           label="Opis"

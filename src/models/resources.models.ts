@@ -9,10 +9,11 @@ export interface IHashtag {
 }
 
 export interface IHotel {
-  hotelName: string;
+  // hotelName: string;
+  name: string;
   address: string;
-  pricePerPerson: number;
-  starRating: number;
+  // pricePerPerson: number;
+  stars: number;
   description: string;
 }
 
