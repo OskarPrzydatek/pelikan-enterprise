@@ -27,7 +27,7 @@ export const CreateAttractionTemplate: React.FC<ICreateAttractionTemplate> = ({
           errorMessageTestID="create-attraction-name-error"
           inputTestID="create-attraction-name"
           label="Nazwa atrakcji"
-          name="attractionName"
+          name="name"
           registerOptions={{
             ...requiredValidator,
           }}

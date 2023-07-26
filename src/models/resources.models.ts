@@ -1,5 +1,5 @@
 export interface IAttraction {
-  attractionName: string;
+  name: string;
   price: number;
   description: string;
 }
