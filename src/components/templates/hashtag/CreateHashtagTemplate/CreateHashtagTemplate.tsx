@@ -27,7 +27,7 @@ export const CreateHashtagTemplate: React.FC<ICreateHashtagTemplate> = ({
           errorMessageTestID="create-hashtag-name-error"
           inputTestID="create-hashtag-name"
           label="Nazwa hashtagu"
-          name="hashtagName"
+          name="name"
           registerOptions={{
             ...requiredValidator,
           }}
