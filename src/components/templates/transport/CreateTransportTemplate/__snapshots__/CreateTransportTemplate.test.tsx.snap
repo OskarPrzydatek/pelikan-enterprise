@@ -6,10 +6,10 @@ exports[`CreateTransport Template > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-hhOBVt hIPxwk"
+        class="sc-cjibBx bSlRRw"
       >
         <form
-          class="sc-cwSeag qbDdz"
+          class="sc-ftTHYK jGKFAf"
         >
           <h2
             class="sc-dkrFOg kaKqDq"
@@ -17,13 +17,13 @@ exports[`CreateTransport Template > component snapshot 1`] = `
             Dodaj transport
           </h2>
           <div
-            class="sc-hBxehG dvBsjd"
+            class="sc-bjfHbI kTUcsA"
           >
             <div
-              class="sc-fnGiBr rTdrx"
+              class="sc-idXgbr enkruV"
             >
               <input
-                class="sc-fEXmlR hyVGRi"
+                class="sc-dIfARi cqofnP"
                 data-testid="create-company-name"
                 id="companyName"
                 name="companyName"
@@ -32,13 +32,13 @@ exports[`CreateTransport Template > component snapshot 1`] = `
             </div>
           </div>
           <div
-            class="sc-idXgbr doOTQv"
+            class="sc-dmctIk iThEeJ"
           >
             <div
-              class="sc-dIfARi fkTxxa"
+              class="sc-kgTSHT fmvgAY"
             >
               <span
-                class="sc-dmctIk czpMvD"
+                class="sc-bBABsx kBxwHb"
               >
                 <svg
                   data-testid="chevron-icon"
@@ -55,12 +55,12 @@ exports[`CreateTransport Template > component snapshot 1`] = `
                 </svg>
               </span>
               <select
-                class="sc-kgTSHT eafwKI"
+                class="sc-iveFHk eqISZE"
                 data-testid="create-transport-transport-kind"
                 name="transportType"
               >
                 <option
-                  class="sc-fLcnxK"
+                  class="sc-cwSeag"
                   disabled=""
                   selected=""
                   value=""
@@ -68,19 +68,19 @@ exports[`CreateTransport Template > component snapshot 1`] = `
                   Rodzaj transportu
                 </option>
                 <option
-                  class="sc-fLcnxK"
+                  class="sc-cwSeag"
                   value="TRANSPORT_A"
                 >
                   Transport A
                 </option>
                 <option
-                  class="sc-fLcnxK"
+                  class="sc-cwSeag"
                   value="TRANSPORT_B"
                 >
                   Transport B
                 </option>
                 <option
-                  class="sc-fLcnxK"
+                  class="sc-cwSeag"
                   value="TRANSPORT_C"
                 >
                   Transport C
@@ -89,13 +89,13 @@ exports[`CreateTransport Template > component snapshot 1`] = `
             </div>
           </div>
           <div
-            class="sc-csuSiG hHGxKx"
+            class="sc-ksBlkl gBSrBs"
           >
             <div
-              class="sc-eDWCr cBAmxE"
+              class="sc-hBxehG eptxaL"
             >
               <textarea
-                class="sc-ksBlkl dmriCq"
+                class="sc-fEXmlR kcJGhn"
                 data-testid="create-transport-desription"
                 id="description"
                 name="description"
@@ -104,7 +104,7 @@ exports[`CreateTransport Template > component snapshot 1`] = `
             </div>
           </div>
           <input
-            class="sc-lllmON ieVIbh"
+            class="sc-pyfCe hqBgck"
             type="submit"
             value="Dodaj"
           />
@@ -114,10 +114,10 @@ exports[`CreateTransport Template > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-hhOBVt hIPxwk"
+      class="sc-cjibBx bSlRRw"
     >
       <form
-        class="sc-cwSeag qbDdz"
+        class="sc-ftTHYK jGKFAf"
       >
         <h2
           class="sc-dkrFOg kaKqDq"
@@ -125,13 +125,13 @@ exports[`CreateTransport Template > component snapshot 1`] = `
           Dodaj transport
         </h2>
         <div
-          class="sc-hBxehG dvBsjd"
+          class="sc-bjfHbI kTUcsA"
         >
           <div
-            class="sc-fnGiBr rTdrx"
+            class="sc-idXgbr enkruV"
           >
             <input
-              class="sc-fEXmlR hyVGRi"
+              class="sc-dIfARi cqofnP"
               data-testid="create-company-name"
               id="companyName"
               name="companyName"
@@ -140,13 +140,13 @@ exports[`CreateTransport Template > component snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sc-idXgbr doOTQv"
+          class="sc-dmctIk iThEeJ"
         >
           <div
-            class="sc-dIfARi fkTxxa"
+            class="sc-kgTSHT fmvgAY"
           >
             <span
-              class="sc-dmctIk czpMvD"
+              class="sc-bBABsx kBxwHb"
             >
               <svg
                 data-testid="chevron-icon"
@@ -163,12 +163,12 @@ exports[`CreateTransport Template > component snapshot 1`] = `
               </svg>
             </span>
             <select
-              class="sc-kgTSHT eafwKI"
+              class="sc-iveFHk eqISZE"
               data-testid="create-transport-transport-kind"
               name="transportType"
             >
               <option
-                class="sc-fLcnxK"
+                class="sc-cwSeag"
                 disabled=""
                 selected=""
                 value=""
@@ -176,19 +176,19 @@ exports[`CreateTransport Template > component snapshot 1`] = `
                 Rodzaj transportu
               </option>
               <option
-                class="sc-fLcnxK"
+                class="sc-cwSeag"
                 value="TRANSPORT_A"
               >
                 Transport A
               </option>
               <option
-                class="sc-fLcnxK"
+                class="sc-cwSeag"
                 value="TRANSPORT_B"
               >
                 Transport B
               </option>
               <option
-                class="sc-fLcnxK"
+                class="sc-cwSeag"
                 value="TRANSPORT_C"
               >
                 Transport C
@@ -197,13 +197,13 @@ exports[`CreateTransport Template > component snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sc-csuSiG hHGxKx"
+          class="sc-ksBlkl gBSrBs"
         >
           <div
-            class="sc-eDWCr cBAmxE"
+            class="sc-hBxehG eptxaL"
           >
             <textarea
-              class="sc-ksBlkl dmriCq"
+              class="sc-fEXmlR kcJGhn"
               data-testid="create-transport-desription"
               id="description"
               name="description"
@@ -212,7 +212,7 @@ exports[`CreateTransport Template > component snapshot 1`] = `
           </div>
         </div>
         <input
-          class="sc-lllmON ieVIbh"
+          class="sc-pyfCe hqBgck"
           type="submit"
           value="Dodaj"
         />

@@ -1,78 +1,92 @@
 // Vitest Snapshot v1
 
-exports[`CreateHashtagTemplate > component snapshot 1`] = `
+exports[`HotelOverviewTemplate > component snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-cjibBx bSlRRw"
+        class="sc-gswNZR cJrdyV"
       >
-        <form
-          class="sc-ftTHYK jGKFAf"
+        <div
+          class="sc-gYbzsP fZAhDs"
         >
           <h2
-            class="sc-dkrFOg kaKqDq"
+            class="sc-eDvSVe dcXtK"
           >
-            Dodaj hashtag
+            Hotele
           </h2>
-          <div
-            class="sc-bjfHbI kTUcsA"
+          <ul
+            class="sc-cCjUiG gdYusC"
           >
-            <div
-              class="sc-idXgbr enkruV"
+            <li>
+              <p
+                class="sc-ftTHYK iSkTh"
+              >
+                Brak hoteli w systemie
+              </p>
+            </li>
+          </ul>
+          <div
+            class="sc-cjibBx bzGlRW"
+          >
+            <p
+              class="sc-ftTHYK iSkTh"
+              data-testid="pagination-counter"
             >
-              <input
-                class="sc-dIfARi cqofnP"
-                data-testid="create-hashtag-name"
-                id="name"
-                name="name"
-                placeholder="Nazwa hashtagu"
-              />
-            </div>
+              1
+               / X
+            </p>
           </div>
-          <input
-            class="sc-pyfCe hqBgck"
-            type="submit"
-            value="Dodaj"
-          />
-        </form>
+          <button
+            class="sc-hLBbgP fxgbmT"
+          >
+            Dodaj hotel
+          </button>
+        </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-cjibBx bSlRRw"
+      class="sc-gswNZR cJrdyV"
     >
-      <form
-        class="sc-ftTHYK jGKFAf"
+      <div
+        class="sc-gYbzsP fZAhDs"
       >
         <h2
-          class="sc-dkrFOg kaKqDq"
+          class="sc-eDvSVe dcXtK"
         >
-          Dodaj hashtag
+          Hotele
         </h2>
-        <div
-          class="sc-bjfHbI kTUcsA"
+        <ul
+          class="sc-cCjUiG gdYusC"
         >
-          <div
-            class="sc-idXgbr enkruV"
+          <li>
+            <p
+              class="sc-ftTHYK iSkTh"
+            >
+              Brak hoteli w systemie
+            </p>
+          </li>
+        </ul>
+        <div
+          class="sc-cjibBx bzGlRW"
+        >
+          <p
+            class="sc-ftTHYK iSkTh"
+            data-testid="pagination-counter"
           >
-            <input
-              class="sc-dIfARi cqofnP"
-              data-testid="create-hashtag-name"
-              id="name"
-              name="name"
-              placeholder="Nazwa hashtagu"
-            />
-          </div>
+            1
+             / X
+          </p>
         </div>
-        <input
-          class="sc-pyfCe hqBgck"
-          type="submit"
-          value="Dodaj"
-        />
-      </form>
+        <button
+          class="sc-hLBbgP fxgbmT"
+        >
+          Dodaj hotel
+        </button>
+      </div>
     </div>
   </div>,
   "debug": [Function],

@@ -1,16 +1,19 @@
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
-import { PageLayout } from '~/styles';
+import { TransportOverviewTemplate } from '~/components/templates';
+import { Slugs } from '~/constants';
 
 export const TransportOverviewPage: React.FC = () => {
   const { page } = useParams();
+  const navigate = useNavigate();
 
-  const pageLabel = page ?? 1;
+  const onClickNavigateToCreateTransport = () =>
+    navigate(`/${Slugs.CREATE_TRANSPORT}`);
 
   return (
-    <PageLayout>
-      <h2>List Transport Page</h2>
-      <p data-testid="page-number">page: {pageLabel}</p>
-    </PageLayout>
+    <TransportOverviewTemplate
+      page={page}
+      onClickNavigate={onClickNavigateToCreateTransport}
+    />
   );
 };

@@ -1,16 +1,19 @@
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
-import { PageLayout } from '~/styles';
+import { HashtagOverviewTemplate } from '~/components/templates';
+import { Slugs } from '~/constants';
 
 export const HashtagOverviewPage: React.FC = () => {
   const { page } = useParams();
+  const navigate = useNavigate();
 
-  const pageLabel = page ?? 1;
+  const onClickNavigateToCreateHashtag = () =>
+    navigate(`/${Slugs.CREATE_HASHTAG}`);
 
   return (
-    <PageLayout>
-      <h2>List Hashtag Page</h2>
-      <p data-testid="page-number">page: {pageLabel}</p>
-    </PageLayout>
+    <HashtagOverviewTemplate
+      page={page}
+      onClickNavigate={onClickNavigateToCreateHashtag}
+    />
   );
 };

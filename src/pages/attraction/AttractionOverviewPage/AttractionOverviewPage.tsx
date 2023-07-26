@@ -1,16 +1,19 @@
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
-import { PageLayout } from '~/styles';
+import { AttractionOverviewTemplate } from '~/components/templates';
+import { Slugs } from '~/constants';
 
 export const AttractionOverviewPage: React.FC = () => {
   const { page } = useParams();
+  const navigate = useNavigate();
 
-  const pageLabel = page ?? 1;
+  const onClickNavigateToCreateAttraction = () =>
+    navigate(`/${Slugs.CREATE_ATTRACTION}`);
 
   return (
-    <PageLayout>
-      <h2>List Attraction Page</h2>
-      <p data-testid="page-number">page: {pageLabel}</p>
-    </PageLayout>
+    <AttractionOverviewTemplate
+      page={page}
+      onClickNavigate={onClickNavigateToCreateAttraction}
+    />
   );
 };

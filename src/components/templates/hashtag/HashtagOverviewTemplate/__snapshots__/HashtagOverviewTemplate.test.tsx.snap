@@ -1,78 +1,92 @@
 // Vitest Snapshot v1
 
-exports[`CreateHashtagTemplate > component snapshot 1`] = `
+exports[`HashtagOverviewTemplate > component snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-cjibBx bSlRRw"
+        class="sc-gswNZR cJrdyV"
       >
-        <form
-          class="sc-ftTHYK jGKFAf"
+        <div
+          class="sc-gYbzsP fZAhDs"
         >
           <h2
-            class="sc-dkrFOg kaKqDq"
+            class="sc-eDvSVe dcXtK"
+          >
+            Hashtagi
+          </h2>
+          <ul
+            class="sc-cCjUiG gdYusC"
+          >
+            <li>
+              <p
+                class="sc-ftTHYK iSkTh"
+              >
+                Brak hashtagów w systemie
+              </p>
+            </li>
+          </ul>
+          <div
+            class="sc-cjibBx bzGlRW"
+          >
+            <p
+              class="sc-ftTHYK iSkTh"
+              data-testid="pagination-counter"
+            >
+              1
+               / X
+            </p>
+          </div>
+          <button
+            class="sc-hLBbgP fxgbmT"
           >
             Dodaj hashtag
-          </h2>
-          <div
-            class="sc-bjfHbI kTUcsA"
-          >
-            <div
-              class="sc-idXgbr enkruV"
-            >
-              <input
-                class="sc-dIfARi cqofnP"
-                data-testid="create-hashtag-name"
-                id="name"
-                name="name"
-                placeholder="Nazwa hashtagu"
-              />
-            </div>
-          </div>
-          <input
-            class="sc-pyfCe hqBgck"
-            type="submit"
-            value="Dodaj"
-          />
-        </form>
+          </button>
+        </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-cjibBx bSlRRw"
+      class="sc-gswNZR cJrdyV"
     >
-      <form
-        class="sc-ftTHYK jGKFAf"
+      <div
+        class="sc-gYbzsP fZAhDs"
       >
         <h2
-          class="sc-dkrFOg kaKqDq"
+          class="sc-eDvSVe dcXtK"
+        >
+          Hashtagi
+        </h2>
+        <ul
+          class="sc-cCjUiG gdYusC"
+        >
+          <li>
+            <p
+              class="sc-ftTHYK iSkTh"
+            >
+              Brak hashtagów w systemie
+            </p>
+          </li>
+        </ul>
+        <div
+          class="sc-cjibBx bzGlRW"
+        >
+          <p
+            class="sc-ftTHYK iSkTh"
+            data-testid="pagination-counter"
+          >
+            1
+             / X
+          </p>
+        </div>
+        <button
+          class="sc-hLBbgP fxgbmT"
         >
           Dodaj hashtag
-        </h2>
-        <div
-          class="sc-bjfHbI kTUcsA"
-        >
-          <div
-            class="sc-idXgbr enkruV"
-          >
-            <input
-              class="sc-dIfARi cqofnP"
-              data-testid="create-hashtag-name"
-              id="name"
-              name="name"
-              placeholder="Nazwa hashtagu"
-            />
-          </div>
-        </div>
-        <input
-          class="sc-pyfCe hqBgck"
-          type="submit"
-          value="Dodaj"
-        />
-      </form>
+        </button>
+      </div>
     </div>
   </div>,
   "debug": [Function],

@@ -33,7 +33,7 @@ export const MainLayout = styled.main`
 `;
 
 export const PageLayout = styled.div`
-  min-height: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
