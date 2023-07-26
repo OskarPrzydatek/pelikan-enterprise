@@ -1,4 +1,5 @@
 export enum Icons {
+  ARROW = 'ARROW',
   CHEVRON = 'CHEVRON',
   CLOSE = 'CLOSE',
   HAMBURGER = 'HAMBURGER',

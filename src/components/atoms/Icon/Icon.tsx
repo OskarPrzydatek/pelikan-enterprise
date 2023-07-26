@@ -1,3 +1,4 @@
+import { ReactComponent as ArrowIcon } from '~/assets/svg/arrow_icon.svg';
 import { ReactComponent as ChevronIcon } from '~/assets/svg/chevron_icon.svg';
 import { ReactComponent as CloseIcon } from '~/assets/svg/close_icon.svg';
 import { ReactComponent as HamburgerIcon } from '~/assets/svg/hamburger_icon.svg';
@@ -22,6 +23,11 @@ export const Icon: React.FC<IIcon> = ({
 }: IIcon) => {
   const renderIconByType = () => {
     switch (icon) {
+      case Icons.ARROW: {
+        return (
+          <ArrowIcon data-testid="arrow-icon" height={height} width={width} />
+        );
+      }
       case Icons.CHEVRON: {
         return (
           <ChevronIcon

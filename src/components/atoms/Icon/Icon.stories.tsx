@@ -13,6 +13,14 @@ const meta: Meta<typeof Icon> = {
 export default meta;
 type Story = StoryObj<typeof Icon>;
 
+export const ArrowIcon: Story = {
+  render: () => (
+    <StyledComponentsProvider>
+      <Icon icon={Icons.ARROW} />
+    </StyledComponentsProvider>
+  ),
+};
+
 export const ChevronIcon: Story = {
   render: () => (
     <StyledComponentsProvider>

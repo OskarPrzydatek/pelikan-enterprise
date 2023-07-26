@@ -26,6 +26,12 @@ describe('Icon', () => {
     expect(screen.queryByTestId('super-icon')).not.toBeInTheDocument();
     rerender(
       <StyledComponentsProvider>
+        <Icon icon={Icons.ARROW} />
+      </StyledComponentsProvider>
+    );
+    expect(screen.getByTestId('arrow-icon')).toBeInTheDocument();
+    rerender(
+      <StyledComponentsProvider>
         <Icon icon={Icons.CHEVRON} />
       </StyledComponentsProvider>
     );
