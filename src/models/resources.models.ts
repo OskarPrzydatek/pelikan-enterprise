@@ -17,15 +17,16 @@ export interface IHotel {
 }
 
 export interface IOffer {
-  offerName: string;
+  name: string;
+  location: string;
+  termFrom: Date;
+  termTo: Date;
   price: number;
-  numberOfTickets: number;
-  transport: string;
   destination: string;
+  numberOfGuests: number;
+  // Temp as string
+  transport: string;
   hotel: string;
-  from: Date;
-  to: Date;
-  description: string;
 }
 
 export interface ITransport {

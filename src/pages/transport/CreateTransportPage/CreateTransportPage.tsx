@@ -1,14 +1,7 @@
 import { SubmitHandler, useForm } from 'react-hook-form';
 
 import { CreateTransportTemplate } from '~/components/templates';
-
-interface ITransport {
-  transportCompanyName: string;
-  transportKind: string;
-  from: string;
-  to: string;
-  price: number;
-}
+import { ITransport } from '~/models';
 
 export const CreateTransportPage: React.FC = () => {
   const methods = useForm<ITransport>();

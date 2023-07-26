@@ -1,14 +1,7 @@
 import { SubmitHandler, useForm } from 'react-hook-form';
 
 import { CreateHotelTemplate } from '~/components/templates';
-
-interface IHotel {
-  hotelName: string;
-  address: string;
-  pricePerPerson: number;
-  starRating: number;
-  description: string;
-}
+import { IHotel } from '~/models';
 
 export const CreateHotelPage: React.FC = () => {
   const methods = useForm<IHotel>();

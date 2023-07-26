@@ -14,7 +14,7 @@ exports[`TextField > component snapshot 1`] = `
           <input
             class="sc-pyfCe brigoQ"
             data-testid="molecule-datefield"
-            min="2023-07-25"
+            min="2023-07-26"
             name="startDate"
             type="date"
           />
@@ -32,7 +32,7 @@ exports[`TextField > component snapshot 1`] = `
         <input
           class="sc-pyfCe brigoQ"
           data-testid="molecule-datefield"
-          min="2023-07-25"
+          min="2023-07-26"
           name="startDate"
           type="date"
         />
