@@ -9,10 +9,8 @@ export interface IHashtag {
 }
 
 export interface IHotel {
-  // hotelName: string;
   name: string;
   address: string;
-  // pricePerPerson: number;
   stars: number;
   description: string;
 }
@@ -31,9 +29,7 @@ export interface IOffer {
 }
 
 export interface ITransport {
-  transportCompanyName: string;
-  transportKind: string;
-  from: string;
-  to: string;
-  price: number;
+  companyName: string;
+  transportType: string;
+  destination: string;
 }

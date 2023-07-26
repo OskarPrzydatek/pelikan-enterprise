@@ -12,15 +12,7 @@ export const CreateTransportPage: React.FC = () => {
   return (
     <CreateTransportTemplate
       createTransportFormMethods={methods}
-      fromOptions={[
-        { value: 'PLACE_A', label: 'Miejsce A' },
-        { value: 'PLACE_B', label: 'Miejsce B' },
-      ]}
-      toOptions={[
-        { value: 'PLACE_A', label: 'Miejsce A' },
-        { value: 'PLACE_B', label: 'Miejsce B' },
-      ]}
-      transportKindOptions={[
+      transportTypeOptions={[
         { value: 'TRANSPORT_A', label: 'Transport A' },
         { value: 'TRANSPORT_B', label: 'Transport B' },
         { value: 'TRANSPORT_C', label: 'Transport C' },
