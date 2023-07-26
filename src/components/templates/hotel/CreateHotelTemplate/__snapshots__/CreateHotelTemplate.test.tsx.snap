@@ -28,8 +28,8 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
                 <input
                   class="sc-fEXmlR hyVGRi"
                   data-testid="create-hotel-name"
-                  id="hotelName"
-                  name="hotelName"
+                  id="name"
+                  name="name"
                   placeholder="Nazwa hotelu"
                 />
               </div>
@@ -51,37 +51,18 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
             </div>
           </div>
           <div
-            class="sc-jSUZER gocfuz"
+            class="sc-hBxehG dvBsjd"
           >
             <div
-              class="sc-hBxehG dvBsjd"
+              class="sc-fnGiBr rTdrx"
             >
-              <div
-                class="sc-fnGiBr rTdrx"
-              >
-                <input
-                  class="sc-fEXmlR hyVGRi"
-                  data-testid="create-hotel-price-per-person"
-                  id="pricePerPerson"
-                  name="pricePerPerson"
-                  placeholder="Cena od osoby"
-                />
-              </div>
-            </div>
-            <div
-              class="sc-hBxehG dvBsjd"
-            >
-              <div
-                class="sc-fnGiBr rTdrx"
-              >
-                <input
-                  class="sc-fEXmlR hyVGRi"
-                  data-testid="create-hotel-stars-rating"
-                  id="starRating"
-                  name="starRating"
-                  placeholder="Ilość gwiazdek"
-                />
-              </div>
+              <input
+                class="sc-fEXmlR hyVGRi"
+                data-testid="create-hotel-stars-rating"
+                id="starRating"
+                name="starRating"
+                placeholder="Ilość gwiazdek"
+              />
             </div>
           </div>
           <div
@@ -132,8 +113,8 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
               <input
                 class="sc-fEXmlR hyVGRi"
                 data-testid="create-hotel-name"
-                id="hotelName"
-                name="hotelName"
+                id="name"
+                name="name"
                 placeholder="Nazwa hotelu"
               />
             </div>
@@ -155,37 +136,18 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sc-jSUZER gocfuz"
+          class="sc-hBxehG dvBsjd"
         >
           <div
-            class="sc-hBxehG dvBsjd"
+            class="sc-fnGiBr rTdrx"
           >
-            <div
-              class="sc-fnGiBr rTdrx"
-            >
-              <input
-                class="sc-fEXmlR hyVGRi"
-                data-testid="create-hotel-price-per-person"
-                id="pricePerPerson"
-                name="pricePerPerson"
-                placeholder="Cena od osoby"
-              />
-            </div>
-          </div>
-          <div
-            class="sc-hBxehG dvBsjd"
-          >
-            <div
-              class="sc-fnGiBr rTdrx"
-            >
-              <input
-                class="sc-fEXmlR hyVGRi"
-                data-testid="create-hotel-stars-rating"
-                id="starRating"
-                name="starRating"
-                placeholder="Ilość gwiazdek"
-              />
-            </div>
+            <input
+              class="sc-fEXmlR hyVGRi"
+              data-testid="create-hotel-stars-rating"
+              id="starRating"
+              name="starRating"
+              placeholder="Ilość gwiazdek"
+            />
           </div>
         </div>
         <div

@@ -24,9 +24,9 @@ exports[`CreateTransport Template > component snapshot 1`] = `
             >
               <input
                 class="sc-fEXmlR hyVGRi"
-                data-testid="create-transport-company-name"
-                id="transportCompanyName"
-                name="transportCompanyName"
+                data-testid="create-company-name"
+                id="companyName"
+                name="companyName"
                 placeholder="Nazwa firmy transportowej"
               />
             </div>
@@ -57,7 +57,7 @@ exports[`CreateTransport Template > component snapshot 1`] = `
               <select
                 class="sc-kgTSHT eafwKI"
                 data-testid="create-transport-transport-kind"
-                name="transportKind"
+                name="transportType"
               >
                 <option
                   class="sc-fLcnxK"
@@ -89,123 +89,17 @@ exports[`CreateTransport Template > component snapshot 1`] = `
             </div>
           </div>
           <div
-            class="sc-jSUZER gocfuz"
+            class="sc-csuSiG hHGxKx"
           >
             <div
-              class="sc-idXgbr doOTQv"
+              class="sc-eDWCr cBAmxE"
             >
-              <div
-                class="sc-dIfARi fkTxxa"
-              >
-                <span
-                  class="sc-dmctIk czpMvD"
-                >
-                  <svg
-                    data-testid="chevron-icon"
-                    fill="none"
-                    viewBox="0 0 27 16"
-                    width="20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M2 2L13.5 13L25 2"
-                      stroke="#013059"
-                      stroke-width="3"
-                    />
-                  </svg>
-                </span>
-                <select
-                  class="sc-kgTSHT eafwKI"
-                  data-testid="create-transpotr-from"
-                  name="from"
-                >
-                  <option
-                    class="sc-fLcnxK"
-                    disabled=""
-                    selected=""
-                    value=""
-                  >
-                    Miejsce początkowe
-                  </option>
-                  <option
-                    class="sc-fLcnxK"
-                    value="PLACE_A"
-                  >
-                    Miejsce A
-                  </option>
-                  <option
-                    class="sc-fLcnxK"
-                    value="PLACE_B"
-                  >
-                    Miejsce B
-                  </option>
-                </select>
-              </div>
-            </div>
-            <div
-              class="sc-idXgbr doOTQv"
-            >
-              <div
-                class="sc-dIfARi fkTxxa"
-              >
-                <span
-                  class="sc-dmctIk czpMvD"
-                >
-                  <svg
-                    data-testid="chevron-icon"
-                    fill="none"
-                    viewBox="0 0 27 16"
-                    width="20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M2 2L13.5 13L25 2"
-                      stroke="#013059"
-                      stroke-width="3"
-                    />
-                  </svg>
-                </span>
-                <select
-                  class="sc-kgTSHT eafwKI"
-                  data-testid="create-transpotr-to"
-                  name="to"
-                >
-                  <option
-                    class="sc-fLcnxK"
-                    disabled=""
-                    selected=""
-                    value=""
-                  >
-                    Miejsce docelowe
-                  </option>
-                  <option
-                    class="sc-fLcnxK"
-                    value="PLACE_A"
-                  >
-                    Miejsce A
-                  </option>
-                  <option
-                    class="sc-fLcnxK"
-                    value="PLACE_B"
-                  >
-                    Miejsce B
-                  </option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div
-            class="sc-hBxehG dvBsjd"
-          >
-            <div
-              class="sc-fnGiBr rTdrx"
-            >
-              <input
-                class="sc-fEXmlR hyVGRi"
-                data-testid="create-transport-price"
-                id="price"
-                name="price"
-                placeholder="Cena"
+              <textarea
+                class="sc-ksBlkl dmriCq"
+                data-testid="create-transport-desription"
+                id="description"
+                name="description"
+                placeholder="Opis"
               />
             </div>
           </div>
@@ -238,9 +132,9 @@ exports[`CreateTransport Template > component snapshot 1`] = `
           >
             <input
               class="sc-fEXmlR hyVGRi"
-              data-testid="create-transport-company-name"
-              id="transportCompanyName"
-              name="transportCompanyName"
+              data-testid="create-company-name"
+              id="companyName"
+              name="companyName"
               placeholder="Nazwa firmy transportowej"
             />
           </div>
@@ -271,7 +165,7 @@ exports[`CreateTransport Template > component snapshot 1`] = `
             <select
               class="sc-kgTSHT eafwKI"
               data-testid="create-transport-transport-kind"
-              name="transportKind"
+              name="transportType"
             >
               <option
                 class="sc-fLcnxK"
@@ -303,123 +197,17 @@ exports[`CreateTransport Template > component snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sc-jSUZER gocfuz"
+          class="sc-csuSiG hHGxKx"
         >
           <div
-            class="sc-idXgbr doOTQv"
+            class="sc-eDWCr cBAmxE"
           >
-            <div
-              class="sc-dIfARi fkTxxa"
-            >
-              <span
-                class="sc-dmctIk czpMvD"
-              >
-                <svg
-                  data-testid="chevron-icon"
-                  fill="none"
-                  viewBox="0 0 27 16"
-                  width="20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 2L13.5 13L25 2"
-                    stroke="#013059"
-                    stroke-width="3"
-                  />
-                </svg>
-              </span>
-              <select
-                class="sc-kgTSHT eafwKI"
-                data-testid="create-transpotr-from"
-                name="from"
-              >
-                <option
-                  class="sc-fLcnxK"
-                  disabled=""
-                  selected=""
-                  value=""
-                >
-                  Miejsce początkowe
-                </option>
-                <option
-                  class="sc-fLcnxK"
-                  value="PLACE_A"
-                >
-                  Miejsce A
-                </option>
-                <option
-                  class="sc-fLcnxK"
-                  value="PLACE_B"
-                >
-                  Miejsce B
-                </option>
-              </select>
-            </div>
-          </div>
-          <div
-            class="sc-idXgbr doOTQv"
-          >
-            <div
-              class="sc-dIfARi fkTxxa"
-            >
-              <span
-                class="sc-dmctIk czpMvD"
-              >
-                <svg
-                  data-testid="chevron-icon"
-                  fill="none"
-                  viewBox="0 0 27 16"
-                  width="20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 2L13.5 13L25 2"
-                    stroke="#013059"
-                    stroke-width="3"
-                  />
-                </svg>
-              </span>
-              <select
-                class="sc-kgTSHT eafwKI"
-                data-testid="create-transpotr-to"
-                name="to"
-              >
-                <option
-                  class="sc-fLcnxK"
-                  disabled=""
-                  selected=""
-                  value=""
-                >
-                  Miejsce docelowe
-                </option>
-                <option
-                  class="sc-fLcnxK"
-                  value="PLACE_A"
-                >
-                  Miejsce A
-                </option>
-                <option
-                  class="sc-fLcnxK"
-                  value="PLACE_B"
-                >
-                  Miejsce B
-                </option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div
-          class="sc-hBxehG dvBsjd"
-        >
-          <div
-            class="sc-fnGiBr rTdrx"
-          >
-            <input
-              class="sc-fEXmlR hyVGRi"
-              data-testid="create-transport-price"
-              id="price"
-              name="price"
-              placeholder="Cena"
+            <textarea
+              class="sc-ksBlkl dmriCq"
+              data-testid="create-transport-desription"
+              id="description"
+              name="description"
+              placeholder="Opis"
             />
           </div>
         </div>

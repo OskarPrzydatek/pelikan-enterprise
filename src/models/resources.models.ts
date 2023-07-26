@@ -5,7 +5,7 @@ export interface IAttraction {
 }
 
 export interface IHashtag {
-  hashtagName: string;
+  name: string;
 }
 
 export interface IHotel {
