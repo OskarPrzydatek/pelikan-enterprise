@@ -9,14 +9,14 @@ import { numericValidator, requiredValidator } from '~/validators';
 
 interface ICreateOfferTemplate {
   createOfferFormMethods: UseFormReturn<IOffer>;
-  destinationOptions: ISelectOption[];
+  transportOptions: ISelectOption[];
   hotelOptions: ISelectOption[];
   onSubmitCreateOffer: () => void;
 }
 
 export const CreateOfferTemplate: React.FC<ICreateOfferTemplate> = ({
   createOfferFormMethods,
-  destinationOptions,
+  transportOptions,
   hotelOptions,
   onSubmitCreateOffer,
 }: ICreateOfferTemplate) => {
@@ -32,38 +32,38 @@ export const CreateOfferTemplate: React.FC<ICreateOfferTemplate> = ({
           errorMessageTestID="create-offer-name-error"
           inputTestID="create-offer-name"
           label="Nazwa oferty"
-          name="offerName"
+          name="name"
           registerOptions={{
             ...requiredValidator,
           }}
         />
         <Row>
           <TextField
-            errorMessageTestID="create-offer-price-error"
-            inputTestID="create-offer-price"
-            label="Cena"
-            name="price"
+            errorMessageTestID="create-offer-number-of-guests-error"
+            inputTestID="create-offer-number-of-tickets"
+            label="Ilość gości"
+            name="numberOfGuests"
             registerOptions={{
               ...numericValidator,
             }}
           />
-          <TextField
-            errorMessageTestID="create-offer-number-of-tickets-error"
-            inputTestID="create-offer-number-of-tickets"
-            label="Liczba miejsc"
-            name="numberOfTickets"
+          <Select
+            errorMessageTestID="create-offer-transport-error"
+            label="Transport"
+            name="transport"
+            selectOptions={transportOptions}
+            selectTestID="create-offer-transport"
             registerOptions={{
-              ...numericValidator,
+              ...requiredValidator,
             }}
           />
         </Row>
         <Row>
-          <Select
+          <TextField
             errorMessageTestID="create-offer-destination-error"
+            inputTestID="create-offer-destination"
             label="Miejsce docelowe"
             name="destination"
-            selectOptions={destinationOptions}
-            selectTestID="create-offer-destination"
             registerOptions={{
               ...requiredValidator,
             }}
@@ -84,7 +84,7 @@ export const CreateOfferTemplate: React.FC<ICreateOfferTemplate> = ({
             errorMessageTestID="create-offer-form-error"
             inputTestID="create-offer-form"
             label="Od"
-            name="from"
+            name="termFrom"
             registerOptions={{
               ...requiredValidator,
             }}
@@ -93,7 +93,7 @@ export const CreateOfferTemplate: React.FC<ICreateOfferTemplate> = ({
             errorMessageTestID="create-offer-to-error"
             inputTestID="create-offer-to"
             label="Do"
-            name="to"
+            name="termTo"
             registerOptions={{
               ...requiredValidator,
             }}
@@ -106,6 +106,15 @@ export const CreateOfferTemplate: React.FC<ICreateOfferTemplate> = ({
           textareaTestID="create-offer-desription"
           registerOptions={{
             ...requiredValidator,
+          }}
+        />
+        <TextField
+          errorMessageTestID="create-offer-price-error"
+          inputTestID="create-offer-price"
+          label="Cena"
+          name="price"
+          registerOptions={{
+            ...numericValidator,
           }}
         />
       </Form>

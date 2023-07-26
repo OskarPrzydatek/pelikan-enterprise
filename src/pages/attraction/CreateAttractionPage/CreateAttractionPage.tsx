@@ -1,12 +1,7 @@
 import { SubmitHandler, useForm } from 'react-hook-form';
 
 import { CreateAttractionTemplate } from '~/components/templates';
-
-interface IAttraction {
-  attractionName: string;
-  price: number;
-  description: string;
-}
+import { IAttraction } from '~/models';
 
 export const CreateAttractionPage: React.FC = () => {
   const methods = useForm<IAttraction>();

@@ -17,14 +17,14 @@ export const CreateOfferTemplateHelper: React.FC<
     <StyledComponentsProvider>
       <CreateOfferTemplate
         createOfferFormMethods={methods}
-        destinationOptions={[
-          { value: 'PLACE_A', label: 'Miejsce A' },
-          { value: 'PLACE_B', label: 'Miejsce B' },
-        ]}
         hotelOptions={[
           { value: 'HOTEL_A', label: 'Hotel A' },
           { value: 'HOTEL_B', label: 'Hotel B' },
           { value: 'HOTEL_C', label: 'Hotel C' },
+        ]}
+        transportOptions={[
+          { value: 'TRANSPORT_A', label: 'Transport A' },
+          { value: 'TRANSPORT_B', label: 'Transport B' },
         ]}
         onSubmitCreateOffer={onSubmitCreateOffer}
       />

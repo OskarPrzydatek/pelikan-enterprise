@@ -1,10 +1,7 @@
 import { SubmitHandler, useForm } from 'react-hook-form';
 
 import { CreateHashtagTemplate } from '~/components/templates';
-
-interface IHashtag {
-  hashtagName: string;
-}
+import { IHashtag } from '~/models';
 
 export const CreateHashtagPage: React.FC = () => {
   const methods = useForm<IHashtag>();
