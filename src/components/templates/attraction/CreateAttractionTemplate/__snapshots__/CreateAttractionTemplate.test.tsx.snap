@@ -6,10 +6,10 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-cjibBx bSlRRw"
+        class="sc-jcMfQk hvDKFw"
       >
         <form
-          class="sc-ftTHYK jGKFAf"
+          class="sc-pyfCe rsgVC"
         >
           <h2
             class="sc-dkrFOg kaKqDq"
@@ -17,13 +17,13 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
             Dodaj atrakcję
           </h2>
           <div
-            class="sc-bjfHbI kTUcsA"
+            class="sc-idXgbr doOTQv"
           >
             <div
-              class="sc-idXgbr enkruV"
+              class="sc-dIfARi fkTxxa"
             >
               <input
-                class="sc-dIfARi cqofnP"
+                class="sc-hHTYSt fAxxrI"
                 data-testid="create-attraction-name"
                 id="name"
                 name="name"
@@ -32,13 +32,13 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
             </div>
           </div>
           <div
-            class="sc-bjfHbI kTUcsA"
+            class="sc-idXgbr doOTQv"
           >
             <div
-              class="sc-idXgbr enkruV"
+              class="sc-dIfARi fkTxxa"
             >
               <input
-                class="sc-dIfARi cqofnP"
+                class="sc-hHTYSt fAxxrI"
                 data-testid="create-attraction-price"
                 id="price"
                 name="price"
@@ -47,13 +47,13 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
             </div>
           </div>
           <div
-            class="sc-ksBlkl gBSrBs"
+            class="sc-hBxehG dvBsjd"
           >
             <div
-              class="sc-hBxehG eptxaL"
+              class="sc-fnGiBr rTdrx"
             >
               <textarea
-                class="sc-fEXmlR kcJGhn"
+                class="sc-bjfHbI bpDBhG"
                 data-testid="attraction-description"
                 id="description"
                 name="description"
@@ -62,7 +62,7 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
             </div>
           </div>
           <input
-            class="sc-pyfCe hqBgck"
+            class="sc-jrcTuL iZHkcL"
             type="submit"
             value="Dodaj"
           />
@@ -72,10 +72,10 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-cjibBx bSlRRw"
+      class="sc-jcMfQk hvDKFw"
     >
       <form
-        class="sc-ftTHYK jGKFAf"
+        class="sc-pyfCe rsgVC"
       >
         <h2
           class="sc-dkrFOg kaKqDq"
@@ -83,13 +83,13 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
           Dodaj atrakcję
         </h2>
         <div
-          class="sc-bjfHbI kTUcsA"
+          class="sc-idXgbr doOTQv"
         >
           <div
-            class="sc-idXgbr enkruV"
+            class="sc-dIfARi fkTxxa"
           >
             <input
-              class="sc-dIfARi cqofnP"
+              class="sc-hHTYSt fAxxrI"
               data-testid="create-attraction-name"
               id="name"
               name="name"
@@ -98,13 +98,13 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sc-bjfHbI kTUcsA"
+          class="sc-idXgbr doOTQv"
         >
           <div
-            class="sc-idXgbr enkruV"
+            class="sc-dIfARi fkTxxa"
           >
             <input
-              class="sc-dIfARi cqofnP"
+              class="sc-hHTYSt fAxxrI"
               data-testid="create-attraction-price"
               id="price"
               name="price"
@@ -113,13 +113,13 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sc-ksBlkl gBSrBs"
+          class="sc-hBxehG dvBsjd"
         >
           <div
-            class="sc-hBxehG eptxaL"
+            class="sc-fnGiBr rTdrx"
           >
             <textarea
-              class="sc-fEXmlR kcJGhn"
+              class="sc-bjfHbI bpDBhG"
               data-testid="attraction-description"
               id="description"
               name="description"
@@ -128,7 +128,7 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
           </div>
         </div>
         <input
-          class="sc-pyfCe hqBgck"
+          class="sc-jrcTuL iZHkcL"
           type="submit"
           value="Dodaj"
         />

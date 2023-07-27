@@ -1,6 +1,8 @@
 import { ReactComponent as ArrowIcon } from '~/assets/svg/arrow_icon.svg';
 import { ReactComponent as ChevronIcon } from '~/assets/svg/chevron_icon.svg';
 import { ReactComponent as CloseIcon } from '~/assets/svg/close_icon.svg';
+import { ReactComponent as DeleteIcon } from '~/assets/svg/delete_icon.svg';
+import { ReactComponent as EditIcon } from '~/assets/svg/edit_icon.svg';
 import { ReactComponent as HamburgerIcon } from '~/assets/svg/hamburger_icon.svg';
 import { Icons } from '~/constants';
 import { IComponent } from '~/models';
@@ -41,6 +43,16 @@ export const Icon: React.FC<IIcon> = ({
       case Icons.CLOSE: {
         return (
           <CloseIcon data-testid="close-icon" height={height} width={width} />
+        );
+      }
+      case Icons.DELETE: {
+        return (
+          <DeleteIcon data-testid="delete-icon" height={height} width={width} />
+        );
+      }
+      case Icons.EDIT: {
+        return (
+          <EditIcon data-testid="edit-icon" height={height} width={width} />
         );
       }
       case Icons.HAMBURGER: {

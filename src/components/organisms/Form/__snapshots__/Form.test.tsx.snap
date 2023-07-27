@@ -6,7 +6,7 @@ exports[`Form > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <form
-        class="sc-pyfCe rsgVC"
+        class="sc-jrcTuL cFgaVl"
       >
         <h2
           class="sc-eDvSVe dcXtK"
@@ -15,7 +15,7 @@ exports[`Form > component snapshot 1`] = `
         </h2>
         <input />
         <input
-          class="sc-jrcTuL iZHkcL"
+          class="sc-kDvujY fYSrpi"
           type="submit"
           value="Submit label"
         />
@@ -24,7 +24,7 @@ exports[`Form > component snapshot 1`] = `
   </body>,
   "container": <div>
     <form
-      class="sc-pyfCe rsgVC"
+      class="sc-jrcTuL cFgaVl"
     >
       <h2
         class="sc-eDvSVe dcXtK"
@@ -33,7 +33,7 @@ exports[`Form > component snapshot 1`] = `
       </h2>
       <input />
       <input
-        class="sc-jrcTuL iZHkcL"
+        class="sc-kDvujY fYSrpi"
         type="submit"
         value="Submit label"
       />

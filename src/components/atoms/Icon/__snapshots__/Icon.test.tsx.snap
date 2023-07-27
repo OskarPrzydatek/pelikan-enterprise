@@ -5,6 +5,45 @@ exports[`Icon > component snapshot 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
+      <span
+        class="sc-hLBbgP fTgiIa"
+      >
+        <svg
+          data-testid="hamburger-icon"
+          fill="none"
+          viewBox="0 0 45 23"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            stroke="#013059"
+            stroke-width="3"
+            x2="45"
+            y1="21.5"
+            y2="21.5"
+          />
+          <line
+            stroke="#013059"
+            stroke-width="3"
+            x2="45"
+            y1="11.5"
+            y2="11.5"
+          />
+          <line
+            stroke="#013059"
+            stroke-width="3"
+            x2="45"
+            y1="1.5"
+            y2="1.5"
+          />
+        </svg>
+      </span>
+    </div>
+  </body>,
+  "container": <div>
+    <span
+      class="sc-hLBbgP fTgiIa"
+    >
       <svg
         data-testid="hamburger-icon"
         fill="none"
@@ -34,38 +73,7 @@ exports[`Icon > component snapshot 1`] = `
           y2="1.5"
         />
       </svg>
-    </div>
-  </body>,
-  "container": <div>
-    <svg
-      data-testid="hamburger-icon"
-      fill="none"
-      viewBox="0 0 45 23"
-      width="20"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <line
-        stroke="#013059"
-        stroke-width="3"
-        x2="45"
-        y1="21.5"
-        y2="21.5"
-      />
-      <line
-        stroke="#013059"
-        stroke-width="3"
-        x2="45"
-        y1="11.5"
-        y2="11.5"
-      />
-      <line
-        stroke="#013059"
-        stroke-width="3"
-        x2="45"
-        y1="1.5"
-        y2="1.5"
-      />
-    </svg>
+    </span>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

@@ -6,15 +6,15 @@ exports[`TextField > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-iBYQkv lgTDFv"
+        class="sc-ftTHYK gCnWqt"
       >
         <div
-          class="sc-ftTHYK bEBVlw"
+          class="sc-pyfCe dPDCSN"
         >
           <input
-            class="sc-pyfCe brigoQ"
+            class="sc-jrcTuL iGTWLz"
             data-testid="molecule-datefield"
-            min="2023-07-26"
+            min="2023-07-27"
             name="startDate"
             type="date"
           />
@@ -24,15 +24,15 @@ exports[`TextField > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-iBYQkv lgTDFv"
+      class="sc-ftTHYK gCnWqt"
     >
       <div
-        class="sc-ftTHYK bEBVlw"
+        class="sc-pyfCe dPDCSN"
       >
         <input
-          class="sc-pyfCe brigoQ"
+          class="sc-jrcTuL iGTWLz"
           data-testid="molecule-datefield"
-          min="2023-07-26"
+          min="2023-07-27"
           name="startDate"
           type="date"
         />

@@ -6,10 +6,10 @@ exports[`CreateTransport Template > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-cjibBx bSlRRw"
+        class="sc-jcMfQk hvDKFw"
       >
         <form
-          class="sc-ftTHYK jGKFAf"
+          class="sc-pyfCe rsgVC"
         >
           <h2
             class="sc-dkrFOg kaKqDq"
@@ -17,13 +17,13 @@ exports[`CreateTransport Template > component snapshot 1`] = `
             Dodaj transport
           </h2>
           <div
-            class="sc-bjfHbI kTUcsA"
+            class="sc-idXgbr doOTQv"
           >
             <div
-              class="sc-idXgbr enkruV"
+              class="sc-dIfARi fkTxxa"
             >
               <input
-                class="sc-dIfARi cqofnP"
+                class="sc-hHTYSt fAxxrI"
                 data-testid="create-company-name"
                 id="companyName"
                 name="companyName"
@@ -32,13 +32,128 @@ exports[`CreateTransport Template > component snapshot 1`] = `
             </div>
           </div>
           <div
-            class="sc-dmctIk iThEeJ"
+            class="sc-kgTSHT jCgOFm"
           >
             <div
-              class="sc-kgTSHT fmvgAY"
+              class="sc-fLcnxK cnXgRD"
             >
               <span
-                class="sc-bBABsx kBxwHb"
+                class="sc-iveFHk bTSjjE"
+              >
+                <span
+                  class="sc-eDvSVe ktaJny"
+                >
+                  <svg
+                    data-testid="chevron-icon"
+                    fill="none"
+                    viewBox="0 0 27 16"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 2L13.5 13L25 2"
+                      stroke="#013059"
+                      stroke-width="3"
+                    />
+                  </svg>
+                </span>
+              </span>
+              <select
+                class="sc-cwSeag fyvVf"
+                data-testid="create-transport-transport-kind"
+                name="transportType"
+              >
+                <option
+                  class="sc-lllmON"
+                  disabled=""
+                  selected=""
+                  value=""
+                >
+                  Rodzaj transportu
+                </option>
+                <option
+                  class="sc-lllmON"
+                  value="TRANSPORT_A"
+                >
+                  Transport A
+                </option>
+                <option
+                  class="sc-lllmON"
+                  value="TRANSPORT_B"
+                >
+                  Transport B
+                </option>
+                <option
+                  class="sc-lllmON"
+                  value="TRANSPORT_C"
+                >
+                  Transport C
+                </option>
+              </select>
+            </div>
+          </div>
+          <div
+            class="sc-hBxehG dvBsjd"
+          >
+            <div
+              class="sc-fnGiBr rTdrx"
+            >
+              <textarea
+                class="sc-bjfHbI bpDBhG"
+                data-testid="create-transport-desription"
+                id="description"
+                name="description"
+                placeholder="Opis"
+              />
+            </div>
+          </div>
+          <input
+            class="sc-jrcTuL iZHkcL"
+            type="submit"
+            value="Dodaj"
+          />
+        </form>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-jcMfQk hvDKFw"
+    >
+      <form
+        class="sc-pyfCe rsgVC"
+      >
+        <h2
+          class="sc-dkrFOg kaKqDq"
+        >
+          Dodaj transport
+        </h2>
+        <div
+          class="sc-idXgbr doOTQv"
+        >
+          <div
+            class="sc-dIfARi fkTxxa"
+          >
+            <input
+              class="sc-hHTYSt fAxxrI"
+              data-testid="create-company-name"
+              id="companyName"
+              name="companyName"
+              placeholder="Nazwa firmy transportowej"
+            />
+          </div>
+        </div>
+        <div
+          class="sc-kgTSHT jCgOFm"
+        >
+          <div
+            class="sc-fLcnxK cnXgRD"
+          >
+            <span
+              class="sc-iveFHk bTSjjE"
+            >
+              <span
+                class="sc-eDvSVe ktaJny"
               >
                 <svg
                   data-testid="chevron-icon"
@@ -54,121 +169,14 @@ exports[`CreateTransport Template > component snapshot 1`] = `
                   />
                 </svg>
               </span>
-              <select
-                class="sc-iveFHk eqISZE"
-                data-testid="create-transport-transport-kind"
-                name="transportType"
-              >
-                <option
-                  class="sc-cwSeag"
-                  disabled=""
-                  selected=""
-                  value=""
-                >
-                  Rodzaj transportu
-                </option>
-                <option
-                  class="sc-cwSeag"
-                  value="TRANSPORT_A"
-                >
-                  Transport A
-                </option>
-                <option
-                  class="sc-cwSeag"
-                  value="TRANSPORT_B"
-                >
-                  Transport B
-                </option>
-                <option
-                  class="sc-cwSeag"
-                  value="TRANSPORT_C"
-                >
-                  Transport C
-                </option>
-              </select>
-            </div>
-          </div>
-          <div
-            class="sc-ksBlkl gBSrBs"
-          >
-            <div
-              class="sc-hBxehG eptxaL"
-            >
-              <textarea
-                class="sc-fEXmlR kcJGhn"
-                data-testid="create-transport-desription"
-                id="description"
-                name="description"
-                placeholder="Opis"
-              />
-            </div>
-          </div>
-          <input
-            class="sc-pyfCe hqBgck"
-            type="submit"
-            value="Dodaj"
-          />
-        </form>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="sc-cjibBx bSlRRw"
-    >
-      <form
-        class="sc-ftTHYK jGKFAf"
-      >
-        <h2
-          class="sc-dkrFOg kaKqDq"
-        >
-          Dodaj transport
-        </h2>
-        <div
-          class="sc-bjfHbI kTUcsA"
-        >
-          <div
-            class="sc-idXgbr enkruV"
-          >
-            <input
-              class="sc-dIfARi cqofnP"
-              data-testid="create-company-name"
-              id="companyName"
-              name="companyName"
-              placeholder="Nazwa firmy transportowej"
-            />
-          </div>
-        </div>
-        <div
-          class="sc-dmctIk iThEeJ"
-        >
-          <div
-            class="sc-kgTSHT fmvgAY"
-          >
-            <span
-              class="sc-bBABsx kBxwHb"
-            >
-              <svg
-                data-testid="chevron-icon"
-                fill="none"
-                viewBox="0 0 27 16"
-                width="20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M2 2L13.5 13L25 2"
-                  stroke="#013059"
-                  stroke-width="3"
-                />
-              </svg>
             </span>
             <select
-              class="sc-iveFHk eqISZE"
+              class="sc-cwSeag fyvVf"
               data-testid="create-transport-transport-kind"
               name="transportType"
             >
               <option
-                class="sc-cwSeag"
+                class="sc-lllmON"
                 disabled=""
                 selected=""
                 value=""
@@ -176,19 +184,19 @@ exports[`CreateTransport Template > component snapshot 1`] = `
                 Rodzaj transportu
               </option>
               <option
-                class="sc-cwSeag"
+                class="sc-lllmON"
                 value="TRANSPORT_A"
               >
                 Transport A
               </option>
               <option
-                class="sc-cwSeag"
+                class="sc-lllmON"
                 value="TRANSPORT_B"
               >
                 Transport B
               </option>
               <option
-                class="sc-cwSeag"
+                class="sc-lllmON"
                 value="TRANSPORT_C"
               >
                 Transport C
@@ -197,13 +205,13 @@ exports[`CreateTransport Template > component snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sc-ksBlkl gBSrBs"
+          class="sc-hBxehG dvBsjd"
         >
           <div
-            class="sc-hBxehG eptxaL"
+            class="sc-fnGiBr rTdrx"
           >
             <textarea
-              class="sc-fEXmlR kcJGhn"
+              class="sc-bjfHbI bpDBhG"
               data-testid="create-transport-desription"
               id="description"
               name="description"
@@ -212,7 +220,7 @@ exports[`CreateTransport Template > component snapshot 1`] = `
           </div>
         </div>
         <input
-          class="sc-pyfCe hqBgck"
+          class="sc-jrcTuL iZHkcL"
           type="submit"
           value="Dodaj"
         />

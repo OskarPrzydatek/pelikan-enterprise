@@ -9,19 +9,19 @@ exports[`SideMenu > component snapshot 1`] = `
       class="sc-dkrFOg hVytYR"
     >
       <div
-        class="sc-pyfCe enVoiO"
+        class="sc-jrcTuL kapCbJ"
         data-testid="hamburger-menu-side-menu"
       >
         <div
-          class="sc-jrcTuL fjayrs"
+          class="sc-kDvujY bjUeDl"
         >
           <p
-            class="sc-ftTHYK dKCeiw"
+            class="sc-pyfCe OkzBx"
           >
             Pelikan Enterprise
           </p>
           <button
-            class="sc-jSUZER hXdBAm"
+            class="sc-jSUZER eNWyGN"
             data-testid="side-menu-close-icon"
           >
             <svg
@@ -39,13 +39,13 @@ exports[`SideMenu > component snapshot 1`] = `
           </button>
         </div>
         <nav
-          class="sc-kDvujY"
+          class="sc-ipEyDJ"
         >
           <ul
-            class="sc-ipEyDJ"
+            class="sc-csuSiG"
           >
             <li
-              class="sc-csuSiG cFgvVv"
+              class="sc-eDWCr xPKqo"
             >
               <button
                 class="sc-hLBbgP drIwCV"
@@ -59,7 +59,7 @@ exports[`SideMenu > component snapshot 1`] = `
               </button>
             </li>
             <li
-              class="sc-csuSiG cFgvVv"
+              class="sc-eDWCr xPKqo"
             >
               <button
                 class="sc-hLBbgP drIwCV"
@@ -73,7 +73,7 @@ exports[`SideMenu > component snapshot 1`] = `
               </button>
             </li>
             <li
-              class="sc-csuSiG cFgvVv"
+              class="sc-eDWCr xPKqo"
             >
               <button
                 class="sc-hLBbgP drIwCV"
@@ -87,7 +87,7 @@ exports[`SideMenu > component snapshot 1`] = `
               </button>
             </li>
             <li
-              class="sc-csuSiG cFgvVv"
+              class="sc-eDWCr xPKqo"
             >
               <button
                 class="sc-hLBbgP drIwCV"
@@ -101,7 +101,7 @@ exports[`SideMenu > component snapshot 1`] = `
               </button>
             </li>
             <li
-              class="sc-csuSiG cFgvVv"
+              class="sc-eDWCr xPKqo"
             >
               <button
                 class="sc-hLBbgP drIwCV"

@@ -9,7 +9,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
         class="sc-gswNZR cJrdyV"
       >
         <div
-          class="sc-gYbzsP fZAhDs"
+          class="sc-cCjUiG iDOVdg"
         >
           <h2
             class="sc-eDvSVe dcXtK"
@@ -17,26 +17,58 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
             Atrakcje
           </h2>
           <ul
-            class="sc-cCjUiG gdYusC"
+            class="sc-cjibBx bUfZzP"
           >
             <li>
               <p
-                class="sc-ftTHYK iSkTh"
+                class="sc-pyfCe kcVRAg"
               >
                 Brak atrakcji w systemie
               </p>
             </li>
           </ul>
           <div
-            class="sc-cjibBx bzGlRW"
+            class="sc-jcMfQk TqUCU"
           >
+            <button
+              class="sc-jSUZER fQVznz"
+            >
+              <svg
+                data-testid="arrow-icon"
+                fill="none"
+                viewBox="0 0 40 26"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 13L39.75 0.00961876V25.9904L0 13Z"
+                  fill="#013059"
+                />
+              </svg>
+            </button>
             <p
-              class="sc-ftTHYK iSkTh"
+              class="sc-pyfCe kcVRAg"
               data-testid="pagination-counter"
             >
               1
                / X
             </p>
+            <button
+              class="sc-jSUZER hjlqfP"
+            >
+              <svg
+                data-testid="arrow-icon"
+                fill="none"
+                viewBox="0 0 40 26"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 13L39.75 0.00961876V25.9904L0 13Z"
+                  fill="#013059"
+                />
+              </svg>
+            </button>
           </div>
           <button
             class="sc-hLBbgP fxgbmT"
@@ -52,7 +84,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
       class="sc-gswNZR cJrdyV"
     >
       <div
-        class="sc-gYbzsP fZAhDs"
+        class="sc-cCjUiG iDOVdg"
       >
         <h2
           class="sc-eDvSVe dcXtK"
@@ -60,26 +92,58 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
           Atrakcje
         </h2>
         <ul
-          class="sc-cCjUiG gdYusC"
+          class="sc-cjibBx bUfZzP"
         >
           <li>
             <p
-              class="sc-ftTHYK iSkTh"
+              class="sc-pyfCe kcVRAg"
             >
               Brak atrakcji w systemie
             </p>
           </li>
         </ul>
         <div
-          class="sc-cjibBx bzGlRW"
+          class="sc-jcMfQk TqUCU"
         >
+          <button
+            class="sc-jSUZER fQVznz"
+          >
+            <svg
+              data-testid="arrow-icon"
+              fill="none"
+              viewBox="0 0 40 26"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 13L39.75 0.00961876V25.9904L0 13Z"
+                fill="#013059"
+              />
+            </svg>
+          </button>
           <p
-            class="sc-ftTHYK iSkTh"
+            class="sc-pyfCe kcVRAg"
             data-testid="pagination-counter"
           >
             1
              / X
           </p>
+          <button
+            class="sc-jSUZER hjlqfP"
+          >
+            <svg
+              data-testid="arrow-icon"
+              fill="none"
+              viewBox="0 0 40 26"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 13L39.75 0.00961876V25.9904L0 13Z"
+                fill="#013059"
+              />
+            </svg>
+          </button>
         </div>
         <button
           class="sc-hLBbgP fxgbmT"

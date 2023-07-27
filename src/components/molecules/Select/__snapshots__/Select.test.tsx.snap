@@ -6,13 +6,86 @@ exports[`Select > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-idXgbr doOTQv"
+        class="sc-dIfARi fzFjao"
       >
         <div
-          class="sc-dIfARi fkTxxa"
+          class="sc-hHTYSt jxYQNB"
         >
           <span
-            class="sc-dmctIk czpMvD"
+            class="sc-kgTSHT heXOjw"
+          >
+            <span
+              class="sc-eDvSVe ktaJny"
+            >
+              <svg
+                data-testid="chevron-icon"
+                fill="none"
+                viewBox="0 0 27 16"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 2L13.5 13L25 2"
+                  stroke="#013059"
+                  stroke-width="3"
+                />
+              </svg>
+            </span>
+          </span>
+          <select
+            class="sc-fLcnxK fZpqpf"
+            data-testid="molecule-select"
+            name="destination"
+          >
+            <option
+              class="sc-bBABsx"
+              disabled=""
+              selected=""
+              value=""
+            >
+              Default label
+            </option>
+            <option
+              class="sc-bBABsx"
+              value="value1"
+            >
+              label1
+            </option>
+            <option
+              class="sc-bBABsx"
+              value="value2"
+            >
+              label2
+            </option>
+            <option
+              class="sc-bBABsx"
+              value="value3"
+            >
+              label3
+            </option>
+            <option
+              class="sc-bBABsx"
+              value="value4"
+            >
+              label4
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-dIfARi fzFjao"
+    >
+      <div
+        class="sc-hHTYSt jxYQNB"
+      >
+        <span
+          class="sc-kgTSHT heXOjw"
+        >
+          <span
+            class="sc-eDvSVe ktaJny"
           >
             <svg
               data-testid="chevron-icon"
@@ -28,79 +101,14 @@ exports[`Select > component snapshot 1`] = `
               />
             </svg>
           </span>
-          <select
-            class="sc-kgTSHT eafwKI"
-            data-testid="molecule-select"
-            name="destination"
-          >
-            <option
-              class="sc-fLcnxK"
-              disabled=""
-              selected=""
-              value=""
-            >
-              Default label
-            </option>
-            <option
-              class="sc-fLcnxK"
-              value="value1"
-            >
-              label1
-            </option>
-            <option
-              class="sc-fLcnxK"
-              value="value2"
-            >
-              label2
-            </option>
-            <option
-              class="sc-fLcnxK"
-              value="value3"
-            >
-              label3
-            </option>
-            <option
-              class="sc-fLcnxK"
-              value="value4"
-            >
-              label4
-            </option>
-          </select>
-        </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="sc-idXgbr doOTQv"
-    >
-      <div
-        class="sc-dIfARi fkTxxa"
-      >
-        <span
-          class="sc-dmctIk czpMvD"
-        >
-          <svg
-            data-testid="chevron-icon"
-            fill="none"
-            viewBox="0 0 27 16"
-            width="20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M2 2L13.5 13L25 2"
-              stroke="#013059"
-              stroke-width="3"
-            />
-          </svg>
         </span>
         <select
-          class="sc-kgTSHT eafwKI"
+          class="sc-fLcnxK fZpqpf"
           data-testid="molecule-select"
           name="destination"
         >
           <option
-            class="sc-fLcnxK"
+            class="sc-bBABsx"
             disabled=""
             selected=""
             value=""
@@ -108,25 +116,25 @@ exports[`Select > component snapshot 1`] = `
             Default label
           </option>
           <option
-            class="sc-fLcnxK"
+            class="sc-bBABsx"
             value="value1"
           >
             label1
           </option>
           <option
-            class="sc-fLcnxK"
+            class="sc-bBABsx"
             value="value2"
           >
             label2
           </option>
           <option
-            class="sc-fLcnxK"
+            class="sc-bBABsx"
             value="value3"
           >
             label3
           </option>
           <option
-            class="sc-fLcnxK"
+            class="sc-bBABsx"
             value="value4"
           >
             label4

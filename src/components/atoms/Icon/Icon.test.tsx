@@ -17,10 +17,11 @@ describe('Icon', () => {
     );
     expect(view).toMatchSnapshot();
   });
+
   test('ensure icon show correct kind of svg icon', () => {
     const { rerender } = render(
       <StyledComponentsProvider>
-        <Icon icon={'SUPER_ICON' as Icons} />
+        <Icon icon={'SUPER_ICON' as unknown as Icons} />
       </StyledComponentsProvider>
     );
     expect(screen.queryByTestId('super-icon')).not.toBeInTheDocument();
@@ -44,11 +45,24 @@ describe('Icon', () => {
     expect(screen.getByTestId('close-icon')).toBeInTheDocument();
     rerender(
       <StyledComponentsProvider>
+        <Icon icon={Icons.DELETE} />
+      </StyledComponentsProvider>
+    );
+    expect(screen.getByTestId('delete-icon')).toBeInTheDocument();
+    rerender(
+      <StyledComponentsProvider>
+        <Icon icon={Icons.EDIT} />
+      </StyledComponentsProvider>
+    );
+    expect(screen.getByTestId('edit-icon')).toBeInTheDocument();
+    rerender(
+      <StyledComponentsProvider>
         <Icon icon={Icons.HAMBURGER} />
       </StyledComponentsProvider>
     );
     expect(screen.getByTestId('hamburger-icon')).toBeInTheDocument();
   });
+
   test('ensure icon can be clickable', () => {
     render(
       <StyledComponentsProvider>

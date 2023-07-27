@@ -37,6 +37,22 @@ export const CloseIcon: Story = {
   ),
 };
 
+export const DeleteIcon: Story = {
+  render: () => (
+    <StyledComponentsProvider>
+      <Icon icon={Icons.DELETE} />
+    </StyledComponentsProvider>
+  ),
+};
+
+export const EditIcon: Story = {
+  render: () => (
+    <StyledComponentsProvider>
+      <Icon icon={Icons.EDIT} />
+    </StyledComponentsProvider>
+  ),
+};
+
 export const HamburgerIcon: Story = {
   render: () => (
     <StyledComponentsProvider>
