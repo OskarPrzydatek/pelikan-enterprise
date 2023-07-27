@@ -19,7 +19,21 @@ export const OverviewListWrapper = styled.ul`
 `;
 
 export const Pagination = styled.div`
-  margin: ${({ theme }) => theme.spaces.l} 0;
+  display: flex;
+  padding: ${({ theme }) => theme.spaces.l};
+  margin-bottom: ${({ theme }) => theme.spaces.xl};
+  gap: ${({ theme }) => theme.spaces.xxl};
+`;
+
+export const prevArrowCSS = css`
+  display: flex;
+  align-items: center;
+`;
+
+export const nextArrowCSS = css`
+  display: flex;
+  align-items: center;
+  transform: rotate(180deg);
 `;
 
 export const navigateButtonCSS = css`

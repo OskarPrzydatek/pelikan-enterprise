@@ -1,4 +1,5 @@
-import { Button, Header, Text } from '~/components/atoms';
+import { Button, Header, Icon, Text } from '~/components/atoms';
+import { Icons } from '~/constants';
 
 import * as S from './OverviewList.styles';
 
@@ -28,7 +29,9 @@ export const OverviewList: React.FC<IOverviewList> = ({
         </li>
       </S.OverviewListWrapper>
       <S.Pagination>
+        <Icon css={S.prevArrowCSS} icon={Icons.ARROW} onClick={() => {}} />
         <Text dataTestID="pagination-counter">{currentPage} / X</Text>
+        <Icon css={S.nextArrowCSS} icon={Icons.ARROW} onClick={() => {}} />
       </S.Pagination>
       <Button css={S.navigateButtonCSS} onClick={onClickNavigate}>
         {navigateLabel}
