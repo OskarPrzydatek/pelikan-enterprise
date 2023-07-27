@@ -18,6 +18,7 @@ export const Icon: React.FC<IIcon> = ({
   icon,
   width = 20,
   height,
+  css,
   dataTestID,
   onClick,
 }: IIcon) => {
@@ -59,11 +60,11 @@ export const Icon: React.FC<IIcon> = ({
 
   if (onClick) {
     return (
-      <S.ClickableIcon data-testid={dataTestID} onClick={onClick}>
+      <S.ClickableIcon css={css} data-testid={dataTestID} onClick={onClick}>
         {renderIconByType()}
       </S.ClickableIcon>
     );
   }
 
-  return renderIconByType();
+  return <S.IconWrapper css={css}>{renderIconByType()}</S.IconWrapper>;
 };
