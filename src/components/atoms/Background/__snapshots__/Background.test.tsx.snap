@@ -7,6 +7,7 @@ exports[`Background > component snapshot 1`] = `
     <div />
     <div
       class="sc-dkrFOg hVytYR"
+      data-testid="atom-background"
     >
       <div
         id="exaple-side-menu"

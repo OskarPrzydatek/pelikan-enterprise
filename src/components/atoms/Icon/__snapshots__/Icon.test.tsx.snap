@@ -5,8 +5,9 @@ exports[`Icon > component snapshot 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <span
-        class="sc-hLBbgP fTgiIa"
+      <button
+        class="sc-dkrFOg gixrif"
+        data-testid="atom-icon"
       >
         <svg
           data-testid="hamburger-icon"
@@ -37,12 +38,13 @@ exports[`Icon > component snapshot 1`] = `
             y2="1.5"
           />
         </svg>
-      </span>
+      </button>
     </div>
   </body>,
   "container": <div>
-    <span
-      class="sc-hLBbgP fTgiIa"
+    <button
+      class="sc-dkrFOg gixrif"
+      data-testid="atom-icon"
     >
       <svg
         data-testid="hamburger-icon"
@@ -73,7 +75,7 @@ exports[`Icon > component snapshot 1`] = `
           y2="1.5"
         />
       </svg>
-    </span>
+    </button>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

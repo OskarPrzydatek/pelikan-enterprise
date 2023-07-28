@@ -7,24 +7,22 @@ import { Button } from './Button';
 
 const mockOnClick = vi.fn();
 
+const MockButton = () => (
+  <StyledComponentsProvider>
+    <Button dataTestID="atom-button" onClick={mockOnClick}>
+      Logout
+    </Button>
+  </StyledComponentsProvider>
+);
+
 describe('Button', () => {
   test('component snapshot', () => {
-    const view = render(
-      <StyledComponentsProvider>
-        <Button onClick={mockOnClick}>Logout</Button>
-      </StyledComponentsProvider>
-    );
+    const view = render(<MockButton />);
     expect(view).toMatchSnapshot();
   });
 
   test('ensure button is clickable', () => {
-    render(
-      <StyledComponentsProvider>
-        <Button dataTestID="atom-button" onClick={mockOnClick}>
-          Logout
-        </Button>
-      </StyledComponentsProvider>
-    );
+    render(<MockButton />);
     fireEvent.click(screen.getByTestId('atom-button'));
     expect(mockOnClick).toHaveBeenCalled();
   });

@@ -5,16 +5,18 @@ import { StyledComponentsProvider } from '~/providers';
 
 import { Row } from './Row';
 
+const MockRow = () => (
+  <StyledComponentsProvider>
+    <Row>
+      <input type="text" />
+      <input type="text" />
+    </Row>
+  </StyledComponentsProvider>
+);
+
 describe('Row', () => {
   test('component snapshot', () => {
-    const view = render(
-      <StyledComponentsProvider>
-        <Row>
-          <input type="text" />
-          <input type="text" />
-        </Row>
-      </StyledComponentsProvider>
-    );
+    const view = render(<MockRow />);
     expect(view).toMatchSnapshot();
   });
 });

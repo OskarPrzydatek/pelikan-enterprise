@@ -9,7 +9,7 @@ exports[`Header > component snapshot 1`] = `
         class="sc-dkrFOg kaKqDq"
         data-testid="header-atom"
       >
-        String Header
+        Add Offer
       </h2>
     </div>
   </body>,
@@ -18,7 +18,7 @@ exports[`Header > component snapshot 1`] = `
       class="sc-dkrFOg kaKqDq"
       data-testid="header-atom"
     >
-      String Header
+      Add Offer
     </h2>
   </div>,
   "debug": [Function],
