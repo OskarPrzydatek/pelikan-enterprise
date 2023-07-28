@@ -5,25 +5,21 @@ import { StyledComponentsProvider } from '~/providers';
 
 import { Footer } from './Footer';
 
-const mockVersion = '0.0.1';
+const MockFooter = () => (
+  <StyledComponentsProvider>
+    <Footer version="0.0.1" />
+  </StyledComponentsProvider>
+);
 
 describe('Footer', () => {
   test('component snapshot', () => {
-    const view = render(
-      <StyledComponentsProvider>
-        <Footer version={mockVersion} />
-      </StyledComponentsProvider>
-    );
+    const view = render(<MockFooter />);
     expect(view).toMatchSnapshot();
   });
 
   test('ensure version renders correctly', () => {
-    render(
-      <StyledComponentsProvider>
-        <Footer version={mockVersion} />
-      </StyledComponentsProvider>
-    );
+    render(<MockFooter />);
     const appVesionText = screen.getByTestId('app-version');
-    expect(appVesionText).toHaveTextContent(`Pelikan Business v${mockVersion}`);
+    expect(appVesionText).toHaveTextContent('Pelikan Business v0.0.1');
   });
 });

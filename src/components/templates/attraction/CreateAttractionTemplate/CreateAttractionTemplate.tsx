@@ -44,7 +44,7 @@ export const CreateAttractionTemplate: React.FC<ICreateAttractionTemplate> = ({
         <TextArea
           errorMessageTestID="create-description-error"
           label="Opis"
-          name="create-description"
+          name="description"
           textareaTestID="attraction-description"
           registerOptions={{
             ...requiredValidator,

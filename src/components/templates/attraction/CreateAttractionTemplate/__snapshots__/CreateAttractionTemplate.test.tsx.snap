@@ -6,10 +6,10 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-hhOBVt hIPxwk"
+        class="sc-iTFTee cnCkmL"
       >
         <form
-          class="sc-cwSeag qbDdz"
+          class="sc-pyfCe rsgVC"
         >
           <h2
             class="sc-dkrFOg kaKqDq"
@@ -17,13 +17,13 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
             Dodaj atrakcję
           </h2>
           <div
-            class="sc-hBxehG dvBsjd"
+            class="sc-idXgbr doOTQv"
           >
             <div
-              class="sc-fnGiBr rTdrx"
+              class="sc-dIfARi fkTxxa"
             >
               <input
-                class="sc-fEXmlR hyVGRi"
+                class="sc-hHTYSt fAxxrI"
                 data-testid="create-attraction-name"
                 id="name"
                 name="name"
@@ -32,13 +32,13 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
             </div>
           </div>
           <div
-            class="sc-hBxehG dvBsjd"
+            class="sc-idXgbr doOTQv"
           >
             <div
-              class="sc-fnGiBr rTdrx"
+              class="sc-dIfARi fkTxxa"
             >
               <input
-                class="sc-fEXmlR hyVGRi"
+                class="sc-hHTYSt fAxxrI"
                 data-testid="create-attraction-price"
                 id="price"
                 name="price"
@@ -47,22 +47,22 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
             </div>
           </div>
           <div
-            class="sc-csuSiG hHGxKx"
+            class="sc-hBxehG dvBsjd"
           >
             <div
-              class="sc-eDWCr cBAmxE"
+              class="sc-fnGiBr rTdrx"
             >
               <textarea
-                class="sc-ksBlkl dmriCq"
+                class="sc-bjfHbI bpDBhG"
                 data-testid="attraction-description"
-                id="create-description"
-                name="create-description"
+                id="description"
+                name="description"
                 placeholder="Opis"
               />
             </div>
           </div>
           <input
-            class="sc-lllmON ieVIbh"
+            class="sc-jrcTuL iZHkcL"
             type="submit"
             value="Dodaj"
           />
@@ -72,10 +72,10 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-hhOBVt hIPxwk"
+      class="sc-iTFTee cnCkmL"
     >
       <form
-        class="sc-cwSeag qbDdz"
+        class="sc-pyfCe rsgVC"
       >
         <h2
           class="sc-dkrFOg kaKqDq"
@@ -83,13 +83,13 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
           Dodaj atrakcję
         </h2>
         <div
-          class="sc-hBxehG dvBsjd"
+          class="sc-idXgbr doOTQv"
         >
           <div
-            class="sc-fnGiBr rTdrx"
+            class="sc-dIfARi fkTxxa"
           >
             <input
-              class="sc-fEXmlR hyVGRi"
+              class="sc-hHTYSt fAxxrI"
               data-testid="create-attraction-name"
               id="name"
               name="name"
@@ -98,13 +98,13 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sc-hBxehG dvBsjd"
+          class="sc-idXgbr doOTQv"
         >
           <div
-            class="sc-fnGiBr rTdrx"
+            class="sc-dIfARi fkTxxa"
           >
             <input
-              class="sc-fEXmlR hyVGRi"
+              class="sc-hHTYSt fAxxrI"
               data-testid="create-attraction-price"
               id="price"
               name="price"
@@ -113,22 +113,22 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sc-csuSiG hHGxKx"
+          class="sc-hBxehG dvBsjd"
         >
           <div
-            class="sc-eDWCr cBAmxE"
+            class="sc-fnGiBr rTdrx"
           >
             <textarea
-              class="sc-ksBlkl dmriCq"
+              class="sc-bjfHbI bpDBhG"
               data-testid="attraction-description"
-              id="create-description"
-              name="create-description"
+              id="description"
+              name="description"
               placeholder="Opis"
             />
           </div>
         </div>
         <input
-          class="sc-lllmON ieVIbh"
+          class="sc-jrcTuL iZHkcL"
           type="submit"
           value="Dodaj"
         />

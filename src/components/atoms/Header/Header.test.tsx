@@ -5,23 +5,21 @@ import { StyledComponentsProvider } from '~/providers';
 
 import { Header } from './Header';
 
+const MockHeader = () => (
+  <StyledComponentsProvider>
+    <Header dataTestID="header-atom">Add Offer</Header>
+  </StyledComponentsProvider>
+);
+
 describe('Header', () => {
   test('component snapshot', () => {
-    const view = render(
-      <StyledComponentsProvider>
-        <Header dataTestID="header-atom">String Header</Header>
-      </StyledComponentsProvider>
-    );
+    const view = render(<MockHeader />);
     expect(view).toMatchSnapshot();
   });
 
   test('ensure header children renders correctly', () => {
-    render(
-      <StyledComponentsProvider>
-        <Header dataTestID="header-atom">String Header</Header>
-      </StyledComponentsProvider>
-    );
+    render(<MockHeader />);
     const header = screen.getByTestId('header-atom');
-    expect(header).toHaveTextContent('String Header');
+    expect(header).toHaveTextContent('Add Offer');
   });
 });

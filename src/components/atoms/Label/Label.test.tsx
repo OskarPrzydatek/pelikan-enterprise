@@ -5,26 +5,22 @@ import { StyledComponentsProvider } from '~/providers';
 
 import { Label } from './Label';
 
+const MockLabel = () => (
+  <StyledComponentsProvider>
+    <Label dataTestID="label-atom" htmlFor="label-atom">
+      Label
+    </Label>
+  </StyledComponentsProvider>
+);
+
 describe('Label', () => {
   test('component snapshot', () => {
-    const view = render(
-      <StyledComponentsProvider>
-        <Label dataTestID="label-atom" htmlFor="label-atom">
-          Label
-        </Label>
-      </StyledComponentsProvider>
-    );
+    const view = render(<MockLabel />);
     expect(view).toMatchSnapshot();
   });
 
   test('ensure label children renders correctly', () => {
-    render(
-      <StyledComponentsProvider>
-        <Label dataTestID="label-atom" htmlFor="label-atom">
-          Label
-        </Label>
-      </StyledComponentsProvider>
-    );
+    render(<MockLabel />);
     const label = screen.getByTestId('label-atom');
     expect(label).toHaveTextContent('Label');
   });

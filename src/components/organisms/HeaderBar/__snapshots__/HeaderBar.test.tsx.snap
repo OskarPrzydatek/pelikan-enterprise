@@ -6,10 +6,10 @@ exports[`HeaderBar > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <header
-        class="sc-kMjNwy ccsgQL"
+        class="sc-ilhmMj joOaFA"
       >
         <button
-          class="sc-jSUZER hXdBAm"
+          class="sc-jSUZER eNWyGN"
           data-testid="side-menu-hamburger-icon"
         >
           <svg
@@ -44,16 +44,16 @@ exports[`HeaderBar > component snapshot 1`] = `
           </svg>
         </button>
         <div
-          class="sc-csuSiG jPnLe"
+          class="sc-eDWCr dPQFcV"
         >
           <p
-            class="sc-ftTHYK dKvvVd"
+            class="sc-pyfCe lizSwY"
           >
             Witaj Użytkowniku
           </p>
           <img
             alt="default profile picture"
-            class="sc-eDWCr bBfFiX"
+            class="sc-bqWxrE depSan"
             src="/src/assets/png/profile_picture.png"
           />
         </div>
@@ -62,10 +62,10 @@ exports[`HeaderBar > component snapshot 1`] = `
   </body>,
   "container": <div>
     <header
-      class="sc-kMjNwy ccsgQL"
+      class="sc-ilhmMj joOaFA"
     >
       <button
-        class="sc-jSUZER hXdBAm"
+        class="sc-jSUZER eNWyGN"
         data-testid="side-menu-hamburger-icon"
       >
         <svg
@@ -100,16 +100,16 @@ exports[`HeaderBar > component snapshot 1`] = `
         </svg>
       </button>
       <div
-        class="sc-csuSiG jPnLe"
+        class="sc-eDWCr dPQFcV"
       >
         <p
-          class="sc-ftTHYK dKvvVd"
+          class="sc-pyfCe lizSwY"
         >
           Witaj Użytkowniku
         </p>
         <img
           alt="default profile picture"
-          class="sc-eDWCr bBfFiX"
+          class="sc-bqWxrE depSan"
           src="/src/assets/png/profile_picture.png"
         />
       </div>

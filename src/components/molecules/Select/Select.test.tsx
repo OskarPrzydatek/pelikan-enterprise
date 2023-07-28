@@ -12,21 +12,18 @@ describe('Select', () => {
   test('ensure select focus and blur works correctly', () => {
     render(<SelectHelper />);
     const select: HTMLSelectElement = screen.getByTestId('molecule-select');
-    expect(
-      screen.queryByTestId('molecule-select-label')
-    ).not.toBeInTheDocument();
+    const getSelectLabel = () => screen.getByTestId('molecule-select-label');
+    const queryForSelectLabel = () =>
+      screen.queryByTestId('molecule-select-label');
+    expect(queryForSelectLabel()).not.toBeInTheDocument();
     fireEvent.focus(select);
-    expect(screen.getByTestId('molecule-select-label')).toBeInTheDocument();
+    expect(getSelectLabel()).toBeInTheDocument();
     fireEvent.blur(select);
-    expect(
-      screen.queryByTestId('molecule-select-label')
-    ).not.toBeInTheDocument();
+    expect(queryForSelectLabel()).not.toBeInTheDocument();
     fireEvent.change(select, { target: { value: 'value1' } });
     expect(screen.getByTestId('molecule-select-label')).toBeInTheDocument();
     fireEvent.change(select, { target: { value: '' } });
-    expect(
-      screen.queryByTestId('molecule-select-label')
-    ).not.toBeInTheDocument();
+    expect(queryForSelectLabel()).not.toBeInTheDocument();
   });
 
   test('ensure validation error message works correctly', () => {

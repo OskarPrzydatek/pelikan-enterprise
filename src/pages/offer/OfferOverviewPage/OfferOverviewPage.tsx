@@ -1,16 +1,29 @@
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
-import { PageLayout } from '~/styles';
+import { OfferOverviewTemplate } from '~/components/templates';
+import { Slugs } from '~/constants';
 
 export const OfferOverviewPage: React.FC = () => {
   const { page } = useParams();
+  const navigate = useNavigate();
 
-  const pageLabel = page ?? 1;
+  const onClickNavigateToEditOffer = (id: number) =>
+    navigate(`/${Slugs.EDIT_OFFER}/${id}`);
+
+  const onClickNavigateToCreateOffer = () => navigate(`/${Slugs.CREATE_OFFER}`);
 
   return (
-    <PageLayout>
-      <h2>List Offer Page</h2>
-      <p data-testid="page-number">page: {pageLabel}</p>
-    </PageLayout>
+    <OfferOverviewTemplate
+      page={page}
+      items={[
+        { id: 1, name: 'offer1' },
+        { id: 2, name: 'offer2' },
+        { id: 3, name: 'offer3' },
+        { id: 4, name: 'offer4' },
+        { id: 5, name: 'offer5' },
+      ]}
+      onClickItem={onClickNavigateToEditOffer}
+      onClickNavigate={onClickNavigateToCreateOffer}
+    />
   );
 };

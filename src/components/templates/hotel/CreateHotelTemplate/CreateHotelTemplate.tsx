@@ -5,11 +5,7 @@ import { TextArea, TextField } from '~/components/molecules';
 import { Form } from '~/components/organisms';
 import { IHotel } from '~/models';
 import { PageLayout } from '~/styles';
-import {
-  numericValidator,
-  requiredValidator,
-  starsValidator,
-} from '~/validators';
+import { requiredValidator, starsValidator } from '~/validators';
 
 interface ICreateHotelTemplate {
   createHotelFormMethods: UseFormReturn<IHotel>;

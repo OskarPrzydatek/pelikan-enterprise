@@ -12,13 +12,14 @@ describe('TextField', () => {
   test('ensure input focusing works correctly', () => {
     render(<TextFieldHelper />);
     const input = screen.getByTestId('molecule-textfield');
-    expect(
-      screen.queryByTestId('molecule-textfield-label')
-    ).not.toBeInTheDocument();
+    const getInputLabel = () => screen.getByTestId('molecule-textfield-label');
+    const queryForInputLabel = () =>
+      screen.queryByTestId('molecule-textfield-label');
+    expect(queryForInputLabel()).not.toBeInTheDocument();
     fireEvent.focus(input);
-    expect(screen.getByTestId('molecule-textfield-label')).toBeInTheDocument();
+    expect(getInputLabel()).toBeInTheDocument();
     fireEvent.change(input, { target: { value: 'q' } });
-    expect(screen.getByTestId('molecule-textfield-label')).toBeInTheDocument();
+    expect(getInputLabel()).toBeInTheDocument();
   });
 
   test('ensure validation error message works correctly', () => {

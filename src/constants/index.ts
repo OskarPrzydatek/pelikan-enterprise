@@ -1,7 +1,10 @@
 export enum Icons {
-  CHEVRON = 'CHEVRON',
-  CLOSE = 'CLOSE',
-  HAMBURGER = 'HAMBURGER',
+  ARROW,
+  CHEVRON,
+  CLOSE,
+  DELETE,
+  EDIT,
+  HAMBURGER,
 }
 
 export enum Slugs {

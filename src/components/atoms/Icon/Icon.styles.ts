@@ -9,4 +9,10 @@ export const ClickableIcon = styled.button<ICSS>`
   background-color: transparent;
   display: flex;
   cursor: pointer;
+
+  ${({ css }) => css}
+`;
+
+export const IconWrapper = styled.span<ICSS>`
+  ${({ css }) => css}
 `;

@@ -13,13 +13,15 @@ describe('TextArea', () => {
     render(<TextAreaHelper />);
     const textarea: HTMLTextAreaElement =
       screen.getByTestId('molecule-textarea');
-    expect(
-      screen.queryByTestId('molecule-textarea-label')
-    ).not.toBeInTheDocument();
+    const getTextAreaLabel = () =>
+      screen.getByTestId('molecule-textarea-label');
+    const queryForTextAreaLabel = () =>
+      screen.queryByTestId('molecule-textarea-label');
+    expect(queryForTextAreaLabel()).not.toBeInTheDocument();
     fireEvent.focus(textarea);
-    expect(screen.getByTestId('molecule-textarea-label')).toBeInTheDocument();
+    expect(getTextAreaLabel()).toBeInTheDocument();
     fireEvent.change(textarea, { target: { value: 'q' } });
-    expect(screen.getByTestId('molecule-textarea-label')).toBeInTheDocument();
+    expect(getTextAreaLabel()).toBeInTheDocument();
   });
 
   test('ensure validation error message works correctly', () => {

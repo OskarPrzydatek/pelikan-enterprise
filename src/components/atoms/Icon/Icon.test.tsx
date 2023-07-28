@@ -8,47 +8,45 @@ import { Icon } from './Icon';
 
 const mockOnClick = vi.fn();
 
+const MockIcon = ({ icon }: { icon: Icons }) => (
+  <StyledComponentsProvider>
+    <Icon dataTestID="atom-icon" icon={icon} onClick={mockOnClick} />
+  </StyledComponentsProvider>
+);
+
 describe('Icon', () => {
   test('component snapshot', () => {
-    const view = render(
-      <StyledComponentsProvider>
-        <Icon icon={Icons.HAMBURGER} />
-      </StyledComponentsProvider>
-    );
+    const view = render(<MockIcon icon={Icons.HAMBURGER} />);
     expect(view).toMatchSnapshot();
   });
+
   test('ensure icon show correct kind of svg icon', () => {
     const { rerender } = render(
-      <StyledComponentsProvider>
-        <Icon icon={'SUPER_ICON' as Icons} />
-      </StyledComponentsProvider>
+      <MockIcon icon={'SUPER_ICON' as unknown as Icons} />
     );
     expect(screen.queryByTestId('super-icon')).not.toBeInTheDocument();
-    rerender(
-      <StyledComponentsProvider>
-        <Icon icon={Icons.CHEVRON} />
-      </StyledComponentsProvider>
-    );
+
+    rerender(<MockIcon icon={Icons.ARROW} />);
+    expect(screen.getByTestId('arrow-icon')).toBeInTheDocument();
+
+    rerender(<MockIcon icon={Icons.CHEVRON} />);
     expect(screen.getByTestId('chevron-icon')).toBeInTheDocument();
-    rerender(
-      <StyledComponentsProvider>
-        <Icon icon={Icons.CLOSE} />
-      </StyledComponentsProvider>
-    );
+
+    rerender(<MockIcon icon={Icons.CLOSE} />);
     expect(screen.getByTestId('close-icon')).toBeInTheDocument();
-    rerender(
-      <StyledComponentsProvider>
-        <Icon icon={Icons.HAMBURGER} />
-      </StyledComponentsProvider>
-    );
+
+    rerender(<MockIcon icon={Icons.DELETE} />);
+    expect(screen.getByTestId('delete-icon')).toBeInTheDocument();
+
+    rerender(<MockIcon icon={Icons.EDIT} />);
+    expect(screen.getByTestId('edit-icon')).toBeInTheDocument();
+
+    rerender(<MockIcon icon={Icons.HAMBURGER} />);
     expect(screen.getByTestId('hamburger-icon')).toBeInTheDocument();
   });
+
   test('ensure icon can be clickable', () => {
-    render(
-      <StyledComponentsProvider>
-        <Icon dataTestID="atom-icon" icon={Icons.CLOSE} onClick={mockOnClick} />
-      </StyledComponentsProvider>
-    );
+    render(<MockIcon icon={Icons.CLOSE} />);
     fireEvent.click(screen.getByTestId('atom-icon'));
     expect(mockOnClick).toHaveBeenCalled();
   });
