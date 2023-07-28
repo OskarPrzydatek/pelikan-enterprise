@@ -5,13 +5,24 @@ import { StyledComponentsProvider } from '~/providers';
 
 import { HashtagOverviewTemplate } from './HashtagOverviewTemplate';
 
+const mockOnClickItem = vi.fn();
 const mockOnClickNavigate = vi.fn();
 
 describe('HashtagOverviewTemplate', () => {
   test('component snapshot', () => {
     const view = render(
       <StyledComponentsProvider>
-        <HashtagOverviewTemplate onClickNavigate={mockOnClickNavigate} />
+        <HashtagOverviewTemplate
+          items={[
+            { id: 1, name: 'hashtag1' },
+            { id: 2, name: 'hashtag2' },
+            { id: 3, name: 'hashtag3' },
+            { id: 4, name: 'hashtag4' },
+            { id: 5, name: 'hashtag5' },
+          ]}
+          onClickItem={mockOnClickItem}
+          onClickNavigate={mockOnClickNavigate}
+        />
       </StyledComponentsProvider>
     );
     expect(view).toMatchSnapshot();

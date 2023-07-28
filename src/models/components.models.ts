@@ -9,6 +9,18 @@ export interface IComponent {
   dataTestID?: string;
 }
 
+interface Item {
+  id: number;
+  name: string;
+}
+
+export interface IOverviewTemplate {
+  items: Item[];
+  page?: string;
+  onClickItem: (id: number) => void;
+  onClickNavigate: () => void;
+}
+
 export interface ISelectOption {
   label: string;
   value: string;

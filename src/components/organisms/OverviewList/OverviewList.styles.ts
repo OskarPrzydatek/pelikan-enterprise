@@ -16,6 +16,18 @@ export const OverviewListWrapper = styled.ul`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  li {
+    margin-bottom: ${({ theme }) => theme.spaces.m};
+  }
+
+  @media ${({ theme }) => theme.breakpoints.tablet} {
+    width: 90%;
+  }
+
+  @media ${({ theme }) => theme.breakpoints.desktop} {
+    width: 80%;
+  }
 `;
 
 export const Pagination = styled.div`
@@ -23,6 +35,10 @@ export const Pagination = styled.div`
   padding: ${({ theme }) => theme.spaces.l};
   margin-bottom: ${({ theme }) => theme.spaces.xl};
   gap: ${({ theme }) => theme.spaces.xxl};
+
+  p {
+    font-size: ${({ theme }) => theme.fontSizes.m};
+  }
 `;
 
 export const prevArrowCSS = css`

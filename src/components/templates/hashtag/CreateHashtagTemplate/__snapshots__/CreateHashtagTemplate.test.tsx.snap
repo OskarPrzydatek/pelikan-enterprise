@@ -6,7 +6,7 @@ exports[`CreateHashtagTemplate > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-jcMfQk hvDKFw"
+        class="sc-iTFTee cnCkmL"
       >
         <form
           class="sc-pyfCe rsgVC"
@@ -42,7 +42,7 @@ exports[`CreateHashtagTemplate > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-jcMfQk hvDKFw"
+      class="sc-iTFTee cnCkmL"
     >
       <form
         class="sc-pyfCe rsgVC"

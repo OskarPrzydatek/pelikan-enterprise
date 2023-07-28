@@ -3,6 +3,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 export const GlobalStyleLayout = createGlobalStyle`
   * {
 		box-sizing: border-box;
+    outline: none;
 	} 
 
   body {

@@ -2,20 +2,25 @@ import { Button, Header, Icon, Text } from '~/components/atoms';
 import { Icons } from '~/constants';
 
 import * as S from './OverviewList.styles';
+import { OverviewListItem } from './OverviewListItem/OverviewListItem';
 
 interface IOverviewList {
   title: string;
+  items: { id: number; name: string }[];
   noItemsLabel: string;
-  page?: string;
   navigateLabel: string;
+  page?: string;
+  onClickItem: (id: number) => void;
   onClickNavigate: () => void;
 }
 
 export const OverviewList: React.FC<IOverviewList> = ({
   title,
+  items,
   noItemsLabel,
-  page,
   navigateLabel,
+  page,
+  onClickItem,
   onClickNavigate,
 }: IOverviewList) => {
   const currentPage = page ?? '1';
@@ -24,9 +29,22 @@ export const OverviewList: React.FC<IOverviewList> = ({
     <S.OverviewList>
       <Header>{title}</Header>
       <S.OverviewListWrapper>
-        <li>
-          <Text>{noItemsLabel}</Text>
-        </li>
+        {items.length > 0 ? (
+          <>
+            {items.map(({ id, name }) => (
+              <OverviewListItem
+                key={`${id}-${name}`}
+                buttonDataTestID={`overview-list-item-${id}`}
+                name={name}
+                onClickNavigate={() => onClickItem(id)}
+              />
+            ))}
+          </>
+        ) : (
+          <li data-testid="no-items-label">
+            <Text>{noItemsLabel}</Text>
+          </li>
+        )}
       </S.OverviewListWrapper>
       <S.Pagination>
         <Icon css={S.prevArrowCSS} icon={Icons.ARROW} onClick={() => {}} />
