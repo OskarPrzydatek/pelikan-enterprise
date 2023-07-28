@@ -6,26 +6,22 @@ import { StyledComponentsProvider } from '~/providers';
 
 import { HamburgerMenu } from './HamburgerMenu';
 
+const MockHamburgerMenu = () => (
+  <BrowserRouter>
+    <StyledComponentsProvider>
+      <HamburgerMenu />
+    </StyledComponentsProvider>
+  </BrowserRouter>
+);
+
 describe('Button', () => {
   test('component snapshot', () => {
-    const view = render(
-      <BrowserRouter>
-        <StyledComponentsProvider>
-          <HamburgerMenu />
-        </StyledComponentsProvider>
-      </BrowserRouter>
-    );
+    const view = render(<MockHamburgerMenu />);
     expect(view).toMatchSnapshot();
   });
 
   test('ensure side menu opening and closing correctly', () => {
-    render(
-      <BrowserRouter>
-        <StyledComponentsProvider>
-          <HamburgerMenu />
-        </StyledComponentsProvider>
-      </BrowserRouter>
-    );
+    render(<MockHamburgerMenu />);
     fireEvent.click(screen.getByTestId('side-menu-hamburger-icon'));
     expect(screen.getByTestId('hamburger-menu-side-menu')).toBeInTheDocument();
     fireEvent.click(screen.getByTestId('side-menu-close-icon'));
@@ -35,13 +31,7 @@ describe('Button', () => {
   });
 
   test('ensure side menu navigate to correct page', () => {
-    render(
-      <BrowserRouter>
-        <StyledComponentsProvider>
-          <HamburgerMenu />
-        </StyledComponentsProvider>
-      </BrowserRouter>
-    );
+    render(<MockHamburgerMenu />);
     fireEvent.click(screen.getByTestId('side-menu-hamburger-icon'));
     fireEvent.click(screen.getByTestId('side-menu-item-offer-overview'));
     expect(

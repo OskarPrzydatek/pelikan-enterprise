@@ -7,20 +7,22 @@ import { Form } from './Form';
 
 const mockOnSubmit = vi.fn();
 
+const MockForm = () => (
+  <StyledComponentsProvider>
+    <Form
+      methods={undefined}
+      submitLabel="Submit label"
+      title="Form title"
+      onSubmit={mockOnSubmit}
+    >
+      <input />
+    </Form>
+  </StyledComponentsProvider>
+);
+
 describe('Form', () => {
   test('component snapshot', () => {
-    const view = render(
-      <StyledComponentsProvider>
-        <Form
-          methods={undefined}
-          submitLabel="Submit label"
-          title="Form title"
-          onSubmit={mockOnSubmit}
-        >
-          <input />
-        </Form>
-      </StyledComponentsProvider>
-    );
+    const view = render(<MockForm />);
     expect(view).toMatchSnapshot();
   });
 });

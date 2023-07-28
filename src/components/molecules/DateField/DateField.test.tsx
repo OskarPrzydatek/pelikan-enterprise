@@ -11,22 +11,19 @@ describe('TextField', () => {
 
   test('ensure date field label works correctly', () => {
     render(<DateFieldHelper />);
-    const input: HTMLInputElement = screen.getByTestId('molecule-datefield');
-    expect(
-      screen.queryByTestId('molecule-datefield-label')
-    ).not.toBeInTheDocument();
-    fireEvent.focus(input);
-    expect(screen.getByTestId('molecule-datefield-label')).toBeInTheDocument();
-    fireEvent.blur(input);
-    expect(
-      screen.queryByTestId('molecule-datefield-label')
-    ).not.toBeInTheDocument();
-    fireEvent.change(input, { target: { value: '2020-05-24' } });
-    expect(screen.getByTestId('molecule-datefield-label')).toBeInTheDocument();
-    fireEvent.change(input, { target: { value: '' } });
-    expect(
-      screen.queryByTestId('molecule-datefield-label')
-    ).not.toBeInTheDocument();
+    const date: HTMLInputElement = screen.getByTestId('molecule-datefield');
+    const getDateLabel = () => screen.getByTestId('molecule-datefield-label');
+    const queryForDateLabel = () =>
+      screen.queryByTestId('molecule-datefield-label');
+    expect(queryForDateLabel()).not.toBeInTheDocument();
+    fireEvent.focus(date);
+    expect(getDateLabel()).toBeInTheDocument();
+    fireEvent.blur(date);
+    expect(queryForDateLabel()).not.toBeInTheDocument();
+    fireEvent.change(date, { target: { value: '2020-05-24' } });
+    expect(getDateLabel()).toBeInTheDocument();
+    fireEvent.change(date, { target: { value: '' } });
+    expect(queryForDateLabel()).not.toBeInTheDocument();
   });
 
   test('ensure date cant be put by user via keyboard', () => {

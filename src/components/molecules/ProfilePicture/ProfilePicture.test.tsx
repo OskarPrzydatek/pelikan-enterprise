@@ -5,13 +5,15 @@ import { StyledComponentsProvider } from '~/providers';
 
 import { ProfilePicture } from './ProfilePicture';
 
+const MockProfilePicture = () => (
+  <StyledComponentsProvider>
+    <ProfilePicture label="Witaj User" />
+  </StyledComponentsProvider>
+);
+
 describe('ProfilePicture', () => {
   test('component snapshot', () => {
-    const view = render(
-      <StyledComponentsProvider>
-        <ProfilePicture label="Witaj User" />
-      </StyledComponentsProvider>
-    );
+    const view = render(<MockProfilePicture />);
     expect(view).toMatchSnapshot();
   });
 });

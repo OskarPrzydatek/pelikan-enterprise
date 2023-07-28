@@ -8,7 +8,7 @@ import { OverviewList } from './OverviewList';
 const mockOnClickItem = vi.fn();
 const mockOnClickNavigate = vi.fn();
 
-const EmptyOverviewList = () => (
+const MockOverviewListEmpty = () => (
   <StyledComponentsProvider>
     <OverviewList
       items={[]}
@@ -22,7 +22,7 @@ const EmptyOverviewList = () => (
   </StyledComponentsProvider>
 );
 
-const AttractionOverviewList = ({ page }: { page?: string | undefined }) => (
+const MockOverviewListWithData = ({ page }: { page?: string | undefined }) => (
   <StyledComponentsProvider>
     <OverviewList
       navigateLabel="Dodaj atrakcję"
@@ -44,26 +44,26 @@ const AttractionOverviewList = ({ page }: { page?: string | undefined }) => (
 
 describe('OverviewList', () => {
   test('component snapshot', () => {
-    const view = render(<AttractionOverviewList />);
+    const view = render(<MockOverviewListWithData />);
     expect(view).toMatchSnapshot();
   });
 
   test('ensure no items label renders when there is no items', () => {
-    render(<EmptyOverviewList />);
+    render(<MockOverviewListEmpty />);
     expect(screen.getByTestId('no-items-label')).toBeInTheDocument();
   });
 
   test('ensure overview list item after click triggers onClickItem function', () => {
-    render(<AttractionOverviewList />);
+    render(<MockOverviewListWithData />);
     fireEvent.click(screen.getByTestId('overview-list-item-1'));
     expect(mockOnClickItem).toHaveBeenCalledWith(1);
   });
 
   test('ensure current page is one when is undefined', () => {
-    const { rerender } = render(<AttractionOverviewList page={undefined} />);
+    const { rerender } = render(<MockOverviewListWithData page={undefined} />);
     const paginationCounter = screen.getByTestId('pagination-counter');
     expect(paginationCounter).toHaveTextContent('1 / X');
-    rerender(<AttractionOverviewList page="2" />);
+    rerender(<MockOverviewListWithData page="2" />);
     expect(paginationCounter).toHaveTextContent('2 / X');
   });
 });
