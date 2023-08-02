@@ -4,12 +4,12 @@ import useSWR from 'swr';
 import { fetchGet } from '~/api';
 import { OfferOverviewTemplate } from '~/components/templates';
 import { Endpoints, Slugs } from '~/constants';
-import { IOffer } from '~/models';
+import { IOfferItem } from '~/models';
 
 export const OfferOverviewPage: React.FC = () => {
   const { page } = useParams();
   const navigate = useNavigate();
-  const { data, error, isLoading } = useSWR<IOffer[], Error>(
+  const { data, error, isLoading } = useSWR<IOfferItem[], Error>(
     Endpoints.OFFERS_LIST,
     fetchGet
   );
@@ -21,16 +21,10 @@ export const OfferOverviewPage: React.FC = () => {
 
   return (
     <OfferOverviewTemplate
+      data={data}
       error={error}
       isLoading={isLoading}
       page={page}
-      items={[
-        { id: 1, name: 'offer1' },
-        { id: 2, name: 'offer2' },
-        { id: 3, name: 'offer3' },
-        { id: 4, name: 'offer4' },
-        { id: 5, name: 'offer5' },
-      ]}
       onClickItem={onClickNavigateToEditOffer}
       onClickNavigate={onClickNavigateToCreateOffer}
     />

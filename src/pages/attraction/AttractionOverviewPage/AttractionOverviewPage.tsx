@@ -4,12 +4,12 @@ import useSWR from 'swr';
 import { fetchGet } from '~/api';
 import { AttractionOverviewTemplate } from '~/components/templates';
 import { Endpoints, Slugs } from '~/constants';
-import { IAttraction } from '~/models';
+import { IAttractionItem } from '~/models';
 
 export const AttractionOverviewPage: React.FC = () => {
   const { page } = useParams();
   const navigate = useNavigate();
-  const { data, error, isLoading } = useSWR<IAttraction[], Error>(
+  const { data, error, isLoading } = useSWR<IAttractionItem[], Error>(
     Endpoints.ATTRACTIONS_LIST,
     fetchGet
   );
@@ -22,16 +22,10 @@ export const AttractionOverviewPage: React.FC = () => {
 
   return (
     <AttractionOverviewTemplate
+      data={data}
       error={error}
       isLoading={isLoading}
       page={page}
-      items={[
-        { id: 1, name: 'attraction1' },
-        { id: 2, name: 'attraction2' },
-        { id: 3, name: 'attraction3' },
-        { id: 4, name: 'attraction4' },
-        { id: 5, name: 'attraction5' },
-      ]}
       onClickItem={onClickNavigateToEditAtraction}
       onClickNavigate={onClickNavigateToCreateAttraction}
     />

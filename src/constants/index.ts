@@ -10,15 +10,15 @@ export enum Icons {
 export enum Slugs {
   ATTRACTION_OVERVIEW = 'attraction-overview',
   CREATE_ATTRACTION = 'create-attraction',
-  EDIT_ATTRACTION = 'edit-attraction/:id',
+  EDIT_ATTRACTION = 'edit-attraction',
 
   HASHTAG_OVERVIEW = 'hashtag-overview',
   CREATE_HASHTAG = 'create-hashtag',
-  EDIT_HASHTAG = 'edit-hashtag/:id',
+  EDIT_HASHTAG = 'edit-hashtag',
 
   HOTEL_OVERVIEW = 'hotel-overview',
   CREATE_HOTEL = 'create-hotel',
-  EDIT_HOTEL = 'edit-hotel/:id',
+  EDIT_HOTEL = 'edit-hotel',
 
   OFFER_OVERVIEW = 'offer-overview',
   CREATE_OFFER = 'create-offer',
@@ -26,7 +26,7 @@ export enum Slugs {
 
   TRANSPORT_OVERVIEW = 'transport-overview',
   CREATE_TRANSPORT = 'create-transport',
-  EDIT_TRANSPORT = 'edit-transport/:id',
+  EDIT_TRANSPORT = 'edit-transport',
 
   ID = ':id',
   PAGE = ':page',

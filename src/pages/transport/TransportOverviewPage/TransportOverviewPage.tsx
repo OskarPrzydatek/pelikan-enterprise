@@ -4,12 +4,12 @@ import useSWR from 'swr';
 import { fetchGet } from '~/api';
 import { TransportOverviewTemplate } from '~/components/templates';
 import { Endpoints, Slugs } from '~/constants';
-import { ITransport } from '~/models';
+import { ITransportItem } from '~/models';
 
 export const TransportOverviewPage: React.FC = () => {
   const { page } = useParams();
   const navigate = useNavigate();
-  const { data, error, isLoading } = useSWR<ITransport[], Error>(
+  const { data, error, isLoading } = useSWR<ITransportItem[], Error>(
     Endpoints.TRANSPORTS_LIST,
     fetchGet
   );
@@ -22,16 +22,10 @@ export const TransportOverviewPage: React.FC = () => {
 
   return (
     <TransportOverviewTemplate
+      data={data}
       error={error}
       isLoading={isLoading}
       page={page}
-      items={[
-        { id: 1, name: 'transport1' },
-        { id: 2, name: 'transport2' },
-        { id: 3, name: 'transport3' },
-        { id: 4, name: 'transport4' },
-        { id: 5, name: 'transport5' },
-      ]}
       onClickItem={onClickNavigateToEditTransport}
       onClickNavigate={onClickNavigateToCreateTransport}
     />

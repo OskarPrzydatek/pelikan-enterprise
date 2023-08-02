@@ -1,46 +1,36 @@
+import React from 'react';
+
 import { Button, Header, Icon, Text } from '~/components/atoms';
 import { Icons } from '~/constants';
-import { Item } from '~/models';
 
 import * as S from './OverviewList.styles';
-import { OverviewListItem } from './OverviewListItem/OverviewListItem';
 
 interface IOverviewList {
   title: string;
-  items: Item[];
   noItemsLabel: string;
   navigateLabel: string;
+  children?: React.ReactNode;
   page?: string;
-  onClickItem: (id: number) => void;
   onClickNavigate: () => void;
 }
 
 export const OverviewList: React.FC<IOverviewList> = ({
   title,
-  items,
   noItemsLabel,
   navigateLabel,
+  children,
   page,
-  onClickItem,
   onClickNavigate,
 }: IOverviewList) => {
   const currentPage = page ?? '1';
+  const itemsLength = React.Children.count(children);
 
   return (
     <S.OverviewList>
       <Header>{title}</Header>
       <S.OverviewListWrapper>
-        {items.length > 0 ? (
-          <>
-            {items.map(({ id, name }) => (
-              <OverviewListItem
-                key={`${id}-${name}`}
-                buttonDataTestID={`overview-list-item-${id}`}
-                name={name}
-                onClickNavigate={() => onClickItem(id)}
-              />
-            ))}
-          </>
+        {itemsLength > 0 ? (
+          children
         ) : (
           <li data-testid="no-items-label">
             <Text>{noItemsLabel}</Text>

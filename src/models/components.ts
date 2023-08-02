@@ -15,7 +15,6 @@ export interface Item {
 }
 
 export interface IOverviewTemplate {
-  items: Item[];
   isLoading: boolean;
   error: Error | undefined;
   page?: string;

@@ -6,7 +6,7 @@ exports[`HeaderBar > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <header
-        class="sc-ilhmMj joOaFA"
+        class="sc-hhOBVt hDiefk"
       >
         <button
           class="sc-jSUZER eNWyGN"
@@ -44,7 +44,7 @@ exports[`HeaderBar > component snapshot 1`] = `
           </svg>
         </button>
         <div
-          class="sc-eDWCr dPQFcV"
+          class="sc-ksBlkl nbWcP"
         >
           <p
             class="sc-pyfCe lizSwY"
@@ -53,7 +53,7 @@ exports[`HeaderBar > component snapshot 1`] = `
           </p>
           <img
             alt="default profile picture"
-            class="sc-bqWxrE depSan"
+            class="sc-hBxehG kvxWvA"
             src="/src/assets/png/profile_picture.png"
           />
         </div>
@@ -62,7 +62,7 @@ exports[`HeaderBar > component snapshot 1`] = `
   </body>,
   "container": <div>
     <header
-      class="sc-ilhmMj joOaFA"
+      class="sc-hhOBVt hDiefk"
     >
       <button
         class="sc-jSUZER eNWyGN"
@@ -100,7 +100,7 @@ exports[`HeaderBar > component snapshot 1`] = `
         </svg>
       </button>
       <div
-        class="sc-eDWCr dPQFcV"
+        class="sc-ksBlkl nbWcP"
       >
         <p
           class="sc-pyfCe lizSwY"
@@ -109,7 +109,7 @@ exports[`HeaderBar > component snapshot 1`] = `
         </p>
         <img
           alt="default profile picture"
-          class="sc-bqWxrE depSan"
+          class="sc-hBxehG kvxWvA"
           src="/src/assets/png/profile_picture.png"
         />
       </div>

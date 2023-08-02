@@ -4,12 +4,12 @@ import useSWR from 'swr';
 import { fetchGet } from '~/api';
 import { HotelOverviewTemplate } from '~/components/templates';
 import { Endpoints, Slugs } from '~/constants';
-import { IHotel } from '~/models';
+import { IHotelItem } from '~/models';
 
 export const HotelOverviewPage: React.FC = () => {
   const { page } = useParams();
   const navigate = useNavigate();
-  const { data, error, isLoading } = useSWR<IHotel[], Error>(
+  const { data, error, isLoading } = useSWR<IHotelItem[], Error>(
     Endpoints.HOTELS_LIST,
     fetchGet
   );
@@ -21,16 +21,10 @@ export const HotelOverviewPage: React.FC = () => {
 
   return (
     <HotelOverviewTemplate
+      data={data}
       error={error}
       isLoading={isLoading}
       page={page}
-      items={[
-        { id: 1, name: 'hotel1' },
-        { id: 2, name: 'hotel2' },
-        { id: 3, name: 'hotel3' },
-        { id: 4, name: 'hotel4' },
-        { id: 5, name: 'hotel5' },
-      ]}
       onClickItem={onClickNavigateToEditHotel}
       onClickNavigate={onClickNavigateToCreateHotel}
     />

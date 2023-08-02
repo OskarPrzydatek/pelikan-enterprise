@@ -1,27 +1,41 @@
+import { OverviewListItem } from '~/components/molecules';
 import { OverviewList, PageLayout } from '~/components/organisms';
-import { IOverviewTemplate } from '~/models';
+import { IOfferItem, IOverviewTemplate } from '~/models';
 
-interface IOfferOverviewTemplate extends IOverviewTemplate {}
+interface IOfferOverviewTemplate extends IOverviewTemplate {
+  data: IOfferItem[] | undefined;
+}
 
 export const OfferOverviewTemplate: React.FC<IOfferOverviewTemplate> = ({
-  items,
+  data,
   page,
   isLoading,
   error,
   onClickItem,
   onClickNavigate,
 }: IOfferOverviewTemplate) => {
+  const { isArray } = Array;
+
   return (
     <PageLayout error={error} isLoading={isLoading}>
       <OverviewList
-        items={items}
         navigateLabel="Dodaj ofertę"
         noItemsLabel="Brak ofert w systemie"
         page={page}
         title="Oferty"
-        onClickItem={onClickItem}
         onClickNavigate={onClickNavigate}
-      />
+      >
+        {isArray(data)
+          ? data.map(({ id, name }) => (
+              <OverviewListItem
+                key={`${id}-${name}`}
+                buttonDataTestID={`overview-overview-list-item-${id}`}
+                name={name}
+                onClickNavigate={() => onClickItem(id)}
+              />
+            ))
+          : null}
+      </OverviewList>
     </PageLayout>
   );
 };

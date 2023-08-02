@@ -1,27 +1,41 @@
+import { OverviewListItem } from '~/components/molecules';
 import { OverviewList, PageLayout } from '~/components/organisms';
-import { IOverviewTemplate } from '~/models';
+import { IHashtagItem, IOverviewTemplate } from '~/models';
 
-interface IHashtagOverviewTemplate extends IOverviewTemplate {}
+interface IHashtagOverviewTemplate extends IOverviewTemplate {
+  data: IHashtagItem[] | undefined;
+}
 
 export const HashtagOverviewTemplate: React.FC<IHashtagOverviewTemplate> = ({
-  items,
+  data,
   isLoading,
   error,
   page,
   onClickItem,
   onClickNavigate,
 }: IHashtagOverviewTemplate) => {
+  const { isArray } = Array;
+
   return (
     <PageLayout error={error} isLoading={isLoading}>
       <OverviewList
-        items={items}
         navigateLabel="Dodaj hashtag"
         noItemsLabel="Brak hashtagów w systemie"
         page={page}
         title="Hashtagi"
-        onClickItem={onClickItem}
         onClickNavigate={onClickNavigate}
-      />
+      >
+        {isArray(data)
+          ? data.map(({ id, name }) => (
+              <OverviewListItem
+                key={`${id}-${name}`}
+                buttonDataTestID={`hashtag-overview-list-item-${id}`}
+                name={name}
+                onClickNavigate={() => onClickItem(id)}
+              />
+            ))
+          : null}
+      </OverviewList>
     </PageLayout>
   );
 };
