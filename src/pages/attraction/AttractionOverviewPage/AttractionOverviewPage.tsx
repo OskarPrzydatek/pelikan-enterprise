@@ -1,11 +1,18 @@
 import { useNavigate, useParams } from 'react-router-dom';
+import useSWR from 'swr';
 
+import { fetchGet } from '~/api';
 import { AttractionOverviewTemplate } from '~/components/templates';
-import { Slugs } from '~/constants';
+import { Endpoints, Slugs } from '~/constants';
+import { IAttraction } from '~/models';
 
 export const AttractionOverviewPage: React.FC = () => {
   const { page } = useParams();
   const navigate = useNavigate();
+  const { data, error, isLoading } = useSWR<IAttraction[]>(
+    Endpoints.ATTRACTIONS_LIST,
+    fetchGet
+  );
 
   const onClickNavigateToEditAtraction = (id: number) =>
     navigate(`/${Slugs.EDIT_ATTRACTION}/${id}`);

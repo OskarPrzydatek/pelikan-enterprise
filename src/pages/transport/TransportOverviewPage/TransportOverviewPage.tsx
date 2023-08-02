@@ -1,11 +1,18 @@
 import { useNavigate, useParams } from 'react-router-dom';
+import useSWR from 'swr';
 
+import { fetchGet } from '~/api';
 import { TransportOverviewTemplate } from '~/components/templates';
-import { Slugs } from '~/constants';
+import { Endpoints, Slugs } from '~/constants';
+import { ITransport } from '~/models';
 
 export const TransportOverviewPage: React.FC = () => {
   const { page } = useParams();
   const navigate = useNavigate();
+  const { data, error, isLoading } = useSWR<ITransport[]>(
+    Endpoints.TRANSPORTS_LIST,
+    fetchGet
+  );
 
   const onClickNavigateToEditTransport = (id: number) =>
     navigate(`/${Slugs.EDIT_TRANSPORT}/${id}`);

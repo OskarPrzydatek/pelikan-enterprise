@@ -1,11 +1,18 @@
 import { useNavigate, useParams } from 'react-router-dom';
+import useSWR from 'swr';
 
+import { fetchGet } from '~/api';
 import { HotelOverviewTemplate } from '~/components/templates';
-import { Slugs } from '~/constants';
+import { Endpoints, Slugs } from '~/constants';
+import { IHotel } from '~/models';
 
 export const HotelOverviewPage: React.FC = () => {
   const { page } = useParams();
   const navigate = useNavigate();
+  const { data, error, isLoading } = useSWR<IHotel[]>(
+    Endpoints.HOTELS_LIST,
+    fetchGet
+  );
 
   const onClickNavigateToEditHotel = (id: number) =>
     navigate(`/${Slugs.EDIT_HOTEL}/${id}`);
