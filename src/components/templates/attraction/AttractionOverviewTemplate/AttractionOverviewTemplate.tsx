@@ -1,5 +1,5 @@
 import { OverviewListItem } from '~/components/molecules';
-import { OverviewList, PageLayout } from '~/components/organisms';
+import { OverviewList, ErrorBundaryLoader } from '~/components/organisms';
 import { IAttractionItem, IOverviewTemplate } from '~/models';
 
 interface IAttractionOverviewTemplate extends IOverviewTemplate {
@@ -19,7 +19,7 @@ export const AttractionOverviewTemplate: React.FC<
   const { isArray } = Array;
 
   return (
-    <PageLayout error={error} isLoading={isLoading}>
+    <ErrorBundaryLoader error={error} isLoading={isLoading}>
       <OverviewList
         navigateLabel="Dodaj atrakcję"
         noItemsLabel="Brak atrakcji w systemie"
@@ -38,6 +38,6 @@ export const AttractionOverviewTemplate: React.FC<
             ))
           : null}
       </OverviewList>
-    </PageLayout>
+    </ErrorBundaryLoader>
   );
 };

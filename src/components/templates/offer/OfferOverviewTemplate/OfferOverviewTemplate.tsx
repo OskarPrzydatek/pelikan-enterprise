@@ -1,5 +1,5 @@
 import { OverviewListItem } from '~/components/molecules';
-import { OverviewList, PageLayout } from '~/components/organisms';
+import { OverviewList, ErrorBundaryLoader } from '~/components/organisms';
 import { IOfferItem, IOverviewTemplate } from '~/models';
 
 interface IOfferOverviewTemplate extends IOverviewTemplate {
@@ -17,7 +17,7 @@ export const OfferOverviewTemplate: React.FC<IOfferOverviewTemplate> = ({
   const { isArray } = Array;
 
   return (
-    <PageLayout error={error} isLoading={isLoading}>
+    <ErrorBundaryLoader error={error} isLoading={isLoading}>
       <OverviewList
         navigateLabel="Dodaj ofertę"
         noItemsLabel="Brak ofert w systemie"
@@ -36,6 +36,6 @@ export const OfferOverviewTemplate: React.FC<IOfferOverviewTemplate> = ({
             ))
           : null}
       </OverviewList>
-    </PageLayout>
+    </ErrorBundaryLoader>
   );
 };

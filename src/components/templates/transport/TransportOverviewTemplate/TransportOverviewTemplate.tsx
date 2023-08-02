@@ -1,5 +1,5 @@
 import { OverviewListItem } from '~/components/molecules';
-import { OverviewList, PageLayout } from '~/components/organisms';
+import { OverviewList, ErrorBundaryLoader } from '~/components/organisms';
 import { IOverviewTemplate, ITransportItem } from '~/models';
 
 interface ITransportOverviewTemplate extends IOverviewTemplate {
@@ -19,7 +19,7 @@ export const TransportOverviewTemplate: React.FC<
   const { isArray } = Array;
 
   return (
-    <PageLayout error={error} isLoading={isLoading}>
+    <ErrorBundaryLoader error={error} isLoading={isLoading}>
       <OverviewList
         navigateLabel="Dodaj Transport"
         noItemsLabel="Brak transportów w systemie"
@@ -38,6 +38,6 @@ export const TransportOverviewTemplate: React.FC<
             ))
           : null}
       </OverviewList>
-    </PageLayout>
+    </ErrorBundaryLoader>
   );
 };

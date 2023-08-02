@@ -1,31 +1,31 @@
 import { Text } from '~/components/atoms';
 
-import * as S from './PageLayout.styles';
+import * as S from './ErrorBundaryLoader.styles';
 
-interface IPageLayout {
+interface IErrorBundaryLoader {
   isLoading: boolean;
   error: Error | undefined;
   children: React.ReactNode;
 }
 
-export const PageLayout: React.FC<IPageLayout> = ({
+export const ErrorBundaryLoader: React.FC<IErrorBundaryLoader> = ({
   isLoading,
   error,
   children,
-}: IPageLayout) => {
+}: IErrorBundaryLoader) => {
   if (isLoading)
     return (
-      <S.PageLayout>
+      <S.ErrorBundaryLoader>
         <Text dataTestID="page-layout-loading">Ładowanie...</Text>
-      </S.PageLayout>
+      </S.ErrorBundaryLoader>
     );
 
   if (error)
     return (
-      <S.PageLayout>
+      <S.ErrorBundaryLoader>
         <Text dataTestID="page-layout-error">Coś poszło nie tak!</Text>
-      </S.PageLayout>
+      </S.ErrorBundaryLoader>
     );
 
-  return <S.PageLayout>{children}</S.PageLayout>;
+  return <S.ErrorBundaryLoader>{children}</S.ErrorBundaryLoader>;
 };

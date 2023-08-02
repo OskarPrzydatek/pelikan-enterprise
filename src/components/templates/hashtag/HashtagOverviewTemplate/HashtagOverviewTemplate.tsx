@@ -1,5 +1,5 @@
 import { OverviewListItem } from '~/components/molecules';
-import { OverviewList, PageLayout } from '~/components/organisms';
+import { OverviewList, ErrorBundaryLoader } from '~/components/organisms';
 import { IHashtagItem, IOverviewTemplate } from '~/models';
 
 interface IHashtagOverviewTemplate extends IOverviewTemplate {
@@ -17,7 +17,7 @@ export const HashtagOverviewTemplate: React.FC<IHashtagOverviewTemplate> = ({
   const { isArray } = Array;
 
   return (
-    <PageLayout error={error} isLoading={isLoading}>
+    <ErrorBundaryLoader error={error} isLoading={isLoading}>
       <OverviewList
         navigateLabel="Dodaj hashtag"
         noItemsLabel="Brak hashtagów w systemie"
@@ -36,6 +36,6 @@ export const HashtagOverviewTemplate: React.FC<IHashtagOverviewTemplate> = ({
             ))
           : null}
       </OverviewList>
-    </PageLayout>
+    </ErrorBundaryLoader>
   );
 };

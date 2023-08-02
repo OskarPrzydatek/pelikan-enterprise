@@ -1,5 +1,5 @@
 import { OverviewListItem } from '~/components/molecules';
-import { OverviewList, PageLayout } from '~/components/organisms';
+import { OverviewList, ErrorBundaryLoader } from '~/components/organisms';
 import { IHotelItem, IOverviewTemplate } from '~/models';
 
 interface IHotelOverviewTemplate extends IOverviewTemplate {
@@ -17,7 +17,7 @@ export const HotelOverviewTemplate: React.FC<IHotelOverviewTemplate> = ({
   const { isArray } = Array;
 
   return (
-    <PageLayout error={error} isLoading={isLoading}>
+    <ErrorBundaryLoader error={error} isLoading={isLoading}>
       <OverviewList
         navigateLabel="Dodaj hotel"
         noItemsLabel="Brak hoteli w systemie"
@@ -36,6 +36,6 @@ export const HotelOverviewTemplate: React.FC<IHotelOverviewTemplate> = ({
             ))
           : null}
       </OverviewList>
-    </PageLayout>
+    </ErrorBundaryLoader>
   );
 };
