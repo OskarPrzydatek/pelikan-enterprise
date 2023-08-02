@@ -35,6 +35,7 @@ export enum Slugs {
 
 export enum Endpoints {
   ATTRACTIONS_LIST = 'attractions/list',
+  HASHTAGS_LIST = 'hashtags/list',
   HOTELS_LIST = 'hotels/list',
   OFFERS_LIST = 'offers/list',
   TRANSPORTS_LIST = 'transports/list',

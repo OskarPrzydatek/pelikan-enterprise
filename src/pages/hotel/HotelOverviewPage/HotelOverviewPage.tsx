@@ -9,7 +9,7 @@ import { IHotel } from '~/models';
 export const HotelOverviewPage: React.FC = () => {
   const { page } = useParams();
   const navigate = useNavigate();
-  const { data, error, isLoading } = useSWR<IHotel[]>(
+  const { data, error, isLoading } = useSWR<IHotel[], Error>(
     Endpoints.HOTELS_LIST,
     fetchGet
   );
@@ -21,6 +21,8 @@ export const HotelOverviewPage: React.FC = () => {
 
   return (
     <HotelOverviewTemplate
+      error={error}
+      isLoading={isLoading}
       page={page}
       items={[
         { id: 1, name: 'hotel1' },

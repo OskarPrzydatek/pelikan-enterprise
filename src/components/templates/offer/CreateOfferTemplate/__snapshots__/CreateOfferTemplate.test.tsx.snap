@@ -6,7 +6,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-iTFTee cnCkmL"
+        class="sc-iAEawV eSwvqh"
       >
         <form
           class="sc-pyfCe rsgVC"
@@ -197,7 +197,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                 <input
                   class="sc-csuSiG kariyt"
                   data-testid="create-offer-form"
-                  min="2023-07-28"
+                  min="2023-08-02"
                   name="termFrom"
                   type="date"
                 />
@@ -212,7 +212,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                 <input
                   class="sc-csuSiG kariyt"
                   data-testid="create-offer-to"
-                  min="2023-07-28"
+                  min="2023-08-02"
                   name="termTo"
                   type="date"
                 />
@@ -260,7 +260,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-iTFTee cnCkmL"
+      class="sc-iAEawV eSwvqh"
     >
       <form
         class="sc-pyfCe rsgVC"
@@ -451,7 +451,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
               <input
                 class="sc-csuSiG kariyt"
                 data-testid="create-offer-form"
-                min="2023-07-28"
+                min="2023-08-02"
                 name="termFrom"
                 type="date"
               />
@@ -466,7 +466,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
               <input
                 class="sc-csuSiG kariyt"
                 data-testid="create-offer-to"
-                min="2023-07-28"
+                min="2023-08-02"
                 name="termTo"
                 type="date"
               />

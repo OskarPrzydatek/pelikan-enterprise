@@ -9,7 +9,7 @@ import { IOffer } from '~/models';
 export const OfferOverviewPage: React.FC = () => {
   const { page } = useParams();
   const navigate = useNavigate();
-  const { data, error, isLoading } = useSWR<IOffer[]>(
+  const { data, error, isLoading } = useSWR<IOffer[], Error>(
     Endpoints.OFFERS_LIST,
     fetchGet
   );
@@ -21,6 +21,8 @@ export const OfferOverviewPage: React.FC = () => {
 
   return (
     <OfferOverviewTemplate
+      error={error}
+      isLoading={isLoading}
       page={page}
       items={[
         { id: 1, name: 'offer1' },

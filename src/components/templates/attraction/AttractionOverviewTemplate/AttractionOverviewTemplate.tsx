@@ -1,6 +1,5 @@
-import { OverviewList } from '~/components/organisms';
+import { OverviewList, PageLayout } from '~/components/organisms';
 import { IOverviewTemplate } from '~/models';
-import { PageLayout } from '~/styles';
 
 interface IAttractionOverviewTemplate extends IOverviewTemplate {}
 
@@ -9,11 +8,13 @@ export const AttractionOverviewTemplate: React.FC<
 > = ({
   items,
   page,
+  isLoading,
+  error,
   onClickItem,
   onClickNavigate,
 }: IAttractionOverviewTemplate) => {
   return (
-    <PageLayout>
+    <PageLayout error={error} isLoading={isLoading}>
       <OverviewList
         items={items}
         navigateLabel="Dodaj atrakcję"

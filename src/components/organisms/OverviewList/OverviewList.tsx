@@ -1,12 +1,13 @@
 import { Button, Header, Icon, Text } from '~/components/atoms';
 import { Icons } from '~/constants';
+import { Item } from '~/models';
 
 import * as S from './OverviewList.styles';
 import { OverviewListItem } from './OverviewListItem/OverviewListItem';
 
 interface IOverviewList {
   title: string;
-  items: { id: number; name: string }[];
+  items: Item[];
   noItemsLabel: string;
   navigateLabel: string;
   page?: string;

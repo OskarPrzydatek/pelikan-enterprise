@@ -1,78 +1,32 @@
 // Vitest Snapshot v1
 
-exports[`CreateHashtagTemplate > component snapshot 1`] = `
+exports[`PageLayout > component snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-iAEawV eSwvqh"
+        class="sc-jrcTuL cfjGjy"
       >
-        <form
-          class="sc-pyfCe rsgVC"
+        <p
+          class="sc-iBYQkv dFWRTv"
+          data-testid="page-layout-content"
         >
-          <h2
-            class="sc-dkrFOg kaKqDq"
-          >
-            Dodaj hashtag
-          </h2>
-          <div
-            class="sc-idXgbr doOTQv"
-          >
-            <div
-              class="sc-dIfARi fkTxxa"
-            >
-              <input
-                class="sc-hHTYSt fAxxrI"
-                data-testid="create-hashtag-name"
-                id="name"
-                name="name"
-                placeholder="Nazwa hashtagu"
-              />
-            </div>
-          </div>
-          <input
-            class="sc-jrcTuL iZHkcL"
-            type="submit"
-            value="Dodaj"
-          />
-        </form>
+          Content!!!
+        </p>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-iAEawV eSwvqh"
+      class="sc-jrcTuL cfjGjy"
     >
-      <form
-        class="sc-pyfCe rsgVC"
+      <p
+        class="sc-iBYQkv dFWRTv"
+        data-testid="page-layout-content"
       >
-        <h2
-          class="sc-dkrFOg kaKqDq"
-        >
-          Dodaj hashtag
-        </h2>
-        <div
-          class="sc-idXgbr doOTQv"
-        >
-          <div
-            class="sc-dIfARi fkTxxa"
-          >
-            <input
-              class="sc-hHTYSt fAxxrI"
-              data-testid="create-hashtag-name"
-              id="name"
-              name="name"
-              placeholder="Nazwa hashtagu"
-            />
-          </div>
-        </div>
-        <input
-          class="sc-jrcTuL iZHkcL"
-          type="submit"
-          value="Dodaj"
-        />
-      </form>
+        Content!!!
+      </p>
     </div>
   </div>,
   "debug": [Function],

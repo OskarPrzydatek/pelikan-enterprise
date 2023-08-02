@@ -1,17 +1,18 @@
-import { OverviewList } from '~/components/organisms';
+import { OverviewList, PageLayout } from '~/components/organisms';
 import { IOverviewTemplate } from '~/models';
-import { PageLayout } from '~/styles';
 
 interface IOfferOverviewTemplate extends IOverviewTemplate {}
 
 export const OfferOverviewTemplate: React.FC<IOfferOverviewTemplate> = ({
   items,
   page,
+  isLoading,
+  error,
   onClickItem,
   onClickNavigate,
 }: IOfferOverviewTemplate) => {
   return (
-    <PageLayout>
+    <PageLayout error={error} isLoading={isLoading}>
       <OverviewList
         items={items}
         navigateLabel="Dodaj ofertę"

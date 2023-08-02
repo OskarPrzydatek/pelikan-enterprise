@@ -9,7 +9,7 @@ import { ITransport } from '~/models';
 export const TransportOverviewPage: React.FC = () => {
   const { page } = useParams();
   const navigate = useNavigate();
-  const { data, error, isLoading } = useSWR<ITransport[]>(
+  const { data, error, isLoading } = useSWR<ITransport[], Error>(
     Endpoints.TRANSPORTS_LIST,
     fetchGet
   );
@@ -22,6 +22,8 @@ export const TransportOverviewPage: React.FC = () => {
 
   return (
     <TransportOverviewTemplate
+      error={error}
+      isLoading={isLoading}
       page={page}
       items={[
         { id: 1, name: 'transport1' },

@@ -9,7 +9,7 @@ import { IAttraction } from '~/models';
 export const AttractionOverviewPage: React.FC = () => {
   const { page } = useParams();
   const navigate = useNavigate();
-  const { data, error, isLoading } = useSWR<IAttraction[]>(
+  const { data, error, isLoading } = useSWR<IAttraction[], Error>(
     Endpoints.ATTRACTIONS_LIST,
     fetchGet
   );
@@ -22,6 +22,8 @@ export const AttractionOverviewPage: React.FC = () => {
 
   return (
     <AttractionOverviewTemplate
+      error={error}
+      isLoading={isLoading}
       page={page}
       items={[
         { id: 1, name: 'attraction1' },

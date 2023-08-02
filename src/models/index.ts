@@ -1,4 +1,5 @@
 export type { IComponent } from './components';
+export type { Item } from './components';
 export type { IOverviewTemplate } from './components';
 export type { ISelectOption } from './components';
 

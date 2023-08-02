@@ -1,6 +1,5 @@
-import { OverviewList } from '~/components/organisms';
+import { OverviewList, PageLayout } from '~/components/organisms';
 import { IOverviewTemplate } from '~/models';
-import { PageLayout } from '~/styles';
 
 interface ITransportOverviewTemplate extends IOverviewTemplate {}
 
@@ -8,12 +7,14 @@ export const TransportOverviewTemplate: React.FC<
   ITransportOverviewTemplate
 > = ({
   items,
+  isLoading,
+  error,
   page,
   onClickItem,
   onClickNavigate,
 }: ITransportOverviewTemplate) => {
   return (
-    <PageLayout>
+    <PageLayout error={error} isLoading={isLoading}>
       <OverviewList
         items={items}
         navigateLabel="Dodaj Transport"

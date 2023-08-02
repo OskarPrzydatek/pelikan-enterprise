@@ -17,10 +17,10 @@ exports[`OverviewList > component snapshot 1`] = `
           class="sc-kDvujY evuzin"
         >
           <li
-            class="sc-csuSiG iFLdla"
+            class="sc-csuSiG bTpckU"
           >
             <button
-              class="sc-hLBbgP drIwCV"
+              class="sc-hLBbgP grCgBk"
               data-testid="overview-list-item-1"
             >
               attraction1
@@ -105,10 +105,10 @@ exports[`OverviewList > component snapshot 1`] = `
             </div>
           </li>
           <li
-            class="sc-csuSiG iFLdla"
+            class="sc-csuSiG bTpckU"
           >
             <button
-              class="sc-hLBbgP drIwCV"
+              class="sc-hLBbgP grCgBk"
               data-testid="overview-list-item-2"
             >
               attraction2
@@ -193,10 +193,10 @@ exports[`OverviewList > component snapshot 1`] = `
             </div>
           </li>
           <li
-            class="sc-csuSiG iFLdla"
+            class="sc-csuSiG bTpckU"
           >
             <button
-              class="sc-hLBbgP drIwCV"
+              class="sc-hLBbgP grCgBk"
               data-testid="overview-list-item-3"
             >
               attraction3
@@ -281,10 +281,10 @@ exports[`OverviewList > component snapshot 1`] = `
             </div>
           </li>
           <li
-            class="sc-csuSiG iFLdla"
+            class="sc-csuSiG bTpckU"
           >
             <button
-              class="sc-hLBbgP drIwCV"
+              class="sc-hLBbgP grCgBk"
               data-testid="overview-list-item-4"
             >
               attraction4
@@ -369,10 +369,10 @@ exports[`OverviewList > component snapshot 1`] = `
             </div>
           </li>
           <li
-            class="sc-csuSiG iFLdla"
+            class="sc-csuSiG bTpckU"
           >
             <button
-              class="sc-hLBbgP drIwCV"
+              class="sc-hLBbgP grCgBk"
               data-testid="overview-list-item-5"
             >
               attraction5
@@ -501,7 +501,7 @@ exports[`OverviewList > component snapshot 1`] = `
           </button>
         </div>
         <button
-          class="sc-hLBbgP fxgbmT"
+          class="sc-hLBbgP kQYyQS"
         >
           Dodaj atrakcję
         </button>
@@ -521,10 +521,10 @@ exports[`OverviewList > component snapshot 1`] = `
         class="sc-kDvujY evuzin"
       >
         <li
-          class="sc-csuSiG iFLdla"
+          class="sc-csuSiG bTpckU"
         >
           <button
-            class="sc-hLBbgP drIwCV"
+            class="sc-hLBbgP grCgBk"
             data-testid="overview-list-item-1"
           >
             attraction1
@@ -609,10 +609,10 @@ exports[`OverviewList > component snapshot 1`] = `
           </div>
         </li>
         <li
-          class="sc-csuSiG iFLdla"
+          class="sc-csuSiG bTpckU"
         >
           <button
-            class="sc-hLBbgP drIwCV"
+            class="sc-hLBbgP grCgBk"
             data-testid="overview-list-item-2"
           >
             attraction2
@@ -697,10 +697,10 @@ exports[`OverviewList > component snapshot 1`] = `
           </div>
         </li>
         <li
-          class="sc-csuSiG iFLdla"
+          class="sc-csuSiG bTpckU"
         >
           <button
-            class="sc-hLBbgP drIwCV"
+            class="sc-hLBbgP grCgBk"
             data-testid="overview-list-item-3"
           >
             attraction3
@@ -785,10 +785,10 @@ exports[`OverviewList > component snapshot 1`] = `
           </div>
         </li>
         <li
-          class="sc-csuSiG iFLdla"
+          class="sc-csuSiG bTpckU"
         >
           <button
-            class="sc-hLBbgP drIwCV"
+            class="sc-hLBbgP grCgBk"
             data-testid="overview-list-item-4"
           >
             attraction4
@@ -873,10 +873,10 @@ exports[`OverviewList > component snapshot 1`] = `
           </div>
         </li>
         <li
-          class="sc-csuSiG iFLdla"
+          class="sc-csuSiG bTpckU"
         >
           <button
-            class="sc-hLBbgP drIwCV"
+            class="sc-hLBbgP grCgBk"
             data-testid="overview-list-item-5"
           >
             attraction5
@@ -1005,7 +1005,7 @@ exports[`OverviewList > component snapshot 1`] = `
         </button>
       </div>
       <button
-        class="sc-hLBbgP fxgbmT"
+        class="sc-hLBbgP kQYyQS"
       >
         Dodaj atrakcję
       </button>

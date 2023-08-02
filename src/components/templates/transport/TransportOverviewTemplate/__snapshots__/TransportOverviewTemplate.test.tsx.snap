@@ -20,10 +20,10 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
             class="sc-cjibBx sUTbw"
           >
             <li
-              class="sc-cabOPr isUvJn"
+              class="sc-cabOPr eVjsjV"
             >
               <button
-                class="sc-hLBbgP drIwCV"
+                class="sc-hLBbgP grCgBk"
                 data-testid="overview-list-item-1"
               >
                 transport1
@@ -108,10 +108,10 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
               </div>
             </li>
             <li
-              class="sc-cabOPr isUvJn"
+              class="sc-cabOPr eVjsjV"
             >
               <button
-                class="sc-hLBbgP drIwCV"
+                class="sc-hLBbgP grCgBk"
                 data-testid="overview-list-item-2"
               >
                 transport2
@@ -196,10 +196,10 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
               </div>
             </li>
             <li
-              class="sc-cabOPr isUvJn"
+              class="sc-cabOPr eVjsjV"
             >
               <button
-                class="sc-hLBbgP drIwCV"
+                class="sc-hLBbgP grCgBk"
                 data-testid="overview-list-item-3"
               >
                 transport3
@@ -284,10 +284,10 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
               </div>
             </li>
             <li
-              class="sc-cabOPr isUvJn"
+              class="sc-cabOPr eVjsjV"
             >
               <button
-                class="sc-hLBbgP drIwCV"
+                class="sc-hLBbgP grCgBk"
                 data-testid="overview-list-item-4"
               >
                 transport4
@@ -372,10 +372,10 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
               </div>
             </li>
             <li
-              class="sc-cabOPr isUvJn"
+              class="sc-cabOPr eVjsjV"
             >
               <button
-                class="sc-hLBbgP drIwCV"
+                class="sc-hLBbgP grCgBk"
                 data-testid="overview-list-item-5"
               >
                 transport5
@@ -504,7 +504,7 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
             </button>
           </div>
           <button
-            class="sc-hLBbgP fxgbmT"
+            class="sc-hLBbgP kQYyQS"
           >
             Dodaj Transport
           </button>
@@ -528,10 +528,10 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
           class="sc-cjibBx sUTbw"
         >
           <li
-            class="sc-cabOPr isUvJn"
+            class="sc-cabOPr eVjsjV"
           >
             <button
-              class="sc-hLBbgP drIwCV"
+              class="sc-hLBbgP grCgBk"
               data-testid="overview-list-item-1"
             >
               transport1
@@ -616,10 +616,10 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
             </div>
           </li>
           <li
-            class="sc-cabOPr isUvJn"
+            class="sc-cabOPr eVjsjV"
           >
             <button
-              class="sc-hLBbgP drIwCV"
+              class="sc-hLBbgP grCgBk"
               data-testid="overview-list-item-2"
             >
               transport2
@@ -704,10 +704,10 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
             </div>
           </li>
           <li
-            class="sc-cabOPr isUvJn"
+            class="sc-cabOPr eVjsjV"
           >
             <button
-              class="sc-hLBbgP drIwCV"
+              class="sc-hLBbgP grCgBk"
               data-testid="overview-list-item-3"
             >
               transport3
@@ -792,10 +792,10 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
             </div>
           </li>
           <li
-            class="sc-cabOPr isUvJn"
+            class="sc-cabOPr eVjsjV"
           >
             <button
-              class="sc-hLBbgP drIwCV"
+              class="sc-hLBbgP grCgBk"
               data-testid="overview-list-item-4"
             >
               transport4
@@ -880,10 +880,10 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
             </div>
           </li>
           <li
-            class="sc-cabOPr isUvJn"
+            class="sc-cabOPr eVjsjV"
           >
             <button
-              class="sc-hLBbgP drIwCV"
+              class="sc-hLBbgP grCgBk"
               data-testid="overview-list-item-5"
             >
               transport5
@@ -1012,7 +1012,7 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
           </button>
         </div>
         <button
-          class="sc-hLBbgP fxgbmT"
+          class="sc-hLBbgP kQYyQS"
         >
           Dodaj Transport
         </button>

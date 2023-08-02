@@ -1,17 +1,18 @@
-import { OverviewList } from '~/components/organisms';
+import { OverviewList, PageLayout } from '~/components/organisms';
 import { IOverviewTemplate } from '~/models';
-import { PageLayout } from '~/styles';
 
 interface IHotelOverviewTemplate extends IOverviewTemplate {}
 
 export const HotelOverviewTemplate: React.FC<IHotelOverviewTemplate> = ({
   items,
+  isLoading,
+  error,
   page,
   onClickItem,
   onClickNavigate,
 }: IHotelOverviewTemplate) => {
   return (
-    <PageLayout>
+    <PageLayout error={error} isLoading={isLoading}>
       <OverviewList
         items={items}
         navigateLabel="Dodaj hotel"

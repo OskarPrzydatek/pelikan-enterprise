@@ -9,13 +9,15 @@ export interface IComponent {
   dataTestID?: string;
 }
 
-interface Item {
+export interface Item {
   id: number;
   name: string;
 }
 
 export interface IOverviewTemplate {
   items: Item[];
+  isLoading: boolean;
+  error: Error | undefined;
   page?: string;
   onClickItem: (id: number) => void;
   onClickNavigate: () => void;
