@@ -7,7 +7,6 @@ interface IButton extends ICSS {
 }
 
 export const Button = styled.button<IButton>`
-  width: '100%';
   appearance: none;
   border: none;
   cursor: pointer;

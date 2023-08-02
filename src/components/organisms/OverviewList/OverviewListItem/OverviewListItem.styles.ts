@@ -5,6 +5,7 @@ export const OverviewListItem = styled.li`
   display: grid;
   grid-template-columns: 15fr 1fr;
   border-bottom: 3px solid;
+  cursor: pointer;
   border-color: ${({ theme }) => theme.colors.darkBlue};
   padding: ${({ theme }) => theme.spaces.s} ${({ theme }) => theme.spaces.m};
 
