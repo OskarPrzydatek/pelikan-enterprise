@@ -4,12 +4,12 @@ import useSWR from 'swr';
 import { fetchGet } from '~/api';
 import { AttractionOverviewTemplate } from '~/components/templates';
 import { Endpoints, Slugs } from '~/constants';
-import { IAttractionItem } from '~/models';
+import { IAttractionData } from '~/models';
 
 export const AttractionOverviewPage: React.FC = () => {
   const { page } = useParams();
   const navigate = useNavigate();
-  const { data, error, isLoading } = useSWR<IAttractionItem[], Error>(
+  const { data, error, isLoading } = useSWR<IAttractionData[], Error>(
     Endpoints.ATTRACTIONS_LIST,
     fetchGet
   );

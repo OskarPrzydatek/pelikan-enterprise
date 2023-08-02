@@ -4,12 +4,12 @@ import useSWR from 'swr';
 import { fetchGet } from '~/api';
 import { OfferOverviewTemplate } from '~/components/templates';
 import { Endpoints, Slugs } from '~/constants';
-import { IOfferItem } from '~/models';
+import { IOfferData } from '~/models';
 
 export const OfferOverviewPage: React.FC = () => {
   const { page } = useParams();
   const navigate = useNavigate();
-  const { data, error, isLoading } = useSWR<IOfferItem[], Error>(
+  const { data, error, isLoading } = useSWR<IOfferData[], Error>(
     Endpoints.OFFERS_LIST,
     fetchGet
   );

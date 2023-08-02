@@ -4,12 +4,12 @@ import useSWR from 'swr';
 import { fetchGet } from '~/api';
 import { TransportOverviewTemplate } from '~/components/templates';
 import { Endpoints, Slugs } from '~/constants';
-import { ITransportItem } from '~/models';
+import { ITransportData } from '~/models';
 
 export const TransportOverviewPage: React.FC = () => {
   const { page } = useParams();
   const navigate = useNavigate();
-  const { data, error, isLoading } = useSWR<ITransportItem[], Error>(
+  const { data, error, isLoading } = useSWR<ITransportData[], Error>(
     Endpoints.TRANSPORTS_LIST,
     fetchGet
   );

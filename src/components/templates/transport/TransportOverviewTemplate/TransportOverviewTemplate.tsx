@@ -1,9 +1,9 @@
 import { OverviewListItem } from '~/components/molecules';
 import { OverviewList, ErrorBundaryLoader } from '~/components/organisms';
-import { IOverviewTemplate, ITransportItem } from '~/models';
+import { IOverviewTemplate, ITransportData } from '~/models';
 
 interface ITransportOverviewTemplate extends IOverviewTemplate {
-  data: ITransportItem[] | undefined;
+  data: ITransportData[] | undefined;
 }
 
 export const TransportOverviewTemplate: React.FC<

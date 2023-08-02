@@ -1,9 +1,9 @@
 import { OverviewListItem } from '~/components/molecules';
 import { OverviewList, ErrorBundaryLoader } from '~/components/organisms';
-import { IHashtagItem, IOverviewTemplate } from '~/models';
+import { IHashtagData, IOverviewTemplate } from '~/models';
 
 interface IHashtagOverviewTemplate extends IOverviewTemplate {
-  data: IHashtagItem[] | undefined;
+  data: IHashtagData[] | undefined;
 }
 
 export const HashtagOverviewTemplate: React.FC<IHashtagOverviewTemplate> = ({

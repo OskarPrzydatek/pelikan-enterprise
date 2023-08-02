@@ -4,12 +4,12 @@ import useSWR from 'swr';
 import { fetchGet } from '~/api';
 import { HotelOverviewTemplate } from '~/components/templates';
 import { Endpoints, Slugs } from '~/constants';
-import { IHotelItem } from '~/models';
+import { IHotelData } from '~/models';
 
 export const HotelOverviewPage: React.FC = () => {
   const { page } = useParams();
   const navigate = useNavigate();
-  const { data, error, isLoading } = useSWR<IHotelItem[], Error>(
+  const { data, error, isLoading } = useSWR<IHotelData[], Error>(
     Endpoints.HOTELS_LIST,
     fetchGet
   );

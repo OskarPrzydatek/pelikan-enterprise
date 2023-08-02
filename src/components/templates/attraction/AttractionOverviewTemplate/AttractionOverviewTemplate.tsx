@@ -1,9 +1,9 @@
 import { OverviewListItem } from '~/components/molecules';
 import { OverviewList, ErrorBundaryLoader } from '~/components/organisms';
-import { IAttractionItem, IOverviewTemplate } from '~/models';
+import { IAttractionData, IOverviewTemplate } from '~/models';
 
 interface IAttractionOverviewTemplate extends IOverviewTemplate {
-  data: IAttractionItem[] | undefined;
+  data: IAttractionData[] | undefined;
 }
 
 export const AttractionOverviewTemplate: React.FC<

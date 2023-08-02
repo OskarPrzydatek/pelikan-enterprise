@@ -1,9 +1,9 @@
 import { OverviewListItem } from '~/components/molecules';
 import { OverviewList, ErrorBundaryLoader } from '~/components/organisms';
-import { IOfferItem, IOverviewTemplate } from '~/models';
+import { IOfferData, IOverviewTemplate } from '~/models';
 
 interface IOfferOverviewTemplate extends IOverviewTemplate {
-  data: IOfferItem[] | undefined;
+  data: IOfferData[] | undefined;
 }
 
 export const OfferOverviewTemplate: React.FC<IOfferOverviewTemplate> = ({

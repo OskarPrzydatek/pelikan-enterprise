@@ -1,16 +1,16 @@
-export interface IAttractionItem {
+export interface IAttractionData {
   id: number;
   name: string;
   price: number;
   description: string;
 }
 
-export interface IHashtagItem {
+export interface IHashtagData {
   id: number;
   name: string;
 }
 
-export interface IHotelItem {
+export interface IHotelData {
   id: number;
   name: string;
   address: string;
@@ -18,7 +18,7 @@ export interface IHotelItem {
   description: string;
 }
 
-export interface IOfferItem {
+export interface IOfferData {
   id: number;
   name: string;
   location: string;
@@ -32,7 +32,7 @@ export interface IOfferItem {
   hotel: string;
 }
 
-export interface ITransportItem {
+export interface ITransportData {
   id: number;
   name: string;
   transportType: string;

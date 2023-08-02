@@ -1,9 +1,9 @@
 import { OverviewListItem } from '~/components/molecules';
 import { OverviewList, ErrorBundaryLoader } from '~/components/organisms';
-import { IHotelItem, IOverviewTemplate } from '~/models';
+import { IHotelData, IOverviewTemplate } from '~/models';
 
 interface IHotelOverviewTemplate extends IOverviewTemplate {
-  data: IHotelItem[] | undefined;
+  data: IHotelData[] | undefined;
 }
 
 export const HotelOverviewTemplate: React.FC<IHotelOverviewTemplate> = ({

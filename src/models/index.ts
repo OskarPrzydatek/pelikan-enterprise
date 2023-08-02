@@ -3,16 +3,16 @@ export type { Item } from './components';
 export type { IOverviewTemplate } from './components';
 export type { ISelectOption } from './components';
 
-export type { IAttraction } from './resources';
-export type { IHashtag } from './resources';
-export type { IHotel } from './resources';
-export type { IOffer } from './resources';
-export type { ITransport } from './resources';
+export type { IAttraction } from './forms';
+export type { IHashtag } from './forms';
+export type { IHotel } from './forms';
+export type { IOffer } from './forms';
+export type { ITransport } from './forms';
 
-export type { IAttractionItem } from './items';
-export type { IHashtagItem } from './items';
-export type { IHotelItem } from './items';
-export type { IOfferItem } from './items';
-export type { ITransportItem } from './items';
+export type { IAttractionData } from './data';
+export type { IHashtagData } from './data';
+export type { IHotelData } from './data';
+export type { IOfferData } from './data';
+export type { ITransportData } from './data';
 
 export type { ICSS } from './styles';

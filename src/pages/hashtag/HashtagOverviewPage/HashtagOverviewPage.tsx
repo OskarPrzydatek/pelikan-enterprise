@@ -4,12 +4,12 @@ import useSWR from 'swr';
 import { fetchGet } from '~/api';
 import { HashtagOverviewTemplate } from '~/components/templates';
 import { Endpoints, Slugs } from '~/constants';
-import { IHashtagItem } from '~/models';
+import { IHashtagData } from '~/models';
 
 export const HashtagOverviewPage: React.FC = () => {
   const { page } = useParams();
   const navigate = useNavigate();
-  const { data, error, isLoading } = useSWR<IHashtagItem[], Error>(
+  const { data, error, isLoading } = useSWR<IHashtagData[], Error>(
     Endpoints.HASHTAGS_LIST,
     fetchGet
   );
