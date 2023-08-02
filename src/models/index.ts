@@ -1,11 +1,11 @@
-export type { IComponent } from './components.models';
-export type { IOverviewTemplate } from './components.models';
-export type { ISelectOption } from './components.models';
+export type { IComponent } from './components';
+export type { IOverviewTemplate } from './components';
+export type { ISelectOption } from './components';
 
-export type { IAttraction } from './resources.models';
-export type { IHashtag } from './resources.models';
-export type { IHotel } from './resources.models';
-export type { IOffer } from './resources.models';
-export type { ITransport } from './resources.models';
+export type { IAttraction } from './resources';
+export type { IHashtag } from './resources';
+export type { IHotel } from './resources';
+export type { IOffer } from './resources';
+export type { ITransport } from './resources';
 
-export type { ICSS } from './styles.models';
+export type { ICSS } from './styles';

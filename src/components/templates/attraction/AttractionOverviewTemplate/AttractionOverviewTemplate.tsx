@@ -1,5 +1,5 @@
 import { OverviewList } from '~/components/organisms';
-import { IOverviewTemplate } from '~/models/components.models';
+import { IOverviewTemplate } from '~/models';
 import { PageLayout } from '~/styles';
 
 interface IAttractionOverviewTemplate extends IOverviewTemplate {}
