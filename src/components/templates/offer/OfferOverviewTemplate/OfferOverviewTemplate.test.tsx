@@ -50,7 +50,7 @@ describe('OfferOverviewTemplate', () => {
   test('ensure data apear when they are', () => {
     render(<MockWithDataOfferOverviewTemplate />);
     expect(
-      screen.getByTestId('overview-overview-list-item-1')
+      screen.getByTestId('offer-overview-list-item-1')
     ).toBeInTheDocument();
   });
 });

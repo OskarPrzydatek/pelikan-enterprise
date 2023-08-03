@@ -21,7 +21,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
           >
             <li
               class="sc-eDWCr jtwhuZ"
-              data-testid="overview-overview-list-item-1"
+              data-testid="offer-overview-list-item-1"
             >
               <p
                 class="sc-pyfCe bsnSHf"
@@ -33,6 +33,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
               >
                 <button
                   class="sc-jSUZER fgGcDJ"
+                  data-testid="offer-overview-edit-1"
                 >
                   <svg
                     data-testid="edit-icon"
@@ -73,6 +74,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
                 </button>
                 <button
                   class="sc-jSUZER fgGcDJ"
+                  data-testid="offer-overview-delete-1"
                 >
                   <svg
                     data-testid="delete-icon"
@@ -109,7 +111,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
             </li>
             <li
               class="sc-eDWCr jtwhuZ"
-              data-testid="overview-overview-list-item-2"
+              data-testid="offer-overview-list-item-2"
             >
               <p
                 class="sc-pyfCe bsnSHf"
@@ -121,6 +123,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
               >
                 <button
                   class="sc-jSUZER fgGcDJ"
+                  data-testid="offer-overview-edit-2"
                 >
                   <svg
                     data-testid="edit-icon"
@@ -161,6 +164,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
                 </button>
                 <button
                   class="sc-jSUZER fgGcDJ"
+                  data-testid="offer-overview-delete-2"
                 >
                   <svg
                     data-testid="delete-icon"
@@ -197,7 +201,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
             </li>
             <li
               class="sc-eDWCr jtwhuZ"
-              data-testid="overview-overview-list-item-3"
+              data-testid="offer-overview-list-item-3"
             >
               <p
                 class="sc-pyfCe bsnSHf"
@@ -209,6 +213,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
               >
                 <button
                   class="sc-jSUZER fgGcDJ"
+                  data-testid="offer-overview-edit-3"
                 >
                   <svg
                     data-testid="edit-icon"
@@ -249,6 +254,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
                 </button>
                 <button
                   class="sc-jSUZER fgGcDJ"
+                  data-testid="offer-overview-delete-3"
                 >
                   <svg
                     data-testid="delete-icon"
@@ -285,7 +291,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
             </li>
             <li
               class="sc-eDWCr jtwhuZ"
-              data-testid="overview-overview-list-item-4"
+              data-testid="offer-overview-list-item-4"
             >
               <p
                 class="sc-pyfCe bsnSHf"
@@ -297,6 +303,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
               >
                 <button
                   class="sc-jSUZER fgGcDJ"
+                  data-testid="offer-overview-edit-4"
                 >
                   <svg
                     data-testid="edit-icon"
@@ -337,6 +344,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
                 </button>
                 <button
                   class="sc-jSUZER fgGcDJ"
+                  data-testid="offer-overview-delete-4"
                 >
                   <svg
                     data-testid="delete-icon"
@@ -373,7 +381,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
             </li>
             <li
               class="sc-eDWCr jtwhuZ"
-              data-testid="overview-overview-list-item-5"
+              data-testid="offer-overview-list-item-5"
             >
               <p
                 class="sc-pyfCe bsnSHf"
@@ -385,6 +393,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
               >
                 <button
                   class="sc-jSUZER fgGcDJ"
+                  data-testid="offer-overview-edit-5"
                 >
                   <svg
                     data-testid="edit-icon"
@@ -425,6 +434,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
                 </button>
                 <button
                   class="sc-jSUZER fgGcDJ"
+                  data-testid="offer-overview-delete-5"
                 >
                   <svg
                     data-testid="delete-icon"
@@ -505,6 +515,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
           </div>
           <button
             class="sc-hLBbgP kQYyQS"
+            data-testid="overview-list-navigate-to-create-page"
           >
             Dodaj ofertę
           </button>
@@ -529,7 +540,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
         >
           <li
             class="sc-eDWCr jtwhuZ"
-            data-testid="overview-overview-list-item-1"
+            data-testid="offer-overview-list-item-1"
           >
             <p
               class="sc-pyfCe bsnSHf"
@@ -541,6 +552,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
             >
               <button
                 class="sc-jSUZER fgGcDJ"
+                data-testid="offer-overview-edit-1"
               >
                 <svg
                   data-testid="edit-icon"
@@ -581,6 +593,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
               </button>
               <button
                 class="sc-jSUZER fgGcDJ"
+                data-testid="offer-overview-delete-1"
               >
                 <svg
                   data-testid="delete-icon"
@@ -617,7 +630,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
           </li>
           <li
             class="sc-eDWCr jtwhuZ"
-            data-testid="overview-overview-list-item-2"
+            data-testid="offer-overview-list-item-2"
           >
             <p
               class="sc-pyfCe bsnSHf"
@@ -629,6 +642,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
             >
               <button
                 class="sc-jSUZER fgGcDJ"
+                data-testid="offer-overview-edit-2"
               >
                 <svg
                   data-testid="edit-icon"
@@ -669,6 +683,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
               </button>
               <button
                 class="sc-jSUZER fgGcDJ"
+                data-testid="offer-overview-delete-2"
               >
                 <svg
                   data-testid="delete-icon"
@@ -705,7 +720,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
           </li>
           <li
             class="sc-eDWCr jtwhuZ"
-            data-testid="overview-overview-list-item-3"
+            data-testid="offer-overview-list-item-3"
           >
             <p
               class="sc-pyfCe bsnSHf"
@@ -717,6 +732,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
             >
               <button
                 class="sc-jSUZER fgGcDJ"
+                data-testid="offer-overview-edit-3"
               >
                 <svg
                   data-testid="edit-icon"
@@ -757,6 +773,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
               </button>
               <button
                 class="sc-jSUZER fgGcDJ"
+                data-testid="offer-overview-delete-3"
               >
                 <svg
                   data-testid="delete-icon"
@@ -793,7 +810,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
           </li>
           <li
             class="sc-eDWCr jtwhuZ"
-            data-testid="overview-overview-list-item-4"
+            data-testid="offer-overview-list-item-4"
           >
             <p
               class="sc-pyfCe bsnSHf"
@@ -805,6 +822,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
             >
               <button
                 class="sc-jSUZER fgGcDJ"
+                data-testid="offer-overview-edit-4"
               >
                 <svg
                   data-testid="edit-icon"
@@ -845,6 +863,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
               </button>
               <button
                 class="sc-jSUZER fgGcDJ"
+                data-testid="offer-overview-delete-4"
               >
                 <svg
                   data-testid="delete-icon"
@@ -881,7 +900,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
           </li>
           <li
             class="sc-eDWCr jtwhuZ"
-            data-testid="overview-overview-list-item-5"
+            data-testid="offer-overview-list-item-5"
           >
             <p
               class="sc-pyfCe bsnSHf"
@@ -893,6 +912,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
             >
               <button
                 class="sc-jSUZER fgGcDJ"
+                data-testid="offer-overview-edit-5"
               >
                 <svg
                   data-testid="edit-icon"
@@ -933,6 +953,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
               </button>
               <button
                 class="sc-jSUZER fgGcDJ"
+                data-testid="offer-overview-delete-5"
               >
                 <svg
                   data-testid="delete-icon"
@@ -1013,6 +1034,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
         </div>
         <button
           class="sc-hLBbgP kQYyQS"
+          data-testid="overview-list-navigate-to-create-page"
         >
           Dodaj ofertę
         </button>

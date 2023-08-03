@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`AttractionOverviewTemplate > component snapshot 1`] = `
+exports[`TransportOverviewPage > page snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -14,26 +14,26 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
           <h2
             class="sc-eDvSVe dcXtK"
           >
-            Atrakcje
+            Transport
           </h2>
           <ul
             class="sc-iTFTee bMSplb"
           >
             <li
               class="sc-eDWCr jtwhuZ"
-              data-testid="attraction-overview-list-item-1"
+              data-testid="transport-overview-list-item-1"
             >
               <p
                 class="sc-pyfCe bsnSHf"
               >
-                AttractiONe
+                PLANE
               </p>
               <div
                 class="sc-bqWxrE kyFLpy"
               >
                 <button
                   class="sc-jSUZER fgGcDJ"
-                  data-testid="attraction-overview-edit-1"
+                  data-testid="transport-overview-edit-1"
                 >
                   <svg
                     data-testid="edit-icon"
@@ -74,7 +74,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
                 </button>
                 <button
                   class="sc-jSUZER fgGcDJ"
-                  data-testid="attraction-overview-delete-1"
+                  data-testid="transport-overview-delete-1"
                 >
                   <svg
                     data-testid="delete-icon"
@@ -111,19 +111,19 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
             </li>
             <li
               class="sc-eDWCr jtwhuZ"
-              data-testid="attraction-overview-list-item-2"
+              data-testid="transport-overview-list-item-2"
             >
               <p
                 class="sc-pyfCe bsnSHf"
               >
-                AdventuraLand
+                PLANE
               </p>
               <div
                 class="sc-bqWxrE kyFLpy"
               >
                 <button
                   class="sc-jSUZER fgGcDJ"
-                  data-testid="attraction-overview-edit-2"
+                  data-testid="transport-overview-edit-2"
                 >
                   <svg
                     data-testid="edit-icon"
@@ -164,7 +164,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
                 </button>
                 <button
                   class="sc-jSUZER fgGcDJ"
-                  data-testid="attraction-overview-delete-2"
+                  data-testid="transport-overview-delete-2"
                 >
                   <svg
                     data-testid="delete-icon"
@@ -201,19 +201,19 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
             </li>
             <li
               class="sc-eDWCr jtwhuZ"
-              data-testid="attraction-overview-list-item-3"
+              data-testid="transport-overview-list-item-3"
             >
               <p
                 class="sc-pyfCe bsnSHf"
               >
-                WonderWorld
+                BUS
               </p>
               <div
                 class="sc-bqWxrE kyFLpy"
               >
                 <button
                   class="sc-jSUZER fgGcDJ"
-                  data-testid="attraction-overview-edit-3"
+                  data-testid="transport-overview-edit-3"
                 >
                   <svg
                     data-testid="edit-icon"
@@ -254,7 +254,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
                 </button>
                 <button
                   class="sc-jSUZER fgGcDJ"
-                  data-testid="attraction-overview-delete-3"
+                  data-testid="transport-overview-delete-3"
                 >
                   <svg
                     data-testid="delete-icon"
@@ -291,19 +291,19 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
             </li>
             <li
               class="sc-eDWCr jtwhuZ"
-              data-testid="attraction-overview-list-item-4"
+              data-testid="transport-overview-list-item-4"
             >
               <p
                 class="sc-pyfCe bsnSHf"
               >
-                ExoticEscape
+                SHIP
               </p>
               <div
                 class="sc-bqWxrE kyFLpy"
               >
                 <button
                   class="sc-jSUZER fgGcDJ"
-                  data-testid="attraction-overview-edit-4"
+                  data-testid="transport-overview-edit-4"
                 >
                   <svg
                     data-testid="edit-icon"
@@ -344,7 +344,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
                 </button>
                 <button
                   class="sc-jSUZER fgGcDJ"
-                  data-testid="attraction-overview-delete-4"
+                  data-testid="transport-overview-delete-4"
                 >
                   <svg
                     data-testid="delete-icon"
@@ -381,19 +381,19 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
             </li>
             <li
               class="sc-eDWCr jtwhuZ"
-              data-testid="attraction-overview-list-item-5"
+              data-testid="transport-overview-list-item-5"
             >
               <p
                 class="sc-pyfCe bsnSHf"
               >
-                HistoryJourney
+                SHIP
               </p>
               <div
                 class="sc-bqWxrE kyFLpy"
               >
                 <button
                   class="sc-jSUZER fgGcDJ"
-                  data-testid="attraction-overview-edit-5"
+                  data-testid="transport-overview-edit-5"
                 >
                   <svg
                     data-testid="edit-icon"
@@ -434,7 +434,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
                 </button>
                 <button
                   class="sc-jSUZER fgGcDJ"
-                  data-testid="attraction-overview-delete-5"
+                  data-testid="transport-overview-delete-5"
                 >
                   <svg
                     data-testid="delete-icon"
@@ -493,7 +493,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
               class="sc-pyfCe bsnSHf"
               data-testid="pagination-counter"
             >
-              1
+              page1
                / X
             </p>
             <button
@@ -517,7 +517,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
             class="sc-hLBbgP kQYyQS"
             data-testid="overview-list-navigate-to-create-page"
           >
-            Dodaj atrakcję
+            Dodaj Transport
           </button>
         </div>
       </div>
@@ -533,26 +533,26 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
         <h2
           class="sc-eDvSVe dcXtK"
         >
-          Atrakcje
+          Transport
         </h2>
         <ul
           class="sc-iTFTee bMSplb"
         >
           <li
             class="sc-eDWCr jtwhuZ"
-            data-testid="attraction-overview-list-item-1"
+            data-testid="transport-overview-list-item-1"
           >
             <p
               class="sc-pyfCe bsnSHf"
             >
-              AttractiONe
+              PLANE
             </p>
             <div
               class="sc-bqWxrE kyFLpy"
             >
               <button
                 class="sc-jSUZER fgGcDJ"
-                data-testid="attraction-overview-edit-1"
+                data-testid="transport-overview-edit-1"
               >
                 <svg
                   data-testid="edit-icon"
@@ -593,7 +593,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
               </button>
               <button
                 class="sc-jSUZER fgGcDJ"
-                data-testid="attraction-overview-delete-1"
+                data-testid="transport-overview-delete-1"
               >
                 <svg
                   data-testid="delete-icon"
@@ -630,19 +630,19 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
           </li>
           <li
             class="sc-eDWCr jtwhuZ"
-            data-testid="attraction-overview-list-item-2"
+            data-testid="transport-overview-list-item-2"
           >
             <p
               class="sc-pyfCe bsnSHf"
             >
-              AdventuraLand
+              PLANE
             </p>
             <div
               class="sc-bqWxrE kyFLpy"
             >
               <button
                 class="sc-jSUZER fgGcDJ"
-                data-testid="attraction-overview-edit-2"
+                data-testid="transport-overview-edit-2"
               >
                 <svg
                   data-testid="edit-icon"
@@ -683,7 +683,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
               </button>
               <button
                 class="sc-jSUZER fgGcDJ"
-                data-testid="attraction-overview-delete-2"
+                data-testid="transport-overview-delete-2"
               >
                 <svg
                   data-testid="delete-icon"
@@ -720,19 +720,19 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
           </li>
           <li
             class="sc-eDWCr jtwhuZ"
-            data-testid="attraction-overview-list-item-3"
+            data-testid="transport-overview-list-item-3"
           >
             <p
               class="sc-pyfCe bsnSHf"
             >
-              WonderWorld
+              BUS
             </p>
             <div
               class="sc-bqWxrE kyFLpy"
             >
               <button
                 class="sc-jSUZER fgGcDJ"
-                data-testid="attraction-overview-edit-3"
+                data-testid="transport-overview-edit-3"
               >
                 <svg
                   data-testid="edit-icon"
@@ -773,7 +773,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
               </button>
               <button
                 class="sc-jSUZER fgGcDJ"
-                data-testid="attraction-overview-delete-3"
+                data-testid="transport-overview-delete-3"
               >
                 <svg
                   data-testid="delete-icon"
@@ -810,19 +810,19 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
           </li>
           <li
             class="sc-eDWCr jtwhuZ"
-            data-testid="attraction-overview-list-item-4"
+            data-testid="transport-overview-list-item-4"
           >
             <p
               class="sc-pyfCe bsnSHf"
             >
-              ExoticEscape
+              SHIP
             </p>
             <div
               class="sc-bqWxrE kyFLpy"
             >
               <button
                 class="sc-jSUZER fgGcDJ"
-                data-testid="attraction-overview-edit-4"
+                data-testid="transport-overview-edit-4"
               >
                 <svg
                   data-testid="edit-icon"
@@ -863,7 +863,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
               </button>
               <button
                 class="sc-jSUZER fgGcDJ"
-                data-testid="attraction-overview-delete-4"
+                data-testid="transport-overview-delete-4"
               >
                 <svg
                   data-testid="delete-icon"
@@ -900,19 +900,19 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
           </li>
           <li
             class="sc-eDWCr jtwhuZ"
-            data-testid="attraction-overview-list-item-5"
+            data-testid="transport-overview-list-item-5"
           >
             <p
               class="sc-pyfCe bsnSHf"
             >
-              HistoryJourney
+              SHIP
             </p>
             <div
               class="sc-bqWxrE kyFLpy"
             >
               <button
                 class="sc-jSUZER fgGcDJ"
-                data-testid="attraction-overview-edit-5"
+                data-testid="transport-overview-edit-5"
               >
                 <svg
                   data-testid="edit-icon"
@@ -953,7 +953,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
               </button>
               <button
                 class="sc-jSUZER fgGcDJ"
-                data-testid="attraction-overview-delete-5"
+                data-testid="transport-overview-delete-5"
               >
                 <svg
                   data-testid="delete-icon"
@@ -1012,7 +1012,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
             class="sc-pyfCe bsnSHf"
             data-testid="pagination-counter"
           >
-            1
+            page1
              / X
           </p>
           <button
@@ -1036,7 +1036,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
           class="sc-hLBbgP kQYyQS"
           data-testid="overview-list-navigate-to-create-page"
         >
-          Dodaj atrakcję
+          Dodaj Transport
         </button>
       </div>
     </div>

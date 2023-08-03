@@ -31,6 +31,8 @@ export const HotelOverviewTemplate: React.FC<IHotelOverviewTemplate> = ({
               <OverviewListItem
                 key={`${id}-${name}`}
                 dataTestID={`hotel-overview-list-item-${id}`}
+                deleteIconTestID={`hotel-overview-delete-${id}`}
+                editIconTestID={`hotel-overview-edit-${id}`}
                 id={id}
                 name={name}
                 onClickDelete={onClickDelete}

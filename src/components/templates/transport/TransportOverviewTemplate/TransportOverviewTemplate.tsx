@@ -33,6 +33,8 @@ export const TransportOverviewTemplate: React.FC<
               <OverviewListItem
                 key={`${id}-${name}`}
                 dataTestID={`transport-overview-list-item-${id}`}
+                deleteIconTestID={`transport-overview-delete-${id}`}
+                editIconTestID={`transport-overview-edit-${id}`}
                 id={id}
                 name={transportType}
                 onClickDelete={onClickDelete}

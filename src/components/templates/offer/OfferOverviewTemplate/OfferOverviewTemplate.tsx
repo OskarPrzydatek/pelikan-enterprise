@@ -30,7 +30,9 @@ export const OfferOverviewTemplate: React.FC<IOfferOverviewTemplate> = ({
           ? data.map(({ id, name }) => (
               <OverviewListItem
                 key={`${id}-${name}`}
-                dataTestID={`overview-overview-list-item-${id}`}
+                dataTestID={`offer-overview-list-item-${id}`}
+                deleteIconTestID={`offer-overview-delete-${id}`}
+                editIconTestID={`offer-overview-edit-${id}`}
                 id={id}
                 name={name}
                 onClickDelete={onClickDelete}

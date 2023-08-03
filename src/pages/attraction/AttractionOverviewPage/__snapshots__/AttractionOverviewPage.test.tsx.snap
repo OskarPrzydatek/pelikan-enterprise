@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`AttractionOverviewTemplate > component snapshot 1`] = `
+exports[`AttractionOverviewPage > page snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -493,7 +493,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
               class="sc-pyfCe bsnSHf"
               data-testid="pagination-counter"
             >
-              1
+              page1
                / X
             </p>
             <button
@@ -1012,7 +1012,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
             class="sc-pyfCe bsnSHf"
             data-testid="pagination-counter"
           >
-            1
+            page1
              / X
           </p>
           <button

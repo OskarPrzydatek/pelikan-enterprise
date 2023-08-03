@@ -31,6 +31,8 @@ export const HashtagOverviewTemplate: React.FC<IHashtagOverviewTemplate> = ({
               <OverviewListItem
                 key={`${id}-${name}`}
                 dataTestID={`hashtag-overview-list-item-${id}`}
+                deleteIconTestID={`hashtag-overview-delete-${id}`}
+                editIconTestID={`hashtag-overview-edit-${id}`}
                 id={id}
                 name={name}
                 onClickDelete={onClickDelete}

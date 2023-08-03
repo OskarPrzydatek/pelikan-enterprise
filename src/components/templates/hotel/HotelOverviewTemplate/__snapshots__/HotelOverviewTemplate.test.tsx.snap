@@ -33,6 +33,7 @@ exports[`HotelOverviewTemplate > component snapshot 1`] = `
               >
                 <button
                   class="sc-jSUZER fgGcDJ"
+                  data-testid="hotel-overview-edit-1"
                 >
                   <svg
                     data-testid="edit-icon"
@@ -73,6 +74,7 @@ exports[`HotelOverviewTemplate > component snapshot 1`] = `
                 </button>
                 <button
                   class="sc-jSUZER fgGcDJ"
+                  data-testid="hotel-overview-delete-1"
                 >
                   <svg
                     data-testid="delete-icon"
@@ -121,6 +123,7 @@ exports[`HotelOverviewTemplate > component snapshot 1`] = `
               >
                 <button
                   class="sc-jSUZER fgGcDJ"
+                  data-testid="hotel-overview-edit-2"
                 >
                   <svg
                     data-testid="edit-icon"
@@ -161,6 +164,7 @@ exports[`HotelOverviewTemplate > component snapshot 1`] = `
                 </button>
                 <button
                   class="sc-jSUZER fgGcDJ"
+                  data-testid="hotel-overview-delete-2"
                 >
                   <svg
                     data-testid="delete-icon"
@@ -209,6 +213,7 @@ exports[`HotelOverviewTemplate > component snapshot 1`] = `
               >
                 <button
                   class="sc-jSUZER fgGcDJ"
+                  data-testid="hotel-overview-edit-3"
                 >
                   <svg
                     data-testid="edit-icon"
@@ -249,6 +254,7 @@ exports[`HotelOverviewTemplate > component snapshot 1`] = `
                 </button>
                 <button
                   class="sc-jSUZER fgGcDJ"
+                  data-testid="hotel-overview-delete-3"
                 >
                   <svg
                     data-testid="delete-icon"
@@ -297,6 +303,7 @@ exports[`HotelOverviewTemplate > component snapshot 1`] = `
               >
                 <button
                   class="sc-jSUZER fgGcDJ"
+                  data-testid="hotel-overview-edit-4"
                 >
                   <svg
                     data-testid="edit-icon"
@@ -337,6 +344,7 @@ exports[`HotelOverviewTemplate > component snapshot 1`] = `
                 </button>
                 <button
                   class="sc-jSUZER fgGcDJ"
+                  data-testid="hotel-overview-delete-4"
                 >
                   <svg
                     data-testid="delete-icon"
@@ -385,6 +393,7 @@ exports[`HotelOverviewTemplate > component snapshot 1`] = `
               >
                 <button
                   class="sc-jSUZER fgGcDJ"
+                  data-testid="hotel-overview-edit-5"
                 >
                   <svg
                     data-testid="edit-icon"
@@ -425,6 +434,7 @@ exports[`HotelOverviewTemplate > component snapshot 1`] = `
                 </button>
                 <button
                   class="sc-jSUZER fgGcDJ"
+                  data-testid="hotel-overview-delete-5"
                 >
                   <svg
                     data-testid="delete-icon"
@@ -505,6 +515,7 @@ exports[`HotelOverviewTemplate > component snapshot 1`] = `
           </div>
           <button
             class="sc-hLBbgP kQYyQS"
+            data-testid="overview-list-navigate-to-create-page"
           >
             Dodaj hotel
           </button>
@@ -541,6 +552,7 @@ exports[`HotelOverviewTemplate > component snapshot 1`] = `
             >
               <button
                 class="sc-jSUZER fgGcDJ"
+                data-testid="hotel-overview-edit-1"
               >
                 <svg
                   data-testid="edit-icon"
@@ -581,6 +593,7 @@ exports[`HotelOverviewTemplate > component snapshot 1`] = `
               </button>
               <button
                 class="sc-jSUZER fgGcDJ"
+                data-testid="hotel-overview-delete-1"
               >
                 <svg
                   data-testid="delete-icon"
@@ -629,6 +642,7 @@ exports[`HotelOverviewTemplate > component snapshot 1`] = `
             >
               <button
                 class="sc-jSUZER fgGcDJ"
+                data-testid="hotel-overview-edit-2"
               >
                 <svg
                   data-testid="edit-icon"
@@ -669,6 +683,7 @@ exports[`HotelOverviewTemplate > component snapshot 1`] = `
               </button>
               <button
                 class="sc-jSUZER fgGcDJ"
+                data-testid="hotel-overview-delete-2"
               >
                 <svg
                   data-testid="delete-icon"
@@ -717,6 +732,7 @@ exports[`HotelOverviewTemplate > component snapshot 1`] = `
             >
               <button
                 class="sc-jSUZER fgGcDJ"
+                data-testid="hotel-overview-edit-3"
               >
                 <svg
                   data-testid="edit-icon"
@@ -757,6 +773,7 @@ exports[`HotelOverviewTemplate > component snapshot 1`] = `
               </button>
               <button
                 class="sc-jSUZER fgGcDJ"
+                data-testid="hotel-overview-delete-3"
               >
                 <svg
                   data-testid="delete-icon"
@@ -805,6 +822,7 @@ exports[`HotelOverviewTemplate > component snapshot 1`] = `
             >
               <button
                 class="sc-jSUZER fgGcDJ"
+                data-testid="hotel-overview-edit-4"
               >
                 <svg
                   data-testid="edit-icon"
@@ -845,6 +863,7 @@ exports[`HotelOverviewTemplate > component snapshot 1`] = `
               </button>
               <button
                 class="sc-jSUZER fgGcDJ"
+                data-testid="hotel-overview-delete-4"
               >
                 <svg
                   data-testid="delete-icon"
@@ -893,6 +912,7 @@ exports[`HotelOverviewTemplate > component snapshot 1`] = `
             >
               <button
                 class="sc-jSUZER fgGcDJ"
+                data-testid="hotel-overview-edit-5"
               >
                 <svg
                   data-testid="edit-icon"
@@ -933,6 +953,7 @@ exports[`HotelOverviewTemplate > component snapshot 1`] = `
               </button>
               <button
                 class="sc-jSUZER fgGcDJ"
+                data-testid="hotel-overview-delete-5"
               >
                 <svg
                   data-testid="delete-icon"
@@ -1013,6 +1034,7 @@ exports[`HotelOverviewTemplate > component snapshot 1`] = `
         </div>
         <button
           class="sc-hLBbgP kQYyQS"
+          data-testid="overview-list-navigate-to-create-page"
         >
           Dodaj hotel
         </button>

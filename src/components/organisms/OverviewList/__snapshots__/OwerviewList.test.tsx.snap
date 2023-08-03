@@ -497,6 +497,7 @@ exports[`OverviewList > component snapshot 1`] = `
         </div>
         <button
           class="sc-gswNZR ebKtrE"
+          data-testid="overview-list-navigate-to-create-page"
         >
           Dodaj atrakcję
         </button>
@@ -996,6 +997,7 @@ exports[`OverviewList > component snapshot 1`] = `
       </div>
       <button
         class="sc-gswNZR ebKtrE"
+        data-testid="overview-list-navigate-to-create-page"
       >
         Dodaj atrakcję
       </button>

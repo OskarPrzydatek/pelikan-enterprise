@@ -33,6 +33,8 @@ export const AttractionOverviewTemplate: React.FC<
               <OverviewListItem
                 key={`${id}-${name}`}
                 dataTestID={`attraction-overview-list-item-${id}`}
+                deleteIconTestID={`attraction-overview-delete-${id}`}
+                editIconTestID={`attraction-overview-edit-${id}`}
                 id={id}
                 name={name}
                 onClickDelete={onClickDelete}
