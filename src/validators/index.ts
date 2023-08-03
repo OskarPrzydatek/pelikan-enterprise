@@ -1,8 +1,8 @@
-const isPositiveNumber = (value: unknown) =>
+export const isPositiveNumber = (value: unknown) =>
   (!Number.isNaN(value as number) && Number(value) > 0) ||
   'Pole musi zawierać wartość numeryczną większą od zera!';
 
-const isStarsNumber = (value: unknown) =>
+export const isStarsNumber = (value: unknown) =>
   (!Number.isNaN(value as number) && Number(value) > 0 && Number(value) < 6) ||
   'Pole musi zawierać wartość numeryczną oraz być w przedziale 1-5!';
 
