@@ -14,6 +14,8 @@ export const HotelOverviewPage: React.FC = () => {
     fetchGet
   );
 
+  const onClickDeleteHotel = () => {};
+
   const onClickNavigateToEditHotel = (id: number) =>
     navigate(`/${Slugs.EDIT_HOTEL}/${id}`);
 
@@ -25,8 +27,9 @@ export const HotelOverviewPage: React.FC = () => {
       error={error}
       isLoading={isLoading}
       page={page}
-      onClickItem={onClickNavigateToEditHotel}
-      onClickNavigate={onClickNavigateToCreateHotel}
+      onClickDelete={onClickDeleteHotel}
+      onClickEdit={onClickNavigateToEditHotel}
+      onClickNavigateToCreatePage={onClickNavigateToCreateHotel}
     />
   );
 };

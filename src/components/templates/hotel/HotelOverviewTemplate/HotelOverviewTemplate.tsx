@@ -8,11 +8,12 @@ interface IHotelOverviewTemplate extends IOverviewTemplate {
 
 export const HotelOverviewTemplate: React.FC<IHotelOverviewTemplate> = ({
   data,
+  page,
   isLoading,
   error,
-  page,
-  onClickItem,
-  onClickNavigate,
+  onClickEdit,
+  onClickDelete,
+  onClickNavigateToCreatePage,
 }: IHotelOverviewTemplate) => {
   const { isArray } = Array;
 
@@ -23,15 +24,17 @@ export const HotelOverviewTemplate: React.FC<IHotelOverviewTemplate> = ({
         noItemsLabel="Brak hoteli w systemie"
         page={page}
         title="Hotele"
-        onClickNavigate={onClickNavigate}
+        onClickNavigateToCreatePage={onClickNavigateToCreatePage}
       >
         {isArray(data)
           ? data.map(({ id, name }) => (
               <OverviewListItem
                 key={`${id}-${name}`}
-                buttonDataTestID={`hotel-overview-list-item-${id}`}
+                dataTestID={`hotel-overview-list-item-${id}`}
+                id={id}
                 name={name}
-                onClickNavigate={() => onClickItem(id)}
+                onClickDelete={onClickDelete}
+                onClickEdit={onClickEdit}
               />
             ))
           : null}

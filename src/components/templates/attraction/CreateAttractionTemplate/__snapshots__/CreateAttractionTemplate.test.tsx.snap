@@ -9,7 +9,7 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
         class="sc-iAEawV eSwvqh"
       >
         <form
-          class="sc-gikAfH cxczgd"
+          class="sc-ezOQGI fwNckg"
         >
           <h2
             class="sc-dkrFOg kaKqDq"
@@ -23,7 +23,7 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
               class="sc-idXgbr enkruV"
             >
               <input
-                class="sc-dIfARi cqofnP"
+                class="sc-dIfARi lhrlng"
                 data-testid="create-attraction-name"
                 id="name"
                 name="name"
@@ -38,7 +38,7 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
               class="sc-idXgbr enkruV"
             >
               <input
-                class="sc-dIfARi cqofnP"
+                class="sc-dIfARi lhrlng"
                 data-testid="create-attraction-price"
                 id="price"
                 name="price"
@@ -53,7 +53,7 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
               class="sc-hBxehG eptxaL"
             >
               <textarea
-                class="sc-fEXmlR kcJGhn"
+                class="sc-fEXmlR cvACeU"
                 data-testid="attraction-description"
                 id="description"
                 name="description"
@@ -62,7 +62,7 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
             </div>
           </div>
           <input
-            class="sc-ezOQGI cvtWIm"
+            class="sc-bYMpWt cSAxYb"
             type="submit"
             value="Dodaj"
           />
@@ -75,7 +75,7 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
       class="sc-iAEawV eSwvqh"
     >
       <form
-        class="sc-gikAfH cxczgd"
+        class="sc-ezOQGI fwNckg"
       >
         <h2
           class="sc-dkrFOg kaKqDq"
@@ -89,7 +89,7 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
             class="sc-idXgbr enkruV"
           >
             <input
-              class="sc-dIfARi cqofnP"
+              class="sc-dIfARi lhrlng"
               data-testid="create-attraction-name"
               id="name"
               name="name"
@@ -104,7 +104,7 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
             class="sc-idXgbr enkruV"
           >
             <input
-              class="sc-dIfARi cqofnP"
+              class="sc-dIfARi lhrlng"
               data-testid="create-attraction-price"
               id="price"
               name="price"
@@ -119,7 +119,7 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
             class="sc-hBxehG eptxaL"
           >
             <textarea
-              class="sc-fEXmlR kcJGhn"
+              class="sc-fEXmlR cvACeU"
               data-testid="attraction-description"
               id="description"
               name="description"
@@ -128,7 +128,7 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
           </div>
         </div>
         <input
-          class="sc-ezOQGI cvtWIm"
+          class="sc-bYMpWt cSAxYb"
           type="submit"
           value="Dodaj"
         />

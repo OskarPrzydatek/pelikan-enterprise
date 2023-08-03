@@ -13,8 +13,9 @@ export const AttractionOverviewTemplate: React.FC<
   page,
   isLoading,
   error,
-  onClickItem,
-  onClickNavigate,
+  onClickEdit,
+  onClickDelete,
+  onClickNavigateToCreatePage,
 }: IAttractionOverviewTemplate) => {
   const { isArray } = Array;
 
@@ -25,15 +26,17 @@ export const AttractionOverviewTemplate: React.FC<
         noItemsLabel="Brak atrakcji w systemie"
         page={page}
         title="Atrakcje"
-        onClickNavigate={onClickNavigate}
+        onClickNavigateToCreatePage={onClickNavigateToCreatePage}
       >
         {isArray(data)
           ? data.map(({ id, name }) => (
               <OverviewListItem
                 key={`${id}-${name}`}
-                buttonDataTestID={`attraction-overview-list-item-${id}`}
+                dataTestID={`attraction-overview-list-item-${id}`}
+                id={id}
                 name={name}
-                onClickNavigate={() => onClickItem(id)}
+                onClickDelete={onClickDelete}
+                onClickEdit={onClickEdit}
               />
             ))
           : null}

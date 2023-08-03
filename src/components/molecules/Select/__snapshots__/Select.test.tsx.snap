@@ -33,7 +33,7 @@ exports[`Select > component snapshot 1`] = `
             </span>
           </span>
           <select
-            class="sc-iveFHk eqISZE"
+            class="sc-iveFHk dbouQv"
             data-testid="molecule-select"
             name="destination"
           >
@@ -103,7 +103,7 @@ exports[`Select > component snapshot 1`] = `
           </span>
         </span>
         <select
-          class="sc-iveFHk eqISZE"
+          class="sc-iveFHk dbouQv"
           data-testid="molecule-select"
           name="destination"
         >

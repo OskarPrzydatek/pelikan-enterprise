@@ -14,7 +14,9 @@ export const AttractionOverviewPage: React.FC = () => {
     fetchGet
   );
 
-  const onClickNavigateToEditAtraction = (id: number) =>
+  const onClickDeleteAttraction = () => {};
+
+  const onClickNavigateToEditAttraction = (id: number) =>
     navigate(`/${Slugs.EDIT_ATTRACTION}/${id}`);
 
   const onClickNavigateToCreateAttraction = () =>
@@ -26,8 +28,9 @@ export const AttractionOverviewPage: React.FC = () => {
       error={error}
       isLoading={isLoading}
       page={page}
-      onClickItem={onClickNavigateToEditAtraction}
-      onClickNavigate={onClickNavigateToCreateAttraction}
+      onClickDelete={onClickDeleteAttraction}
+      onClickEdit={onClickNavigateToEditAttraction}
+      onClickNavigateToCreatePage={onClickNavigateToCreateAttraction}
     />
   );
 };

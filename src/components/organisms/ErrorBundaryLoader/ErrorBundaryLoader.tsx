@@ -1,4 +1,5 @@
 import { Text } from '~/components/atoms';
+import { ActivitiIndicator } from '~/components/molecules';
 
 import * as S from './ErrorBundaryLoader.styles';
 
@@ -16,7 +17,7 @@ export const ErrorBundaryLoader: React.FC<IErrorBundaryLoader> = ({
   if (isLoading)
     return (
       <S.ErrorBundaryLoader>
-        <Text dataTestID="page-layout-loading">Ładowanie...</Text>
+        <ActivitiIndicator dataTestID="page-layout-loading" label="Ładowanie" />
       </S.ErrorBundaryLoader>
     );
 

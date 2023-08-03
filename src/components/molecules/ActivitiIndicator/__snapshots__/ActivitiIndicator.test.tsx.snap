@@ -5,23 +5,19 @@ exports[`ActivitiIndicator > component snapshot 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
-        <p
-          class="sc-pyfCe cwHmTq"
-        >
-          Ładuję
-        </p>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div>
       <p
-        class="sc-pyfCe cwHmTq"
+        class="sc-pyfCe ijJcYk"
       >
         Ładuję
       </p>
     </div>
+  </body>,
+  "container": <div>
+    <p
+      class="sc-pyfCe ijJcYk"
+    >
+      Ładuję
+    </p>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

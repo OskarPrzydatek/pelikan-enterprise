@@ -14,6 +14,8 @@ export const HashtagOverviewPage: React.FC = () => {
     fetchGet
   );
 
+  const onClickDeleteHashtag = () => {};
+
   const onClickNavigateToEditHashtag = (id: number) =>
     navigate(`/${Slugs.EDIT_HASHTAG}/${id}`);
 
@@ -26,8 +28,9 @@ export const HashtagOverviewPage: React.FC = () => {
       error={error}
       isLoading={isLoading}
       page={page}
-      onClickItem={onClickNavigateToEditHashtag}
-      onClickNavigate={onClickNavigateToCreateHashtag}
+      onClickDelete={onClickDeleteHashtag}
+      onClickEdit={onClickNavigateToEditHashtag}
+      onClickNavigateToCreatePage={onClickNavigateToCreateHashtag}
     />
   );
 };

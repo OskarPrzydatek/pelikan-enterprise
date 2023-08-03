@@ -6,7 +6,7 @@ exports[`Label > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <label
-        class="sc-dkrFOg ihfMIN"
+        class="sc-dkrFOg dta-dHK"
         data-testid="label-atom"
         for="label-atom"
       >
@@ -16,7 +16,7 @@ exports[`Label > component snapshot 1`] = `
   </body>,
   "container": <div>
     <label
-      class="sc-dkrFOg ihfMIN"
+      class="sc-dkrFOg dta-dHK"
       data-testid="label-atom"
       for="label-atom"
     >

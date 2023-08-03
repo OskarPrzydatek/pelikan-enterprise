@@ -11,7 +11,7 @@ interface IOverviewList {
   navigateLabel: string;
   children?: React.ReactNode;
   page?: string;
-  onClickNavigate: () => void;
+  onClickNavigateToCreatePage: () => void;
 }
 
 export const OverviewList: React.FC<IOverviewList> = ({
@@ -20,7 +20,7 @@ export const OverviewList: React.FC<IOverviewList> = ({
   navigateLabel,
   children,
   page,
-  onClickNavigate,
+  onClickNavigateToCreatePage,
 }: IOverviewList) => {
   const currentPage = page ?? '1';
   const itemsLength = React.Children.count(children);
@@ -42,7 +42,7 @@ export const OverviewList: React.FC<IOverviewList> = ({
         <Text dataTestID="pagination-counter">{currentPage} / X</Text>
         <Icon css={S.nextArrowCSS} icon={Icons.ARROW} onClick={() => {}} />
       </S.Pagination>
-      <Button css={S.navigateButtonCSS} onClick={onClickNavigate}>
+      <Button css={S.navigateButtonCSS} onClick={onClickNavigateToCreatePage}>
         {navigateLabel}
       </Button>
     </S.OverviewList>

@@ -1,40 +1,32 @@
 // Vitest Snapshot v1
 
-exports[`ProfilePicture > component snapshot 1`] = `
+exports[`ErrorBundaryLoader > component snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-jrcTuL hKkeKM"
+        class="sc-ezOQGI deUqHb"
       >
         <p
-          class="sc-pyfCe kodMXz"
+          class="sc-iBYQkv cMzfYw"
+          data-testid="page-layout-content"
         >
-          Witaj User
+          Content!!!
         </p>
-        <img
-          alt="default profile picture"
-          class="sc-kDvujY hxdiLv"
-          src="/src/assets/png/profile_picture.png"
-        />
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-jrcTuL hKkeKM"
+      class="sc-ezOQGI deUqHb"
     >
       <p
-        class="sc-pyfCe kodMXz"
+        class="sc-iBYQkv cMzfYw"
+        data-testid="page-layout-content"
       >
-        Witaj User
+        Content!!!
       </p>
-      <img
-        alt="default profile picture"
-        class="sc-kDvujY hxdiLv"
-        src="/src/assets/png/profile_picture.png"
-      />
     </div>
   </div>,
   "debug": [Function],

@@ -12,7 +12,7 @@ exports[`TextArea > component snapshot 1`] = `
           class="sc-hBxehG eptxaL"
         >
           <textarea
-            class="sc-fEXmlR kcJGhn"
+            class="sc-fEXmlR cvACeU"
             data-testid="molecule-textarea"
             id="description"
             name="description"
@@ -30,7 +30,7 @@ exports[`TextArea > component snapshot 1`] = `
         class="sc-hBxehG eptxaL"
       >
         <textarea
-          class="sc-fEXmlR kcJGhn"
+          class="sc-fEXmlR cvACeU"
           data-testid="molecule-textarea"
           id="description"
           name="description"

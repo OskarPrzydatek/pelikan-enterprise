@@ -14,6 +14,8 @@ export const OfferOverviewPage: React.FC = () => {
     fetchGet
   );
 
+  const onClickDeleteOffer = () => {};
+
   const onClickNavigateToEditOffer = (id: number) =>
     navigate(`/${Slugs.EDIT_OFFER}/${id}`);
 
@@ -25,8 +27,9 @@ export const OfferOverviewPage: React.FC = () => {
       error={error}
       isLoading={isLoading}
       page={page}
-      onClickItem={onClickNavigateToEditOffer}
-      onClickNavigate={onClickNavigateToCreateOffer}
+      onClickDelete={onClickDeleteOffer}
+      onClickEdit={onClickNavigateToEditOffer}
+      onClickNavigateToCreatePage={onClickNavigateToCreateOffer}
     />
   );
 };

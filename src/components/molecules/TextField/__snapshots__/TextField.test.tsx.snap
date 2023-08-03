@@ -12,7 +12,7 @@ exports[`TextField > component snapshot 1`] = `
           class="sc-idXgbr enkruV"
         >
           <input
-            class="sc-dIfARi cqofnP"
+            class="sc-dIfARi lhrlng"
             data-testid="molecule-textfield"
             id="email"
             name="email"
@@ -30,7 +30,7 @@ exports[`TextField > component snapshot 1`] = `
         class="sc-idXgbr enkruV"
       >
         <input
-          class="sc-dIfARi cqofnP"
+          class="sc-dIfARi lhrlng"
           data-testid="molecule-textfield"
           id="email"
           name="email"

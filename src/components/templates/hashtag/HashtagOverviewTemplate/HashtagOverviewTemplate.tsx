@@ -11,8 +11,9 @@ export const HashtagOverviewTemplate: React.FC<IHashtagOverviewTemplate> = ({
   isLoading,
   error,
   page,
-  onClickItem,
-  onClickNavigate,
+  onClickEdit,
+  onClickDelete,
+  onClickNavigateToCreatePage,
 }: IHashtagOverviewTemplate) => {
   const { isArray } = Array;
 
@@ -23,15 +24,17 @@ export const HashtagOverviewTemplate: React.FC<IHashtagOverviewTemplate> = ({
         noItemsLabel="Brak hashtagów w systemie"
         page={page}
         title="Hashtagi"
-        onClickNavigate={onClickNavigate}
+        onClickNavigateToCreatePage={onClickNavigateToCreatePage}
       >
         {isArray(data)
           ? data.map(({ id, name }) => (
               <OverviewListItem
                 key={`${id}-${name}`}
-                buttonDataTestID={`hashtag-overview-list-item-${id}`}
+                dataTestID={`hashtag-overview-list-item-${id}`}
+                id={id}
                 name={name}
-                onClickNavigate={() => onClickItem(id)}
+                onClickDelete={onClickDelete}
+                onClickEdit={onClickEdit}
               />
             ))
           : null}

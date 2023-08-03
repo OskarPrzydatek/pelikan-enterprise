@@ -11,8 +11,9 @@ export const OfferOverviewTemplate: React.FC<IOfferOverviewTemplate> = ({
   page,
   isLoading,
   error,
-  onClickItem,
-  onClickNavigate,
+  onClickEdit,
+  onClickDelete,
+  onClickNavigateToCreatePage,
 }: IOfferOverviewTemplate) => {
   const { isArray } = Array;
 
@@ -23,15 +24,17 @@ export const OfferOverviewTemplate: React.FC<IOfferOverviewTemplate> = ({
         noItemsLabel="Brak ofert w systemie"
         page={page}
         title="Oferty"
-        onClickNavigate={onClickNavigate}
+        onClickNavigateToCreatePage={onClickNavigateToCreatePage}
       >
         {isArray(data)
           ? data.map(({ id, name }) => (
               <OverviewListItem
                 key={`${id}-${name}`}
-                buttonDataTestID={`overview-overview-list-item-${id}`}
+                dataTestID={`overview-overview-list-item-${id}`}
+                id={id}
                 name={name}
-                onClickNavigate={() => onClickItem(id)}
+                onClickDelete={onClickDelete}
+                onClickEdit={onClickEdit}
               />
             ))
           : null}

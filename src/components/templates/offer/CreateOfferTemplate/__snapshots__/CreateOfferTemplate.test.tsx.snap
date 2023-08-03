@@ -9,7 +9,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
         class="sc-iAEawV eSwvqh"
       >
         <form
-          class="sc-gikAfH cxczgd"
+          class="sc-ezOQGI fwNckg"
         >
           <h2
             class="sc-dkrFOg kaKqDq"
@@ -23,7 +23,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
               class="sc-idXgbr enkruV"
             >
               <input
-                class="sc-dIfARi cqofnP"
+                class="sc-dIfARi lhrlng"
                 data-testid="create-offer-name"
                 id="name"
                 name="name"
@@ -41,7 +41,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                 class="sc-idXgbr enkruV"
               >
                 <input
-                  class="sc-dIfARi cqofnP"
+                  class="sc-dIfARi lhrlng"
                   data-testid="create-offer-number-of-tickets"
                   id="numberOfGuests"
                   name="numberOfGuests"
@@ -77,7 +77,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                   </span>
                 </span>
                 <select
-                  class="sc-iveFHk eqISZE"
+                  class="sc-iveFHk dbouQv"
                   data-testid="create-offer-transport"
                   name="transport"
                 >
@@ -115,7 +115,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                 class="sc-idXgbr enkruV"
               >
                 <input
-                  class="sc-dIfARi cqofnP"
+                  class="sc-dIfARi lhrlng"
                   data-testid="create-offer-destination"
                   id="destination"
                   name="destination"
@@ -151,7 +151,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                   </span>
                 </span>
                 <select
-                  class="sc-iveFHk eqISZE"
+                  class="sc-iveFHk dbouQv"
                   data-testid="create-offer-hotel"
                   name="hotel"
                 >
@@ -195,9 +195,9 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                 class="sc-pyfCe dPDCSN"
               >
                 <input
-                  class="sc-jrcTuL iGTWLz"
+                  class="sc-jrcTuL jPpBZo"
                   data-testid="create-offer-form"
-                  min="2023-08-02"
+                  min="2023-08-03"
                   name="termFrom"
                   type="date"
                 />
@@ -210,9 +210,9 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                 class="sc-pyfCe dPDCSN"
               >
                 <input
-                  class="sc-jrcTuL iGTWLz"
+                  class="sc-jrcTuL jPpBZo"
                   data-testid="create-offer-to"
-                  min="2023-08-02"
+                  min="2023-08-03"
                   name="termTo"
                   type="date"
                 />
@@ -226,7 +226,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
               class="sc-hBxehG eptxaL"
             >
               <textarea
-                class="sc-fEXmlR kcJGhn"
+                class="sc-fEXmlR cvACeU"
                 data-testid="create-offer-desription"
                 id="description"
                 name="description"
@@ -241,7 +241,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
               class="sc-idXgbr enkruV"
             >
               <input
-                class="sc-dIfARi cqofnP"
+                class="sc-dIfARi lhrlng"
                 data-testid="create-offer-price"
                 id="price"
                 name="price"
@@ -250,7 +250,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
             </div>
           </div>
           <input
-            class="sc-ezOQGI cvtWIm"
+            class="sc-bYMpWt cSAxYb"
             type="submit"
             value="Dodaj"
           />
@@ -263,7 +263,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
       class="sc-iAEawV eSwvqh"
     >
       <form
-        class="sc-gikAfH cxczgd"
+        class="sc-ezOQGI fwNckg"
       >
         <h2
           class="sc-dkrFOg kaKqDq"
@@ -277,7 +277,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
             class="sc-idXgbr enkruV"
           >
             <input
-              class="sc-dIfARi cqofnP"
+              class="sc-dIfARi lhrlng"
               data-testid="create-offer-name"
               id="name"
               name="name"
@@ -295,7 +295,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
               class="sc-idXgbr enkruV"
             >
               <input
-                class="sc-dIfARi cqofnP"
+                class="sc-dIfARi lhrlng"
                 data-testid="create-offer-number-of-tickets"
                 id="numberOfGuests"
                 name="numberOfGuests"
@@ -331,7 +331,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                 </span>
               </span>
               <select
-                class="sc-iveFHk eqISZE"
+                class="sc-iveFHk dbouQv"
                 data-testid="create-offer-transport"
                 name="transport"
               >
@@ -369,7 +369,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
               class="sc-idXgbr enkruV"
             >
               <input
-                class="sc-dIfARi cqofnP"
+                class="sc-dIfARi lhrlng"
                 data-testid="create-offer-destination"
                 id="destination"
                 name="destination"
@@ -405,7 +405,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                 </span>
               </span>
               <select
-                class="sc-iveFHk eqISZE"
+                class="sc-iveFHk dbouQv"
                 data-testid="create-offer-hotel"
                 name="hotel"
               >
@@ -449,9 +449,9 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
               class="sc-pyfCe dPDCSN"
             >
               <input
-                class="sc-jrcTuL iGTWLz"
+                class="sc-jrcTuL jPpBZo"
                 data-testid="create-offer-form"
-                min="2023-08-02"
+                min="2023-08-03"
                 name="termFrom"
                 type="date"
               />
@@ -464,9 +464,9 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
               class="sc-pyfCe dPDCSN"
             >
               <input
-                class="sc-jrcTuL iGTWLz"
+                class="sc-jrcTuL jPpBZo"
                 data-testid="create-offer-to"
-                min="2023-08-02"
+                min="2023-08-03"
                 name="termTo"
                 type="date"
               />
@@ -480,7 +480,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
             class="sc-hBxehG eptxaL"
           >
             <textarea
-              class="sc-fEXmlR kcJGhn"
+              class="sc-fEXmlR cvACeU"
               data-testid="create-offer-desription"
               id="description"
               name="description"
@@ -495,7 +495,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
             class="sc-idXgbr enkruV"
           >
             <input
-              class="sc-dIfARi cqofnP"
+              class="sc-dIfARi lhrlng"
               data-testid="create-offer-price"
               id="price"
               name="price"
@@ -504,7 +504,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
           </div>
         </div>
         <input
-          class="sc-ezOQGI cvtWIm"
+          class="sc-bYMpWt cSAxYb"
           type="submit"
           value="Dodaj"
         />

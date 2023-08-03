@@ -1,24 +1,35 @@
-import { fireEvent, render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { describe, test, expect, vi } from 'vitest';
 
+import { OverviewListItem } from '~/components/molecules';
 import { StyledComponentsProvider } from '~/providers';
 
 import { OverviewList } from './OverviewList';
 
-const mockOnClickItem = vi.fn();
-const mockOnClickNavigate = vi.fn();
+const dataStub = [
+  { id: 1, name: 'attraction1' },
+  { id: 2, name: 'attraction2' },
+  { id: 3, name: 'attraction3' },
+  { id: 4, name: 'attraction4' },
+  { id: 5, name: 'attraction5' },
+];
+
+const mockOnClickNavigateToCreatePage = vi.fn();
+
+const mockOnClickDelete = vi.fn();
+const mockOnClickEdit = vi.fn();
 
 const MockOverviewListEmpty = () => (
   <StyledComponentsProvider>
     <OverviewList
-      items={[]}
       navigateLabel="Dodaj atrakcję"
       noItemsLabel="Brak atrakcji w systemie"
       page="1"
       title="Atrakcje"
-      onClickItem={mockOnClickItem}
-      onClickNavigate={mockOnClickNavigate}
-    />
+      onClickNavigateToCreatePage={mockOnClickNavigateToCreatePage}
+    >
+      {null}
+    </OverviewList>
   </StyledComponentsProvider>
 );
 
@@ -29,16 +40,18 @@ const MockOverviewListWithData = ({ page }: { page?: string | undefined }) => (
       noItemsLabel="Brak atrakcji w systemie"
       page={page}
       title="Atrakcje"
-      items={[
-        { id: 1, name: 'attraction1' },
-        { id: 2, name: 'attraction2' },
-        { id: 3, name: 'attraction3' },
-        { id: 4, name: 'attraction4' },
-        { id: 5, name: 'attraction5' },
-      ]}
-      onClickItem={mockOnClickItem}
-      onClickNavigate={mockOnClickNavigate}
-    />
+      onClickNavigateToCreatePage={mockOnClickNavigateToCreatePage}
+    >
+      {dataStub.map(({ id, name }) => (
+        <OverviewListItem
+          key={`${id}-${name}`}
+          id={1}
+          name={name}
+          onClickDelete={mockOnClickDelete}
+          onClickEdit={mockOnClickEdit}
+        />
+      ))}
+    </OverviewList>
   </StyledComponentsProvider>
 );
 
@@ -51,12 +64,6 @@ describe('OverviewList', () => {
   test('ensure no items label renders when there is no items', () => {
     render(<MockOverviewListEmpty />);
     expect(screen.getByTestId('no-items-label')).toBeInTheDocument();
-  });
-
-  test('ensure overview list item after click triggers onClickItem function', () => {
-    render(<MockOverviewListWithData />);
-    fireEvent.click(screen.getByTestId('overview-list-item-1'));
-    expect(mockOnClickItem).toHaveBeenCalledWith(1);
   });
 
   test('ensure current page is one when is undefined', () => {

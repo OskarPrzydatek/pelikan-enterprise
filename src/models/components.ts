@@ -18,8 +18,9 @@ export interface IOverviewTemplate {
   isLoading: boolean;
   error: Error | undefined;
   page?: string;
-  onClickItem: (id: number) => void;
-  onClickNavigate: () => void;
+  onClickDelete: () => void;
+  onClickEdit: (id: number) => void;
+  onClickNavigateToCreatePage: () => void;
 }
 
 export interface ISelectOption {

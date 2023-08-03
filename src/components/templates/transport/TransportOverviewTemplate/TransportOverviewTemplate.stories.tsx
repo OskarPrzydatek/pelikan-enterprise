@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 
+import { transportDataMock } from '~/mocks';
 import { StyledComponentsProvider } from '~/providers';
 
 import { TransportOverviewTemplate } from './TransportOverviewTemplate';
@@ -16,7 +17,14 @@ export const TransportOverviewTemplatePrimmary: Story = {
   render: () => (
     <StyledComponentsProvider>
       <TransportOverviewTemplate
-        onClickNavigate={() => console.log('onClickNavigate')}
+        data={transportDataMock}
+        error={undefined}
+        isLoading={false}
+        onClickDelete={() => console.log('onClickDelete!')}
+        onClickEdit={() => console.log('onClickEdit!')}
+        onClickNavigateToCreatePage={() =>
+          console.log('onClickNavigateToCreatePage!')
+        }
       />
     </StyledComponentsProvider>
   ),

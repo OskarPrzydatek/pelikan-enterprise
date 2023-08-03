@@ -1,32 +1,56 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { describe, test, vi } from 'vitest';
 
+import { hotelDataMock } from '~/mocks';
 import { StyledComponentsProvider } from '~/providers';
 
 import { HotelOverviewTemplate } from './HotelOverviewTemplate';
 
-const mockOnClickItem = vi.fn();
-const mockOnClickNavigate = vi.fn();
+const mockOnClickDelete = vi.fn();
+const mockOnClickEdit = vi.fn();
+const mockOnClickNavigateToCreatePage = vi.fn();
 
-const MockHotelOverviewTemplate = () => (
+const MockNoDataHotelOverviewTemplate = () => (
   <StyledComponentsProvider>
     <HotelOverviewTemplate
-      items={[
-        { id: 1, name: 'hotel1' },
-        { id: 2, name: 'hotel2' },
-        { id: 3, name: 'hotel3' },
-        { id: 4, name: 'hotel4' },
-        { id: 5, name: 'hotel5' },
-      ]}
-      onClickItem={mockOnClickItem}
-      onClickNavigate={mockOnClickNavigate}
+      data={undefined}
+      error={undefined}
+      isLoading={false}
+      onClickDelete={mockOnClickDelete}
+      onClickEdit={mockOnClickEdit}
+      onClickNavigateToCreatePage={mockOnClickNavigateToCreatePage}
+    />
+  </StyledComponentsProvider>
+);
+
+const MockWithDataHotelOverviewTemplate = () => (
+  <StyledComponentsProvider>
+    <HotelOverviewTemplate
+      data={hotelDataMock}
+      error={undefined}
+      isLoading={false}
+      onClickDelete={mockOnClickDelete}
+      onClickEdit={mockOnClickEdit}
+      onClickNavigateToCreatePage={mockOnClickNavigateToCreatePage}
     />
   </StyledComponentsProvider>
 );
 
 describe('HotelOverviewTemplate', () => {
   test('component snapshot', () => {
-    const view = render(<MockHotelOverviewTemplate />);
+    const view = render(<MockWithDataHotelOverviewTemplate />);
     expect(view).toMatchSnapshot();
+  });
+
+  test('ensure no items label apear when there is no data', () => {
+    render(<MockNoDataHotelOverviewTemplate />);
+    expect(screen.getByTestId('no-items-label')).toBeInTheDocument();
+  });
+
+  test('ensure data apear when they are', () => {
+    render(<MockWithDataHotelOverviewTemplate />);
+    expect(
+      screen.getByTestId('hotel-overview-list-item-1')
+    ).toBeInTheDocument();
   });
 });

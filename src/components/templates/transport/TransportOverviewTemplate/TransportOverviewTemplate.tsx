@@ -13,8 +13,9 @@ export const TransportOverviewTemplate: React.FC<
   isLoading,
   error,
   page,
-  onClickItem,
-  onClickNavigate,
+  onClickEdit,
+  onClickDelete,
+  onClickNavigateToCreatePage,
 }: ITransportOverviewTemplate) => {
   const { isArray } = Array;
 
@@ -25,15 +26,17 @@ export const TransportOverviewTemplate: React.FC<
         noItemsLabel="Brak transportów w systemie"
         page={page}
         title="Transport"
-        onClickNavigate={onClickNavigate}
+        onClickNavigateToCreatePage={onClickNavigateToCreatePage}
       >
         {isArray(data)
           ? data.map(({ id, name, transportType }) => (
               <OverviewListItem
                 key={`${id}-${name}`}
-                buttonDataTestID={`transport-overview-list-item-${id}`}
+                dataTestID={`transport-overview-list-item-${id}`}
+                id={id}
                 name={transportType}
-                onClickNavigate={() => onClickItem(id)}
+                onClickDelete={onClickDelete}
+                onClickEdit={onClickEdit}
               />
             ))
           : null}

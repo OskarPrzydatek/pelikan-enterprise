@@ -1,32 +1,56 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { describe, test, vi } from 'vitest';
 
+import { offerDataMock } from '~/mocks';
 import { StyledComponentsProvider } from '~/providers';
 
 import { OfferOverviewTemplate } from './OfferOverviewTemplate';
 
-const mockOnClickItem = vi.fn();
-const mockOnClickNavigate = vi.fn();
+const mockOnClickDelete = vi.fn();
+const mockOnClickEdit = vi.fn();
+const mockOnClickNavigateToCreatePage = vi.fn();
 
-const MockfferOverviewTemplate = () => (
+const MockNoDataOfferOverviewTemplate = () => (
   <StyledComponentsProvider>
     <OfferOverviewTemplate
-      items={[
-        { id: 1, name: 'offer1' },
-        { id: 2, name: 'offer2' },
-        { id: 3, name: 'offer3' },
-        { id: 4, name: 'offer4' },
-        { id: 5, name: 'offer5' },
-      ]}
-      onClickItem={mockOnClickItem}
-      onClickNavigate={mockOnClickNavigate}
+      data={undefined}
+      error={undefined}
+      isLoading={false}
+      onClickDelete={mockOnClickDelete}
+      onClickEdit={mockOnClickEdit}
+      onClickNavigateToCreatePage={mockOnClickNavigateToCreatePage}
+    />
+  </StyledComponentsProvider>
+);
+
+const MockWithDataOfferOverviewTemplate = () => (
+  <StyledComponentsProvider>
+    <OfferOverviewTemplate
+      data={offerDataMock}
+      error={undefined}
+      isLoading={false}
+      onClickDelete={mockOnClickDelete}
+      onClickEdit={mockOnClickEdit}
+      onClickNavigateToCreatePage={mockOnClickNavigateToCreatePage}
     />
   </StyledComponentsProvider>
 );
 
 describe('OfferOverviewTemplate', () => {
   test('component snapshot', () => {
-    const view = render(<MockfferOverviewTemplate />);
+    const view = render(<MockWithDataOfferOverviewTemplate />);
     expect(view).toMatchSnapshot();
+  });
+
+  test('ensure no items label apear when there is no data', () => {
+    render(<MockNoDataOfferOverviewTemplate />);
+    expect(screen.getByTestId('no-items-label')).toBeInTheDocument();
+  });
+
+  test('ensure data apear when they are', () => {
+    render(<MockWithDataOfferOverviewTemplate />);
+    expect(
+      screen.getByTestId('overview-overview-list-item-1')
+    ).toBeInTheDocument();
   });
 });

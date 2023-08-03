@@ -14,6 +14,8 @@ export const TransportOverviewPage: React.FC = () => {
     fetchGet
   );
 
+  const onClickDeleteTransport = () => {};
+
   const onClickNavigateToEditTransport = (id: number) =>
     navigate(`/${Slugs.EDIT_TRANSPORT}/${id}`);
 
@@ -26,8 +28,9 @@ export const TransportOverviewPage: React.FC = () => {
       error={error}
       isLoading={isLoading}
       page={page}
-      onClickItem={onClickNavigateToEditTransport}
-      onClickNavigate={onClickNavigateToCreateTransport}
+      onClickDelete={onClickDeleteTransport}
+      onClickEdit={onClickNavigateToEditTransport}
+      onClickNavigateToCreatePage={onClickNavigateToCreateTransport}
     />
   );
 };

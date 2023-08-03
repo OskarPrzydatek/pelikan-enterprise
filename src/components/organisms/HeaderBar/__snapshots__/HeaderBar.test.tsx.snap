@@ -47,7 +47,7 @@ exports[`HeaderBar > component snapshot 1`] = `
           class="sc-ksBlkl nbWcP"
         >
           <p
-            class="sc-pyfCe lizSwY"
+            class="sc-pyfCe kodMXz"
           >
             Witaj Użytkowniku
           </p>
@@ -103,7 +103,7 @@ exports[`HeaderBar > component snapshot 1`] = `
         class="sc-ksBlkl nbWcP"
       >
         <p
-          class="sc-pyfCe lizSwY"
+          class="sc-pyfCe kodMXz"
         >
           Witaj Użytkowniku
         </p>
