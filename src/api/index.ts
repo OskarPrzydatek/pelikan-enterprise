@@ -1,6 +1,6 @@
 import { Endpoints } from '~/constants';
 
-const BASE_URL =
+export const BASE_URL =
   'https://pelikan-be.agreeableriver-e6153f17.westeurope.azurecontainerapps.io';
 const controller = new AbortController();
 
@@ -8,13 +8,18 @@ export async function fetchGet<T>(endpoint: Endpoints): Promise<T> {
   const URL = `${BASE_URL}/${endpoint}`;
 
   try {
-    const response = await fetch(URL, {
+    const response: Response = await fetch(URL, {
       signal: controller.signal,
     });
-    const data = (await response.json()) as T;
-    return data;
+
+    if (!response.ok) {
+      throw new Error(response.statusText);
+    }
+
+    return (await response.json()) as T;
   } catch (error) {
     const errorMessage = error as string;
+
     controller.abort();
     throw new Error(`${errorMessage}`);
   }
