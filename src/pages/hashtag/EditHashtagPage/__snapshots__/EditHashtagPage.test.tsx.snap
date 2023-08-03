@@ -1,42 +1,32 @@
 // Vitest Snapshot v1
 
-exports[`TextField > component snapshot 1`] = `
+exports[`EditHashtagPage > page snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-ftTHYK gCnWqt"
+        class="sc-gswNZR cJrdyV"
       >
-        <div
-          class="sc-pyfCe dPDCSN"
-        >
-          <input
-            class="sc-jrcTuL jPpBZo"
-            data-testid="molecule-datefield"
-            min="2023-08-04"
-            name="startDate"
-            type="date"
-          />
-        </div>
+        <h2>
+          Edit Hashtag Page
+        </h2>
+        <p>
+          id: 
+        </p>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-ftTHYK gCnWqt"
+      class="sc-gswNZR cJrdyV"
     >
-      <div
-        class="sc-pyfCe dPDCSN"
-      >
-        <input
-          class="sc-jrcTuL jPpBZo"
-          data-testid="molecule-datefield"
-          min="2023-08-04"
-          name="startDate"
-          type="date"
-        />
-      </div>
+      <h2>
+        Edit Hashtag Page
+      </h2>
+      <p>
+        id: 
+      </p>
     </div>
   </div>,
   "debug": [Function],

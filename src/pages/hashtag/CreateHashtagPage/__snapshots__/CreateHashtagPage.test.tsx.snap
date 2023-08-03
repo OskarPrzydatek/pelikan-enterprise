@@ -1,42 +1,78 @@
 // Vitest Snapshot v1
 
-exports[`TextField > component snapshot 1`] = `
+exports[`CreateHashtagPage > page snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-ftTHYK gCnWqt"
+        class="sc-gswNZR cJrdyV"
       >
-        <div
-          class="sc-pyfCe dPDCSN"
+        <form
+          class="sc-kMjNwy hquCBr"
         >
+          <h2
+            class="sc-eDvSVe dcXtK"
+          >
+            Dodaj hashtag
+          </h2>
+          <div
+            class="sc-dIfARi fzFjao"
+          >
+            <div
+              class="sc-hHTYSt jxYQNB"
+            >
+              <input
+                class="sc-dmctIk kfdLzt"
+                data-testid="create-hashtag-name"
+                id="name"
+                name="name"
+                placeholder="Nazwa hashtagu"
+              />
+            </div>
+          </div>
           <input
-            class="sc-jrcTuL jPpBZo"
-            data-testid="molecule-datefield"
-            min="2023-08-04"
-            name="startDate"
-            type="date"
+            class="sc-ilhmMj ffxDLh"
+            type="submit"
+            value="Dodaj"
           />
-        </div>
+        </form>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-ftTHYK gCnWqt"
+      class="sc-gswNZR cJrdyV"
     >
-      <div
-        class="sc-pyfCe dPDCSN"
+      <form
+        class="sc-kMjNwy hquCBr"
       >
+        <h2
+          class="sc-eDvSVe dcXtK"
+        >
+          Dodaj hashtag
+        </h2>
+        <div
+          class="sc-dIfARi fzFjao"
+        >
+          <div
+            class="sc-hHTYSt jxYQNB"
+          >
+            <input
+              class="sc-dmctIk kfdLzt"
+              data-testid="create-hashtag-name"
+              id="name"
+              name="name"
+              placeholder="Nazwa hashtagu"
+            />
+          </div>
+        </div>
         <input
-          class="sc-jrcTuL jPpBZo"
-          data-testid="molecule-datefield"
-          min="2023-08-04"
-          name="startDate"
-          type="date"
+          class="sc-ilhmMj ffxDLh"
+          type="submit"
+          value="Dodaj"
         />
-      </div>
+      </form>
     </div>
   </div>,
   "debug": [Function],

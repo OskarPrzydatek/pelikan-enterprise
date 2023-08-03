@@ -19,7 +19,6 @@ export async function fetchGet<T>(endpoint: Endpoints): Promise<T> {
     return (await response.json()) as T;
   } catch (error) {
     const errorMessage = error as string;
-
     controller.abort();
     throw new Error(`${errorMessage}`);
   }
