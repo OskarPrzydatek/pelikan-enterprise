@@ -13,6 +13,8 @@ export type { IAttractionData } from './data';
 export type { IHashtagData } from './data';
 export type { IHotelData } from './data';
 export type { IOfferData } from './data';
+
 export type { ITransportData } from './data';
+export type { ITransportBody } from './data';
 
 export type { ICSS } from './styles';

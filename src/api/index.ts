@@ -24,8 +24,73 @@ export async function fetchGet<T>(endpoint: Endpoints): Promise<T> {
   }
 }
 
-/* export async function fetchPost<T>(endpoint: string, body: T) {}
+export async function fetchPost<T>(endpoint: Endpoints, body: T): Promise<T> {
+  const URL = `${BASE_URL}/${endpoint}`;
 
-export async function fetchUpdate<T>(endpoint: string, data: T) {}
+  try {
+    const response: Response = await fetch(URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
+      signal: controller.signal,
+    });
 
-export async function fetchDelete<T>(endpoint: string) {} */
+    if (!response.ok) {
+      throw new Error(response.statusText);
+    }
+
+    return (await response.json()) as T;
+  } catch (error) {
+    const errorMessage = error as string;
+    controller.abort();
+    throw new Error(`${errorMessage}`);
+  }
+}
+
+export async function fetchPut<T>(endpoint: Endpoints, data: T): Promise<T> {
+  const URL = `${BASE_URL}/${endpoint}`;
+
+  try {
+    const response: Response = await fetch(URL, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+      signal: controller.signal,
+    });
+
+    if (!response.ok) {
+      throw new Error(response.statusText);
+    }
+
+    return (await response.json()) as T;
+  } catch (error) {
+    const errorMessage = error as string;
+    controller.abort();
+    throw new Error(`${errorMessage}`);
+  }
+}
+
+export async function fetchDelete<T>(endpoint: Endpoints): Promise<T> {
+  const URL = `${BASE_URL}/${endpoint}`;
+
+  try {
+    const response: Response = await fetch(URL, {
+      method: 'DELETE',
+      signal: controller.signal,
+    });
+
+    if (!response.ok) {
+      throw new Error(response.statusText);
+    }
+
+    return (await response.json()) as T;
+  } catch (error) {
+    const errorMessage = error as string;
+    controller.abort();
+    throw new Error(`${errorMessage}`);
+  }
+}

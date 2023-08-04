@@ -38,3 +38,9 @@ export interface ITransportData {
   transportType: string;
   destination: string;
 }
+
+export interface ITransportBody {
+  name: string;
+  transportType: string;
+  destination: string;
+}

@@ -38,5 +38,9 @@ export enum Endpoints {
   HASHTAGS_LIST = 'hashtags/list',
   HOTELS_LIST = 'hotels/list',
   OFFERS_LIST = 'offers/list',
+
   TRANSPORTS_LIST = 'transports/list',
+  CREATE_TRANSPORT = 'transports/add',
+  UPDATE_TRANSPORT = 'transport/update',
+  DELETE_TRANSPORT = 'transport/deletee',
 }
