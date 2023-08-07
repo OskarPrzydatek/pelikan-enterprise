@@ -19,7 +19,6 @@ export async function fetchGet<T>(endpoint: Endpoints): Promise<T> {
     return (await response.json()) as T;
   } catch (error) {
     const errorMessage = error as string;
-    controller.abort();
     throw new Error(`${errorMessage}`);
   }
 }
@@ -44,7 +43,6 @@ export async function fetchPost<T>(endpoint: Endpoints, body: T) {
     return response;
   } catch (error) {
     const errorMessage = error as string;
-    controller.abort();
     throw new Error(`${errorMessage}`);
   }
 }
@@ -69,7 +67,6 @@ export async function fetchPut<T>(endpoint: Endpoints, data: T): Promise<T> {
     return (await response.json()) as T;
   } catch (error) {
     const errorMessage = error as string;
-    controller.abort();
     throw new Error(`${errorMessage}`);
   }
 }
@@ -90,7 +87,6 @@ export async function fetchDelete<T>(endpoint: Endpoints): Promise<T> {
     return (await response.json()) as T;
   } catch (error) {
     const errorMessage = error as string;
-    controller.abort();
     throw new Error(`${errorMessage}`);
   }
 }
