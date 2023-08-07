@@ -14,7 +14,7 @@ exports[`OverviewList > component snapshot 1`] = `
           Atrakcje
         </h2>
         <ul
-          class="sc-bYMpWt bqnvax"
+          class="sc-bYMpWt jSPxqq"
         >
           <li
             class="sc-ipEyDJ kZpxiV"
@@ -514,7 +514,7 @@ exports[`OverviewList > component snapshot 1`] = `
         Atrakcje
       </h2>
       <ul
-        class="sc-bYMpWt bqnvax"
+        class="sc-bYMpWt jSPxqq"
       >
         <li
           class="sc-ipEyDJ kZpxiV"

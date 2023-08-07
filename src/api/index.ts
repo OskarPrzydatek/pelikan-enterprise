@@ -24,7 +24,7 @@ export async function fetchGet<T>(endpoint: Endpoints): Promise<T> {
   }
 }
 
-export async function fetchPost<T>(endpoint: Endpoints, body: T): Promise<T> {
+export async function fetchPost<T>(endpoint: Endpoints, body: T) {
   const URL = `${BASE_URL}/${endpoint}`;
 
   try {
@@ -41,7 +41,7 @@ export async function fetchPost<T>(endpoint: Endpoints, body: T): Promise<T> {
       throw new Error(response.statusText);
     }
 
-    return (await response.json()) as T;
+    return response;
   } catch (error) {
     const errorMessage = error as string;
     controller.abort();

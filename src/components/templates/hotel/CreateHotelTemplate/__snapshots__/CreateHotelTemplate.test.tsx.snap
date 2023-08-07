@@ -59,8 +59,8 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
               <input
                 class="sc-dIfARi lhrlng"
                 data-testid="create-hotel-stars-rating"
-                id="starRating"
-                name="starRating"
+                id="stars"
+                name="stars"
                 placeholder="Ilość gwiazdek"
               />
             </div>
@@ -144,8 +144,8 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
             <input
               class="sc-dIfARi lhrlng"
               data-testid="create-hotel-stars-rating"
-              id="starRating"
-              name="starRating"
+              id="stars"
+              name="stars"
               placeholder="Ilość gwiazdek"
             />
           </div>

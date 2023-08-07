@@ -29,7 +29,7 @@ export interface IOffer {
 }
 
 export interface ITransport {
-  companyName: string;
+  name: string;
   transportType: string;
   destination: string;
 }

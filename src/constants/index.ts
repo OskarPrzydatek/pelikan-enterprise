@@ -35,12 +35,25 @@ export enum Slugs {
 
 export enum Endpoints {
   ATTRACTIONS_LIST = 'attractions/list',
+  CREATE_ATTRACTION = 'attractions/add',
+
   HASHTAGS_LIST = 'hashtags/list',
+  CREATE_HASHTAG = 'hashtags/add',
+
   HOTELS_LIST = 'hotels/list',
+  CREATE_HOTEL = 'hotels/add',
+
   OFFERS_LIST = 'offers/list',
+  CREATE_OFFER = 'offers/add',
 
   TRANSPORTS_LIST = 'transports/list',
   CREATE_TRANSPORT = 'transports/add',
   UPDATE_TRANSPORT = 'transport/update',
   DELETE_TRANSPORT = 'transport/deletee',
 }
+
+export const transportTypeOptions = [
+  { value: 'PLANE', label: 'Samolot' },
+  { value: 'BUS', label: 'Autobus' },
+  { value: 'SHIP', label: 'Statek' },
+];

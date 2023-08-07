@@ -59,8 +59,8 @@ exports[`CreateHotelPage > page snapshot 1`] = `
               <input
                 class="sc-dmctIk kfdLzt"
                 data-testid="create-hotel-stars-rating"
-                id="starRating"
-                name="starRating"
+                id="stars"
+                name="stars"
                 placeholder="Ilość gwiazdek"
               />
             </div>
@@ -144,8 +144,8 @@ exports[`CreateHotelPage > page snapshot 1`] = `
             <input
               class="sc-dmctIk kfdLzt"
               data-testid="create-hotel-stars-rating"
-              id="starRating"
-              name="starRating"
+              id="stars"
+              name="stars"
               placeholder="Ilość gwiazdek"
             />
           </div>

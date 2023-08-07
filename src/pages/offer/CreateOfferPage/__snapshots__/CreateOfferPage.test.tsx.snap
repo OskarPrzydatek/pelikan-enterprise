@@ -165,19 +165,19 @@ exports[`CreateOfferPage > page snapshot 1`] = `
                   </option>
                   <option
                     class="sc-iJnaPW"
-                    value="HOTEL_A"
+                    value="1"
                   >
                     Hotel A
                   </option>
                   <option
                     class="sc-iJnaPW"
-                    value="HOTEL_B"
+                    value="2"
                   >
                     Hotel B
                   </option>
                   <option
                     class="sc-iJnaPW"
-                    value="HOTEL_C"
+                    value="3"
                   >
                     Hotel C
                   </option>
@@ -197,7 +197,7 @@ exports[`CreateOfferPage > page snapshot 1`] = `
                 <input
                   class="sc-ipEyDJ cdBHxR"
                   data-testid="create-offer-form"
-                  min="2023-08-04"
+                  min="2023-08-05"
                   name="termFrom"
                   type="date"
                 />
@@ -212,7 +212,7 @@ exports[`CreateOfferPage > page snapshot 1`] = `
                 <input
                   class="sc-ipEyDJ cdBHxR"
                   data-testid="create-offer-to"
-                  min="2023-08-04"
+                  min="2023-08-05"
                   name="termTo"
                   type="date"
                 />
@@ -419,19 +419,19 @@ exports[`CreateOfferPage > page snapshot 1`] = `
                 </option>
                 <option
                   class="sc-iJnaPW"
-                  value="HOTEL_A"
+                  value="1"
                 >
                   Hotel A
                 </option>
                 <option
                   class="sc-iJnaPW"
-                  value="HOTEL_B"
+                  value="2"
                 >
                   Hotel B
                 </option>
                 <option
                   class="sc-iJnaPW"
-                  value="HOTEL_C"
+                  value="3"
                 >
                   Hotel C
                 </option>
@@ -451,7 +451,7 @@ exports[`CreateOfferPage > page snapshot 1`] = `
               <input
                 class="sc-ipEyDJ cdBHxR"
                 data-testid="create-offer-form"
-                min="2023-08-04"
+                min="2023-08-05"
                 name="termFrom"
                 type="date"
               />
@@ -466,7 +466,7 @@ exports[`CreateOfferPage > page snapshot 1`] = `
               <input
                 class="sc-ipEyDJ cdBHxR"
                 data-testid="create-offer-to"
-                min="2023-08-04"
+                min="2023-08-05"
                 name="termTo"
                 type="date"
               />

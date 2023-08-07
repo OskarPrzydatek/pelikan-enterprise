@@ -25,8 +25,8 @@ exports[`CreateTransport Template > component snapshot 1`] = `
               <input
                 class="sc-dIfARi lhrlng"
                 data-testid="create-company-name"
-                id="companyName"
-                name="companyName"
+                id="name"
+                name="name"
                 placeholder="Nazwa firmy transportowej"
               />
             </div>
@@ -137,8 +137,8 @@ exports[`CreateTransport Template > component snapshot 1`] = `
             <input
               class="sc-dIfARi lhrlng"
               data-testid="create-company-name"
-              id="companyName"
-              name="companyName"
+              id="name"
+              name="name"
               placeholder="Nazwa firmy transportowej"
             />
           </div>

@@ -11,7 +11,7 @@ export const OverviewList = styled.div`
 
 export const OverviewListWrapper = styled.ul`
   width: 100%;
-  height: 70%;
+  min-height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;

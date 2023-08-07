@@ -29,10 +29,12 @@ export const CreateTransportTemplate: React.FC<ICreateTransportTemplate> = ({
           errorMessageTestID="create-transport-company-name-error"
           inputTestID="create-company-name"
           label="Nazwa firmy transportowej"
-          name="companyName"
-          registerOptions={{
-            ...requiredValidator,
-          }}
+          name="name"
+          registerOptions={
+            {
+              // ...requiredValidator,
+            }
+          }
         />
         <Select
           errorMessageTestID="create-transport-transport-type-error"
