@@ -81,10 +81,8 @@ describe('api', () => {
 
       expect(global.fetch).toHaveBeenCalledTimes(1);
       expect(result).toEqual({
-        id: 1,
-        name: 'Example Data',
-        transportType: 'BUS',
-        destination: 'description',
+        ok: true,
+        json: result.json,
       });
     });
 
@@ -140,7 +138,10 @@ describe('api', () => {
       const result = await fetchPut<ITransportData>(endpoint, body);
 
       expect(global.fetch).toHaveBeenCalledTimes(1);
-      expect(result).toEqual({ id: 1, name: 'Example Data' });
+      expect(result).toEqual({
+        ok: true,
+        json: result.json,
+      });
     });
 
     test('should throw an error on unsuccessful response', async () => {
@@ -185,10 +186,13 @@ describe('api', () => {
         });
       });
 
-      const result = await fetchDelete<ITransportData>(endpoint);
+      const result = await fetchDelete(endpoint);
 
       expect(global.fetch).toHaveBeenCalledTimes(1);
-      expect(result).toEqual({ id: 1, name: 'Example Data' });
+      expect(result).toEqual({
+        ok: true,
+        json: result.json,
+      });
     });
 
     test('should throw an error on unsuccessful response', async () => {
@@ -203,9 +207,7 @@ describe('api', () => {
         });
       });
 
-      await expect(fetchDelete<ITransportData>(endpoint)).rejects.toThrowError(
-        errorMessage
-      );
+      await expect(fetchDelete(endpoint)).rejects.toThrowError(errorMessage);
     });
   });
 });

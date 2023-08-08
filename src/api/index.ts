@@ -47,7 +47,7 @@ export async function fetchPost<T>(endpoint: Endpoints, body: T) {
   }
 }
 
-export async function fetchPut<T>(endpoint: Endpoints, data: T): Promise<T> {
+export async function fetchPut<T>(endpoint: Endpoints, body: T) {
   const URL = `${BASE_URL}/${endpoint}`;
 
   try {
@@ -56,7 +56,7 @@ export async function fetchPut<T>(endpoint: Endpoints, data: T): Promise<T> {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(data),
+      body: JSON.stringify(body),
       signal: controller.signal,
     });
 
@@ -64,14 +64,14 @@ export async function fetchPut<T>(endpoint: Endpoints, data: T): Promise<T> {
       throw new Error(response.statusText);
     }
 
-    return (await response.json()) as T;
+    return response;
   } catch (error) {
     const errorMessage = error as string;
     throw new Error(`${errorMessage}`);
   }
 }
 
-export async function fetchDelete<T>(endpoint: Endpoints): Promise<T> {
+export async function fetchDelete(endpoint: Endpoints) {
   const URL = `${BASE_URL}/${endpoint}`;
 
   try {
@@ -84,7 +84,7 @@ export async function fetchDelete<T>(endpoint: Endpoints): Promise<T> {
       throw new Error(response.statusText);
     }
 
-    return (await response.json()) as T;
+    return response;
   } catch (error) {
     const errorMessage = error as string;
     throw new Error(`${errorMessage}`);
