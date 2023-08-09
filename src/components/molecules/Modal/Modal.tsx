@@ -11,7 +11,6 @@ interface IModal extends IComponent {
   acceptButtonTestID?: string;
   onClickAccept: () => void;
   onClickClose: () => void;
-  onClickBackground?: () => void;
 }
 
 export const Modal: React.FC<IModal> = ({
@@ -22,13 +21,12 @@ export const Modal: React.FC<IModal> = ({
   closeIconTestID,
   onClickAccept,
   onClickClose,
-  onClickBackground,
 }: IModal) => {
   return (
     <Background
       css={S.backgroundCSS}
       dataTestID={`${dataTestID!}-background`}
-      onClickBackground={onClickBackground}
+      onClickBackground={onClickClose}
     >
       <S.Modal data-testid={dataTestID}>
         <Icon

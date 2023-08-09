@@ -10,7 +10,7 @@ interface IOverviewListItem extends IComponent {
   editIconTestID?: string;
   deleteIconTestID?: string;
   onClickEdit: (id: number) => void;
-  onClickDelete: () => void;
+  onClickDelete: (id: number) => void;
 }
 
 export const OverviewListItem: React.FC<IOverviewListItem> = ({
@@ -23,6 +23,7 @@ export const OverviewListItem: React.FC<IOverviewListItem> = ({
   onClickDelete,
 }: IOverviewListItem) => {
   const handleOnClickEdit = () => onClickEdit(id);
+  const handleOnClickDelete = () => onClickDelete(id);
 
   return (
     <S.OverviewListItem data-testid={dataTestID}>
@@ -42,7 +43,7 @@ export const OverviewListItem: React.FC<IOverviewListItem> = ({
           height={20}
           icon={Icons.DELETE}
           width={20}
-          onClick={onClickDelete}
+          onClick={handleOnClickDelete}
         />
       </S.IconsWrapper>
     </S.OverviewListItem>

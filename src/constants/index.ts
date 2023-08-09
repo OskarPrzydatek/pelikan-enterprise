@@ -36,20 +36,28 @@ export enum Slugs {
 export enum Endpoints {
   ATTRACTIONS_LIST = 'attractions/list',
   CREATE_ATTRACTION = 'attractions/add',
+  UPDATE_ATTRACTION = 'attractions/update',
+  DELETE_ATTRACTION = 'attractions/delete',
 
   HASHTAGS_LIST = 'hashtags/list',
   CREATE_HASHTAG = 'hashtags/add',
+  UPDATE_HASHTAG = 'hashtags/update',
+  DELETE_HASHTAG = 'hashtags/delete',
 
   HOTELS_LIST = 'hotels/list',
   CREATE_HOTEL = 'hotels/add',
+  UPDATE_HOTEL = 'hotels/update',
+  DELETE_HOTEL = 'hotels/delete',
 
   OFFERS_LIST = 'offers/list',
   CREATE_OFFER = 'offers/add',
+  UPDATE_OFFER = 'offers/update',
+  DELETE_OFFER = 'offers/delete',
 
   TRANSPORTS_LIST = 'transports/list',
   CREATE_TRANSPORT = 'transports/add',
   UPDATE_TRANSPORT = 'transport/update',
-  DELETE_TRANSPORT = 'transport/deletee',
+  DELETE_TRANSPORT = 'transport/delete',
 }
 
 export const transportTypeOptions = [

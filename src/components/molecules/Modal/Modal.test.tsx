@@ -16,7 +16,6 @@ const MockModal = () => (
       closeIconTestID="molecule-modal-close"
       dataTestID="molecule-modal"
       onClickAccept={mockOnClickAccept}
-      onClickBackground={mockOnClickClose}
       onClickClose={mockOnClickClose}
     >
       <p data-testid="modal-content">Example Text</p>

@@ -18,7 +18,7 @@ export interface IOverviewTemplate {
   isLoading: boolean;
   error: Error | undefined;
   page?: string;
-  onClickDelete: () => void;
+  onClickDelete: (id: number) => void;
   onClickEdit: (id: number) => void;
   onClickNavigateToCreatePage: () => void;
 }
