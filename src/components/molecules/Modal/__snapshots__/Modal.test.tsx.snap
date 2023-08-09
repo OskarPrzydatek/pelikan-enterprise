@@ -1,44 +1,50 @@
 // Vitest Snapshot v1
 
-exports[`TextField > component snapshot 1`] = `
+exports[`Modal > component snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
-    <div>
+    <div />
+    <div
+      class="sc-dkrFOg ieHbTX"
+      data-testid="molecule-modal-background"
+    >
       <div
-        class="sc-ftTHYK gCnWqt"
+        class="sc-jrcTuL kPuENp"
+        data-testid="molecule-modal"
       >
-        <div
-          class="sc-pyfCe dPDCSN"
+        <button
+          class="sc-jSUZER dkgLl"
+          data-testid="molecule-modal-close"
         >
-          <input
-            class="sc-jrcTuL jPpBZo"
-            data-testid="molecule-datefield"
-            min="2023-08-09"
-            name="startDate"
-            type="date"
-          />
-        </div>
+          <svg
+            data-testid="close-icon"
+            fill="none"
+            viewBox="0 0 20 20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20 2.01429L17.9857 0L10 7.98571L2.01429 0L0 2.01429L7.98571 10L0 17.9857L2.01429 20L10 12.0143L17.9857 20L20 17.9857L12.0143 10L20 2.01429Z"
+              fill="#013059"
+            />
+          </svg>
+        </button>
+        <p
+          data-testid="modal-content"
+        >
+          Example Text
+        </p>
+        <button
+          class="sc-hLBbgP cqISts"
+          data-testid="molecule-modal-accept"
+        >
+          Akceptuj
+        </button>
       </div>
     </div>
   </body>,
-  "container": <div>
-    <div
-      class="sc-ftTHYK gCnWqt"
-    >
-      <div
-        class="sc-pyfCe dPDCSN"
-      >
-        <input
-          class="sc-jrcTuL jPpBZo"
-          data-testid="molecule-datefield"
-          min="2023-08-09"
-          name="startDate"
-          type="date"
-        />
-      </div>
-    </div>
-  </div>,
+  "container": <div />,
   "debug": [Function],
   "findAllByAltText": [Function],
   "findAllByDisplayValue": [Function],

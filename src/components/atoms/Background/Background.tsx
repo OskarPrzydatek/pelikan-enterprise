@@ -11,6 +11,7 @@ interface IBackground extends IComponent {
 
 export const Background: React.FC<IBackground> = ({
   children,
+  css,
   dataTestID,
   onClickBackground,
 }: IBackground) => {
@@ -26,7 +27,11 @@ export const Background: React.FC<IBackground> = ({
   };
 
   return ReactDOM.createPortal(
-    <S.Background data-testid={dataTestID} onClick={handleOnClickBackground}>
+    <S.Background
+      css={css}
+      data-testid={dataTestID}
+      onClick={handleOnClickBackground}
+    >
       {children}
     </S.Background>,
     document.body
