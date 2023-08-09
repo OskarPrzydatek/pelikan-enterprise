@@ -1,5 +1,9 @@
-import { OverviewListItem } from '~/components/molecules';
+import React from 'react';
+
+import { Text } from '~/components/atoms';
+import { Modal, OverviewListItem } from '~/components/molecules';
 import { OverviewList, ErrorBundaryLoader } from '~/components/organisms';
+import { useDeleteWithModal } from '~/hooks';
 import { IOverviewTemplate, ITransportData } from '~/models';
 
 interface ITransportOverviewTemplate extends IOverviewTemplate {
@@ -18,6 +22,12 @@ export const TransportOverviewTemplate: React.FC<
   onClickNavigateToCreatePage,
 }: ITransportOverviewTemplate) => {
   const { isArray } = Array;
+  const {
+    showModal,
+    handleItemIdBeforeDelete,
+    onClickAcceptedDelete,
+    onClickCloseModale,
+  } = useDeleteWithModal(onClickDelete);
 
   return (
     <ErrorBundaryLoader error={error} isLoading={isLoading}>
@@ -37,12 +47,21 @@ export const TransportOverviewTemplate: React.FC<
                 editIconTestID={`transport-overview-edit-${id}`}
                 id={id}
                 name={transportType}
-                onClickDelete={onClickDelete}
+                onClickDelete={handleItemIdBeforeDelete}
                 onClickEdit={onClickEdit}
               />
             ))
           : null}
       </OverviewList>
+      {showModal ? (
+        <Modal
+          acceptLabel="Usuń!"
+          onClickAccept={onClickAcceptedDelete}
+          onClickClose={onClickCloseModale}
+        >
+          <Text>Czy napewno usunąć element z listy?</Text>
+        </Modal>
+      ) : null}
     </ErrorBundaryLoader>
   );
 };

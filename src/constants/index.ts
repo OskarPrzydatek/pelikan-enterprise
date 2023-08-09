@@ -56,8 +56,8 @@ export enum Endpoints {
 
   TRANSPORTS_LIST = 'transports/list',
   CREATE_TRANSPORT = 'transports/add',
-  UPDATE_TRANSPORT = 'transport/update',
-  DELETE_TRANSPORT = 'transport/delete',
+  UPDATE_TRANSPORT = 'transports/update',
+  DELETE_TRANSPORT = 'transports/delete',
 }
 
 export const transportTypeOptions = [
