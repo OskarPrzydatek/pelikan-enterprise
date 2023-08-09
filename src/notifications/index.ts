@@ -18,8 +18,10 @@ export const successNotification = (message: string) => {
   });
 };
 
-export const errorNotification = () => {
-  toast.error('Coś poszło nie tak', {
+export const errorNotification = (message?: string) => {
+  const errorMessage = message ?? 'Coś poszło nie tak';
+
+  toast.error(errorMessage, {
     position: 'top-right',
     autoClose: 3000,
     hideProgressBar: false,

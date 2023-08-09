@@ -17,11 +17,11 @@ export const HashtagOverviewPage: React.FC = () => {
   );
 
   const onClickDeleteHashtag = async (id: number) => {
-    const endpoint = `${Endpoints.DELETE_ATTRACTION}/${id}` as Endpoints;
+    const endpoint = `${Endpoints.DELETE_HASHTAG}/${id}` as Endpoints;
     const response = await fetchDelete(endpoint);
 
     if (response.ok) {
-      await mutate(Endpoints.ATTRACTIONS_LIST);
+      await mutate(Endpoints.HASHTAGS_LIST);
       successNotification('Hashtag został usunięty pomyślnie');
       return;
     }

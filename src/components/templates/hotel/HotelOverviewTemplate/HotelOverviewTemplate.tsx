@@ -1,5 +1,9 @@
-import { OverviewListItem } from '~/components/molecules';
+import React from 'react';
+
+import { Text } from '~/components/atoms';
+import { Modal, OverviewListItem } from '~/components/molecules';
 import { OverviewList, ErrorBundaryLoader } from '~/components/organisms';
+import { useDeleteWithModal } from '~/hooks';
 import { IHotelData, IOverviewTemplate } from '~/models';
 
 interface IHotelOverviewTemplate extends IOverviewTemplate {
@@ -16,6 +20,12 @@ export const HotelOverviewTemplate: React.FC<IHotelOverviewTemplate> = ({
   onClickNavigateToCreatePage,
 }: IHotelOverviewTemplate) => {
   const { isArray } = Array;
+  const {
+    showModal,
+    handleItemIdBeforeDelete,
+    onClickAcceptedDelete,
+    onClickCloseModale,
+  } = useDeleteWithModal(onClickDelete);
 
   return (
     <ErrorBundaryLoader error={error} isLoading={isLoading}>
@@ -35,12 +45,21 @@ export const HotelOverviewTemplate: React.FC<IHotelOverviewTemplate> = ({
                 editIconTestID={`hotel-overview-edit-${id}`}
                 id={id}
                 name={name}
-                onClickDelete={onClickDelete}
+                onClickDelete={handleItemIdBeforeDelete}
                 onClickEdit={onClickEdit}
               />
             ))
           : null}
       </OverviewList>
+      {showModal ? (
+        <Modal
+          acceptLabel="Usuń!"
+          onClickAccept={onClickAcceptedDelete}
+          onClickClose={onClickCloseModale}
+        >
+          <Text>Czy napewno usunąć element z listy?</Text>
+        </Modal>
+      ) : null}
     </ErrorBundaryLoader>
   );
 };
