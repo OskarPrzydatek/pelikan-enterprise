@@ -16,7 +16,7 @@ root.render(
   <StrictMode>
     <StyledComponentsProvider>
       <RouterProvider router={router} />
-      <ToastContainer />
+      <ToastContainer limit={3} />
     </StyledComponentsProvider>
   </StrictMode>
 );
