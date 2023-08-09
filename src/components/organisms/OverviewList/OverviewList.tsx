@@ -11,7 +11,7 @@ interface IOverviewList {
   navigateLabel: string;
   children?: React.ReactNode;
   page?: string;
-  onClickNavigateToCreatePage: () => void;
+  onClickNavigateToCreatePage?: () => void;
 }
 
 export const OverviewList: React.FC<IOverviewList> = ({
@@ -42,13 +42,15 @@ export const OverviewList: React.FC<IOverviewList> = ({
         <Text dataTestID="pagination-counter">{currentPage} / X</Text>
         <Icon css={S.nextArrowCSS} icon={Icons.ARROW} onClick={() => {}} />
       </S.Pagination>
-      <Button
-        css={S.navigateButtonCSS}
-        dataTestID="overview-list-navigate-to-create-page"
-        onClick={onClickNavigateToCreatePage}
-      >
-        {navigateLabel}
-      </Button>
+      {onClickNavigateToCreatePage ? (
+        <Button
+          css={S.navigateButtonCSS}
+          dataTestID="overview-list-navigate-to-create-page"
+          onClick={onClickNavigateToCreatePage}
+        >
+          {navigateLabel}
+        </Button>
+      ) : null}
     </S.OverviewList>
   );
 };

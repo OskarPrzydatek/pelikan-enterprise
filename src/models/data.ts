@@ -25,8 +25,7 @@ export interface IOfferData {
   termFrom: Date;
   termTo: Date;
   price: number;
-  destination: string;
-  numberOfGuests: number;
+  quantity: number;
   // Temp as string
   transport: string;
   hotel: string;

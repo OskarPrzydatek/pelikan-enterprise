@@ -21,11 +21,9 @@ export interface IOffer {
   termFrom: Date;
   termTo: Date;
   price: number;
-  destination: string;
-  numberOfGuests: number;
-  // Temp as string
-  transport: string;
-  hotel: string;
+  quantity: number;
+  transport: { id: number };
+  hotel: { id: number };
 }
 
 export interface ITransport {

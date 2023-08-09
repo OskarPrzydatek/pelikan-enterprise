@@ -1,5 +1,10 @@
 import React from 'react';
-import { FieldValues, RegisterOptions, useFormContext } from 'react-hook-form';
+import {
+  FieldError,
+  FieldValues,
+  RegisterOptions,
+  useFormContext,
+} from 'react-hook-form';
 
 import { Icon, Label, Text } from '~/components/atoms';
 import { Icons } from '~/constants';
@@ -36,14 +41,18 @@ export const Select: React.FC<ISelect> = ({
   const [isFocused, setIsFocused] = React.useState<boolean>(false);
   const [isFilled, setIsFilled] = React.useState<boolean>(false);
 
-  const isLabelRendered = isFocused || isFilled;
+  const selectName = name.split('.').length > 1 ? name.split('.')[0] : name;
+  // TODO: check this when time - works but typing
+  // @ts-expect-error
+  const errorsName = (errors[selectName]?.id ??
+    errors[selectName]) as unknown as FieldError | undefined;
 
+  const isLabelRendered = isFocused || isFilled;
   const isFocusedLabelColorCSS = isFocused ? S.focusedLabelCSS : undefined;
   const isFocusedChevronCSS = showOptions ? S.chevronUpCSS : S.chevronDownCSS;
   const isChevronCSS =
     showOptions !== undefined ? isFocusedChevronCSS : undefined;
-  const isSelectErrorCSS = errors[name] ? S.selectErrorCSS : undefined;
-  const errorMessage = errors[name]?.message as string;
+  const isSelectErrorCSS = errorsName ? S.selectErrorCSS : undefined;
 
   const handleIsFocused = () => {
     setShowOptions(true);
@@ -106,9 +115,9 @@ export const Select: React.FC<ISelect> = ({
           </>
         </S.Select>
       </S.SelectWrapper>
-      {errors[name] ? (
+      {errorsName ? (
         <Text css={S.errorMessageCSS} dataTestID={errorMessageTestID}>
-          {errorMessage}
+          {errorsName.message}
         </Text>
       ) : null}
     </S.FlexColumn>

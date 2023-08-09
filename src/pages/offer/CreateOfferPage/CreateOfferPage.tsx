@@ -4,12 +4,37 @@ import { useNavigate } from 'react-router-dom';
 import { fetchPost } from '~/api';
 import { CreateOfferTemplate } from '~/components/templates';
 import { Endpoints, Slugs } from '~/constants';
-import { IOffer } from '~/models';
+import { useCachedOfferResources } from '~/hooks/useCachedOfferResources/useCachedOfferResources';
+import { IHotelData, IOffer, ITransportData } from '~/models';
 import { errorNotification, successNotification } from '~/notifications';
 
 export const CreateOfferPage: React.FC = () => {
   const methods = useForm<IOffer>();
   const navigate = useNavigate();
+  const { hotelsList, transportsList, resourcesError, resourcesIsLoading } =
+    useCachedOfferResources();
+
+  const mapHotelsToOptions = (data: IHotelData[]) => {
+    if (hotelsList && transportsList) {
+      return data.map(({ id, name }) => ({
+        value: id,
+        label: name,
+      }));
+    }
+
+    return [];
+  };
+
+  const mapTransportsToOptions = (data: ITransportData[]) => {
+    if (hotelsList && transportsList) {
+      return data.map(({ id, transportType }) => ({
+        value: id,
+        label: transportType,
+      }));
+    }
+
+    return [];
+  };
 
   const onSubmit: SubmitHandler<IOffer> = async (data) => {
     const response = await fetchPost<IOffer>(Endpoints.CREATE_OFFER, data);
@@ -26,15 +51,10 @@ export const CreateOfferPage: React.FC = () => {
   return (
     <CreateOfferTemplate
       createOfferFormMethods={methods}
-      hotelOptions={[
-        { value: '1', label: 'Hotel A' },
-        { value: '2', label: 'Hotel B' },
-        { value: '3', label: 'Hotel C' },
-      ]}
-      transportOptions={[
-        { value: 'TRANSPORT_A', label: 'Transport A' },
-        { value: 'TRANSPORT_B', label: 'Transport B' },
-      ]}
+      error={resourcesError}
+      hotelOptions={mapHotelsToOptions(hotelsList!)}
+      isLoading={resourcesIsLoading}
+      transportOptions={mapTransportsToOptions(transportsList!)}
       onSubmitCreateOffer={methods.handleSubmit(onSubmit)}
     />
   );

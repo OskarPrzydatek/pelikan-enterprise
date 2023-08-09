@@ -25,5 +25,5 @@ export interface IOverviewTemplate {
 
 export interface ISelectOption {
   label: string;
-  value: string;
+  value: string | number;
 }
