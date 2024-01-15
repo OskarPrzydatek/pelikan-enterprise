@@ -9,7 +9,7 @@ exports[`CreateTransportPage > page snapshot 1`] = `
         class="sc-gswNZR cJrdyV"
       >
         <form
-          class="sc-kMjNwy hquCBr"
+          class="sc-jIRcFI iwFYYu"
         >
           <h2
             class="sc-eDvSVe dcXtK"
@@ -17,13 +17,13 @@ exports[`CreateTransportPage > page snapshot 1`] = `
             Dodaj transport
           </h2>
           <div
-            class="sc-dIfARi fzFjao"
+            class="sc-dmctIk iThEeJ"
           >
             <div
-              class="sc-hHTYSt jxYQNB"
+              class="sc-kgTSHT fmvgAY"
             >
               <input
-                class="sc-dmctIk kfdLzt"
+                class="sc-fLcnxK gGYQKp"
                 data-testid="create-company-name"
                 id="name"
                 name="name"
@@ -32,13 +32,13 @@ exports[`CreateTransportPage > page snapshot 1`] = `
             </div>
           </div>
           <div
-            class="sc-fLcnxK fqKMIt"
+            class="sc-iveFHk hxGauG"
           >
             <div
-              class="sc-bBABsx dhlDgD"
+              class="sc-cwSeag fbfUTf"
             >
               <span
-                class="sc-cwSeag cidxUX"
+                class="sc-iJnaPW ixWkhk"
               >
                 <span
                   class="sc-gKPRtg dQATfs"
@@ -59,12 +59,12 @@ exports[`CreateTransportPage > page snapshot 1`] = `
                 </span>
               </span>
               <select
-                class="sc-lllmON jyomDE"
+                class="sc-gikAfH koRAmy"
                 data-testid="create-transport-transport-kind"
                 name="transportType"
               >
                 <option
-                  class="sc-iJnaPW"
+                  class="sc-ezOQGI"
                   disabled=""
                   selected=""
                   value=""
@@ -72,19 +72,19 @@ exports[`CreateTransportPage > page snapshot 1`] = `
                   Rodzaj transportu
                 </option>
                 <option
-                  class="sc-iJnaPW"
+                  class="sc-ezOQGI"
                   value="PLANE"
                 >
                   Samolot
                 </option>
                 <option
-                  class="sc-iJnaPW"
+                  class="sc-ezOQGI"
                   value="BUS"
                 >
                   Autobus
                 </option>
                 <option
-                  class="sc-iJnaPW"
+                  class="sc-ezOQGI"
                   value="SHIP"
                 >
                   Statek
@@ -93,13 +93,13 @@ exports[`CreateTransportPage > page snapshot 1`] = `
             </div>
           </div>
           <div
-            class="sc-fnGiBr eCQdor"
+            class="sc-bjfHbI kTUcsA"
           >
             <div
-              class="sc-fEXmlR krzYqf"
+              class="sc-idXgbr enkruV"
             >
               <textarea
-                class="sc-idXgbr kKkwAS"
+                class="sc-hHTYSt lavPOm"
                 data-testid="create-transport-desription"
                 id="description"
                 name="description"
@@ -108,7 +108,7 @@ exports[`CreateTransportPage > page snapshot 1`] = `
             </div>
           </div>
           <input
-            class="sc-ilhmMj ffxDLh"
+            class="sc-hhOBVt dvAfkB"
             type="submit"
             value="Dodaj"
           />
@@ -121,7 +121,7 @@ exports[`CreateTransportPage > page snapshot 1`] = `
       class="sc-gswNZR cJrdyV"
     >
       <form
-        class="sc-kMjNwy hquCBr"
+        class="sc-jIRcFI iwFYYu"
       >
         <h2
           class="sc-eDvSVe dcXtK"
@@ -129,13 +129,13 @@ exports[`CreateTransportPage > page snapshot 1`] = `
           Dodaj transport
         </h2>
         <div
-          class="sc-dIfARi fzFjao"
+          class="sc-dmctIk iThEeJ"
         >
           <div
-            class="sc-hHTYSt jxYQNB"
+            class="sc-kgTSHT fmvgAY"
           >
             <input
-              class="sc-dmctIk kfdLzt"
+              class="sc-fLcnxK gGYQKp"
               data-testid="create-company-name"
               id="name"
               name="name"
@@ -144,13 +144,13 @@ exports[`CreateTransportPage > page snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sc-fLcnxK fqKMIt"
+          class="sc-iveFHk hxGauG"
         >
           <div
-            class="sc-bBABsx dhlDgD"
+            class="sc-cwSeag fbfUTf"
           >
             <span
-              class="sc-cwSeag cidxUX"
+              class="sc-iJnaPW ixWkhk"
             >
               <span
                 class="sc-gKPRtg dQATfs"
@@ -171,12 +171,12 @@ exports[`CreateTransportPage > page snapshot 1`] = `
               </span>
             </span>
             <select
-              class="sc-lllmON jyomDE"
+              class="sc-gikAfH koRAmy"
               data-testid="create-transport-transport-kind"
               name="transportType"
             >
               <option
-                class="sc-iJnaPW"
+                class="sc-ezOQGI"
                 disabled=""
                 selected=""
                 value=""
@@ -184,19 +184,19 @@ exports[`CreateTransportPage > page snapshot 1`] = `
                 Rodzaj transportu
               </option>
               <option
-                class="sc-iJnaPW"
+                class="sc-ezOQGI"
                 value="PLANE"
               >
                 Samolot
               </option>
               <option
-                class="sc-iJnaPW"
+                class="sc-ezOQGI"
                 value="BUS"
               >
                 Autobus
               </option>
               <option
-                class="sc-iJnaPW"
+                class="sc-ezOQGI"
                 value="SHIP"
               >
                 Statek
@@ -205,13 +205,13 @@ exports[`CreateTransportPage > page snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sc-fnGiBr eCQdor"
+          class="sc-bjfHbI kTUcsA"
         >
           <div
-            class="sc-fEXmlR krzYqf"
+            class="sc-idXgbr enkruV"
           >
             <textarea
-              class="sc-idXgbr kKkwAS"
+              class="sc-hHTYSt lavPOm"
               data-testid="create-transport-desription"
               id="description"
               name="description"
@@ -220,7 +220,7 @@ exports[`CreateTransportPage > page snapshot 1`] = `
           </div>
         </div>
         <input
-          class="sc-ilhmMj ffxDLh"
+          class="sc-hhOBVt dvAfkB"
           type="submit"
           value="Dodaj"
         />

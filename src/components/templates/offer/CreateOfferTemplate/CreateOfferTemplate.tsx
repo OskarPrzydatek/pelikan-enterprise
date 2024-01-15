@@ -1,9 +1,16 @@
 import { UseFormReturn } from 'react-hook-form';
 
 import { Row } from '~/components/atoms';
-import { DateField, Select, TextArea, TextField } from '~/components/molecules';
-import { ErrorBundaryLoader, Form } from '~/components/organisms';
-import { IOffer, ISelectOption } from '~/models';
+import {
+  DateField,
+  Modal,
+  OverviewListItem,
+  Select,
+  TextArea,
+  TextField,
+} from '~/components/molecules';
+import { ErrorBundaryLoader, Form, OverviewList } from '~/components/organisms';
+import { IAttractionData, IOffer, ISelectOption } from '~/models';
 import { numericValidator, requiredValidator } from '~/validators';
 
 interface ICreateOfferTemplate {
@@ -12,7 +19,12 @@ interface ICreateOfferTemplate {
   createOfferFormMethods: UseFormReturn<IOffer>;
   transportOptions: ISelectOption[];
   hotelOptions: ISelectOption[];
+  attractions: IAttractionData[];
+  showAttractionsModal: boolean;
+  onClickAcceptModal: () => void;
+  onClickCloseModal: () => void;
   onSubmitCreateOffer: () => void;
+  onClickAddAttractionToOffer?: (attraction: IAttractionData) => void;
 }
 
 export const CreateOfferTemplate: React.FC<ICreateOfferTemplate> = ({
@@ -21,8 +33,15 @@ export const CreateOfferTemplate: React.FC<ICreateOfferTemplate> = ({
   createOfferFormMethods,
   transportOptions,
   hotelOptions,
+  attractions,
+  showAttractionsModal,
+  onClickAcceptModal,
+  onClickCloseModal,
   onSubmitCreateOffer,
+  onClickAddAttractionToOffer,
 }: ICreateOfferTemplate) => {
+  const { isArray } = Array;
+
   return (
     <ErrorBundaryLoader error={error} isLoading={isLoading}>
       <Form
@@ -124,6 +143,33 @@ export const CreateOfferTemplate: React.FC<ICreateOfferTemplate> = ({
           }}
         />
       </Form>
+
+      {showAttractionsModal ? (
+        <Modal
+          acceptLabel="Dodaj atrakcje"
+          onClickAccept={onClickAcceptModal}
+          onClickClose={onClickCloseModal}
+        >
+          <OverviewList
+            navigateLabel="navigateLabel"
+            noItemsLabel="Brak dostępnych atrakcji"
+            title="Dodaj atrakcje do oferty"
+          >
+            {isArray(attractions)
+              ? attractions.map((attraction) => (
+                  <OverviewListItem
+                    key={`${attraction.id}-${attraction.name}`}
+                    attraction={attraction}
+                    dataTestID={`offer-add-attraction-modal-item-${attraction.id}`}
+                    id={attraction.id}
+                    name={attraction.name}
+                    onClickAddAttractionToOffer={onClickAddAttractionToOffer}
+                  />
+                ))
+              : null}
+          </OverviewList>
+        </Modal>
+      ) : null}
     </ErrorBundaryLoader>
   );
 };

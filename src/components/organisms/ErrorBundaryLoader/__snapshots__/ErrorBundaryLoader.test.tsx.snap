@@ -6,7 +6,7 @@ exports[`ErrorBundaryLoader > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-ezOQGI deUqHb"
+        class="sc-kMjNwy fMrqeM"
       >
         <p
           class="sc-iBYQkv cMzfYw"
@@ -19,7 +19,7 @@ exports[`ErrorBundaryLoader > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-ezOQGI deUqHb"
+      class="sc-kMjNwy fMrqeM"
     >
       <p
         class="sc-iBYQkv cMzfYw"

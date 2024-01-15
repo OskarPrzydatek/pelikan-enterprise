@@ -2,41 +2,34 @@ import useSWR from 'swr';
 
 import { fetchGet } from '~/api';
 import { Endpoints } from '~/constants';
-import { IHotelData, ITransportData } from '~/models';
-
-const useCachedHotels = () => {
-  const { data, error, isLoading } = useSWR<IHotelData[], Error>(
-    Endpoints.HOTELS_LIST,
-    fetchGet
-  );
-
-  return {
-    hotelsList: data,
-    hotelsError: error,
-    hotelsIsLoading: isLoading,
-  };
-};
-
-const useCachedTransports = () => {
-  const { data, error, isLoading } = useSWR<ITransportData[], Error>(
-    Endpoints.TRANSPORTS_LIST,
-    fetchGet
-  );
-
-  return {
-    transportsList: data,
-    transportsError: error,
-    transportsIsLoading: isLoading,
-  };
-};
+import { IAttractionData, IHotelData, ITransportData } from '~/models';
 
 export const useCachedOfferResources = () => {
-  const { hotelsList, hotelsError, hotelsIsLoading } = useCachedHotels();
-  const { transportsList, transportsError, transportsIsLoading } =
-    useCachedTransports();
+  const {
+    data: hotelsList,
+    error: hotelsError,
+    isLoading: hotelsIsLoading,
+  } = useSWR<IHotelData[], Error>(Endpoints.HOTELS_LIST, fetchGet);
+  const {
+    data: transportsList,
+    error: transportsError,
+    isLoading: transportsIsLoading,
+  } = useSWR<ITransportData[], Error>(Endpoints.TRANSPORTS_LIST, fetchGet);
+  const {
+    data: attractionsList,
+    error: attractionsError,
+    isLoading: attractionsIsLoading,
+  } = useSWR<IAttractionData[], Error>(Endpoints.ATTRACTIONS_LIST, fetchGet);
 
-  const resourcesError = hotelsError && transportsError;
-  const resourcesIsLoading = hotelsIsLoading && transportsIsLoading;
+  const resourcesError = hotelsError ?? transportsError ?? attractionsError;
+  const resourcesIsLoading =
+    hotelsIsLoading && transportsIsLoading && attractionsIsLoading;
 
-  return { hotelsList, transportsList, resourcesError, resourcesIsLoading };
+  return {
+    attractionsList,
+    hotelsList,
+    transportsList,
+    resourcesError,
+    resourcesIsLoading,
+  };
 };

@@ -9,7 +9,7 @@ exports[`CreateHotelPage > page snapshot 1`] = `
         class="sc-gswNZR cJrdyV"
       >
         <form
-          class="sc-kMjNwy hquCBr"
+          class="sc-jIRcFI iwFYYu"
         >
           <h2
             class="sc-eDvSVe dcXtK"
@@ -20,13 +20,13 @@ exports[`CreateHotelPage > page snapshot 1`] = `
             class="sc-ftTHYK bUTnLq"
           >
             <div
-              class="sc-dIfARi fzFjao"
+              class="sc-dmctIk iThEeJ"
             >
               <div
-                class="sc-hHTYSt jxYQNB"
+                class="sc-kgTSHT fmvgAY"
               >
                 <input
-                  class="sc-dmctIk kfdLzt"
+                  class="sc-fLcnxK gGYQKp"
                   data-testid="create-hotel-name"
                   id="name"
                   name="name"
@@ -35,13 +35,13 @@ exports[`CreateHotelPage > page snapshot 1`] = `
               </div>
             </div>
             <div
-              class="sc-dIfARi fzFjao"
+              class="sc-dmctIk iThEeJ"
             >
               <div
-                class="sc-hHTYSt jxYQNB"
+                class="sc-kgTSHT fmvgAY"
               >
                 <input
-                  class="sc-dmctIk kfdLzt"
+                  class="sc-fLcnxK gGYQKp"
                   data-testid="create-hotel-address"
                   id="address"
                   name="address"
@@ -51,13 +51,13 @@ exports[`CreateHotelPage > page snapshot 1`] = `
             </div>
           </div>
           <div
-            class="sc-dIfARi fzFjao"
+            class="sc-dmctIk iThEeJ"
           >
             <div
-              class="sc-hHTYSt jxYQNB"
+              class="sc-kgTSHT fmvgAY"
             >
               <input
-                class="sc-dmctIk kfdLzt"
+                class="sc-fLcnxK gGYQKp"
                 data-testid="create-hotel-stars-rating"
                 id="stars"
                 name="stars"
@@ -66,13 +66,13 @@ exports[`CreateHotelPage > page snapshot 1`] = `
             </div>
           </div>
           <div
-            class="sc-fnGiBr eCQdor"
+            class="sc-bjfHbI kTUcsA"
           >
             <div
-              class="sc-fEXmlR krzYqf"
+              class="sc-idXgbr enkruV"
             >
               <textarea
-                class="sc-idXgbr kKkwAS"
+                class="sc-hHTYSt lavPOm"
                 data-testid="create-hotel-description"
                 id="description"
                 name="description"
@@ -81,7 +81,7 @@ exports[`CreateHotelPage > page snapshot 1`] = `
             </div>
           </div>
           <input
-            class="sc-ilhmMj ffxDLh"
+            class="sc-hhOBVt dvAfkB"
             type="submit"
             value="Dodaj"
           />
@@ -94,7 +94,7 @@ exports[`CreateHotelPage > page snapshot 1`] = `
       class="sc-gswNZR cJrdyV"
     >
       <form
-        class="sc-kMjNwy hquCBr"
+        class="sc-jIRcFI iwFYYu"
       >
         <h2
           class="sc-eDvSVe dcXtK"
@@ -105,13 +105,13 @@ exports[`CreateHotelPage > page snapshot 1`] = `
           class="sc-ftTHYK bUTnLq"
         >
           <div
-            class="sc-dIfARi fzFjao"
+            class="sc-dmctIk iThEeJ"
           >
             <div
-              class="sc-hHTYSt jxYQNB"
+              class="sc-kgTSHT fmvgAY"
             >
               <input
-                class="sc-dmctIk kfdLzt"
+                class="sc-fLcnxK gGYQKp"
                 data-testid="create-hotel-name"
                 id="name"
                 name="name"
@@ -120,13 +120,13 @@ exports[`CreateHotelPage > page snapshot 1`] = `
             </div>
           </div>
           <div
-            class="sc-dIfARi fzFjao"
+            class="sc-dmctIk iThEeJ"
           >
             <div
-              class="sc-hHTYSt jxYQNB"
+              class="sc-kgTSHT fmvgAY"
             >
               <input
-                class="sc-dmctIk kfdLzt"
+                class="sc-fLcnxK gGYQKp"
                 data-testid="create-hotel-address"
                 id="address"
                 name="address"
@@ -136,13 +136,13 @@ exports[`CreateHotelPage > page snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sc-dIfARi fzFjao"
+          class="sc-dmctIk iThEeJ"
         >
           <div
-            class="sc-hHTYSt jxYQNB"
+            class="sc-kgTSHT fmvgAY"
           >
             <input
-              class="sc-dmctIk kfdLzt"
+              class="sc-fLcnxK gGYQKp"
               data-testid="create-hotel-stars-rating"
               id="stars"
               name="stars"
@@ -151,13 +151,13 @@ exports[`CreateHotelPage > page snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sc-fnGiBr eCQdor"
+          class="sc-bjfHbI kTUcsA"
         >
           <div
-            class="sc-fEXmlR krzYqf"
+            class="sc-idXgbr enkruV"
           >
             <textarea
-              class="sc-idXgbr kKkwAS"
+              class="sc-hHTYSt lavPOm"
               data-testid="create-hotel-description"
               id="description"
               name="description"
@@ -166,7 +166,7 @@ exports[`CreateHotelPage > page snapshot 1`] = `
           </div>
         </div>
         <input
-          class="sc-ilhmMj ffxDLh"
+          class="sc-hhOBVt dvAfkB"
           type="submit"
           value="Dodaj"
         />

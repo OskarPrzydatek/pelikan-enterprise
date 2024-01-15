@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components';
 
 export const Modal = styled.div`
-  min-width: 80%;
+  width: 100%;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
   gap: ${({ theme }) => theme.spaces.xl};
@@ -9,7 +10,9 @@ export const Modal = styled.div`
   background-color: ${({ theme }) => theme.colors.white};
 
   @media ${({ theme }) => theme.breakpoints.tablet} {
-    min-width: 30%;
+    width: 60%;
+    min-height: 30%;
+    max-height: 80%;
   }
 
   > * {

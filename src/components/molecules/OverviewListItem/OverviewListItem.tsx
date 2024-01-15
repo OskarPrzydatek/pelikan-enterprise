@@ -1,6 +1,6 @@
 import { Icon, Text } from '~/components/atoms';
 import { Icons } from '~/constants';
-import { IComponent } from '~/models';
+import { IAttractionData, IComponent } from '~/models';
 
 import * as S from './OverviewListItem.styles';
 
@@ -9,8 +9,12 @@ interface IOverviewListItem extends IComponent {
   name: string;
   editIconTestID?: string;
   deleteIconTestID?: string;
-  onClickEdit: (id: number) => void;
-  onClickDelete: (id: number) => void;
+  onClickDelete?: (id: number) => void;
+  onClickEdit?: (id: number) => void;
+
+  // Mode for adding attractions
+  attraction?: IAttractionData;
+  onClickAddAttractionToOffer?: (attraction: IAttractionData) => void;
 }
 
 export const OverviewListItem: React.FC<IOverviewListItem> = ({
@@ -19,32 +23,48 @@ export const OverviewListItem: React.FC<IOverviewListItem> = ({
   dataTestID,
   editIconTestID,
   deleteIconTestID,
-  onClickEdit,
   onClickDelete,
+  onClickEdit,
+
+  attraction,
+  onClickAddAttractionToOffer,
 }: IOverviewListItem) => {
-  const handleOnClickEdit = () => onClickEdit(id);
-  const handleOnClickDelete = () => onClickDelete(id);
+  const handleOnClickDelete = () => onClickDelete?.(id);
+  const handleOnClickEdit = () => onClickEdit?.(id);
 
   return (
     <S.OverviewListItem data-testid={dataTestID}>
       <Text>{name}</Text>
       <S.IconsWrapper>
-        <Icon
-          css={S.iconCSS}
-          dataTestID={editIconTestID}
-          height={20}
-          icon={Icons.EDIT}
-          width={20}
-          onClick={handleOnClickEdit}
-        />
-        <Icon
-          css={S.iconCSS}
-          dataTestID={deleteIconTestID}
-          height={20}
-          icon={Icons.DELETE}
-          width={20}
-          onClick={handleOnClickDelete}
-        />
+        {onClickEdit ? (
+          <Icon
+            css={S.iconCSS}
+            dataTestID={editIconTestID}
+            height={20}
+            icon={Icons.EDIT}
+            width={20}
+            onClick={handleOnClickEdit}
+          />
+        ) : null}
+        {onClickDelete ? (
+          <Icon
+            css={S.iconCSS}
+            dataTestID={deleteIconTestID}
+            height={20}
+            icon={Icons.DELETE}
+            width={20}
+            onClick={handleOnClickDelete}
+          />
+        ) : null}
+        {attraction && onClickAddAttractionToOffer ? (
+          <Icon
+            css={S.iconCSS}
+            height={18}
+            icon={Icons.ADD}
+            width={18}
+            onClick={() => onClickAddAttractionToOffer(attraction)}
+          />
+        ) : null}
       </S.IconsWrapper>
     </S.OverviewListItem>
   );

@@ -9,7 +9,7 @@ exports[`CreateHashtagPage > page snapshot 1`] = `
         class="sc-gswNZR cJrdyV"
       >
         <form
-          class="sc-kMjNwy hquCBr"
+          class="sc-jIRcFI iwFYYu"
         >
           <h2
             class="sc-eDvSVe dcXtK"
@@ -17,13 +17,13 @@ exports[`CreateHashtagPage > page snapshot 1`] = `
             Dodaj hashtag
           </h2>
           <div
-            class="sc-dIfARi fzFjao"
+            class="sc-dmctIk iThEeJ"
           >
             <div
-              class="sc-hHTYSt jxYQNB"
+              class="sc-kgTSHT fmvgAY"
             >
               <input
-                class="sc-dmctIk kfdLzt"
+                class="sc-fLcnxK gGYQKp"
                 data-testid="create-hashtag-name"
                 id="name"
                 name="name"
@@ -32,7 +32,7 @@ exports[`CreateHashtagPage > page snapshot 1`] = `
             </div>
           </div>
           <input
-            class="sc-ilhmMj ffxDLh"
+            class="sc-hhOBVt dvAfkB"
             type="submit"
             value="Dodaj"
           />
@@ -45,7 +45,7 @@ exports[`CreateHashtagPage > page snapshot 1`] = `
       class="sc-gswNZR cJrdyV"
     >
       <form
-        class="sc-kMjNwy hquCBr"
+        class="sc-jIRcFI iwFYYu"
       >
         <h2
           class="sc-eDvSVe dcXtK"
@@ -53,13 +53,13 @@ exports[`CreateHashtagPage > page snapshot 1`] = `
           Dodaj hashtag
         </h2>
         <div
-          class="sc-dIfARi fzFjao"
+          class="sc-dmctIk iThEeJ"
         >
           <div
-            class="sc-hHTYSt jxYQNB"
+            class="sc-kgTSHT fmvgAY"
           >
             <input
-              class="sc-dmctIk kfdLzt"
+              class="sc-fLcnxK gGYQKp"
               data-testid="create-hashtag-name"
               id="name"
               name="name"
@@ -68,7 +68,7 @@ exports[`CreateHashtagPage > page snapshot 1`] = `
           </div>
         </div>
         <input
-          class="sc-ilhmMj ffxDLh"
+          class="sc-hhOBVt dvAfkB"
           type="submit"
           value="Dodaj"
         />

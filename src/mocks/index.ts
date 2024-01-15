@@ -1,3 +1,5 @@
+import { IOfferData } from '~/models';
+
 export const attractionDataMock = [
   {
     id: 1,
@@ -157,7 +159,7 @@ export const offerDataMock = [
     transport: 'Flight',
     hotel: 'Family Suite',
   },
-];
+] as IOfferData[];
 
 export const transportDataMock = [
   {

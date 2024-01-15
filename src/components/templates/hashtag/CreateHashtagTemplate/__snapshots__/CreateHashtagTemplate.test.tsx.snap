@@ -6,10 +6,10 @@ exports[`CreateHashtagTemplate > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-iAEawV eSwvqh"
+        class="sc-cUEOzv deYUng"
       >
         <form
-          class="sc-ezOQGI fwNckg"
+          class="sc-kMjNwy hquCBr"
         >
           <h2
             class="sc-dkrFOg kaKqDq"
@@ -17,13 +17,13 @@ exports[`CreateHashtagTemplate > component snapshot 1`] = `
             Dodaj hashtag
           </h2>
           <div
-            class="sc-bjfHbI kTUcsA"
+            class="sc-dIfARi fzFjao"
           >
             <div
-              class="sc-idXgbr enkruV"
+              class="sc-hHTYSt jxYQNB"
             >
               <input
-                class="sc-dIfARi lhrlng"
+                class="sc-dmctIk kfdLzt"
                 data-testid="create-hashtag-name"
                 id="name"
                 name="name"
@@ -32,7 +32,7 @@ exports[`CreateHashtagTemplate > component snapshot 1`] = `
             </div>
           </div>
           <input
-            class="sc-bYMpWt cSAxYb"
+            class="sc-ilhmMj ffxDLh"
             type="submit"
             value="Dodaj"
           />
@@ -42,10 +42,10 @@ exports[`CreateHashtagTemplate > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-iAEawV eSwvqh"
+      class="sc-cUEOzv deYUng"
     >
       <form
-        class="sc-ezOQGI fwNckg"
+        class="sc-kMjNwy hquCBr"
       >
         <h2
           class="sc-dkrFOg kaKqDq"
@@ -53,13 +53,13 @@ exports[`CreateHashtagTemplate > component snapshot 1`] = `
           Dodaj hashtag
         </h2>
         <div
-          class="sc-bjfHbI kTUcsA"
+          class="sc-dIfARi fzFjao"
         >
           <div
-            class="sc-idXgbr enkruV"
+            class="sc-hHTYSt jxYQNB"
           >
             <input
-              class="sc-dIfARi lhrlng"
+              class="sc-dmctIk kfdLzt"
               data-testid="create-hashtag-name"
               id="name"
               name="name"
@@ -68,7 +68,7 @@ exports[`CreateHashtagTemplate > component snapshot 1`] = `
           </div>
         </div>
         <input
-          class="sc-bYMpWt cSAxYb"
+          class="sc-ilhmMj ffxDLh"
           type="submit"
           value="Dodaj"
         />

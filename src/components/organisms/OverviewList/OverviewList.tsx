@@ -26,9 +26,9 @@ export const OverviewList: React.FC<IOverviewList> = ({
   const itemsLength = React.Children.count(children);
 
   return (
-    <S.OverviewList>
+    <S.OverviewListWrapper>
       <Header>{title}</Header>
-      <S.OverviewListWrapper>
+      <S.OverviewList>
         {itemsLength > 0 ? (
           children
         ) : (
@@ -36,12 +36,14 @@ export const OverviewList: React.FC<IOverviewList> = ({
             <Text>{noItemsLabel}</Text>
           </li>
         )}
-      </S.OverviewListWrapper>
-      <S.Pagination>
-        <Icon css={S.prevArrowCSS} icon={Icons.ARROW} onClick={() => {}} />
-        <Text dataTestID="pagination-counter">{currentPage} / X</Text>
-        <Icon css={S.nextArrowCSS} icon={Icons.ARROW} onClick={() => {}} />
-      </S.Pagination>
+      </S.OverviewList>
+      {page ? (
+        <S.Pagination>
+          <Icon css={S.prevArrowCSS} icon={Icons.ARROW} onClick={() => {}} />
+          <Text dataTestID="pagination-counter">{currentPage} / X</Text>
+          <Icon css={S.nextArrowCSS} icon={Icons.ARROW} onClick={() => {}} />
+        </S.Pagination>
+      ) : null}
       {onClickNavigateToCreatePage ? (
         <Button
           css={S.navigateButtonCSS}
@@ -51,6 +53,6 @@ export const OverviewList: React.FC<IOverviewList> = ({
           {navigateLabel}
         </Button>
       ) : null}
-    </S.OverviewList>
+    </S.OverviewListWrapper>
   );
 };

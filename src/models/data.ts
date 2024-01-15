@@ -3,6 +3,9 @@ export interface IAttractionData {
   name: string;
   price: number;
   description: string;
+  offer?: {
+    id: number;
+  };
 }
 
 export interface IHashtagData {
@@ -26,7 +29,6 @@ export interface IOfferData {
   termTo: Date;
   price: number;
   quantity: number;
-  // Temp as string
   transport: string;
   hotel: string;
 }

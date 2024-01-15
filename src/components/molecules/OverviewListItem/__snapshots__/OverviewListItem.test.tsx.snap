@@ -14,7 +14,7 @@ exports[`OverviewListItem > component snapshot 1`] = `
           Item
         </p>
         <div
-          class="sc-kDvujY fXPBtu"
+          class="sc-kDvujY gpfWTa"
         >
           <button
             class="sc-jSUZER fgGcDJ"
@@ -106,7 +106,7 @@ exports[`OverviewListItem > component snapshot 1`] = `
         Item
       </p>
       <div
-        class="sc-kDvujY fXPBtu"
+        class="sc-kDvujY gpfWTa"
       >
         <button
           class="sc-jSUZER fgGcDJ"

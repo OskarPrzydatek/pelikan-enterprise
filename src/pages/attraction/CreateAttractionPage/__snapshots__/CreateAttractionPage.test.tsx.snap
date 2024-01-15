@@ -9,7 +9,7 @@ exports[`CreateAttractionPage > page snapshot 1`] = `
         class="sc-gswNZR cJrdyV"
       >
         <form
-          class="sc-kMjNwy hquCBr"
+          class="sc-jIRcFI iwFYYu"
         >
           <h2
             class="sc-eDvSVe dcXtK"
@@ -17,13 +17,13 @@ exports[`CreateAttractionPage > page snapshot 1`] = `
             Dodaj atrakcję
           </h2>
           <div
-            class="sc-dIfARi fzFjao"
+            class="sc-dmctIk iThEeJ"
           >
             <div
-              class="sc-hHTYSt jxYQNB"
+              class="sc-kgTSHT fmvgAY"
             >
               <input
-                class="sc-dmctIk kfdLzt"
+                class="sc-fLcnxK gGYQKp"
                 data-testid="create-attraction-name"
                 id="name"
                 name="name"
@@ -32,13 +32,13 @@ exports[`CreateAttractionPage > page snapshot 1`] = `
             </div>
           </div>
           <div
-            class="sc-dIfARi fzFjao"
+            class="sc-dmctIk iThEeJ"
           >
             <div
-              class="sc-hHTYSt jxYQNB"
+              class="sc-kgTSHT fmvgAY"
             >
               <input
-                class="sc-dmctIk kfdLzt"
+                class="sc-fLcnxK gGYQKp"
                 data-testid="create-attraction-price"
                 id="price"
                 name="price"
@@ -47,13 +47,13 @@ exports[`CreateAttractionPage > page snapshot 1`] = `
             </div>
           </div>
           <div
-            class="sc-fnGiBr eCQdor"
+            class="sc-bjfHbI kTUcsA"
           >
             <div
-              class="sc-fEXmlR krzYqf"
+              class="sc-idXgbr enkruV"
             >
               <textarea
-                class="sc-idXgbr kKkwAS"
+                class="sc-hHTYSt lavPOm"
                 data-testid="attraction-description"
                 id="description"
                 name="description"
@@ -62,7 +62,7 @@ exports[`CreateAttractionPage > page snapshot 1`] = `
             </div>
           </div>
           <input
-            class="sc-ilhmMj ffxDLh"
+            class="sc-hhOBVt dvAfkB"
             type="submit"
             value="Dodaj"
           />
@@ -75,7 +75,7 @@ exports[`CreateAttractionPage > page snapshot 1`] = `
       class="sc-gswNZR cJrdyV"
     >
       <form
-        class="sc-kMjNwy hquCBr"
+        class="sc-jIRcFI iwFYYu"
       >
         <h2
           class="sc-eDvSVe dcXtK"
@@ -83,13 +83,13 @@ exports[`CreateAttractionPage > page snapshot 1`] = `
           Dodaj atrakcję
         </h2>
         <div
-          class="sc-dIfARi fzFjao"
+          class="sc-dmctIk iThEeJ"
         >
           <div
-            class="sc-hHTYSt jxYQNB"
+            class="sc-kgTSHT fmvgAY"
           >
             <input
-              class="sc-dmctIk kfdLzt"
+              class="sc-fLcnxK gGYQKp"
               data-testid="create-attraction-name"
               id="name"
               name="name"
@@ -98,13 +98,13 @@ exports[`CreateAttractionPage > page snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sc-dIfARi fzFjao"
+          class="sc-dmctIk iThEeJ"
         >
           <div
-            class="sc-hHTYSt jxYQNB"
+            class="sc-kgTSHT fmvgAY"
           >
             <input
-              class="sc-dmctIk kfdLzt"
+              class="sc-fLcnxK gGYQKp"
               data-testid="create-attraction-price"
               id="price"
               name="price"
@@ -113,13 +113,13 @@ exports[`CreateAttractionPage > page snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sc-fnGiBr eCQdor"
+          class="sc-bjfHbI kTUcsA"
         >
           <div
-            class="sc-fEXmlR krzYqf"
+            class="sc-idXgbr enkruV"
           >
             <textarea
-              class="sc-idXgbr kKkwAS"
+              class="sc-hHTYSt lavPOm"
               data-testid="attraction-description"
               id="description"
               name="description"
@@ -128,7 +128,7 @@ exports[`CreateAttractionPage > page snapshot 1`] = `
           </div>
         </div>
         <input
-          class="sc-ilhmMj ffxDLh"
+          class="sc-hhOBVt dvAfkB"
           type="submit"
           value="Dodaj"
         />

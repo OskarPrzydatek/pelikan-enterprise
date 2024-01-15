@@ -6,13 +6,13 @@ exports[`TextField > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-bjfHbI kTUcsA"
+        class="sc-dIfARi fzFjao"
       >
         <div
-          class="sc-idXgbr enkruV"
+          class="sc-hHTYSt jxYQNB"
         >
           <input
-            class="sc-dIfARi lhrlng"
+            class="sc-dmctIk kfdLzt"
             data-testid="molecule-textfield"
             id="email"
             name="email"
@@ -24,13 +24,13 @@ exports[`TextField > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-bjfHbI kTUcsA"
+      class="sc-dIfARi fzFjao"
     >
       <div
-        class="sc-idXgbr enkruV"
+        class="sc-hHTYSt jxYQNB"
       >
         <input
-          class="sc-dIfARi lhrlng"
+          class="sc-dmctIk kfdLzt"
           data-testid="molecule-textfield"
           id="email"
           name="email"

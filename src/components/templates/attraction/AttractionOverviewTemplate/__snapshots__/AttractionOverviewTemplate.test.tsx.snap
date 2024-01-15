@@ -6,10 +6,10 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-ezOQGI deUqHb"
+        class="sc-kMjNwy fMrqeM"
       >
         <div
-          class="sc-cabOPr isyJVs"
+          class="sc-iAEawV kYTlxs"
         >
           <h2
             class="sc-eDvSVe dcXtK"
@@ -17,10 +17,10 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
             Atrakcje
           </h2>
           <ul
-            class="sc-iTFTee uYVcY"
+            class="sc-eeMvmM eoXwSL"
           >
             <li
-              class="sc-eDWCr jtwhuZ"
+              class="sc-ksBlkl guNHGv"
               data-testid="attraction-overview-list-item-1"
             >
               <p
@@ -29,7 +29,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
                 AttractiONe
               </p>
               <div
-                class="sc-bqWxrE kyFLpy"
+                class="sc-hBxehG llVXBx"
               >
                 <button
                   class="sc-jSUZER fgGcDJ"
@@ -110,7 +110,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
               </div>
             </li>
             <li
-              class="sc-eDWCr jtwhuZ"
+              class="sc-ksBlkl guNHGv"
               data-testid="attraction-overview-list-item-2"
             >
               <p
@@ -119,7 +119,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
                 AdventuraLand
               </p>
               <div
-                class="sc-bqWxrE kyFLpy"
+                class="sc-hBxehG llVXBx"
               >
                 <button
                   class="sc-jSUZER fgGcDJ"
@@ -200,7 +200,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
               </div>
             </li>
             <li
-              class="sc-eDWCr jtwhuZ"
+              class="sc-ksBlkl guNHGv"
               data-testid="attraction-overview-list-item-3"
             >
               <p
@@ -209,7 +209,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
                 WonderWorld
               </p>
               <div
-                class="sc-bqWxrE kyFLpy"
+                class="sc-hBxehG llVXBx"
               >
                 <button
                   class="sc-jSUZER fgGcDJ"
@@ -290,7 +290,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
               </div>
             </li>
             <li
-              class="sc-eDWCr jtwhuZ"
+              class="sc-ksBlkl guNHGv"
               data-testid="attraction-overview-list-item-4"
             >
               <p
@@ -299,7 +299,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
                 ExoticEscape
               </p>
               <div
-                class="sc-bqWxrE kyFLpy"
+                class="sc-hBxehG llVXBx"
               >
                 <button
                   class="sc-jSUZER fgGcDJ"
@@ -380,7 +380,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
               </div>
             </li>
             <li
-              class="sc-eDWCr jtwhuZ"
+              class="sc-ksBlkl guNHGv"
               data-testid="attraction-overview-list-item-5"
             >
               <p
@@ -389,7 +389,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
                 HistoryJourney
               </p>
               <div
-                class="sc-bqWxrE kyFLpy"
+                class="sc-hBxehG llVXBx"
               >
                 <button
                   class="sc-jSUZER fgGcDJ"
@@ -470,49 +470,6 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
               </div>
             </li>
           </ul>
-          <div
-            class="sc-iAEawV jRdAiF"
-          >
-            <button
-              class="sc-jSUZER fQVznz"
-            >
-              <svg
-                data-testid="arrow-icon"
-                fill="none"
-                viewBox="0 0 40 26"
-                width="20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 13L39.75 0.00961876V25.9904L0 13Z"
-                  fill="#013059"
-                />
-              </svg>
-            </button>
-            <p
-              class="sc-pyfCe bsnSHf"
-              data-testid="pagination-counter"
-            >
-              1
-               / X
-            </p>
-            <button
-              class="sc-jSUZER hjlqfP"
-            >
-              <svg
-                data-testid="arrow-icon"
-                fill="none"
-                viewBox="0 0 40 26"
-                width="20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 13L39.75 0.00961876V25.9904L0 13Z"
-                  fill="#013059"
-                />
-              </svg>
-            </button>
-          </div>
           <button
             class="sc-hLBbgP kQYyQS"
             data-testid="overview-list-navigate-to-create-page"
@@ -525,10 +482,10 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-ezOQGI deUqHb"
+      class="sc-kMjNwy fMrqeM"
     >
       <div
-        class="sc-cabOPr isyJVs"
+        class="sc-iAEawV kYTlxs"
       >
         <h2
           class="sc-eDvSVe dcXtK"
@@ -536,10 +493,10 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
           Atrakcje
         </h2>
         <ul
-          class="sc-iTFTee uYVcY"
+          class="sc-eeMvmM eoXwSL"
         >
           <li
-            class="sc-eDWCr jtwhuZ"
+            class="sc-ksBlkl guNHGv"
             data-testid="attraction-overview-list-item-1"
           >
             <p
@@ -548,7 +505,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
               AttractiONe
             </p>
             <div
-              class="sc-bqWxrE kyFLpy"
+              class="sc-hBxehG llVXBx"
             >
               <button
                 class="sc-jSUZER fgGcDJ"
@@ -629,7 +586,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
             </div>
           </li>
           <li
-            class="sc-eDWCr jtwhuZ"
+            class="sc-ksBlkl guNHGv"
             data-testid="attraction-overview-list-item-2"
           >
             <p
@@ -638,7 +595,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
               AdventuraLand
             </p>
             <div
-              class="sc-bqWxrE kyFLpy"
+              class="sc-hBxehG llVXBx"
             >
               <button
                 class="sc-jSUZER fgGcDJ"
@@ -719,7 +676,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
             </div>
           </li>
           <li
-            class="sc-eDWCr jtwhuZ"
+            class="sc-ksBlkl guNHGv"
             data-testid="attraction-overview-list-item-3"
           >
             <p
@@ -728,7 +685,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
               WonderWorld
             </p>
             <div
-              class="sc-bqWxrE kyFLpy"
+              class="sc-hBxehG llVXBx"
             >
               <button
                 class="sc-jSUZER fgGcDJ"
@@ -809,7 +766,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
             </div>
           </li>
           <li
-            class="sc-eDWCr jtwhuZ"
+            class="sc-ksBlkl guNHGv"
             data-testid="attraction-overview-list-item-4"
           >
             <p
@@ -818,7 +775,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
               ExoticEscape
             </p>
             <div
-              class="sc-bqWxrE kyFLpy"
+              class="sc-hBxehG llVXBx"
             >
               <button
                 class="sc-jSUZER fgGcDJ"
@@ -899,7 +856,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
             </div>
           </li>
           <li
-            class="sc-eDWCr jtwhuZ"
+            class="sc-ksBlkl guNHGv"
             data-testid="attraction-overview-list-item-5"
           >
             <p
@@ -908,7 +865,7 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
               HistoryJourney
             </p>
             <div
-              class="sc-bqWxrE kyFLpy"
+              class="sc-hBxehG llVXBx"
             >
               <button
                 class="sc-jSUZER fgGcDJ"
@@ -989,49 +946,6 @@ exports[`AttractionOverviewTemplate > component snapshot 1`] = `
             </div>
           </li>
         </ul>
-        <div
-          class="sc-iAEawV jRdAiF"
-        >
-          <button
-            class="sc-jSUZER fQVznz"
-          >
-            <svg
-              data-testid="arrow-icon"
-              fill="none"
-              viewBox="0 0 40 26"
-              width="20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 13L39.75 0.00961876V25.9904L0 13Z"
-                fill="#013059"
-              />
-            </svg>
-          </button>
-          <p
-            class="sc-pyfCe bsnSHf"
-            data-testid="pagination-counter"
-          >
-            1
-             / X
-          </p>
-          <button
-            class="sc-jSUZER hjlqfP"
-          >
-            <svg
-              data-testid="arrow-icon"
-              fill="none"
-              viewBox="0 0 40 26"
-              width="20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 13L39.75 0.00961876V25.9904L0 13Z"
-                fill="#013059"
-              />
-            </svg>
-          </button>
-        </div>
         <button
           class="sc-hLBbgP kQYyQS"
           data-testid="overview-list-navigate-to-create-page"

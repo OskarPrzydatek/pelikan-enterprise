@@ -6,10 +6,10 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-iAEawV eSwvqh"
+        class="sc-cUEOzv deYUng"
       >
         <form
-          class="sc-ezOQGI fwNckg"
+          class="sc-kMjNwy hquCBr"
         >
           <h2
             class="sc-dkrFOg kaKqDq"
@@ -20,13 +20,13 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
             class="sc-gKPRtg gOHhkn"
           >
             <div
-              class="sc-bjfHbI kTUcsA"
+              class="sc-dIfARi fzFjao"
             >
               <div
-                class="sc-idXgbr enkruV"
+                class="sc-hHTYSt jxYQNB"
               >
                 <input
-                  class="sc-dIfARi lhrlng"
+                  class="sc-dmctIk kfdLzt"
                   data-testid="create-hotel-name"
                   id="name"
                   name="name"
@@ -35,13 +35,13 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
               </div>
             </div>
             <div
-              class="sc-bjfHbI kTUcsA"
+              class="sc-dIfARi fzFjao"
             >
               <div
-                class="sc-idXgbr enkruV"
+                class="sc-hHTYSt jxYQNB"
               >
                 <input
-                  class="sc-dIfARi lhrlng"
+                  class="sc-dmctIk kfdLzt"
                   data-testid="create-hotel-address"
                   id="address"
                   name="address"
@@ -51,13 +51,13 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
             </div>
           </div>
           <div
-            class="sc-bjfHbI kTUcsA"
+            class="sc-dIfARi fzFjao"
           >
             <div
-              class="sc-idXgbr enkruV"
+              class="sc-hHTYSt jxYQNB"
             >
               <input
-                class="sc-dIfARi lhrlng"
+                class="sc-dmctIk kfdLzt"
                 data-testid="create-hotel-stars-rating"
                 id="stars"
                 name="stars"
@@ -66,13 +66,13 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
             </div>
           </div>
           <div
-            class="sc-ksBlkl gBSrBs"
+            class="sc-fnGiBr eCQdor"
           >
             <div
-              class="sc-hBxehG eptxaL"
+              class="sc-fEXmlR krzYqf"
             >
               <textarea
-                class="sc-fEXmlR cvACeU"
+                class="sc-idXgbr kKkwAS"
                 data-testid="create-hotel-description"
                 id="description"
                 name="description"
@@ -81,7 +81,7 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
             </div>
           </div>
           <input
-            class="sc-bYMpWt cSAxYb"
+            class="sc-ilhmMj ffxDLh"
             type="submit"
             value="Dodaj"
           />
@@ -91,10 +91,10 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-iAEawV eSwvqh"
+      class="sc-cUEOzv deYUng"
     >
       <form
-        class="sc-ezOQGI fwNckg"
+        class="sc-kMjNwy hquCBr"
       >
         <h2
           class="sc-dkrFOg kaKqDq"
@@ -105,13 +105,13 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
           class="sc-gKPRtg gOHhkn"
         >
           <div
-            class="sc-bjfHbI kTUcsA"
+            class="sc-dIfARi fzFjao"
           >
             <div
-              class="sc-idXgbr enkruV"
+              class="sc-hHTYSt jxYQNB"
             >
               <input
-                class="sc-dIfARi lhrlng"
+                class="sc-dmctIk kfdLzt"
                 data-testid="create-hotel-name"
                 id="name"
                 name="name"
@@ -120,13 +120,13 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
             </div>
           </div>
           <div
-            class="sc-bjfHbI kTUcsA"
+            class="sc-dIfARi fzFjao"
           >
             <div
-              class="sc-idXgbr enkruV"
+              class="sc-hHTYSt jxYQNB"
             >
               <input
-                class="sc-dIfARi lhrlng"
+                class="sc-dmctIk kfdLzt"
                 data-testid="create-hotel-address"
                 id="address"
                 name="address"
@@ -136,13 +136,13 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sc-bjfHbI kTUcsA"
+          class="sc-dIfARi fzFjao"
         >
           <div
-            class="sc-idXgbr enkruV"
+            class="sc-hHTYSt jxYQNB"
           >
             <input
-              class="sc-dIfARi lhrlng"
+              class="sc-dmctIk kfdLzt"
               data-testid="create-hotel-stars-rating"
               id="stars"
               name="stars"
@@ -151,13 +151,13 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sc-ksBlkl gBSrBs"
+          class="sc-fnGiBr eCQdor"
         >
           <div
-            class="sc-hBxehG eptxaL"
+            class="sc-fEXmlR krzYqf"
           >
             <textarea
-              class="sc-fEXmlR cvACeU"
+              class="sc-idXgbr kKkwAS"
               data-testid="create-hotel-description"
               id="description"
               name="description"
@@ -166,7 +166,7 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
           </div>
         </div>
         <input
-          class="sc-bYMpWt cSAxYb"
+          class="sc-ilhmMj ffxDLh"
           type="submit"
           value="Dodaj"
         />

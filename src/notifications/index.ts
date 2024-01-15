@@ -2,19 +2,22 @@ import { toast } from 'react-toastify';
 
 import { theme } from '~/styles';
 
+const notificationsSetup = {
+  autoClose: 3000,
+  hideProgressBar: false,
+  closeOnClick: true,
+  pauseOnHover: true,
+  draggable: true,
+  progress: undefined,
+};
+
 export const successNotification = (message: string) => {
   toast(message, {
     position: 'top-right',
-    autoClose: 3000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: 'light',
     progressStyle: {
       background: theme.colors.darkBlue,
     },
+    ...notificationsSetup,
   });
 };
 
@@ -23,12 +26,6 @@ export const errorNotification = (message?: string) => {
 
   toast.error(errorMessage, {
     position: 'top-right',
-    autoClose: 3000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: 'light',
+    ...notificationsSetup,
   });
 };

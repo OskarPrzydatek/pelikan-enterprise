@@ -10,7 +10,7 @@ exports[`Modal > component snapshot 1`] = `
       data-testid="molecule-modal-background"
     >
       <div
-        class="sc-jrcTuL kPuENp"
+        class="sc-jrcTuL hFCxPh"
         data-testid="molecule-modal"
       >
         <button

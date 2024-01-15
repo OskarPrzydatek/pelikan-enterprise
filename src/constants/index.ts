@@ -1,4 +1,5 @@
 export enum Icons {
+  ADD,
   ARROW,
   CHEVRON,
   CLOSE,
