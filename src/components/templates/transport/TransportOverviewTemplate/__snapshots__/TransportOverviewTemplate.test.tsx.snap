@@ -26,7 +26,7 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
               <p
                 class="sc-pyfCe bsnSHf"
               >
-                PLANE
+                Emirates
               </p>
               <div
                 class="sc-hBxehG llVXBx"
@@ -116,7 +116,7 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
               <p
                 class="sc-pyfCe bsnSHf"
               >
-                PLANE
+                Rayanair
               </p>
               <div
                 class="sc-hBxehG llVXBx"
@@ -206,7 +206,7 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
               <p
                 class="sc-pyfCe bsnSHf"
               >
-                BUS
+                City Hopper Bus
               </p>
               <div
                 class="sc-hBxehG llVXBx"
@@ -296,7 +296,7 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
               <p
                 class="sc-pyfCe bsnSHf"
               >
-                SHIP
+                Stenaline
               </p>
               <div
                 class="sc-hBxehG llVXBx"
@@ -386,7 +386,7 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
               <p
                 class="sc-pyfCe bsnSHf"
               >
-                SHIP
+                Polferis
               </p>
               <div
                 class="sc-hBxehG llVXBx"
@@ -502,7 +502,7 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
             <p
               class="sc-pyfCe bsnSHf"
             >
-              PLANE
+              Emirates
             </p>
             <div
               class="sc-hBxehG llVXBx"
@@ -592,7 +592,7 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
             <p
               class="sc-pyfCe bsnSHf"
             >
-              PLANE
+              Rayanair
             </p>
             <div
               class="sc-hBxehG llVXBx"
@@ -682,7 +682,7 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
             <p
               class="sc-pyfCe bsnSHf"
             >
-              BUS
+              City Hopper Bus
             </p>
             <div
               class="sc-hBxehG llVXBx"
@@ -772,7 +772,7 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
             <p
               class="sc-pyfCe bsnSHf"
             >
-              SHIP
+              Stenaline
             </p>
             <div
               class="sc-hBxehG llVXBx"
@@ -862,7 +862,7 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
             <p
               class="sc-pyfCe bsnSHf"
             >
-              SHIP
+              Polferis
             </p>
             <div
               class="sc-hBxehG llVXBx"

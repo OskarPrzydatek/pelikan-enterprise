@@ -11,6 +11,9 @@ export interface IAttractionData {
 export interface IHashtagData {
   id: number;
   name: string;
+  offers?: {
+    id: number;
+  }[];
 }
 
 export interface IHotelData {

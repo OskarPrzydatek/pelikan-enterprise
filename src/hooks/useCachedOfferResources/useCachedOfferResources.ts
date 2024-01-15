@@ -20,15 +20,25 @@ export const useCachedOfferResources = () => {
     error: attractionsError,
     isLoading: attractionsIsLoading,
   } = useSWR<IAttractionData[], Error>(Endpoints.ATTRACTIONS_LIST, fetchGet);
+  const {
+    data: hashtagsList,
+    error: hashtagsError,
+    isLoading: hashtagsIsLoading,
+  } = useSWR<IAttractionData[], Error>(Endpoints.HASHTAGS_LIST, fetchGet);
 
-  const resourcesError = hotelsError ?? transportsError ?? attractionsError;
+  const resourcesError =
+    hotelsError ?? transportsError ?? attractionsError ?? hashtagsError;
   const resourcesIsLoading =
-    hotelsIsLoading && transportsIsLoading && attractionsIsLoading;
+    hotelsIsLoading &&
+    transportsIsLoading &&
+    attractionsIsLoading &&
+    hashtagsIsLoading;
 
   return {
     attractionsList,
     hotelsList,
     transportsList,
+    hashtagsList,
     resourcesError,
     resourcesIsLoading,
   };

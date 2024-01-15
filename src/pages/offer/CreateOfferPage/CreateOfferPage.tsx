@@ -4,12 +4,19 @@ import { useNavigate } from 'react-router-dom';
 
 import {
   fetchAddMultipleAttractionsToOffer,
+  fetchAddMultipleHashtagsToOffer,
   fetchAddOfferWithHandlingOfferData,
 } from '~/api';
 import { CreateOfferTemplate } from '~/components/templates';
 import { Slugs } from '~/constants';
 import { useCachedOfferResources } from '~/hooks/useCachedOfferResources/useCachedOfferResources';
-import { IAttractionData, IHotelData, IOffer, ITransportData } from '~/models';
+import {
+  IAttractionData,
+  IHashtagData,
+  IHotelData,
+  IOffer,
+  ITransportData,
+} from '~/models';
 import { errorNotification, successNotification } from '~/notifications';
 
 export const CreateOfferPage: React.FC = () => {
@@ -19,9 +26,17 @@ export const CreateOfferPage: React.FC = () => {
     attractionsList,
     hotelsList,
     transportsList,
+    hashtagsList,
     resourcesError,
     resourcesIsLoading,
   } = useCachedOfferResources();
+
+  const [showHashtagsModal, setShowHashtagsModal] =
+    React.useState<boolean>(false);
+  const [hashtagsToSelect, setHashtagsToSelect] = React.useState<
+    IHashtagData[]
+  >([]);
+  const [offerHashtags, setOfferHashtags] = React.useState<IHashtagData[]>([]);
 
   const [showAttractionsModal, setShowAttractionsModal] =
     React.useState<boolean>(false);
@@ -31,6 +46,7 @@ export const CreateOfferPage: React.FC = () => {
   const [offerAtractions, setOfferAttractions] = React.useState<
     IAttractionData[]
   >([]);
+
   const [createdOfferId, setCreatedOfferId] = React.useState<number>(0);
 
   const mapHotelsToOptions = (data: IHotelData[]) => {
@@ -46,13 +62,50 @@ export const CreateOfferPage: React.FC = () => {
 
   const mapTransportsToOptions = (data: ITransportData[]) => {
     if (transportsList) {
-      return data.map(({ id, transportType }) => ({
+      return data.map(({ id, name }) => ({
         value: id,
-        label: transportType,
+        label: name,
       }));
     }
 
     return [];
+  };
+
+  const onClickAddHashtagToOffer = (hashtag: IHashtagData) => {
+    const filtredBySelectedHashtags = hashtagsToSelect.filter(
+      (item) => item.id !== hashtag.id
+    );
+
+    setHashtagsToSelect(filtredBySelectedHashtags);
+    setOfferHashtags((prev) => [...prev, hashtag]);
+  };
+
+  const onClickCloseHashtagModal = () => {
+    setShowHashtagsModal(false);
+    setShowAttractionsModal(true);
+  };
+
+  const onClickAcceptHashtagModal = async () => {
+    const responses = await fetchAddMultipleHashtagsToOffer(
+      createdOfferId,
+      offerHashtags
+    );
+
+    const rejectedResonses = responses.filter(
+      (response: PromiseSettledResult<Response>) =>
+        response.status !== 'fulfilled'
+    );
+
+    if (rejectedResonses.length === 0) {
+      successNotification('Hashtagi do ofety dodane pomyślnie');
+      setShowHashtagsModal(false);
+      setShowAttractionsModal(true);
+      return;
+    }
+
+    errorNotification(
+      `Nie udało się dodać hashtagów: ${rejectedResonses.length}`
+    );
   };
 
   const onClickAddAttractionToOffer = (attraction: IAttractionData) => {
@@ -64,7 +117,12 @@ export const CreateOfferPage: React.FC = () => {
     setOfferAttractions((prev) => [...prev, attraction]);
   };
 
-  const onClickAcceptModal = async () => {
+  const onClickCloseAttractionModal = () => {
+    setShowAttractionsModal(false);
+    navigate(`/${Slugs.OFFER_OVERVIEW}`);
+  };
+
+  const onClickAcceptAttractionModal = async () => {
     const responses = await fetchAddMultipleAttractionsToOffer(
       createdOfferId,
       offerAtractions
@@ -82,13 +140,8 @@ export const CreateOfferPage: React.FC = () => {
     }
 
     errorNotification(
-      `Nie udało się dodać ${rejectedResonses.length} atrakcji`
+      `Nie udało się dodać atrakcji: ${rejectedResonses.length}`
     );
-  };
-
-  const onClickCloseModal = () => {
-    setShowAttractionsModal(false);
-    navigate(`/${Slugs.OFFER_OVERVIEW}`);
   };
 
   const onSubmit: SubmitHandler<IOffer> = async (data) => {
@@ -98,7 +151,7 @@ export const CreateOfferPage: React.FC = () => {
     if (response.ok) {
       successNotification('Oferta dodana pomyślnie');
       setCreatedOfferId(createdOfferJSON.id);
-      setShowAttractionsModal(true);
+      setShowHashtagsModal(true);
       return;
     }
 
@@ -107,20 +160,26 @@ export const CreateOfferPage: React.FC = () => {
 
   React.useEffect(() => {
     setAttractionsToSelect(attractionsList ?? []);
-  }, [attractionsList]);
+    setHashtagsToSelect(hashtagsList ?? []);
+  }, [attractionsList, hashtagsList]);
 
   return (
     <CreateOfferTemplate
       attractions={attractionsToSelect}
       createOfferFormMethods={methods}
       error={resourcesError}
+      hashtags={hashtagsToSelect}
       hotelOptions={mapHotelsToOptions(hotelsList!)}
       isLoading={resourcesIsLoading}
       showAttractionsModal={showAttractionsModal}
+      showHashtagsModal={showHashtagsModal}
       transportOptions={mapTransportsToOptions(transportsList!)}
-      onClickAcceptModal={onClickAcceptModal}
+      onClickAcceptAttractionModal={onClickAcceptAttractionModal}
+      onClickAcceptHashtagModal={onClickAcceptHashtagModal}
       onClickAddAttractionToOffer={onClickAddAttractionToOffer}
-      onClickCloseModal={onClickCloseModal}
+      onClickAddHashtagToOffer={onClickAddHashtagToOffer}
+      onClickCloseAttractionModal={onClickCloseAttractionModal}
+      onClickCloseHashtagModal={onClickCloseHashtagModal}
       onSubmitCreateOffer={methods.handleSubmit(onSubmit)}
     />
   );

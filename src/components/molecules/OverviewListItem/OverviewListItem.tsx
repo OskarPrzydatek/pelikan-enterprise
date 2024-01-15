@@ -1,6 +1,6 @@
 import { Icon, Text } from '~/components/atoms';
 import { Icons } from '~/constants';
-import { IAttractionData, IComponent } from '~/models';
+import { IAttractionData, IComponent, IHashtagData } from '~/models';
 
 import * as S from './OverviewListItem.styles';
 
@@ -15,6 +15,10 @@ interface IOverviewListItem extends IComponent {
   // Mode for adding attractions
   attraction?: IAttractionData;
   onClickAddAttractionToOffer?: (attraction: IAttractionData) => void;
+
+  // Mode for adding hashtag
+  hashtag?: IHashtagData;
+  onClickAddHashtagToOffer?: (hashtag: IHashtagData) => void;
 }
 
 export const OverviewListItem: React.FC<IOverviewListItem> = ({
@@ -28,6 +32,9 @@ export const OverviewListItem: React.FC<IOverviewListItem> = ({
 
   attraction,
   onClickAddAttractionToOffer,
+
+  hashtag,
+  onClickAddHashtagToOffer,
 }: IOverviewListItem) => {
   const handleOnClickDelete = () => onClickDelete?.(id);
   const handleOnClickEdit = () => onClickEdit?.(id);
@@ -63,6 +70,15 @@ export const OverviewListItem: React.FC<IOverviewListItem> = ({
             icon={Icons.ADD}
             width={18}
             onClick={() => onClickAddAttractionToOffer(attraction)}
+          />
+        ) : null}
+        {hashtag && onClickAddHashtagToOffer ? (
+          <Icon
+            css={S.iconCSS}
+            height={18}
+            icon={Icons.ADD}
+            width={18}
+            onClick={() => onClickAddHashtagToOffer(hashtag)}
           />
         ) : null}
       </S.IconsWrapper>

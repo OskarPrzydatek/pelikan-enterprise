@@ -10,7 +10,7 @@ import {
   TextField,
 } from '~/components/molecules';
 import { ErrorBundaryLoader, Form, OverviewList } from '~/components/organisms';
-import { IAttractionData, IOffer, ISelectOption } from '~/models';
+import { IAttractionData, IHashtagData, IOffer, ISelectOption } from '~/models';
 import { numericValidator, requiredValidator } from '~/validators';
 
 interface ICreateOfferTemplate {
@@ -20,10 +20,15 @@ interface ICreateOfferTemplate {
   transportOptions: ISelectOption[];
   hotelOptions: ISelectOption[];
   attractions: IAttractionData[];
+  hashtags: IHashtagData[];
+  showHashtagsModal: boolean;
   showAttractionsModal: boolean;
-  onClickAcceptModal: () => void;
-  onClickCloseModal: () => void;
   onSubmitCreateOffer: () => void;
+  onClickAcceptHashtagModal: () => void;
+  onClickCloseHashtagModal: () => void;
+  onClickAddHashtagToOffer: (hashtag: IHashtagData) => void;
+  onClickAcceptAttractionModal: () => void;
+  onClickCloseAttractionModal: () => void;
   onClickAddAttractionToOffer?: (attraction: IAttractionData) => void;
 }
 
@@ -34,10 +39,15 @@ export const CreateOfferTemplate: React.FC<ICreateOfferTemplate> = ({
   transportOptions,
   hotelOptions,
   attractions,
+  hashtags,
+  showHashtagsModal,
   showAttractionsModal,
-  onClickAcceptModal,
-  onClickCloseModal,
   onSubmitCreateOffer,
+  onClickAcceptHashtagModal,
+  onClickCloseHashtagModal,
+  onClickAddHashtagToOffer,
+  onClickAcceptAttractionModal,
+  onClickCloseAttractionModal,
   onClickAddAttractionToOffer,
 }: ICreateOfferTemplate) => {
   const { isArray } = Array;
@@ -141,11 +151,38 @@ export const CreateOfferTemplate: React.FC<ICreateOfferTemplate> = ({
         />
       </Form>
 
+      {showHashtagsModal ? (
+        <Modal
+          acceptLabel="Dodaj hashtagi"
+          onClickAccept={onClickAcceptHashtagModal}
+          onClickClose={onClickCloseHashtagModal}
+        >
+          <OverviewList
+            navigateLabel="navigateLabel"
+            noItemsLabel="Brak dostępnych hashtagów"
+            title="Dodaj hashtagi do oferty"
+          >
+            {isArray(hashtags)
+              ? hashtags.map((hashtag) => (
+                  <OverviewListItem
+                    key={`${hashtag.id}-${hashtag.name}`}
+                    dataTestID={`offer-add-attraction-modal-item-${hashtag.id}`}
+                    hashtag={hashtag}
+                    id={hashtag.id}
+                    name={hashtag.name}
+                    onClickAddHashtagToOffer={onClickAddHashtagToOffer}
+                  />
+                ))
+              : null}
+          </OverviewList>
+        </Modal>
+      ) : null}
+
       {showAttractionsModal ? (
         <Modal
           acceptLabel="Dodaj atrakcje"
-          onClickAccept={onClickAcceptModal}
-          onClickClose={onClickCloseModal}
+          onClickAccept={onClickAcceptAttractionModal}
+          onClickClose={onClickCloseAttractionModal}
         >
           <OverviewList
             navigateLabel="navigateLabel"

@@ -1,5 +1,5 @@
 import { Endpoints } from '~/constants';
-import { IAttractionData, IOffer, IOfferData } from '~/models';
+import { IAttractionData, IHashtagData, IOffer, IOfferData } from '~/models';
 import { errorNotification } from '~/notifications';
 
 export const BASE_URL =
@@ -140,4 +140,24 @@ export async function fetchAddMultipleAttractionsToOffer(
   );
 
   return Promise.allSettled(attractionsToAddToOffer);
+}
+
+// Special fetch function to make more than one request
+// for add hashtags to offer
+export async function fetchAddMultipleHashtagsToOffer(
+  createdOfferId: number,
+  offerHashtags: IHashtagData[]
+) {
+  const hashtagsToAddToOffer = offerHashtags.map((hashtag: IHashtagData) => {
+    const URL = `${Endpoints.UPDATE_HASHTAG}/${hashtag.id}` as Endpoints;
+    const hashtagOffers = hashtag.offers ?? [];
+    const body = {
+      ...hashtag,
+      offers: [...hashtagOffers, { id: createdOfferId }],
+    };
+
+    return fetchPut<IHashtagData>(URL, body);
+  });
+
+  return Promise.allSettled(hashtagsToAddToOffer);
 }

@@ -6,26 +6,26 @@ exports[`EditHotelPage > page snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-gswNZR cJrdyV"
+        class="sc-kMjNwy fMrqeM"
       >
-        <h2>
-          Edit Hotel Page
-        </h2>
-        <p>
-          id: 
+        <p
+          class="sc-pyfCe ijJcYk"
+          data-testid="page-layout-loading"
+        >
+          Ładowanie
         </p>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-gswNZR cJrdyV"
+      class="sc-kMjNwy fMrqeM"
     >
-      <h2>
-        Edit Hotel Page
-      </h2>
-      <p>
-        id: 
+      <p
+        class="sc-pyfCe ijJcYk"
+        data-testid="page-layout-loading"
+      >
+        Ładowanie
       </p>
     </div>
   </div>,
