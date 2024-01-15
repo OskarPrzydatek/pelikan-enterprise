@@ -7,6 +7,7 @@ export { EditHashtagTemplate } from './hashtag/EditHashtagTemplate/EditHashtagTe
 export { CreateHashtagTemplate } from './hashtag/CreateHashtagTemplate/CreateHashtagTemplate';
 
 export { HotelOverviewTemplate } from './hotel/HotelOverviewTemplate/HotelOverviewTemplate';
+export { EditHotelTemplate } from './hotel/EditHotelTemplate/EditHotelTemplate';
 export { CreateHotelTemplate } from './hotel/CreateHotelTemplate/CreateHotelTemplate';
 
 export { OfferOverviewTemplate } from './offer/OfferOverviewTemplate/OfferOverviewTemplate';

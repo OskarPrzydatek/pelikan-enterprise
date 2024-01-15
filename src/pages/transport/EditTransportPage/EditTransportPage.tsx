@@ -44,9 +44,9 @@ export const EditTransportPage: React.FC = () => {
 
   return (
     <EditTransortTemplate
-      isLoading={isLoading}
-      error={error}
       editTransortFormMethods={methods}
+      error={error}
+      isLoading={isLoading}
       onSubmitEditTransort={methods.handleSubmit(onSubmit)}
     />
   );

@@ -28,8 +28,8 @@ export const EditTransortTemplate: React.FC<IEditTransortTemplate> = ({
         onSubmit={onSubmitEditTransort}
       >
         <TextField
-          errorMessageTestID="create-transport-company-name-error"
-          inputTestID="create-company-name"
+          errorMessageTestID="edit-transport-company-name-error"
+          inputTestID="edit-company-name"
           label="Nazwa firmy transportowej"
           name="name"
           registerOptions={{
@@ -37,20 +37,20 @@ export const EditTransortTemplate: React.FC<IEditTransortTemplate> = ({
           }}
         />
         <Select
-          errorMessageTestID="create-transport-transport-type-error"
+          errorMessageTestID="edit-transport-transport-type-error"
           label="Rodzaj transportu"
           name="transportType"
           selectOptions={transportTypeOptions}
-          selectTestID="create-transport-transport-kind"
+          selectTestID="edit-transport-transport-kind"
           registerOptions={{
             ...requiredValidator,
           }}
         />
         <TextArea
-          errorMessageTestID="create-transport-desription-error"
+          errorMessageTestID="edit-transport-desription-error"
           label="Opis"
           name="description"
-          textareaTestID="create-transport-desription"
+          textareaTestID="edit-transport-desription"
           registerOptions={{
             ...requiredValidator,
           }}

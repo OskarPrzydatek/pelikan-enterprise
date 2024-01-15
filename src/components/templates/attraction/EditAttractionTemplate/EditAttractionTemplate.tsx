@@ -27,8 +27,8 @@ export const EditAttractionTemplate: React.FC<IEditAttractionTemplate> = ({
         onSubmit={onSubmitEditAttraction}
       >
         <TextField
-          errorMessageTestID="create-attraction-name-error"
-          inputTestID="create-attraction-name"
+          errorMessageTestID="edit-attraction-name-error"
+          inputTestID="edit-attraction-name"
           label="Nazwa atrakcji"
           name="name"
           registerOptions={{
@@ -36,8 +36,8 @@ export const EditAttractionTemplate: React.FC<IEditAttractionTemplate> = ({
           }}
         />
         <TextField
-          errorMessageTestID="create-attraction-price-error"
-          inputTestID="create-attraction-price"
+          errorMessageTestID="edit-attraction-price-error"
+          inputTestID="edit-attraction-price"
           label="Cena"
           name="price"
           registerOptions={{
@@ -45,7 +45,7 @@ export const EditAttractionTemplate: React.FC<IEditAttractionTemplate> = ({
           }}
         />
         <TextArea
-          errorMessageTestID="create-description-error"
+          errorMessageTestID="edit-description-error"
           label="Opis"
           name="description"
           textareaTestID="attraction-description"

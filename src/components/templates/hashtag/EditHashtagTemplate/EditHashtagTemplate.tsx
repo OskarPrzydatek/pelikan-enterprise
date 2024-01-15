@@ -27,8 +27,8 @@ export const EditHashtagTemplate: React.FC<IEditHashtagTemplate> = ({
         onSubmit={onSubmitEditHashtag}
       >
         <TextField
-          errorMessageTestID="create-hashtag-name-error"
-          inputTestID="create-hashtag-name"
+          errorMessageTestID="edit-hashtag-name-error"
+          inputTestID="edit-hashtag-name"
           label="Nazwa hashtagu"
           name="name"
           registerOptions={{
