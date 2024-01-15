@@ -65,12 +65,9 @@ export const CreateOfferTemplate: React.FC<ICreateOfferTemplate> = ({
             inputTestID="create-offer-quantity"
             label="Ilość miejsc"
             name="quantity"
-            registerOptions={
-              {
-                // TODO: take validaton back when BE' ll ready
-                // ...numericValidator,
-              }
-            }
+            registerOptions={{
+              ...numericValidator,
+            }}
           />
           <Select
             errorMessageTestID="create-offer-transport-error"

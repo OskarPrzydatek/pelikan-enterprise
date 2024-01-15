@@ -2,6 +2,7 @@ export { AttractionOverviewTemplate } from './attraction/AttractionOverviewTempl
 export { CreateAttractionTemplate } from './attraction/CreateAttractionTemplate/CreateAttractionTemplate';
 
 export { HashtagOverviewTemplate } from './hashtag/HashtagOverviewTemplate/HashtagOverviewTemplate';
+export { EditHashtagTemplate } from './hashtag/EditHashtagTemplate/EditHashtagTemplate';
 export { CreateHashtagTemplate } from './hashtag/CreateHashtagTemplate/CreateHashtagTemplate';
 
 export { HotelOverviewTemplate } from './hotel/HotelOverviewTemplate/HotelOverviewTemplate';

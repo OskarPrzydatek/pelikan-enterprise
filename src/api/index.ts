@@ -1,6 +1,6 @@
 import { Endpoints } from '~/constants';
 import { IAttractionData, IOffer, IOfferData } from '~/models';
-import { errorNotification, successNotification } from '~/notifications';
+import { errorNotification } from '~/notifications';
 
 export const BASE_URL =
   'https://pelikan-be.agreeableriver-e6153f17.westeurope.azurecontainerapps.io';
@@ -140,16 +140,4 @@ export async function fetchAddMultipleAttractionsToOffer(
   );
 
   return Promise.allSettled(attractionsToAddToOffer);
-
-  /* const rejectedResonses = responses.filter(
-    (response: PromiseSettledResult<Response>) =>
-      response.status !== 'fulfilled'
-  );
-
-  if (rejectedResonses.length === 0) {
-    successNotification('Dodano atrakcje do oferty');
-    return;
-  }
-
-  errorNotification(`Nie udało się dodać ${rejectedResonses.length} atrakcji`); */
 }

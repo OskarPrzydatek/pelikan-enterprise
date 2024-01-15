@@ -41,6 +41,7 @@ export enum Endpoints {
   DELETE_ATTRACTION = 'attractions/delete',
 
   HASHTAGS_LIST = 'hashtags/list',
+  HASHTAG_BY_ID = '/hashtags/get',
   CREATE_HASHTAG = 'hashtags/add',
   UPDATE_HASHTAG = 'hashtags/update',
   DELETE_HASHTAG = 'hashtags/delete',
