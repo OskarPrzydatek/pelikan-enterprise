@@ -1,4 +1,5 @@
 export { AttractionOverviewTemplate } from './attraction/AttractionOverviewTemplate/AttractionOverviewTemplate';
+export { EditAttractionTemplate } from './attraction/EditAttractionTemplate/EditAttractionTemplate';
 export { CreateAttractionTemplate } from './attraction/CreateAttractionTemplate/CreateAttractionTemplate';
 
 export { HashtagOverviewTemplate } from './hashtag/HashtagOverviewTemplate/HashtagOverviewTemplate';

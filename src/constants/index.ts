@@ -36,12 +36,13 @@ export enum Slugs {
 
 export enum Endpoints {
   ATTRACTIONS_LIST = 'attractions/list',
+  ATTRACTION_BY_ID = 'attractions/get',
   CREATE_ATTRACTION = 'attractions/add',
   UPDATE_ATTRACTION = 'attractions/update',
   DELETE_ATTRACTION = 'attractions/delete',
 
   HASHTAGS_LIST = 'hashtags/list',
-  HASHTAG_BY_ID = '/hashtags/get',
+  HASHTAG_BY_ID = 'hashtags/get',
   CREATE_HASHTAG = 'hashtags/add',
   UPDATE_HASHTAG = 'hashtags/update',
   DELETE_HASHTAG = 'hashtags/delete',
