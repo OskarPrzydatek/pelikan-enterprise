@@ -22,8 +22,8 @@ export const EditAttractionTemplate: React.FC<IEditAttractionTemplate> = ({
     <ErrorBundaryLoader error={error} isLoading={isLoading}>
       <Form
         methods={editAttractionFormMethods}
-        submitLabel="Dodaj"
-        title="Dodaj atrakcję"
+        submitLabel="Edytuj"
+        title="Edytuj atrakcję"
         onSubmit={onSubmitEditAttraction}
       >
         <TextField

@@ -39,14 +39,14 @@ export const TransportOverviewTemplate: React.FC<
         onClickNavigateToCreatePage={onClickNavigateToCreatePage}
       >
         {isArray(data)
-          ? data.map(({ id, name, transportType }) => (
+          ? data.map(({ id, name }) => (
               <OverviewListItem
                 key={`${id}-${name}`}
                 dataTestID={`transport-overview-list-item-${id}`}
                 deleteIconTestID={`transport-overview-delete-${id}`}
                 editIconTestID={`transport-overview-edit-${id}`}
                 id={id}
-                name={transportType}
+                name={name}
                 onClickDelete={handleItemIdBeforeDelete}
                 onClickEdit={onClickEdit}
               />

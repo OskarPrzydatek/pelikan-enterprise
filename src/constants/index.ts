@@ -48,16 +48,19 @@ export enum Endpoints {
   DELETE_HASHTAG = 'hashtags/delete',
 
   HOTELS_LIST = 'hotels/list',
+  HOTEL_BY_ID = 'hotels/get',
   CREATE_HOTEL = 'hotels/add',
   UPDATE_HOTEL = 'hotels/update',
   DELETE_HOTEL = 'hotels/delete',
 
   OFFERS_LIST = 'offers/list',
+  OFFER_BY_ID = 'offers/get',
   CREATE_OFFER = 'offers/add',
   UPDATE_OFFER = 'offers/update',
   DELETE_OFFER = 'offers/delete',
 
   TRANSPORTS_LIST = 'transports/list',
+  TRANSPORT_BY_ID = 'transports/get',
   CREATE_TRANSPORT = 'transports/add',
   UPDATE_TRANSPORT = 'transports/update',
   DELETE_TRANSPORT = 'transports/delete',

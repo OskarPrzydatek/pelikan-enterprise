@@ -29,5 +29,5 @@ export interface IOffer {
 export interface ITransport {
   name: string;
   transportType: string;
-  destination: string;
+  description: string;
 }

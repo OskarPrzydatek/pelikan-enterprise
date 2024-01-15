@@ -37,7 +37,7 @@ export interface ITransportData {
   id: number;
   name: string;
   transportType: string;
-  destination: string;
+  description: string;
 }
 
 export interface ITransportBody {

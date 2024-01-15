@@ -13,4 +13,5 @@ export { OfferOverviewTemplate } from './offer/OfferOverviewTemplate/OfferOvervi
 export { CreateOfferTemplate } from './offer/CreateOfferTemplate/CreateOfferTemplate';
 
 export { TransportOverviewTemplate } from './transport/TransportOverviewTemplate/TransportOverviewTemplate';
+export { EditTransortTemplate } from './transport/EditTransortTemplate/EditTransortTemplate';
 export { CreateTransportTemplate } from './transport/CreateTransportTemplate/CreateTransportTemplate';
