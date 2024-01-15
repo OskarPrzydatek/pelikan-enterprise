@@ -29,6 +29,10 @@ export enum Slugs {
   CREATE_TRANSPORT = 'create-transport',
   EDIT_TRANSPORT = 'edit-transport',
 
+  USERS_OVERVIEW = 'users-overview',
+  CREATE_USER = 'create-user',
+  EDIT_USER = 'edit-user',
+
   ID = ':id',
   PAGE = ':page',
   NOT_FOUND = '*',
@@ -64,10 +68,21 @@ export enum Endpoints {
   CREATE_TRANSPORT = 'transports/add',
   UPDATE_TRANSPORT = 'transports/update',
   DELETE_TRANSPORT = 'transports/delete',
+
+  USERS_LIST = 'users/list',
+  USER_BY_ID = 'users/get',
+  CREATE_USER = 'users/add',
+  UPDATE_USER = 'users/update',
+  DELETE_USER = 'users/delete',
 }
 
 export const transportTypeOptions = [
   { value: 'PLANE', label: 'Samolot' },
   { value: 'BUS', label: 'Autobus' },
   { value: 'SHIP', label: 'Statek' },
+];
+
+export const userRoleType = [
+  { value: 'ADMIN', label: 'Administrator' },
+  { value: 'WORKER', label: 'Pracownik' },
 ];

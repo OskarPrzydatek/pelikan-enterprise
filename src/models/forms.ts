@@ -31,3 +31,12 @@ export interface ITransport {
   transportType: string;
   description: string;
 }
+
+export interface IUser {
+  email: string;
+  firstName: string;
+  lastName: string;
+  password: string;
+  phoneNumber: string;
+  userType: 'ADMIN' | 'WORKER';
+}

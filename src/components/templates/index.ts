@@ -16,3 +16,7 @@ export { CreateOfferTemplate } from './offer/CreateOfferTemplate/CreateOfferTemp
 export { TransportOverviewTemplate } from './transport/TransportOverviewTemplate/TransportOverviewTemplate';
 export { EditTransortTemplate } from './transport/EditTransortTemplate/EditTransortTemplate';
 export { CreateTransportTemplate } from './transport/CreateTransportTemplate/CreateTransportTemplate';
+
+export { UsersOverviewTemplate } from './users/UsersOverviewTemplate/UsersOverviewTemplate';
+export { EditUserTemplate } from './users/EditUserTemplate/EditUserTemplate';
+export { CreateUserTemplate } from './users/CreateUserTemplate/CreateUserTemplate';
