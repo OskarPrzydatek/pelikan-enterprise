@@ -21,15 +21,22 @@ export interface IOffer {
   termFrom: Date;
   termTo: Date;
   price: number;
-  destination: string;
-  numberOfGuests: number;
-  // Temp as string
-  transport: string;
-  hotel: string;
+  quantity: number;
+  transport: { id: number };
+  hotel: { id: number };
 }
 
 export interface ITransport {
-  companyName: string;
+  name: string;
   transportType: string;
-  destination: string;
+  description: string;
+}
+
+export interface IUser {
+  email: string;
+  firstName: string;
+  lastName: string;
+  password: string;
+  phoneNumber: string;
+  userType: 'ADMIN' | 'WORKER';
 }

@@ -6,10 +6,10 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-gswNZR cJrdyV"
+        class="sc-kMjNwy fMrqeM"
       >
         <div
-          class="sc-cCjUiG iDOVdg"
+          class="sc-iAEawV kYTlxs"
         >
           <h2
             class="sc-eDvSVe dcXtK"
@@ -17,22 +17,23 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
             Transport
           </h2>
           <ul
-            class="sc-cjibBx sUTbw"
+            class="sc-eeMvmM eoXwSL"
           >
             <li
-              class="sc-cabOPr isUvJn"
+              class="sc-ksBlkl guNHGv"
+              data-testid="transport-overview-list-item-1"
             >
-              <button
-                class="sc-hLBbgP drIwCV"
-                data-testid="overview-list-item-1"
+              <p
+                class="sc-pyfCe bsnSHf"
               >
-                transport1
-              </button>
+                Emirates
+              </p>
               <div
-                class="sc-iTFTee hvTyGW"
+                class="sc-hBxehG llVXBx"
               >
-                <span
-                  class="sc-gKPRtg hMbEsE"
+                <button
+                  class="sc-jSUZER fgGcDJ"
+                  data-testid="transport-overview-edit-1"
                 >
                   <svg
                     data-testid="edit-icon"
@@ -70,9 +71,10 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
                       y="5.03906"
                     />
                   </svg>
-                </span>
-                <span
-                  class="sc-gKPRtg hMbEsE"
+                </button>
+                <button
+                  class="sc-jSUZER fgGcDJ"
+                  data-testid="transport-overview-delete-1"
                 >
                   <svg
                     data-testid="delete-icon"
@@ -104,23 +106,24 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
                       y2="1.82031"
                     />
                   </svg>
-                </span>
+                </button>
               </div>
             </li>
             <li
-              class="sc-cabOPr isUvJn"
+              class="sc-ksBlkl guNHGv"
+              data-testid="transport-overview-list-item-2"
             >
-              <button
-                class="sc-hLBbgP drIwCV"
-                data-testid="overview-list-item-2"
+              <p
+                class="sc-pyfCe bsnSHf"
               >
-                transport2
-              </button>
+                Rayanair
+              </p>
               <div
-                class="sc-iTFTee hvTyGW"
+                class="sc-hBxehG llVXBx"
               >
-                <span
-                  class="sc-gKPRtg hMbEsE"
+                <button
+                  class="sc-jSUZER fgGcDJ"
+                  data-testid="transport-overview-edit-2"
                 >
                   <svg
                     data-testid="edit-icon"
@@ -158,9 +161,10 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
                       y="5.03906"
                     />
                   </svg>
-                </span>
-                <span
-                  class="sc-gKPRtg hMbEsE"
+                </button>
+                <button
+                  class="sc-jSUZER fgGcDJ"
+                  data-testid="transport-overview-delete-2"
                 >
                   <svg
                     data-testid="delete-icon"
@@ -192,23 +196,24 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
                       y2="1.82031"
                     />
                   </svg>
-                </span>
+                </button>
               </div>
             </li>
             <li
-              class="sc-cabOPr isUvJn"
+              class="sc-ksBlkl guNHGv"
+              data-testid="transport-overview-list-item-3"
             >
-              <button
-                class="sc-hLBbgP drIwCV"
-                data-testid="overview-list-item-3"
+              <p
+                class="sc-pyfCe bsnSHf"
               >
-                transport3
-              </button>
+                City Hopper Bus
+              </p>
               <div
-                class="sc-iTFTee hvTyGW"
+                class="sc-hBxehG llVXBx"
               >
-                <span
-                  class="sc-gKPRtg hMbEsE"
+                <button
+                  class="sc-jSUZER fgGcDJ"
+                  data-testid="transport-overview-edit-3"
                 >
                   <svg
                     data-testid="edit-icon"
@@ -246,9 +251,10 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
                       y="5.03906"
                     />
                   </svg>
-                </span>
-                <span
-                  class="sc-gKPRtg hMbEsE"
+                </button>
+                <button
+                  class="sc-jSUZER fgGcDJ"
+                  data-testid="transport-overview-delete-3"
                 >
                   <svg
                     data-testid="delete-icon"
@@ -280,23 +286,24 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
                       y2="1.82031"
                     />
                   </svg>
-                </span>
+                </button>
               </div>
             </li>
             <li
-              class="sc-cabOPr isUvJn"
+              class="sc-ksBlkl guNHGv"
+              data-testid="transport-overview-list-item-4"
             >
-              <button
-                class="sc-hLBbgP drIwCV"
-                data-testid="overview-list-item-4"
+              <p
+                class="sc-pyfCe bsnSHf"
               >
-                transport4
-              </button>
+                Stenaline
+              </p>
               <div
-                class="sc-iTFTee hvTyGW"
+                class="sc-hBxehG llVXBx"
               >
-                <span
-                  class="sc-gKPRtg hMbEsE"
+                <button
+                  class="sc-jSUZER fgGcDJ"
+                  data-testid="transport-overview-edit-4"
                 >
                   <svg
                     data-testid="edit-icon"
@@ -334,9 +341,10 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
                       y="5.03906"
                     />
                   </svg>
-                </span>
-                <span
-                  class="sc-gKPRtg hMbEsE"
+                </button>
+                <button
+                  class="sc-jSUZER fgGcDJ"
+                  data-testid="transport-overview-delete-4"
                 >
                   <svg
                     data-testid="delete-icon"
@@ -368,23 +376,24 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
                       y2="1.82031"
                     />
                   </svg>
-                </span>
+                </button>
               </div>
             </li>
             <li
-              class="sc-cabOPr isUvJn"
+              class="sc-ksBlkl guNHGv"
+              data-testid="transport-overview-list-item-5"
             >
-              <button
-                class="sc-hLBbgP drIwCV"
-                data-testid="overview-list-item-5"
+              <p
+                class="sc-pyfCe bsnSHf"
               >
-                transport5
-              </button>
+                Polferis
+              </p>
               <div
-                class="sc-iTFTee hvTyGW"
+                class="sc-hBxehG llVXBx"
               >
-                <span
-                  class="sc-gKPRtg hMbEsE"
+                <button
+                  class="sc-jSUZER fgGcDJ"
+                  data-testid="transport-overview-edit-5"
                 >
                   <svg
                     data-testid="edit-icon"
@@ -422,9 +431,10 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
                       y="5.03906"
                     />
                   </svg>
-                </span>
-                <span
-                  class="sc-gKPRtg hMbEsE"
+                </button>
+                <button
+                  class="sc-jSUZER fgGcDJ"
+                  data-testid="transport-overview-delete-5"
                 >
                   <svg
                     data-testid="delete-icon"
@@ -456,55 +466,13 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
                       y2="1.82031"
                     />
                   </svg>
-                </span>
+                </button>
               </div>
             </li>
           </ul>
-          <div
-            class="sc-jcMfQk eVSbAY"
-          >
-            <button
-              class="sc-jSUZER fQVznz"
-            >
-              <svg
-                data-testid="arrow-icon"
-                fill="none"
-                viewBox="0 0 40 26"
-                width="20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 13L39.75 0.00961876V25.9904L0 13Z"
-                  fill="#013059"
-                />
-              </svg>
-            </button>
-            <p
-              class="sc-pyfCe kcVRAg"
-              data-testid="pagination-counter"
-            >
-              1
-               / X
-            </p>
-            <button
-              class="sc-jSUZER hjlqfP"
-            >
-              <svg
-                data-testid="arrow-icon"
-                fill="none"
-                viewBox="0 0 40 26"
-                width="20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 13L39.75 0.00961876V25.9904L0 13Z"
-                  fill="#013059"
-                />
-              </svg>
-            </button>
-          </div>
           <button
-            class="sc-hLBbgP fxgbmT"
+            class="sc-hLBbgP kQYyQS"
+            data-testid="overview-list-navigate-to-create-page"
           >
             Dodaj Transport
           </button>
@@ -514,10 +482,10 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-gswNZR cJrdyV"
+      class="sc-kMjNwy fMrqeM"
     >
       <div
-        class="sc-cCjUiG iDOVdg"
+        class="sc-iAEawV kYTlxs"
       >
         <h2
           class="sc-eDvSVe dcXtK"
@@ -525,22 +493,23 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
           Transport
         </h2>
         <ul
-          class="sc-cjibBx sUTbw"
+          class="sc-eeMvmM eoXwSL"
         >
           <li
-            class="sc-cabOPr isUvJn"
+            class="sc-ksBlkl guNHGv"
+            data-testid="transport-overview-list-item-1"
           >
-            <button
-              class="sc-hLBbgP drIwCV"
-              data-testid="overview-list-item-1"
+            <p
+              class="sc-pyfCe bsnSHf"
             >
-              transport1
-            </button>
+              Emirates
+            </p>
             <div
-              class="sc-iTFTee hvTyGW"
+              class="sc-hBxehG llVXBx"
             >
-              <span
-                class="sc-gKPRtg hMbEsE"
+              <button
+                class="sc-jSUZER fgGcDJ"
+                data-testid="transport-overview-edit-1"
               >
                 <svg
                   data-testid="edit-icon"
@@ -578,9 +547,10 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
                     y="5.03906"
                   />
                 </svg>
-              </span>
-              <span
-                class="sc-gKPRtg hMbEsE"
+              </button>
+              <button
+                class="sc-jSUZER fgGcDJ"
+                data-testid="transport-overview-delete-1"
               >
                 <svg
                   data-testid="delete-icon"
@@ -612,23 +582,24 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
                     y2="1.82031"
                   />
                 </svg>
-              </span>
+              </button>
             </div>
           </li>
           <li
-            class="sc-cabOPr isUvJn"
+            class="sc-ksBlkl guNHGv"
+            data-testid="transport-overview-list-item-2"
           >
-            <button
-              class="sc-hLBbgP drIwCV"
-              data-testid="overview-list-item-2"
+            <p
+              class="sc-pyfCe bsnSHf"
             >
-              transport2
-            </button>
+              Rayanair
+            </p>
             <div
-              class="sc-iTFTee hvTyGW"
+              class="sc-hBxehG llVXBx"
             >
-              <span
-                class="sc-gKPRtg hMbEsE"
+              <button
+                class="sc-jSUZER fgGcDJ"
+                data-testid="transport-overview-edit-2"
               >
                 <svg
                   data-testid="edit-icon"
@@ -666,9 +637,10 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
                     y="5.03906"
                   />
                 </svg>
-              </span>
-              <span
-                class="sc-gKPRtg hMbEsE"
+              </button>
+              <button
+                class="sc-jSUZER fgGcDJ"
+                data-testid="transport-overview-delete-2"
               >
                 <svg
                   data-testid="delete-icon"
@@ -700,23 +672,24 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
                     y2="1.82031"
                   />
                 </svg>
-              </span>
+              </button>
             </div>
           </li>
           <li
-            class="sc-cabOPr isUvJn"
+            class="sc-ksBlkl guNHGv"
+            data-testid="transport-overview-list-item-3"
           >
-            <button
-              class="sc-hLBbgP drIwCV"
-              data-testid="overview-list-item-3"
+            <p
+              class="sc-pyfCe bsnSHf"
             >
-              transport3
-            </button>
+              City Hopper Bus
+            </p>
             <div
-              class="sc-iTFTee hvTyGW"
+              class="sc-hBxehG llVXBx"
             >
-              <span
-                class="sc-gKPRtg hMbEsE"
+              <button
+                class="sc-jSUZER fgGcDJ"
+                data-testid="transport-overview-edit-3"
               >
                 <svg
                   data-testid="edit-icon"
@@ -754,9 +727,10 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
                     y="5.03906"
                   />
                 </svg>
-              </span>
-              <span
-                class="sc-gKPRtg hMbEsE"
+              </button>
+              <button
+                class="sc-jSUZER fgGcDJ"
+                data-testid="transport-overview-delete-3"
               >
                 <svg
                   data-testid="delete-icon"
@@ -788,23 +762,24 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
                     y2="1.82031"
                   />
                 </svg>
-              </span>
+              </button>
             </div>
           </li>
           <li
-            class="sc-cabOPr isUvJn"
+            class="sc-ksBlkl guNHGv"
+            data-testid="transport-overview-list-item-4"
           >
-            <button
-              class="sc-hLBbgP drIwCV"
-              data-testid="overview-list-item-4"
+            <p
+              class="sc-pyfCe bsnSHf"
             >
-              transport4
-            </button>
+              Stenaline
+            </p>
             <div
-              class="sc-iTFTee hvTyGW"
+              class="sc-hBxehG llVXBx"
             >
-              <span
-                class="sc-gKPRtg hMbEsE"
+              <button
+                class="sc-jSUZER fgGcDJ"
+                data-testid="transport-overview-edit-4"
               >
                 <svg
                   data-testid="edit-icon"
@@ -842,9 +817,10 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
                     y="5.03906"
                   />
                 </svg>
-              </span>
-              <span
-                class="sc-gKPRtg hMbEsE"
+              </button>
+              <button
+                class="sc-jSUZER fgGcDJ"
+                data-testid="transport-overview-delete-4"
               >
                 <svg
                   data-testid="delete-icon"
@@ -876,23 +852,24 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
                     y2="1.82031"
                   />
                 </svg>
-              </span>
+              </button>
             </div>
           </li>
           <li
-            class="sc-cabOPr isUvJn"
+            class="sc-ksBlkl guNHGv"
+            data-testid="transport-overview-list-item-5"
           >
-            <button
-              class="sc-hLBbgP drIwCV"
-              data-testid="overview-list-item-5"
+            <p
+              class="sc-pyfCe bsnSHf"
             >
-              transport5
-            </button>
+              Polferis
+            </p>
             <div
-              class="sc-iTFTee hvTyGW"
+              class="sc-hBxehG llVXBx"
             >
-              <span
-                class="sc-gKPRtg hMbEsE"
+              <button
+                class="sc-jSUZER fgGcDJ"
+                data-testid="transport-overview-edit-5"
               >
                 <svg
                   data-testid="edit-icon"
@@ -930,9 +907,10 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
                     y="5.03906"
                   />
                 </svg>
-              </span>
-              <span
-                class="sc-gKPRtg hMbEsE"
+              </button>
+              <button
+                class="sc-jSUZER fgGcDJ"
+                data-testid="transport-overview-delete-5"
               >
                 <svg
                   data-testid="delete-icon"
@@ -964,55 +942,13 @@ exports[`TransportOverviewTemplate > component snapshot 1`] = `
                     y2="1.82031"
                   />
                 </svg>
-              </span>
+              </button>
             </div>
           </li>
         </ul>
-        <div
-          class="sc-jcMfQk eVSbAY"
-        >
-          <button
-            class="sc-jSUZER fQVznz"
-          >
-            <svg
-              data-testid="arrow-icon"
-              fill="none"
-              viewBox="0 0 40 26"
-              width="20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 13L39.75 0.00961876V25.9904L0 13Z"
-                fill="#013059"
-              />
-            </svg>
-          </button>
-          <p
-            class="sc-pyfCe kcVRAg"
-            data-testid="pagination-counter"
-          >
-            1
-             / X
-          </p>
-          <button
-            class="sc-jSUZER hjlqfP"
-          >
-            <svg
-              data-testid="arrow-icon"
-              fill="none"
-              viewBox="0 0 40 26"
-              width="20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 13L39.75 0.00961876V25.9904L0 13Z"
-                fill="#013059"
-              />
-            </svg>
-          </button>
-        </div>
         <button
-          class="sc-hLBbgP fxgbmT"
+          class="sc-hLBbgP kQYyQS"
+          data-testid="overview-list-navigate-to-create-page"
         >
           Dodaj Transport
         </button>

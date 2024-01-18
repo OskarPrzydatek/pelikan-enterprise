@@ -1,21 +1,22 @@
 import styled, { css } from 'styled-components';
 
-export const OverviewList = styled.div`
+export const OverviewListWrapper = styled.div`
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
 
-export const OverviewListWrapper = styled.ul`
+export const OverviewList = styled.ul`
   width: 100%;
-  height: 70%;
+  height: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+
+  padding: ${({ theme }) => theme.spaces.xl};
+  overflow: auto;
 
   li {
     margin-bottom: ${({ theme }) => theme.spaces.m};

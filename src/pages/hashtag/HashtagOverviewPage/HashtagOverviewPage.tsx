@@ -1,11 +1,33 @@
 import { useNavigate, useParams } from 'react-router-dom';
+import useSWR, { useSWRConfig } from 'swr';
 
+import { fetchDelete, fetchGet } from '~/api';
 import { HashtagOverviewTemplate } from '~/components/templates';
-import { Slugs } from '~/constants';
+import { Endpoints, Slugs } from '~/constants';
+import { IHashtagData } from '~/models';
+import { errorNotification, successNotification } from '~/notifications';
 
 export const HashtagOverviewPage: React.FC = () => {
   const { page } = useParams();
   const navigate = useNavigate();
+  const { mutate } = useSWRConfig();
+  const { data, error, isLoading } = useSWR<IHashtagData[], Error>(
+    Endpoints.HASHTAGS_LIST,
+    fetchGet
+  );
+
+  const onClickDeleteHashtag = async (id: number) => {
+    const endpoint = `${Endpoints.DELETE_HASHTAG}/${id}` as Endpoints;
+    const response = await fetchDelete(endpoint);
+
+    if (response.ok) {
+      await mutate(Endpoints.HASHTAGS_LIST);
+      successNotification('Hashtag został usunięty pomyślnie');
+      return;
+    }
+
+    errorNotification();
+  };
 
   const onClickNavigateToEditHashtag = (id: number) =>
     navigate(`/${Slugs.EDIT_HASHTAG}/${id}`);
@@ -15,16 +37,13 @@ export const HashtagOverviewPage: React.FC = () => {
 
   return (
     <HashtagOverviewTemplate
+      data={data}
+      error={error}
+      isLoading={isLoading}
       page={page}
-      items={[
-        { id: 1, name: 'hashtag1' },
-        { id: 2, name: 'hashtag2' },
-        { id: 3, name: 'hashtag3' },
-        { id: 4, name: 'hashtag4' },
-        { id: 5, name: 'hashtag5' },
-      ]}
-      onClickItem={onClickNavigateToEditHashtag}
-      onClickNavigate={onClickNavigateToCreateHashtag}
+      onClickDelete={onClickDeleteHashtag}
+      onClickEdit={onClickNavigateToEditHashtag}
+      onClickNavigateToCreatePage={onClickNavigateToCreateHashtag}
     />
   );
 };

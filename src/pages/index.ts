@@ -17,3 +17,7 @@ export { EditOfferPage } from './offer/EditOfferPage/EditOfferPage';
 export { TransportOverviewPage } from './transport/TransportOverviewPage/TransportOverviewPage';
 export { CreateTransportPage } from './transport/CreateTransportPage/CreateTransportPage';
 export { EditTransportPage } from './transport/EditTransportPage/EditTransportPage';
+
+export { UsersOverviewPage } from './users/UsersOverviewPage/UsersOverviewPage';
+export { CreateUserPage } from './users/CreateUserPage/CreateUserPage';
+export { EditUserPage } from './users/EditUserPage/EditUserPage';

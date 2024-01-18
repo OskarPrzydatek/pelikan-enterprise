@@ -12,9 +12,9 @@ exports[`TextField > component snapshot 1`] = `
           class="sc-pyfCe dPDCSN"
         >
           <input
-            class="sc-jrcTuL iGTWLz"
+            class="sc-jrcTuL jPpBZo"
             data-testid="molecule-datefield"
-            min="2023-07-28"
+            min="2024-01-15"
             name="startDate"
             type="date"
           />
@@ -30,9 +30,9 @@ exports[`TextField > component snapshot 1`] = `
         class="sc-pyfCe dPDCSN"
       >
         <input
-          class="sc-jrcTuL iGTWLz"
+          class="sc-jrcTuL jPpBZo"
           data-testid="molecule-datefield"
-          min="2023-07-28"
+          min="2024-01-15"
           name="startDate"
           type="date"
         />

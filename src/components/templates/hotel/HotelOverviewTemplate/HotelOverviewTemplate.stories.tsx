@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 
+import { hotelDataMock } from '~/mocks';
 import { StyledComponentsProvider } from '~/providers';
 
 import { HotelOverviewTemplate } from './HotelOverviewTemplate';
@@ -16,7 +17,14 @@ export const HotelOverviewTemplatePrimmary: Story = {
   render: () => (
     <StyledComponentsProvider>
       <HotelOverviewTemplate
-        onClickNavigate={() => console.log('onClickNavigate')}
+        data={hotelDataMock}
+        error={undefined}
+        isLoading={false}
+        onClickDelete={() => console.log('onClickDelete!')}
+        onClickEdit={() => console.log('onClickEdit!')}
+        onClickNavigateToCreatePage={() =>
+          console.log('onClickNavigateToCreatePage!')
+        }
       />
     </StyledComponentsProvider>
   ),

@@ -9,7 +9,7 @@ exports[`Footer > component snapshot 1`] = `
         class="sc-jrcTuL eGTGrh"
       >
         <p
-          class="sc-pyfCe kcVRAg"
+          class="sc-pyfCe bsnSHf"
           data-testid="app-version"
         >
           Pelikan Business v
@@ -23,7 +23,7 @@ exports[`Footer > component snapshot 1`] = `
       class="sc-jrcTuL eGTGrh"
     >
       <p
-        class="sc-pyfCe kcVRAg"
+        class="sc-pyfCe bsnSHf"
         data-testid="app-version"
       >
         Pelikan Business v

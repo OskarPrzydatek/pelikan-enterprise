@@ -1,32 +1,60 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { describe, test, vi } from 'vitest';
 
+import { attractionDataMock } from '~/mocks';
 import { StyledComponentsProvider } from '~/providers';
 
 import { AttractionOverviewTemplate } from './AttractionOverviewTemplate';
 
-const mockOnClickItem = vi.fn();
-const mockOnClickNavigate = vi.fn();
+const mockOnClickDelete = vi.fn();
+const mockOnClickEdit = vi.fn();
+const mockOnClickNavigateToCreatePage = vi.fn();
 
-const MockAttractionOverviewTemplate = () => (
-  <StyledComponentsProvider>
-    <AttractionOverviewTemplate
-      items={[
-        { id: 1, name: 'attraction1' },
-        { id: 2, name: 'attraction2' },
-        { id: 3, name: 'attraction3' },
-        { id: 4, name: 'attraction4' },
-        { id: 5, name: 'attraction5' },
-      ]}
-      onClickItem={mockOnClickItem}
-      onClickNavigate={mockOnClickNavigate}
-    />
-  </StyledComponentsProvider>
-);
+const MockNoDataAttractionOverviewTemplate = () => {
+  return (
+    <StyledComponentsProvider>
+      <AttractionOverviewTemplate
+        data={undefined}
+        error={undefined}
+        isLoading={false}
+        onClickDelete={mockOnClickDelete}
+        onClickEdit={mockOnClickEdit}
+        onClickNavigateToCreatePage={mockOnClickNavigateToCreatePage}
+      />
+    </StyledComponentsProvider>
+  );
+};
+
+const MockWithDataAttractionOverviewTemplate = () => {
+  return (
+    <StyledComponentsProvider>
+      <AttractionOverviewTemplate
+        data={attractionDataMock}
+        error={undefined}
+        isLoading={false}
+        onClickDelete={mockOnClickDelete}
+        onClickEdit={mockOnClickEdit}
+        onClickNavigateToCreatePage={mockOnClickNavigateToCreatePage}
+      />
+    </StyledComponentsProvider>
+  );
+};
 
 describe('AttractionOverviewTemplate', () => {
   test('component snapshot', () => {
-    const view = render(<MockAttractionOverviewTemplate />);
+    const view = render(<MockWithDataAttractionOverviewTemplate />);
     expect(view).toMatchSnapshot();
+  });
+
+  test('ensure no items label apear when there is no data', () => {
+    render(<MockNoDataAttractionOverviewTemplate />);
+    expect(screen.getByTestId('no-items-label')).toBeInTheDocument();
+  });
+
+  test('ensure data apear when they are', () => {
+    render(<MockWithDataAttractionOverviewTemplate />);
+    expect(
+      screen.getByTestId('attraction-overview-list-item-1')
+    ).toBeInTheDocument();
   });
 });

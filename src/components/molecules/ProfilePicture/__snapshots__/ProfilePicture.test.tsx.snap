@@ -9,7 +9,7 @@ exports[`ProfilePicture > component snapshot 1`] = `
         class="sc-jrcTuL hKkeKM"
       >
         <p
-          class="sc-pyfCe lizSwY"
+          class="sc-pyfCe kodMXz"
         >
           Witaj User
         </p>
@@ -26,7 +26,7 @@ exports[`ProfilePicture > component snapshot 1`] = `
       class="sc-jrcTuL hKkeKM"
     >
       <p
-        class="sc-pyfCe lizSwY"
+        class="sc-pyfCe kodMXz"
       >
         Witaj User
       </p>

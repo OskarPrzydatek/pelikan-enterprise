@@ -6,13 +6,13 @@ exports[`TextArea > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-eDWCr gApbIq"
+        class="sc-fnGiBr eCQdor"
       >
         <div
-          class="sc-bqWxrE capgDc"
+          class="sc-fEXmlR krzYqf"
         >
           <textarea
-            class="sc-hBxehG blyQij"
+            class="sc-idXgbr kKkwAS"
             data-testid="molecule-textarea"
             id="description"
             name="description"
@@ -24,13 +24,13 @@ exports[`TextArea > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-eDWCr gApbIq"
+      class="sc-fnGiBr eCQdor"
     >
       <div
-        class="sc-bqWxrE capgDc"
+        class="sc-fEXmlR krzYqf"
       >
         <textarea
-          class="sc-hBxehG blyQij"
+          class="sc-idXgbr kKkwAS"
           data-testid="molecule-textarea"
           id="description"
           name="description"

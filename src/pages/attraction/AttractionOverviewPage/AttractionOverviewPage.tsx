@@ -1,13 +1,36 @@
+import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import useSWR, { useSWRConfig } from 'swr';
 
+import { fetchDelete, fetchGet } from '~/api';
 import { AttractionOverviewTemplate } from '~/components/templates';
-import { Slugs } from '~/constants';
+import { Endpoints, Slugs } from '~/constants';
+import { IAttractionData } from '~/models';
+import { errorNotification, successNotification } from '~/notifications';
 
 export const AttractionOverviewPage: React.FC = () => {
   const { page } = useParams();
   const navigate = useNavigate();
+  const { mutate } = useSWRConfig();
+  const { data, error, isLoading } = useSWR<IAttractionData[], Error>(
+    Endpoints.ATTRACTIONS_LIST,
+    fetchGet
+  );
 
-  const onClickNavigateToEditAtraction = (id: number) =>
+  const onClickDeleteAttraction = async (id: number) => {
+    const endpoint = `${Endpoints.DELETE_ATTRACTION}/${id}` as Endpoints;
+    const response = await fetchDelete(endpoint);
+
+    if (response.ok) {
+      await mutate(Endpoints.ATTRACTIONS_LIST);
+      successNotification('Atrakcja została usunięta pomyślnie');
+      return;
+    }
+
+    errorNotification();
+  };
+
+  const onClickNavigateToEditAttraction = (id: number) =>
     navigate(`/${Slugs.EDIT_ATTRACTION}/${id}`);
 
   const onClickNavigateToCreateAttraction = () =>
@@ -15,16 +38,13 @@ export const AttractionOverviewPage: React.FC = () => {
 
   return (
     <AttractionOverviewTemplate
+      data={data}
+      error={error}
+      isLoading={isLoading}
       page={page}
-      items={[
-        { id: 1, name: 'attraction1' },
-        { id: 2, name: 'attraction2' },
-        { id: 3, name: 'attraction3' },
-        { id: 4, name: 'attraction4' },
-        { id: 5, name: 'attraction5' },
-      ]}
-      onClickItem={onClickNavigateToEditAtraction}
-      onClickNavigate={onClickNavigateToCreateAttraction}
+      onClickDelete={onClickDeleteAttraction}
+      onClickEdit={onClickNavigateToEditAttraction}
+      onClickNavigateToCreatePage={onClickNavigateToCreateAttraction}
     />
   );
 };

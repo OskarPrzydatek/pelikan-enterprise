@@ -6,30 +6,29 @@ exports[`OverviewList > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-jrcTuL iQkExP"
+        class="sc-kMjNwy dnZgcN"
       >
         <h2
-          class="sc-eDvSVe dcXtK"
+          class="sc-dkrFOg kaKqDq"
         >
           Atrakcje
         </h2>
         <ul
-          class="sc-kDvujY evuzin"
+          class="sc-ilhmMj HhpAX"
         >
           <li
-            class="sc-csuSiG iFLdla"
+            class="sc-eDWCr jtwhuZ"
           >
-            <button
-              class="sc-hLBbgP drIwCV"
-              data-testid="overview-list-item-1"
+            <p
+              class="sc-iBYQkv cMzfYw"
             >
               attraction1
-            </button>
+            </p>
             <div
-              class="sc-eDWCr ddMDca"
+              class="sc-bqWxrE gdYrVu"
             >
-              <span
-                class="sc-gKPRtg hMbEsE"
+              <button
+                class="sc-hLBbgP dKSYeL"
               >
                 <svg
                   data-testid="edit-icon"
@@ -67,9 +66,9 @@ exports[`OverviewList > component snapshot 1`] = `
                     y="5.03906"
                   />
                 </svg>
-              </span>
-              <span
-                class="sc-gKPRtg hMbEsE"
+              </button>
+              <button
+                class="sc-hLBbgP dKSYeL"
               >
                 <svg
                   data-testid="delete-icon"
@@ -101,23 +100,22 @@ exports[`OverviewList > component snapshot 1`] = `
                     y2="1.82031"
                   />
                 </svg>
-              </span>
+              </button>
             </div>
           </li>
           <li
-            class="sc-csuSiG iFLdla"
+            class="sc-eDWCr jtwhuZ"
           >
-            <button
-              class="sc-hLBbgP drIwCV"
-              data-testid="overview-list-item-2"
+            <p
+              class="sc-iBYQkv cMzfYw"
             >
               attraction2
-            </button>
+            </p>
             <div
-              class="sc-eDWCr ddMDca"
+              class="sc-bqWxrE gdYrVu"
             >
-              <span
-                class="sc-gKPRtg hMbEsE"
+              <button
+                class="sc-hLBbgP dKSYeL"
               >
                 <svg
                   data-testid="edit-icon"
@@ -155,9 +153,9 @@ exports[`OverviewList > component snapshot 1`] = `
                     y="5.03906"
                   />
                 </svg>
-              </span>
-              <span
-                class="sc-gKPRtg hMbEsE"
+              </button>
+              <button
+                class="sc-hLBbgP dKSYeL"
               >
                 <svg
                   data-testid="delete-icon"
@@ -189,23 +187,22 @@ exports[`OverviewList > component snapshot 1`] = `
                     y2="1.82031"
                   />
                 </svg>
-              </span>
+              </button>
             </div>
           </li>
           <li
-            class="sc-csuSiG iFLdla"
+            class="sc-eDWCr jtwhuZ"
           >
-            <button
-              class="sc-hLBbgP drIwCV"
-              data-testid="overview-list-item-3"
+            <p
+              class="sc-iBYQkv cMzfYw"
             >
               attraction3
-            </button>
+            </p>
             <div
-              class="sc-eDWCr ddMDca"
+              class="sc-bqWxrE gdYrVu"
             >
-              <span
-                class="sc-gKPRtg hMbEsE"
+              <button
+                class="sc-hLBbgP dKSYeL"
               >
                 <svg
                   data-testid="edit-icon"
@@ -243,9 +240,9 @@ exports[`OverviewList > component snapshot 1`] = `
                     y="5.03906"
                   />
                 </svg>
-              </span>
-              <span
-                class="sc-gKPRtg hMbEsE"
+              </button>
+              <button
+                class="sc-hLBbgP dKSYeL"
               >
                 <svg
                   data-testid="delete-icon"
@@ -277,23 +274,22 @@ exports[`OverviewList > component snapshot 1`] = `
                     y2="1.82031"
                   />
                 </svg>
-              </span>
+              </button>
             </div>
           </li>
           <li
-            class="sc-csuSiG iFLdla"
+            class="sc-eDWCr jtwhuZ"
           >
-            <button
-              class="sc-hLBbgP drIwCV"
-              data-testid="overview-list-item-4"
+            <p
+              class="sc-iBYQkv cMzfYw"
             >
               attraction4
-            </button>
+            </p>
             <div
-              class="sc-eDWCr ddMDca"
+              class="sc-bqWxrE gdYrVu"
             >
-              <span
-                class="sc-gKPRtg hMbEsE"
+              <button
+                class="sc-hLBbgP dKSYeL"
               >
                 <svg
                   data-testid="edit-icon"
@@ -331,9 +327,9 @@ exports[`OverviewList > component snapshot 1`] = `
                     y="5.03906"
                   />
                 </svg>
-              </span>
-              <span
-                class="sc-gKPRtg hMbEsE"
+              </button>
+              <button
+                class="sc-hLBbgP dKSYeL"
               >
                 <svg
                   data-testid="delete-icon"
@@ -365,23 +361,22 @@ exports[`OverviewList > component snapshot 1`] = `
                     y2="1.82031"
                   />
                 </svg>
-              </span>
+              </button>
             </div>
           </li>
           <li
-            class="sc-csuSiG iFLdla"
+            class="sc-eDWCr jtwhuZ"
           >
-            <button
-              class="sc-hLBbgP drIwCV"
-              data-testid="overview-list-item-5"
+            <p
+              class="sc-iBYQkv cMzfYw"
             >
               attraction5
-            </button>
+            </p>
             <div
-              class="sc-eDWCr ddMDca"
+              class="sc-bqWxrE gdYrVu"
             >
-              <span
-                class="sc-gKPRtg hMbEsE"
+              <button
+                class="sc-hLBbgP dKSYeL"
               >
                 <svg
                   data-testid="edit-icon"
@@ -419,9 +414,9 @@ exports[`OverviewList > component snapshot 1`] = `
                     y="5.03906"
                   />
                 </svg>
-              </span>
-              <span
-                class="sc-gKPRtg hMbEsE"
+              </button>
+              <button
+                class="sc-hLBbgP dKSYeL"
               >
                 <svg
                   data-testid="delete-icon"
@@ -453,55 +448,13 @@ exports[`OverviewList > component snapshot 1`] = `
                     y2="1.82031"
                   />
                 </svg>
-              </span>
+              </button>
             </div>
           </li>
         </ul>
-        <div
-          class="sc-ipEyDJ bRdjaP"
-        >
-          <button
-            class="sc-jSUZER fQVznz"
-          >
-            <svg
-              data-testid="arrow-icon"
-              fill="none"
-              viewBox="0 0 40 26"
-              width="20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 13L39.75 0.00961876V25.9904L0 13Z"
-                fill="#013059"
-              />
-            </svg>
-          </button>
-          <p
-            class="sc-pyfCe kcVRAg"
-            data-testid="pagination-counter"
-          >
-            1
-             / X
-          </p>
-          <button
-            class="sc-jSUZER hjlqfP"
-          >
-            <svg
-              data-testid="arrow-icon"
-              fill="none"
-              viewBox="0 0 40 26"
-              width="20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 13L39.75 0.00961876V25.9904L0 13Z"
-                fill="#013059"
-              />
-            </svg>
-          </button>
-        </div>
         <button
-          class="sc-hLBbgP fxgbmT"
+          class="sc-gswNZR ebKtrE"
+          data-testid="overview-list-navigate-to-create-page"
         >
           Dodaj atrakcję
         </button>
@@ -510,30 +463,29 @@ exports[`OverviewList > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-jrcTuL iQkExP"
+      class="sc-kMjNwy dnZgcN"
     >
       <h2
-        class="sc-eDvSVe dcXtK"
+        class="sc-dkrFOg kaKqDq"
       >
         Atrakcje
       </h2>
       <ul
-        class="sc-kDvujY evuzin"
+        class="sc-ilhmMj HhpAX"
       >
         <li
-          class="sc-csuSiG iFLdla"
+          class="sc-eDWCr jtwhuZ"
         >
-          <button
-            class="sc-hLBbgP drIwCV"
-            data-testid="overview-list-item-1"
+          <p
+            class="sc-iBYQkv cMzfYw"
           >
             attraction1
-          </button>
+          </p>
           <div
-            class="sc-eDWCr ddMDca"
+            class="sc-bqWxrE gdYrVu"
           >
-            <span
-              class="sc-gKPRtg hMbEsE"
+            <button
+              class="sc-hLBbgP dKSYeL"
             >
               <svg
                 data-testid="edit-icon"
@@ -571,9 +523,9 @@ exports[`OverviewList > component snapshot 1`] = `
                   y="5.03906"
                 />
               </svg>
-            </span>
-            <span
-              class="sc-gKPRtg hMbEsE"
+            </button>
+            <button
+              class="sc-hLBbgP dKSYeL"
             >
               <svg
                 data-testid="delete-icon"
@@ -605,23 +557,22 @@ exports[`OverviewList > component snapshot 1`] = `
                   y2="1.82031"
                 />
               </svg>
-            </span>
+            </button>
           </div>
         </li>
         <li
-          class="sc-csuSiG iFLdla"
+          class="sc-eDWCr jtwhuZ"
         >
-          <button
-            class="sc-hLBbgP drIwCV"
-            data-testid="overview-list-item-2"
+          <p
+            class="sc-iBYQkv cMzfYw"
           >
             attraction2
-          </button>
+          </p>
           <div
-            class="sc-eDWCr ddMDca"
+            class="sc-bqWxrE gdYrVu"
           >
-            <span
-              class="sc-gKPRtg hMbEsE"
+            <button
+              class="sc-hLBbgP dKSYeL"
             >
               <svg
                 data-testid="edit-icon"
@@ -659,9 +610,9 @@ exports[`OverviewList > component snapshot 1`] = `
                   y="5.03906"
                 />
               </svg>
-            </span>
-            <span
-              class="sc-gKPRtg hMbEsE"
+            </button>
+            <button
+              class="sc-hLBbgP dKSYeL"
             >
               <svg
                 data-testid="delete-icon"
@@ -693,23 +644,22 @@ exports[`OverviewList > component snapshot 1`] = `
                   y2="1.82031"
                 />
               </svg>
-            </span>
+            </button>
           </div>
         </li>
         <li
-          class="sc-csuSiG iFLdla"
+          class="sc-eDWCr jtwhuZ"
         >
-          <button
-            class="sc-hLBbgP drIwCV"
-            data-testid="overview-list-item-3"
+          <p
+            class="sc-iBYQkv cMzfYw"
           >
             attraction3
-          </button>
+          </p>
           <div
-            class="sc-eDWCr ddMDca"
+            class="sc-bqWxrE gdYrVu"
           >
-            <span
-              class="sc-gKPRtg hMbEsE"
+            <button
+              class="sc-hLBbgP dKSYeL"
             >
               <svg
                 data-testid="edit-icon"
@@ -747,9 +697,9 @@ exports[`OverviewList > component snapshot 1`] = `
                   y="5.03906"
                 />
               </svg>
-            </span>
-            <span
-              class="sc-gKPRtg hMbEsE"
+            </button>
+            <button
+              class="sc-hLBbgP dKSYeL"
             >
               <svg
                 data-testid="delete-icon"
@@ -781,23 +731,22 @@ exports[`OverviewList > component snapshot 1`] = `
                   y2="1.82031"
                 />
               </svg>
-            </span>
+            </button>
           </div>
         </li>
         <li
-          class="sc-csuSiG iFLdla"
+          class="sc-eDWCr jtwhuZ"
         >
-          <button
-            class="sc-hLBbgP drIwCV"
-            data-testid="overview-list-item-4"
+          <p
+            class="sc-iBYQkv cMzfYw"
           >
             attraction4
-          </button>
+          </p>
           <div
-            class="sc-eDWCr ddMDca"
+            class="sc-bqWxrE gdYrVu"
           >
-            <span
-              class="sc-gKPRtg hMbEsE"
+            <button
+              class="sc-hLBbgP dKSYeL"
             >
               <svg
                 data-testid="edit-icon"
@@ -835,9 +784,9 @@ exports[`OverviewList > component snapshot 1`] = `
                   y="5.03906"
                 />
               </svg>
-            </span>
-            <span
-              class="sc-gKPRtg hMbEsE"
+            </button>
+            <button
+              class="sc-hLBbgP dKSYeL"
             >
               <svg
                 data-testid="delete-icon"
@@ -869,23 +818,22 @@ exports[`OverviewList > component snapshot 1`] = `
                   y2="1.82031"
                 />
               </svg>
-            </span>
+            </button>
           </div>
         </li>
         <li
-          class="sc-csuSiG iFLdla"
+          class="sc-eDWCr jtwhuZ"
         >
-          <button
-            class="sc-hLBbgP drIwCV"
-            data-testid="overview-list-item-5"
+          <p
+            class="sc-iBYQkv cMzfYw"
           >
             attraction5
-          </button>
+          </p>
           <div
-            class="sc-eDWCr ddMDca"
+            class="sc-bqWxrE gdYrVu"
           >
-            <span
-              class="sc-gKPRtg hMbEsE"
+            <button
+              class="sc-hLBbgP dKSYeL"
             >
               <svg
                 data-testid="edit-icon"
@@ -923,9 +871,9 @@ exports[`OverviewList > component snapshot 1`] = `
                   y="5.03906"
                 />
               </svg>
-            </span>
-            <span
-              class="sc-gKPRtg hMbEsE"
+            </button>
+            <button
+              class="sc-hLBbgP dKSYeL"
             >
               <svg
                 data-testid="delete-icon"
@@ -957,55 +905,13 @@ exports[`OverviewList > component snapshot 1`] = `
                   y2="1.82031"
                 />
               </svg>
-            </span>
+            </button>
           </div>
         </li>
       </ul>
-      <div
-        class="sc-ipEyDJ bRdjaP"
-      >
-        <button
-          class="sc-jSUZER fQVznz"
-        >
-          <svg
-            data-testid="arrow-icon"
-            fill="none"
-            viewBox="0 0 40 26"
-            width="20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 13L39.75 0.00961876V25.9904L0 13Z"
-              fill="#013059"
-            />
-          </svg>
-        </button>
-        <p
-          class="sc-pyfCe kcVRAg"
-          data-testid="pagination-counter"
-        >
-          1
-           / X
-        </p>
-        <button
-          class="sc-jSUZER hjlqfP"
-        >
-          <svg
-            data-testid="arrow-icon"
-            fill="none"
-            viewBox="0 0 40 26"
-            width="20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 13L39.75 0.00961876V25.9904L0 13Z"
-              fill="#013059"
-            />
-          </svg>
-        </button>
-      </div>
       <button
-        class="sc-hLBbgP fxgbmT"
+        class="sc-gswNZR ebKtrE"
+        data-testid="overview-list-navigate-to-create-page"
       >
         Dodaj atrakcję
       </button>

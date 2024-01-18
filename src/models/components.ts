@@ -9,19 +9,21 @@ export interface IComponent {
   dataTestID?: string;
 }
 
-interface Item {
+export interface Item {
   id: number;
   name: string;
 }
 
 export interface IOverviewTemplate {
-  items: Item[];
+  isLoading: boolean;
+  error: Error | undefined;
   page?: string;
-  onClickItem: (id: number) => void;
-  onClickNavigate: () => void;
+  onClickDelete: (id: number) => void;
+  onClickEdit: (id: number) => void;
+  onClickNavigateToCreatePage: () => void;
 }
 
 export interface ISelectOption {
   label: string;
-  value: string;
+  value: string | number;
 }

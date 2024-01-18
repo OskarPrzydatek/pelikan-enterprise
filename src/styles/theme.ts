@@ -22,7 +22,7 @@ export const theme: DefaultTheme = {
   fontSizes: {
     xxs: '.2rem',
     xs: '.5rem',
-    s: '.8rem',
+    s: '1rem',
     m: '1.2rem',
     l: '1.5rem',
     xl: '1.8rem',

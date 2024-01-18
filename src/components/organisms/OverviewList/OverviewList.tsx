@@ -1,59 +1,58 @@
+import React from 'react';
+
 import { Button, Header, Icon, Text } from '~/components/atoms';
 import { Icons } from '~/constants';
 
 import * as S from './OverviewList.styles';
-import { OverviewListItem } from './OverviewListItem/OverviewListItem';
 
 interface IOverviewList {
   title: string;
-  items: { id: number; name: string }[];
   noItemsLabel: string;
   navigateLabel: string;
+  children?: React.ReactNode;
   page?: string;
-  onClickItem: (id: number) => void;
-  onClickNavigate: () => void;
+  onClickNavigateToCreatePage?: () => void;
 }
 
 export const OverviewList: React.FC<IOverviewList> = ({
   title,
-  items,
   noItemsLabel,
   navigateLabel,
+  children,
   page,
-  onClickItem,
-  onClickNavigate,
+  onClickNavigateToCreatePage,
 }: IOverviewList) => {
   const currentPage = page ?? '1';
+  const itemsLength = React.Children.count(children);
 
   return (
-    <S.OverviewList>
+    <S.OverviewListWrapper>
       <Header>{title}</Header>
-      <S.OverviewListWrapper>
-        {items.length > 0 ? (
-          <>
-            {items.map(({ id, name }) => (
-              <OverviewListItem
-                key={`${id}-${name}`}
-                buttonDataTestID={`overview-list-item-${id}`}
-                name={name}
-                onClickNavigate={() => onClickItem(id)}
-              />
-            ))}
-          </>
+      <S.OverviewList>
+        {itemsLength > 0 ? (
+          children
         ) : (
           <li data-testid="no-items-label">
             <Text>{noItemsLabel}</Text>
           </li>
         )}
-      </S.OverviewListWrapper>
-      <S.Pagination>
-        <Icon css={S.prevArrowCSS} icon={Icons.ARROW} onClick={() => {}} />
-        <Text dataTestID="pagination-counter">{currentPage} / X</Text>
-        <Icon css={S.nextArrowCSS} icon={Icons.ARROW} onClick={() => {}} />
-      </S.Pagination>
-      <Button css={S.navigateButtonCSS} onClick={onClickNavigate}>
-        {navigateLabel}
-      </Button>
-    </S.OverviewList>
+      </S.OverviewList>
+      {page ? (
+        <S.Pagination>
+          <Icon css={S.prevArrowCSS} icon={Icons.ARROW} onClick={() => {}} />
+          <Text dataTestID="pagination-counter">{currentPage} / X</Text>
+          <Icon css={S.nextArrowCSS} icon={Icons.ARROW} onClick={() => {}} />
+        </S.Pagination>
+      ) : null}
+      {onClickNavigateToCreatePage ? (
+        <Button
+          css={S.navigateButtonCSS}
+          dataTestID="overview-list-navigate-to-create-page"
+          onClick={onClickNavigateToCreatePage}
+        >
+          {navigateLabel}
+        </Button>
+      ) : null}
+    </S.OverviewListWrapper>
   );
 };

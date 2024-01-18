@@ -46,13 +46,8 @@ export const SelectChevronWrapper = styled.span<ICSS>`
   align-items: center;
   position: absolute;
   top: 0;
-  right: 0.3rem;
+  right: 0.8rem;
   width: 0.8rem;
-
-  @media ${({ theme }) => theme.breakpoints.phone} {
-    right: 0.6rem;
-    width: 0.8rem;
-  }
 
   @media ${({ theme }) => theme.breakpoints.tablet} {
     right: 0.8rem;

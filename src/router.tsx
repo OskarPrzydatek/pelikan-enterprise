@@ -9,15 +9,18 @@ import {
   CreateHotelPage,
   CreateOfferPage,
   CreateTransportPage,
+  CreateUserPage,
   EditAttractionPage,
   EditHashtagPage,
   EditHotelPage,
   EditOfferPage,
   EditTransportPage,
+  EditUserPage,
   HashtagOverviewPage,
   HotelOverviewPage,
   OfferOverviewPage,
   TransportOverviewPage,
+  UsersOverviewPage,
 } from '~/pages';
 
 export const router = createBrowserRouter([
@@ -122,6 +125,26 @@ export const router = createBrowserRouter([
       {
         element: <EditHashtagPage />,
         path: `${Slugs.EDIT_HASHTAG}/${Slugs.ID}`,
+      },
+
+      // Users
+      {
+        element: <UsersOverviewPage />,
+        path: Slugs.USERS_OVERVIEW,
+        children: [
+          {
+            element: <UsersOverviewPage />,
+            path: Slugs.PAGE,
+          },
+        ],
+      },
+      {
+        element: <CreateUserPage />,
+        path: Slugs.CREATE_USER,
+      },
+      {
+        element: <EditUserPage />,
+        path: `${Slugs.EDIT_USER}/${Slugs.ID}`,
       },
     ],
   },

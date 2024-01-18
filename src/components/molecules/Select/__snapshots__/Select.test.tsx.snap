@@ -6,13 +6,13 @@ exports[`Select > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-dIfARi fzFjao"
+        class="sc-fLcnxK fqKMIt"
       >
         <div
-          class="sc-hHTYSt jxYQNB"
+          class="sc-bBABsx dhlDgD"
         >
           <span
-            class="sc-kgTSHT heXOjw"
+            class="sc-cwSeag iDhhvL"
           >
             <span
               class="sc-eDvSVe ktaJny"
@@ -33,12 +33,12 @@ exports[`Select > component snapshot 1`] = `
             </span>
           </span>
           <select
-            class="sc-fLcnxK fZpqpf"
+            class="sc-lllmON jyomDE"
             data-testid="molecule-select"
             name="destination"
           >
             <option
-              class="sc-bBABsx"
+              class="sc-iJnaPW"
               disabled=""
               selected=""
               value=""
@@ -46,25 +46,25 @@ exports[`Select > component snapshot 1`] = `
               Default label
             </option>
             <option
-              class="sc-bBABsx"
+              class="sc-iJnaPW"
               value="value1"
             >
               label1
             </option>
             <option
-              class="sc-bBABsx"
+              class="sc-iJnaPW"
               value="value2"
             >
               label2
             </option>
             <option
-              class="sc-bBABsx"
+              class="sc-iJnaPW"
               value="value3"
             >
               label3
             </option>
             <option
-              class="sc-bBABsx"
+              class="sc-iJnaPW"
               value="value4"
             >
               label4
@@ -76,13 +76,13 @@ exports[`Select > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-dIfARi fzFjao"
+      class="sc-fLcnxK fqKMIt"
     >
       <div
-        class="sc-hHTYSt jxYQNB"
+        class="sc-bBABsx dhlDgD"
       >
         <span
-          class="sc-kgTSHT heXOjw"
+          class="sc-cwSeag iDhhvL"
         >
           <span
             class="sc-eDvSVe ktaJny"
@@ -103,12 +103,12 @@ exports[`Select > component snapshot 1`] = `
           </span>
         </span>
         <select
-          class="sc-fLcnxK fZpqpf"
+          class="sc-lllmON jyomDE"
           data-testid="molecule-select"
           name="destination"
         >
           <option
-            class="sc-bBABsx"
+            class="sc-iJnaPW"
             disabled=""
             selected=""
             value=""
@@ -116,25 +116,25 @@ exports[`Select > component snapshot 1`] = `
             Default label
           </option>
           <option
-            class="sc-bBABsx"
+            class="sc-iJnaPW"
             value="value1"
           >
             label1
           </option>
           <option
-            class="sc-bBABsx"
+            class="sc-iJnaPW"
             value="value2"
           >
             label2
           </option>
           <option
-            class="sc-bBABsx"
+            class="sc-iJnaPW"
             value="value3"
           >
             label3
           </option>
           <option
-            class="sc-bBABsx"
+            class="sc-iJnaPW"
             value="value4"
           >
             label4

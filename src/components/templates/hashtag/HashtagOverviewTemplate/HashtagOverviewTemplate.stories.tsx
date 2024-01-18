@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 
+import { hashtagDataMock } from '~/mocks';
 import { StyledComponentsProvider } from '~/providers';
 
 import { HashtagOverviewTemplate } from './HashtagOverviewTemplate';
@@ -16,7 +17,14 @@ export const HashtagOverviewTemplatePrimmary: Story = {
   render: () => (
     <StyledComponentsProvider>
       <HashtagOverviewTemplate
-        onClickNavigate={() => console.log('onClickNavigate')}
+        data={hashtagDataMock}
+        error={undefined}
+        isLoading={false}
+        onClickDelete={() => console.log('onClickDelete!')}
+        onClickEdit={() => console.log('onClickEdit!')}
+        onClickNavigateToCreatePage={() =>
+          console.log('onClickNavigateToCreatePage!')
+        }
       />
     </StyledComponentsProvider>
   ),

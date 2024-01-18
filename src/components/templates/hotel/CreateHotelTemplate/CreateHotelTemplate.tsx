@@ -48,7 +48,7 @@ export const CreateHotelTemplate: React.FC<ICreateHotelTemplate> = ({
           errorMessageTestID="create-hotel-stars-rating-error"
           inputTestID="create-hotel-stars-rating"
           label="Ilość gwiazdek"
-          name="starRating"
+          name="stars"
           registerOptions={{
             ...starsValidator,
           }}

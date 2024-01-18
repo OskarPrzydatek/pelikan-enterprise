@@ -1,32 +1,56 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { describe, test, vi } from 'vitest';
 
+import { hashtagDataMock } from '~/mocks';
 import { StyledComponentsProvider } from '~/providers';
 
 import { HashtagOverviewTemplate } from './HashtagOverviewTemplate';
 
-const mockOnClickItem = vi.fn();
-const mockOnClickNavigate = vi.fn();
+const mockOnClickDelete = vi.fn();
+const mockOnClickEdit = vi.fn();
+const mockOnClickNavigateToCreatePage = vi.fn();
 
-const MockHashtagOverviewTemplate = () => (
+const MockNoDataHashtagOverviewTemplate = () => (
   <StyledComponentsProvider>
     <HashtagOverviewTemplate
-      items={[
-        { id: 1, name: 'hashtag1' },
-        { id: 2, name: 'hashtag2' },
-        { id: 3, name: 'hashtag3' },
-        { id: 4, name: 'hashtag4' },
-        { id: 5, name: 'hashtag5' },
-      ]}
-      onClickItem={mockOnClickItem}
-      onClickNavigate={mockOnClickNavigate}
+      data={undefined}
+      error={undefined}
+      isLoading={false}
+      onClickDelete={mockOnClickDelete}
+      onClickEdit={mockOnClickEdit}
+      onClickNavigateToCreatePage={mockOnClickNavigateToCreatePage}
+    />
+  </StyledComponentsProvider>
+);
+
+const MockWithDataHashtagOverviewTemplate = () => (
+  <StyledComponentsProvider>
+    <HashtagOverviewTemplate
+      data={hashtagDataMock}
+      error={undefined}
+      isLoading={false}
+      onClickDelete={mockOnClickDelete}
+      onClickEdit={mockOnClickEdit}
+      onClickNavigateToCreatePage={mockOnClickNavigateToCreatePage}
     />
   </StyledComponentsProvider>
 );
 
 describe('HashtagOverviewTemplate', () => {
   test('component snapshot', () => {
-    const view = render(<MockHashtagOverviewTemplate />);
+    const view = render(<MockWithDataHashtagOverviewTemplate />);
     expect(view).toMatchSnapshot();
+  });
+
+  test('ensure no items label apear when there is no data', () => {
+    render(<MockNoDataHashtagOverviewTemplate />);
+    expect(screen.getByTestId('no-items-label')).toBeInTheDocument();
+  });
+
+  test('ensure data apear when they are', () => {
+    render(<MockWithDataHashtagOverviewTemplate />);
+    expect(
+      screen.getByTestId('hashtag-overview-list-item-1')
+    ).toBeInTheDocument();
   });
 });

@@ -3,8 +3,8 @@ import styled, { css, keyframes } from 'styled-components';
 import { ICSS } from '~/models';
 
 const onFocusMoveAnimation = keyframes`
- 0% { top: 50%; opacity: 0 }
- 100% { top: -20%; opacity: 1 }
+  0% { top: 50%; opacity: 0 }
+  100% { top: -20%; opacity: 1 }
 `;
 
 export const FlexColumn = styled.div`

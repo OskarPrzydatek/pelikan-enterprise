@@ -93,6 +93,12 @@ export const SideMenu: React.FC<ISideMenu> = ({
               slug={Slugs.HASHTAG_OVERVIEW}
               onNavigate={onNavigate}
             />
+            <SideMenuItem
+              handleIsCurrentPage={handleIsCurrentPage}
+              label="Użytkownicy"
+              slug={Slugs.USERS_OVERVIEW}
+              onNavigate={onNavigate}
+            />
           </S.List>
         </S.Nav>
         <Button

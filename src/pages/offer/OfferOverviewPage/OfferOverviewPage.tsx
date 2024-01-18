@@ -1,11 +1,33 @@
 import { useNavigate, useParams } from 'react-router-dom';
+import useSWR, { useSWRConfig } from 'swr';
 
+import { fetchDelete, fetchGet } from '~/api';
 import { OfferOverviewTemplate } from '~/components/templates';
-import { Slugs } from '~/constants';
+import { Endpoints, Slugs } from '~/constants';
+import { IOfferData } from '~/models';
+import { errorNotification, successNotification } from '~/notifications';
 
 export const OfferOverviewPage: React.FC = () => {
   const { page } = useParams();
   const navigate = useNavigate();
+  const { mutate } = useSWRConfig();
+  const { data, error, isLoading } = useSWR<IOfferData[], Error>(
+    Endpoints.OFFERS_LIST,
+    fetchGet
+  );
+
+  const onClickDeleteOffer = async (id: number) => {
+    const endpoint = `${Endpoints.DELETE_OFFER}/${id}` as Endpoints;
+    const response = await fetchDelete(endpoint);
+
+    if (response.ok) {
+      await mutate(Endpoints.OFFERS_LIST);
+      successNotification('Oferta została usunięta pomyślnie');
+      return;
+    }
+
+    errorNotification();
+  };
 
   const onClickNavigateToEditOffer = (id: number) =>
     navigate(`/${Slugs.EDIT_OFFER}/${id}`);
@@ -14,16 +36,13 @@ export const OfferOverviewPage: React.FC = () => {
 
   return (
     <OfferOverviewTemplate
+      data={data}
+      error={error}
+      isLoading={isLoading}
       page={page}
-      items={[
-        { id: 1, name: 'offer1' },
-        { id: 2, name: 'offer2' },
-        { id: 3, name: 'offer3' },
-        { id: 4, name: 'offer4' },
-        { id: 5, name: 'offer5' },
-      ]}
-      onClickItem={onClickNavigateToEditOffer}
-      onClickNavigate={onClickNavigateToCreateOffer}
+      onClickDelete={onClickDeleteOffer}
+      onClickEdit={onClickNavigateToEditOffer}
+      onClickNavigateToCreatePage={onClickNavigateToCreateOffer}
     />
   );
 };

@@ -1,28 +1,67 @@
-import { OverviewList } from '~/components/organisms';
-import { IOverviewTemplate } from '~/models/components.models';
-import { PageLayout } from '~/styles';
+import React from 'react';
 
-interface IAttractionOverviewTemplate extends IOverviewTemplate {}
+import { Text } from '~/components/atoms';
+import { Modal, OverviewListItem } from '~/components/molecules';
+import { OverviewList, ErrorBundaryLoader } from '~/components/organisms';
+import { useDeleteWithModal } from '~/hooks';
+import { IAttractionData, IOverviewTemplate } from '~/models';
+
+interface IAttractionOverviewTemplate extends IOverviewTemplate {
+  data: IAttractionData[] | undefined;
+}
 
 export const AttractionOverviewTemplate: React.FC<
   IAttractionOverviewTemplate
 > = ({
-  items,
+  data,
   page,
-  onClickItem,
-  onClickNavigate,
+  isLoading,
+  error,
+  onClickEdit,
+  onClickDelete,
+  onClickNavigateToCreatePage,
 }: IAttractionOverviewTemplate) => {
+  const { isArray } = Array;
+  const {
+    showModal,
+    handleItemIdBeforeDelete,
+    onClickAcceptedDelete,
+    onClickCloseModale,
+  } = useDeleteWithModal(onClickDelete);
+
   return (
-    <PageLayout>
+    <ErrorBundaryLoader error={error} isLoading={isLoading}>
       <OverviewList
-        items={items}
         navigateLabel="Dodaj atrakcję"
         noItemsLabel="Brak atrakcji w systemie"
         page={page}
         title="Atrakcje"
-        onClickItem={onClickItem}
-        onClickNavigate={onClickNavigate}
-      />
-    </PageLayout>
+        onClickNavigateToCreatePage={onClickNavigateToCreatePage}
+      >
+        {isArray(data)
+          ? data.map(({ id, name }) => (
+              <OverviewListItem
+                key={`${id}-${name}`}
+                dataTestID={`attraction-overview-list-item-${id}`}
+                deleteIconTestID={`attraction-overview-delete-${id}`}
+                editIconTestID={`attraction-overview-edit-${id}`}
+                id={id}
+                name={name}
+                onClickDelete={handleItemIdBeforeDelete}
+                onClickEdit={onClickEdit}
+              />
+            ))
+          : null}
+      </OverviewList>
+      {showModal ? (
+        <Modal
+          acceptLabel="Usuń!"
+          onClickAccept={onClickAcceptedDelete}
+          onClickClose={onClickCloseModale}
+        >
+          <Text>Czy napewno usunąć element z listy?</Text>
+        </Modal>
+      ) : null}
+    </ErrorBundaryLoader>
   );
 };

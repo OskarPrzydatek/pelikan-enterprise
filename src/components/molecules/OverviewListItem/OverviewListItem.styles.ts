@@ -14,8 +14,7 @@ export const OverviewListItem = styled.li`
 `;
 
 export const IconsWrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   gap: 0 ${({ theme }) => theme.spaces.xs};
 `;
 
