@@ -48,3 +48,13 @@ export interface ITransportBody {
   transportType: string;
   destination: string;
 }
+
+export interface IUserData {
+  id: number;
+  email: string;
+  firstName: string;
+  lastName: string;
+  password: string;
+  phoneNumber: string;
+  userType: 'ADMIN' | 'WORKER';
+}

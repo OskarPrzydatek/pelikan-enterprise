@@ -27,6 +27,8 @@ export const EditTransportPage: React.FC = () => {
     const body = {
       id,
       ...data,
+      offers: [],
+      hashTagCounters: null,
     };
     const response = await fetchPut<ITransport>(
       `${Endpoints.UPDATE_TRANSPORT}/${id!}` as Endpoints,
@@ -34,7 +36,7 @@ export const EditTransportPage: React.FC = () => {
     );
 
     if (response.ok) {
-      successNotification('Hashtag dodano pomyślnie');
+      successNotification('Transport zaktualizowano pomyślnie');
       navigate(`/${Slugs.TRANSPORT_OVERVIEW}`);
       return;
     }
