@@ -26,7 +26,7 @@ export const EditUserTemplate: React.FC<IEditUserTemplate> = ({
       <Form
         methods={editUserFormMethods}
         submitLabel="Edytuj"
-        title="Edytuj transport"
+        title="Edytuj użytkownika"
         onSubmit={onSubmitEditUser}
       >
         <TextField

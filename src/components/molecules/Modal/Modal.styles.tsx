@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components';
 
 export const Modal = styled.div`
   width: 100%;
-  max-height: 100%;
   display: flex;
   flex-direction: column;
   gap: ${({ theme }) => theme.spaces.xl};
@@ -12,7 +11,6 @@ export const Modal = styled.div`
   @media ${({ theme }) => theme.breakpoints.tablet} {
     width: 60%;
     min-height: 30%;
-    max-height: 80%;
   }
 
   > * {

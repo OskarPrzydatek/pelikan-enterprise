@@ -3,7 +3,8 @@ import React from 'react';
 import { Text } from '~/components/atoms';
 import { Modal, OverviewListItem } from '~/components/molecules';
 import { OverviewList, ErrorBundaryLoader } from '~/components/organisms';
-import { useDeleteWithModal } from '~/hooks';
+import { Slugs } from '~/constants';
+import { useDeleteWithModal, usePagination } from '~/hooks';
 import { IHotelData, IOverviewTemplate } from '~/models';
 
 interface IHotelOverviewTemplate extends IOverviewTemplate {
@@ -26,29 +27,42 @@ export const HotelOverviewTemplate: React.FC<IHotelOverviewTemplate> = ({
     onClickAcceptedDelete,
     onClickCloseModale,
   } = useDeleteWithModal(onClickDelete);
+  const {
+    currentPage,
+    numberOfPages,
+    paginationStart,
+    paginationEnd,
+    onClickNextPage,
+    onClickPrevPage,
+  } = usePagination(data?.length!, page, Slugs.HOTEL_OVERVIEW);
 
   return (
     <ErrorBundaryLoader error={error} isLoading={isLoading}>
       <OverviewList
         navigateLabel="Dodaj hotel"
         noItemsLabel="Brak hoteli w systemie"
-        page={page}
+        numberOfPages={numberOfPages}
+        page={currentPage}
         title="Hotele"
         onClickNavigateToCreatePage={onClickNavigateToCreatePage}
+        onClickNextPage={onClickNextPage}
+        onClickPrevPage={onClickPrevPage}
       >
         {isArray(data)
-          ? data.map(({ id, name }) => (
-              <OverviewListItem
-                key={`${id}-${name}`}
-                dataTestID={`hotel-overview-list-item-${id}`}
-                deleteIconTestID={`hotel-overview-delete-${id}`}
-                editIconTestID={`hotel-overview-edit-${id}`}
-                id={id}
-                name={name}
-                onClickDelete={handleItemIdBeforeDelete}
-                onClickEdit={onClickEdit}
-              />
-            ))
+          ? data
+              .slice(paginationStart, paginationEnd)
+              .map(({ id, name }) => (
+                <OverviewListItem
+                  key={`${id}-${name}`}
+                  dataTestID={`hotel-overview-list-item-${id}`}
+                  deleteIconTestID={`hotel-overview-delete-${id}`}
+                  editIconTestID={`hotel-overview-edit-${id}`}
+                  id={id}
+                  name={name}
+                  onClickDelete={handleItemIdBeforeDelete}
+                  onClickEdit={onClickEdit}
+                />
+              ))
           : null}
       </OverviewList>
       {showModal ? (

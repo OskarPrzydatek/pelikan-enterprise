@@ -3,7 +3,8 @@ import React from 'react';
 import { Text } from '~/components/atoms';
 import { Modal, OverviewListItem } from '~/components/molecules';
 import { OverviewList, ErrorBundaryLoader } from '~/components/organisms';
-import { useDeleteWithModal } from '~/hooks';
+import { Slugs } from '~/constants';
+import { useDeleteWithModal, usePagination } from '~/hooks';
 import { IOverviewTemplate, ITransportData } from '~/models';
 
 interface ITransportOverviewTemplate extends IOverviewTemplate {
@@ -28,29 +29,42 @@ export const TransportOverviewTemplate: React.FC<
     onClickAcceptedDelete,
     onClickCloseModale,
   } = useDeleteWithModal(onClickDelete);
+  const {
+    currentPage,
+    numberOfPages,
+    paginationStart,
+    paginationEnd,
+    onClickNextPage,
+    onClickPrevPage,
+  } = usePagination(data?.length!, page, Slugs.TRANSPORT_OVERVIEW);
 
   return (
     <ErrorBundaryLoader error={error} isLoading={isLoading}>
       <OverviewList
         navigateLabel="Dodaj Transport"
         noItemsLabel="Brak transportów w systemie"
-        page={page}
+        numberOfPages={numberOfPages}
+        page={currentPage}
         title="Transport"
         onClickNavigateToCreatePage={onClickNavigateToCreatePage}
+        onClickNextPage={onClickNextPage}
+        onClickPrevPage={onClickPrevPage}
       >
         {isArray(data)
-          ? data.map(({ id, name }) => (
-              <OverviewListItem
-                key={`${id}-${name}`}
-                dataTestID={`transport-overview-list-item-${id}`}
-                deleteIconTestID={`transport-overview-delete-${id}`}
-                editIconTestID={`transport-overview-edit-${id}`}
-                id={id}
-                name={name}
-                onClickDelete={handleItemIdBeforeDelete}
-                onClickEdit={onClickEdit}
-              />
-            ))
+          ? data
+              .slice(paginationStart, paginationEnd)
+              .map(({ id, name }) => (
+                <OverviewListItem
+                  key={`${id}-${name}`}
+                  dataTestID={`transport-overview-list-item-${id}`}
+                  deleteIconTestID={`transport-overview-delete-${id}`}
+                  editIconTestID={`transport-overview-edit-${id}`}
+                  id={id}
+                  name={name}
+                  onClickDelete={handleItemIdBeforeDelete}
+                  onClickEdit={onClickEdit}
+                />
+              ))
           : null}
       </OverviewList>
       {showModal ? (

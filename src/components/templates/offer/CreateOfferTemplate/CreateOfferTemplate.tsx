@@ -10,6 +10,7 @@ import {
   TextField,
 } from '~/components/molecules';
 import { ErrorBundaryLoader, Form, OverviewList } from '~/components/organisms';
+import { usePagination } from '~/hooks';
 import { IAttractionData, IHashtagData, IOffer, ISelectOption } from '~/models';
 import { numericValidator, requiredValidator } from '~/validators';
 
@@ -51,6 +52,22 @@ export const CreateOfferTemplate: React.FC<ICreateOfferTemplate> = ({
   onClickAddAttractionToOffer,
 }: ICreateOfferTemplate) => {
   const { isArray } = Array;
+  const {
+    currentPage: hashtagCurrentPage,
+    numberOfPages: hashtagNumberOfPages,
+    paginationStart: hashtagPaginationStart,
+    paginationEnd: hashtagPaginationEnd,
+    onClickNextPage: onClickNextHashtagPage,
+    onClickPrevPage: onClickPrevHashtagPage,
+  } = usePagination(hashtags.length, undefined);
+  const {
+    currentPage: attractionCurrentPage,
+    numberOfPages: attractionNumberOfPages,
+    paginationStart: attractionPaginationStart,
+    paginationEnd: attractionPaginationEnd,
+    onClickNextPage: onClickNextAttractionPage,
+    onClickPrevPage: onClickPrevAttractionPage,
+  } = usePagination(attractions.length, undefined);
 
   return (
     <ErrorBundaryLoader error={error} isLoading={isLoading}>
@@ -160,19 +177,25 @@ export const CreateOfferTemplate: React.FC<ICreateOfferTemplate> = ({
           <OverviewList
             navigateLabel="navigateLabel"
             noItemsLabel="Brak dostępnych hashtagów"
+            numberOfPages={hashtagNumberOfPages}
+            page={hashtagCurrentPage}
             title="Dodaj hashtagi do oferty"
+            onClickNextPage={onClickNextHashtagPage}
+            onClickPrevPage={onClickPrevHashtagPage}
           >
             {isArray(hashtags)
-              ? hashtags.map((hashtag) => (
-                  <OverviewListItem
-                    key={`${hashtag.id}-${hashtag.name}`}
-                    dataTestID={`offer-add-attraction-modal-item-${hashtag.id}`}
-                    hashtag={hashtag}
-                    id={hashtag.id}
-                    name={hashtag.name}
-                    onClickAddHashtagToOffer={onClickAddHashtagToOffer}
-                  />
-                ))
+              ? hashtags
+                  .slice(hashtagPaginationStart, hashtagPaginationEnd)
+                  .map((hashtag) => (
+                    <OverviewListItem
+                      key={`${hashtag.id}-${hashtag.name}`}
+                      dataTestID={`offer-add-attraction-modal-item-${hashtag.id}`}
+                      hashtag={hashtag}
+                      id={hashtag.id}
+                      name={hashtag.name}
+                      onClickAddHashtagToOffer={onClickAddHashtagToOffer}
+                    />
+                  ))
               : null}
           </OverviewList>
         </Modal>
@@ -187,19 +210,25 @@ export const CreateOfferTemplate: React.FC<ICreateOfferTemplate> = ({
           <OverviewList
             navigateLabel="navigateLabel"
             noItemsLabel="Brak dostępnych atrakcji"
+            numberOfPages={attractionNumberOfPages}
+            page={attractionCurrentPage}
             title="Dodaj atrakcje do oferty"
+            onClickNextPage={onClickNextAttractionPage}
+            onClickPrevPage={onClickPrevAttractionPage}
           >
             {isArray(attractions)
-              ? attractions.map((attraction) => (
-                  <OverviewListItem
-                    key={`${attraction.id}-${attraction.name}`}
-                    attraction={attraction}
-                    dataTestID={`offer-add-attraction-modal-item-${attraction.id}`}
-                    id={attraction.id}
-                    name={attraction.name}
-                    onClickAddAttractionToOffer={onClickAddAttractionToOffer}
-                  />
-                ))
+              ? attractions
+                  .slice(attractionPaginationStart, attractionPaginationEnd)
+                  .map((attraction) => (
+                    <OverviewListItem
+                      key={`${attraction.id}-${attraction.name}`}
+                      attraction={attraction}
+                      dataTestID={`offer-add-attraction-modal-item-${attraction.id}`}
+                      id={attraction.id}
+                      name={attraction.name}
+                      onClickAddAttractionToOffer={onClickAddAttractionToOffer}
+                    />
+                  ))
               : null}
           </OverviewList>
         </Modal>

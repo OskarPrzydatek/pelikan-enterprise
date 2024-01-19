@@ -1,7 +1,8 @@
 import { Text } from '~/components/atoms';
 import { Modal, OverviewListItem } from '~/components/molecules';
 import { OverviewList, ErrorBundaryLoader } from '~/components/organisms';
-import { useDeleteWithModal } from '~/hooks';
+import { Slugs } from '~/constants';
+import { useDeleteWithModal, usePagination } from '~/hooks';
 import { IHashtagData, IOverviewTemplate } from '~/models';
 
 interface IHashtagOverviewTemplate extends IOverviewTemplate {
@@ -24,29 +25,42 @@ export const HashtagOverviewTemplate: React.FC<IHashtagOverviewTemplate> = ({
     onClickAcceptedDelete,
     onClickCloseModale,
   } = useDeleteWithModal(onClickDelete);
+  const {
+    currentPage,
+    numberOfPages,
+    paginationStart,
+    paginationEnd,
+    onClickNextPage,
+    onClickPrevPage,
+  } = usePagination(data?.length!, page, Slugs.HASHTAG_OVERVIEW);
 
   return (
     <ErrorBundaryLoader error={error} isLoading={isLoading}>
       <OverviewList
         navigateLabel="Dodaj hashtag"
         noItemsLabel="Brak hashtagów w systemie"
-        page={page}
+        numberOfPages={numberOfPages}
+        page={currentPage}
         title="Hashtagi"
         onClickNavigateToCreatePage={onClickNavigateToCreatePage}
+        onClickNextPage={onClickNextPage}
+        onClickPrevPage={onClickPrevPage}
       >
         {isArray(data)
-          ? data.map(({ id, name }) => (
-              <OverviewListItem
-                key={`${id}-${name}`}
-                dataTestID={`hashtag-overview-list-item-${id}`}
-                deleteIconTestID={`hashtag-overview-delete-${id}`}
-                editIconTestID={`hashtag-overview-edit-${id}`}
-                id={id}
-                name={name}
-                onClickDelete={handleItemIdBeforeDelete}
-                onClickEdit={onClickEdit}
-              />
-            ))
+          ? data
+              .slice(paginationStart, paginationEnd)
+              .map(({ id, name }) => (
+                <OverviewListItem
+                  key={`${id}-${name}`}
+                  dataTestID={`hashtag-overview-list-item-${id}`}
+                  deleteIconTestID={`hashtag-overview-delete-${id}`}
+                  editIconTestID={`hashtag-overview-edit-${id}`}
+                  id={id}
+                  name={name}
+                  onClickDelete={handleItemIdBeforeDelete}
+                  onClickEdit={onClickEdit}
+                />
+              ))
           : null}
       </OverviewList>
       {showModal ? (

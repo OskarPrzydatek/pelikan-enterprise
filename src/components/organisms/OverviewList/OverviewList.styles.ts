@@ -10,13 +10,11 @@ export const OverviewListWrapper = styled.div`
 
 export const OverviewList = styled.ul`
   width: 100%;
-  height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   padding: ${({ theme }) => theme.spaces.xl};
-  overflow: auto;
 
   li {
     margin-bottom: ${({ theme }) => theme.spaces.m};

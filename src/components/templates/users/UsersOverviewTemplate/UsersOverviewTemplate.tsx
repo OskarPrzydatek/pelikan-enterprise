@@ -1,7 +1,8 @@
 import { Text } from '~/components/atoms';
 import { Modal, OverviewListItem } from '~/components/molecules';
 import { ErrorBundaryLoader, OverviewList } from '~/components/organisms';
-import { useDeleteWithModal } from '~/hooks';
+import { Slugs } from '~/constants';
+import { useDeleteWithModal, usePagination } from '~/hooks';
 import { IOverviewTemplate } from '~/models';
 import { IUserData } from '~/models/data';
 
@@ -25,29 +26,42 @@ export const UsersOverviewTemplate: React.FC<IUsersOverviewTemplate> = ({
     onClickAcceptedDelete,
     onClickCloseModale,
   } = useDeleteWithModal(onClickDelete);
+  const {
+    currentPage,
+    numberOfPages,
+    paginationStart,
+    paginationEnd,
+    onClickNextPage,
+    onClickPrevPage,
+  } = usePagination(data?.length!, page, Slugs.USERS_OVERVIEW);
 
   return (
     <ErrorBundaryLoader error={error} isLoading={isLoading}>
       <OverviewList
         navigateLabel="Dodaj Użytkownika"
         noItemsLabel="Brak Użytkowników w systemie"
-        page={page}
+        numberOfPages={numberOfPages}
+        page={currentPage}
         title="Users"
         onClickNavigateToCreatePage={onClickNavigateToCreatePage}
+        onClickNextPage={onClickNextPage}
+        onClickPrevPage={onClickPrevPage}
       >
         {isArray(data)
-          ? data.map(({ id, firstName, lastName }) => (
-              <OverviewListItem
-                key={`${id}-${firstName}-${lastName}`}
-                dataTestID={`users-overview-list-item-${id}`}
-                deleteIconTestID={`users-overview-delete-${id}`}
-                editIconTestID={`users-overview-edit-${id}`}
-                id={id}
-                name={`${firstName} ${lastName}`}
-                onClickDelete={handleItemIdBeforeDelete}
-                onClickEdit={onClickEdit}
-              />
-            ))
+          ? data
+              .slice(paginationStart, paginationEnd)
+              .map(({ id, firstName, lastName }) => (
+                <OverviewListItem
+                  key={`${id}-${firstName}-${lastName}`}
+                  dataTestID={`users-overview-list-item-${id}`}
+                  deleteIconTestID={`users-overview-delete-${id}`}
+                  editIconTestID={`users-overview-edit-${id}`}
+                  id={id}
+                  name={`${firstName} ${lastName}`}
+                  onClickDelete={handleItemIdBeforeDelete}
+                  onClickEdit={onClickEdit}
+                />
+              ))
           : null}
       </OverviewList>
       {showModal ? (
