@@ -4,7 +4,7 @@ import { Select, TextField } from '~/components/molecules';
 import { ErrorBundaryLoader, Form } from '~/components/organisms';
 import { ISelectOption } from '~/models';
 import { IUser } from '~/models/forms';
-import { requiredValidator } from '~/validators';
+import { emailValidator, requiredValidator } from '~/validators';
 
 interface IEditUserTemplate {
   isLoading: boolean;
@@ -35,7 +35,7 @@ export const EditUserTemplate: React.FC<IEditUserTemplate> = ({
           label="Email"
           name="email"
           registerOptions={{
-            ...requiredValidator,
+            ...emailValidator,
           }}
         />
         <TextField
@@ -61,6 +61,7 @@ export const EditUserTemplate: React.FC<IEditUserTemplate> = ({
           inputTestID="create-user-password"
           label="Hasło"
           name="password"
+          type="password"
           registerOptions={{
             ...requiredValidator,
           }}

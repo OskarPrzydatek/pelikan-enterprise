@@ -21,3 +21,5 @@ export { EditTransportPage } from './transport/EditTransportPage/EditTransportPa
 export { UsersOverviewPage } from './users/UsersOverviewPage/UsersOverviewPage';
 export { CreateUserPage } from './users/CreateUserPage/CreateUserPage';
 export { EditUserPage } from './users/EditUserPage/EditUserPage';
+
+export { LoginPage } from './LoginPage/LoginPage';

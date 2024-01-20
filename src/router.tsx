@@ -18,6 +18,7 @@ import {
   EditUserPage,
   HashtagOverviewPage,
   HotelOverviewPage,
+  LoginPage,
   OfferOverviewPage,
   TransportOverviewPage,
   UsersOverviewPage,
@@ -147,6 +148,12 @@ export const router = createBrowserRouter([
         path: `${Slugs.EDIT_USER}/${Slugs.ID}`,
       },
     ],
+  },
+
+  // Login
+  {
+    element: <LoginPage />,
+    path: Slugs.LOGIN,
   },
 
   // Not Found

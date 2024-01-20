@@ -20,3 +20,5 @@ export { CreateTransportTemplate } from './transport/CreateTransportTemplate/Cre
 export { UsersOverviewTemplate } from './users/UsersOverviewTemplate/UsersOverviewTemplate';
 export { EditUserTemplate } from './users/EditUserTemplate/EditUserTemplate';
 export { CreateUserTemplate } from './users/CreateUserTemplate/CreateUserTemplate';
+
+export { LoginPageTemplate } from './LoginPageTemplate/LoginPageTemplate';

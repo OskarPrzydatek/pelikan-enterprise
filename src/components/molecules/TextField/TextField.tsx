@@ -13,6 +13,7 @@ interface ITextField extends IComponent {
   labelTestID?: string;
   inputTestID?: string;
   errorMessageTestID?: string;
+  type?: 'text' | 'password';
 }
 
 export const TextField: React.FC<ITextField> = ({
@@ -22,6 +23,7 @@ export const TextField: React.FC<ITextField> = ({
   labelTestID,
   inputTestID,
   errorMessageTestID,
+  type,
 }: ITextField) => {
   const {
     register,
@@ -70,6 +72,7 @@ export const TextField: React.FC<ITextField> = ({
           data-testid={inputTestID}
           id={name}
           placeholder={placeholder}
+          type={type}
           {...register(name, {
             ...registerOptions,
             onBlur: handleIsFocused,
@@ -85,4 +88,8 @@ export const TextField: React.FC<ITextField> = ({
       ) : null}
     </S.FlexColumn>
   );
+};
+
+TextField.defaultProps = {
+  type: 'text',
 };

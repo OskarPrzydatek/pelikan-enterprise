@@ -5,7 +5,7 @@ import { Form } from '~/components/organisms';
 import { ISelectOption } from '~/models';
 import { IUser } from '~/models/forms';
 import { PageLayout } from '~/styles';
-import { requiredValidator } from '~/validators';
+import { emailValidator, requiredValidator } from '~/validators';
 
 interface ICreateUserTemplate {
   createUserFormMethods: UseFormReturn<IUser>;
@@ -32,7 +32,7 @@ export const CreateUserTemplate: React.FC<ICreateUserTemplate> = ({
           label="Email"
           name="email"
           registerOptions={{
-            ...requiredValidator,
+            ...emailValidator,
           }}
         />
         <TextField
@@ -58,6 +58,7 @@ export const CreateUserTemplate: React.FC<ICreateUserTemplate> = ({
           inputTestID="create-user-password"
           label="Hasło"
           name="password"
+          type="password"
           registerOptions={{
             ...requiredValidator,
           }}

@@ -40,3 +40,8 @@ export interface IUser {
   phoneNumber: string;
   userType: 'ADMIN' | 'WORKER';
 }
+
+export interface ILogin {
+  email: string;
+  password: string;
+}

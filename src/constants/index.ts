@@ -33,6 +33,8 @@ export enum Slugs {
   CREATE_USER = 'create-user',
   EDIT_USER = 'edit-user',
 
+  LOGIN = 'LOGIN',
+
   ID = ':id',
   PAGE = ':page',
   NOT_FOUND = '*',
