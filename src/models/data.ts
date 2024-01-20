@@ -56,5 +56,5 @@ export interface IUserData {
   lastName: string;
   password: string;
   phoneNumber: string;
-  userType: 'ADMIN' | 'WORKER';
+  userType: 'ADMIN' | 'WORKER' | 'CLIENT';
 }

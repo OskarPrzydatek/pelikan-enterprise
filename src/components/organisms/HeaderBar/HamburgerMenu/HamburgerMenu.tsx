@@ -30,8 +30,10 @@ export const HamburgerMenu: React.FC<IHamburgerMenu> = () => {
     navigate(path);
   };
 
-  // TODO: Implement when auth be ready on BE
-  const onClickLogout = () => {};
+  const onClickLogout = () => {
+    localStorage.clear();
+    navigate(Slugs.LOGIN);
+  };
 
   return (
     <>

@@ -32,7 +32,7 @@ export const usePagination = (
     setCurrentPage((prev) => prev + 1);
 
     if (slug) {
-      navigate(`/${slug}/${currentPage}`);
+      navigate(`/${slug}/${currentPage + 1}`);
     }
   };
 
@@ -52,7 +52,7 @@ export const usePagination = (
     }
 
     if (slug) {
-      navigate(`/${slug}/${currentPage + 1}`);
+      navigate(`/${slug}/${currentPage - 1}`);
     }
   };
 
