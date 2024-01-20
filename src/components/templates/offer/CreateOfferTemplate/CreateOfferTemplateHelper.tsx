@@ -16,7 +16,13 @@ export const CreateOfferTemplateHelper: React.FC<
   return (
     <StyledComponentsProvider>
       <CreateOfferTemplate
+        attractions={[]}
         createOfferFormMethods={methods}
+        error={undefined}
+        hashtags={[]}
+        isLoading={false}
+        showAttractionsModal={false}
+        showHashtagsModal={false}
         hotelOptions={[
           { value: 'HOTEL_A', label: 'Hotel A' },
           { value: 'HOTEL_B', label: 'Hotel B' },
@@ -26,6 +32,11 @@ export const CreateOfferTemplateHelper: React.FC<
           { value: 'TRANSPORT_A', label: 'Transport A' },
           { value: 'TRANSPORT_B', label: 'Transport B' },
         ]}
+        onClickAcceptAttractionModal={() => {}}
+        onClickAcceptHashtagModal={() => {}}
+        onClickAddHashtagToOffer={() => {}}
+        onClickCloseAttractionModal={() => {}}
+        onClickCloseHashtagModal={() => {}}
         onSubmitCreateOffer={onSubmitCreateOffer}
       />
     </StyledComponentsProvider>

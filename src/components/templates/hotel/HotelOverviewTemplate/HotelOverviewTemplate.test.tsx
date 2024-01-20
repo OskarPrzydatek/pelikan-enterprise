@@ -10,6 +10,15 @@ const mockOnClickDelete = vi.fn();
 const mockOnClickEdit = vi.fn();
 const mockOnClickNavigateToCreatePage = vi.fn();
 
+vi.mock('react-router-dom', async () => {
+  const actual = await vi.importActual<object>('react-router-dom');
+
+  return {
+    ...actual,
+    useNavigate: vi.fn(),
+  };
+});
+
 const MockNoDataHotelOverviewTemplate = () => (
   <StyledComponentsProvider>
     <HotelOverviewTemplate

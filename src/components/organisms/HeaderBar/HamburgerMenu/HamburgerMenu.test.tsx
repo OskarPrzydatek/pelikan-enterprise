@@ -14,6 +14,16 @@ const MockHamburgerMenu = () => (
   </BrowserRouter>
 );
 
+const loggedUserMock = {
+  firstName: 'fname',
+  lastName: 'lname',
+  userType: 'WORKER',
+};
+
+beforeEach(() => {
+  localStorage.setItem('loggedUser', JSON.stringify(loggedUserMock));
+});
+
 describe('Button', () => {
   test('component snapshot', () => {
     const view = render(<MockHamburgerMenu />);

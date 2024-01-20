@@ -21,6 +21,16 @@ const MockSideMenu = () => (
   </StyledComponentsProvider>
 );
 
+const loggedUserMock = {
+  firstName: 'fname',
+  lastName: 'lname',
+  userType: 'WORKER',
+};
+
+beforeEach(() => {
+  localStorage.setItem('loggedUser', JSON.stringify(loggedUserMock));
+});
+
 describe('SideMenu', () => {
   test('component snapshot', () => {
     const view = render(<MockSideMenu />);

@@ -6,16 +6,16 @@ exports[`ProfilePicture > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-jrcTuL hKkeKM"
+        class="sc-kDvujY eIDLl"
       >
         <p
-          class="sc-pyfCe kodMXz"
+          class="sc-jrcTuL iAKCiY"
         >
           Witaj User
         </p>
         <img
           alt="default profile picture"
-          class="sc-kDvujY hxdiLv"
+          class="sc-ipEyDJ nPhzj"
           src="/src/assets/png/profile_picture.png"
         />
       </div>
@@ -23,16 +23,16 @@ exports[`ProfilePicture > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-jrcTuL hKkeKM"
+      class="sc-kDvujY eIDLl"
     >
       <p
-        class="sc-pyfCe kodMXz"
+        class="sc-jrcTuL iAKCiY"
       >
         Witaj User
       </p>
       <img
         alt="default profile picture"
-        class="sc-kDvujY hxdiLv"
+        class="sc-ipEyDJ nPhzj"
         src="/src/assets/png/profile_picture.png"
       />
     </div>

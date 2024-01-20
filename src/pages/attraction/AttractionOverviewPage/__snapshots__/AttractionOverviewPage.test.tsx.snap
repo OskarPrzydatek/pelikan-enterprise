@@ -1,83 +1,33 @@
 // Vitest Snapshot v1
 
-exports[`Button > component snapshot 1`] = `
+exports[`AttractionOverviewPage > page snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <button
-        class="sc-gKPRtg eSOgMd"
-        data-testid="side-menu-hamburger-icon"
+      <div
+        class="sc-ilhmMj dgoPhb"
       >
-        <svg
-          data-testid="hamburger-icon"
-          fill="none"
-          height="15"
-          viewBox="0 0 45 23"
-          width="30"
-          xmlns="http://www.w3.org/2000/svg"
+        <p
+          class="sc-jrcTuL gpbAYL"
+          data-testid="page-layout-loading"
         >
-          <line
-            stroke="#013059"
-            stroke-width="3"
-            x2="45"
-            y1="21.5"
-            y2="21.5"
-          />
-          <line
-            stroke="#013059"
-            stroke-width="3"
-            x2="45"
-            y1="11.5"
-            y2="11.5"
-          />
-          <line
-            stroke="#013059"
-            stroke-width="3"
-            x2="45"
-            y1="1.5"
-            y2="1.5"
-          />
-        </svg>
-      </button>
+          Ładowanie
+        </p>
+      </div>
     </div>
   </body>,
   "container": <div>
-    <button
-      class="sc-gKPRtg eSOgMd"
-      data-testid="side-menu-hamburger-icon"
+    <div
+      class="sc-ilhmMj dgoPhb"
     >
-      <svg
-        data-testid="hamburger-icon"
-        fill="none"
-        height="15"
-        viewBox="0 0 45 23"
-        width="30"
-        xmlns="http://www.w3.org/2000/svg"
+      <p
+        class="sc-jrcTuL gpbAYL"
+        data-testid="page-layout-loading"
       >
-        <line
-          stroke="#013059"
-          stroke-width="3"
-          x2="45"
-          y1="21.5"
-          y2="21.5"
-        />
-        <line
-          stroke="#013059"
-          stroke-width="3"
-          x2="45"
-          y1="11.5"
-          y2="11.5"
-        />
-        <line
-          stroke="#013059"
-          stroke-width="3"
-          x2="45"
-          y1="1.5"
-          y2="1.5"
-        />
-      </svg>
-    </button>
+        Ładowanie
+      </p>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

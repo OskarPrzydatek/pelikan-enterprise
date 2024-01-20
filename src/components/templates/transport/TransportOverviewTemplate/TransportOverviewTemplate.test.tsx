@@ -2,6 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { describe, test, vi } from 'vitest';
 
 import { transportDataMock } from '~/mocks';
+import { ITransportData } from '~/models';
 import { StyledComponentsProvider } from '~/providers';
 
 import { TransportOverviewTemplate } from './TransportOverviewTemplate';
@@ -9,6 +10,15 @@ import { TransportOverviewTemplate } from './TransportOverviewTemplate';
 const mockOnClickDelete = vi.fn();
 const mockOnClickEdit = vi.fn();
 const mockOnClickNavigateToCreatePage = vi.fn();
+
+vi.mock('react-router-dom', async () => {
+  const actual = await vi.importActual<object>('react-router-dom');
+
+  return {
+    ...actual,
+    useNavigate: vi.fn(),
+  };
+});
 
 const MockNoDataTransportOverviewTemplate = () => (
   <StyledComponentsProvider>
@@ -26,7 +36,7 @@ const MockNoDataTransportOverviewTemplate = () => (
 const MockWithDataTransportOverviewTemplate = () => (
   <StyledComponentsProvider>
     <TransportOverviewTemplate
-      data={transportDataMock}
+      data={transportDataMock as unknown as ITransportData[]}
       error={undefined}
       isLoading={false}
       onClickDelete={mockOnClickDelete}

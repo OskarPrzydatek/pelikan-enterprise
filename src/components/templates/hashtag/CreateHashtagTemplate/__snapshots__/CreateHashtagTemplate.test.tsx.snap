@@ -28,6 +28,7 @@ exports[`CreateHashtagTemplate > component snapshot 1`] = `
                 id="name"
                 name="name"
                 placeholder="Nazwa hashtagu"
+                type="text"
               />
             </div>
           </div>
@@ -64,6 +65,7 @@ exports[`CreateHashtagTemplate > component snapshot 1`] = `
               id="name"
               name="name"
               placeholder="Nazwa hashtagu"
+              type="text"
             />
           </div>
         </div>

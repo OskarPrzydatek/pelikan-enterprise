@@ -6,7 +6,7 @@ exports[`Button > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <button
-        class="sc-dkrFOg eiALHX"
+        class="sc-hLBbgP kSzrTH"
         data-testid="atom-button"
       >
         Logout
@@ -15,7 +15,7 @@ exports[`Button > component snapshot 1`] = `
   </body>,
   "container": <div>
     <button
-      class="sc-dkrFOg eiALHX"
+      class="sc-hLBbgP kSzrTH"
       data-testid="atom-button"
     >
       Logout

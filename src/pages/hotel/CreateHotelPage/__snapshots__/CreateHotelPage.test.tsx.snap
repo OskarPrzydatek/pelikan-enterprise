@@ -9,70 +9,73 @@ exports[`CreateHotelPage > page snapshot 1`] = `
         class="sc-gswNZR cJrdyV"
       >
         <form
-          class="sc-jIRcFI iwFYYu"
+          class="sc-hhOBVt sVYRY"
         >
           <h2
-            class="sc-eDvSVe dcXtK"
+            class="sc-jSUZER fTaKew"
           >
             Dodaj hotel
           </h2>
           <div
-            class="sc-ftTHYK bUTnLq"
+            class="sc-pyfCe jzFLD"
           >
             <div
-              class="sc-dmctIk iThEeJ"
+              class="sc-kgTSHT jCgOFm"
             >
               <div
-                class="sc-kgTSHT fmvgAY"
+                class="sc-fLcnxK cnXgRD"
               >
                 <input
-                  class="sc-fLcnxK gGYQKp"
+                  class="sc-bBABsx keiNZx"
                   data-testid="create-hotel-name"
                   id="name"
                   name="name"
                   placeholder="Nazwa hotelu"
+                  type="text"
                 />
               </div>
             </div>
             <div
-              class="sc-dmctIk iThEeJ"
+              class="sc-kgTSHT jCgOFm"
             >
               <div
-                class="sc-kgTSHT fmvgAY"
+                class="sc-fLcnxK cnXgRD"
               >
                 <input
-                  class="sc-fLcnxK gGYQKp"
+                  class="sc-bBABsx keiNZx"
                   data-testid="create-hotel-address"
                   id="address"
                   name="address"
                   placeholder="Adres"
+                  type="text"
                 />
               </div>
             </div>
           </div>
           <div
-            class="sc-dmctIk iThEeJ"
+            class="sc-kgTSHT jCgOFm"
           >
             <div
-              class="sc-kgTSHT fmvgAY"
+              class="sc-fLcnxK cnXgRD"
             >
               <input
-                class="sc-fLcnxK gGYQKp"
+                class="sc-bBABsx keiNZx"
                 data-testid="create-hotel-stars-rating"
                 id="stars"
                 name="stars"
                 placeholder="Ilość gwiazdek"
+                type="text"
               />
             </div>
           </div>
           <div
-            class="sc-bjfHbI kTUcsA"
+            class="sc-idXgbr doOTQv"
           >
             <div
-              class="sc-idXgbr enkruV"
+              class="sc-dIfARi fkTxxa"
             >
               <textarea
-                class="sc-hHTYSt lavPOm"
+                class="sc-dmctIk cMhnrM"
                 data-testid="create-hotel-description"
                 id="description"
                 name="description"
@@ -81,7 +84,7 @@ exports[`CreateHotelPage > page snapshot 1`] = `
             </div>
           </div>
           <input
-            class="sc-hhOBVt dvAfkB"
+            class="sc-gYbzsP hdKsgH"
             type="submit"
             value="Dodaj"
           />
@@ -94,70 +97,73 @@ exports[`CreateHotelPage > page snapshot 1`] = `
       class="sc-gswNZR cJrdyV"
     >
       <form
-        class="sc-jIRcFI iwFYYu"
+        class="sc-hhOBVt sVYRY"
       >
         <h2
-          class="sc-eDvSVe dcXtK"
+          class="sc-jSUZER fTaKew"
         >
           Dodaj hotel
         </h2>
         <div
-          class="sc-ftTHYK bUTnLq"
+          class="sc-pyfCe jzFLD"
         >
           <div
-            class="sc-dmctIk iThEeJ"
+            class="sc-kgTSHT jCgOFm"
           >
             <div
-              class="sc-kgTSHT fmvgAY"
+              class="sc-fLcnxK cnXgRD"
             >
               <input
-                class="sc-fLcnxK gGYQKp"
+                class="sc-bBABsx keiNZx"
                 data-testid="create-hotel-name"
                 id="name"
                 name="name"
                 placeholder="Nazwa hotelu"
+                type="text"
               />
             </div>
           </div>
           <div
-            class="sc-dmctIk iThEeJ"
+            class="sc-kgTSHT jCgOFm"
           >
             <div
-              class="sc-kgTSHT fmvgAY"
+              class="sc-fLcnxK cnXgRD"
             >
               <input
-                class="sc-fLcnxK gGYQKp"
+                class="sc-bBABsx keiNZx"
                 data-testid="create-hotel-address"
                 id="address"
                 name="address"
                 placeholder="Adres"
+                type="text"
               />
             </div>
           </div>
         </div>
         <div
-          class="sc-dmctIk iThEeJ"
+          class="sc-kgTSHT jCgOFm"
         >
           <div
-            class="sc-kgTSHT fmvgAY"
+            class="sc-fLcnxK cnXgRD"
           >
             <input
-              class="sc-fLcnxK gGYQKp"
+              class="sc-bBABsx keiNZx"
               data-testid="create-hotel-stars-rating"
               id="stars"
               name="stars"
               placeholder="Ilość gwiazdek"
+              type="text"
             />
           </div>
         </div>
         <div
-          class="sc-bjfHbI kTUcsA"
+          class="sc-idXgbr doOTQv"
         >
           <div
-            class="sc-idXgbr enkruV"
+            class="sc-dIfARi fkTxxa"
           >
             <textarea
-              class="sc-hHTYSt lavPOm"
+              class="sc-dmctIk cMhnrM"
               data-testid="create-hotel-description"
               id="description"
               name="description"
@@ -166,7 +172,7 @@ exports[`CreateHotelPage > page snapshot 1`] = `
           </div>
         </div>
         <input
-          class="sc-hhOBVt dvAfkB"
+          class="sc-gYbzsP hdKsgH"
           type="submit"
           value="Dodaj"
         />

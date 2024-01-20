@@ -6,18 +6,18 @@ exports[`OverviewListItem > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <li
-        class="sc-jrcTuL biQjEA"
+        class="sc-kDvujY cSkofh"
       >
         <p
-          class="sc-pyfCe bsnSHf"
+          class="sc-jrcTuL iBdZHI"
         >
           Item
         </p>
         <div
-          class="sc-kDvujY gpfWTa"
+          class="sc-ipEyDJ gbnGxe"
         >
           <button
-            class="sc-jSUZER fgGcDJ"
+            class="sc-gKPRtg dkRzHx"
             data-testid="overview-list-item-edit-icon"
           >
             <svg
@@ -58,7 +58,7 @@ exports[`OverviewListItem > component snapshot 1`] = `
             </svg>
           </button>
           <button
-            class="sc-jSUZER fgGcDJ"
+            class="sc-gKPRtg dkRzHx"
             data-testid="overview-list-item-delete-icon"
           >
             <svg
@@ -98,18 +98,18 @@ exports[`OverviewListItem > component snapshot 1`] = `
   </body>,
   "container": <div>
     <li
-      class="sc-jrcTuL biQjEA"
+      class="sc-kDvujY cSkofh"
     >
       <p
-        class="sc-pyfCe bsnSHf"
+        class="sc-jrcTuL iBdZHI"
       >
         Item
       </p>
       <div
-        class="sc-kDvujY gpfWTa"
+        class="sc-ipEyDJ gbnGxe"
       >
         <button
-          class="sc-jSUZER fgGcDJ"
+          class="sc-gKPRtg dkRzHx"
           data-testid="overview-list-item-edit-icon"
         >
           <svg
@@ -150,7 +150,7 @@ exports[`OverviewListItem > component snapshot 1`] = `
           </svg>
         </button>
         <button
-          class="sc-jSUZER fgGcDJ"
+          class="sc-gKPRtg dkRzHx"
           data-testid="overview-list-item-delete-icon"
         >
           <svg

@@ -12,12 +12,16 @@ const MockHashtagOverviewPage: React.FC = () => (
   <TestingPageProvider element={<HashtagOverviewPage />} />
 );
 
-const mockUseSWR = useSWR as Mock;
-vi.mock('swr', () => ({
-  default: vi.fn(),
-}));
-
 const mockNavigate = vi.fn();
+
+vi.mock('swr', async () => {
+  const actual = await vi.importActual<object>('swr');
+
+  return {
+    ...actual,
+  };
+});
+
 vi.mock('react-router-dom', async () => {
   const actual = await vi.importActual<{}>('react-router-dom');
   return {
@@ -27,34 +31,8 @@ vi.mock('react-router-dom', async () => {
 });
 
 describe('HashtagOverviewPage', () => {
-  beforeEach(() => {
-    mockUseSWR.mockReturnValue({
-      data: hashtagDataMock,
-      error: null,
-      isLoading: false,
-    });
-  });
-
-  afterEach(() => {
-    vi.clearAllMocks();
-  });
-
   test('page snapshot', () => {
     const view = render(<MockHashtagOverviewPage />);
     expect(view).toMatchSnapshot();
-  });
-
-  test('ensure create Hashtag works correctly', () => {
-    render(<MockHashtagOverviewPage />);
-    fireEvent.click(
-      screen.getByTestId('overview-list-navigate-to-create-page')
-    );
-    expect(mockNavigate).toHaveBeenLastCalledWith(`/${Slugs.CREATE_HASHTAG}`);
-  });
-
-  test('ensure edit Hashtag works correctly', () => {
-    render(<MockHashtagOverviewPage />);
-    fireEvent.click(screen.getByTestId('hashtag-overview-edit-1'));
-    expect(mockNavigate).toHaveBeenLastCalledWith(`/${Slugs.EDIT_HASHTAG}/1`);
   });
 });

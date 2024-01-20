@@ -28,6 +28,7 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
                 id="name"
                 name="name"
                 placeholder="Nazwa atrakcji"
+                type="text"
               />
             </div>
           </div>
@@ -43,6 +44,7 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
                 id="price"
                 name="price"
                 placeholder="Cena"
+                type="text"
               />
             </div>
           </div>
@@ -94,6 +96,7 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
               id="name"
               name="name"
               placeholder="Nazwa atrakcji"
+              type="text"
             />
           </div>
         </div>
@@ -109,6 +112,7 @@ exports[`CreateAttractionTemplate > component snapshot 1`] = `
               id="price"
               name="price"
               placeholder="Cena"
+              type="text"
             />
           </div>
         </div>

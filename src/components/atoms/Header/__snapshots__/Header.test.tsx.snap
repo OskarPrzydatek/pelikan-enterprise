@@ -6,7 +6,7 @@ exports[`Header > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <h2
-        class="sc-dkrFOg kaKqDq"
+        class="sc-hLBbgP hZBehO"
         data-testid="header-atom"
       >
         Add Offer
@@ -15,7 +15,7 @@ exports[`Header > component snapshot 1`] = `
   </body>,
   "container": <div>
     <h2
-      class="sc-dkrFOg kaKqDq"
+      class="sc-hLBbgP hZBehO"
       data-testid="header-atom"
     >
       Add Offer

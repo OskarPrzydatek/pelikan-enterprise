@@ -28,6 +28,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                 id="name"
                 name="name"
                 placeholder="Nazwa oferty"
+                type="text"
               />
             </div>
           </div>
@@ -46,6 +47,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                   id="quantity"
                   name="quantity"
                   placeholder="Ilość miejsc"
+                  type="text"
                 />
               </div>
             </div>
@@ -120,6 +122,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                   id="location"
                   name="location"
                   placeholder="Miejsce docelowe"
+                  type="text"
                 />
               </div>
             </div>
@@ -197,7 +200,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                 <input
                   class="sc-jrcTuL jPpBZo"
                   data-testid="create-offer-form"
-                  min="2024-01-15"
+                  min="2024-01-20"
                   name="termFrom"
                   type="date"
                 />
@@ -212,7 +215,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                 <input
                   class="sc-jrcTuL jPpBZo"
                   data-testid="create-offer-to"
-                  min="2024-01-15"
+                  min="2024-01-20"
                   name="termTo"
                   type="date"
                 />
@@ -246,6 +249,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                 id="price"
                 name="price"
                 placeholder="Cena"
+                type="text"
               />
             </div>
           </div>
@@ -282,6 +286,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
               id="name"
               name="name"
               placeholder="Nazwa oferty"
+              type="text"
             />
           </div>
         </div>
@@ -300,6 +305,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                 id="quantity"
                 name="quantity"
                 placeholder="Ilość miejsc"
+                type="text"
               />
             </div>
           </div>
@@ -374,6 +380,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                 id="location"
                 name="location"
                 placeholder="Miejsce docelowe"
+                type="text"
               />
             </div>
           </div>
@@ -451,7 +458,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
               <input
                 class="sc-jrcTuL jPpBZo"
                 data-testid="create-offer-form"
-                min="2024-01-15"
+                min="2024-01-20"
                 name="termFrom"
                 type="date"
               />
@@ -466,7 +473,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
               <input
                 class="sc-jrcTuL jPpBZo"
                 data-testid="create-offer-to"
-                min="2024-01-15"
+                min="2024-01-20"
                 name="termTo"
                 type="date"
               />
@@ -500,6 +507,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
               id="price"
               name="price"
               placeholder="Cena"
+              type="text"
             />
           </div>
         </div>

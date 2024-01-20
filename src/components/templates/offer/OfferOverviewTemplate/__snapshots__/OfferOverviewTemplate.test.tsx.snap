@@ -6,33 +6,33 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-kMjNwy fMrqeM"
+        class="sc-ilhmMj dgoPhb"
       >
         <div
-          class="sc-iAEawV kYTlxs"
+          class="sc-eeMvmM bRaIPK"
         >
           <h2
-            class="sc-eDvSVe dcXtK"
+            class="sc-jSUZER fTaKew"
           >
             Oferty
           </h2>
           <ul
-            class="sc-eeMvmM eoXwSL"
+            class="sc-cUEOzv lbvGZW"
           >
             <li
-              class="sc-ksBlkl guNHGv"
+              class="sc-hBxehG bhOMdq"
               data-testid="offer-overview-list-item-1"
             >
               <p
-                class="sc-pyfCe bsnSHf"
+                class="sc-jrcTuL iBdZHI"
               >
                 Exotic Escape
               </p>
               <div
-                class="sc-hBxehG llVXBx"
+                class="sc-fnGiBr fhhnoL"
               >
                 <button
-                  class="sc-jSUZER fgGcDJ"
+                  class="sc-gKPRtg dkRzHx"
                   data-testid="offer-overview-edit-1"
                 >
                   <svg
@@ -73,7 +73,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
                   </svg>
                 </button>
                 <button
-                  class="sc-jSUZER fgGcDJ"
+                  class="sc-gKPRtg dkRzHx"
                   data-testid="offer-overview-delete-1"
                 >
                   <svg
@@ -110,19 +110,19 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
               </div>
             </li>
             <li
-              class="sc-ksBlkl guNHGv"
+              class="sc-hBxehG bhOMdq"
               data-testid="offer-overview-list-item-2"
             >
               <p
-                class="sc-pyfCe bsnSHf"
+                class="sc-jrcTuL iBdZHI"
               >
                 Mountain Adventure
               </p>
               <div
-                class="sc-hBxehG llVXBx"
+                class="sc-fnGiBr fhhnoL"
               >
                 <button
-                  class="sc-jSUZER fgGcDJ"
+                  class="sc-gKPRtg dkRzHx"
                   data-testid="offer-overview-edit-2"
                 >
                   <svg
@@ -163,7 +163,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
                   </svg>
                 </button>
                 <button
-                  class="sc-jSUZER fgGcDJ"
+                  class="sc-gKPRtg dkRzHx"
                   data-testid="offer-overview-delete-2"
                 >
                   <svg
@@ -200,19 +200,19 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
               </div>
             </li>
             <li
-              class="sc-ksBlkl guNHGv"
+              class="sc-hBxehG bhOMdq"
               data-testid="offer-overview-list-item-3"
             >
               <p
-                class="sc-pyfCe bsnSHf"
+                class="sc-jrcTuL iBdZHI"
               >
                 City Explorer
               </p>
               <div
-                class="sc-hBxehG llVXBx"
+                class="sc-fnGiBr fhhnoL"
               >
                 <button
-                  class="sc-jSUZER fgGcDJ"
+                  class="sc-gKPRtg dkRzHx"
                   data-testid="offer-overview-edit-3"
                 >
                   <svg
@@ -253,7 +253,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
                   </svg>
                 </button>
                 <button
-                  class="sc-jSUZER fgGcDJ"
+                  class="sc-gKPRtg dkRzHx"
                   data-testid="offer-overview-delete-3"
                 >
                   <svg
@@ -290,19 +290,19 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
               </div>
             </li>
             <li
-              class="sc-ksBlkl guNHGv"
+              class="sc-hBxehG bhOMdq"
               data-testid="offer-overview-list-item-4"
             >
               <p
-                class="sc-pyfCe bsnSHf"
+                class="sc-jrcTuL iBdZHI"
               >
                 Nature Retreat
               </p>
               <div
-                class="sc-hBxehG llVXBx"
+                class="sc-fnGiBr fhhnoL"
               >
                 <button
-                  class="sc-jSUZER fgGcDJ"
+                  class="sc-gKPRtg dkRzHx"
                   data-testid="offer-overview-edit-4"
                 >
                   <svg
@@ -343,7 +343,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
                   </svg>
                 </button>
                 <button
-                  class="sc-jSUZER fgGcDJ"
+                  class="sc-gKPRtg dkRzHx"
                   data-testid="offer-overview-delete-4"
                 >
                   <svg
@@ -380,19 +380,19 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
               </div>
             </li>
             <li
-              class="sc-ksBlkl guNHGv"
+              class="sc-hBxehG bhOMdq"
               data-testid="offer-overview-list-item-5"
             >
               <p
-                class="sc-pyfCe bsnSHf"
+                class="sc-jrcTuL iBdZHI"
               >
                 Family Fun
               </p>
               <div
-                class="sc-hBxehG llVXBx"
+                class="sc-fnGiBr fhhnoL"
               >
                 <button
-                  class="sc-jSUZER fgGcDJ"
+                  class="sc-gKPRtg dkRzHx"
                   data-testid="offer-overview-edit-5"
                 >
                   <svg
@@ -433,7 +433,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
                   </svg>
                 </button>
                 <button
-                  class="sc-jSUZER fgGcDJ"
+                  class="sc-gKPRtg dkRzHx"
                   data-testid="offer-overview-delete-5"
                 >
                   <svg
@@ -470,8 +470,52 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
               </div>
             </li>
           </ul>
+          <div
+            class="sc-jOiSOi hXLofh"
+          >
+            <button
+              class="sc-gKPRtg cylfAz"
+            >
+              <svg
+                data-testid="arrow-icon"
+                fill="none"
+                viewBox="0 0 40 26"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 13L39.75 0.00961876V25.9904L0 13Z"
+                  fill="#013059"
+                />
+              </svg>
+            </button>
+            <p
+              class="sc-jrcTuL iBdZHI"
+              data-testid="pagination-counter"
+            >
+              1
+               / 
+              1
+            </p>
+            <button
+              class="sc-gKPRtg gagpAz"
+            >
+              <svg
+                data-testid="arrow-icon"
+                fill="none"
+                viewBox="0 0 40 26"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 13L39.75 0.00961876V25.9904L0 13Z"
+                  fill="#013059"
+                />
+              </svg>
+            </button>
+          </div>
           <button
-            class="sc-hLBbgP kQYyQS"
+            class="sc-eDvSVe fgoBjS"
             data-testid="overview-list-navigate-to-create-page"
           >
             Dodaj ofertę
@@ -482,33 +526,33 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-kMjNwy fMrqeM"
+      class="sc-ilhmMj dgoPhb"
     >
       <div
-        class="sc-iAEawV kYTlxs"
+        class="sc-eeMvmM bRaIPK"
       >
         <h2
-          class="sc-eDvSVe dcXtK"
+          class="sc-jSUZER fTaKew"
         >
           Oferty
         </h2>
         <ul
-          class="sc-eeMvmM eoXwSL"
+          class="sc-cUEOzv lbvGZW"
         >
           <li
-            class="sc-ksBlkl guNHGv"
+            class="sc-hBxehG bhOMdq"
             data-testid="offer-overview-list-item-1"
           >
             <p
-              class="sc-pyfCe bsnSHf"
+              class="sc-jrcTuL iBdZHI"
             >
               Exotic Escape
             </p>
             <div
-              class="sc-hBxehG llVXBx"
+              class="sc-fnGiBr fhhnoL"
             >
               <button
-                class="sc-jSUZER fgGcDJ"
+                class="sc-gKPRtg dkRzHx"
                 data-testid="offer-overview-edit-1"
               >
                 <svg
@@ -549,7 +593,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
                 </svg>
               </button>
               <button
-                class="sc-jSUZER fgGcDJ"
+                class="sc-gKPRtg dkRzHx"
                 data-testid="offer-overview-delete-1"
               >
                 <svg
@@ -586,19 +630,19 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
             </div>
           </li>
           <li
-            class="sc-ksBlkl guNHGv"
+            class="sc-hBxehG bhOMdq"
             data-testid="offer-overview-list-item-2"
           >
             <p
-              class="sc-pyfCe bsnSHf"
+              class="sc-jrcTuL iBdZHI"
             >
               Mountain Adventure
             </p>
             <div
-              class="sc-hBxehG llVXBx"
+              class="sc-fnGiBr fhhnoL"
             >
               <button
-                class="sc-jSUZER fgGcDJ"
+                class="sc-gKPRtg dkRzHx"
                 data-testid="offer-overview-edit-2"
               >
                 <svg
@@ -639,7 +683,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
                 </svg>
               </button>
               <button
-                class="sc-jSUZER fgGcDJ"
+                class="sc-gKPRtg dkRzHx"
                 data-testid="offer-overview-delete-2"
               >
                 <svg
@@ -676,19 +720,19 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
             </div>
           </li>
           <li
-            class="sc-ksBlkl guNHGv"
+            class="sc-hBxehG bhOMdq"
             data-testid="offer-overview-list-item-3"
           >
             <p
-              class="sc-pyfCe bsnSHf"
+              class="sc-jrcTuL iBdZHI"
             >
               City Explorer
             </p>
             <div
-              class="sc-hBxehG llVXBx"
+              class="sc-fnGiBr fhhnoL"
             >
               <button
-                class="sc-jSUZER fgGcDJ"
+                class="sc-gKPRtg dkRzHx"
                 data-testid="offer-overview-edit-3"
               >
                 <svg
@@ -729,7 +773,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
                 </svg>
               </button>
               <button
-                class="sc-jSUZER fgGcDJ"
+                class="sc-gKPRtg dkRzHx"
                 data-testid="offer-overview-delete-3"
               >
                 <svg
@@ -766,19 +810,19 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
             </div>
           </li>
           <li
-            class="sc-ksBlkl guNHGv"
+            class="sc-hBxehG bhOMdq"
             data-testid="offer-overview-list-item-4"
           >
             <p
-              class="sc-pyfCe bsnSHf"
+              class="sc-jrcTuL iBdZHI"
             >
               Nature Retreat
             </p>
             <div
-              class="sc-hBxehG llVXBx"
+              class="sc-fnGiBr fhhnoL"
             >
               <button
-                class="sc-jSUZER fgGcDJ"
+                class="sc-gKPRtg dkRzHx"
                 data-testid="offer-overview-edit-4"
               >
                 <svg
@@ -819,7 +863,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
                 </svg>
               </button>
               <button
-                class="sc-jSUZER fgGcDJ"
+                class="sc-gKPRtg dkRzHx"
                 data-testid="offer-overview-delete-4"
               >
                 <svg
@@ -856,19 +900,19 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
             </div>
           </li>
           <li
-            class="sc-ksBlkl guNHGv"
+            class="sc-hBxehG bhOMdq"
             data-testid="offer-overview-list-item-5"
           >
             <p
-              class="sc-pyfCe bsnSHf"
+              class="sc-jrcTuL iBdZHI"
             >
               Family Fun
             </p>
             <div
-              class="sc-hBxehG llVXBx"
+              class="sc-fnGiBr fhhnoL"
             >
               <button
-                class="sc-jSUZER fgGcDJ"
+                class="sc-gKPRtg dkRzHx"
                 data-testid="offer-overview-edit-5"
               >
                 <svg
@@ -909,7 +953,7 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
                 </svg>
               </button>
               <button
-                class="sc-jSUZER fgGcDJ"
+                class="sc-gKPRtg dkRzHx"
                 data-testid="offer-overview-delete-5"
               >
                 <svg
@@ -946,8 +990,52 @@ exports[`OfferOverviewTemplate > component snapshot 1`] = `
             </div>
           </li>
         </ul>
+        <div
+          class="sc-jOiSOi hXLofh"
+        >
+          <button
+            class="sc-gKPRtg cylfAz"
+          >
+            <svg
+              data-testid="arrow-icon"
+              fill="none"
+              viewBox="0 0 40 26"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 13L39.75 0.00961876V25.9904L0 13Z"
+                fill="#013059"
+              />
+            </svg>
+          </button>
+          <p
+            class="sc-jrcTuL iBdZHI"
+            data-testid="pagination-counter"
+          >
+            1
+             / 
+            1
+          </p>
+          <button
+            class="sc-gKPRtg gagpAz"
+          >
+            <svg
+              data-testid="arrow-icon"
+              fill="none"
+              viewBox="0 0 40 26"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 13L39.75 0.00961876V25.9904L0 13Z"
+                fill="#013059"
+              />
+            </svg>
+          </button>
+        </div>
         <button
-          class="sc-hLBbgP kQYyQS"
+          class="sc-eDvSVe fgoBjS"
           data-testid="overview-list-navigate-to-create-page"
         >
           Dodaj ofertę

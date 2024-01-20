@@ -10,6 +10,23 @@ const mockOnClickDelete = vi.fn();
 const mockOnClickEdit = vi.fn();
 const mockOnClickNavigateToCreatePage = vi.fn();
 
+vi.mock('swr', async () => {
+  const actual = await vi.importActual<object>('swr');
+
+  return {
+    ...actual,
+  };
+});
+
+vi.mock('react-router-dom', async () => {
+  const actual = await vi.importActual<object>('react-router-dom');
+
+  return {
+    ...actual,
+    useNavigate: vi.fn(),
+  };
+});
+
 const MockNoDataHashtagOverviewTemplate = () => (
   <StyledComponentsProvider>
     <HashtagOverviewTemplate

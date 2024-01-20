@@ -28,6 +28,7 @@ exports[`CreateTransport Template > component snapshot 1`] = `
                 id="name"
                 name="name"
                 placeholder="Nazwa firmy transportowej"
+                type="text"
               />
             </div>
           </div>
@@ -140,6 +141,7 @@ exports[`CreateTransport Template > component snapshot 1`] = `
               id="name"
               name="name"
               placeholder="Nazwa firmy transportowej"
+              type="text"
             />
           </div>
         </div>

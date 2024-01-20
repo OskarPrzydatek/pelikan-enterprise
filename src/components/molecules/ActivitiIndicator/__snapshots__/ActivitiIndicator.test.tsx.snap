@@ -6,7 +6,7 @@ exports[`ActivitiIndicator > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <p
-        class="sc-pyfCe ijJcYk"
+        class="sc-jrcTuL gpbAYL"
       >
         Ładuję
       </p>
@@ -14,7 +14,7 @@ exports[`ActivitiIndicator > component snapshot 1`] = `
   </body>,
   "container": <div>
     <p
-      class="sc-pyfCe ijJcYk"
+      class="sc-jrcTuL gpbAYL"
     >
       Ładuję
     </p>

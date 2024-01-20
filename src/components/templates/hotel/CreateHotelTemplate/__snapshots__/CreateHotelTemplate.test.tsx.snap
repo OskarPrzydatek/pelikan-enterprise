@@ -31,6 +31,7 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
                   id="name"
                   name="name"
                   placeholder="Nazwa hotelu"
+                  type="text"
                 />
               </div>
             </div>
@@ -46,6 +47,7 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
                   id="address"
                   name="address"
                   placeholder="Adres"
+                  type="text"
                 />
               </div>
             </div>
@@ -62,6 +64,7 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
                 id="stars"
                 name="stars"
                 placeholder="Ilość gwiazdek"
+                type="text"
               />
             </div>
           </div>
@@ -116,6 +119,7 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
                 id="name"
                 name="name"
                 placeholder="Nazwa hotelu"
+                type="text"
               />
             </div>
           </div>
@@ -131,6 +135,7 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
                 id="address"
                 name="address"
                 placeholder="Adres"
+                type="text"
               />
             </div>
           </div>
@@ -147,6 +152,7 @@ exports[`CreateHotelTemplate > component snapshot 1`] = `
               id="stars"
               name="stars"
               placeholder="Ilość gwiazdek"
+              type="text"
             />
           </div>
         </div>

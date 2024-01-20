@@ -17,6 +17,7 @@ exports[`TextField > component snapshot 1`] = `
             id="email"
             name="email"
             placeholder="Email"
+            type="text"
           />
         </div>
       </div>
@@ -35,6 +36,7 @@ exports[`TextField > component snapshot 1`] = `
           id="email"
           name="email"
           placeholder="Email"
+          type="text"
         />
       </div>
     </div>

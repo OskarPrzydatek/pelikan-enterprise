@@ -6,15 +6,15 @@ exports[`Modal > component snapshot 1`] = `
   "baseElement": <body>
     <div />
     <div
-      class="sc-dkrFOg ieHbTX"
+      class="sc-hLBbgP dnbqgn"
       data-testid="molecule-modal-background"
     >
       <div
-        class="sc-jrcTuL hFCxPh"
+        class="sc-kDvujY eFmCXN"
         data-testid="molecule-modal"
       >
         <button
-          class="sc-jSUZER dkgLl"
+          class="sc-gKPRtg ddHRXV"
           data-testid="molecule-modal-close"
         >
           <svg
@@ -36,7 +36,7 @@ exports[`Modal > component snapshot 1`] = `
           Example Text
         </p>
         <button
-          class="sc-hLBbgP cqISts"
+          class="sc-eDvSVe gsbLBE"
           data-testid="molecule-modal-accept"
         >
           Akceptuj

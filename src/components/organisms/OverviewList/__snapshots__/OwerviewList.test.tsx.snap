@@ -6,7 +6,7 @@ exports[`OverviewList > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-kMjNwy dnZgcN"
+        class="sc-ilhmMj jlDDjG"
       >
         <h2
           class="sc-dkrFOg kaKqDq"
@@ -14,7 +14,7 @@ exports[`OverviewList > component snapshot 1`] = `
           Atrakcje
         </h2>
         <ul
-          class="sc-ilhmMj HhpAX"
+          class="sc-jIRcFI cCkcaH"
         >
           <li
             class="sc-eDWCr jtwhuZ"
@@ -452,6 +452,49 @@ exports[`OverviewList > component snapshot 1`] = `
             </div>
           </li>
         </ul>
+        <div
+          class="sc-hhOBVt fKvNNb"
+        >
+          <button
+            class="sc-hLBbgP ySCXl"
+          >
+            <svg
+              data-testid="arrow-icon"
+              fill="none"
+              viewBox="0 0 40 26"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 13L39.75 0.00961876V25.9904L0 13Z"
+                fill="#013059"
+              />
+            </svg>
+          </button>
+          <p
+            class="sc-iBYQkv cMzfYw"
+            data-testid="pagination-counter"
+          >
+             / 
+            5
+          </p>
+          <button
+            class="sc-hLBbgP fksuwN"
+          >
+            <svg
+              data-testid="arrow-icon"
+              fill="none"
+              viewBox="0 0 40 26"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 13L39.75 0.00961876V25.9904L0 13Z"
+                fill="#013059"
+              />
+            </svg>
+          </button>
+        </div>
         <button
           class="sc-gswNZR ebKtrE"
           data-testid="overview-list-navigate-to-create-page"
@@ -463,7 +506,7 @@ exports[`OverviewList > component snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-kMjNwy dnZgcN"
+      class="sc-ilhmMj jlDDjG"
     >
       <h2
         class="sc-dkrFOg kaKqDq"
@@ -471,7 +514,7 @@ exports[`OverviewList > component snapshot 1`] = `
         Atrakcje
       </h2>
       <ul
-        class="sc-ilhmMj HhpAX"
+        class="sc-jIRcFI cCkcaH"
       >
         <li
           class="sc-eDWCr jtwhuZ"
@@ -909,6 +952,49 @@ exports[`OverviewList > component snapshot 1`] = `
           </div>
         </li>
       </ul>
+      <div
+        class="sc-hhOBVt fKvNNb"
+      >
+        <button
+          class="sc-hLBbgP ySCXl"
+        >
+          <svg
+            data-testid="arrow-icon"
+            fill="none"
+            viewBox="0 0 40 26"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 13L39.75 0.00961876V25.9904L0 13Z"
+              fill="#013059"
+            />
+          </svg>
+        </button>
+        <p
+          class="sc-iBYQkv cMzfYw"
+          data-testid="pagination-counter"
+        >
+           / 
+          5
+        </p>
+        <button
+          class="sc-hLBbgP fksuwN"
+        >
+          <svg
+            data-testid="arrow-icon"
+            fill="none"
+            viewBox="0 0 40 26"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 13L39.75 0.00961876V25.9904L0 13Z"
+              fill="#013059"
+            />
+          </svg>
+        </button>
+      </div>
       <button
         class="sc-gswNZR ebKtrE"
         data-testid="overview-list-navigate-to-create-page"

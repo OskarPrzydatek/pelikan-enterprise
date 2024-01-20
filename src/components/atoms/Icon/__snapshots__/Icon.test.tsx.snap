@@ -6,7 +6,7 @@ exports[`Icon > component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <button
-        class="sc-dkrFOg gixrif"
+        class="sc-hLBbgP fjHCXH"
         data-testid="atom-icon"
       >
         <svg
@@ -43,7 +43,7 @@ exports[`Icon > component snapshot 1`] = `
   </body>,
   "container": <div>
     <button
-      class="sc-dkrFOg gixrif"
+      class="sc-hLBbgP fjHCXH"
       data-testid="atom-icon"
     >
       <svg

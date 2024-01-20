@@ -6,22 +6,22 @@ exports[`SideMenu > component snapshot 1`] = `
   "baseElement": <body>
     <div />
     <div
-      class="sc-dkrFOg hVytYR"
+      class="sc-hLBbgP hOXEqd"
     >
       <div
-        class="sc-jrcTuL kapCbJ"
+        class="sc-kDvujY dOtRow"
         data-testid="hamburger-menu-side-menu"
       >
         <div
-          class="sc-kDvujY bjUeDl"
+          class="sc-ipEyDJ kxqPsd"
         >
           <p
-            class="sc-pyfCe erNPuK"
+            class="sc-jrcTuL dSNZqR"
           >
             Pelikan Enterprise
           </p>
           <button
-            class="sc-jSUZER eNWyGN"
+            class="sc-gKPRtg eSOgMd"
             data-testid="side-menu-close-icon"
           >
             <svg
@@ -39,76 +39,76 @@ exports[`SideMenu > component snapshot 1`] = `
           </button>
         </div>
         <nav
-          class="sc-ipEyDJ"
+          class="sc-csuSiG"
         >
           <ul
-            class="sc-csuSiG"
+            class="sc-eDWCr"
           >
             <li
-              class="sc-eDWCr xPKqo"
+              class="sc-bqWxrE gRWojo"
             >
               <button
-                class="sc-hLBbgP grCgBk"
+                class="sc-eDvSVe khnRqY"
                 data-testid="side-menu-item-offer-overview"
               >
                 <h2
-                  class="sc-eDvSVe jPXdpL"
+                  class="sc-jSUZER hCpxGN"
                 >
                   Oferty
                 </h2>
               </button>
             </li>
             <li
-              class="sc-eDWCr xPKqo"
+              class="sc-bqWxrE gRWojo"
             >
               <button
-                class="sc-hLBbgP grCgBk"
+                class="sc-eDvSVe khnRqY"
                 data-testid="side-menu-item-hotel-overview"
               >
                 <h2
-                  class="sc-eDvSVe jPXdpL"
+                  class="sc-jSUZER hCpxGN"
                 >
                   Hotele
                 </h2>
               </button>
             </li>
             <li
-              class="sc-eDWCr xPKqo"
+              class="sc-bqWxrE gRWojo"
             >
               <button
-                class="sc-hLBbgP grCgBk"
+                class="sc-eDvSVe khnRqY"
                 data-testid="side-menu-item-transport-overview"
               >
                 <h2
-                  class="sc-eDvSVe jPXdpL"
+                  class="sc-jSUZER hCpxGN"
                 >
                   Transport
                 </h2>
               </button>
             </li>
             <li
-              class="sc-eDWCr xPKqo"
+              class="sc-bqWxrE gRWojo"
             >
               <button
-                class="sc-hLBbgP grCgBk"
+                class="sc-eDvSVe khnRqY"
                 data-testid="side-menu-item-attraction-overview"
               >
                 <h2
-                  class="sc-eDvSVe jPXdpL"
+                  class="sc-jSUZER hCpxGN"
                 >
                   Atrakcje
                 </h2>
               </button>
             </li>
             <li
-              class="sc-eDWCr xPKqo"
+              class="sc-bqWxrE gRWojo"
             >
               <button
-                class="sc-hLBbgP grCgBk"
+                class="sc-eDvSVe khnRqY"
                 data-testid="side-menu-item-hashtag-overview"
               >
                 <h2
-                  class="sc-eDvSVe jPXdpL"
+                  class="sc-jSUZER hCpxGN"
                 >
                   Hashtagi
                 </h2>
@@ -117,7 +117,7 @@ exports[`SideMenu > component snapshot 1`] = `
           </ul>
         </nav>
         <button
-          class="sc-hLBbgP dFUGmA"
+          class="sc-eDvSVe epXetY"
           data-testid="side-menu-logout-button"
         >
           Wyloguj

@@ -6,10 +6,10 @@ exports[`EditHotelPage > page snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-kMjNwy fMrqeM"
+        class="sc-ilhmMj dgoPhb"
       >
         <p
-          class="sc-pyfCe ijJcYk"
+          class="sc-jrcTuL gpbAYL"
           data-testid="page-layout-loading"
         >
           Ładowanie
@@ -19,10 +19,10 @@ exports[`EditHotelPage > page snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-kMjNwy fMrqeM"
+      class="sc-ilhmMj dgoPhb"
     >
       <p
-        class="sc-pyfCe ijJcYk"
+        class="sc-jrcTuL gpbAYL"
         data-testid="page-layout-loading"
       >
         Ładowanie

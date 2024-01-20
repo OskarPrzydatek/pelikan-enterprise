@@ -24,23 +24,29 @@ const MockOverviewListEmpty = () => (
     <OverviewList
       navigateLabel="Dodaj atrakcję"
       noItemsLabel="Brak atrakcji w systemie"
-      page="1"
+      numberOfPages={0}
+      page={1}
       title="Atrakcje"
       onClickNavigateToCreatePage={mockOnClickNavigateToCreatePage}
+      onClickNextPage={vi.fn()}
+      onClickPrevPage={vi.fn()}
     >
       {null}
     </OverviewList>
   </StyledComponentsProvider>
 );
 
-const MockOverviewListWithData = ({ page }: { page?: string | undefined }) => (
+const MockOverviewListWithData = ({ page }: { page?: number }) => (
   <StyledComponentsProvider>
     <OverviewList
       navigateLabel="Dodaj atrakcję"
       noItemsLabel="Brak atrakcji w systemie"
+      numberOfPages={5}
       page={page}
       title="Atrakcje"
       onClickNavigateToCreatePage={mockOnClickNavigateToCreatePage}
+      onClickNextPage={vi.fn()}
+      onClickPrevPage={vi.fn()}
     >
       {dataStub.map(({ id, name }) => (
         <OverviewListItem
@@ -67,10 +73,10 @@ describe('OverviewList', () => {
   });
 
   test('ensure current page is one when is undefined', () => {
-    const { rerender } = render(<MockOverviewListWithData page={undefined} />);
+    const { rerender } = render(<MockOverviewListWithData page={1} />);
     const paginationCounter = screen.getByTestId('pagination-counter');
-    expect(paginationCounter).toHaveTextContent('1 / X');
-    rerender(<MockOverviewListWithData page="2" />);
-    expect(paginationCounter).toHaveTextContent('2 / X');
+    expect(paginationCounter).toHaveTextContent('1 / 5');
+    rerender(<MockOverviewListWithData page={2} />);
+    expect(paginationCounter).toHaveTextContent('2 / 5');
   });
 });

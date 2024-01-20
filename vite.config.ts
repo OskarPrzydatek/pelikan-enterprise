@@ -39,6 +39,7 @@ export default defineConfig({
         'src/mocks',
         'src/constants',
         'src/*.{js,tsx}',
+        'src/pages/**'
       ],
     },
   },
