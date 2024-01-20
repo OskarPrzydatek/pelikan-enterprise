@@ -3,6 +3,7 @@ import React from 'react';
 import { Background, Button, Header, Icon, Text } from '~/components/atoms';
 import { Icons, Slugs } from '~/constants';
 import { IComponent } from '~/models';
+import { ILoggedUser } from '~/models/data';
 
 import * as S from './SideMenu.styles';
 
@@ -49,6 +50,10 @@ export const SideMenu: React.FC<ISideMenu> = ({
   onNavigate,
   onClickLogout,
 }: ISideMenu) => {
+  const loggedUser = JSON.parse(
+    localStorage.getItem('loggedUser')!
+  ) as ILoggedUser;
+
   return (
     <Background onClickBackground={onClickCloseSideMenu}>
       <S.SideMenu data-testid="hamburger-menu-side-menu">
@@ -93,12 +98,14 @@ export const SideMenu: React.FC<ISideMenu> = ({
               slug={Slugs.HASHTAG_OVERVIEW}
               onNavigate={onNavigate}
             />
-            <SideMenuItem
-              handleIsCurrentPage={handleIsCurrentPage}
-              label="Użytkownicy"
-              slug={Slugs.USERS_OVERVIEW}
-              onNavigate={onNavigate}
-            />
+            {loggedUser.userType === 'ADMIN' ? (
+              <SideMenuItem
+                handleIsCurrentPage={handleIsCurrentPage}
+                label="Użytkownicy"
+                slug={Slugs.USERS_OVERVIEW}
+                onNavigate={onNavigate}
+              />
+            ) : null}
           </S.List>
         </S.Nav>
         <Button

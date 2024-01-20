@@ -1,15 +1,10 @@
 import React from 'react';
 
 import { ProfilePicture } from '~/components/molecules';
+import { ILoggedUser } from '~/models/data';
 
 import { HamburgerMenu } from './HamburgerMenu/HamburgerMenu';
 import * as S from './HeaderBar.styles';
-
-interface ILoggedUser {
-  firstName: string;
-  lastName: string;
-  userType: 'ADMIN' | 'WORKER';
-}
 
 export const HeaderBar: React.FC = () => {
   const loggedUser = localStorage.getItem('loggedUser');

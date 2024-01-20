@@ -58,3 +58,9 @@ export interface IUserData {
   phoneNumber: string;
   userType: 'ADMIN' | 'WORKER' | 'CLIENT';
 }
+
+export interface ILoggedUser {
+  firstName: string;
+  lastName: string;
+  userType: 'ADMIN' | 'WORKER';
+}

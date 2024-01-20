@@ -1,12 +1,13 @@
+import React from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { useNavigate, useParams } from 'react-router-dom';
 import useSWR from 'swr';
 
-import { fetchGet, fetchPost, fetchPut } from '~/api';
+import { fetchGet, fetchPut } from '~/api';
 import { EditUserTemplate } from '~/components/templates';
 import { Endpoints, Slugs, userRoleType } from '~/constants';
 import { ISelectOption } from '~/models';
-import { IUserData } from '~/models/data';
+import { ILoggedUser, IUserData } from '~/models/data';
 import { IUser } from '~/models/forms';
 import { errorNotification, successNotification } from '~/notifications';
 
@@ -23,10 +24,14 @@ export const EditUserPage: React.FC = () => {
       lastName: data?.lastName!,
       password: data?.password!,
       phoneNumber: data?.phoneNumber!,
-      userType: data?.userType!,
+      userType: data?.userType! as IUser['userType'],
     },
   });
   const navigate = useNavigate();
+
+  const loggedUser = JSON.parse(
+    localStorage.getItem('loggedUser')!
+  ) as ILoggedUser;
 
   const onSubmit: SubmitHandler<IUser> = async (data) => {
     const body = {
@@ -46,6 +51,13 @@ export const EditUserPage: React.FC = () => {
 
     errorNotification();
   };
+
+  // Redirect if user is worker
+  React.useEffect(() => {
+    if (loggedUser.userType !== 'ADMIN') {
+      navigate(-1);
+    }
+  }, [loggedUser.userType, navigate]);
 
   return (
     <EditUserTemplate
