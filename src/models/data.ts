@@ -32,8 +32,9 @@ export interface IOfferData {
   termTo: Date;
   price: number;
   quantity: number;
-  transport: string;
-  hotel: string;
+  transport: ITransportData;
+  hotel: IHashtagData;
+  description: string;
 }
 
 export interface ITransportData {

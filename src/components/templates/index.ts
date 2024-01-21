@@ -12,6 +12,7 @@ export { CreateHotelTemplate } from './hotel/CreateHotelTemplate/CreateHotelTemp
 
 export { OfferOverviewTemplate } from './offer/OfferOverviewTemplate/OfferOverviewTemplate';
 export { CreateOfferTemplate } from './offer/CreateOfferTemplate/CreateOfferTemplate';
+export { EditOfferTemplate } from './offer/EditOfferTemplate/EditOfferTemplate';
 
 export { TransportOverviewTemplate } from './transport/TransportOverviewTemplate/TransportOverviewTemplate';
 export { EditTransortTemplate } from './transport/EditTransortTemplate/EditTransortTemplate';

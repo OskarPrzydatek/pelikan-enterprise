@@ -200,7 +200,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                 <input
                   class="sc-jrcTuL jPpBZo"
                   data-testid="create-offer-form"
-                  min="2024-01-20"
+                  min="2024-01-21"
                   name="termFrom"
                   type="date"
                 />
@@ -215,7 +215,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
                 <input
                   class="sc-jrcTuL jPpBZo"
                   data-testid="create-offer-to"
-                  min="2024-01-20"
+                  min="2024-01-21"
                   name="termTo"
                   type="date"
                 />
@@ -458,7 +458,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
               <input
                 class="sc-jrcTuL jPpBZo"
                 data-testid="create-offer-form"
-                min="2024-01-20"
+                min="2024-01-21"
                 name="termFrom"
                 type="date"
               />
@@ -473,7 +473,7 @@ exports[`CreateOfferTemplate > component snapshot 1`] = `
               <input
                 class="sc-jrcTuL jPpBZo"
                 data-testid="create-offer-to"
-                min="2024-01-20"
+                min="2024-01-21"
                 name="termTo"
                 type="date"
               />

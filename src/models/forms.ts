@@ -24,6 +24,7 @@ export interface IOffer {
   quantity: number;
   transport: { id: number };
   hotel: { id: number };
+  description: string;
 }
 
 export interface ITransport {

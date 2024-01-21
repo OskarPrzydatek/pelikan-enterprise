@@ -6,26 +6,26 @@ exports[`EditOfferPage > page snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-gswNZR cJrdyV"
+        class="sc-ilhmMj dgoPhb"
       >
-        <h2>
-          Edit Offer Page
-        </h2>
-        <p>
-          id: 
+        <p
+          class="sc-jrcTuL gpbAYL"
+          data-testid="page-layout-loading"
+        >
+          Ładowanie
         </p>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-gswNZR cJrdyV"
+      class="sc-ilhmMj dgoPhb"
     >
-      <h2>
-        Edit Offer Page
-      </h2>
-      <p>
-        id: 
+      <p
+        class="sc-jrcTuL gpbAYL"
+        data-testid="page-layout-loading"
+      >
+        Ładowanie
       </p>
     </div>
   </div>,
