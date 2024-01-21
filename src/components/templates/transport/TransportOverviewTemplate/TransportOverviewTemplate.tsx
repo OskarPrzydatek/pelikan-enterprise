@@ -41,7 +41,7 @@ export const TransportOverviewTemplate: React.FC<
   return (
     <ErrorBundaryLoader error={error} isLoading={isLoading}>
       <OverviewList
-        navigateLabel="Dodaj Transport"
+        navigateLabel="Dodaj transport"
         noItemsLabel="Brak transportów w systemie"
         numberOfPages={numberOfPages}
         page={currentPage}
