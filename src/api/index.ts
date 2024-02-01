@@ -3,7 +3,7 @@ import { IAttractionData, IHashtagData, IOffer, IOfferData } from '~/models';
 import { errorNotification } from '~/notifications';
 
 export const BASE_URL =
-  'https://pelikan-api-v2.icyground-be7f2b06.westeurope.azurecontainerapps.io';
+  'https://pelikan-api-v4.icyground-be7f2b06.westeurope.azurecontainerapps.io';
 const controller = new AbortController();
 
 export async function fetchGet<T>(endpoint: Endpoints): Promise<T> {
