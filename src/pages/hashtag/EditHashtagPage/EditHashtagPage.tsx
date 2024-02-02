@@ -32,7 +32,7 @@ export const EditHashtagPage: React.FC = () => {
     );
 
     if (response.ok) {
-      successNotification('Hashtag dodano pomyślnie');
+      successNotification('Hashtag zmieniono pomyślnie');
       navigate(`/${Slugs.HASHTAG_OVERVIEW}`);
       return;
     }

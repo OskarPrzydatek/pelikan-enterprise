@@ -44,7 +44,7 @@ export const EditUserPage: React.FC = () => {
     );
 
     if (response.ok) {
-      successNotification('Użytkownik zaktualizowany pomyślnie');
+      successNotification('Użytkownik zzmieniony pomyślnie');
       navigate(`/${Slugs.USERS_OVERVIEW}`);
       return;
     }

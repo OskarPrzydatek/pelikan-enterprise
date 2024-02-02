@@ -83,7 +83,7 @@ export const EditOfferPage: React.FC = () => {
     );
 
     if (response.ok) {
-      successNotification('Oferta zaktualizowano pomyślnie');
+      successNotification('Oferta zmieniono pomyślnie');
       navigate(`/${Slugs.OFFER_OVERVIEW}`);
       return;
     }

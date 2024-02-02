@@ -35,7 +35,7 @@ export const EditHotelPage: React.FC = () => {
     );
 
     if (response.ok) {
-      successNotification('Hashtag dodano pomyślnie');
+      successNotification('Hotel zmieniono pomyślnie');
       navigate(`/${Slugs.HOTEL_OVERVIEW}`);
       return;
     }

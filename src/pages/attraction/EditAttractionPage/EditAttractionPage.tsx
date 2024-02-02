@@ -34,7 +34,7 @@ export const EditAttractionPage: React.FC = () => {
     );
 
     if (response.ok) {
-      successNotification('Hashtag dodano pomyślnie');
+      successNotification('Atrakcja zmieniona pomyślnie');
       navigate(`/${Slugs.ATTRACTION_OVERVIEW}`);
       return;
     }

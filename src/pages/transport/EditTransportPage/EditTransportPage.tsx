@@ -36,7 +36,7 @@ export const EditTransportPage: React.FC = () => {
     );
 
     if (response.ok) {
-      successNotification('Transport zaktualizowano pomyślnie');
+      successNotification('Transport zmieniono pomyślnie');
       navigate(`/${Slugs.TRANSPORT_OVERVIEW}`);
       return;
     }
